@@ -1,0 +1,26 @@
+name: Update cached data
+on:
+  schedule:
+    - cron: 0 0 * * *
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cache
+  cancel-in-progress: true
+
+jobs:
+  scrape:
+    name: Scrape
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          fetch-depth: 0
+      - uses: actions/setup-go@v5
+      - run: git worktree add cache cache
+      - run: rm -f cache/* && go run ./scraper -cache-dir ./cache -cache-only
+      - run: git -C cache add . && git -C cache -c user.name=github-actions -c user.email=github-actions@github.com commit -m 'update cache' && git -C cache push
