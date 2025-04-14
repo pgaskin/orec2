@@ -21,6 +21,7 @@ import (
 	"slices"
 	"strings"
 	"sync"
+	"time"
 
 	"maps"
 
@@ -29,7 +30,7 @@ import (
 )
 
 var (
-	cacheOnly    = flag.Bool("cache-only", false, "don't attempt to parse data from pages")
+	scrape       = flag.String("scrape", "", "parse data from pages into the specified file")
 	noFetch      = flag.Bool("no-fetch", false, "don't fetch pages not in cache")
 	cacheDir     = flag.String("cache-dir", "", "cache pages in the specified directory")
 	nominatim    = flag.String("nominatim", "https://nominatim.geocoding.ai", "nominatim base url")
@@ -54,6 +55,62 @@ func main() {
 	}
 }
 
+// note: underscored fields are ones which contain data parsed or otherwise
+// enriched by the scraper rather than coming directly from the source page, and
+// are set on a best-effort basis (if an error occurs, it is ignored)
+
+type Data struct {
+	Facilities  []Facility `json:"facilities"`
+	Attribution []string   `json:"_attribution"`
+}
+
+type Facility struct {
+	Name           string           `json:"name"`
+	Description    string           `json:"desc"`
+	Source         FacilitySource   `json:"src"`
+	Location       FacilityLocation `json:"location"`
+	Notifications  string           `json:"notifications_html"` // raw html
+	SpecialHours   string           `json:"special_hours_html"` // raw html
+	ScheduleGroups []ScheduleGroup  `json:"schedule_groups"`
+	Errors         []string         `json:"_err"` // scrape errors
+}
+
+type FacilitySource struct {
+	URL  string `json:"url"`
+	Date int64  `json:"_date,omitempty"` // unix epoch seconds
+}
+
+type FacilityLocation struct {
+	Address   string   `json:"addr"`
+	Longitude *float64 `json:"_lng,omitempty"`
+	Latitude  *float64 `json:"_lat,omitempty"`
+}
+
+type ScheduleGroup struct {
+	Label           string     `json:"lbl"`
+	ScheduleChanges string     `json:"schedule_changes_html"` // raw html
+	Schedules       []Schedule `json:"schedules"`
+}
+
+type Schedule struct {
+	Caption    string             `json:"cap"`
+	Title      string             `json:"_title,omitempty"` // parsed out from the caption (i.e., without facility name or date range)
+	DayHeaders []string           `json:"day_headers"`
+	Activities []ScheduleActivity `json:"activities"`
+}
+
+type ScheduleActivity struct {
+	Label string        `json:"lbl"`
+	Days  [][]TimeRange `json:"days"` // [len(DayHeaders)][]
+}
+
+type TimeRange struct {
+	Label   string `json:"lbl"`
+	Start   *int   `json:"_start,omitempty"`
+	End     *int   `json:"_end,omitempty"`
+	Weekday *int   `json:"_wkday,omitempty"` // sunday = 0
+}
+
 func run(ctx context.Context) error {
 	if *cacheDir != "" {
 		slog.Info("using cache dir", "path", cacheDir)
@@ -64,11 +121,12 @@ func run(ctx context.Context) error {
 			return fmt.Errorf("write cache dir gitattributes: %w", err)
 		}
 	}
-
-	cur := *placeListing
-
+	var (
+		data Data
+		cur  = *placeListing
+	)
 	for cur != "" {
-		doc, err := fetchPage(ctx, cur)
+		doc, _, err := fetchPage(ctx, cur)
 		if err != nil {
 			return err
 		}
@@ -84,23 +142,89 @@ func run(ctx context.Context) error {
 		}
 
 		if err := scrapePlaceListings(doc, content, func(u *url.URL, name, address string) error {
-			lng, lat, hasLngLat, err := geocode(ctx, address)
-			if err != nil {
-				return fmt.Errorf("geocode: %w", err)
-			}
-			doc, err := fetchPage(ctx, u.String())
-			if err != nil {
-				return err
-			}
-			slog.Info("got place", "name", name, "address", address, "lng", lng, "lat", lat)
+			var facility Facility
+			facility.Name = name
+			facility.Location.Address = address
+			facility.Source.URL = u.String()
 
-			if *cacheOnly {
+			if lng, lat, hasLngLat, err := geocode(ctx, address); err != nil {
+				slog.Warn("failed to geocode place", "name", name, "address", address, "error", err)
+				facility.Errors = append(facility.Errors, fmt.Sprintf("failed to resolve address: %v", err))
+			} else if hasLngLat {
+				facility.Location.Latitude = &lat
+				facility.Location.Longitude = &lng
+			}
+
+			doc, date, err := fetchPage(ctx, u.String())
+			if err != nil {
+				slog.Warn("failed to fetch place", "name", name, "error", err)
+				facility.Errors = append(facility.Errors, fmt.Sprintf("failed to fetch data: %v", err))
+			} else {
+				slog.Info("got place", "name", name)
+				facility.Source.Date = date.Unix()
+			}
+			if *scrape == "" {
 				return nil
 			}
+			if err := func() error {
+				content, err := scrapeMainContentBlock(doc)
+				if err != nil {
+					return err
+				}
 
-			_ = doc
-			_ = hasLngLat
+				node, err := findOne(content, `.node.node--type-place`, "place node")
+				if err != nil {
+					return err
+				}
 
+				if field, err := scrapeNodeField(node, "description", "text-long", false, true); err != nil {
+					facility.Errors = append(facility.Errors, fmt.Sprintf("extract facility description: %v", err))
+				} else {
+					facility.Description = strings.Join(strings.Fields(field.Text()), " ")
+				}
+
+				if field, err := scrapeNodeField(node, "notification-details", "text-long", false, true); err != nil {
+					facility.Errors = append(facility.Errors, fmt.Sprintf("extract facility notifications: %v", err))
+				} else if raw, err := field.Html(); err != nil {
+					facility.Errors = append(facility.Errors, fmt.Sprintf("extract facility notifications: %v", err))
+				} else {
+					facility.Notifications = raw
+				}
+
+				if field, err := scrapeNodeField(node, "hours-details", "text-long", false, true); err != nil {
+					facility.Errors = append(facility.Errors, fmt.Sprintf("extract facility notifications: %v", err))
+				} else if raw, err := field.Html(); err != nil {
+					facility.Errors = append(facility.Errors, fmt.Sprintf("extract facility notifications: %v", err))
+				} else {
+					facility.SpecialHours = raw
+				}
+
+				if err := scrapeCollapseSections(node, func(title string, content *goquery.Selection) error {
+					rest, ok := strings.CutPrefix(title, "Drop-in schedule")
+					if !ok {
+						return nil
+					}
+					rest = strings.TrimPrefix(rest, "s ")
+					rest = strings.TrimSpace(strings.TrimPrefix(strings.TrimSpace(rest), "-"))
+
+					var group ScheduleGroup
+					group.Label = rest
+
+					// TODO
+					//fmt.Println(content.Find("h1,h2,h3,h4,h5,h6").FilterFunction(func(i int, s *goquery.Selection) bool {
+					//	return strings.HasPrefix(strings.TrimSpace(s.Text()), "Schedule change")
+					//}).Html())
+					return nil
+				}); err != nil {
+					return err
+				}
+
+				return nil
+			}(); err != nil {
+				facility.Errors = append(facility.Errors, fmt.Sprintf("failed to extract facility information: %v", err))
+			}
+
+			data.Facilities = append(data.Facilities, facility)
 			return nil
 		}); err != nil {
 			return err
@@ -110,6 +234,18 @@ func run(ctx context.Context) error {
 			break
 		}
 		cur = nextURL.String()
+	}
+	if *scrape != "" {
+		slog.Info("saving data to file", "name", *scrape)
+		var buf bytes.Buffer
+		enc := json.NewEncoder(&buf)
+		enc.SetEscapeHTML(false)
+		if err := enc.Encode(data); err != nil {
+			return fmt.Errorf("save data: %w", err)
+		}
+		if err := os.WriteFile(*scrape, buf.Bytes(), 0644); err != nil {
+			return fmt.Errorf("save data: %w", err)
+		}
 	}
 	return nil
 }
@@ -157,22 +293,23 @@ func geocode(ctx context.Context, addr string) (lng, lat float64, ok bool, err e
 	return 0, 0, false, nil
 }
 
-func fetchPage(ctx context.Context, u string) (*goquery.Document, error) {
+func fetchPage(ctx context.Context, u string) (*goquery.Document, time.Time, error) {
 	slog.Info("fetch page", "url", u)
 
 	resp, err := fetch(ctx, u, "page", u, nil)
 	if err != nil {
-		return nil, err
+		return nil, time.Time{}, err
 	}
 	defer resp.Body.Close()
 
 	doc, err := goquery.NewDocumentFromReader(resp.Body)
 	if err != nil {
-		return nil, err
+		return nil, time.Time{}, err
 	}
 	doc.Url = resp.Request.URL
 
-	return doc, nil
+	date, _ := time.Parse(resp.Header.Get("Date"), http.TimeFormat)
+	return doc, date, nil
 }
 
 func fetchNominatim(ctx context.Context, r *url.URL) (*http.Response, error) {
@@ -373,4 +510,93 @@ func scrapePlaceListings(doc *goquery.Document, s *goquery.Selection, fn func(u 
 		return err == nil
 	})
 	return err
+}
+
+// scrapeCollapseSections iterates over collapse section widgets contained
+// within s.
+func scrapeCollapseSections(s *goquery.Selection, fn func(title string, content *goquery.Selection) error) error {
+	buttons := s.Find(`[role="button"][data-toggle="collapse"][data-target]`)
+	if buttons.Length() == 0 && s.Find(`div.collapse-region`).Length() != 0 {
+		return fmt.Errorf("no collapse sections found, but collapse-region found")
+	}
+
+	var err error
+	buttons.EachWithBreak(func(i int, btn *goquery.Selection) bool {
+		title := strings.TrimSpace(btn.Text())
+		if x := func() error {
+			tgt, _ := btn.Attr("data-target")
+
+			content, err := findOne(s, tgt, "collapse section content")
+			if err != nil {
+				return err
+			}
+
+			if err := fn(title, content); err != nil {
+				return fmt.Errorf("process %q: %w", title, err)
+			}
+			return nil
+		}(); x != nil {
+			err = fmt.Errorf("section %d (%q): %w", i+1, title, x)
+		}
+		return err == nil
+	})
+	return err
+}
+
+// scrapeNodeField gets a node field, ensuring it is the expected type.
+func scrapeNodeField(s *goquery.Selection, name, typ string, array, optional bool) (*goquery.Selection, error) {
+	fields := s.Find(".field")
+	if fields.Length() == 0 {
+		return nil, fmt.Errorf("no fields found")
+	}
+
+	fields = fields.Filter(".field--name-field-" + name)
+	if fields.Length() == 0 {
+		if optional {
+			return fields, nil
+		}
+		return nil, fmt.Errorf("field %q not found", name)
+	}
+
+	if fields.Length() > 1 {
+		return nil, fmt.Errorf("multiple (%d) fields with name %q found, expected one", fields.Length(), name)
+	}
+	field := fields.First()
+
+	if !field.HasClass("field--type-" + typ) {
+		return nil, fmt.Errorf("field %q does not have type %q", name, typ)
+	}
+
+	var (
+		items   *goquery.Selection
+		isArray bool
+	)
+	switch {
+	case field.HasClass("field__items"):
+		items = field.Find(".field__item")
+		isArray = true
+	case field.HasClass("field__item"):
+		items = field
+	default:
+		if tmp := field.Find(".field__items"); tmp.Length() != 0 {
+			items = tmp.Find(".field__item")
+			isArray = true
+		} else {
+			items = field.Find(".field__item")
+		}
+	}
+	if !isArray && items.Length() > 1 {
+		return nil, fmt.Errorf("field %q is not an array, but found multiple field__item elements (wtf)", name)
+	}
+	if items.Length() == 0 {
+		return nil, fmt.Errorf("field %q does not contain field__item value (wtf)", name)
+	}
+	if array != isArray {
+		if array {
+			return nil, fmt.Errorf("field %q is not an array, expected one", name)
+		} else {
+			return nil, fmt.Errorf("field %q is an array, expected not", name)
+		}
+	}
+	return items, nil
 }

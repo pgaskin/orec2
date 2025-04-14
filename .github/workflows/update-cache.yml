@@ -22,5 +22,5 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-go@v5
       - run: git worktree add cache cache
-      - run: rm -f cache/* && go run ./scraper -cache-dir ./cache -cache-only
+      - run: rm -f cache/* && go run ./scraper -cache-dir ./cache
       - run: git -C cache add . && git -C cache -c user.name=github-actions -c user.email=github-actions@github.com commit -m 'update cache' && git -C cache push
