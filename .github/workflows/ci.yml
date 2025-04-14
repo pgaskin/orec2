@@ -36,11 +36,12 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
+      - run: git config --global user.name github-actions && git config --global user.email github-actions@github.com
       - run: git worktree add cache cache
       - run: rm -f cache/*
-        if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }} # we only want to clear the cached data if it's a scheduled or forced update... otherwise, just download anything new if needed
+        if: ${{ github.event_name != 'push' }} # we only want to clear the cached data if it's a scheduled or forced update... otherwise, just download anything new if needed
       - run: go run ./scraper -cache-dir ./cache
-      - run: git -C cache add . && { git -C cache diff --cached --quiet || git -C cache -c user.name=github-actions -c user.email=github-actions@github.com commit -m 'update cache' ; } && git -C cache push
+      - run: git -C cache add . && { git -C cache diff --cached --quiet || git -C cache commit -m "update cache (${{ github.event_name == 'push' && 'partial' || 'full' }}, reason=${{github.event_name}} scraper=$(git rev-parse HEAD))" ; } && git -C cache push
   scrape:
     needs: [test, cache]
     name: Scrape cached pages
@@ -53,10 +54,11 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
+      - run: git config --global user.name github-actions && git config --global user.email github-actions@github.com
       - run: git worktree add cache cache
       - run: git worktree add data data
       - run: rm -f data/*
       - run: cp schema/schema.proto data/data.proto
       - run: go run ./scraper -cache-dir ./cache -no-fetch -scrape -scrape-json ./data/data.json -scrape-textpb ./data/data.textpb -scrape-pb ./data/data.pb -pretty
-      - run: git -C data add . && { git -C data diff --cached --quiet || git -C data -c user.name=github-actions -c user.email=github-actions@github.com commit -m 'update data' ; } && git -C data push
+      - run: git -C data add . && { git -C data diff --cached --quiet || git -C data commit -m 'update data (reason=${{github.event_name}} scraper=$(git rev-parse HEAD) cache=$(git -C cache rev-parse HEAD))' ; } && git -C data push
   # TODO: build and deploy frontend
