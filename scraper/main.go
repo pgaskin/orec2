@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"bytes"
+	"cmp"
 	"context"
 	"crypto/sha1"
 	"encoding/hex"
@@ -49,7 +50,27 @@ var (
 	Nominatim    = flag.String("nominatim", "https://nominatim.geocoding.ai", "nominatim base url")
 	NominatimQPS = flag.Float64("nominatim-qps", 1, "maximum nominatim queries per second")
 	PlaceListing = flag.String("place-listing", "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing", "place listing url to start scraping from")
+	UserAgent    = flag.String("user-agent", defaultUserAgent(), "user agent for requests")
 )
+
+func defaultUserAgent() string {
+	var ua strings.Builder
+	ua.WriteString("ottawa-rec-scraper-bot/0.1")
+	if ghRepo := os.Getenv("GITHUB_REPOSITORY"); ghRepo != "" {
+		ghHost := cmp.Or(os.Getenv("GITHUB_SERVER_URL"), "https://github.com")
+		if _, x, ok := strings.Cut(ghHost, "://"); ok {
+			ghHost = x
+		}
+		ua.WriteString(" (")
+		ua.WriteString(ghHost)
+		ua.WriteString("/")
+		ua.WriteString(ghRepo)
+		ua.WriteString(")")
+	} else {
+		ua.WriteString(" (dev)")
+	}
+	return ua.String()
+}
 
 var nominatimLimit = sync.OnceValue(func() *rate.Limiter {
 	return rate.NewLimiter(rate.Limit(*NominatimQPS), 1)
@@ -77,6 +98,14 @@ func run(ctx context.Context) error {
 		if err := os.WriteFile(filepath.Join(*CacheDir, ".gitattributes"), []byte("* -text\n"), 0666); err != nil { // no line ending conversions
 			return fmt.Errorf("write cache dir gitattributes: %w", err)
 		}
+	}
+	if *NoFetch {
+		slog.Info("only using cached data")
+	} else {
+		slog.Info("will fetch data", "ua", *UserAgent)
+	}
+	if !*Scrape {
+		slog.Info("will not parse data")
 	}
 	var (
 		data      schema.Data
@@ -587,7 +616,7 @@ func fetch(ctx context.Context, u string, cacheType, cacheKey string, limiter *r
 			return nil, err
 		}
 
-		req.Header.Set("User-Agent", "ottawa-rec-scraper-bot/0.1 (dev)")
+		req.Header.Set("User-Agent", *UserAgent)
 
 		if limiter != nil {
 			if err := limiter.Wait(ctx); err != nil {
