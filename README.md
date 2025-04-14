@@ -23,11 +23,11 @@ The website is coming soon.
   - Normalized schedule group name.
   - Normalized schedule activity name.
   - Activity time range and weekday as an integer.
-- Overlapping schedules (e.g., holiday schedules) are not merged. These schedules are not consistently formatted as they are manually named and created, so I don't attempt to parse schedule time ranges. It is easier to just show everything and leave it to reader to decide.
+- Overlapping schedules (e.g., holiday schedules) are not merged. These schedules are not consistently formatted as they are manually named and created, so I don't attempt to parse schedule time ranges. It is easier to just show everything as originally formatted and leave it to the reader to decide.
 - Any potential parsing problems are included in an array of error messages for each facility.
 - A protobuf schema is used for maintainability, but it may be changed in backwards-incompatible ways if needed.
 
 **Similar things:**
 
 - [ottawapublicskating.ca](https://www.ottawapublicskating.ca/) is only for skating, has been inaccurate at times, has limited detail, and doesn't show schedule changes.
-- [claudielarouche.com/skating.html](https://claudielarouche.com/skating.html) and [claudielarouche.com/swim.html](https://claudielarouche.com/swim.html) have drop-in swimming and skating times, seems mostly okay, but is hard to skim and doesn't show schedule changes.
+- [claudielarouche.com] ([skate](https://claudielarouche.com/skating.html), [swim](https://claudielarouche.com/swim.html), [other](https://claudielarouche.com/ottawa.html)) has drop-in times, seems mostly okay, but is hard to skim and doesn't show schedule changes.
