@@ -36,6 +36,7 @@ import (
 
 var (
 	scrape       = flag.String("scrape", "", "parse data from pages into the specified file")
+	Pretty       = flag.Bool("pretty", false, "output pretty json")
 	noFetch      = flag.Bool("no-fetch", false, "don't fetch pages not in cache")
 	cacheDir     = flag.String("cache-dir", "", "cache pages in the specified directory")
 	nominatim    = flag.String("nominatim", "https://nominatim.geocoding.ai", "nominatim base url")
@@ -475,6 +476,9 @@ func run(ctx context.Context) error {
 		var buf bytes.Buffer
 		enc := json.NewEncoder(&buf)
 		enc.SetEscapeHTML(false)
+		if *Pretty {
+			enc.SetIndent("", "  ")
+		}
 		if err := enc.Encode(data); err != nil {
 			return fmt.Errorf("save data: %w", err)
 		}
