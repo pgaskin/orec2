@@ -21,6 +21,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
       - run: go test -v ./scraper
   cache:
     needs: [test]
@@ -32,6 +34,8 @@ jobs:
           filter: blob:none
           fetch-depth: 0
       - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
       - run: git worktree add cache cache
       - run: rm -f cache/*
         if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }} # we only want to clear the cached data if it's a scheduled or forced update... otherwise, just download anything new if needed
@@ -47,6 +51,8 @@ jobs:
           filter: blob:none
           fetch-depth: 0
       - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
       - run: git worktree add cache cache
       - run: git worktree add data data
       - run: go run ./scraper -cache-dir ./cache -no-fetch -scrape ./data/data.json -pretty

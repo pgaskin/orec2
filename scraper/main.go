@@ -132,8 +132,9 @@ func run(ctx context.Context) error {
 		}
 	}
 	var (
-		data Data
-		cur  = *placeListing
+		data      Data
+		geoAttrib = map[string]struct{}{}
+		cur       = *placeListing
 	)
 	for cur != "" {
 		doc, _, err := fetchPage(ctx, cur)
@@ -164,12 +165,15 @@ func run(ctx context.Context) error {
 			facility.ScheduleGroups = []ScheduleGroup{}
 			facility.Errors = []string{}
 
-			if lng, lat, hasLngLat, err := geocode(ctx, address); err != nil {
+			if lng, lat, attrib, hasLngLat, err := geocode(ctx, address); err != nil {
 				slog.Warn("failed to geocode place", "name", name, "address", address, "error", err)
 				facility.Errors = append(facility.Errors, fmt.Sprintf("failed to resolve address: %v", err))
 			} else if hasLngLat {
 				facility.Location.Latitude = &lat
 				facility.Location.Longitude = &lng
+				if attrib != "" {
+					geoAttrib[attrib] = struct{}{}
+				}
 			}
 
 			doc, date, err := fetchPage(ctx, u.String())
@@ -472,6 +476,11 @@ func run(ctx context.Context) error {
 		cur = nextURL.String()
 	}
 	if *scrape != "" {
+		data.Attribution = append(data.Attribution, "Compiled data © Patrick Gaskin. https://github.com/pgaskin/orec2")
+		data.Attribution = append(data.Attribution, "Facility information and schedules © City of Ottawa. "+*placeListing)
+		for _, attrib := range slices.Sorted(maps.Keys(geoAttrib)) {
+			data.Attribution = append(data.Attribution, "Address data "+strings.TrimPrefix(attrib, "Data "))
+		}
 		slog.Info("saving data to file", "name", *scrape)
 		var buf bytes.Buffer
 		enc := json.NewEncoder(&buf)
@@ -489,7 +498,7 @@ func run(ctx context.Context) error {
 	return nil
 }
 
-func geocode(ctx context.Context, addr string) (lng, lat float64, ok bool, err error) {
+func geocode(ctx context.Context, addr string) (lng, lat float64, attrib string, ok bool, err error) {
 	resp, err := fetchNominatim(ctx, &url.URL{
 		Path: "search",
 		RawQuery: url.Values{
@@ -498,12 +507,15 @@ func geocode(ctx context.Context, addr string) (lng, lat float64, ok bool, err e
 		}.Encode(),
 	})
 	if err != nil {
-		return 0, 0, false, err
+		return 0, 0, "", false, err
 	}
 	defer resp.Body.Close()
 
 	var obj struct {
-		Type     string
+		Type      string
+		Geocoding struct {
+			Attribution string
+		}
 		Features []struct {
 			Type     string
 			Geometry struct {
@@ -513,23 +525,23 @@ func geocode(ctx context.Context, addr string) (lng, lat float64, ok bool, err e
 		}
 	}
 	if err := json.NewDecoder(resp.Body).Decode(&obj); err != nil {
-		return 0, 0, false, fmt.Errorf("decode geocodejson: %w", err)
+		return 0, 0, "", false, fmt.Errorf("decode geocodejson: %w", err)
 	}
 	if obj.Type != "FeatureCollection" {
-		return 0, 0, false, fmt.Errorf("decode geocodejson: wrong type %q", obj.Type)
+		return 0, 0, "", false, fmt.Errorf("decode geocodejson: wrong type %q", obj.Type)
 	}
 	for _, f := range obj.Features {
 		if f.Type == "Feature" {
 			if f.Geometry.Type != "Point" {
-				return 0, 0, false, fmt.Errorf("decode geocodejson: wrong feature geometry type %q", f.Geometry.Type)
+				return 0, 0, "", false, fmt.Errorf("decode geocodejson: wrong feature geometry type %q", f.Geometry.Type)
 			}
 			if len(f.Geometry.Coordinates) != 2 {
-				return 0, 0, false, fmt.Errorf("decode geocodejson: wrong feature geometry coordinates length %d", len(f.Geometry.Coordinates))
+				return 0, 0, "", false, fmt.Errorf("decode geocodejson: wrong feature geometry coordinates length %d", len(f.Geometry.Coordinates))
 			}
-			return f.Geometry.Coordinates[0], f.Geometry.Coordinates[1], true, nil
+			return f.Geometry.Coordinates[0], f.Geometry.Coordinates[1], obj.Geocoding.Attribution, true, nil
 		}
 	}
-	return 0, 0, false, nil
+	return 0, 0, "", false, nil
 }
 
 func fetchPage(ctx context.Context, u string) (*goquery.Document, time.Time, error) {
