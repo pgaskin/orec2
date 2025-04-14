@@ -19,6 +19,7 @@ import (
 	"os"
 	"path/filepath"
 	"slices"
+	"strconv"
 	"strings"
 	"sync"
 	"time"
@@ -63,6 +64,8 @@ func main() {
 // enriched by the scraper rather than coming directly from the source page, and
 // are set on a best-effort basis (if an error occurs, it is ignored)
 
+// note: all parsing errs on the side of safety (not removing unknown information, not parsing partial information)
+
 type Data struct {
 	Facilities  []Facility `json:"facilities"`
 	Attribution []string   `json:"_attribution"`
@@ -92,21 +95,22 @@ type FacilityLocation struct {
 
 type ScheduleGroup struct {
 	Label           string     `json:"lbl"`
-	Title           string     `json:"_title"`                // parsed out from the label and normalized
+	Title           string     `json:"_title"`                // for display and filtering, parsed out from the label and normalized, title case
 	ScheduleChanges string     `json:"schedule_changes_html"` // raw html
 	Schedules       []Schedule `json:"schedules"`
 }
 
 type Schedule struct {
 	Caption    string             `json:"cap"`
-	Title      string             `json:"_title"` // parsed out from the caption and normalized (i.e., without facility name or date range)
+	Name       string             `json:"_name"` // for filtering, parsed out from the caption and normalized (i.e., without facility name or date range), lowercase
 	DayHeaders []string           `json:"day_headers"`
 	Activities []ScheduleActivity `json:"activities"`
 }
 
 type ScheduleActivity struct {
 	Label string        `json:"lbl"`
-	Days  [][]TimeRange `json:"days"` // [len(DayHeaders)][]
+	Name  string        `json:"_name"` // for filtering, cleaned up and normalized, lowercase
+	Days  [][]TimeRange `json:"days"`  // [len(DayHeaders)][]
 }
 
 type TimeRange struct {
@@ -175,8 +179,7 @@ func run(ctx context.Context) error {
 				slog.Info("got place", "name", name)
 			}
 			if !date.IsZero() {
-				ts := date.Unix()
-				facility.Source.Date = &ts
+				facility.Source.Date = ptrTo(date.Unix())
 			}
 			if *scrape == "" {
 				return nil
@@ -249,6 +252,200 @@ func run(ctx context.Context) error {
 						}
 					} else if scheduleChangeH.Length() != 0 {
 						facility.Errors = append(facility.Errors, fmt.Sprintf("parse schedule changes for schedule group %q: multiple selector matches found", label))
+					}
+
+				schedule:
+					for _, table := range content.Find("table").EachIter() {
+						var schedule Schedule
+
+						schedule.Caption = strings.Join(strings.Fields(table.Find("caption").First().Text()), " ")
+
+						name := strings.Map(func(r rune) rune {
+							if unicode.Is(unicode.Pd, r) {
+								return '-'
+							}
+							return unicode.ToLower(r)
+						}, norm.NFKC.String(schedule.Caption))
+						if x, ok := strings.CutPrefix(name, strings.ToLower(facility.Name)); ok {
+							name = x
+						} else if x, y, ok := strings.Cut(name, "-"); ok && strings.HasPrefix(strings.ToLower(facility.Name), x) {
+							name = strings.TrimSpace(y) // e.g., "Jack Purcell Community Centre" with "Jack Purcell - swim and aquafit - January 6 to April 6"
+
+						}
+						name = strings.TrimSpace(strings.TrimPrefix(strings.TrimSpace(name), "-"))
+						for m := range 12 {
+							if x, _, ok := strings.Cut(name, "- "+strings.ToLower(time.Month(m + 1).String())[:3]); ok {
+								name = x
+								break
+							}
+						}
+						name = strings.TrimSpace(strings.TrimSuffix(name, " schedule"))
+						schedule.Name = name
+
+						// TODO: refactor
+						for _, row := range table.Find("tr").EachIter() {
+							cells := row.Find("th,td")
+							if schedule.DayHeaders == nil {
+								for i, cell := range cells.EachIter() {
+									if i != 0 {
+										schedule.DayHeaders = append(schedule.DayHeaders, strings.TrimSpace(cell.Text()))
+									}
+								}
+							} else {
+								var activity ScheduleActivity
+								if cells.Length() != len(schedule.DayHeaders)+1 {
+									facility.Errors = append(facility.Errors, fmt.Sprintf("failed to parse schedule %q (group %q): row size mismatch", schedule.Caption, group.Label))
+									continue schedule
+								}
+								for i, cell := range cells.EachIter() {
+									if i == 0 {
+										activity.Label = strings.Join(strings.Fields(cell.Text()), " ")
+										name := strings.Map(func(r rune) rune {
+											if unicode.Is(unicode.Pd, r) {
+												return '-'
+											}
+											return unicode.ToLower(r)
+										}, norm.NFKC.String(activity.Label))
+										name = strings.Join(strings.Fields(name), " ")
+										name = strings.ReplaceAll(name, "swimming", "swim")
+										name = strings.ReplaceAll(name, "aqualite", "aqua lite")
+										name = strings.ReplaceAll(name, "skating", "skate")
+										name = strings.ReplaceAll(name, "pick up", "pick-up")
+										name = strings.ReplaceAll(name, "sport ", "sports ")
+										name = strings.ReplaceAll(name, "®", "")
+										name = strings.ReplaceAll(name, "50 +", "50+")
+										name = strings.ReplaceAll(name, "18 +", "18+")
+										name = strings.ReplaceAll(name, "16 +", "16+")
+										name = strings.ReplaceAll(name, "- 50+", "50+")
+										name = strings.ReplaceAll(name, "- 18+", "18+")
+										name = strings.ReplaceAll(name, "- 16+", "16+")
+										name, _, _ = strings.Cut(name, " *")
+										name, reduced := strings.CutPrefix(name, "reduced ")
+										if !reduced {
+											name, reduced = strings.CutSuffix(name, "- reduced")
+										}
+										if reduced {
+											name += " - reduced capacity"
+										}
+										activity.Name = name
+									} else {
+										hdr := schedule.DayHeaders[i-1]
+										wkday := time.Weekday(-1)
+										for wd := range 7 {
+											if strings.Contains(strings.ToLower(hdr), strings.ToLower(time.Weekday(wd).String())[:3]) {
+												if wkday == -1 {
+													wkday = time.Weekday(wd)
+												} else {
+													slog.Warn("multiple weekday matches for header, ignoring", "schedule", schedule.Caption, "header", hdr)
+													wkday = -1 // multiple matches
+													break
+												}
+											}
+										}
+										if wkday == -1 {
+											facility.Errors = append(facility.Errors, fmt.Sprintf("warning: failed to parse weekday from header %q", hdr))
+										}
+										times := []TimeRange{}
+										for t := range strings.FieldsFuncSeq(cell.Text(), func(r rune) bool {
+											return r == ','
+										}) {
+											tnorm := strings.Map(func(r rune) rune {
+												if unicode.IsSpace(r) || r == '\u200b' {
+													return -1
+												}
+												return unicode.ToLower(r)
+											}, t)
+											if tnorm == "n/a" {
+												continue
+											}
+											var trange TimeRange
+											trange.Label = strings.TrimSpace(t)
+											if wkday != -1 {
+												trange.Weekday = ptrTo(int(wkday))
+											}
+											if t1, t2, ok := strings.Cut(tnorm, "-"); ok && !strings.Contains(t2, "-") {
+												var (
+													tryParseTime12h = func(s string) (hh, mm int, hasAMPM, isPM, ok bool) {
+														s = strings.Map(func(r rune) rune {
+															if unicode.IsSpace(r) {
+																return -1
+															}
+															return unicode.ToLower(r)
+														}, s)
+														switch s {
+														case "midnight":
+															hh, mm = 0, 0
+															hasAMPM, isPM = true, true
+															ok = true
+														case "noon":
+															hh, mm = 12, 0
+															hasAMPM, isPM = true, true
+															ok = true
+														default:
+															s, isPM = strings.CutSuffix(s, "pm")
+															if !isPM {
+																s, hasAMPM = strings.CutSuffix(s, "am")
+															} else {
+																hasAMPM = true
+															}
+															shh, smm, hasMM := strings.Cut(s, ":")
+															if !hasMM {
+																smm = "00"
+															}
+															if nh, err := strconv.ParseInt(shh, 10, 0); err == nil && nh > 0 && nh <= 12 {
+																if hasAMPM {
+																	if isPM {
+																		nh += 12
+																	} else if nh == 12 {
+																		nh = 0
+																	}
+																}
+																if nm, err := strconv.ParseInt(smm, 10, 0); err == nil && nm >= 0 && nm < 60 {
+																	hh = int(nh)
+																	mm = int(nm)
+																	ok = true
+																}
+															}
+														}
+														return
+													}
+													h1, m1, ap1, pm1, ok1 = tryParseTime12h(t1)
+													h2, m2, ap2, pm2, ok2 = tryParseTime12h(t2)
+												)
+												if ok1 && ok2 && pm1 && !pm2 {
+													ok1, ok2 = false, false // invalid time range with am/pm at start and none at end
+												}
+												if ok1 && ok2 {
+													if ap2 && !ap1 && pm2 {
+														h1 += 12 // time range with pm at end and no am/pm at start
+													}
+													n1 := h1*60 + m1
+													n2 := h2*60 + m2
+													if n2 < n1 {
+														n1 += 24 * 60 // next day
+													}
+													trange.Start = ptrTo(n1)
+													trange.End = ptrTo(n2)
+												}
+												if !ok1 || !ok2 {
+													slog.Warn("failed to parse time range", "range", t)
+													facility.Errors = append(facility.Errors, fmt.Sprintf("warning: failed to parse time range %q", t))
+												}
+											}
+											times = append(times, trange)
+										}
+										activity.Days = append(activity.Days, times)
+									}
+								}
+								schedule.Activities = append(schedule.Activities, activity)
+							}
+						}
+						if len(schedule.DayHeaders) == 0 || len(schedule.Activities) == 0 {
+							facility.Errors = append(facility.Errors, fmt.Sprintf("failed to parse schedule %q (group %q): invalid table layout", schedule.Caption, group.Label))
+							continue schedule
+						}
+
+						group.Schedules = append(group.Schedules, schedule)
 					}
 
 					facility.ScheduleGroups = append(facility.ScheduleGroups, group)
@@ -637,4 +834,8 @@ func scrapeNodeField(s *goquery.Selection, name, typ string, array, optional boo
 		}
 	}
 	return items, nil
+}
+
+func ptrTo[T any](x T) *T {
+	return &x
 }
