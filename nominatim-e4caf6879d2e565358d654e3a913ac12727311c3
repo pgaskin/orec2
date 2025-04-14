@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=380+Springfield+Road%0AOttawa+ON+K1M+0K7%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cec3cb4d3b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:35 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=nZ6mBGE7JPnendLZcBxYQRNL0Edn%2BfUSdB67yIzMRoC4wb2kq9qZAPFaqmfuIJ4AVoJp1kc2ZtcLK4Dcwp94rT7Fg7l0tHJVTWKlzBIUL%2BX4lzZrbyHFMembOJGNnZAjvUyUnT%2BeWGQE"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6345&min_rtt=5644&rtt_var=906&sent=425&recv=310&lost=0&retrans=0&sent_bytes=110921&recv_bytes=11864&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=100255&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"380 Springfield Road\nOttawa ON K1M 0K7\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334574919,"osm_type":"way","osm_id":249387965,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25005, 380, Springfield Road, Rockcliffe Park, Rideau-Rockcliffe, Ottawa, Eastern Ontario, Ontario, K1M 1C1, Canada","name":"25005"}},"geometry":{"type": "Point","coordinates": [-75.67815515, 45.4507679]}},{"type":"Feature","properties":{"geocoding":{"place_id":334570109,"osm_type":"way","osm_id":68586564,"osm_key":"amenity","osm_value":"library","type":"house","label":"Ottawa Public Library - Rockcliffe Park Branch, 380, Springfield Road, Rockcliffe Park, Rideau-Rockcliffe, Ottawa, Eastern Ontario, Ontario, K1M 1C1, Canada","name":"Ottawa Public Library - Rockcliffe Park Branch"}},"geometry":{"type": "Point","coordinates": [-75.67870446969697, 45.450717999999995]}},{"type":"Feature","properties":{"geocoding":{"place_id":334570120,"osm_type":"node","osm_id":7215289764,"osm_key":"amenity","osm_value":"police","type":"house","label":"Ottawa Police - Rockliffe/Lowertown Community Police Centre, 380, Springfield Road, Rockcliffe Park, Rideau-Rockcliffe, Ottawa, Eastern Ontario, Ontario, K1M 1C1, Canada","name":"Ottawa Police - Rockliffe/Lowertown Community Police Centre"}},"geometry":{"type": "Point","coordinates": [-75.6786829, 45.4508211]}}]}

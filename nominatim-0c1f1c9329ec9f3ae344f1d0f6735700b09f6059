@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=100+Brewer+Way%0AOttawa+ON+K1S+5T1%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301ccb98e043b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:12 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=wCYf9kBNMgzfo4dw2tE6Hcs8hrBJe5tQMJ0Ulxk7utYdoukpcvawDKlQDyCYlbFPX2%2B0UuoCn4r3c0TlDSlF8KU8IMubPbSHnYzdHlsStfzk0xDsxmVfcblMHS%2BFDAR3zirf8rcJ8W1L"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6128&min_rtt=5663&rtt_var=787&sent=79&recv=59&lost=0&retrans=0&sent_bytes=21906&recv_bytes=3456&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=16922&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"100 Brewer Way\nOttawa ON K1S 5T1\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334487892,"osm_type":"way","osm_id":304927118,"osm_key":"amenity","osm_value":"parking","type":"house","label":"4910, 100, Brewer Way, Capital, Ottawa, Eastern Ontario, Ontario, K1S 5R2, Canada","name":"4910"}},"geometry":{"type": "Point","coordinates": [-75.68890593731649, 45.3858667]}},{"type":"Feature","properties":{"geocoding":{"place_id":334473663,"osm_type":"way","osm_id":10614029,"osm_key":"amenity","osm_value":"parking","type":"house","label":"4943, 100, Brewer Way, Capital, Ottawa, Eastern Ontario, Ontario, K1S 5R2, Canada","name":"4943"}},"geometry":{"type": "Point","coordinates": [-75.6908413732145, 45.38783805]}},{"type":"Feature","properties":{"geocoding":{"place_id":334473211,"osm_type":"way","osm_id":10614252,"osm_key":"amenity","osm_value":"parking","type":"house","label":"4986, 100, Brewer Way, Capital, Ottawa, Eastern Ontario, Ontario, K1S 5R2, Canada","name":"4986"}},"geometry":{"type": "Point","coordinates": [-75.69076594819347, 45.3896337]}},{"type":"Feature","properties":{"geocoding":{"place_id":334473337,"osm_type":"way","osm_id":68999423,"osm_key":"leisure","osm_value":"swimming_pool","type":"house","label":"Brewer Pool, 100, Brewer Way, Capital, Ottawa, Eastern Ontario, Ontario, K1S 5R2, Canada","name":"Brewer Pool"}},"geometry":{"type": "Point","coordinates": [-75.69191169965909, 45.389347]}},{"type":"Feature","properties":{"geocoding":{"place_id":334476257,"osm_type":"way","osm_id":548053199,"osm_key":"leisure","osm_value":"playground","type":"house","label":"Splash Pad - Brewer Park, 100, Brewer Way, Capital, Ottawa, Eastern Ontario, Ontario, K1S 5R2, Canada","name":"Splash Pad - Brewer Park"}},"geometry":{"type": "Point","coordinates": [-75.68855233270408, 45.38871445]}}]}

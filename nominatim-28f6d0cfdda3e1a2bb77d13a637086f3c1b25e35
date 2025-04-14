@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=70+Aird+Place%0AOttawa+ON+K2L+4C9%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cdd05f873b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:56 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=IO1e6fkyPgllmLM%2FHgk%2BJnkUVq1mNliGc9Q%2FGf4VRLuZXX9M5GQOPnEs6mYlZGFYU3jtEAdSe3TSf6AksqbkjfR9Pt40k7uEljR792NTFqtqOM9j5wr1Rh4adxpSN4cELPgyDzcw%2FqZJ"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=12575&min_rtt=5648&rtt_var=12365&sent=264&recv=194&lost=0&retrans=0&sent_bytes=70357&recv_bytes=7886&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=61547&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"70 Aird Place\nOttawa ON K2L 4C9\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334297104,"osm_type":"way","osm_id":233810032,"osm_key":"amenity","osm_value":"community_centre","type":"house","label":"Kanata Leisure Cenre, 70, Aird Place, Katimavik, Kanata, Kanata South, Ottawa, Eastern Ontario, Ontario, K2L 4H8, Canada","name":"Kanata Leisure Cenre"}},"geometry":{"type": "Point","coordinates": [-75.90201756144307, 45.309083650000005]}},{"type":"Feature","properties":{"geocoding":{"place_id":334297030,"osm_type":"way","osm_id":235389883,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25015, 70, Aird Place, Katimavik, Kanata, Kanata South, Ottawa, Eastern Ontario, Ontario, K2K 2N2, Canada","name":"25015"}},"geometry":{"type": "Point","coordinates": [-75.89983120987404, 45.311679850000004]}},{"type":"Feature","properties":{"geocoding":{"place_id":334297042,"osm_type":"way","osm_id":68609516,"osm_key":"leisure","osm_value":"sports_centre","type":"house","label":"Kanata Leisure Centre and Wave Pool, 70, Aird Place, Katimavik, Kanata, Kanata South, Ottawa, Eastern Ontario, Ontario, K2K 2N2, Canada","name":"Kanata Leisure Centre and Wave Pool"}},"geometry":{"type": "Point","coordinates": [-75.8991301, 45.311420350000006]}},{"type":"Feature","properties":{"geocoding":{"place_id":334298196,"osm_type":"node","osm_id":2453825514,"osm_key":"leisure","osm_value":"swimming_pool","type":"house","label":"Kanata Wave Pool, 70, Aird Place, Katimavik, Kanata, Kanata South, Ottawa, Eastern Ontario, Ontario, K2K 2N2, Canada","name":"Kanata Wave Pool"}},"geometry":{"type": "Point","coordinates": [-75.8989167, 45.3116167]}}]}

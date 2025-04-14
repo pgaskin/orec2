@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=1520+Caldwell+Avenue%0AOttawa+ON+K1Z+8H5%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301ccd8d9033b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:17 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=tlx%2FyXMWZGR5vXyxYBuFk6YuiqQ81%2Fqf6LSEj%2BQgwbGpArd%2Fyfvl6Qf6akYJRls6vtZdl0ZPrjgB6WjvIwQzSMmPNdBKXkcPh68c%2BmWD2z1z3bj8OxTksgKvbozqr5fPAc9YrOWqdZJL"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6641&min_rtt=5648&rtt_var=1591&sent=101&recv=80&lost=0&retrans=0&sent_bytes=27979&recv_bytes=3940&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=21817&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"1520 Caldwell Avenue\nOttawa ON K1Z 8H5\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334678090,"osm_type":"way","osm_id":206886425,"osm_key":"leisure","osm_value":"swimming_pool","type":"house","label":"Wading Pool - Bellevue Manor, 1520, Caldwell Avenue, Caldwell Community, Carlington, River, Ottawa, Eastern Ontario, Ontario, K2C 4A2, Canada","name":"Wading Pool - Bellevue Manor"}},"geometry":{"type": "Point","coordinates": [-75.73888688445848, 45.3722462]}},{"type":"Feature","properties":{"geocoding":{"place_id":334688115,"osm_type":"way","osm_id":482740221,"osm_key":"leisure","osm_value":"sports_centre","type":"house","label":"Carlington Recreation Centre, 1520, Caldwell Avenue, Caldwell Community, Carlington, River, Ottawa, Eastern Ontario, Ontario, K2C 4A2, Canada","name":"Carlington Recreation Centre"}},"geometry":{"type": "Point","coordinates": [-75.73911572271979, 45.3724525]}}]}

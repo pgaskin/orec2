@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=1765+Merivale+Road%0AOttawa+ON+K2G+1E1%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cd9e5f003b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:48 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=iyBJF2rU5lQItctt1%2Fmwvs8tjZiDdPf%2BXDfZk%2B4nlJBR1BDpatBT9YLVpNwOMr%2F6VpJ84sKqVWtpftDN7njJKbaDD%2FZQhr3SXWeyv%2BbK5SLVmtGvsLRmodJGIt3GEdKD7klC024rMTY%2B"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=7136&min_rtt=5648&rtt_var=2382&sent=228&recv=172&lost=0&retrans=0&sent_bytes=60807&recv_bytes=7072&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=53359&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"1765 Merivale Road\nOttawa ON K2G 1E1\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334684786,"osm_type":"way","osm_id":68610019,"osm_key":"leisure","osm_value":"ice_rink","type":"house","label":"Merivale Centennial Arena, 1765, Merivale Road, Borden Farm, Knoxdale-Merivale, Nepean, Ottawa, Eastern Ontario, Ontario, K2G 1E1, Canada","name":"Merivale Centennial Arena"}},"geometry":{"type": "Point","coordinates": [-75.72651145, 45.3419566]}},{"type":"Feature","properties":{"geocoding":{"place_id":334692214,"osm_type":"way","osm_id":5004849,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25193, 1765, Merivale Road, Borden Farm, Knoxdale-Merivale, Nepean, Ottawa, Eastern Ontario, Ontario, K2G 1E1, Canada","name":"25193"}},"geometry":{"type": "Point","coordinates": [-75.72735325363556, 45.341623049999995]}}]}

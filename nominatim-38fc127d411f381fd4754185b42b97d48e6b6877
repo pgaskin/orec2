@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=56+Fieldrow+Street%0AOttawa+ON+K2G+2Y7%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cd09b8f33b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:24 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=xLjiQmCnfsH5MBm0tsXjsHI4NmhmMvPWYEXkpbzQYSYee69KLvNuxK7SXC2Tj4UXcHK65dd4Uh5wvtNLPawc0LN3qlBUQFAjFg5Y8pMxIZn%2B0Fh3YNV%2FDmY3BTpL40IM8bkbzdIMYClm"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=7035&min_rtt=5648&rtt_var=2023&sent=130&recv=108&lost=0&retrans=0&sent_bytes=35087&recv_bytes=4662&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=29430&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"56 Fieldrow Street\nOttawa ON K2G 2Y7\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334702433,"osm_type":"way","osm_id":76505847,"osm_key":"highway","osm_value":"residential","type":"street","label":"Fieldrow Street, Meadowlands, College, Nepean, Ottawa, Eastern Ontario, Ontario, K2G 2Y7, Canada","name":"Fieldrow Street"}},"geometry":{"type": "Point","coordinates": [-75.7416414, 45.343684]}}]}

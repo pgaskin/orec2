@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=15+Rockcliffe+Way%0AOttawa+ON+K1M+1A9%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301ce0118193b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:04 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=t1jaB2FhRy%2Bi2KBuUz9Wh3HvZ6nT0c%2BwDKzvHZarXW7vhNSQjCQc8irt6Fx46XGkk5cHEcc%2FQQ4SFNNwbPt7jZg7dBtJstYoAVs03lUNZbdZDh0QQnHrtal0P0fhWPMFUQkJwji%2BmT7k"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=7466&min_rtt=5648&rtt_var=2978&sent=293&recv=213&lost=0&retrans=0&sent_bytes=77592&recv_bytes=8610&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=69203&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"15 Rockcliffe Way\nOttawa ON K1M 1A9\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334575480,"osm_type":"way","osm_id":58597937,"osm_key":"leisure","osm_value":"pitch","type":"house","label":"Lindenlea Tennis Club, 15, Rockcliffe Way, Rockcliffe Park, Rideau-Rockcliffe, Ottawa, Eastern Ontario, Ontario, K1M 1B2, Canada","name":"Lindenlea Tennis Club"}},"geometry":{"type": "Point","coordinates": [-75.6757232, 45.444229449999995]}},{"type":"Feature","properties":{"geocoding":{"place_id":334572342,"osm_type":"way","osm_id":549847896,"osm_key":"amenity","osm_value":"parking","type":"house","label":"4960, 15, Rockcliffe Way, Rockcliffe Park, Rideau-Rockcliffe, Ottawa, Eastern Ontario, Ontario, K1M 1B2, Canada","name":"4960"}},"geometry":{"type": "Point","coordinates": [-75.67472194999999, 45.44459585]}},{"type":"Feature","properties":{"geocoding":{"place_id":334570445,"osm_type":"way","osm_id":473654790,"osm_key":"amenity","osm_value":"community_centre","type":"house","label":"Lindenlea-Community Centre, 15, Rockcliffe Way, Rockcliffe Park, Rideau-Rockcliffe, Ottawa, Eastern Ontario, Ontario, K1M 1B2, Canada","name":"Lindenlea-Community Centre"}},"geometry":{"type": "Point","coordinates": [-75.67492941512177, 45.444555199999996]}},{"type":"Feature","properties":{"geocoding":{"place_id":334570851,"osm_type":"node","osm_id":4683847114,"osm_key":"place","osm_value":"house","type":"house","label":"15, Rockcliffe Way, Rockcliffe Park, Rideau-Rockcliffe, Ottawa, Eastern Ontario, Ontario, K1M 1B2, Canada"}},"geometry":{"type": "Point","coordinates": [-75.676223, 45.444902]}}]}

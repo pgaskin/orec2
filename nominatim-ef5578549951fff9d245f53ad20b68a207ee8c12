@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=10+McKitrick+Drive%0AOttawa+ON+K2L+1T7%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cdb11c763b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:51 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=zL%2FNJ572rnacRQCMU7hLRNgbRl%2FWcKcl5IXPM%2FxwxW9Z6K%2Bffr7PGRvfiuwZH5Ztg8sp2xMLhc7HeG9Lf6clpKZTf%2FKaZH9Rl%2F61jkGYLxaLAh5g4%2FmXCrBUvBwUbjYAjBP0jyiHBT3x"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=9285&min_rtt=5648&rtt_var=6794&sent=243&recv=183&lost=0&retrans=0&sent_bytes=64280&recv_bytes=7399&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=56286&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"10 McKitrick Drive\nOttawa ON K2L 1T7\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334304500,"osm_type":"way","osm_id":68609669,"osm_key":"leisure","osm_value":"ice_rink","type":"house","label":"Jack Charron Arena (Kanata), 10, McKitrick Drive, Glen Cairn, Kanata, Kanata South, Ottawa, Eastern Ontario, Ontario, K2L 1T7, Canada","name":"Jack Charron Arena (Kanata)"}},"geometry":{"type": "Point","coordinates": [-75.88391615434688, 45.293604650000006]}},{"type":"Feature","properties":{"geocoding":{"place_id":334304957,"osm_type":"way","osm_id":549775914,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25050, 10, McKitrick Drive, Glen Cairn, Kanata, Kanata South, Ottawa, Eastern Ontario, Ontario, K2L 1T7, Canada","name":"25050"}},"geometry":{"type": "Point","coordinates": [-75.88358695138804, 45.29383235]}},{"type":"Feature","properties":{"geocoding":{"place_id":334303801,"osm_type":"way","osm_id":549775915,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25048, 10, McKitrick Drive, Glen Cairn, Kanata, Kanata South, Ottawa, Eastern Ontario, Ontario, K2L 1T7, Canada","name":"25048"}},"geometry":{"type": "Point","coordinates": [-75.88423520256843, 45.2934316]}},{"type":"Feature","properties":{"geocoding":{"place_id":334304490,"osm_type":"way","osm_id":307217636,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25049, 10, McKitrick Drive, Glen Cairn, Kanata, Kanata South, Ottawa, Eastern Ontario, Ontario, K2L 1T7, Canada","name":"25049"}},"geometry":{"type": "Point","coordinates": [-75.88334625895097, 45.2934093]}},{"type":"Feature","properties":{"geocoding":{"place_id":334306610,"osm_type":"node","osm_id":4665850236,"osm_key":"place","osm_value":"house","type":"house","label":"10, McKitrick Drive, Glen Cairn, Kanata, Kanata South, Ottawa, Eastern Ontario, Ontario, K2L 1T7, Canada"}},"geometry":{"type": "Point","coordinates": [-75.883906, 45.293594]}}]}

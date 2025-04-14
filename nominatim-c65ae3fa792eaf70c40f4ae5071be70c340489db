@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=3080+Richmond+Road%0AOttawa+ON+K2B+7J5%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cd44bc263b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:34 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=qwRNLf8bKgy9XliBKDDhzBUYQ1opK0xO%2F%2Fka%2FxgHvEgYlPDNABaJmq2yXUTbWRkekiEFv%2BUTYNqxi%2BAYEU24qykelJewqd5E2i4dKNlqUOgoFcaFduNi%2BP5YTma3m%2BVNviBFCss5m%2BM4"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6238&min_rtt=5648&rtt_var=308&sent=167&recv=135&lost=0&retrans=0&sent_bytes=45022&recv_bytes=5628&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=39523&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"3080 Richmond Road\nOttawa ON K2B 7J5\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334365783,"osm_type":"way","osm_id":473332081,"osm_key":"building","osm_value":"detached","type":"house","label":"Fairfields, 3080, Richmond Road, Fairfield Heights, Bay, Nepean, Ottawa, Eastern Ontario, Ontario, K2B 6M7, Canada","name":"Fairfields"}},"geometry":{"type": "Point","coordinates": [-75.80208345, 45.349052]}}]}

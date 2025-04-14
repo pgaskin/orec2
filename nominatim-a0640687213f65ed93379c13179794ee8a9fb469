@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=260+Sunnyside+Avenue%0AOttawa+ON+K1S+0R7%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301ce78c9c53b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:23 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=mSZB%2Bo6WEswQvtjA10FykEtRuKrgbQbIBjbspYwVdT2%2F%2BcCNNFw3EFaz%2BGDmcvd6mEMTabMF9D4679AdNSuNP4zln0clCX6kEM9PEvQBkhIe%2Bv2VlVMOhO0Qj0Iz7xoiAkBt9wyVBkcl"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6303&min_rtt=5644&rtt_var=950&sent=374&recv=268&lost=0&retrans=0&sent_bytes=97611&recv_bytes=10605&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=88463&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"260 Sunnyside Avenue\nOttawa ON K1S 0R7\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334489730,"osm_type":"way","osm_id":479743366,"osm_key":"building","osm_value":"public","type":"house","label":"Ottawa South Community Centre, 260, Sunnyside Avenue, Rideau Gardens, Old Ottawa South, Capital, Ottawa, Eastern Ontario, Ontario, K1S 0R4, Canada","name":"Ottawa South Community Centre"}},"geometry":{"type": "Point","coordinates": [-75.68178062613637, 45.394669500000006]}},{"type":"Feature","properties":{"geocoding":{"place_id":334493079,"osm_type":"node","osm_id":5775094577,"osm_key":"tourism","osm_value":"artwork","type":"house","label":"For Everyone A Garden, 260, Sunnyside Avenue, Rideau Gardens, Old Ottawa South, Capital, Ottawa, Eastern Ontario, Ontario, K1S 0R4, Canada","name":"For Everyone A Garden"}},"geometry":{"type": "Point","coordinates": [-75.6816883, 45.3947227]}}]}

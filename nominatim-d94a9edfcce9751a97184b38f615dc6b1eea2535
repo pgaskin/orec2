@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=1295+Colonial+Road%0AOttawa+ON+K4B+1N1%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301ce45d9123b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:15 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=ao%2Ba6HtRXbSLqiXEhJJ0FXJY%2F8oKyKwEnp9NNuc0NPO%2FbSyAn9vQsDcs8tb57naQQikGepv84N7mVfGu7dnZLIvqULsVLbBpZ8IddKvXHdMRcIzFNjApiWf7X7eehhDn%2BwTcgvZ7tBfw"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6726&min_rtt=5648&rtt_var=1015&sent=342&recv=238&lost=0&retrans=0&sent_bytes=89998&recv_bytes=9788&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=80320&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"1295 Colonial Road\nOttawa ON K4B 1N1\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334752965,"osm_type":"way","osm_id":364586435,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25122, 1295, Colonial Road, Orléans South-Navan, Ottawa, Eastern Ontario, Ontario, K4B 1N1, Canada","name":"25122"}},"geometry":{"type": "Point","coordinates": [-75.42177317078011, 45.42108075]}}]}

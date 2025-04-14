@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=107+Chesterton+Drive%0AOttawa+ON+K2E+5T6%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cd6b0d4d3b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:40 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=fvgXl8LPO4Av%2FP5EvJgJXn84cDwkCRATWa3SWl35tAD9dPsvWzMWNWYmtsas6EAJhLYT7Foym7cKUE0II7rfMoqrs67nesbrg6vxzKbfz8LThNvzxOxIvMTZ%2BG1ODpjoGFzJv%2B4Jzpmv"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6069&min_rtt=5648&rtt_var=183&sent=195&recv=150&lost=0&retrans=0&sent_bytes=51915&recv_bytes=6253&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=45114&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"107 Chesterton Drive\nOttawa ON K2E 5T6\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334677369,"osm_type":"way","osm_id":230020095,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25116, 107, Chesterton Drive, Borden Farm, Knoxdale-Merivale, Nepean, Ottawa, Eastern Ontario, Ontario, K2E 6M7, Canada","name":"25116"}},"geometry":{"type": "Point","coordinates": [-75.72107583737792, 45.35211525]}},{"type":"Feature","properties":{"geocoding":{"place_id":334677357,"osm_type":"way","osm_id":40452132,"osm_key":"leisure","osm_value":"pitch","type":"house","label":"General Burns Tennis Club, 107, Chesterton Drive, Borden Farm, Knoxdale-Merivale, Nepean, Ottawa, Eastern Ontario, Ontario, K2E 6S9, Canada","name":"General Burns Tennis Club"}},"geometry":{"type": "Point","coordinates": [-75.7189468, 45.35174515]}},{"type":"Feature","properties":{"geocoding":{"place_id":334680443,"osm_type":"way","osm_id":440678878,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25115, 107, Chesterton Drive, Borden Farm, Knoxdale-Merivale, Nepean, Ottawa, Eastern Ontario, Ontario, K2E 6S9, Canada","name":"25115"}},"geometry":{"type": "Point","coordinates": [-75.71930042047246, 45.3520557]}},{"type":"Feature","properties":{"geocoding":{"place_id":334675984,"osm_type":"way","osm_id":473209799,"osm_key":"building","osm_value":"civic","type":"house","label":"107, Chesterton Drive, Borden Farm, Knoxdale-Merivale, Nepean, Ottawa, Eastern Ontario, Ontario, K2E 6S9, Canada"}},"geometry":{"type": "Point","coordinates": [-75.7194813816568, 45.351815]}},{"type":"Feature","properties":{"geocoding":{"place_id":334680469,"osm_type":"way","osm_id":314666134,"osm_key":"leisure","osm_value":"swimming_pool","type":"house","label":"Wading Pool - General Burns, 107, Chesterton Drive, Borden Farm, Knoxdale-Merivale, Nepean, Ottawa, Eastern Ontario, Ontario, K2E 6M7, Canada","name":"Wading Pool - General Burns"}},"geometry":{"type": "Point","coordinates": [-75.72068206545455, 45.351720650000004]}}]}

@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=2+Eaton+Street%0AOttawa+ON+K2H+9P1%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cd383c273b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:32 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=kQ0TGGcTPE8MxptfGg9csWmdxbURncb39GBtRIV1Jk7%2FXfY8Dg5CLeKjbudRNNOBJJ5mCF5YuQ6VBqKqb4j8B2SAdQI%2BEaCw3uq5wD1wRxjbvi9wXrmIZZ5XoM0vK38xDp0iZ7pDDzzZ"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6265&min_rtt=5648&rtt_var=458&sent=159&recv=131&lost=0&retrans=0&sent_bytes=42745&recv_bytes=5433&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=37129&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"2 Eaton Street\nOttawa ON K2H 9P1\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334364853,"osm_type":"way","osm_id":265142269,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25083, 2, Eaton Street, Bells Corners, College, Nepean, Ottawa, Eastern Ontario, Ontario, K2H 9P1, Canada","name":"25083"}},"geometry":{"type": "Point","coordinates": [-75.8166273, 45.326420150000004]}},{"type":"Feature","properties":{"geocoding":{"place_id":334349188,"osm_type":"way","osm_id":233901539,"osm_key":"building","osm_value":"public","type":"house","label":"2, Eaton Street, Bells Corners, College, Nepean, Ottawa, Eastern Ontario, Ontario, K2H 9P1, Canada"}},"geometry":{"type": "Point","coordinates": [-75.8168565, 45.326430650000006]}},{"type":"Feature","properties":{"geocoding":{"place_id":334349246,"osm_type":"way","osm_id":265142255,"osm_key":"leisure","osm_value":"swimming_pool","type":"house","label":"Wading Pool - Entrance, 2, Eaton Street, Bells Corners, College, Nepean, Ottawa, Eastern Ontario, Ontario, K2H 9P1, Canada","name":"Wading Pool - Entrance"}},"geometry":{"type": "Point","coordinates": [-75.81675841611718, 45.3263245]}}]}

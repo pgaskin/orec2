@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=1525+Princess+Patricia%0AOttawa+ON+K1S+5J3%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cdf2cfd03b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:02 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=TElNA6Lgz2s8VH1SQtuBTH1TdoDpGMdCwAZhQIcI6XCPzqhhHAkY%2BmdUotPCz7Xkg74wdo3ahMTjIwYtxUAt6jW46sbUcxYEUGC9xz6R6bRWZcXg75mkQvpVsjt70vXRMoDM54fDmJgS"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=7912&min_rtt=5648&rtt_var=3927&sent=285&recv=209&lost=0&retrans=0&sent_bytes=75501&recv_bytes=8419&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=66902&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"1525 Princess Patricia\nOttawa ON K1S 5J3\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334489182,"osm_type":"way","osm_id":68587078,"osm_key":"building","osm_value":"civic","type":"house","label":"Horticultural Building, 1525, Princess Patricia Way, Lansdowne Park, Capital, Ottawa, Eastern Ontario, Ontario, K1S 5J3, Canada","name":"Horticultural Building"}},"geometry":{"type": "Point","coordinates": [-75.68258710525832, 45.40104685]}},{"type":"Feature","properties":{"geocoding":{"place_id":334489047,"osm_type":"node","osm_id":7528966789,"osm_key":"amenity","osm_value":"ice_cream","type":"house","label":"Boccato, 1525, Princess Patricia Way, Lansdowne Park, Capital, Ottawa, Eastern Ontario, Ontario, K1S 5J3, Canada","name":"Boccato"}},"geometry":{"type": "Point","coordinates": [-75.6824753, 45.4007435]}},{"type":"Feature","properties":{"geocoding":{"place_id":334497387,"osm_type":"node","osm_id":4842270026,"osm_key":"amenity","osm_value":"toilets","type":"house","label":"1525, Princess Patricia Way, Lansdowne Park, Capital, Ottawa, Eastern Ontario, Ontario, K1S 5J3, Canada"}},"geometry":{"type": "Point","coordinates": [-75.6825204, 45.4010048]}}]}

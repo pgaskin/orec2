@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=363+Lorry+Greenberg+Drive%0AOttawa+ON+K1T+3P8%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cd257b253b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:29 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=YdzqdUbshCT2fc49ziarvOLwnEcaUoLGfMcbHTJBcwDtAyaAMtozLlgTjeNMexnP70qPc3cH62Jx5PusVz%2BulqcBiVNcAHeSQD48SeSzk0E%2F9REkUVmUkJ1%2Ft%2FpsE%2Bo%2B0eE8D2Qm6wns"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6293&min_rtt=5648&rtt_var=425&sent=147&recv=125&lost=0&retrans=0&sent_bytes=39344&recv_bytes=5099&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=34174&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"363 Lorry Greenberg Drive\nOttawa ON K1T 3P8\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334652367,"osm_type":"way","osm_id":258217008,"osm_key":"amenity","osm_value":"parking","type":"house","label":"35583, 363, Lorry Greenberg Drive, Gloucester-Southgate, Ottawa, Eastern Ontario, Ontario, K1T 0H7, Canada","name":"35583"}},"geometry":{"type": "Point","coordinates": [-75.63651236201096, 45.3636729]}},{"type":"Feature","properties":{"geocoding":{"place_id":334653211,"osm_type":"way","osm_id":481478934,"osm_key":"amenity","osm_value":"community_centre","type":"house","label":"Greenboro Community Centre, 363, Lorry Greenberg Drive, Gloucester-Southgate, Ottawa, Eastern Ontario, Ontario, K1T 0H7, Canada","name":"Greenboro Community Centre"}},"geometry":{"type": "Point","coordinates": [-75.63546949858586, 45.363304]}},{"type":"Feature","properties":{"geocoding":{"place_id":334653326,"osm_type":"way","osm_id":258216972,"osm_key":"leisure","osm_value":"swimming_pool","type":"house","label":"Wading Pool - Greenboro, 363, Lorry Greenberg Drive, Gloucester-Southgate, Ottawa, Eastern Ontario, Ontario, K1T 0H7, Canada","name":"Wading Pool - Greenboro"}},"geometry":{"type": "Point","coordinates": [-75.63647823186619, 45.36331905]}},{"type":"Feature","properties":{"geocoding":{"place_id":334653222,"osm_type":"node","osm_id":7215045267,"osm_key":"amenity","osm_value":"library","type":"house","label":"Ottawa Public Library - Greenboro Branch, 363, Lorry Greenberg Drive, Gloucester-Southgate, Ottawa, Eastern Ontario, Ontario, K1T 0H7, Canada","name":"Ottawa Public Library - Greenboro Branch"}},"geometry":{"type": "Point","coordinates": [-75.6355798, 45.3635167]}},{"type":"Feature","properties":{"geocoding":{"place_id":334654410,"osm_type":"node","osm_id":5774225959,"osm_key":"tourism","osm_value":"artwork","type":"house","label":"Shelf: 759 - 760, 363, Lorry Greenberg Drive, Gloucester-Southgate, Ottawa, Eastern Ontario, Ontario, K1T 0H7, Canada","name":"Shelf: 759 - 760"}},"geometry":{"type": "Point","coordinates": [-75.635148, 45.3631125]}}]}

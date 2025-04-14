@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=43+Ste-C%C3%A9cile+Street%0AOttawa+ON+K1L+5L7%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cd729e273b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:41 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=XJ5h8UGuEPmaD%2F1WYy30COFLT2WgO%2BweChFjNVciwD%2FUARyS9pJaK4krLPKbhVWr0HS2me%2FVRdWjzbNIYB6rlEoShg6n%2FftAe6N5gjn6nZ1xzUZCmLtrgpn74i%2FqOt%2FR4OVk%2B0KxciAl"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=11108&min_rtt=5648&rtt_var=10260&sent=199&recv=153&lost=0&retrans=0&sent_bytes=53084&recv_bytes=6355&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=46492&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"43 Ste-Cécile Street\nOttawa ON K1L 5L7\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334573039,"osm_type":"way","osm_id":165880027,"osm_key":"building","osm_value":"public","type":"house","label":"43, Ste-Cécile Street, Vanier, Rideau-Vanier, Ottawa, Eastern Ontario, Ontario, K1L 8A1, Canada"}},"geometry":{"type": "Point","coordinates": [-75.66927044833815, 45.44232545]}},{"type":"Feature","properties":{"geocoding":{"place_id":334573523,"osm_type":"way","osm_id":321501668,"osm_key":"leisure","osm_value":"swimming_pool","type":"house","label":"Wading Pool - Optimiste, 43, Ste-Cécile Street, Vanier, Rideau-Vanier, Ottawa, Eastern Ontario, Ontario, K1L 5S2, Canada","name":"Wading Pool - Optimiste"}},"geometry":{"type": "Point","coordinates": [-75.6685222344669, 45.44224285]}},{"type":"Feature","properties":{"geocoding":{"place_id":334572774,"osm_type":"node","osm_id":4718407497,"osm_key":"place","osm_value":"house","type":"house","label":"43, Ste-Cécile Street, Vanier, Rideau-Vanier, Ottawa, Eastern Ontario, Ontario, K1L 8A1, Canada"}},"geometry":{"type": "Point","coordinates": [-75.669074, 45.442168]}},{"type":"Feature","properties":{"geocoding":{"place_id":334575427,"osm_type":"node","osm_id":4718407496,"osm_key":"place","osm_value":"house","type":"house","label":"43, Ste-Cécile Street, Vanier, Rideau-Vanier, Ottawa, Eastern Ontario, Ontario, K1L 5S2, Canada"}},"geometry":{"type": "Point","coordinates": [-75.66856, 45.442135]}}]}

@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=63+Bluegrass+Drive%0AOttawa+ON+K2M+1G2%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301ccbfcc8d3b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:13 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=aHuhj8p01N67BX%2B%2BkzgxdUNQ9267pi1s0b4sgHVyJr%2F8DqdQHhpBwU0XgJM0Onexd1LXcLRZMG%2FUDYDsNXVbYMfbgpJJBpFNPN4Lq0OxhHsl%2BvVfon28XXWD2ZW33IHtTrW2rie5R1Ms"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=11126&min_rtt=5663&rtt_var=10561&sent=83&recv=62&lost=0&retrans=0&sent_bytes=23014&recv_bytes=3553&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=17899&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"63 Bluegrass Drive\nOttawa ON K2M 1G2\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334350056,"osm_type":"way","osm_id":68662039,"osm_key":"amenity","osm_value":"school","type":"house","label":"Bridlewood Community Elementary School, 63, Bluegrass Drive, Bridlewood, Kanata, Kanata South, Ottawa, Eastern Ontario, Ontario, K2M 1G2, Canada","name":"Bridlewood Community Elementary School"}},"geometry":{"type": "Point","coordinates": [-75.86167615505241, 45.2849097]}},{"type":"Feature","properties":{"geocoding":{"place_id":334360068,"osm_type":"way","osm_id":68661933,"osm_key":"building","osm_value":"school","type":"house","label":"63, Bluegrass Drive, Bridlewood, Kanata, Kanata South, Ottawa, Eastern Ontario, Ontario, K2M 1G2, Canada"}},"geometry":{"type": "Point","coordinates": [-75.86095873394495, 45.285180999999994]}},{"type":"Feature","properties":{"geocoding":{"place_id":334346751,"osm_type":"node","osm_id":6307525314,"osm_key":"amenity","osm_value":"kindergarten","type":"house","label":"Children's Village, 63, Bluegrass Drive, Bridlewood, Kanata, Kanata South, Ottawa, Eastern Ontario, Ontario, K2M 1G2, Canada","name":"Children's Village"}},"geometry":{"type": "Point","coordinates": [-75.8619514, 45.2846996]}},{"type":"Feature","properties":{"geocoding":{"place_id":334351661,"osm_type":"node","osm_id":9762244118,"osm_key":"amenity","osm_value":"bicycle_parking","type":"house","label":"63, Bluegrass Drive, Bridlewood, Kanata, Kanata South, Ottawa, Eastern Ontario, Ontario, K2M 1G2, Canada"}},"geometry":{"type": "Point","coordinates": [-75.8613702, 45.2844513]}}]}

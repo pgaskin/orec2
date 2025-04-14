@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=65+Stonehaven+Drive%0AOttawa+ON+K2M+2Y2%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cd3e7c3e3b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:33 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=dbT20rDF2avlTMj2HVt1R2C2H7lcNuuHLvCjXx4nB79NKVNs9e1qI1o0Y2em6F5WtgavIliWzIBVp8qfLsozoyVd5oL%2F0zNSxHqZJChtIQAi2KeG40BvFKf%2F0kVlfsDYLDe3b0TabCdS"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6257&min_rtt=5648&rtt_var=359&sent=163&recv=133&lost=0&retrans=0&sent_bytes=43786&recv_bytes=5531&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=38188&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"65 Stonehaven Drive\nOttawa ON K2M 2Y2\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334349359,"osm_type":"way","osm_id":258180191,"osm_key":"amenity","osm_value":"community_centre","type":"house","label":"Eva James Community Centre, 65, Stonehaven Drive, Bridlewood, Kanata, Kanata South, Ottawa, Eastern Ontario, Ontario, K2M 2Y2, Canada","name":"Eva James Community Centre"}},"geometry":{"type": "Point","coordinates": [-75.85787897927462, 45.2905465]}},{"type":"Feature","properties":{"geocoding":{"place_id":334349347,"osm_type":"way","osm_id":254241009,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25238, 65, Stonehaven Drive, Bridlewood, Kanata, Kanata South, Ottawa, Eastern Ontario, Ontario, K2M 3B4, Canada","name":"25238"}},"geometry":{"type": "Point","coordinates": [-75.85679947143527, 45.290504999999996]}},{"type":"Feature","properties":{"geocoding":{"place_id":334344018,"osm_type":"way","osm_id":254241010,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25128, 65, Stonehaven Drive, Bridlewood, Kanata, Kanata South, Ottawa, Eastern Ontario, Ontario, K2M 3B4, Canada","name":"25128"}},"geometry":{"type": "Point","coordinates": [-75.85628624467708, 45.2898956]}},{"type":"Feature","properties":{"geocoding":{"place_id":334347434,"osm_type":"way","osm_id":487163486,"osm_key":"leisure","osm_value":"pitch","type":"house","label":"Bridlewood Skateboard Park, 65, Stonehaven Drive, Bridlewood, Kanata, Kanata South, Ottawa, Eastern Ontario, Ontario, K2M 3B4, Canada","name":"Bridlewood Skateboard Park"}},"geometry":{"type": "Point","coordinates": [-75.85701913843408, 45.290782300000004]}}]}

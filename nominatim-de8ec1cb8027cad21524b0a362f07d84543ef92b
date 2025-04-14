@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=2955+Michele+Drive%0AOttawa+ON+K2B+8G3%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301ce395cf43b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:13 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=0juzRvVHZbvMuMuUcZW8Ch%2BAUh%2B9S%2BvgKOOyuVY%2BaDzSjwdNE34Rma%2Fhxb04aB0nENWWlo6suS8tUVQ7t%2BZETPbBYXqYHYwq3GQ6y4mICEuo%2Bq%2BtbhajCS2l1XncBGKxT5%2BeI6AVVdno"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6749&min_rtt=5648&rtt_var=1216&sent=332&recv=233&lost=0&retrans=0&sent_bytes=87656&recv_bytes=9559&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=78303&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"2955 Michele Drive\nOttawa ON K2B 8G3\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334369345,"osm_type":"way","osm_id":285790426,"osm_key":"amenity","osm_value":"community_centre","type":"house","label":"Michele Heights Community Centre, 2955, Michèle Drive, Fairfield Heights, Bay, Ottawa, Eastern Ontario, Ontario, K2B 7K1, Canada","name":"Michele Heights Community Centre"}},"geometry":{"type": "Point","coordinates": [-75.80201424981664, 45.354627]}},{"type":"Feature","properties":{"geocoding":{"place_id":334372464,"osm_type":"way","osm_id":440664372,"osm_key":"amenity","osm_value":"parking","type":"house","label":"4965, 2955, Michèle Drive, Fairfield Heights, Bay, Ottawa, Eastern Ontario, Ontario, K2B 7K1, Canada","name":"4965"}},"geometry":{"type": "Point","coordinates": [-75.8024476, 45.3549611]}},{"type":"Feature","properties":{"geocoding":{"place_id":334367632,"osm_type":"way","osm_id":285790220,"osm_key":"leisure","osm_value":"swimming_pool","type":"house","label":"Wading Pool - Michèle, 2955, Michèle Drive, Fairfield Heights, Bay, Ottawa, Eastern Ontario, Ontario, K2B 7K1, Canada","name":"Wading Pool - Michèle"}},"geometry":{"type": "Point","coordinates": [-75.80201360000001, 45.3548853]}}]}

@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=300+Des+P%C3%A8res-Blancs+Avenue%0AOttawa+ON+K1L+7L5%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301ceb10fbd3b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:32 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=0dGviL7vvzsy%2BZbH4ftBmQ9KTLnrwMbdMFeQxBLSynJlanGnZNVwIxW8ZjhczXvRHm2lrOxWZPqYfBHnraOrugJLkCqeS0BAV1gNECHXCC5Sjs6JyF2Q3rYH5c5nxzRGNSC2o4%2BbuOtj"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6773&min_rtt=5644&rtt_var=1914&sent=412&recv=301&lost=0&retrans=0&sent_bytes=107612&recv_bytes=11537&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=97195&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"300 Des Pères-Blancs Avenue\nOttawa ON K1L 7L5\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334574049,"osm_type":"node","osm_id":5049658920,"osm_key":"highway","osm_value":"bus_stop","type":"house","label":"300 Des Peres Blancs, Pères-Blancs Avenue, Vanier, Rideau-Vanier, Ottawa, Eastern Ontario, Ontario, K1L 5C6, Canada","name":"300 Des Peres Blancs"}},"geometry":{"type": "Point","coordinates": [-75.6599939, 45.4438035]}}]}

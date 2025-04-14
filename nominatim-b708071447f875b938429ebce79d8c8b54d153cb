@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=70+Castlefrank+Road%0AOttawa+ON+K2L+2N5%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cd855bd83b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:44 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=0j%2BIazLVnAn3PCEc9iOKKLy5oFA0YdOZOY3Nmu%2FaNI4V%2F6P9Ej311b8zx5g%2B4PK7wBM8w1T47EAwSZzjarsJIJiUE68E8JhcAYLCb%2FhCnuYlNZMUUhEfjUIRrJp85dWa2UQiHsuFPGqo"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=8017&min_rtt=5648&rtt_var=3862&sent=212&recv=164&lost=0&retrans=0&sent_bytes=56238&recv_bytes=6679&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=49284&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"70 Castlefrank Road\nOttawa ON K2L 2N5\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334302724,"osm_type":"way","osm_id":306938132,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25052, 70, Castlefrank Road, Glen Cairn, Kanata, Kanata South, Ottawa, Eastern Ontario, Ontario, K2L 1E1, Canada","name":"25052"}},"geometry":{"type": "Point","coordinates": [-75.8852262488044, 45.2951316]}},{"type":"Feature","properties":{"geocoding":{"place_id":334303486,"osm_type":"way","osm_id":306937888,"osm_key":"leisure","osm_value":"pitch","type":"house","label":"Glen Cairn Tennis Club, 70, Castlefrank Road, Glen Cairn, Kanata, Kanata South, Ottawa, Eastern Ontario, Ontario, K2L 1E1, Canada","name":"Glen Cairn Tennis Club"}},"geometry":{"type": "Point","coordinates": [-75.88432350233506, 45.29500285]}},{"type":"Feature","properties":{"geocoding":{"place_id":334303863,"osm_type":"way","osm_id":306937891,"osm_key":"building","osm_value":"public","type":"house","label":"70, Castlefrank Road, Glen Cairn, Kanata, Kanata South, Ottawa, Eastern Ontario, Ontario, K2L 1E1, Canada"}},"geometry":{"type": "Point","coordinates": [-75.88498582247192, 45.29536245]}}]}

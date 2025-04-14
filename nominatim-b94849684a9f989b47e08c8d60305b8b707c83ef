@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=2679+Innes+Road%0AOttawa+ON+K1B+3J7%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cc7fea6b3b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:02 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=HInMMDXeH56IR1bQzmpG%2FiAQSC%2BiaSvbd8zyl1AdvxWI6y2gY4OezWOA%2BLfXO13lAdx0FU0b8Z8I6Zed%2BskQqpjyzSnO8PigrU0Z8H0zC8Q%2Fyo8YI3BTgSkiDdAS69UIb3AZ%2BWA7f5LW"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6074&min_rtt=5748&rtt_var=582&sent=36&recv=23&lost=0&retrans=0&sent_bytes=11921&recv_bytes=2511&delivery_rate=942729&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=7596&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"2679 Innes Road\nOttawa ON K1B 3J7\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334625058,"osm_type":"way","osm_id":547968899,"osm_key":"leisure","osm_value":"swimming_pool","type":"house","label":"Wading Pool - Bearbrook, 2679, Innes Road, Blackburn Hamlet, Orléans West-Innes, Ottawa, Eastern Ontario, Ontario, K1B 3J7, Canada","name":"Wading Pool - Bearbrook"}},"geometry":{"type": "Point","coordinates": [-75.563670287565, 45.43416825]}}]}

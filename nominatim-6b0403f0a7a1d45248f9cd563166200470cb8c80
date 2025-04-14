@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=2915+Haughton+Avenue%0AOttawa+ON+K2B+6Z4%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cc940e403b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:06 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=LXuKegpx%2BxR7UQ%2BtDSI8R%2BTNly%2F8MZSGIhj%2Bo5G2vVgJTOR%2Bu5ZihayOa6g2%2BinC64nWmH2%2FLBknUf%2FNdsWDb%2FAqSQDLDultYO5tIdy4RFX2Z6ci2L%2FvMo3P756CUtj%2BjzLoqR%2BUTa%2Be"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6042&min_rtt=5748&rtt_var=327&sent=49&recv=30&lost=0&retrans=0&sent_bytes=14883&recv_bytes=2839&delivery_rate=942729&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=10808&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"2915 Haughton Avenue\nOttawa ON K2B 6Z4\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334383651,"osm_type":"way","osm_id":233905575,"osm_key":"leisure","osm_value":"sports_centre","type":"house","label":"Belltown Dome, 2915, Haughton Avenue, Britannia Heights, Bay, Ottawa, Eastern Ontario, Ontario, K2B 6Z9, Canada","name":"Belltown Dome"}},"geometry":{"type": "Point","coordinates": [-75.8039963, 45.36010785]}},{"type":"Feature","properties":{"geocoding":{"place_id":334391820,"osm_type":"way","osm_id":212402199,"osm_key":"amenity","osm_value":"parking","type":"house","label":"Belltown Dome Parking, 2915, Haughton Avenue, Britannia Heights, Bay, Ottawa, Eastern Ontario, Ontario, K2B 6Z9, Canada","name":"Belltown Dome Parking"}},"geometry":{"type": "Point","coordinates": [-75.80390584038963, 45.35953405]}}]}

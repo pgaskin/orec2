@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=1606+Old+Wellington+Street%0AOttawa+ON+K0A+2E0%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cdd69e1b3b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:57 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=EYahS%2FgjMGRFpwqiePTTNq68MsxAoGrDwr%2BTr7MQ%2BL2FBhfX5JVWBYE7LuRedv83sKgVogOXLgYy%2FTDDLIG88LT5%2B1VIXM9pURgcVIXa%2FDT9I6Yh0LCBVAXS2Kf2wtueGrlKub%2BdXFHH"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=10392&min_rtt=5648&rtt_var=8503&sent=268&recv=198&lost=0&retrans=0&sent_bytes=71480&recv_bytes=7989&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=62390&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"1606 Old Wellington Street\nOttawa ON K0A 2E0\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334260993,"osm_type":"way","osm_id":84821636,"osm_key":"highway","osm_value":"residential","type":"street","label":"Old Wellington Street, Rideau-Jock, Ottawa, Eastern Ontario, Ontario, K0A 2E0, Canada","name":"Old Wellington Street"}},"geometry":{"type": "Point","coordinates": [-75.6470467, 45.1496575]}}]}

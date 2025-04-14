@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=100+Thornwood+Road%0AOttawa+ON+k1k3c9%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301ce13dca23b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:07 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Fueeqz07Jok9YOStuANzDzpkGjvI%2F7hVVJTUj0qlbgMiWJFpn1WnLO7swVXLvT3vDUv0IXv2wri5hSiCZNKt2PX75nDsvjiSFLZe6UgCCmGU%2BrKMkF219DI0mWO0JdH4gm3ziWevpUXH"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6980&min_rtt=5648&rtt_var=1970&sent=306&recv=220&lost=0&retrans=0&sent_bytes=80969&recv_bytes=8935&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=72084&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"100 Thornwood Road\nOttawa ON k1k3c9\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334569164,"osm_type":"way","osm_id":76452102,"osm_key":"highway","osm_value":"residential","type":"street","label":"Thornwood Road, Manor Park, Rideau-Rockcliffe, Ottawa, Eastern Ontario, Ontario, K1K 3C9, Canada","name":"Thornwood Road"}},"geometry":{"type": "Point","coordinates": [-75.6576647, 45.450592]}}]}

@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=61+Corkstown+Road%0AOttawa+ON+K3H+5B3%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cd0379bf3b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:23 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=qBF4sVhPji9E%2FKMW%2BnNH9pMiNEfnpXos%2Fxs5bDZVgxP%2BMrqG9Lm9kBhsYozQoAqedkIqkBQwZXNuAYHNC%2BH%2B%2FJ%2FRAJS5K10M4LGJFITcLtfdFKMzRgdcG2IA3TWdiLFYlsT7k0mOLltt"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=7463&min_rtt=5648&rtt_var=3262&sent=126&recv=104&lost=0&retrans=0&sent_bytes=34013&recv_bytes=4565&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=28658&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"61 Corkstown Road\nOttawa ON K3H 5B3\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334382580,"osm_type":"way","osm_id":53057135,"osm_key":"leisure","osm_value":"pitch","type":"house","label":"Crystal Beach Tennis Club, 61, Corkstown Road, Lakeview, Bay, Nepean, Ottawa, Eastern Ontario, Ontario, K2H 1E1, Canada","name":"Crystal Beach Tennis Club"}},"geometry":{"type": "Point","coordinates": [-75.82794036095945, 45.34563455]}},{"type":"Feature","properties":{"geocoding":{"place_id":334392775,"osm_type":"way","osm_id":167705989,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25100, 61, Corkstown Road, Lakeview, Bay, Nepean, Ottawa, Eastern Ontario, Ontario, K2H 1E1, Canada","name":"25100"}},"geometry":{"type": "Point","coordinates": [-75.82745945497834, 45.34586645]}},{"type":"Feature","properties":{"geocoding":{"place_id":334384305,"osm_type":"node","osm_id":5299574447,"osm_key":"place","osm_value":"house","type":"house","label":"Sledding Hill, 61, Corkstown Road, Lakeview, Bay, Nepean, Ottawa, Eastern Ontario, Ontario, K2H 1E1, Canada","name":"Sledding Hill"}},"geometry":{"type": "Point","coordinates": [-75.827868, 45.346066]}},{"type":"Feature","properties":{"geocoding":{"place_id":334390071,"osm_type":"node","osm_id":4673712579,"osm_key":"place","osm_value":"house","type":"house","label":"61, Corkstown Road, Lakeview, Bay, Nepean, Ottawa, Eastern Ontario, Ontario, K2H 1E1, Canada"}},"geometry":{"type": "Point","coordinates": [-75.827575, 45.346007]}}]}

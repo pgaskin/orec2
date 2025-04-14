@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=102+Greenview+Avenue%0AOttawa+ON+K2B+8J8%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301ceca0a563b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:36 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=ewqIe5wz%2Fy9uhNgyawjftFOxFq8TG02jJiFURCFpMehVA1vfOScaJxKhzXV8%2FTRKRj0NtB9yTCsnLg70RIRmY8jJoc0xmDCc6pJq5%2FQmFvIMYDm%2B1AKwdpmkhD%2BUocXQQyM0MjuAVOQK"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6280&min_rtt=5644&rtt_var=809&sent=429&recv=312&lost=0&retrans=0&sent_bytes=111974&recv_bytes=11962&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=101200&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"102 Greenview Avenue\nOttawa ON K2B 8J8\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334381937,"osm_type":"way","osm_id":137152937,"osm_key":"highway","osm_value":"unclassified","type":"street","label":"Greenview Avenue, Britannia Heights, Bay, Ottawa, Eastern Ontario, Ontario, K2B 8G5, Canada","name":"Greenview Avenue"}},"geometry":{"type": "Point","coordinates": [-75.7964721, 45.3621385]}},{"type":"Feature","properties":{"geocoding":{"place_id":334383901,"osm_type":"way","osm_id":520055841,"osm_key":"highway","osm_value":"unclassified","type":"street","label":"Greenview Avenue, Britannia Bay, Bay, Ottawa, Eastern Ontario, Ontario, K2B 6Z9, Canada","name":"Greenview Avenue"}},"geometry":{"type": "Point","coordinates": [-75.8021025, 45.3637307]}}]}

@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=1064+Wellington+Street+West%0AOttawa+ON+K1Y+2Y3%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cd9818003b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:47 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=H9vfKGB%2FrtZ%2BelQlui7Vsqhd6aoxhSJOzRtDBwfNhVHo0Gjn51mJkx7okyqKkXlH8GYspLM5ZoZJwu9mAB53RBVRRL%2FGB1zzDJoVlMhRo8a1G50vlVHeizBTee7%2Fla5OpKBdUusQ5o%2BC"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=7325&min_rtt=5648&rtt_var=2671&sent=224&recv=170&lost=0&retrans=0&sent_bytes=59678&recv_bytes=6975&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=52533&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"1064 Wellington Street West\nOttawa ON K1Y 2Y3\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334471729,"osm_type":"way","osm_id":161923927,"osm_key":"amenity","osm_value":"parking","type":"house","label":"4985, 1064, Wellington Street West, Hintonburg Shopping Area, Hintonburg, Kitchissippi, Ottawa, Eastern Ontario, Ontario, K1Y 2Y3, Canada","name":"4985"}},"geometry":{"type": "Point","coordinates": [-75.72426269572554, 45.4032794]}},{"type":"Feature","properties":{"geocoding":{"place_id":334462883,"osm_type":"way","osm_id":107602613,"osm_key":"amenity","osm_value":"community_centre","type":"house","label":"Hintonburg Community Centre, 1064, Wellington Street West, Hintonburg Shopping Area, Hintonburg, Kitchissippi, Ottawa, Eastern Ontario, Ontario, K1Y 2Y3, Canada","name":"Hintonburg Community Centre"}},"geometry":{"type": "Point","coordinates": [-75.72428267352942, 45.4036315]}},{"type":"Feature","properties":{"geocoding":{"place_id":334463435,"osm_type":"node","osm_id":5772119594,"osm_key":"tourism","osm_value":"artwork","type":"house","label":"West Ottawa Streetscape, 1064, Wellington Street West, Hintonburg Shopping Area, Hintonburg, Kitchissippi, Ottawa, Eastern Ontario, Ontario, K1Y 2Y3, Canada","name":"West Ottawa Streetscape"}},"geometry":{"type": "Point","coordinates": [-75.7244025, 45.4036808]}},{"type":"Feature","properties":{"geocoding":{"place_id":334464478,"osm_type":"node","osm_id":7215289767,"osm_key":"amenity","osm_value":"police","type":"house","label":"Ottawa Police - Wellington Community Police Centre, 1064, Wellington Street West, Hintonburg Shopping Area, Hintonburg, Kitchissippi, Ottawa, Eastern Ontario, Ontario, K1Y 2Y3, Canada","name":"Ottawa Police - Wellington Community Police Centre"}},"geometry":{"type": "Point","coordinates": [-75.7243081, 45.4037799]}}]}

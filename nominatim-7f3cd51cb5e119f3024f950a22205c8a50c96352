@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=525+C%C3%B4t%C3%A9+Street%0AOttawa+ON+K1K0Z8%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cf024efb3b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:45 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=6lIxn7JqI8gkkFvP1Eleld39883AXELZG4FQEXRgyJMackfCyXmm5vxP2wB5G2N2TtQiWGYw0WyXeQ6WQiGso51rB6EQUQfnsBQQZQBpfmcb9wJn0h5dtySPd%2BZOZ3oGR7kr2C%2FxOUHy"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=7647&min_rtt=5644&rtt_var=2835&sent=467&recv=338&lost=0&retrans=0&sent_bytes=121438&recv_bytes=12924&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=110347&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"525 Côté Street\nOttawa ON K1K0Z8\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334506564,"osm_type":"way","osm_id":547959188,"osm_key":"leisure","osm_value":"pitch","type":"house","label":"26079, 525, Côté Street, Rideau-Rockcliffe, Ottawa, Eastern Ontario, Ontario, K1K 1G5, Canada","name":"26079"}},"geometry":{"type": "Point","coordinates": [-75.64853039734044, 45.436420150000004]}}]}

@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=180+Percy+Street%0AOttawa+ON+K1R+6E5%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301ce26981e3b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:10 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=M5YG0ZWg2yKpOdS1tGI9EO4plZ6gItZrGvdHHIEBAZRbCFf2CHaJvcH3yTis40TCD0dYIwwbe%2FtSZnB57xN1hSZB%2BvbzLvBNQImyGsBMtAmyfGaH92%2BfLMQ8dmycdduGTV00ulxwUIGj"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6552&min_rtt=5648&rtt_var=1194&sent=319&recv=227&lost=0&retrans=0&sent_bytes=84211&recv_bytes=9272&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=75325&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"180 Percy Street\nOttawa ON K1R 6E5\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334522600,"osm_type":"way","osm_id":68588596,"osm_key":"leisure","osm_value":"sports_centre","type":"house","label":"McNabb Recreation Centre, 180, Percy Street, Chinatown, Centretown, Somerset, Ottawa, Eastern Ontario, Ontario, K1R 6E5, Canada","name":"McNabb Recreation Centre"}},"geometry":{"type": "Point","coordinates": [-75.7018098005137, 45.4092335]}}]}

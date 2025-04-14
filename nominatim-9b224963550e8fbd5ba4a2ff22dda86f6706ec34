@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=2263+Portobello+Boulevard%0AOttawa+ON+K4A+0X3%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cd5dbd393b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:38 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=CezTOy8VN0LLsEfyKNU2cYTF0BxUGwPKC3BNbFLKiJ1aP592ASf6Aes5k13I0GlhimXLLazPO%2BEz8xEu7Z5Rl2aWyP5zpDjUqUs5q4iPwy%2BkwFvhcCXo5lcvIbFW55pfK5PwCgM4qu%2FX"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6125&min_rtt=5648&rtt_var=197&sent=187&recv=146&lost=0&retrans=0&sent_bytes=49700&recv_bytes=6059&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=43027&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"2263 Portobello Boulevard\nOttawa ON K4A 0X3\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334772209,"osm_type":"way","osm_id":458407991,"osm_key":"amenity","osm_value":"community_centre","type":"house","label":"François Dupuis Recreation Centre, 2263, Portobello Boulevard, Avalon, Orléans, Orléans South-Navan, Ottawa, Eastern Ontario, Ontario, K4A 0K5, Canada","name":"François Dupuis Recreation Centre"}},"geometry":{"type": "Point","coordinates": [-75.46332711436, 45.45448785]}},{"type":"Feature","properties":{"geocoding":{"place_id":334760797,"osm_type":"node","osm_id":5772127013,"osm_key":"tourism","osm_value":"artwork","type":"house","label":"Water, 2263, Portobello Boulevard, Avalon, Orléans, Orléans South-Navan, Ottawa, Eastern Ontario, Ontario, K4A 0K5, Canada","name":"Water"}},"geometry":{"type": "Point","coordinates": [-75.4638702, 45.4542983]}}]}

@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=141+Bayview+Station+Road%0AOttawa+ON+K1Y+4M3%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cf150be43b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:48 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Au43FF86qYYxTts9A21NEHrPG1Ni4qjIv5XM%2F6Q8hm7KARsPrAyeOHzTLn68jS8Z%2FfdY5bEUUpU%2B2iuL9SGP3cFxyWkKbtvU1CJEEsIFZHG7GQzWSapHtraxxWXUD8qYXvXg%2FxSQwhlx"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6564&min_rtt=5644&rtt_var=896&sent=480&recv=351&lost=0&retrans=0&sent_bytes=125015&recv_bytes=13221&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=113324&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"141 Bayview Station Road\nOttawa ON K1Y 4M3\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334527787,"osm_type":"way","osm_id":68588371,"osm_key":"leisure","osm_value":"sports_centre","type":"house","label":"Tom Brown Arena, 141, Bayview Station Road, Hintonburg, Kitchissippi, Ottawa, Eastern Ontario, Ontario, K1Y 2X8, Canada","name":"Tom Brown Arena"}},"geometry":{"type": "Point","coordinates": [-75.72256660866238, 45.408107799999996]}},{"type":"Feature","properties":{"geocoding":{"place_id":334527082,"osm_type":"way","osm_id":161268613,"osm_key":"amenity","osm_value":"parking","type":"house","label":"4901, 141, Bayview Station Road, Hintonburg, Kitchissippi, Ottawa, Eastern Ontario, Ontario, K1Y 2X8, Canada","name":"4901"}},"geometry":{"type": "Point","coordinates": [-75.7220400446418, 45.40794445]}}]}

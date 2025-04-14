@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=345+Richmond+Road%0AOttawa+ON+K2A+0E7%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301ccf6fb1b3b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:21 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=8oBGLBIxw0JYYKfm%2F%2BWeO1Y9ybc6ajPvLzBxrBmgzkhcJ9iWADBhSsdRcao7%2FJ81kFIjpBqCzTBKOMN6sQymTYsoOA676KGCxv1aLWGuzq0kVxbntg9BK%2FoJXBVxEToce7K4xKPrtH23"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=9446&min_rtt=5648&rtt_var=7219&sent=118&recv=96&lost=0&retrans=0&sent_bytes=32255&recv_bytes=4367&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=26730&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"345 Richmond Road\nOttawa ON K2A 0E7\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334450671,"osm_type":"way","osm_id":154398231,"osm_key":"amenity","osm_value":"community_centre","type":"house","label":"Churchill Seniors Recreation Centre, 345, Richmond Road, Westboro Beach, Westboro, Kitchissippi, Ottawa, Eastern Ontario, Ontario, K2A 0E7, Canada","name":"Churchill Seniors Recreation Centre"}},"geometry":{"type": "Point","coordinates": [-75.75448790279017, 45.39223665]}},{"type":"Feature","properties":{"geocoding":{"place_id":334457051,"osm_type":"way","osm_id":158754293,"osm_key":"amenity","osm_value":"parking","type":"house","label":"4913, 345, Richmond Road, Westboro Beach, Westboro, Kitchissippi, Ottawa, Eastern Ontario, Ontario, K1Z 5C6, Canada","name":"4913"}},"geometry":{"type": "Point","coordinates": [-75.7542646065142, 45.392436000000004]}}]}

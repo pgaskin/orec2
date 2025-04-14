@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=4355+Halmont+Drive%0AOttawa+ON+K1J+8W6%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301ce854f3b3b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:25 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=7bBvdHxF9%2BRD0FOYLt%2FeQdRbjV80r840R59A3ZEOAypqsx8XLTnnKJ41wN%2B1jxtsXsmZ57GBS6ZMBP6NnPDO0ISHL%2Bcb6ALH2PYHWZRn%2FuSBxXGyVxQDo5i9vuQKJA87SZ5Ohh32uGnz"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6149&min_rtt=5644&rtt_var=290&sent=383&recv=277&lost=0&retrans=0&sent_bytes=99805&recv_bytes=10832&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=90144&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"4355 Halmont Drive\nOttawa ON K1J 8W6\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334628242,"osm_type":"way","osm_id":430413965,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25001, 4355, Halmont Drive, Carson Grove, Gloucester, Beacon Hill-Cyrville, Ottawa, Eastern Ontario, Ontario, K1J 8W6, Canada","name":"25001"}},"geometry":{"type": "Point","coordinates": [-75.6199020982142, 45.428582000000006]}},{"type":"Feature","properties":{"geocoding":{"place_id":334634305,"osm_type":"way","osm_id":68658248,"osm_key":"amenity","osm_value":"community_centre","type":"house","label":"Pat Clark Community Centre, 4355, Halmont Drive, Carson Grove, Gloucester, Beacon Hill-Cyrville, Ottawa, Eastern Ontario, Ontario, K1J 8W6, Canada","name":"Pat Clark Community Centre"}},"geometry":{"type": "Point","coordinates": [-75.6196838720863, 45.4288395]}},{"type":"Feature","properties":{"geocoding":{"place_id":334632950,"osm_type":"node","osm_id":4761772657,"osm_key":"place","osm_value":"house","type":"house","label":"4355, Halmont Drive, Carson Grove, Gloucester, Beacon Hill-Cyrville, Ottawa, Eastern Ontario, Ontario, K1J 8W6, Canada"}},"geometry":{"type": "Point","coordinates": [-75.618817, 45.427656]}}]}

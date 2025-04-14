@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=2130+Radford+Court%0AOttawa+ON+K1J+6Z6%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cc735d0c3b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:00 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=CHJU%2BX%2BVcy79x%2B1WE0bjWzXbYRC7G39R25o3QNlW93q%2Fk4Xo5C1ma1MFjVvRlSxH7YVUGftLojkaTpHZG96JUfWV0XeDyTSW5PgRB7thLwvH9SEL%2BrX1PglI%2FVN9AX0PfDlBnGf9MkOh"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6143&min_rtt=5753&rtt_var=826&sent=28&recv=19&lost=0&retrans=0&sent_bytes=9795&recv_bytes=2320&delivery_rate=942729&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=5642&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"2130 Radford Court\nOttawa ON K1J 6Z6\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334585774,"osm_type":"node","osm_id":5371407435,"osm_key":"place","osm_value":"house","type":"house","label":"2130, Radford Court, Beacon Hill North, Beacon Hill-Cyrville, Ottawa, Eastern Ontario, Ontario, K1J 8K1, Canada"}},"geometry":{"type": "Point","coordinates": [-75.5992547, 45.4590234]}}]}

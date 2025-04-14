@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=3832+Carp+Road%0AOttawa+ON+K0A+1L0%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cf27ca053b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:51 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=9A3IxUL6WcWNZqN2GeCGgyongzf%2FxRrxSqp7Tkmz4%2FRfkRYWlwfagoqwU4CobApg9tRxOy19VR0bHGB22Fmgsl%2B6eVWdmyWRuKa2Y8W5WVLY6Gyzpk8ZQ8QmUiEXOp0MHCE%2Bb3f15F8Q"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6215&min_rtt=5644&rtt_var=606&sent=494&recv=360&lost=0&retrans=0&sent_bytes=128349&recv_bytes=13549&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=116251&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"3832 Carp Road\nOttawa ON K0A 1L0\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":335072649,"osm_type":"way","osm_id":84546985,"osm_key":"leisure","osm_value":"sports_centre","type":"house","label":"W. Erskine Johnston Arena & Community Centre, 3832, Carp Road, West Carleton-March, Ottawa, Eastern Ontario, Ontario, K0A 1L0, Canada","name":"W. Erskine Johnston Arena & Community Centre"}},"geometry":{"type": "Point","coordinates": [-76.03886123153545, 45.34914345]}},{"type":"Feature","properties":{"geocoding":{"place_id":27824752,"osm_type":"way","osm_id":99640976,"osm_key":"place","osm_value":"house","type":"house","label":"3832, Carp Road, West Carleton-March, Ottawa, Eastern Ontario, Ontario, K0A 1L0, Canada"}},"geometry":{"type": "Point","coordinates": [-76.04038830333333, 45.34844025333334]}}]}

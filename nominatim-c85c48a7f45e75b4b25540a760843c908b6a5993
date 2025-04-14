@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=100+Malvern+Drive%0AOttawa+ON+K2J+2G5%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cf2e08fb3b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:52 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=RuMB%2FuGWNzYMCQiSB7AiFmIUxZMMH1%2F6HwwcNUH%2BwAfGSOlQJwli6CLwzMA1dqKq%2BfKxAmTnTwcUk4%2Fr8dl2ZoEz0pxETEeoNDMj4sisfMPWBjNXEbiUw0xL0XAZDUyjNezYd8DhmX91"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6171&min_rtt=5644&rtt_var=543&sent=499&recv=362&lost=0&retrans=0&sent_bytes=129396&recv_bytes=13645&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=117215&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"100 Malvern Drive\nOttawa ON K2J 2G5\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334337690,"osm_type":"way","osm_id":68657466,"osm_key":"leisure","osm_value":"sports_centre","type":"house","label":"Walter Baker Sports Centre, 100, Malvern Drive, Old Barrhaven, Nepean, Ottawa, Eastern Ontario, Ontario, K2J 2G5, Canada","name":"Walter Baker Sports Centre"}},"geometry":{"type": "Point","coordinates": [-75.76173544067674, 45.2802935]}},{"type":"Feature","properties":{"geocoding":{"place_id":334337525,"osm_type":"node","osm_id":195863324,"osm_key":"amenity","osm_value":"police","type":"house","label":"Ottawa Police - Barrhaven Community Police Centre, 100, Malvern Drive, Old Barrhaven, Nepean, Ottawa, Eastern Ontario, Ontario, K2J 2G5, Canada","name":"Ottawa Police - Barrhaven Community Police Centre"}},"geometry":{"type": "Point","coordinates": [-75.761514, 45.280637]}},{"type":"Feature","properties":{"geocoding":{"place_id":334343755,"osm_type":"node","osm_id":1036649623,"osm_key":"amenity","osm_value":"library","type":"house","label":"Ottawa Public Library - Ruth E. Dickinson Branch, 100, Malvern Drive, Old Barrhaven, Nepean, Ottawa, Eastern Ontario, Ontario, K2J 2G5, Canada","name":"Ottawa Public Library - Ruth E. Dickinson Branch"}},"geometry":{"type": "Point","coordinates": [-75.7617472, 45.2798403]}}]}

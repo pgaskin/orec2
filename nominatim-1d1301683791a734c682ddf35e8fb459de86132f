@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=1265+Walkley+Road%0AOttawa+ON+K1V+6P9%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cdbd9a703b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:53 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=mdqfWRGV5uxfM%2FmiwhEk%2BFzIhxYu9sSsZByopPDVObFIVHBYuNx0LPGTOfH%2B2x9y%2BhXILxSlttr92iE4QyNgPUrXdv3%2FWb2bOTjCeh0haeKbUB2DSjsmhlQcCucATV33dTdOy0iJ00my"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=8494&min_rtt=5648&rtt_var=5195&sent=251&recv=187&lost=0&retrans=0&sent_bytes=66765&recv_bytes=7596&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=58429&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"1265 Walkley Road\nOttawa ON K1V 6P9\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334671714,"osm_type":"way","osm_id":677657327,"osm_key":"leisure","osm_value":"sports_centre","type":"house","label":"Jim Durrell Recreation Centre, 1265, Walkley Road, Ellwood, Alta Vista, Ottawa, Eastern Ontario, Ontario, K1V 6T3, Canada","name":"Jim Durrell Recreation Centre"}},"geometry":{"type": "Point","coordinates": [-75.65881747997416, 45.373098]}},{"type":"Feature","properties":{"geocoding":{"place_id":334666234,"osm_type":"way","osm_id":258711023,"osm_key":"amenity","osm_value":"parking","type":"house","label":"4902, 1265, Walkley Road, Ellwood, Alta Vista, Ottawa, Eastern Ontario, Ontario, K1V 6T3, Canada","name":"4902"}},"geometry":{"type": "Point","coordinates": [-75.65977865599251, 45.37293205]}},{"type":"Feature","properties":{"geocoding":{"place_id":334665943,"osm_type":"way","osm_id":550027501,"osm_key":"amenity","osm_value":"parking","type":"house","label":"114, 1265, Walkley Road, Ellwood, Alta Vista, Ottawa, Eastern Ontario, Ontario, K1V 6T3, Canada","name":"114"}},"geometry":{"type": "Point","coordinates": [-75.65891767295159, 45.37357315]}},{"type":"Feature","properties":{"geocoding":{"place_id":334665930,"osm_type":"node","osm_id":7530302686,"osm_key":"amenity","osm_value":"bicycle_parking","type":"house","label":"1265, Walkley Road, Ellwood, Alta Vista, Ottawa, Eastern Ontario, Ontario, K1V 6T3, Canada"}},"geometry":{"type": "Point","coordinates": [-75.6593323, 45.3729085]}},{"type":"Feature","properties":{"geocoding":{"place_id":334666222,"osm_type":"node","osm_id":7530302688,"osm_key":"amenity","osm_value":"bench","type":"house","label":"1265, Walkley Road, Ellwood, Alta Vista, Ottawa, Eastern Ontario, Ontario, K1V 6T3, Canada"}},"geometry":{"type": "Point","coordinates": [-75.6592513, 45.3729007]}}]}

@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=50+Cassidy+Road%0AOttawa+ON+K2H+6N4%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cc8dc80f3b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:04 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=lsmOlqY7l9bXKKdvw%2FIN3fPtbegrLD7Yyr87O7ICwx38EngEsENOIzZ5BbPUg9QcUKQ26yvWGxoHiU5JfOdO4d%2Fw%2F%2BueIbs%2FDGxxeaXooVMkJQcXak%2FZczhFxFbB%2BDpsa%2BByQD8NMN%2B8"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6069&min_rtt=5748&rtt_var=364&sent=45&recv=28&lost=0&retrans=0&sent_bytes=13841&recv_bytes=2740&delivery_rate=942729&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=9758&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"50 Cassidy Road\nOttawa ON K2H 6N4\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334359972,"osm_type":"way","osm_id":22597648,"osm_key":"leisure","osm_value":"sports_centre","type":"house","label":"Bell Centennial Arena, 50, Cassidy Road, College, Nepean, Ottawa, Eastern Ontario, Ontario, K2H 6K1, Canada","name":"Bell Centennial Arena"}},"geometry":{"type": "Point","coordinates": [-75.81095104415245, 45.324706000000006]}},{"type":"Feature","properties":{"geocoding":{"place_id":334354827,"osm_type":"way","osm_id":549751369,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25085, 50, Cassidy Road, College, Nepean, Ottawa, Eastern Ontario, Ontario, K2H 6K1, Canada","name":"25085"}},"geometry":{"type": "Point","coordinates": [-75.80852812914085, 45.32531955]}},{"type":"Feature","properties":{"geocoding":{"place_id":334362326,"osm_type":"way","osm_id":549751367,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25084, 50, Cassidy Road, College, Nepean, Ottawa, Eastern Ontario, Ontario, K2H 6K1, Canada","name":"25084"}},"geometry":{"type": "Point","coordinates": [-75.81069272811033, 45.32500725]}}]}

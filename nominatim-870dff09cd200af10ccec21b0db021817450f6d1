@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=35+Stafford+Road%0ABells+Corners%0AOttawa+ON+K2H+8V8%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301ce4c1fd43b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:16 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=pFT5f84TkWzMJj%2FV%2F7NeSNgZ1RD1ay41c%2FvZTowQKG0XS5%2F%2FhFSyfDE10TkMzuZPTsLOTyOlA2eaEZtczvO2%2FbS0GKZU9eHiIehFGGxp8BHph8GeL2pLnS8eUlET%2BJtaUVNTsQSUs5xF"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6623&min_rtt=5648&rtt_var=967&sent=345&recv=240&lost=0&retrans=0&sent_bytes=90922&recv_bytes=9896&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=81480&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"35 Stafford Road\nBells Corners\nOttawa ON K2H 8V8\nCanada"},"features":[]}

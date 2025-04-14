@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=1480+Heron+Road%0AOttawa+ON+K1V+6A5%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cd91d9b33b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:46 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=YukAd8JiK63QW3I4ZDwUYsBVuFvpTkrkH04h9sqEP64jE5tohnNTFrdY%2FRywZsGzYUiyOIAGVrcZudMZPtklra0lBIj5GtGx%2Fizar8lb9O5vxAcbz1sn3VzrlAYzS%2FKjhgDmu3bNVhxm"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=7535&min_rtt=5648&rtt_var=3002&sent=220&recv=168&lost=0&retrans=0&sent_bytes=58553&recv_bytes=6871&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=51619&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"1480 Heron Road\nOttawa ON K1V 6A5\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334481860,"osm_type":"way","osm_id":309649371,"osm_key":"amenity","osm_value":"parking","type":"house","label":"4908, 1480, Heron Road, Heron Gate, Alta Vista, Ottawa, Eastern Ontario, Ontario, K1V 6A6, Canada","name":"4908"}},"geometry":{"type": "Point","coordinates": [-75.65436132864829, 45.37892875]}},{"type":"Feature","properties":{"geocoding":{"place_id":334485636,"osm_type":"way","osm_id":197983048,"osm_key":"amenity","osm_value":"community_centre","type":"house","label":"Heron Road Community and Seniors Centre, 1480, Heron Road, Heron Gate, Alta Vista, Ottawa, Eastern Ontario, Ontario, K1V 6A6, Canada","name":"Heron Road Community and Seniors Centre"}},"geometry":{"type": "Point","coordinates": [-75.65399053157472, 45.37887]}},{"type":"Feature","properties":{"geocoding":{"place_id":334478744,"osm_type":"node","osm_id":6591759334,"osm_key":"amenity","osm_value":"social_facility","type":"house","label":"Heron Emergency Food Centre, 1480, Heron Road, Heron Gate, Alta Vista, Ottawa, Eastern Ontario, Ontario, K1V 6A6, Canada","name":"Heron Emergency Food Centre"}},"geometry":{"type": "Point","coordinates": [-75.6538014, 45.3788435]}},{"type":"Feature","properties":{"geocoding":{"place_id":334478857,"osm_type":"node","osm_id":5774289473,"osm_key":"tourism","osm_value":"artwork","type":"house","label":"Home is Where the Heart Is, 1480, Heron Road, Heron Gate, Alta Vista, Ottawa, Eastern Ontario, Ontario, K1V 6A6, Canada","name":"Home is Where the Heart Is"}},"geometry":{"type": "Point","coordinates": [-75.654134, 45.3790837]}}]}

@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=2785+8th+Line%0AOttawa+ON+K0A+2P0%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301ce331e3c3b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:12 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=spA7lcm2n8ys6WGnIO8JBl1IqKkXfUa6%2Bjc8llYxZbhGr%2B%2FJvK9%2BuvPp7ZBWqyqDj3yEgIRhoOF3USBiBIfuqZs8g%2FQHCLR%2FNzIsA7GVnvqERfzDyCZ8mBocazzuM%2BsTTX823OEwmgiU"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6833&min_rtt=5648&rtt_var=1397&sent=328&recv=231&lost=0&retrans=0&sent_bytes=86584&recv_bytes=9462&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=77249&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"2785 8th Line\nOttawa ON K0A 2P0\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334794355,"osm_type":"way","osm_id":244238220,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25162, 2785, 8th Line Road, Osgoode, Ottawa, Eastern Ontario, Ontario, K0A 2P0, Canada","name":"25162"}},"geometry":{"type": "Point","coordinates": [-75.46895741244143, 45.2301597]}},{"type":"Feature","properties":{"geocoding":{"place_id":334794759,"osm_type":"way","osm_id":469951136,"osm_key":"amenity","osm_value":"community_centre","type":"house","label":"Metcalfe Community Centre & Larry Robinson Arena, 2785, 8th Line Road, Osgoode, Ottawa, Eastern Ontario, Ontario, K0A 2P0, Canada","name":"Metcalfe Community Centre & Larry Robinson Arena"}},"geometry":{"type": "Point","coordinates": [-75.46876464516129, 45.229786000000004]}},{"type":"Feature","properties":{"geocoding":{"place_id":334789751,"osm_type":"way","osm_id":244238221,"osm_key":"leisure","osm_value":"pitch","type":"house","label":"Public Tennis Courts, 2785, 8th Line Road, Osgoode, Ottawa, Eastern Ontario, Ontario, K0A 2P0, Canada","name":"Public Tennis Courts"}},"geometry":{"type": "Point","coordinates": [-75.46828585, 45.23039815]}}]}

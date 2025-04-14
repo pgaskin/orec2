@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=33+Quill+Street%0AOttawa+ON+K1K+4E7%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301ce7f08763b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:24 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=FIDztdzON7GTfY%2BK8YxDd%2FCVoGlk1Uwbzk9%2FdgK0ehizvQ40i8tWxEJ9drz8k6ratxc8xjTS51FRVID6d5B631%2F9r2vjoEfdmA9Q8okDd0%2BJL%2BOZXVK7uhFIFUPfZ444JcCW84xVcyx8"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6157&min_rtt=5644&rtt_var=624&sent=378&recv=272&lost=0&retrans=0&sent_bytes=98642&recv_bytes=10700&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=89310&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"33 Quill Street\nOttawa ON K1K 4E7\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334513709,"osm_type":"way","osm_id":611366362,"osm_key":"amenity","osm_value":"community_centre","type":"house","label":"Overbrook Community Centre, 33, Quill Street, Overbrook, Rideau-Rockcliffe, Ottawa, Eastern Ontario, Ontario, K1K 1V2, Canada","name":"Overbrook Community Centre"}},"geometry":{"type": "Point","coordinates": [-75.65684704689782, 45.4254727]}},{"type":"Feature","properties":{"geocoding":{"place_id":334505827,"osm_type":"way","osm_id":549772789,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25056, 33, Quill Street, Overbrook, Rideau-Rockcliffe, Ottawa, Eastern Ontario, Ontario, K1K 1V2, Canada","name":"25056"}},"geometry":{"type": "Point","coordinates": [-75.65725115000001, 45.4255151]}},{"type":"Feature","properties":{"geocoding":{"place_id":334506299,"osm_type":"way","osm_id":521092240,"osm_key":"amenity","osm_value":"parking","type":"house","label":"35757, 33, Quill Street, Overbrook, Rideau-Rockcliffe, Ottawa, Eastern Ontario, Ontario, K1K 1V2, Canada","name":"35757"}},"geometry":{"type": "Point","coordinates": [-75.6564519032816, 45.42517465]}},{"type":"Feature","properties":{"geocoding":{"place_id":334506097,"osm_type":"way","osm_id":386571613,"osm_key":"leisure","osm_value":"swimming_pool","type":"house","label":"Wading Pool - Overbrook, 33, Quill Street, Overbrook, Rideau-Rockcliffe, Ottawa, Eastern Ontario, Ontario, K1K 1V2, Canada","name":"Wading Pool - Overbrook"}},"geometry":{"type": "Point","coordinates": [-75.65712452660692, 45.425079999999994]}},{"type":"Feature","properties":{"geocoding":{"place_id":334506161,"osm_type":"node","osm_id":5772117937,"osm_key":"tourism","osm_value":"artwork","type":"house","label":"Portal, 33, Quill Street, Overbrook, Rideau-Rockcliffe, Ottawa, Eastern Ontario, Ontario, K1K 1V2, Canada","name":"Portal"}},"geometry":{"type": "Point","coordinates": [-75.6566848, 45.425405]}}]}

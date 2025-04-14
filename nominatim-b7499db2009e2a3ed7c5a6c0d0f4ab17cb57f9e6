@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=250+Somerset+Street+East%0AOttawa+ON+K1N+6V6%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cedccfaa3b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:39 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=FXD4Jh3jOai4sG7zro2HCIzabK1gLq34Ui6wxMe08kfp6GblDLxlxbGMpCePkKiTPfMo%2BW%2FUS0N75mTtvOA7h%2BQN2GNvkcLEYVWu7jKvq412Xrr1uL%2B%2BlSHtsvMKSoK%2Ba4nxgvhr%2Bs3I"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6172&min_rtt=5644&rtt_var=523&sent=441&recv=318&lost=0&retrans=0&sent_bytes=114910&recv_bytes=12254&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=104375&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"250 Somerset Street East\nOttawa ON K1N 6V6\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334512984,"osm_type":"way","osm_id":255222388,"osm_key":"amenity","osm_value":"parking","type":"house","label":"4973, 250, Somerset Street East, Sandy Hill, Rideau-Vanier, Ottawa, Eastern Ontario, Ontario, K1N 6V9, Canada","name":"4973"}},"geometry":{"type": "Point","coordinates": [-75.67725778259137, 45.422793549999994]}},{"type":"Feature","properties":{"geocoding":{"place_id":334515586,"osm_type":"way","osm_id":307248561,"osm_key":"amenity","osm_value":"community_centre","type":"house","label":"Sandy Hill Community Centre, 250, Somerset Street East, Sandy Hill, Rideau-Vanier, Ottawa, Eastern Ontario, Ontario, K1N 6V9, Canada","name":"Sandy Hill Community Centre"}},"geometry":{"type": "Point","coordinates": [-75.67762246241554, 45.42278]}},{"type":"Feature","properties":{"geocoding":{"place_id":334509510,"osm_type":"way","osm_id":165789626,"osm_key":"leisure","osm_value":"swimming_pool","type":"house","label":"Wading Pool - Sandy Hill, 250, Somerset Street East, Sandy Hill, Rideau-Vanier, Ottawa, Eastern Ontario, Ontario, K1N 6V9, Canada","name":"Wading Pool - Sandy Hill"}},"geometry":{"type": "Point","coordinates": [-75.67678265214766, 45.4216269]}},{"type":"Feature","properties":{"geocoding":{"place_id":334511146,"osm_type":"node","osm_id":6479602909,"osm_key":"amenity","osm_value":"drinking_water","type":"house","label":"39, 250, Somerset Street East, Sandy Hill, Rideau-Vanier, Ottawa, Eastern Ontario, Ontario, K1N 6V9, Canada","name":"39"}},"geometry":{"type": "Point","coordinates": [-75.6776954, 45.4228264]}},{"type":"Feature","properties":{"geocoding":{"place_id":334516008,"osm_type":"node","osm_id":5772077184,"osm_key":"tourism","osm_value":"artwork","type":"house","label":"Shutters, 250, Somerset Street East, Sandy Hill, Rideau-Vanier, Ottawa, Eastern Ontario, Ontario, K1N 6V9, Canada","name":"Shutters"}},"geometry":{"type": "Point","coordinates": [-75.6777778, 45.4228104]}}]}

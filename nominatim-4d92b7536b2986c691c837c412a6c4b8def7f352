@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=3280+Leitrim+Road%0AOttawa+ON+K1T+3Z4%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cd63fd8c3b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:23:39 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=q2EHYtRsNIA0EJbsky7tOrkyaE1M%2F5VG3InJpa3204QtgSjj1ZhwXOK79iAVip1YVeyNgxJYj5dPqjb3CL%2FWAOpXlBMmSwPoksZVDchdXjF%2BZv9wSYNcQlGzQfW1Nmra7WRS3nDMAZh1"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=6110&min_rtt=5648&rtt_var=179&sent=191&recv=148&lost=0&retrans=0&sent_bytes=50730&recv_bytes=6155&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=44031&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"3280 Leitrim Road\nOttawa ON K1T 3Z4\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334643243,"osm_type":"way","osm_id":68656482,"osm_key":"leisure","osm_value":"sports_centre","type":"house","label":"Fred G. Barrett Arena, 3280, Leitrim Road, Leitrim, Riverside South-Findlay Creek, Ottawa, Eastern Ontario, Ontario, K1T 3W5, Canada","name":"Fred G. Barrett Arena"}},"geometry":{"type": "Point","coordinates": [-75.59780829083414, 45.3311872]}},{"type":"Feature","properties":{"geocoding":{"place_id":334643776,"osm_type":"node","osm_id":829545435,"osm_key":"place","osm_value":"house","type":"house","label":"3280, Leitrim Road, Leitrim, Riverside South-Findlay Creek, Ottawa, Eastern Ontario, Ontario, K1T 3W5, Canada"}},"geometry":{"type": "Point","coordinates": [-75.5995511, 45.3309444]}},{"type":"Feature","properties":{"geocoding":{"place_id":334646558,"osm_type":"node","osm_id":6479602917,"osm_key":"amenity","osm_value":"drinking_water","type":"house","label":"45, 3280, Leitrim Road, Leitrim, Riverside South-Findlay Creek, Ottawa, Eastern Ontario, Ontario, K1T 3W5, Canada","name":"45"}},"geometry":{"type": "Point","coordinates": [-75.5975504, 45.3311462]}}]}

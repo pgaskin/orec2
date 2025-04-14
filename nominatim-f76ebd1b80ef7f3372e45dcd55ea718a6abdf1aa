@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=220+Stoneway+Drive%0AOttawa+ON+K2G+6R2%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cef5ca243b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:43 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=UJXs7rOX6GgcaTiPtJdqPVuEXIs2Irth5HIgUakrZlIllYBwjc%2BJs1%2B4Ilv8H5QYdJ6%2FSWLlePVPw7X3P96MeP18B%2FD%2BWJ7GmLZFp3AHc1a65eOBpXeiNujI2qKdbUiO3QahWJ8X0BS4"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=9288&min_rtt=5644&rtt_var=6906&sent=459&recv=330&lost=0&retrans=0&sent_bytes=119365&recv_bytes=12727&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=108256&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"220 Stoneway Drive\nOttawa ON K2G 6R2\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334704790,"osm_type":"way","osm_id":471316245,"osm_key":"building","osm_value":"public","type":"house","label":"Southpointe Community Centre, 220, Stoneway Drive, Barrhaven East, Nepean, Ottawa, Eastern Ontario, Ontario, K2G 6P5, Canada","name":"Southpointe Community Centre"}},"geometry":{"type": "Point","coordinates": [-75.71606341896552, 45.2881244]}},{"type":"Feature","properties":{"geocoding":{"place_id":334705829,"osm_type":"way","osm_id":550025815,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25170, 220, Stoneway Drive, Barrhaven East, Nepean, Ottawa, Eastern Ontario, Ontario, K2G 6P5, Canada","name":"25170"}},"geometry":{"type": "Point","coordinates": [-75.71559819510576, 45.28826995]}},{"type":"Feature","properties":{"geocoding":{"place_id":334708246,"osm_type":"way","osm_id":548204166,"osm_key":"leisure","osm_value":"playground","type":"house","label":"Splash Pad - Stonecrest Park, 220, Stoneway Drive, Barrhaven East, Nepean, Ottawa, Eastern Ontario, Ontario, K2G 6P5, Canada","name":"Splash Pad - Stonecrest Park"}},"geometry":{"type": "Point","coordinates": [-75.71589655, 45.28764815]}},{"type":"Feature","properties":{"geocoding":{"place_id":334705746,"osm_type":"node","osm_id":5299574476,"osm_key":"place","osm_value":"house","type":"house","label":"Sledding Hill, 220, Stoneway Drive, Barrhaven East, Nepean, Ottawa, Eastern Ontario, Ontario, K2G 6P5, Canada","name":"Sledding Hill"}},"geometry":{"type": "Point","coordinates": [-75.716687, 45.286406]}}]}

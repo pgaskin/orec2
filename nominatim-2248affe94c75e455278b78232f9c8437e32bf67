@@ -1,0 +1,16 @@
+GET /search?format=geocodejson&q=3242+York%27s+Corners+Road+%0AOttawa+ON+K0A+2P0%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (dev)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9301cdec68473b35-IAD
+Content-Type: application/json; charset=utf-8
+Date: Mon, 14 Apr 2025 08:24:01 GMT
+Nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=B4XtNokU74HNK97bUytWid%2Fg8zdj1huQwzOrTB%2FeUtL7%2BKdkuSgNGlW4749jVG2x%2FhfzbY7MWE0SkYF%2FaZ9VDl%2F0BwfswVnI%2Fv%2B%2FUmNV3LhI4QTqALBViuTGinwQ%2FuNw7LHmAvLcQyan"}],"group":"cf-nel","max_age":604800}
+Server: cloudflare
+Server-Timing: cfL4;desc="?proto=TCP&rtt=8175&min_rtt=5648&rtt_var=4535&sent=281&recv=207&lost=0&retrans=0&sent_bytes=74563&recv_bytes=8320&delivery_rate=1118946&cwnd=256&unsent_bytes=0&cid=ba36bdc5f8542cd1&ts=65886&x=0"
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"3242 York's Corners Road \nOttawa ON K0A 2P0\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334788328,"osm_type":"way","osm_id":549760165,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25164, 3242, York's Corners Road, Osgoode, Ottawa, Eastern Ontario, Ontario, K4R 1E1, Canada","name":"25164"}},"geometry":{"type": "Point","coordinates": [-75.41567555707135, 45.22890395]}}]}
