@@ -55,6 +55,8 @@ jobs:
           go-version-file: go.mod
       - run: git worktree add cache cache
       - run: git worktree add data data
-      - run: go run ./scraper -cache-dir ./cache -no-fetch -scrape ./data/data.json -pretty
+      - run: rm -f data/*
+      - run: cp schema/schema.proto data/data.proto
+      - run: go run ./scraper -cache-dir ./cache -no-fetch -scrape -scrape-json ./data/data.json -scrape-textpb ./data/data.textpb -scrape-pb ./data/data.pb -pretty
       - run: git -C data add . && { git -C data diff --cached --quiet || git -C data -c user.name=github-actions -c user.email=github-actions@github.com commit -m 'update data' ; } && git -C data push
   # TODO: build and deploy frontend

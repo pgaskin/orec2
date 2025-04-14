@@ -28,24 +28,32 @@ import (
 	"maps"
 
 	"github.com/PuerkitoBio/goquery"
+	"github.com/pgaskin/orec2/schema"
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
 	"golang.org/x/text/unicode/norm"
 	"golang.org/x/time/rate"
+	"google.golang.org/protobuf/encoding/protojson"
+	"google.golang.org/protobuf/encoding/prototext"
+	"google.golang.org/protobuf/proto"
+	"google.golang.org/protobuf/types/known/timestamppb"
 )
 
 var (
-	scrape       = flag.String("scrape", "", "parse data from pages into the specified file")
+	Scrape       = flag.Bool("scrape", false, "parse data from pages")
+	ScrapeJSON   = flag.String("scrape-json", "", "write json to the specified file")
+	ScrapePB     = flag.String("scrape-pb", "", "write binary protobuf to the specified file")
+	ScrapeTextPB = flag.String("scrape-textpb", "", "write text protobuf to the specified file")
 	Pretty       = flag.Bool("pretty", false, "output pretty json")
-	noFetch      = flag.Bool("no-fetch", false, "don't fetch pages not in cache")
-	cacheDir     = flag.String("cache-dir", "", "cache pages in the specified directory")
-	nominatim    = flag.String("nominatim", "https://nominatim.geocoding.ai", "nominatim base url")
-	nominatimQPS = flag.Float64("nominatim-qps", 1, "maximum nominatim queries per second")
-	placeListing = flag.String("place-listing", "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing", "place listing url to start scraping from")
+	NoFetch      = flag.Bool("no-fetch", false, "don't fetch pages not in cache")
+	CacheDir     = flag.String("cache-dir", "", "cache pages in the specified directory")
+	Nominatim    = flag.String("nominatim", "https://nominatim.geocoding.ai", "nominatim base url")
+	NominatimQPS = flag.Float64("nominatim-qps", 1, "maximum nominatim queries per second")
+	PlaceListing = flag.String("place-listing", "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing", "place listing url to start scraping from")
 )
 
 var nominatimLimit = sync.OnceValue(func() *rate.Limiter {
-	return rate.NewLimiter(rate.Limit(*nominatimQPS), 1)
+	return rate.NewLimiter(rate.Limit(*NominatimQPS), 1)
 })
 
 func init() {
@@ -67,74 +75,20 @@ func main() {
 
 // note: all parsing errs on the side of safety (not removing unknown information, not parsing partial information)
 
-type Data struct {
-	Facilities  []Facility `json:"facilities"`
-	Attribution []string   `json:"_attribution"`
-}
-
-type Facility struct {
-	Name           string           `json:"name"`
-	Description    string           `json:"desc"`
-	Source         FacilitySource   `json:"src"`
-	Location       FacilityLocation `json:"location"`
-	Notifications  string           `json:"notifications_html"` // raw html
-	SpecialHours   string           `json:"special_hours_html"` // raw html
-	ScheduleGroups []ScheduleGroup  `json:"schedule_groups"`
-	Errors         []string         `json:"_err"` // scrape errors
-}
-
-type FacilitySource struct {
-	URL  string `json:"url"`
-	Date *int64 `json:"_date"` // unix epoch seconds, null if unknown
-}
-
-type FacilityLocation struct {
-	Address   string   `json:"addr"`
-	Longitude *float64 `json:"_lng"` // null if unknown
-	Latitude  *float64 `json:"_lat"` // null if unknown
-}
-
-type ScheduleGroup struct {
-	Label           string     `json:"lbl"`
-	Title           string     `json:"_title"`                // for display and filtering, parsed out from the label and normalized, title case
-	ScheduleChanges string     `json:"schedule_changes_html"` // raw html
-	Schedules       []Schedule `json:"schedules"`
-}
-
-type Schedule struct {
-	Caption    string             `json:"cap"`
-	Name       string             `json:"_name"` // for filtering, parsed out from the caption and normalized (i.e., without facility name or date range), lowercase
-	DayHeaders []string           `json:"day_headers"`
-	Activities []ScheduleActivity `json:"activities"`
-}
-
-type ScheduleActivity struct {
-	Label string        `json:"lbl"`
-	Name  string        `json:"_name"` // for filtering, cleaned up and normalized, lowercase
-	Days  [][]TimeRange `json:"days"`  // [len(DayHeaders)][]
-}
-
-type TimeRange struct {
-	Label   string `json:"lbl"`
-	Start   *int   `json:"_start"` // minutes from 00:00, -1 if none, null if parse error
-	End     *int   `json:"_end"`   // minutes from 00:00, -1 if none, null if parse error
-	Weekday *int   `json:"_wkday"` // sunday = 0, null if parse error
-}
-
 func run(ctx context.Context) error {
-	if *cacheDir != "" {
-		slog.Info("using cache dir", "path", cacheDir)
-		if err := os.Mkdir(*cacheDir, 0777); err != nil && !errors.Is(err, fs.ErrExist) {
+	if *CacheDir != "" {
+		slog.Info("using cache dir", "path", CacheDir)
+		if err := os.Mkdir(*CacheDir, 0777); err != nil && !errors.Is(err, fs.ErrExist) {
 			return fmt.Errorf("create cache dir: %w", err)
 		}
-		if err := os.WriteFile(filepath.Join(*cacheDir, ".gitattributes"), []byte("* -text\n"), 0666); err != nil { // no line ending conversions
+		if err := os.WriteFile(filepath.Join(*CacheDir, ".gitattributes"), []byte("* -text\n"), 0666); err != nil { // no line ending conversions
 			return fmt.Errorf("write cache dir gitattributes: %w", err)
 		}
 	}
 	var (
-		data      Data
+		data      schema.Data
 		geoAttrib = map[string]struct{}{}
-		cur       = *placeListing
+		cur       = *PlaceListing
 	)
 	for cur != "" {
 		doc, _, err := fetchPage(ctx, cur)
@@ -153,24 +107,26 @@ func run(ctx context.Context) error {
 		}
 
 		if err := scrapePlaceListings(doc, content, func(u *url.URL, name, address string) error {
-			var facility Facility
+			var facility schema.Facility
 			facility.Name = strings.Map(func(r rune) rune {
 				if unicode.Is(unicode.Pd, r) {
 					return '-'
 				}
 				return r
 			}, name)
-			facility.Location.Address = address
-			facility.Source.URL = u.String()
-			facility.ScheduleGroups = []ScheduleGroup{}
-			facility.Errors = []string{}
+			facility.Address = address
+			facility.Source = &schema.Source{
+				Url: u.String(),
+			}
 
 			if lng, lat, attrib, hasLngLat, err := geocode(ctx, address); err != nil {
 				slog.Warn("failed to geocode place", "name", name, "address", address, "error", err)
-				facility.Errors = append(facility.Errors, fmt.Sprintf("failed to resolve address: %v", err))
+				facility.XErrors = append(facility.XErrors, fmt.Sprintf("failed to resolve address: %v", err))
 			} else if hasLngLat {
-				facility.Location.Latitude = &lat
-				facility.Location.Longitude = &lng
+				facility.XLnglat = &schema.LngLat{
+					Lat: float32(lat),
+					Lng: float32(lng),
+				}
 				if attrib != "" {
 					geoAttrib[attrib] = struct{}{}
 				}
@@ -179,14 +135,14 @@ func run(ctx context.Context) error {
 			doc, date, err := fetchPage(ctx, u.String())
 			if err != nil {
 				slog.Warn("failed to fetch place", "name", name, "error", err)
-				facility.Errors = append(facility.Errors, fmt.Sprintf("failed to fetch data: %v", err))
+				facility.XErrors = append(facility.XErrors, fmt.Sprintf("failed to fetch data: %v", err))
 			} else {
 				slog.Info("got place", "name", name)
 			}
 			if !date.IsZero() {
-				facility.Source.Date = ptrTo(date.Unix())
+				facility.Source.XDate = timestamppb.New(date)
 			}
-			if *scrape == "" {
+			if !*Scrape {
 				return nil
 			}
 			if err := func() error {
@@ -201,31 +157,30 @@ func run(ctx context.Context) error {
 				}
 
 				if field, err := scrapeNodeField(node, "description", "text-long", false, true); err != nil {
-					facility.Errors = append(facility.Errors, fmt.Sprintf("extract facility description: %v", err))
+					facility.XErrors = append(facility.XErrors, fmt.Sprintf("extract facility description: %v", err))
 				} else {
 					facility.Description = strings.Join(strings.Fields(field.Text()), " ")
 				}
 
 				if field, err := scrapeNodeField(node, "notification-details", "text-long", false, true); err != nil {
-					facility.Errors = append(facility.Errors, fmt.Sprintf("extract facility notifications: %v", err))
+					facility.XErrors = append(facility.XErrors, fmt.Sprintf("extract facility notifications: %v", err))
 				} else if raw, err := field.Html(); err != nil {
-					facility.Errors = append(facility.Errors, fmt.Sprintf("extract facility notifications: %v", err))
+					facility.XErrors = append(facility.XErrors, fmt.Sprintf("extract facility notifications: %v", err))
 				} else {
-					facility.Notifications = raw
+					facility.NotificationsHtml = raw
 				}
 
 				if field, err := scrapeNodeField(node, "hours-details", "text-long", false, true); err != nil {
-					facility.Errors = append(facility.Errors, fmt.Sprintf("extract facility notifications: %v", err))
+					facility.XErrors = append(facility.XErrors, fmt.Sprintf("extract facility notifications: %v", err))
 				} else if raw, err := field.Html(); err != nil {
-					facility.Errors = append(facility.Errors, fmt.Sprintf("extract facility notifications: %v", err))
+					facility.XErrors = append(facility.XErrors, fmt.Sprintf("extract facility notifications: %v", err))
 				} else {
-					facility.SpecialHours = raw
+					facility.SpecialHoursHtml = raw
 				}
 
 				if err := scrapeCollapseSections(node, func(label string, content *goquery.Selection) error {
-					var group ScheduleGroup
+					var group schema.ScheduleGroup
 					group.Label = label
-					group.Schedules = []Schedule{}
 
 					if !strings.Contains(label, "drop-in") && !strings.Contains(label, "schedule") && content.Find(`a[href*="reservation.frontdesksuite"],p:contains("schedules listed in the charts below"),th:contains("Monday")`).Length() == 0 {
 						return nil // probably not a schedule group
@@ -241,27 +196,27 @@ func run(ctx context.Context) error {
 					title = strings.TrimPrefix(title, "s ")
 					title = strings.TrimSpace(strings.TrimPrefix(strings.TrimSpace(title), "-"))
 					title = cases.Title(language.English).String(title)
-					group.Title = title
+					group.XTitle = title
 
 					if scheduleChangeH := content.Find("h1,h2,h3,h4,h5,h6").FilterFunction(func(i int, s *goquery.Selection) bool {
 						return strings.HasPrefix(strings.TrimSpace(strings.ToLower(s.Text())), "schedule change")
 					}); scheduleChangeH.Length() == 1 {
 						if sel := scheduleChangeH.Next(); sel.Is("ul") {
 							if raw, err := sel.Html(); err == nil {
-								group.ScheduleChanges = "<ul>" + raw + "</ul>"
+								group.ScheduleChangesHtml = "<ul>" + raw + "</ul>"
 							} else {
-								facility.Errors = append(facility.Errors, fmt.Sprintf("parse schedule changes for schedule group %q: %v", label, err))
+								facility.XErrors = append(facility.XErrors, fmt.Sprintf("parse schedule changes for schedule group %q: %v", label, err))
 							}
 						} else {
-							facility.Errors = append(facility.Errors, fmt.Sprintf("parse schedule changes for schedule group %q: header is not followed by a list", label))
+							facility.XErrors = append(facility.XErrors, fmt.Sprintf("parse schedule changes for schedule group %q: header is not followed by a list", label))
 						}
 					} else if scheduleChangeH.Length() != 0 {
-						facility.Errors = append(facility.Errors, fmt.Sprintf("parse schedule changes for schedule group %q: multiple selector matches found", label))
+						facility.XErrors = append(facility.XErrors, fmt.Sprintf("parse schedule changes for schedule group %q: multiple selector matches found", label))
 					}
 
 				schedule:
 					for _, table := range content.Find("table").EachIter() {
-						var schedule Schedule
+						var schedule schema.Schedule
 
 						schedule.Caption = strings.Join(strings.Fields(table.Find("caption").First().Text()), " ")
 
@@ -285,21 +240,21 @@ func run(ctx context.Context) error {
 							}
 						}
 						name = strings.TrimSpace(strings.TrimSuffix(name, " schedule"))
-						schedule.Name = name
+						schedule.XName = name
 
 						// TODO: refactor
 						for _, row := range table.Find("tr").EachIter() {
 							cells := row.Find("th,td")
-							if schedule.DayHeaders == nil {
+							if schedule.Days == nil {
 								for i, cell := range cells.EachIter() {
 									if i != 0 {
-										schedule.DayHeaders = append(schedule.DayHeaders, strings.TrimSpace(cell.Text()))
+										schedule.Days = append(schedule.Days, strings.TrimSpace(cell.Text()))
 									}
 								}
 							} else {
-								var activity ScheduleActivity
-								if cells.Length() != len(schedule.DayHeaders)+1 {
-									facility.Errors = append(facility.Errors, fmt.Sprintf("failed to parse schedule %q (group %q): row size mismatch", schedule.Caption, group.Label))
+								var activity schema.Schedule_Activity
+								if cells.Length() != len(schedule.Days)+1 {
+									facility.XErrors = append(facility.XErrors, fmt.Sprintf("failed to parse schedule %q (group %q): row size mismatch", schedule.Caption, group.Label))
 									continue schedule
 								}
 								for i, cell := range cells.EachIter() {
@@ -332,9 +287,9 @@ func run(ctx context.Context) error {
 										if reduced {
 											name += " - reduced capacity"
 										}
-										activity.Name = name
+										activity.XName = name
 									} else {
-										hdr := schedule.DayHeaders[i-1]
+										hdr := schedule.Days[i-1]
 										wkday := time.Weekday(-1)
 										for wd := range 7 {
 											if strings.Contains(strings.ToLower(hdr), strings.ToLower(time.Weekday(wd).String())[:3]) {
@@ -348,9 +303,9 @@ func run(ctx context.Context) error {
 											}
 										}
 										if wkday == -1 {
-											facility.Errors = append(facility.Errors, fmt.Sprintf("warning: failed to parse weekday from header %q", hdr))
+											facility.XErrors = append(facility.XErrors, fmt.Sprintf("warning: failed to parse weekday from header %q", hdr))
 										}
-										times := []TimeRange{}
+										times := []*schema.TimeRange{}
 										for t := range strings.FieldsFuncSeq(cell.Text(), func(r rune) bool {
 											return r == ','
 										}) {
@@ -363,10 +318,10 @@ func run(ctx context.Context) error {
 											if tnorm == "n/a" {
 												continue
 											}
-											var trange TimeRange
+											var trange schema.TimeRange
 											trange.Label = strings.TrimSpace(t)
 											if wkday != -1 {
-												trange.Weekday = ptrTo(int(wkday))
+												trange.XWkday = ptrTo(schema.Weekday(wkday))
 											}
 											if t1, t2, ok := strings.Cut(tnorm, "-"); ok && !strings.Contains(t2, "-") {
 												var (
@@ -429,31 +384,33 @@ func run(ctx context.Context) error {
 													if n2 < n1 {
 														n1 += 24 * 60 // next day
 													}
-													trange.Start = ptrTo(n1)
-													trange.End = ptrTo(n2)
+													trange.XStart = ptrTo(int32(n1))
+													trange.XEnd = ptrTo(int32(n2))
 												}
 												if !ok1 || !ok2 {
 													slog.Warn("failed to parse time range", "range", t)
-													facility.Errors = append(facility.Errors, fmt.Sprintf("warning: failed to parse time range %q", t))
+													facility.XErrors = append(facility.XErrors, fmt.Sprintf("warning: failed to parse time range %q", t))
 												}
 											}
-											times = append(times, trange)
+											times = append(times, &trange)
 										}
-										activity.Days = append(activity.Days, times)
+										activity.Days = append(activity.Days, &schema.Schedule_ActivityDay{
+											Times: times,
+										})
 									}
 								}
-								schedule.Activities = append(schedule.Activities, activity)
+								schedule.Activities = append(schedule.Activities, &activity)
 							}
 						}
-						if len(schedule.DayHeaders) == 0 || len(schedule.Activities) == 0 {
-							facility.Errors = append(facility.Errors, fmt.Sprintf("failed to parse schedule %q (group %q): invalid table layout", schedule.Caption, group.Label))
+						if len(schedule.Days) == 0 || len(schedule.Activities) == 0 {
+							facility.XErrors = append(facility.XErrors, fmt.Sprintf("failed to parse schedule %q (group %q): invalid table layout", schedule.Caption, group.Label))
 							continue schedule
 						}
 
-						group.Schedules = append(group.Schedules, schedule)
+						group.Schedules = append(group.Schedules, &schedule)
 					}
 
-					facility.ScheduleGroups = append(facility.ScheduleGroups, group)
+					facility.ScheduleGroups = append(facility.ScheduleGroups, &group)
 					return nil
 				}); err != nil {
 					return err
@@ -461,10 +418,10 @@ func run(ctx context.Context) error {
 
 				return nil
 			}(); err != nil {
-				facility.Errors = append(facility.Errors, fmt.Sprintf("failed to extract facility information: %v", err))
+				facility.XErrors = append(facility.XErrors, fmt.Sprintf("failed to extract facility information: %v", err))
 			}
 
-			data.Facilities = append(data.Facilities, facility)
+			data.Facilities = append(data.Facilities, &facility)
 			return nil
 		}); err != nil {
 			return err
@@ -475,24 +432,48 @@ func run(ctx context.Context) error {
 		}
 		cur = nextURL.String()
 	}
-	if *scrape != "" {
+	if *Scrape {
 		data.Attribution = append(data.Attribution, "Compiled data © Patrick Gaskin. https://github.com/pgaskin/orec2")
-		data.Attribution = append(data.Attribution, "Facility information and schedules © City of Ottawa. "+*placeListing)
+		data.Attribution = append(data.Attribution, "Facility information and schedules © City of Ottawa. "+*PlaceListing)
 		for _, attrib := range slices.Sorted(maps.Keys(geoAttrib)) {
 			data.Attribution = append(data.Attribution, "Address data "+strings.TrimPrefix(attrib, "Data "))
 		}
-		slog.Info("saving data to file", "name", *scrape)
-		var buf bytes.Buffer
-		enc := json.NewEncoder(&buf)
-		enc.SetEscapeHTML(false)
-		if *Pretty {
-			enc.SetIndent("", "  ")
+		if *ScrapeJSON != "" {
+			slog.Info("saving json data to file", "name", *ScrapeJSON)
+			if buf, err := (protojson.MarshalOptions{
+				EmitUnpopulated:   true,
+				EmitDefaultValues: true,
+				Multiline:         *Pretty,
+				AllowPartial:      false,
+				UseEnumNumbers:    true,
+				Indent:            "  ",
+				UseProtoNames:     false,
+			}).Marshal(&data); err != nil {
+				return fmt.Errorf("save data: %w", err)
+			} else if err := os.WriteFile(*ScrapeJSON, buf, 0644); err != nil {
+				return fmt.Errorf("save data: %w", err)
+			}
 		}
-		if err := enc.Encode(data); err != nil {
-			return fmt.Errorf("save data: %w", err)
+		if *ScrapePB != "" {
+			slog.Info("saving protobuf data to file", "name", *ScrapePB)
+			if buf, err := proto.Marshal(&data); err != nil {
+				return fmt.Errorf("save data: %w", err)
+			} else if err := os.WriteFile(*ScrapePB, buf, 0644); err != nil {
+				return fmt.Errorf("save data: %w", err)
+			}
 		}
-		if err := os.WriteFile(*scrape, buf.Bytes(), 0644); err != nil {
-			return fmt.Errorf("save data: %w", err)
+		if *ScrapeTextPB != "" {
+			slog.Info("saving text protobuf data to file", "name", *ScrapeTextPB)
+			if buf, err := (prototext.MarshalOptions{
+				Multiline:    *Pretty,
+				AllowPartial: false,
+				Indent:       "  ",
+				EmitASCII:    false,
+			}).Marshal(&data); err != nil {
+				return fmt.Errorf("save data: %w", err)
+			} else if err := os.WriteFile(*ScrapeTextPB, buf, 0644); err != nil {
+				return fmt.Errorf("save data: %w", err)
+			}
 		}
 	}
 	return nil
@@ -566,7 +547,7 @@ func fetchPage(ctx context.Context, u string) (*goquery.Document, time.Time, err
 func fetchNominatim(ctx context.Context, r *url.URL) (*http.Response, error) {
 	slog.Info("fetch nominatim", "url", r.String())
 
-	u, err := url.Parse(*nominatim)
+	u, err := url.Parse(*Nominatim)
 	if err != nil {
 		return nil, err
 	}
@@ -580,9 +561,9 @@ func fetchNominatim(ctx context.Context, r *url.URL) (*http.Response, error) {
 
 func fetch(ctx context.Context, u string, cacheType, cacheKey string, limiter *rate.Limiter) (*http.Response, error) {
 	var cacheName string
-	if *cacheDir != "" {
+	if *CacheDir != "" {
 		s := sha1.Sum([]byte(cacheKey))
-		cacheName = filepath.Join(*cacheDir, cacheType+"-"+hex.EncodeToString(s[:]))
+		cacheName = filepath.Join(*CacheDir, cacheType+"-"+hex.EncodeToString(s[:]))
 	}
 
 	var resp *http.Response
@@ -603,7 +584,7 @@ func fetch(ctx context.Context, u string, cacheType, cacheKey string, limiter *r
 			}
 		} else if !errors.Is(err, os.ErrNotExist) {
 			return nil, fmt.Errorf("read cached response: %w", err)
-		} else if *noFetch {
+		} else if *NoFetch {
 			return nil, fmt.Errorf("get %q: fetch disabled, response not in cache", u)
 		}
 	}
