@@ -41,7 +41,8 @@ jobs:
       - run: rm -fv cache/page-*
         if: ${{ github.event_name != 'push' }} # we only want to clear the cached data if it's a scheduled or forced update... otherwise, just download anything new if needed
       - run: go run ./scraper -cache-dir ./cache
-      - run: git -C cache add . && { git -C cache diff --cached --quiet || git -C cache commit -m "update cache (${{ github.event_name == 'push' && 'partial' || 'full' }}, reason=${{github.event_name}} scraper=$(git rev-parse HEAD))" ; } && git -C cache push
+      - run: |
+          git -C cache add . && { git -C cache diff --cached --quiet || git -C cache commit -m "update cache (${{ github.event_name == 'push' && 'partial' || 'full' }} reason: ${{github.event_name}} scraper: $(git rev-parse HEAD))" ; } && git -C cache push
   scrape:
     needs: [test, cache]
     name: Scrape cached pages
@@ -60,5 +61,6 @@ jobs:
       - run: rm -fv data/*
       - run: cp schema/schema.proto data/data.proto
       - run: go run ./scraper -cache-dir ./cache -no-fetch -scrape -scrape-json ./data/data.json -scrape-textpb ./data/data.textpb -scrape-pb ./data/data.pb -pretty
-      - run: git -C data add . && { git -C data diff --cached --quiet || git -C data commit -m 'update data (reason=${{github.event_name}} scraper=$(git rev-parse HEAD) cache=$(git -C cache rev-parse HEAD))' ; } && git -C data push
+      - run: |
+          git -C data add . && { git -C data diff --cached --quiet || git -C data commit -m "update data (reason: ${{github.event_name}} scraper: $(git rev-parse HEAD) cache: $(git -C cache rev-parse HEAD))" ; } && git -C data push
   # TODO: build and deploy frontend
