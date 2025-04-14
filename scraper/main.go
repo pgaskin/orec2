@@ -22,10 +22,14 @@ import (
 	"strings"
 	"sync"
 	"time"
+	"unicode"
 
 	"maps"
 
 	"github.com/PuerkitoBio/goquery"
+	"golang.org/x/text/cases"
+	"golang.org/x/text/language"
+	"golang.org/x/text/unicode/norm"
 	"golang.org/x/time/rate"
 )
 
@@ -77,24 +81,25 @@ type Facility struct {
 
 type FacilitySource struct {
 	URL  string `json:"url"`
-	Date int64  `json:"_date,omitempty"` // unix epoch seconds
+	Date *int64 `json:"_date"` // unix epoch seconds, null if unknown
 }
 
 type FacilityLocation struct {
 	Address   string   `json:"addr"`
-	Longitude *float64 `json:"_lng,omitempty"`
-	Latitude  *float64 `json:"_lat,omitempty"`
+	Longitude *float64 `json:"_lng"` // null if unknown
+	Latitude  *float64 `json:"_lat"` // null if unknown
 }
 
 type ScheduleGroup struct {
 	Label           string     `json:"lbl"`
+	Title           string     `json:"_title"`                // parsed out from the label and normalized
 	ScheduleChanges string     `json:"schedule_changes_html"` // raw html
 	Schedules       []Schedule `json:"schedules"`
 }
 
 type Schedule struct {
 	Caption    string             `json:"cap"`
-	Title      string             `json:"_title,omitempty"` // parsed out from the caption (i.e., without facility name or date range)
+	Title      string             `json:"_title"` // parsed out from the caption and normalized (i.e., without facility name or date range)
 	DayHeaders []string           `json:"day_headers"`
 	Activities []ScheduleActivity `json:"activities"`
 }
@@ -106,9 +111,9 @@ type ScheduleActivity struct {
 
 type TimeRange struct {
 	Label   string `json:"lbl"`
-	Start   *int   `json:"_start,omitempty"`
-	End     *int   `json:"_end,omitempty"`
-	Weekday *int   `json:"_wkday,omitempty"` // sunday = 0
+	Start   *int   `json:"_start"` // minutes from 00:00, -1 if none, null if parse error
+	End     *int   `json:"_end"`   // minutes from 00:00, -1 if none, null if parse error
+	Weekday *int   `json:"_wkday"` // sunday = 0, null if parse error
 }
 
 func run(ctx context.Context) error {
@@ -143,9 +148,16 @@ func run(ctx context.Context) error {
 
 		if err := scrapePlaceListings(doc, content, func(u *url.URL, name, address string) error {
 			var facility Facility
-			facility.Name = name
+			facility.Name = strings.Map(func(r rune) rune {
+				if unicode.Is(unicode.Pd, r) {
+					return '-'
+				}
+				return r
+			}, name)
 			facility.Location.Address = address
 			facility.Source.URL = u.String()
+			facility.ScheduleGroups = []ScheduleGroup{}
+			facility.Errors = []string{}
 
 			if lng, lat, hasLngLat, err := geocode(ctx, address); err != nil {
 				slog.Warn("failed to geocode place", "name", name, "address", address, "error", err)
@@ -161,7 +173,10 @@ func run(ctx context.Context) error {
 				facility.Errors = append(facility.Errors, fmt.Sprintf("failed to fetch data: %v", err))
 			} else {
 				slog.Info("got place", "name", name)
-				facility.Source.Date = date.Unix()
+			}
+			if !date.IsZero() {
+				ts := date.Unix()
+				facility.Source.Date = &ts
 			}
 			if *scrape == "" {
 				return nil
@@ -199,21 +214,44 @@ func run(ctx context.Context) error {
 					facility.SpecialHours = raw
 				}
 
-				if err := scrapeCollapseSections(node, func(title string, content *goquery.Selection) error {
-					rest, ok := strings.CutPrefix(title, "Drop-in schedule")
-					if !ok {
-						return nil
-					}
-					rest = strings.TrimPrefix(rest, "s ")
-					rest = strings.TrimSpace(strings.TrimPrefix(strings.TrimSpace(rest), "-"))
-
+				if err := scrapeCollapseSections(node, func(label string, content *goquery.Selection) error {
 					var group ScheduleGroup
-					group.Label = rest
+					group.Label = label
+					group.Schedules = []Schedule{}
 
-					// TODO
-					//fmt.Println(content.Find("h1,h2,h3,h4,h5,h6").FilterFunction(func(i int, s *goquery.Selection) bool {
-					//	return strings.HasPrefix(strings.TrimSpace(s.Text()), "Schedule change")
-					//}).Html())
+					if !strings.Contains(label, "drop-in") && !strings.Contains(label, "schedule") && content.Find(`a[href*="reservation.frontdesksuite"],p:contains("schedules listed in the charts below"),th:contains("Monday")`).Length() == 0 {
+						return nil // probably not a schedule group
+					}
+
+					title := strings.Map(func(r rune) rune {
+						if unicode.Is(unicode.Pd, r) {
+							return '-'
+						}
+						return unicode.ToLower(r)
+					}, norm.NFKC.String(label))
+					title = strings.TrimPrefix(title, "drop-in schedule")
+					title = strings.TrimPrefix(title, "s ")
+					title = strings.TrimSpace(strings.TrimPrefix(strings.TrimSpace(title), "-"))
+					title = cases.Title(language.English).String(title)
+					group.Title = title
+
+					if scheduleChangeH := content.Find("h1,h2,h3,h4,h5,h6").FilterFunction(func(i int, s *goquery.Selection) bool {
+						return strings.HasPrefix(strings.TrimSpace(strings.ToLower(s.Text())), "schedule change")
+					}); scheduleChangeH.Length() == 1 {
+						if sel := scheduleChangeH.Next(); sel.Is("ul") {
+							if raw, err := sel.Html(); err == nil {
+								group.ScheduleChanges = "<ul>" + raw + "</ul>"
+							} else {
+								facility.Errors = append(facility.Errors, fmt.Sprintf("parse schedule changes for schedule group %q: %v", label, err))
+							}
+						} else {
+							facility.Errors = append(facility.Errors, fmt.Sprintf("parse schedule changes for schedule group %q: header is not followed by a list", label))
+						}
+					} else if scheduleChangeH.Length() != 0 {
+						facility.Errors = append(facility.Errors, fmt.Sprintf("parse schedule changes for schedule group %q: multiple selector matches found", label))
+					}
+
+					facility.ScheduleGroups = append(facility.ScheduleGroups, group)
 					return nil
 				}); err != nil {
 					return err
@@ -308,7 +346,7 @@ func fetchPage(ctx context.Context, u string) (*goquery.Document, time.Time, err
 	}
 	doc.Url = resp.Request.URL
 
-	date, _ := time.Parse(resp.Header.Get("Date"), http.TimeFormat)
+	date, _ := time.Parse(http.TimeFormat, resp.Header.Get("Date"))
 	return doc, date, nil
 }
 
