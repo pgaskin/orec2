@@ -12,6 +12,7 @@ import (
 	"fmt"
 	"io/fs"
 	"log/slog"
+	"maps"
 	"net/http"
 	"net/http/cookiejar"
 	"net/http/httputil"
@@ -24,8 +25,6 @@ import (
 	"sync"
 	"time"
 	"unicode"
-
-	"maps"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/pgaskin/orec2/schema"
@@ -68,12 +67,6 @@ func main() {
 		os.Exit(1)
 	}
 }
-
-// note: underscored fields are ones which contain data parsed or otherwise
-// enriched by the scraper rather than coming directly from the source page, and
-// are set on a best-effort basis (if an error occurs, it is ignored)
-
-// note: all parsing errs on the side of safety (not removing unknown information, not parsing partial information)
 
 func run(ctx context.Context) error {
 	if *CacheDir != "" {
