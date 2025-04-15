@@ -335,6 +335,9 @@ func run(ctx context.Context) error {
 												if unicode.IsSpace(r) || r == '\u200b' {
 													return -1
 												}
+												if unicode.Is(unicode.Pd, r) {
+													return '-'
+												}
 												return unicode.ToLower(r)
 											}, t)
 											if tnorm == "n/a" {
