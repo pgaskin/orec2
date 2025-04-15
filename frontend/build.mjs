@@ -27,42 +27,56 @@ const postcssPlugin = ({
 })
 
 try {
-    await rm("build", {
-        force: true,
-        recursive: true,
-    })
 
-    const { metafile } = await build({
-        metafile: true,
-        entryPoints: ["frontend/index.mjs"],
-        entryNames: "[dir]/[name]-[hash]",
+console.info("> clean build dir")
+await rm("build", {
+    force: true,
+    recursive: true,
+})
 
-        bundle: true,
-        outfile: "build/bundle.js",
-        /*
-        outdir: "build",
-        splitting: true,
-        format: "esm",
-        */
+console.info("> build template")
+const { default: render } = await import(`data:text/javascript;base64,${btoa((await build({
+    write: false,
+    entryPoints: ["frontend/index.jsx"],
+    jsx: "transform",
+    jsxImportSource: "preact",
+    bundle: true,
+    platform: "node",
+    format: "esm",
+    sourcemap: "inline",
+})).outputFiles[0].text)}`)
 
-        plugins: [
-            postcssPlugin({
-                plugins: [
-                    postcssRelativeColorSyntax,
-                ],
-            }),
-        ],
-        loader: {
-            ".woff2": "file",
-        },
-        target: ["chrome94", "firefox94", "safari15"],
-    })
+console.info("> build bundle")
+const { metafile } = await build({
+    metafile: true,
+    entryPoints: ["frontend/index.mjs"],
+    entryNames: "[dir]/[name]-[hash]",
 
-    const html = (await readFile("frontend/index.html", { encoding: "utf-8" }))
-        .replaceAll("bundle.js", Object.keys(metafile.outputs).find(x => x.startsWith("build/bundle-") && x.endsWith(".js")).split("/").pop())
-        .replaceAll("bundle.css", Object.keys(metafile.outputs).find(x => x.startsWith("build/bundle-") && x.endsWith(".css")).split("/").pop())
+    bundle: true,
+    outfile: "build/bundle.js",
 
-    await writeFile("build/index.html", html)
-} catch (e) {
-    console.error(e.message)
-}
+    plugins: [
+        postcssPlugin({
+            plugins: [
+                postcssRelativeColorSyntax,
+            ],
+        }),
+    ],
+    loader: {
+        ".woff2": "file",
+    },
+    platform: "browser",
+    target: ["chrome94", "firefox94", "safari15"],
+})
+const bundleJS = Object.entries(metafile.outputs).find(([,{entryPoint}]) => entryPoint == "frontend/index.mjs")[0]
+const bundleCSS = metafile.outputs[bundleJS].cssBundle
+
+console.info("> render page")
+await writeFile("build/index.html", render({
+    bundleJS: bundleJS.slice("build/".length),
+    bundleCSS: bundleCSS.slice("build/".length),
+}))
+
+console.info("> done")
+
+} catch (ex) { console.error(ex.message) }

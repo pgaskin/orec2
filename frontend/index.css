@@ -1,0 +1,99 @@
+html {
+    font-family: 'Inter Variable';
+    font-size: 16px;
+    font-optical-sizing: auto;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: inherit;
+    font-size: .875rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+table.schedule {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+
+    caption {
+        background: #eee;
+        padding: .5rem;
+        text-align: left;
+        font-weight: bold;
+        border: 1px solid #ccc;
+    }
+    td, th {
+        border: 1px solid #ccc;
+        padding: .5rem;
+        text-align: center;
+    }
+    > thead > tr > th:first-child,
+    > tbody > tr > th:first-child {
+        width: 10rem;
+        text-align: left;
+        vertical-align: top;
+    }
+    > tbody > tr > td {
+        padding: 0;
+        > span {
+            display: block;
+            font-size: .875em;
+            font-stretch: extra-condensed;
+            margin: .75em;
+            line-height: 1;
+        }
+    }
+}
+
+article.facility {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-rows: auto;
+    grid-template-columns: [left] 22rem [right] 1fr;
+
+    border: 1px solid #000;
+    margin: 1rem;
+    background: #e8ecfc;
+
+    > h2 {
+        grid-row: 1;
+        grid-column: 1/-1;
+        margin: 0;
+        background: #ccd3f8;
+        padding: .5rem;
+    }
+    > aside {
+        grid-column: left;
+        grid-row: 2 / span 3000;
+        padding: .5rem;
+    }
+    > section,
+    > footer {
+        grid-area: auto / right;
+    }
+
+    > section.schedule-group {
+        margin: .5rem;
+        border: 1px solid #1a31b3;
+        background: #fff;
+        color: #000;
+
+        > h3 {
+            background: #1a31b3;
+            color: #fff;
+            padding: .5rem;
+            margin: 0;
+        }
+
+        > table.schedule {
+        }
+    }
+}
