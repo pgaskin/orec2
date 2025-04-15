@@ -4,6 +4,8 @@ Scraper and website for viewing and filtering City of Ottawa drop-in recreation 
 
 The cached pages and geocoding data can be found on the [cache](https://github.com/pgaskin/orec2/tree/cache) branch. The parsed data can be found on the [data](https://github.com/pgaskin/orec2/tree/data) branch. The data is updated daily.
 
+You can run `git log -pw --patience -Iseconds: data...235c6b858d9359494b7aa86401e3221c9bc878bd -- data.textpb` to view a diff of the schedule data over time.
+
 The website is coming soon.
 
 **Why I made this:**
@@ -30,4 +32,4 @@ The website is coming soon.
 **Similar things:**
 
 - [ottawapublicskating.ca](https://www.ottawapublicskating.ca/) is only for skating, has been inaccurate at times, has limited detail, and doesn't show schedule changes.
-- [claudielarouche.com] ([skate](https://claudielarouche.com/skating.html), [swim](https://claudielarouche.com/swim.html), [other](https://claudielarouche.com/ottawa.html)) has drop-in times, seems mostly okay, but is hard to skim and doesn't show schedule changes.
+- [claudielarouche.com](https://claudielarouche.com/) ([skate](https://claudielarouche.com/skating.html), [swim](https://claudielarouche.com/swim.html), [other](https://claudielarouche.com/ottawa.html)) has drop-in times, seems mostly okay, but is hard to skim and doesn't show schedule changes.
