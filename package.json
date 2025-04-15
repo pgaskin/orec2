@@ -1,0 +1,15 @@
+{
+  "name": "orec2",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "build": "node frontend/build.mjs"
+  },
+  "dependencies": {
+    "@csstools/postcss-relative-color-syntax": "^3.0.8",
+    "@fontsource-variable/inter": "^5.2.5",
+    "esbuild": "^0.25.2",
+    "leaflet": "^1.9.4",
+    "postcss": "^8.5.3"
+  }
+}
