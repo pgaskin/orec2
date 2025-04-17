@@ -638,9 +638,9 @@ func fetch(ctx context.Context, u string, cacheType, cacheKey string, limiter *r
 		if err != nil {
 			return nil, err
 		}
-		defer resp.Body.Close()
-
 		if cacheName != "" {
+			defer resp.Body.Close()
+
 			reqbuf, err := httputil.DumpRequest(resp.Request, true)
 			if err != nil {
 				return nil, err
