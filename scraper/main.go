@@ -565,6 +565,13 @@ func fetchPage(ctx context.Context, u string) (*goquery.Document, time.Time, err
 	}
 	doc.Url = resp.Request.URL
 
+	if doc.Find(`#main-content, #ottux-header, meta[name='dcterms.title'], meta[content*='drupal']`).Length() == 0 {
+		if h, _ := doc.Html(); strings.Contains(h, "Pardon Our Interruption") || strings.Contains(h, "showBlockPage()") {
+			return nil, time.Time{}, fmt.Errorf("imperva blocked request")
+		}
+		return nil, time.Time{}, fmt.Errorf("page content not found, might be imperva")
+	}
+
 	date, _ := time.Parse(http.TimeFormat, resp.Header.Get("Date"))
 	return doc, date, nil
 }
