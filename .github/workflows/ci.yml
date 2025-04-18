@@ -60,7 +60,8 @@ jobs:
       - run: git worktree add data data
       - run: rm -fv data/*
       - run: cp schema/schema.proto data/data.proto
-      - run: go run ./scraper -cache-dir ./cache -no-fetch -scrape -scrape-json ./data/data.json -scrape-textpb ./data/data.textpb -scrape-pb ./data/data.pb -pretty
+      - run: go run ./scraper -cache-dir ./cache -no-fetch -scrape ./data/data.pb
+      - run: go run ./exporter -json ./data/data.json -textpb ./data/data.textpb -pretty ./data/data.pb
       - run: |
           git -C data add . && { git -C data diff --cached --quiet || git -C data commit -m "update data (reason: ${{github.event_name}} scraper: $(git rev-parse HEAD) cache: $(git -C cache rev-parse HEAD))" ; } && git -C data push
   # TODO: build and deploy frontend

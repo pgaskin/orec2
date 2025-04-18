@@ -33,18 +33,12 @@ import (
 	"golang.org/x/text/language"
 	"golang.org/x/text/unicode/norm"
 	"golang.org/x/time/rate"
-	"google.golang.org/protobuf/encoding/protojson"
-	"google.golang.org/protobuf/encoding/prototext"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
 
 var (
-	Scrape       = flag.Bool("scrape", false, "parse data from pages")
-	ScrapeJSON   = flag.String("scrape-json", "", "write json to the specified file")
-	ScrapePB     = flag.String("scrape-pb", "", "write binary protobuf to the specified file")
-	ScrapeTextPB = flag.String("scrape-textpb", "", "write text protobuf to the specified file")
-	Pretty       = flag.Bool("pretty", false, "output pretty json")
+	Scrape       = flag.String("scrape", "", "parse data from pages, writing the protobuf to the specified file")
 	NoFetch      = flag.Bool("no-fetch", false, "don't fetch pages not in cache")
 	CacheDir     = flag.String("cache-dir", "", "cache pages in the specified directory")
 	Nominatim    = flag.String("nominatim", "https://nominatim.geocoding.ai", "nominatim base url")
@@ -104,7 +98,7 @@ func run(ctx context.Context) error {
 	} else {
 		slog.Info("will fetch data", "ua", *UserAgent)
 	}
-	if !*Scrape {
+	if *Scrape == "" {
 		slog.Info("will not parse data")
 	}
 	var (
@@ -164,7 +158,7 @@ func run(ctx context.Context) error {
 			if !date.IsZero() {
 				facility.Source.XDate = timestamppb.New(date)
 			}
-			if !*Scrape {
+			if *Scrape == "" {
 				return nil
 			}
 			if err := func() error {
@@ -457,48 +451,17 @@ func run(ctx context.Context) error {
 		}
 		cur = nextURL.String()
 	}
-	if *Scrape {
+	if *Scrape != "" {
 		data.Attribution = append(data.Attribution, "Compiled data © Patrick Gaskin. https://github.com/pgaskin/orec2")
 		data.Attribution = append(data.Attribution, "Facility information and schedules © City of Ottawa. "+*PlaceListing)
 		for _, attrib := range slices.Sorted(maps.Keys(geoAttrib)) {
 			data.Attribution = append(data.Attribution, "Address data "+strings.TrimPrefix(attrib, "Data "))
 		}
-		if *ScrapeJSON != "" {
-			slog.Info("saving json data to file", "name", *ScrapeJSON)
-			if buf, err := (protojson.MarshalOptions{
-				EmitUnpopulated:   true,
-				EmitDefaultValues: true,
-				Multiline:         *Pretty,
-				AllowPartial:      false,
-				UseEnumNumbers:    true,
-				Indent:            "  ",
-				UseProtoNames:     false,
-			}).Marshal(&data); err != nil {
-				return fmt.Errorf("save data: %w", err)
-			} else if err := os.WriteFile(*ScrapeJSON, buf, 0644); err != nil {
-				return fmt.Errorf("save data: %w", err)
-			}
-		}
-		if *ScrapePB != "" {
-			slog.Info("saving protobuf data to file", "name", *ScrapePB)
-			if buf, err := proto.Marshal(&data); err != nil {
-				return fmt.Errorf("save data: %w", err)
-			} else if err := os.WriteFile(*ScrapePB, buf, 0644); err != nil {
-				return fmt.Errorf("save data: %w", err)
-			}
-		}
-		if *ScrapeTextPB != "" {
-			slog.Info("saving text protobuf data to file", "name", *ScrapeTextPB)
-			if buf, err := (prototext.MarshalOptions{
-				Multiline:    *Pretty,
-				AllowPartial: false,
-				Indent:       "  ",
-				EmitASCII:    false,
-			}).Marshal(&data); err != nil {
-				return fmt.Errorf("save data: %w", err)
-			} else if err := os.WriteFile(*ScrapeTextPB, buf, 0644); err != nil {
-				return fmt.Errorf("save data: %w", err)
-			}
+		slog.Info("saving protobuf data to file", "name", *Scrape)
+		if buf, err := proto.Marshal(&data); err != nil {
+			return fmt.Errorf("save data: %w", err)
+		} else if err := os.WriteFile(*Scrape, buf, 0644); err != nil {
+			return fmt.Errorf("save data: %w", err)
 		}
 	}
 	return nil
