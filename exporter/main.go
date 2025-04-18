@@ -68,7 +68,7 @@ CREATE TABLE facilities (
 	facility_longitude REAL, -- if resolved
 	facility_latitude REAL, -- if resolved
 	facility_notifications_html TEXT NOT NULL,
-	facility_special_hours TEXT NOT NULL
+	facility_special_hours_html TEXT NOT NULL
 );
 
 CREATE TABLE scrape_errors (
@@ -127,6 +127,14 @@ CREATE VIEW everything AS SELECT schedule_times.rowid AS id, *, (SELECT group_co
 	LEFT JOIN schedules ON schedule_id = schedules.id
 	LEFT JOIN schedule_groups ON schedule_group_id = schedule_groups.id
 	LEFT JOIN facilities ON facility_id = facilities.id;
+
+CREATE VIEW simplified AS SELECT facility_name, schedule_group_name, schedule_caption_raw, activity, weekday,
+	CASE WHEN start IS NOT NULL AND duration IS NOT NULL THEN printf("%02d:%02d", start/60, start%60) ELSE raw_time END AS start_,
+	CASE WHEN start IS NOT NULL AND duration IS NOT NULL THEN printf("%02d:%02d", (start+duration)%(24*60)/60, (start+duration)%(24*60)%60) ELSE NULL END AS end_,
+	CASE WHEN start IS NOT NULL AND duration IS NOT NULL THEN printf("%d:%02d", duration/60, duration%60) ELSE NULL END AS duration_,
+	start, CASE WHEN start IS NOT NULL AND duration IS NOT NULL THEN start+duration ELSE NULL END AS end, duration,
+	schedule_changes_html, facility_special_hours_html, facility_scraped_at
+FROM everything ORDER BY facility_name, activity, weekday, start;
 `
 
 func setupConn(c *sqlite3.Conn) error {
@@ -209,7 +217,7 @@ func run(pb string) error {
 				facility_url, facility_scraped_at,
 				facility_name, facility_description,
 				facility_address, facility_longitude, facility_latitude,
-				facility_notifications_html, facility_special_hours
+				facility_notifications_html, facility_special_hours_html
 			) VALUES (
 				?, ?,
 				?, ?,
