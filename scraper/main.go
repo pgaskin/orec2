@@ -350,7 +350,7 @@ func run(ctx context.Context) error {
 											}
 											if t1, t2, ok := strings.Cut(tnorm, "-"); ok && !strings.Contains(t2, "-") {
 												var (
-													tryParseTime12h = func(s string) (hh, mm int, hasAMPM, isPM, ok bool) {
+													tryParseTime12h = func(s string) (hh, mm int, hasAMPM, isPM, ok bool) { // note: hh and mm are always returned in 24h time
 														s = strings.Map(func(r rune) rune {
 															if unicode.IsSpace(r) {
 																return -1
@@ -360,7 +360,7 @@ func run(ctx context.Context) error {
 														switch s {
 														case "midnight":
 															hh, mm = 0, 0
-															hasAMPM, isPM = true, true
+															hasAMPM, isPM = true, false
 															ok = true
 														case "noon":
 															hh, mm = 12, 0
@@ -399,7 +399,7 @@ func run(ctx context.Context) error {
 												)
 												if ok1 && ok2 && pm1 && !pm2 {
 													ok1, ok2 = false, false // invalid time range with am/pm at start and none at end
-												}
+												} // TODO: rewrite this stuff
 												if ok1 && ok2 {
 													if ap2 && !ap1 && pm2 {
 														h1 += 12 // time range with pm at end and no am/pm at start
