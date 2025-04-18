@@ -264,7 +264,7 @@ func run(ctx context.Context) error {
 							if schedule.Days == nil {
 								for i, cell := range cells.EachIter() {
 									if i != 0 {
-										schedule.Days = append(schedule.Days, strings.TrimSpace(cell.Text()))
+										schedule.Days = append(schedule.Days, strings.Join(strings.Fields(cell.Text()), " "))
 									}
 								}
 							} else {
