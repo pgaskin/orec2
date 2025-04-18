@@ -120,6 +120,13 @@ INSERT INTO days (day) VALUES -- for consistency
 	('Thursday'),
 	('Friday'),
 	('Saturday');
+
+CREATE VIEW everything AS SELECT schedule_times.rowid AS id, *, (SELECT group_concat(message, x'0a') FROM scrape_errors WHERE facility_id = facilities.id) AS scrape_errors FROM schedule_times
+	LEFT JOIN activities ON activity_id = activities.id
+	LEFT JOIN days ON day_id = days.id
+	LEFT JOIN schedules ON schedule_id = schedules.id
+	LEFT JOIN schedule_groups ON schedule_group_id = schedule_groups.id
+	LEFT JOIN facilities ON facility_id = facilities.id;
 `
 
 func setupConn(c *sqlite3.Conn) error {
