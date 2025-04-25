@@ -152,6 +152,8 @@ func run(ctx context.Context) error {
 			if err != nil {
 				slog.Warn("failed to fetch place", "name", name, "error", err)
 				facility.XErrors = append(facility.XErrors, fmt.Sprintf("failed to fetch data: %v", err))
+				data.Facilities = append(data.Facilities, &facility)
+				return nil
 			} else {
 				slog.Info("got place", "name", name)
 			}
