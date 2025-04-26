@@ -124,12 +124,7 @@ func run(ctx context.Context) error {
 
 		if err := scrapePlaceListings(doc, content, func(u *url.URL, name, address string) error {
 			var facility schema.Facility
-			facility.Name = strings.Map(func(r rune) rune {
-				if unicode.Is(unicode.Pd, r) {
-					return '-'
-				}
-				return r
-			}, name)
+			facility.Name = name
 			facility.Address = address
 			facility.Source = &schema.Source{
 				Url: u.String(),
@@ -204,12 +199,7 @@ func run(ctx context.Context) error {
 						return nil // probably not a schedule group
 					}
 
-					title := strings.Map(func(r rune) rune {
-						if unicode.Is(unicode.Pd, r) {
-							return '-'
-						}
-						return unicode.ToLower(r)
-					}, norm.NFKC.String(label))
+					title := normalizeText(label, false, true)
 					title = strings.TrimPrefix(title, "drop-in schedule")
 					title = strings.TrimPrefix(title, "s ")
 					title = strings.TrimSpace(strings.TrimPrefix(strings.TrimSpace(title), "-"))
@@ -236,14 +226,9 @@ func run(ctx context.Context) error {
 					for _, table := range content.Find("table").EachIter() {
 						var schedule schema.Schedule
 
-						schedule.Caption = strings.Join(strings.Fields(table.Find("caption").First().Text()), " ")
+						schedule.Caption = normalizeText(table.Find("caption").First().Text(), false, false)
 
-						name := strings.Map(func(r rune) rune {
-							if unicode.Is(unicode.Pd, r) {
-								return '-'
-							}
-							return unicode.ToLower(r)
-						}, norm.NFKC.String(schedule.Caption))
+						name := strings.ToLower(schedule.Caption)
 						if x, ok := strings.CutPrefix(name, strings.ToLower(facility.Name)); ok {
 							name = x
 						} else if x, y, ok := strings.Cut(name, "-"); ok && strings.HasPrefix(strings.ToLower(facility.Name), x) {
@@ -277,14 +262,8 @@ func run(ctx context.Context) error {
 								}
 								for i, cell := range cells.EachIter() {
 									if i == 0 {
-										activity.Label = strings.Join(strings.Fields(cell.Text()), " ")
-										name := strings.Map(func(r rune) rune {
-											if unicode.Is(unicode.Pd, r) {
-												return '-'
-											}
-											return unicode.ToLower(r)
-										}, norm.NFKC.String(activity.Label))
-										name = strings.Join(strings.Fields(name), " ")
+										activity.Label = normalizeText(cell.Text(), false, false)
+										name := strings.ToLower(activity.Label)
 										name = strings.ReplaceAll(name, "swimming", "swim")
 										name = strings.ReplaceAll(name, "aqualite", "aqua lite")
 										name = strings.ReplaceAll(name, "skating", "skate")
@@ -328,14 +307,11 @@ func run(ctx context.Context) error {
 											return r == ','
 										}) {
 											tnorm := strings.Map(func(r rune) rune {
-												if unicode.IsSpace(r) || r == '\u200b' {
+												if unicode.IsSpace(r) {
 													return -1
 												}
-												if unicode.Is(unicode.Pd, r) {
-													return '-'
-												}
-												return unicode.ToLower(r)
-											}, t)
+												return r
+											}, normalizeText(t, false, true))
 											if tnorm == "n/a" {
 												continue
 											}
@@ -726,8 +702,8 @@ func scrapePlaceListings(doc *goquery.Document, s *goquery.Selection, fn func(u 
 				return err
 			}
 
-			title := strings.TrimSpace(rowTitle.Text())
-			address := strings.TrimSpace(rowAddress.Text())
+			title := normalizeText(rowTitle.Text(), false, false)
+			address := normalizeText(rowAddress.Text(), true, false)
 
 			if err := fn(u, title, address); err != nil {
 				return fmt.Errorf("process %q: %w", title, err)
@@ -828,6 +804,78 @@ func scrapeNodeField(s *goquery.Selection, name, typ string, array, optional boo
 		}
 	}
 	return items, nil
+}
+
+// normalizeText performs various transformations on s:
+//   - remove invisible characters
+//   - collapse some kinds of consecutive whitespace (excluding newlines unless requested, but including nbsp)
+//   - replace all kinds of dashes with "-"
+//   - perform unicode NFKC normalization
+//   - optionally lowercase the string
+//   - remove leading and trailing whitespace
+func normalizeText(s string, newlines, lower bool) string {
+	// normalize the string
+	s = norm.NFKC.String(s)
+
+	// transform characters
+	s = strings.Map(func(r rune) rune {
+
+		// remove zero-width spaces
+		switch r {
+		case '\u200b', '\ufeff', '\u200d', '\u200c':
+			return -1
+		}
+
+		// replace some whitespace for collapsing later
+		switch r {
+		case '\n':
+			if newlines {
+				return r
+			}
+			fallthrough
+		case ' ', '\t', '\v', '\f', '\u00a0':
+			return ' '
+		}
+		if unicode.Is(unicode.Zs, r) {
+			return ' '
+		}
+
+		// replace smart punctuation
+		switch r {
+		case '“', '”', '‟':
+			return '"'
+		case '\u2018', '\u2019', '\u201b':
+			return '\''
+		case '\u2039':
+			return '<'
+		case '\u203a':
+			return '>'
+		}
+
+		// normalize all kinds of dashes
+		if unicode.Is(unicode.Pd, r) {
+			return '-'
+		}
+
+		// remove invisible characters
+		if !unicode.IsGraphic(r) {
+			return -1
+		}
+
+		// lowercase (or not)
+		if lower {
+			return unicode.ToLower(r)
+		}
+		return r
+	}, s)
+
+	// collapse consecutive whitespace
+	s = string(slices.CompactFunc([]rune(s), func(a, b rune) bool {
+		return a == ' ' && a == b
+	}))
+
+	// remove leading/trailing whitespace
+	return strings.TrimSpace(s)
 }
 
 func ptrTo[T any](x T) *T {
