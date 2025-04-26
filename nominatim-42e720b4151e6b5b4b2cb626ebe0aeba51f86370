@@ -1,0 +1,13 @@
+GET /search?format=geocodejson&q=3380+D%27Aoust+Avenue%0AOttawa+ON+K1T+1R5%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9366db108be381c1-IAD
+Content-Type: application/json; charset=utf-8
+Date: Sat, 26 Apr 2025 14:44:01 GMT
+Server: cloudflare
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"3380 D'Aoust Avenue\nOttawa ON K1T 1R5\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334658860,"osm_type":"way","osm_id":40926231,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25182, 3380, D'Aoust Avenue, Blossom Park, South Keys, Gloucester-Southgate, Ottawa, Eastern Ontario, Ontario, K1T 1R5, Canada","name":"25182"}},"geometry":{"type": "Point","coordinates": [-75.63610194189371, 45.34987635]}},{"type":"Feature","properties":{"geocoding":{"place_id":334656447,"osm_type":"way","osm_id":482837106,"osm_key":"leisure","osm_value":"sports_centre","type":"house","label":"Sawmill Creek Pool and Community Centre, 3380, D'Aoust Avenue, Blossom Park, South Keys, Gloucester-Southgate, Ottawa, Eastern Ontario, Ontario, K1T 4A8, Canada","name":"Sawmill Creek Pool and Community Centre"}},"geometry":{"type": "Point","coordinates": [-75.63633845, 45.349717]}}]}
