@@ -137,5 +137,11 @@ func TestParseClockRange(t *testing.T) {
 		if s := c.Format(false); tc.B != s {
 			t.Errorf("parse %q: expected %q, got %q (%#v)", tc.A, tc.B, s, c)
 		}
+		if c.Start >= 24*60 {
+			t.Errorf("parse %q: start time should be in current day", tc.A)
+		}
+		if c.End >= 2*24*60 {
+			t.Errorf("parse %q: start time should be before end of next day", tc.A)
+		}
 	}
 }
