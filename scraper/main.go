@@ -320,74 +320,12 @@ func run(ctx context.Context) error {
 											if wkday != -1 {
 												trange.XWkday = ptrTo(schema.Weekday(wkday))
 											}
-											if t1, t2, ok := strings.Cut(tnorm, "-"); ok && !strings.Contains(t2, "-") {
-												var (
-													tryParseTime12h = func(s string) (hh, mm int, hasAMPM, isPM, ok bool) { // note: hh and mm are always returned in 24h time
-														s = strings.Map(func(r rune) rune {
-															if unicode.IsSpace(r) {
-																return -1
-															}
-															return unicode.ToLower(r)
-														}, s)
-														switch s {
-														case "midnight":
-															hh, mm = 0, 0
-															hasAMPM, isPM = true, false
-															ok = true
-														case "noon":
-															hh, mm = 12, 0
-															hasAMPM, isPM = true, true
-															ok = true
-														default:
-															s, isPM = strings.CutSuffix(s, "pm")
-															if !isPM {
-																s, hasAMPM = strings.CutSuffix(s, "am")
-															} else {
-																hasAMPM = true
-															}
-															shh, smm, hasMM := strings.Cut(s, ":")
-															if !hasMM {
-																smm = "00"
-															}
-															if nh, err := strconv.ParseInt(shh, 10, 0); err == nil && nh > 0 && nh <= 12 {
-																if hasAMPM {
-																	if isPM {
-																		nh += 12
-																	} else if nh == 12 {
-																		nh = 0
-																	}
-																}
-																if nm, err := strconv.ParseInt(smm, 10, 0); err == nil && nm >= 0 && nm < 60 {
-																	hh = int(nh)
-																	mm = int(nm)
-																	ok = true
-																}
-															}
-														}
-														return
-													}
-													h1, m1, ap1, pm1, ok1 = tryParseTime12h(t1)
-													h2, m2, ap2, pm2, ok2 = tryParseTime12h(t2)
-												)
-												if ok1 && ok2 && pm1 && !pm2 {
-													ok1, ok2 = false, false // invalid time range with am/pm at start and none at end
-												} // TODO: rewrite this stuff
-												if ok1 && ok2 {
-													if ap2 && !ap1 && pm2 {
-														h1 += 12 // time range with pm at end and no am/pm at start
-													}
-													n1 := h1*60 + m1
-													n2 := h2*60 + m2
-													if n2 < n1 {
-														n1 += 24 * 60 // next day
-													}
-													trange.XStart = ptrTo(int32(n1))
-													trange.XEnd = ptrTo(int32(n2))
-												}
-												if !ok1 || !ok2 {
-													slog.Warn("failed to parse time range", "range", t)
-													facility.XErrors = append(facility.XErrors, fmt.Sprintf("warning: failed to parse time range %q", t))
-												}
+											if r, ok := parseClockRange(t); ok {
+												trange.XStart = ptrTo(int32(r.Start))
+												trange.XEnd = ptrTo(int32(r.End))
+											} else {
+												slog.Warn("failed to parse time range", "range", t)
+												facility.XErrors = append(facility.XErrors, fmt.Sprintf("warning: failed to parse time range %q", t))
 											}
 											times = append(times, &trange)
 										}
@@ -876,6 +814,109 @@ func normalizeText(s string, newlines, lower bool) string {
 
 	// remove leading/trailing whitespace
 	return strings.TrimSpace(s)
+}
+
+func parseClockRange(s string) (r schema.ClockRange, ok bool) {
+	s = strings.ReplaceAll(normalizeText(s, false, true), " ", "")
+
+	parsePart := func(s string, mdef byte) (t schema.ClockTime, m byte, ok bool) {
+		switch s {
+		case "midnight":
+			return schema.MakeClockTime(0, 0), 'a', true // midnight implies am
+		case "noon":
+			return schema.MakeClockTime(12, 0), 'p', true // noon implies pm
+		}
+		sh, sm, ok := strings.Cut(s, "h") // french time
+		if !ok {
+			if len(s) == 4 && strings.TrimFunc(s, func(r rune) bool { return r >= '0' && r <= '9' }) == "" {
+				sh, sm, m = s[:2], s[2:], 0 // military time
+			} else {
+				if s, ok = strings.CutSuffix(s, "pm"); ok {
+					m = 'p' // 12h pm
+				} else if s, ok = strings.CutSuffix(s, "am"); ok {
+					m = 'a' // 12h am
+				} else {
+					m = mdef // 24h or assumed am/pm
+				}
+				sh, sm, ok = strings.Cut(s, ":")
+				if !ok {
+					sm = "00" // no minute
+				}
+			}
+		}
+		if len(sh) > 2 || len(sm) > 2 {
+			return 0, 0, false // invalid hour/minute length
+		}
+		hh, err := strconv.ParseInt(sh, 10, 0)
+		if err != nil {
+			return 0, 0, false // invalid hour
+		}
+		if m != 0 {
+			if hh < 1 || hh > 12 {
+				return 0, 0, false // invalid 12h hour
+			}
+			switch m {
+			case 'p':
+				if hh < 12 {
+					hh += 12
+				}
+			case 'a':
+				if hh == 12 {
+					hh = 0
+				}
+			}
+		} else {
+			if hh < 0 || hh > 23 {
+				return 0, 0, false // invalid 24h hour
+			}
+		}
+		mm, err := strconv.ParseInt(sm, 10, 0)
+		if err != nil {
+			return 0, 0, false // invalid minute
+		}
+		if mm < 0 || mm > 59 {
+			return 0, 0, false // invalid 24h minute
+		}
+		return schema.MakeClockTime(int(hh), int(mm)), m, true
+	}
+
+	if s == "" {
+		return r, false // empty
+	}
+	s1, s2, ok := strings.Cut(s, "-")
+	if !ok {
+		s1, s2, ok = strings.Cut(s, "to")
+		if !ok {
+			return r, false // single time
+		}
+	}
+	if s1 == "" || s2 == "" {
+		return r, false // open range
+	}
+	t1, m1, ok := parsePart(s1, 0)
+	if !ok {
+		return r, false // invalid rhs
+	}
+	t2, m2, ok := parsePart(s2, 0)
+	if !ok {
+		return r, false // invalid rhs
+	}
+	if m1 != 0 && m2 == 0 {
+		return r, false // ambiguous lhs 12h and rhs 24h
+	}
+	if m1 == 0 && m2 != 0 {
+		t1, m1, ok = parsePart(s1, m2) // reparse lhs with 12h rhs am/pm
+		if !ok {
+			return r, false // lhs hour is now invalid
+		}
+	}
+	if t1 == t2 {
+		return r, false // zero range
+	}
+	if t1 > t2 {
+		t2 += 24 * 60 // next day
+	}
+	return schema.ClockRange{Start: t1, End: t2}, true
 }
 
 func ptrTo[T any](x T) *T {
