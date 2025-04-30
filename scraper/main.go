@@ -233,7 +233,12 @@ func run(ctx context.Context) error {
 							name = x
 						} else if x, y, ok := strings.Cut(name, "-"); ok && strings.HasPrefix(strings.ToLower(facility.Name), x) {
 							name = strings.TrimSpace(y) // e.g., "Jack Purcell Community Centre" with "Jack Purcell - swim and aquafit - January 6 to April 6"
-
+							// note: we shouldn't try to parse the date range
+							// (Month DD[, YYYY] to [Month ]DD[, YYYY] OR
+							// until|starting Month DD[, YYYY]) since it's
+							// manually written and the year isn't automatically
+							// added when the year changes, so it's hard to know
+							// if we parsed it correctly
 						}
 						name = strings.TrimSpace(strings.TrimPrefix(strings.TrimSpace(name), "-"))
 						for m := range 12 {
