@@ -1,0 +1,15 @@
+GET /search?format=geocodejson&q=19+Leeming+Drive%0AOttawa+ON+K2H+5P6%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 93fe9e5498f467a9-SJC
+Content-Type: application/json; charset=utf-8
+Date: Thu, 15 May 2025 00:46:29 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=zck9bWfiUthLrBRtRWtx%2BXB6cQqzQK%2FwefmsNYfGs%2BXBgAGfJqHFexbHqnTpjTb8GFfjGxCXYNFVBA9zH1Tz72iXTPbOyJRxgCkYHZcxkAKVpCbONRaHZK3mg8%2B3K55%2BzDM5vD7r3yek"}]}
+Server: cloudflare
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"19 Leeming Drive\nOttawa ON K2H 5P6\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334388398,"osm_type":"way","osm_id":473162071,"osm_key":"amenity","osm_value":"community_centre","type":"house","label":"Maki House Community Building, 19, Leeming Drive, Crystal Beach, Bay, Nepean, Ottawa, Eastern Ontario, Ontario, K2H 8R8, Canada","name":"Maki House Community Building"}},"geometry":{"type": "Point","coordinates": [-75.83305364433589, 45.34984685]}},{"type":"Feature","properties":{"geocoding":{"place_id":334389319,"osm_type":"way","osm_id":305892699,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25097, 19, Leeming Drive, Crystal Beach, Bay, Nepean, Ottawa, Eastern Ontario, Ontario, K2H 8R8, Canada","name":"25097"}},"geometry":{"type": "Point","coordinates": [-75.83339114017022, 45.34993835]}}]}

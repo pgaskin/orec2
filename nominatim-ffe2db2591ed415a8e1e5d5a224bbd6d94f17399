@@ -1,0 +1,15 @@
+GET /search?format=geocodejson&q=7+Sycamore+Drive%0AOttawa+ON+K2H+6R4%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 93fe9e3b1de167a9-SJC
+Content-Type: application/json; charset=utf-8
+Date: Thu, 15 May 2025 00:46:25 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=neSYt1SBaiZjxQVkUbqN1Z01IIJ0xUkoJ6ScXG59rf9AB7DRT%2FiYflbuOLUuXItE44Y9x6JrrRpoW3WCpdlyMIMay6pR4lt4Hutk8%2BjLGZg%2Byl%2FkKRndgotKf6zs8e4vkPbe4C3VUeP9"}]}
+Server: cloudflare
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"7 Sycamore Drive\nOttawa ON K2H 6R4\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334354303,"osm_type":"way","osm_id":245393876,"osm_key":"leisure","osm_value":"pitch","type":"house","label":"Lynwood Tennis Club, 7, Sycamore Drive, Bells Corners, College, Nepean, Ottawa, Eastern Ontario, Ontario, K2H 5C1, Canada","name":"Lynwood Tennis Club"}},"geometry":{"type": "Point","coordinates": [-75.82137045743654, 45.3196899]}},{"type":"Feature","properties":{"geocoding":{"place_id":334355819,"osm_type":"way","osm_id":304926632,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25081, 7, Sycamore Drive, Bells Corners, College, Nepean, Ottawa, Eastern Ontario, Ontario, K2H 5C1, Canada","name":"25081"}},"geometry":{"type": "Point","coordinates": [-75.82205979233812, 45.3190958]}},{"type":"Feature","properties":{"geocoding":{"place_id":334354677,"osm_type":"way","osm_id":548270513,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25082, 7, Sycamore Drive, Bells Corners, College, Nepean, Ottawa, Eastern Ontario, Ontario, K2H 5C1, Canada","name":"25082"}},"geometry":{"type": "Point","coordinates": [-75.81931388502673, 45.319520499999996]}},{"type":"Feature","properties":{"geocoding":{"place_id":334354331,"osm_type":"way","osm_id":304926633,"osm_key":"building","osm_value":"public","type":"house","label":"Lynwood Community Building, 7, Sycamore Drive, Bells Corners, College, Nepean, Ottawa, Eastern Ontario, Ontario, K2H 5C1, Canada","name":"Lynwood Community Building"}},"geometry":{"type": "Point","coordinates": [-75.82187218924685, 45.3195269]}}]}

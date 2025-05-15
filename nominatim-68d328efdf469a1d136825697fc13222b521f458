@@ -1,0 +1,15 @@
+GET /search?format=geocodejson&q=50+Bellman+Drive%0AOttawa+ON+K2H+8S3%0ACanada HTTP/1.1
+Host: nominatim.geocoding.ai
+User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+
+HTTP/2.0 200 OK
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 93fe9f61bb3667a9-SJC
+Content-Type: application/json; charset=utf-8
+Date: Thu, 15 May 2025 00:47:12 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=qZXU0tZk4%2Foa3fDD%2BuElkj0RBI5gLPgWUUhgZva358nxJHazNcmObweJq1sHEw3nuxCE9h9mx5YLzxErsaCZZ6myMbSYQxxdMkvit%2FS9nQfqbUPQV0W1zbk%2BFNEEPAbAMfOllcIOYQSc"}]}
+Server: cloudflare
+
+{"type":"FeatureCollection","geocoding":{"version":"0.1.0","attribution":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","licence":"ODbL","query":"50 Bellman Drive\nOttawa ON K2H 8S3\nCanada"},"features":[{"type":"Feature","properties":{"geocoding":{"place_id":334370048,"osm_type":"way","osm_id":10765328,"osm_key":"leisure","osm_value":"pitch","type":"house","label":"Trend Arlington Tennis Club, 50, Bellman Drive, Arlington Woods, Knoxdale-Merivale, Nepean, Ottawa, Eastern Ontario, Ontario, K2H 8S5, Canada","name":"Trend Arlington Tennis Club"}},"geometry":{"type": "Point","coordinates": [-75.78337243745159, 45.32725175]}},{"type":"Feature","properties":{"geocoding":{"place_id":334355529,"osm_type":"way","osm_id":171263584,"osm_key":"amenity","osm_value":"parking","type":"house","label":"25113, 50, Bellman Drive, Arlington Woods, Knoxdale-Merivale, Nepean, Ottawa, Eastern Ontario, Ontario, K2H 8S5, Canada","name":"25113"}},"geometry":{"type": "Point","coordinates": [-75.7829779226993, 45.32656945]}},{"type":"Feature","properties":{"geocoding":{"place_id":334360604,"osm_type":"way","osm_id":171263581,"osm_key":"amenity","osm_value":"community_centre","type":"house","label":"Trend-Arlington Community Centre, 50, Bellman Drive, Arlington Woods, Knoxdale-Merivale, Nepean, Ottawa, Eastern Ontario, Ontario, K2H 8S5, Canada","name":"Trend-Arlington Community Centre"}},"geometry":{"type": "Point","coordinates": [-75.78312715668034, 45.3269937]}}]}
