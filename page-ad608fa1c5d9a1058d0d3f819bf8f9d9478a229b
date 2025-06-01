@@ -6,19 +6,19 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 116
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Sat, 31 May 2025 00:44:37 GMT
-Etag: "1748652160-gzip"
+Date: Sun, 01 Jun 2025 00:57:54 GMT
+Etag: "1748739473-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Sat, 31 May 2025 00:42:40 GMT
-Set-Cookie: visid_incap_243507=Mxey08mCSuem3N4HRIGQ0vRQOmgAAAAAQUIPAAAAAACdU9ioYE0QkGuTDW9L59lL; expires=Sat, 30 May 2026 06:37:32 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=IWFTP7TY8GkDedVnaXmSIAAAAAAcCImewRS7LXlR8FFP34UD; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_1700_243507=XOn2cgWGIy9qizcSYJ2XF/RQOmgAAAAAO4Yv+bou8dptIbRG2ZIIrQ==; path=/; Domain=.ottawa.ca
+Last-Modified: Sun, 01 Jun 2025 00:57:53 GMT
+Set-Cookie: visid_incap_243507=r68UX+8LTWWzInoFlgbEn5GlO2gAAAAAQUIPAAAAAAAIewXT5U1e4hbW/jleftvd; expires=Sun, 31 May 2026 06:43:45 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=WaPQd5x0kkixJ7eaaXmSIAAAAAAq9lZiuWb2KWxR66/0cF8a; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_1843_243507=bPkybiRynSp3qGEUM6eTGZKlO2gAAAAAW9MGSM1cQwGviVs9lmqjlg==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-6b6bb87b7-v4lnb (Varnish/7.3)
@@ -28,17 +28,17 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 57-46885488-46885495 NNNY CT(37 39 0) RT(1748652277713 70) q(0 0 0 0) r(0 0) U24
-X-Varnish: 634571676 630579566
+X-Iinfo: 60-72834959-72834977 NNNY CT(31 38 0) RT(1748739473279 36) q(0 0 0 5) r(13 13) U24
+X-Varnish: 638779158
 
-103e7
+103e6
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
   <head><script src="/mbusticall-keepe-Ment-I-dreys-don-The-needes-his" async></script>
     <meta charset="utf-8" />
 <noscript><style>form.antibot * :not(.antibot-message) { display: none !important; }</style>
-</noscript><script async src="/sites/default/files/google_analytics/gtag.js?sx3on3"></script>
+</noscript><script async src="/sites/default/files/google_analytics/gtag.js?sx5k0g"></script>
 <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);gtag("config", "G-GTBB95F8N6", {"groups":"default","page_location":location.pathname + location.search + location.hash});</script>
 <style>/* @see https://github.com/aFarkas/lazysizes#broken-image-symbol */.js img.lazyload:not([src]) { visibility: hidden; }/* @see https://github.com/aFarkas/lazysizes#automatically-setting-the-sizes-attribute */.js img.lazyloaded[data-sizes=auto] { display: block; width: 100%; }/* Transition effect. */.js .lazyload, .js .lazyloading { opacity: 0; }.js .lazyloaded { opacity: 1; -webkit-transition: opacity 2000ms; transition: opacity 2000ms; }</style>
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing" />
@@ -48,7 +48,7 @@ X-Varnish: 634571676 630579566
 <meta name="HandheldFriendly" content="true" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" href="/themes/custom/ottca_theme/favicon.ico" type="image/vnd.microsoft.icon" />
-<script src="/sites/default/files/google_tag/ottawa.ca_google_container/google_tag.script.js?sx3on3" defer></script>
+<script src="/sites/default/files/google_tag/ottawa.ca_google_container/google_tag.script.js?sx5k0h" defer></script>
 
     <title>Place listing | City of Ottawa</title>
     <link rel="stylesheet" media="all" href="/sites/default/files/css/css_CYc4ifTSFBtQWHDsqBqYaFo-XMX33lSr6VTWD4qJR3g.css?delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdT1sKwjAQvFBsfrxP2SRDDd1kQ3Zjq6e3qGDxZ5hhYB5BxNQ6tasPpHDhpxeWQHxRe3Cuy9kpUKUF6uKKlE36nGtCtcASV3_iLkqHr9ILcX7CYbcja_Wpj0Y8faUTs0iz3VDw33q2Dj72actpgbl2DOjovgy23KjC6UMN5XPjnrGpf-NUJA3GC6daW0g" />
@@ -234,7 +234,7 @@ X-Varnish: 634571676 630579566
 
 
 
-  <div class="views-element-container"><div class="faceted-search-page view view-place-listing-search view-id-place_listing_search view-display-id-place_listing_search js-view-dom-id-b1d6feceebf8eaead7c4f5cb6853078bdba0070cd612932eb5c3cd9a95865ef5">
+  <div class="views-element-container"><div class="faceted-search-page view view-place-listing-search view-id-place_listing_search view-display-id-place_listing_search js-view-dom-id-6abec131e0dda26c52be0e1cd30725b4ea7db81ad5aa9e8517e14eec30acb8ed">
   
     
       <div class="view-header">
@@ -732,7 +732,7 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9kE2OgzAMhS-UkM3cJ3KCSz01OEqcAj19U8G00MVsLL_PP3p2ENGiGdKPC-_U_hbLoFjU4KJM0831uSbgbpfmAhG1_NFNdfGK8RZksTP1A6oZRAZGDxPwqhSL-waG4bG6VzCiGsFHmRQnddtCm5EFenuRWMveoVcc0YWVYWZq_o50mzqhl1lPbe0Zt7wu3W7zWEiZJrVFIgHbUFW_J0vMwoz5DEmRxpTljvZzXJJUky8133F1R9EqM-ZAHseAvTspG5naB_5vqUVlpAfmJ7mSr_s"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1970170836" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=212718584" async></script></body>
 </html>
 
 
