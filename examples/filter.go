@@ -41,8 +41,8 @@ var tmpl = template.Must(template.New("").Funcs(template.FuncMap{
     {{- if .Times }}
     {{ansi 35}}{{index $s.Days $i}}{{ansi}}
     {{- end }}
-    {{- range $j, $t := .Times }}
-      {{.Label}}
+    {{- range $j, $t := .Times }}{{if gt (len $ts.Times) 1}}
+      {{else}} {{end}}{{.Label}}
     {{- end }}
     {{- end }}
 {{""}}
