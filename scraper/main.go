@@ -311,17 +311,16 @@ func run(ctx context.Context) error {
 										for t := range strings.FieldsFuncSeq(cell.Text(), func(r rune) bool {
 											return r == ','
 										}) {
-											tnorm := strings.Map(func(r rune) rune {
+											if strings.Map(func(r rune) rune {
 												if unicode.IsSpace(r) {
 													return -1
 												}
 												return r
-											}, normalizeText(t, false, true))
-											if tnorm == "n/a" {
+											}, normalizeText(t, false, true)) == "n/a" {
 												continue
 											}
 											var trange schema.TimeRange
-											trange.Label = strings.TrimSpace(t)
+											trange.Label = strings.TrimSpace(normalizeText(t, false, false))
 											if wkday != -1 {
 												trange.XWkday = ptrTo(schema.Weekday(wkday))
 											}
