@@ -1,8 +1,10 @@
 package main
 
 import (
+	"bytes"
 	"database/sql"
 	"encoding/csv"
+	"encoding/json"
 	"errors"
 	"flag"
 	"fmt"
@@ -15,6 +17,7 @@ import (
 	"github.com/ncruces/go-sqlite3/driver"
 	_ "github.com/ncruces/go-sqlite3/embed"
 	"github.com/pgaskin/orec2/schema"
+	textpbfmt "github.com/protocolbuffers/txtpbfmt/parser"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/encoding/prototext"
 	"google.golang.org/protobuf/proto"
@@ -24,6 +27,7 @@ import (
 var (
 	CSV    = flag.String("csv", "", "write csv to this directory")
 	JSON   = flag.String("json", "", "write json to this file")
+	PB     = flag.String("pb", "", "write binary protobuf to this file")
 	TextPB = flag.String("textpb", "", "write textpb to this file")
 	Sqlite = flag.String("sqlite", "", "write sqlite database to this file")
 	Pretty = flag.Bool("pretty", false, "prettify output (-json -textpb)")
@@ -153,19 +157,42 @@ func run(pb string) error {
 		return fmt.Errorf("load data: %w", err)
 	}
 
+	if *PB != "" {
+		slog.Info("writing pb", "name", *PB)
+		if buf, err := (proto.MarshalOptions{
+			Deterministic: true,
+		}).Marshal(&data); err != nil {
+			return fmt.Errorf("save data: %w", err)
+		} else if err := os.WriteFile(*PB, buf, 0644); err != nil {
+			return fmt.Errorf("save data: %w", err)
+		}
+	}
+
 	if *TextPB != "" {
 		slog.Info("writing textpb", "name", *TextPB, "pretty", *Pretty)
 		opt := prototext.MarshalOptions{
-			Multiline:    *Pretty,
+			Multiline:    false,
 			AllowPartial: false,
 			EmitASCII:    !*Pretty,
 		}
-		if *Pretty {
-			opt.Indent = "  "
-		}
-		if buf, err := opt.Marshal(&data); err != nil {
+		buf, err := opt.Marshal(&data)
+		if err != nil {
 			return fmt.Errorf("export textpb: %w", err)
-		} else if err := os.WriteFile(*TextPB, buf, 0644); err != nil {
+		}
+		if *Pretty {
+			buf, err = textpbfmt.FormatWithConfig(buf, textpbfmt.Config{
+				ExpandAllChildren:        true,
+				SkipAllColons:            true,
+				AllowTripleQuotedStrings: true,
+				WrapStringsAtColumn:      120,
+				WrapHTMLStrings:          true,
+				WrapStringsAfterNewlines: true,
+			})
+			if err != nil {
+				return fmt.Errorf("format textpb: %w", err)
+			}
+		}
+		if err := os.WriteFile(*TextPB, buf, 0644); err != nil {
 			return fmt.Errorf("export textpb: %w", err)
 		}
 	}
@@ -175,17 +202,23 @@ func run(pb string) error {
 		opt := protojson.MarshalOptions{
 			EmitUnpopulated:   true,
 			EmitDefaultValues: true,
-			Multiline:         *Pretty,
+			Multiline:         false,
 			AllowPartial:      false,
 			UseEnumNumbers:    true,
 			UseProtoNames:     false,
 		}
-		if *Pretty {
-			opt.Indent = "  "
-		}
-		if buf, err := opt.Marshal(&data); err != nil {
+		buf, err := opt.Marshal(&data)
+		if err != nil {
 			return fmt.Errorf("export json: %w", err)
-		} else if err := os.WriteFile(*JSON, buf, 0644); err != nil {
+		}
+		if *Pretty {
+			var buf1 bytes.Buffer
+			if err := json.Indent(&buf1, buf, "", "  "); err != nil {
+				return fmt.Errorf("format json: %w", err)
+			}
+			buf = buf1.Bytes()
+		}
+		if err := os.WriteFile(*JSON, buf, 0644); err != nil {
 			return fmt.Errorf("export json: %w", err)
 		}
 	}

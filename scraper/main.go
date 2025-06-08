@@ -379,7 +379,9 @@ func run(ctx context.Context) error {
 			data.Attribution = append(data.Attribution, "Address data "+strings.TrimPrefix(attrib, "Data "))
 		}
 		slog.Info("saving protobuf data to file", "name", *Scrape)
-		if buf, err := proto.Marshal(&data); err != nil {
+		if buf, err := (proto.MarshalOptions{
+			Deterministic: true,
+		}).Marshal(&data); err != nil {
 			return fmt.Errorf("save data: %w", err)
 		} else if err := os.WriteFile(*Scrape, buf, 0644); err != nil {
 			return fmt.Errorf("save data: %w", err)
