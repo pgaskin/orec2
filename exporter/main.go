@@ -31,7 +31,6 @@ var (
 	TextPB = flag.String("textpb", "", "write textpb to this file")
 	Sqlite = flag.String("sqlite", "", "write sqlite database to this file")
 	Pretty = flag.Bool("pretty", false, "prettify output (-json -textpb)")
-	Indent = flag.String("indent", "  ", "indentation to use when -pretty")
 	// TODO: plain html schedule dump?
 )
 
