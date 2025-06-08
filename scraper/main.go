@@ -33,18 +33,12 @@ import (
 	"golang.org/x/text/language"
 	"golang.org/x/text/unicode/norm"
 	"golang.org/x/time/rate"
-	"google.golang.org/protobuf/encoding/protojson"
-	"google.golang.org/protobuf/encoding/prototext"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
 
 var (
-	Scrape       = flag.Bool("scrape", false, "parse data from pages")
-	ScrapeJSON   = flag.String("scrape-json", "", "write json to the specified file")
-	ScrapePB     = flag.String("scrape-pb", "", "write binary protobuf to the specified file")
-	ScrapeTextPB = flag.String("scrape-textpb", "", "write text protobuf to the specified file")
-	Pretty       = flag.Bool("pretty", false, "output pretty json")
+	Scrape       = flag.String("scrape", "", "parse data from pages, writing the protobuf to the specified file")
 	NoFetch      = flag.Bool("no-fetch", false, "don't fetch pages not in cache")
 	CacheDir     = flag.String("cache-dir", "", "cache pages in the specified directory")
 	Nominatim    = flag.String("nominatim", "https://nominatim.geocoding.ai", "nominatim base url")
@@ -104,7 +98,7 @@ func run(ctx context.Context) error {
 	} else {
 		slog.Info("will fetch data", "ua", *UserAgent)
 	}
-	if !*Scrape {
+	if *Scrape == "" {
 		slog.Info("will not parse data")
 	}
 	var (
@@ -130,12 +124,7 @@ func run(ctx context.Context) error {
 
 		if err := scrapePlaceListings(doc, content, func(u *url.URL, name, address string) error {
 			var facility schema.Facility
-			facility.Name = strings.Map(func(r rune) rune {
-				if unicode.Is(unicode.Pd, r) {
-					return '-'
-				}
-				return r
-			}, name)
+			facility.Name = name
 			facility.Address = address
 			facility.Source = &schema.Source{
 				Url: u.String(),
@@ -158,13 +147,15 @@ func run(ctx context.Context) error {
 			if err != nil {
 				slog.Warn("failed to fetch place", "name", name, "error", err)
 				facility.XErrors = append(facility.XErrors, fmt.Sprintf("failed to fetch data: %v", err))
+				data.Facilities = append(data.Facilities, &facility)
+				return nil
 			} else {
 				slog.Info("got place", "name", name)
 			}
 			if !date.IsZero() {
 				facility.Source.XDate = timestamppb.New(date)
 			}
-			if !*Scrape {
+			if *Scrape == "" {
 				return nil
 			}
 			if err := func() error {
@@ -208,12 +199,7 @@ func run(ctx context.Context) error {
 						return nil // probably not a schedule group
 					}
 
-					title := strings.Map(func(r rune) rune {
-						if unicode.Is(unicode.Pd, r) {
-							return '-'
-						}
-						return unicode.ToLower(r)
-					}, norm.NFKC.String(label))
+					title := normalizeText(label, false, true)
 					title = strings.TrimPrefix(title, "drop-in schedule")
 					title = strings.TrimPrefix(title, "s ")
 					title = strings.TrimSpace(strings.TrimPrefix(strings.TrimSpace(title), "-"))
@@ -240,19 +226,19 @@ func run(ctx context.Context) error {
 					for _, table := range content.Find("table").EachIter() {
 						var schedule schema.Schedule
 
-						schedule.Caption = strings.Join(strings.Fields(table.Find("caption").First().Text()), " ")
+						schedule.Caption = normalizeText(table.Find("caption").First().Text(), false, false)
 
-						name := strings.Map(func(r rune) rune {
-							if unicode.Is(unicode.Pd, r) {
-								return '-'
-							}
-							return unicode.ToLower(r)
-						}, norm.NFKC.String(schedule.Caption))
+						name := strings.ToLower(schedule.Caption)
 						if x, ok := strings.CutPrefix(name, strings.ToLower(facility.Name)); ok {
 							name = x
 						} else if x, y, ok := strings.Cut(name, "-"); ok && strings.HasPrefix(strings.ToLower(facility.Name), x) {
 							name = strings.TrimSpace(y) // e.g., "Jack Purcell Community Centre" with "Jack Purcell - swim and aquafit - January 6 to April 6"
-
+							// note: we shouldn't try to parse the date range
+							// (Month DD[, YYYY] to [Month ]DD[, YYYY] OR
+							// until|starting Month DD[, YYYY]) since it's
+							// manually written and the year isn't automatically
+							// added when the year changes, so it's hard to know
+							// if we parsed it correctly
 						}
 						name = strings.TrimSpace(strings.TrimPrefix(strings.TrimSpace(name), "-"))
 						for m := range 12 {
@@ -270,7 +256,7 @@ func run(ctx context.Context) error {
 							if schedule.Days == nil {
 								for i, cell := range cells.EachIter() {
 									if i != 0 {
-										schedule.Days = append(schedule.Days, strings.TrimSpace(cell.Text()))
+										schedule.Days = append(schedule.Days, strings.Join(strings.Fields(cell.Text()), " "))
 									}
 								}
 							} else {
@@ -281,14 +267,8 @@ func run(ctx context.Context) error {
 								}
 								for i, cell := range cells.EachIter() {
 									if i == 0 {
-										activity.Label = strings.Join(strings.Fields(cell.Text()), " ")
-										name := strings.Map(func(r rune) rune {
-											if unicode.Is(unicode.Pd, r) {
-												return '-'
-											}
-											return unicode.ToLower(r)
-										}, norm.NFKC.String(activity.Label))
-										name = strings.Join(strings.Fields(name), " ")
+										activity.Label = normalizeText(cell.Text(), false, false)
+										name := strings.ToLower(activity.Label)
 										name = strings.ReplaceAll(name, "swimming", "swim")
 										name = strings.ReplaceAll(name, "aqualite", "aqua lite")
 										name = strings.ReplaceAll(name, "skating", "skate")
@@ -331,88 +311,25 @@ func run(ctx context.Context) error {
 										for t := range strings.FieldsFuncSeq(cell.Text(), func(r rune) bool {
 											return r == ','
 										}) {
-											tnorm := strings.Map(func(r rune) rune {
-												if unicode.IsSpace(r) || r == '\u200b' {
+											if strings.Map(func(r rune) rune {
+												if unicode.IsSpace(r) {
 													return -1
 												}
-												return unicode.ToLower(r)
-											}, t)
-											if tnorm == "n/a" {
+												return r
+											}, normalizeText(t, false, true)) == "n/a" {
 												continue
 											}
 											var trange schema.TimeRange
-											trange.Label = strings.TrimSpace(t)
+											trange.Label = strings.TrimSpace(normalizeText(t, false, false))
 											if wkday != -1 {
 												trange.XWkday = ptrTo(schema.Weekday(wkday))
 											}
-											if t1, t2, ok := strings.Cut(tnorm, "-"); ok && !strings.Contains(t2, "-") {
-												var (
-													tryParseTime12h = func(s string) (hh, mm int, hasAMPM, isPM, ok bool) {
-														s = strings.Map(func(r rune) rune {
-															if unicode.IsSpace(r) {
-																return -1
-															}
-															return unicode.ToLower(r)
-														}, s)
-														switch s {
-														case "midnight":
-															hh, mm = 0, 0
-															hasAMPM, isPM = true, true
-															ok = true
-														case "noon":
-															hh, mm = 12, 0
-															hasAMPM, isPM = true, true
-															ok = true
-														default:
-															s, isPM = strings.CutSuffix(s, "pm")
-															if !isPM {
-																s, hasAMPM = strings.CutSuffix(s, "am")
-															} else {
-																hasAMPM = true
-															}
-															shh, smm, hasMM := strings.Cut(s, ":")
-															if !hasMM {
-																smm = "00"
-															}
-															if nh, err := strconv.ParseInt(shh, 10, 0); err == nil && nh > 0 && nh <= 12 {
-																if hasAMPM {
-																	if isPM {
-																		nh += 12
-																	} else if nh == 12 {
-																		nh = 0
-																	}
-																}
-																if nm, err := strconv.ParseInt(smm, 10, 0); err == nil && nm >= 0 && nm < 60 {
-																	hh = int(nh)
-																	mm = int(nm)
-																	ok = true
-																}
-															}
-														}
-														return
-													}
-													h1, m1, ap1, pm1, ok1 = tryParseTime12h(t1)
-													h2, m2, ap2, pm2, ok2 = tryParseTime12h(t2)
-												)
-												if ok1 && ok2 && pm1 && !pm2 {
-													ok1, ok2 = false, false // invalid time range with am/pm at start and none at end
-												}
-												if ok1 && ok2 {
-													if ap2 && !ap1 && pm2 {
-														h1 += 12 // time range with pm at end and no am/pm at start
-													}
-													n1 := h1*60 + m1
-													n2 := h2*60 + m2
-													if n2 < n1 {
-														n1 += 24 * 60 // next day
-													}
-													trange.XStart = ptrTo(int32(n1))
-													trange.XEnd = ptrTo(int32(n2))
-												}
-												if !ok1 || !ok2 {
-													slog.Warn("failed to parse time range", "range", t)
-													facility.XErrors = append(facility.XErrors, fmt.Sprintf("warning: failed to parse time range %q", t))
-												}
+											if r, ok := parseClockRange(t); ok {
+												trange.XStart = ptrTo(int32(r.Start))
+												trange.XEnd = ptrTo(int32(r.End))
+											} else {
+												slog.Warn("failed to parse time range", "range", t)
+												facility.XErrors = append(facility.XErrors, fmt.Sprintf("warning: failed to parse time range %q", t))
 											}
 											times = append(times, &trange)
 										}
@@ -454,48 +371,19 @@ func run(ctx context.Context) error {
 		}
 		cur = nextURL.String()
 	}
-	if *Scrape {
+	if *Scrape != "" {
 		data.Attribution = append(data.Attribution, "Compiled data © Patrick Gaskin. https://github.com/pgaskin/orec2")
 		data.Attribution = append(data.Attribution, "Facility information and schedules © City of Ottawa. "+*PlaceListing)
 		for _, attrib := range slices.Sorted(maps.Keys(geoAttrib)) {
 			data.Attribution = append(data.Attribution, "Address data "+strings.TrimPrefix(attrib, "Data "))
 		}
-		if *ScrapeJSON != "" {
-			slog.Info("saving json data to file", "name", *ScrapeJSON)
-			if buf, err := (protojson.MarshalOptions{
-				EmitUnpopulated:   true,
-				EmitDefaultValues: true,
-				Multiline:         *Pretty,
-				AllowPartial:      false,
-				UseEnumNumbers:    true,
-				Indent:            "  ",
-				UseProtoNames:     false,
-			}).Marshal(&data); err != nil {
-				return fmt.Errorf("save data: %w", err)
-			} else if err := os.WriteFile(*ScrapeJSON, buf, 0644); err != nil {
-				return fmt.Errorf("save data: %w", err)
-			}
-		}
-		if *ScrapePB != "" {
-			slog.Info("saving protobuf data to file", "name", *ScrapePB)
-			if buf, err := proto.Marshal(&data); err != nil {
-				return fmt.Errorf("save data: %w", err)
-			} else if err := os.WriteFile(*ScrapePB, buf, 0644); err != nil {
-				return fmt.Errorf("save data: %w", err)
-			}
-		}
-		if *ScrapeTextPB != "" {
-			slog.Info("saving text protobuf data to file", "name", *ScrapeTextPB)
-			if buf, err := (prototext.MarshalOptions{
-				Multiline:    *Pretty,
-				AllowPartial: false,
-				Indent:       "  ",
-				EmitASCII:    false,
-			}).Marshal(&data); err != nil {
-				return fmt.Errorf("save data: %w", err)
-			} else if err := os.WriteFile(*ScrapeTextPB, buf, 0644); err != nil {
-				return fmt.Errorf("save data: %w", err)
-			}
+		slog.Info("saving protobuf data to file", "name", *Scrape)
+		if buf, err := (proto.MarshalOptions{
+			Deterministic: true,
+		}).Marshal(&data); err != nil {
+			return fmt.Errorf("save data: %w", err)
+		} else if err := os.WriteFile(*Scrape, buf, 0644); err != nil {
+			return fmt.Errorf("save data: %w", err)
 		}
 	}
 	return nil
@@ -561,6 +449,13 @@ func fetchPage(ctx context.Context, u string) (*goquery.Document, time.Time, err
 		return nil, time.Time{}, err
 	}
 	doc.Url = resp.Request.URL
+
+	if doc.Find(`#main-content, #ottux-header, meta[name='dcterms.title'], meta[content*='drupal']`).Length() == 0 {
+		if h, _ := doc.Html(); strings.Contains(h, "Pardon Our Interruption") || strings.Contains(h, "showBlockPage()") {
+			return nil, time.Time{}, fmt.Errorf("imperva blocked request")
+		}
+		return nil, time.Time{}, fmt.Errorf("page content not found, might be imperva")
+	}
 
 	date, _ := time.Parse(http.TimeFormat, resp.Header.Get("Date"))
 	return doc, date, nil
@@ -628,9 +523,9 @@ func fetch(ctx context.Context, u string, cacheType, cacheKey string, limiter *r
 		if err != nil {
 			return nil, err
 		}
-		defer resp.Body.Close()
-
 		if cacheName != "" {
+			defer resp.Body.Close()
+
 			reqbuf, err := httputil.DumpRequest(resp.Request, true)
 			if err != nil {
 				return nil, err
@@ -751,8 +646,8 @@ func scrapePlaceListings(doc *goquery.Document, s *goquery.Selection, fn func(u 
 				return err
 			}
 
-			title := strings.TrimSpace(rowTitle.Text())
-			address := strings.TrimSpace(rowAddress.Text())
+			title := normalizeText(rowTitle.Text(), false, false)
+			address := normalizeText(rowAddress.Text(), true, false)
 
 			if err := fn(u, title, address); err != nil {
 				return fmt.Errorf("process %q: %w", title, err)
@@ -853,6 +748,181 @@ func scrapeNodeField(s *goquery.Selection, name, typ string, array, optional boo
 		}
 	}
 	return items, nil
+}
+
+// normalizeText performs various transformations on s:
+//   - remove invisible characters
+//   - collapse some kinds of consecutive whitespace (excluding newlines unless requested, but including nbsp)
+//   - replace all kinds of dashes with "-"
+//   - perform unicode NFKC normalization
+//   - optionally lowercase the string
+//   - remove leading and trailing whitespace
+func normalizeText(s string, newlines, lower bool) string {
+	// normalize the string
+	s = norm.NFKC.String(s)
+
+	// transform characters
+	s = strings.Map(func(r rune) rune {
+
+		// remove zero-width spaces
+		switch r {
+		case '\u200b', '\ufeff', '\u200d', '\u200c':
+			return -1
+		}
+
+		// replace some whitespace for collapsing later
+		switch r {
+		case '\n':
+			if newlines {
+				return r
+			}
+			fallthrough
+		case ' ', '\t', '\v', '\f', '\u00a0':
+			return ' '
+		}
+		if unicode.Is(unicode.Zs, r) {
+			return ' '
+		}
+
+		// replace smart punctuation
+		switch r {
+		case '“', '”', '‟':
+			return '"'
+		case '\u2018', '\u2019', '\u201b':
+			return '\''
+		case '\u2039':
+			return '<'
+		case '\u203a':
+			return '>'
+		}
+
+		// normalize all kinds of dashes
+		if unicode.Is(unicode.Pd, r) {
+			return '-'
+		}
+
+		// remove invisible characters
+		if !unicode.IsGraphic(r) {
+			return -1
+		}
+
+		// lowercase (or not)
+		if lower {
+			return unicode.ToLower(r)
+		}
+		return r
+	}, s)
+
+	// collapse consecutive whitespace
+	s = string(slices.CompactFunc([]rune(s), func(a, b rune) bool {
+		return a == ' ' && a == b
+	}))
+
+	// remove leading/trailing whitespace
+	return strings.TrimSpace(s)
+}
+
+func parseClockRange(s string) (r schema.ClockRange, ok bool) {
+	s = strings.ReplaceAll(normalizeText(s, false, true), " ", "")
+
+	parsePart := func(s string, mdef byte) (t schema.ClockTime, m byte, ok bool) {
+		switch s {
+		case "midnight":
+			return schema.MakeClockTime(0, 0), 'a', true // midnight implies am
+		case "noon":
+			return schema.MakeClockTime(12, 0), 'p', true // noon implies pm
+		}
+		sh, sm, ok := strings.Cut(s, "h") // french time
+		if !ok {
+			if len(s) == 4 && strings.TrimFunc(s, func(r rune) bool { return r >= '0' && r <= '9' }) == "" {
+				sh, sm, m = s[:2], s[2:], 0 // military time
+			} else {
+				if s, ok = strings.CutSuffix(s, "pm"); ok {
+					m = 'p' // 12h pm
+				} else if s, ok = strings.CutSuffix(s, "am"); ok {
+					m = 'a' // 12h am
+				} else {
+					m = mdef // 24h or assumed am/pm
+				}
+				sh, sm, ok = strings.Cut(s, ":")
+				if !ok {
+					sm = "00" // no minute
+				}
+			}
+		}
+		if len(sh) > 2 || len(sm) > 2 {
+			return 0, 0, false // invalid hour/minute length
+		}
+		hh, err := strconv.ParseInt(sh, 10, 0)
+		if err != nil {
+			return 0, 0, false // invalid hour
+		}
+		if m != 0 {
+			if hh < 1 || hh > 12 {
+				return 0, 0, false // invalid 12h hour
+			}
+			switch m {
+			case 'p':
+				if hh < 12 {
+					hh += 12
+				}
+			case 'a':
+				if hh == 12 {
+					hh = 0
+				}
+			}
+		} else {
+			if hh < 0 || hh > 23 {
+				return 0, 0, false // invalid 24h hour
+			}
+		}
+		mm, err := strconv.ParseInt(sm, 10, 0)
+		if err != nil {
+			return 0, 0, false // invalid minute
+		}
+		if mm < 0 || mm > 59 {
+			return 0, 0, false // invalid 24h minute
+		}
+		return schema.MakeClockTime(int(hh), int(mm)), m, true
+	}
+
+	if s == "" {
+		return r, false // empty
+	}
+	s1, s2, ok := strings.Cut(s, "-")
+	if !ok {
+		s1, s2, ok = strings.Cut(s, "to")
+		if !ok {
+			return r, false // single time
+		}
+	}
+	if s1 == "" || s2 == "" {
+		return r, false // open range
+	}
+	t1, m1, ok := parsePart(s1, 0)
+	if !ok {
+		return r, false // invalid rhs
+	}
+	t2, m2, ok := parsePart(s2, 0)
+	if !ok {
+		return r, false // invalid rhs
+	}
+	if m1 != 0 && m2 == 0 {
+		return r, false // ambiguous lhs 12h and rhs 24h
+	}
+	if m1 == 0 && m2 != 0 {
+		t1, m1, ok = parsePart(s1, m2) // reparse lhs with 12h rhs am/pm
+		if !ok {
+			return r, false // lhs hour is now invalid
+		}
+	}
+	if t1 == t2 {
+		return r, false // zero range
+	}
+	if t1 > t2 {
+		t2 += 24 * 60 // next day
+	}
+	return schema.ClockRange{Start: t1, End: t2}, true
 }
 
 func ptrTo[T any](x T) *T {
