@@ -4,7 +4,7 @@ Scraper and website for viewing and filtering City of Ottawa drop-in recreation 
 
 The cached pages and geocoding data can be found on the [cache](https://github.com/pgaskin/orec2/tree/cache) branch. The parsed data can be found on the [data](https://github.com/pgaskin/orec2/tree/data) branch. The data is updated daily.
 
-You can run `git log -pw --patience -Iseconds: data...235c6b858d9359494b7aa86401e3221c9bc878bd -- data.textpb` to view a diff of the schedule data over time.
+You can run `git -c "diff.wsErrorHighlight=none" -c "diff.context=3" -c "diff.interHunkContext=0" -c "diff.indentHeuristic=true" -c "diff.orec_pb.cachetextconv=false" -c "diff.orec_pb.xfuncname=^\s*[+&]\s*(.+)" -c "diff.orec_pb.textconv=go run github.com/pgaskin/orec2/textconv" log --textconv -pw --patience data -- data.pb` to view a diff of the schedule data over time.
 
 The website is coming soon.
 
