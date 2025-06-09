@@ -6,6 +6,7 @@
     "build": "node frontend/build.mjs"
   },
   "dependencies": {
+    "@bufbuild/protobuf": "^2.5.2",
     "@csstools/postcss-relative-color-syntax": "^3.0.8",
     "@fontsource-variable/inter": "^5.2.5",
     "esbuild": "^0.25.2",
