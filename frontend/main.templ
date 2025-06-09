@@ -1,0 +1,221 @@
+package main
+
+import "github.com/pgaskin/orec2/schema"
+
+templ renderData(data *schema.Data, list bool) {
+	<!DOCTYPE html>
+	// TODO: proper page template
+	<section class="orec">
+		for _, facility := range data.Facilities {
+			<article class="Facility">
+				<h1><a href={ facility.Source.Url }>{ facility.Name }</a></h1>
+				for _, err := range facility.XErrors {
+					<aside class="error">
+						Error: { err }
+					</aside>
+				}
+				<section class="info">
+					// TODO: map
+					<section>
+						<h1>Map</h1>
+						<!-- TODO -->
+					</section>
+					<section>
+						<h1>Special Hours</h1>
+						<div class="ott-html">
+							@templ.Raw(facility.SpecialHoursHtml)
+						</div>
+					</section>
+					<section>
+						<h1>Notifications</h1>
+						<div class="ott-html">
+							@templ.Raw(facility.NotificationsHtml)
+						</div>
+					</section>
+				</section>
+				<section class="schedule-groups">
+					for _, group := range facility.ScheduleGroups {
+						@ScheduleGroup(group)
+					}
+				</section>
+				<footer>
+					{ facility.Source.XDate.AsTime().String() }
+				</footer>
+			</article>
+		}
+		<footer>
+			<ul class="attribution">
+				for _, a := range data.Attribution {
+					<li>{ a }</li>
+				}
+			</ul>
+		</footer>
+	</section>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet">
+	<style>
+        html {
+            font-family: "Inter";
+            font-size: 16px;
+            font-optical-sizing: auto;
+        }
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: inherit;
+            font-size: .875rem;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        .ott-html {
+            h1, h2, h3, h4, h5, h6 {
+                font-size: inherit;
+                margin: 1rem 0;
+                font-weight: bold;
+            }
+            ul {
+                margin: 1rem 0;
+            }
+        }
+        article.Facility {
+            margin: 1rem;
+            background: #e8ecfc;
+
+            > h1 {
+                margin: 0;
+                background: #ccd3f8;
+                padding: .5rem;
+            }
+            > section.schedule-groups > section.ScheduleGroup {
+                margin: 1rem;
+            }
+            > section.info {
+                display: flex;
+                flex-direction: row;
+                align-items: stretch;
+                margin: 1rem;
+                gap: 1rem;
+
+                > section {
+                    flex: 1;
+                    min-width: 0;
+                }
+            }
+            > footer {
+
+            }
+        }
+        section.ScheduleGroup {
+            border: 1px solid #1a31b3;
+            background: #fff;
+            color: #000;
+
+            > h1 {
+                background: #1a31b3;
+                color: #fff;
+                padding: .5rem;
+                margin: 0;
+            }
+
+            > div.schedule {
+                overflow-y: auto;
+                > table.ScheduleTable {
+                    min-width: 100%;
+                    width: auto;
+                }
+            }
+        }
+        table.ScheduleTable {
+            border-collapse: collapse;
+            width: 100%;
+            table-layout: fixed;
+
+            caption {
+                background: #eee;
+                padding: .5rem;
+                text-align: left;
+                font-weight: bold;
+                border: 1px solid #ccc;
+            }
+            td, th {
+                border: 1px solid #ccc;
+                padding: .5rem;
+                text-align: center;
+            }
+            > thead > tr > th:first-child,
+            > tbody > tr > th:first-child {
+                width: 10rem;
+                text-align: left;
+                vertical-align: top;
+            }
+            > tbody > tr > td {
+                padding: 0;
+                > span {
+                    display: block;
+                    font-size: .875em;
+                    font-stretch: extra-condensed;
+                    margin: .75em;
+                    line-height: 1;
+                }
+            }
+        }
+    </style>
+}
+
+templ ScheduleGroup(group *schema.ScheduleGroup) {
+	<section class="ScheduleGroup">
+		<h1>{ group.Label }</h1>
+		if group.ScheduleChangesHtml != "" {
+			<div class="ott-html">
+				@templ.Raw(group.ScheduleChangesHtml)
+			</div>
+		}
+		<div class="schedule">
+			for _, schedule := range group.Schedules {
+				@ScheduleTable(schedule)
+			}
+		</div>
+	</section>
+}
+
+templ ScheduleTable(schedule *schema.Schedule) {
+	<table class="ScheduleTable">
+		<caption>{ schedule.Caption }</caption>
+		<thead>
+			<tr>
+				<th></th>
+				for _, day := range schedule.Days {
+					<th>{ day }</th>
+				}
+			</tr>
+		</thead>
+		<tbody>
+			for _, activity := range schedule.Activities {
+				<tr>
+					<th>{ activity.Label }</th>
+					for _, ad := range activity.Days {
+						<td>
+							for _, at := range ad.Times {
+								if at.XStart != nil && at.XEnd != nil {
+									<span title={ at.Label }>
+										{ schema.ClockRange{
+                                            Start: schema.ClockTime(*at.XStart),
+                                            End: schema.ClockTime(*at.XEnd),
+                                        }.Format(true) }
+									</span>
+								} else {
+									<span class="fallback" title={ at.Label }>
+										{ at.Label }
+									</span>
+								}
+							}
+						</td>
+					}
+				</tr>
+			}
+		</tbody>
+	</table>
+}
