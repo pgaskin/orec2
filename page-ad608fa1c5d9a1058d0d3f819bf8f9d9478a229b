@@ -6,19 +6,19 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 264
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Fri, 13 Jun 2025 00:47:05 GMT
-Etag: "1749775359-gzip"
+Date: Sat, 14 Jun 2025 00:44:57 GMT
+Etag: "1749861896-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Fri, 13 Jun 2025 00:42:39 GMT
-Set-Cookie: visid_incap_243507=IVgnxx5lST6LcLXO6Lafbwh1S2gAAAAAQUIPAAAAAAB+bbj7euwg5nwdYCxOKcP7; expires=Fri, 12 Jun 2026 07:21:50 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=F0pIYb/x4iubed0MaXmSIAAAAADGuJ1FpIX5sCFiLzdTHfrn; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_1353_243507=G5x7U40OfTN8o7lXrdLGEgh1S2gAAAAA3rH5jktCYLeBvwrInupRQQ==; path=/; Domain=.ottawa.ca
+Last-Modified: Sat, 14 Jun 2025 00:44:56 GMT
+Set-Cookie: visid_incap_243507=vbsD9bh1TRuVhms10PEMsgfGTGgAAAAAQUIPAAAAAAAI5s9Abqgc9Fj/aMwHIgOC; expires=Sat, 13 Jun 2026 07:26:53 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=ADF4f27xuET4fptnaXmSIAAAAAC4LxDLMmmsxvr1wN7sajy9; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_1338_243507=BDqiON6OSXGEvU8JPYiREgjGTGgAAAAAZrPUC/mcgkxvTdN5zA1gmQ==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-6b6bb87b7-bm2f4 (Varnish/7.3)
@@ -28,10 +28,10 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: UNCACHEABLE (poor cacheability)
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 13-7042061-7042065 NNNN CT(33 41 0) RT(1749775624951 16) q(0 0 1 5) r(1 1) U24
-X-Varnish: 406621641 407538474
+X-Iinfo: 12-18410514-18410516 NNNY CT(21 27 0) RT(1749861896504 41) q(0 0 0 0) r(9 9) U24
+X-Varnish: 480991161
 
-10099
+1009b
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -46,7 +46,7 @@ X-Varnish: 406621641 407538474
 <meta name="HandheldFriendly" content="true" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="icon" href="/themes/custom/ottca_theme/favicon.ico" type="image/vnd.microsoft.icon" />
-<script src="/sites/default/files/google_tag/ottawa.ca_google_container/google_tag.script.js?sxrrb1" defer></script>
+<script src="/sites/default/files/google_tag/ottawa.ca_google_container/google_tag.script.js?sxtm2u" defer></script>
 
     <title>Place listing | City of Ottawa</title>
     <link rel="stylesheet" media="all" href="/sites/default/files/css/css_CYc4ifTSFBtQWHDsqBqYaFo-XMX33lSr6VTWD4qJR3g.css?delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdT1sKwjAQvFBsfrxP2SRDDd1kQ3Zjq6e3qGDxZ5hhYB5BxNQ6tasPpHDhpxeWQHxRe3Cuy9kpUKUF6uKKlE36nGtCtcASV3_iLkqHr9ILcX7CYbcja_Wpj0Y8faUTs0iz3VDw33q2Dj72actpgbl2DOjovgy23KjC6UMN5XPjnrGpf-NUJA3GC6daW0g" />
@@ -55,7 +55,7 @@ X-Varnish: 406621641 407538474
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_JrekIGp7B4reuMw_-un1Y91uMszZI1mQ3RbNQruw4LM.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdT1sKwjAQvFBsfrxP2SRDDd1kQ3Zjq6e3qGDxZ5hhYB5BxNQ6tasPpHDhpxeWQHxRe3Cuy9kpUKUF6uKKlE36nGtCtcASV3_iLkqHr9ILcX7CYbcja_Wpj0Y8faUTs0iz3VDw33q2Dj72actpgbl2DOjovgy23KjC6UMN5XPjnrGpf-NUJA3GC6daW0g" />
 <link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.5/css/app.css" />
 
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"recreation-and-parks\/facilities\/place-listing","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"popup_survey":{"frequency":"7","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"ajaxTrustedUrl":{"\/en\/recreation-and-parks\/facilities\/place-listing":true},"user":{"uid":0,"permissionsHash":"fc39ad789a76f34af53fa1aa9b7905c6d528134222dd2d195fefcca244d87928"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"recreation-and-parks\/facilities\/place-listing","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"popup_survey":{"frequency":"5","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"ajaxTrustedUrl":{"\/en\/recreation-and-parks\/facilities\/place-listing":true},"user":{"uid":0,"permissionsHash":"fc39ad789a76f34af53fa1aa9b7905c6d528134222dd2d195fefcca244d87928"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9kE1uxDAIhS9kx5veJ8KE6dAhxrLxJJnT16OkVdJFN4j38fgRUdWqFcgfIf6m_qt6AaNqjlYTTo8wlZZBhkO6GyBZ_aG7GvBO-Ii6-oWnTzIn8NrCOzg1QxhRk1GysNt9IVGY_E2x1cNhd5opxE1gEe7bz3TvuqD3KSP3sVfc87YOxxHnQi6czFdFBvGxmf3trFhUhMoVshHPueiTPCSQzRiry5pbHmsrT9rCWfTKQiXySHOkKVyUR-H-gf8trZrO_KLyDQUuolg"></script>
 <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.22.1/dist/powerbi.min.js"></script>
 <script src="/modules/contrib/powerbi_embed/js/powerbi_embed-customizer.js?v=1.0.0"></script>
@@ -232,7 +232,7 @@ X-Varnish: 406621641 407538474
 
 
 
-  <div class="views-element-container"><div class="faceted-search-page view view-place-listing-search view-id-place_listing_search view-display-id-place_listing_search js-view-dom-id-57ec77c5cbf84e79b8b63c91c2ced7308663e7d6aaaa2319886c70d7a5316cce">
+  <div class="views-element-container"><div class="faceted-search-page view view-place-listing-search view-id-place_listing_search view-display-id-place_listing_search js-view-dom-id-6cb05ae67995bb1e0d7f737a606900c93569c18f483624c5fc16774850fb8de3">
   
     
       <div class="view-header">
@@ -716,7 +716,7 @@ If YES, a new window will open in the background so you can come back to it when
 Thank you for considering to help out.
         </div>
         <div class="modal-footer">
-          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/treejack/0cb7996a65353cec79f131d37088b5ca">Yes</a>
+          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/chalkmark/f619eed268cee2d0a4b5f53c37588bd2">Yes</a>
           <button type="button" class="btn btn-outline-primary" data-dismiss="modal">No</button>
         </div>
       </div>
@@ -730,7 +730,7 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9kE1uxDAIhS9kx5veJ8KE6dAhxrLxJJnT16OkVdJFN4j38fgRUdWqFcgfIf6m_qt6AaNqjlYTTo8wlZZBhkO6GyBZ_aG7GvBO-Ii6-oWnTzIn8NrCOzg1QxhRk1GysNt9IVGY_E2x1cNhd5opxE1gEe7bz3TvuqD3KSP3sVfc87YOxxHnQi6czFdFBvGxmf3trFhUhMoVshHPueiTPCSQzRiry5pbHmsrT9rCWfTKQiXySHOkKVyUR-H-gf8trZrO_KLyDQUuolg"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=576463280" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1288603524" async></script></body>
 </html>
 
 

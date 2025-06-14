@@ -1,22 +1,22 @@
 GET /en/recreation-and-parks/facilities/place-listing/lowertown-community-centre-and-pool HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=IVgnxx5lST6LcLXO6Lafbwh1S2gAAAAAQUIPAAAAAAB+bbj7euwg5nwdYCxOKcP7; nlbi_243507=F0pIYb/x4iubed0MaXmSIAAAAADGuJ1FpIX5sCFiLzdTHfrn; incap_ses_1353_243507=G5x7U40OfTN8o7lXrdLGEgh1S2gAAAAA3rH5jktCYLeBvwrInupRQQ==
+Cookie: visid_incap_243507=vbsD9bh1TRuVhms10PEMsgfGTGgAAAAAQUIPAAAAAAAI5s9Abqgc9Fj/aMwHIgOC; nlbi_243507=ADF4f27xuET4fptnaXmSIAAAAAC4LxDLMmmsxvr1wN7sajy9; incap_ses_1338_243507=BDqiON6OSXGEvU8JPYiREgjGTGgAAAAAZrPUC/mcgkxvTdN5zA1gmQ==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 137
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Fri, 13 Jun 2025 00:48:28 GMT
-Etag: "1749775567-gzip"
+Date: Sat, 14 Jun 2025 00:46:50 GMT
+Etag: "1749862007-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Fri, 13 Jun 2025 00:46:07 GMT
+Last-Modified: Sat, 14 Jun 2025 00:46:47 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-6b6bb87b7-bm2f4 (Varnish/7.3)
@@ -26,10 +26,10 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 13-7042061-7042065 SNNN RT(1749775624951 83321) q(0 0 0 -1) r(0 0) U24
-X-Varnish: 396920632 406621557
+X-Iinfo: 12-18410514-18410516 SNNy RT(1749861896504 110926) q(0 0 0 -1) r(32 32) U24
+X-Varnish: 487979876
 
-ce45
+ce46
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -49,7 +49,7 @@ ce45
 <link rel="icon" href="/themes/custom/ottca_theme/favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="alternate" hreflang="en" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/lowertown-community-centre-and-pool" />
 <link rel="alternate" hreflang="fr" href="https://ottawa.ca/fr/loisirs-et-parcs/installations/liste-des-lieux/centre-communautaire-et-piscine-de-la-basse-ville" />
-<script src="/sites/default/files/google_tag/ottawa.ca_google_container/google_tag.script.js?sxrrgu" defer></script>
+<script src="/sites/default/files/google_tag/ottawa.ca_google_container/google_tag.script.js?sxtm5z" defer></script>
 
     <title>Lowertown Community Centre and Pool | City of Ottawa</title>
     <link rel="stylesheet" media="all" href="/sites/default/files/css/css_Drn593rFDUoihTzZQN9v1XR2tEfF33Y8mbptWhDKecs.css?delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdkF2OwyAMhC_Ehpe9DzIwSVAMjrBpmz39Zn-qRn2x5vNIo7GjiKl12j99JIWLL15YIvGH2sGlLVenQpUWqEsbcjHpobSMZpElbf6iXZIO36RX4vIFh4edWZvPfezE0z86pkOGhVw0yQ398NKQhJ3Mc0kIq4yu_gph_ok0Q3dilijYior3xlfr1OMx3UteYG6nTst5yarPJq_NNNo-IhddkZ0eaqh_n7kV3NX_zqlKHoxvBOJ8og" />
@@ -58,7 +58,7 @@ ce45
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_JrekIGp7B4reuMw_-un1Y91uMszZI1mQ3RbNQruw4LM.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdkF2OwyAMhC_Ehpe9DzIwSVAMjrBpmz39Zn-qRn2x5vNIo7GjiKl12j99JIWLL15YIvGH2sGlLVenQpUWqEsbcjHpobSMZpElbf6iXZIO36RX4vIFh4edWZvPfezE0z86pkOGhVw0yQ398NKQhJ3Mc0kIq4yu_gph_ok0Q3dilijYior3xlfr1OMx3UteYG6nTst5yarPJq_NNNo-IhddkZ0eaqh_n7kV3NX_zqlKHoxvBOJ8og" />
 <link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.5/css/app.css" />
 
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031608","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"popup_survey":{"frequency":"7","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"fc39ad789a76f34af53fa1aa9b7905c6d528134222dd2d195fefcca244d87928"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031608","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"popup_survey":{"frequency":"5","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"fc39ad789a76f34af53fa1aa9b7905c6d528134222dd2d195fefcca244d87928"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9TcuOwjAM_KGGXPZ_Iie1ugY3jmyHUr6eVlqtCAcu1jw8M1nEzRXaT8z_MFwtMDiaT_hwpnqLs_YGfPmjE8Nzj-eZxL1A8l9cMeadYWM6Yu9qEWZohsllWRgH7yxLVKTaIB-4Py4bzQuOXU2pejApBBxyd_9MWtFjDnUUyZHWpnLHABV4dyo2NWm9Jet6xz2-k8PZUDMlXDPOcWChMGH17y_dXFZ6or4Apr2KvA"></script>
 <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.22.1/dist/powerbi.min.js"></script>
 <script src="/modules/contrib/powerbi_embed/js/powerbi_embed-customizer.js?v=1.0.0"></script>
@@ -179,7 +179,7 @@ ce45
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-56a71b7f853ed546f2e6378992044624bec7f182b7f84559ab147515b983fd08">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3509dac1f5c21d48016d2ccd076b73d61671b3c958db6b6c99d587fc04bd7a0d">
   
     
       
@@ -193,7 +193,7 @@ ce45
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-74584b5db40b8509d81c3bedf71c9fda61bac129f2f699b56ea871d67a52a1ae">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-fde77fef8b1eeb9608f36268d6dd085fd124f0d25876375640da32437675b64d">
   
     
       
@@ -388,7 +388,7 @@ ce45
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7ac71cd40818847d3a9e290506cab1ce1dd0f7fcecdc2d7a265a4796f59f3493">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6ec234af5d6a9085b4d14fa18fa40049792aa6f93c418940f50116e003ee3098">
   
     
       
@@ -402,7 +402,7 @@ ce45
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-481e6551948c4b655ec608ac157e94da210bbc3c47cb20d4b9111f169cca6ad8">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-056f386a68246ac07fc03d0791c58e1682d3f22adbc864162e5a76dfbcfb016d">
   
     
       
@@ -438,7 +438,7 @@ ce45
   <div class="paragraph paragraph--type--table paragraph--view-mode--default">
           <div class="table-responsive">
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
-	<caption>Lowertown Pool - Swim and aquafit - March 17 to June 13</caption>
+	<caption>Lowertown Pool - Swim and aquafit - March 17 to June 30</caption>
 	<thead>
 		<tr>
 			<td>
@@ -609,7 +609,7 @@ ce45
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1e24cc0533b1b8b89b2012bf8ee6561fdfdf96cc6fa81533f70822af689412a2">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0bdc3e50c9f877614fa65db5d7b11db89aa2ad73800e7476f488f93777b82185">
   
     
       
@@ -623,7 +623,7 @@ ce45
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-58af94c56198dd7556d449d69ad8ba5cd4e00b3887990d4c816042c9d43e981a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-50036c3805020f7e7ad6fe87ca0fc2dc965d027e2e2723c6ba25bbd8b54f3b36">
   
     
       
@@ -664,7 +664,7 @@ ce45
   <div class="paragraph paragraph--type--table paragraph--view-mode--default">
           <div class="table-responsive">
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
-	<caption>Lowertown Community Centre and Pool – racquet sports – January 17 to June 13</caption>
+	<caption>Lowertown Community Centre and Pool – racquet sports – January 17 to June 22</caption>
 	<thead>
 		<tr>
 			<th>
@@ -798,7 +798,7 @@ ce45
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-fd76b5cf1c927b97642f537959380cc7f4e14c0acfa1ca015bf07bdca09b7fc0">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f7c610cd247f3d15d6a5bb4175e74751f9500e0d973b6ca7555885da100d3294">
   
     
       
@@ -812,7 +812,7 @@ ce45
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f2745234e1d37114be3969a820241b5b43b3e7b645a9d0c2f445bff3dde8d1aa">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c7c8830df976cb4963aff1bf243cd58f27d9e096cea1d681a57a3bec35285d5f">
   
     
       
@@ -848,7 +848,7 @@ ce45
   <div class="paragraph paragraph--type--table paragraph--view-mode--default">
           <div class="table-responsive">
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
-	<caption>Lowertown Community Centre and Pool – sports – January 17 to June 13</caption>
+	<caption>Lowertown Community Centre and Pool – sports – January 17 to June 22</caption>
 	<thead>
 		<tr>
 			<th>&nbsp;</th>
@@ -1055,7 +1055,7 @@ ce45
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-d0901d17e5c9bf399b9a706fca7b39cbb7fd73c7f703dd1b094122210e15127c">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-e1bfed4b1092607fcb78e26ff04e3f3325c5a307033ae7d4c81d4184afa92fa9">
   
     
       <div class="view-header">
@@ -1410,7 +1410,7 @@ If YES, a new window will open in the background so you can come back to it when
 Thank you for considering to help out.
         </div>
         <div class="modal-footer">
-          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/treejack/0cb7996a65353cec79f131d37088b5ca">Yes</a>
+          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/chalkmark/f619eed268cee2d0a4b5f53c37588bd2">Yes</a>
           <button type="button" class="btn btn-outline-primary" data-dismiss="modal">No</button>
         </div>
       </div>
@@ -1424,7 +1424,7 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9TcuOwjAM_KGGXPZ_Iie1ugY3jmyHUr6eVlqtCAcu1jw8M1nEzRXaT8z_MFwtMDiaT_hwpnqLs_YGfPmjE8Nzj-eZxL1A8l9cMeadYWM6Yu9qEWZohsllWRgH7yxLVKTaIB-4Py4bzQuOXU2pejApBBxyd_9MWtFjDnUUyZHWpnLHABV4dyo2NWm9Jet6xz2-k8PZUDMlXDPOcWChMGH17y_dXFZ6or4Apr2KvA"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=75&cb=126737798" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=75&cb=810627776" async></script></body>
 </html>
 
 

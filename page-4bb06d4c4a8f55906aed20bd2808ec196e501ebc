@@ -1,22 +1,22 @@
 GET /en/recreation-and-parks/facilities/place-listing/kanata-seniors-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=IVgnxx5lST6LcLXO6Lafbwh1S2gAAAAAQUIPAAAAAAB+bbj7euwg5nwdYCxOKcP7; nlbi_243507=F0pIYb/x4iubed0MaXmSIAAAAADGuJ1FpIX5sCFiLzdTHfrn; incap_ses_1353_243507=G5x7U40OfTN8o7lXrdLGEgh1S2gAAAAA3rH5jktCYLeBvwrInupRQQ==
+Cookie: visid_incap_243507=vbsD9bh1TRuVhms10PEMsgfGTGgAAAAAQUIPAAAAAAAI5s9Abqgc9Fj/aMwHIgOC; nlbi_243507=ADF4f27xuET4fptnaXmSIAAAAAC4LxDLMmmsxvr1wN7sajy9; incap_ses_1338_243507=BDqiON6OSXGEvU8JPYiREgjGTGgAAAAAZrPUC/mcgkxvTdN5zA1gmQ==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 104
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Fri, 13 Jun 2025 00:48:18 GMT
-Etag: "1749775696-gzip"
+Date: Sat, 14 Jun 2025 00:46:37 GMT
+Etag: "1749861891-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Fri, 13 Jun 2025 00:48:16 GMT
+Last-Modified: Sat, 14 Jun 2025 00:44:51 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-6b6bb87b7-bm2f4 (Varnish/7.3)
@@ -26,10 +26,10 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 13-7042061-7042065 SNNN RT(1749775624951 71539) q(0 0 0 -1) r(22 22) U24
-X-Varnish: 398766180
+X-Iinfo: 12-18410514-18410516 SNNy RT(1749861896504 100411) q(0 1 1 -1) r(2 2) U24
+X-Varnish: 490606159 494964352
 
-cdab
+cdac
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -49,7 +49,7 @@ cdab
 <link rel="icon" href="/themes/custom/ottca_theme/favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="alternate" hreflang="en" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/kanata-seniors-centre" />
 <link rel="alternate" hreflang="fr" href="https://ottawa.ca/fr/loisirs-et-parcs/installations/liste-des-lieux/centre-pour-aines-kanata" />
-<script src="/sites/default/files/google_tag/ottawa.ca_google_container/google_tag.script.js?sxrrkg" defer></script>
+<script src="/sites/default/files/google_tag/ottawa.ca_google_container/google_tag.script.js?sxtm2s" defer></script>
 
     <title>Kanata Seniors Centre | City of Ottawa</title>
     <link rel="stylesheet" media="all" href="/sites/default/files/css/css_Drn593rFDUoihTzZQN9v1XR2tEfF33Y8mbptWhDKecs.css?delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdkF2OwyAMhC_Ehpe9DzIwSVAMjrBpmz39Zn-qRn2x5vNIo7GjiKl12j99JIWLL15YIvGH2sGlLVenQpUWqEsbcjHpobSMZpElbf6iXZIO36RX4vIFh4edWZvPfezE0z86pkOGhVw0yQ398NKQhJ3Mc0kIq4yu_gph_ok0Q3dilijYior3xlfr1OMx3UteYG6nTst5yarPJq_NNNo-IhddkZ0eaqh_n7kV3NX_zqlKHoxvBOJ8og" />
@@ -58,7 +58,7 @@ cdab
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_JrekIGp7B4reuMw_-un1Y91uMszZI1mQ3RbNQruw4LM.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdkF2OwyAMhC_Ehpe9DzIwSVAMjrBpmz39Zn-qRn2x5vNIo7GjiKl12j99JIWLL15YIvGH2sGlLVenQpUWqEsbcjHpobSMZpElbf6iXZIO36RX4vIFh4edWZvPfezE0z86pkOGhVw0yQ398NKQhJ3Mc0kIq4yu_gph_ok0Q3dilijYior3xlfr1OMx3UteYG6nTst5yarPJq_NNNo-IhddkZ0eaqh_n7kV3NX_zqlKHoxvBOJ8og" />
 <link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.5/css/app.css" />
 
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031582","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"popup_survey":{"frequency":"7","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"fc39ad789a76f34af53fa1aa9b7905c6d528134222dd2d195fefcca244d87928"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031582","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"popup_survey":{"frequency":"5","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"fc39ad789a76f34af53fa1aa9b7905c6d528134222dd2d195fefcca244d87928"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9TcuOwjAM_KGGXPZ_Iie1ugY3jmyHUr6eVlqtCAcu1jw8M1nEzRXaT8z_MFwtMDiaT_hwpnqLs_YGfPmjE8Nzj-eZxL1A8l9cMeadYWM6Yu9qEWZohsllWRgH7yxLVKTaIB-4Py4bzQuOXU2pejApBBxyd_9MWtFjDnUUyZHWpnLHABV4dyo2NWm9Jet6xz2-k8PZUDMlXDPOcWChMGH17y_dXFZ6or4Apr2KvA"></script>
 <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.22.1/dist/powerbi.min.js"></script>
 <script src="/modules/contrib/powerbi_embed/js/powerbi_embed-customizer.js?v=1.0.0"></script>
@@ -179,7 +179,7 @@ cdab
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9ae6bbfec73796a0854bff141ec2ad36c407f992c6a334693f2cac89701a953e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-448cea87ffc0ba710a58939cd575dd3d9719cdd536480ab49363ea5f5ad98019">
   
     
       
@@ -193,7 +193,7 @@ cdab
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-699ad71caece96f0a7203f5ffb37c787fa84d593e96d501f027b858ca1bf7e1e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e80572a256fe592ac01f242d9c605b14cbfc37d517b6941c81a0da55731f2802">
   
     
       
@@ -455,7 +455,7 @@ cdab
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4ebe54226c47d043ccaac67969da74170f82f0aa50f089a9fab6c0fac161cff4">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-240bee72fee85e4ef433464ebf94ba7cad1d5c662fa059613b7ad6f93c2606db">
   
     
       
@@ -469,7 +469,7 @@ cdab
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e3e5214aa6f20d2cb7e59bbd3bfb47efd0863f67bfcc59152fdb4d1f97cf19ac">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-576eb6287f6204245652f29bbb6ead003d8e607e74be66d9047381dac179a5f5">
   
     
       
@@ -744,7 +744,7 @@ cdab
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-039b9b051bcffad799a31f6de0de3186d401da788eb856466183c0d037b705a9">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-dbefacdf5e803acced6df9cbea66c7d0993f7155a6e20126eecf7a943e3cdf01">
   
     
       
@@ -758,7 +758,7 @@ cdab
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5401e86bbb102873c14b6ada9ef3f96746ed95f4e7dc55e1b7256635a416dfd7">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-81cd1d6f0a02af9389029717646e76674a447c882317cc8c3dca6df8eee86a87">
   
     
       
@@ -906,7 +906,7 @@ cdab
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-85edf5f8b381d51956e743fdb060cf3ab07c6194ab822c2b33e0e5332eec682e">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-625382b7e507ec3ff02f0bcdf7350f1c680ac64cb72a6af294582ebcc6b74c6f">
   
     
       <div class="view-header">
@@ -1293,7 +1293,7 @@ If YES, a new window will open in the background so you can come back to it when
 Thank you for considering to help out.
         </div>
         <div class="modal-footer">
-          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/treejack/0cb7996a65353cec79f131d37088b5ca">Yes</a>
+          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/chalkmark/f619eed268cee2d0a4b5f53c37588bd2">Yes</a>
           <button type="button" class="btn btn-outline-primary" data-dismiss="modal">No</button>
         </div>
       </div>
@@ -1307,7 +1307,7 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9TcuOwjAM_KGGXPZ_Iie1ugY3jmyHUr6eVlqtCAcu1jw8M1nEzRXaT8z_MFwtMDiaT_hwpnqLs_YGfPmjE8Nzj-eZxL1A8l9cMeadYWM6Yu9qEWZohsllWRgH7yxLVKTaIB-4Py4bzQuOXU2pejApBBxyd_9MWtFjDnUUyZHWpnLHABV4dyo2NWm9Jet6xz2-k8PZUDMlXDPOcWChMGH17y_dXFZ6or4Apr2KvA"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=66&cb=1137776207" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=66&cb=2132738484" async></script></body>
 </html>
 
 

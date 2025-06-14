@@ -1,22 +1,22 @@
 GET /en/recreation-and-parks/facilities/place-listing/billings-estate-national-historic-site HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=IVgnxx5lST6LcLXO6Lafbwh1S2gAAAAAQUIPAAAAAAB+bbj7euwg5nwdYCxOKcP7; nlbi_243507=F0pIYb/x4iubed0MaXmSIAAAAADGuJ1FpIX5sCFiLzdTHfrn; incap_ses_1353_243507=G5x7U40OfTN8o7lXrdLGEgh1S2gAAAAA3rH5jktCYLeBvwrInupRQQ==
+Cookie: visid_incap_243507=vbsD9bh1TRuVhms10PEMsgfGTGgAAAAAQUIPAAAAAAAI5s9Abqgc9Fj/aMwHIgOC; nlbi_243507=ADF4f27xuET4fptnaXmSIAAAAAC4LxDLMmmsxvr1wN7sajy9; incap_ses_1338_243507=BDqiON6OSXGEvU8JPYiREgjGTGgAAAAAZrPUC/mcgkxvTdN5zA1gmQ==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 182
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Fri, 13 Jun 2025 00:47:25 GMT
-Etag: "1749775642-gzip"
+Date: Sat, 14 Jun 2025 00:45:19 GMT
+Etag: "1749861733-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Fri, 13 Jun 2025 00:47:22 GMT
+Last-Modified: Sat, 14 Jun 2025 00:42:13 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-6b6bb87b7-bm2f4 (Varnish/7.3)
@@ -26,10 +26,10 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: UNCACHEABLE (poor cacheability)
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 13-7042061-7042065 SNNN RT(1749775624951 17685) q(0 0 0 -1) r(29 29) U24
-X-Varnish: 407867156
+X-Iinfo: 12-18410514-18410516 SNNy RT(1749861896504 22592) q(0 1 1 -1) r(1 1) U24
+X-Varnish: 488023796 499452083
 
-195fa
+195fc
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -49,7 +49,7 @@ X-Varnish: 407867156
 <link rel="icon" href="/themes/custom/ottca_theme/favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="alternate" hreflang="en" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/billings-estate-national-historic-site" />
 <link rel="alternate" hreflang="fr" href="https://ottawa.ca/fr/loisirs-et-parcs/installations/liste-des-lieux/lieu-historique-national-du-domaine-billings" />
-<script src="/sites/default/files/google_tag/ottawa.ca_google_container/google_tag.script.js?sxrriy" defer></script>
+<script src="/sites/default/files/google_tag/ottawa.ca_google_container/google_tag.script.js?sxtlye" defer></script>
 
     <title>Billings Estate National Historic Site | City of Ottawa</title>
     <link rel="stylesheet" media="all" href="/sites/default/files/css/css_6SOIAQxa2bQl6npx3J7OXA0cKH-rjHYB33Tyq-9XJgQ.css?delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuhEAMu9CU-el90DwMRIQJSjK70NOXvrSoP5EdK7GTLOLmmvb3mJMh5BefWXLiN_OTqc13ZYNZmmGhrKjkoiO1iuaZpazxhkMRRWyiW2L6QMDh1641Vu174uGXholxGFOFXsOOWZOTtMDplO5jJSvygJ5RGopwkGmignGRrhbvZJy-nNyhQdxLGn3Bhv-H3KUL92N4Up3hYU-aLu99sb-Ar87Q294zky2owU5zbD8PexCeFr_rsEntjE-ysYXT" />
@@ -58,7 +58,7 @@ X-Varnish: 407867156
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_JrekIGp7B4reuMw_-un1Y91uMszZI1mQ3RbNQruw4LM.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuhEAMu9CU-el90DwMRIQJSjK70NOXvrSoP5EdK7GTLOLmmvb3mJMh5BefWXLiN_OTqc13ZYNZmmGhrKjkoiO1iuaZpazxhkMRRWyiW2L6QMDh1641Vu174uGXholxGFOFXsOOWZOTtMDplO5jJSvygJ5RGopwkGmignGRrhbvZJy-nNyhQdxLGn3Bhv-H3KUL92N4Up3hYU-aLu99sb-Ar87Q294zky2owU5zbD8PexCeFr_rsEntjE-ysYXT" />
 <link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.5/css/app.css" />
 
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031554","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"popup_survey":{"frequency":"7","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"flexslider":{"optionsets":{"slider-gallery--1292602":{"animation":"slide","animationSpeed":600,"direction":"horizontal","slideshow":false,"easing":"swing","smoothHeight":true,"reverse":false,"slideshowSpeed":7000,"animationLoop":true,"randomize":false,"startAt":0,"itemWidth":0,"itemMargin":0,"minItems":0,"maxItems":0,"move":0,"directionNav":true,"controlNav":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":false,"touch":true,"prevText":"Previous","nextText":"Next","namespace":"flex-","selector":".slides \u003E li","sync":"","asNavFor":"","initDelay":0,"useCSS":true,"video":false,"pausePlay":false,"pauseText":"Pause","playText":"Play","pauseOnAction":false,"pauseOnHover":false,"controlsContainer":"","manualControls":"","id":"slider-gallery--1292602"},"slider-gallery-carousel--1292602":{"animation":"slide","animationSpeed":600,"direction":"horizontal","slideshow":false,"easing":"swing","smoothHeight":false,"reverse":false,"slideshowSpeed":7000,"animationLoop":true,"randomize":false,"startAt":0,"itemWidth":210,"itemMargin":4,"minItems":0,"maxItems":0,"move":0,"directionNav":true,"controlNav":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":false,"touch":true,"prevText":"Previous","nextText":"Next","namespace":"flex-","selector":".slides \u003E li","sync":"","asNavFor":"#slider-gallery--1292602","initDelay":0,"useCSS":true,"video":false,"pausePlay":false,"pauseText":"Pause","playText":"Play","pauseOnAction":false,"pauseOnHover":false,"controlsContainer":"","manualControls":"","id":"slider-gallery-carousel--1292602"}},"instances":{"slider-gallery--1292602":"slider-gallery--1292602","slider-gallery-carousel--1292602":"slider-gallery-carousel--1292602"}},"user":{"uid":0,"permissionsHash":"fc39ad789a76f34af53fa1aa9b7905c6d528134222dd2d195fefcca244d87928"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031554","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"popup_survey":{"frequency":"5","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"flexslider":{"optionsets":{"slider-gallery--1292602":{"animation":"slide","animationSpeed":600,"direction":"horizontal","slideshow":false,"easing":"swing","smoothHeight":true,"reverse":false,"slideshowSpeed":7000,"animationLoop":true,"randomize":false,"startAt":0,"itemWidth":0,"itemMargin":0,"minItems":0,"maxItems":0,"move":0,"directionNav":true,"controlNav":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":false,"touch":true,"prevText":"Previous","nextText":"Next","namespace":"flex-","selector":".slides \u003E li","sync":"","asNavFor":"","initDelay":0,"useCSS":true,"video":false,"pausePlay":false,"pauseText":"Pause","playText":"Play","pauseOnAction":false,"pauseOnHover":false,"controlsContainer":"","manualControls":"","id":"slider-gallery--1292602"},"slider-gallery-carousel--1292602":{"animation":"slide","animationSpeed":600,"direction":"horizontal","slideshow":false,"easing":"swing","smoothHeight":false,"reverse":false,"slideshowSpeed":7000,"animationLoop":true,"randomize":false,"startAt":0,"itemWidth":210,"itemMargin":4,"minItems":0,"maxItems":0,"move":0,"directionNav":true,"controlNav":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":false,"touch":true,"prevText":"Previous","nextText":"Next","namespace":"flex-","selector":".slides \u003E li","sync":"","asNavFor":"#slider-gallery--1292602","initDelay":0,"useCSS":true,"video":false,"pausePlay":false,"pauseText":"Pause","playText":"Play","pauseOnAction":false,"pauseOnHover":false,"controlsContainer":"","manualControls":"","id":"slider-gallery-carousel--1292602"}},"instances":{"slider-gallery--1292602":"slider-gallery--1292602","slider-gallery-carousel--1292602":"slider-gallery-carousel--1292602"}},"user":{"uid":0,"permissionsHash":"fc39ad789a76f34af53fa1aa9b7905c6d528134222dd2d195fefcca244d87928"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9T0FuxDAI_FC8vvQ_FnaoS0uMhfEm2dfXqapqvYdeEDMwMxBFrJlCffPxr3WfzTEYNlvwMKby5VftFfj2C5d3xqMxraieimFWMJKyMDxOf5VFzBIE-8ANfTwZdqbh9swmYYbaMJjkzDjNroxASUqb6NH347bTmnH2qjqucE0SAbvYzV6VLemIQ51JMqStqtzRQQE-jdKL7OfFkOHSnkuV2mtoXe94-mcwJjtqpIBbxNVPyCUmLPb_Sm8mGz1QvwG-eJ6n"></script>
 <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.22.1/dist/powerbi.min.js"></script>
 <script src="/modules/contrib/powerbi_embed/js/powerbi_embed-customizer.js?v=1.0.0"></script>
@@ -179,7 +179,7 @@ X-Varnish: 407867156
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-64ab44e25e7de4390c4c4a2af291f0afd800361860132d0fcec2ad9a96007a24">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e512f03e22c4967b34815735ee561453050468d959f11be625ae4e4fd0c55ee9">
   
     
       
@@ -193,7 +193,7 @@ X-Varnish: 407867156
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-80a73cae84525794b6704a98797e11c3c5d054f0f119615ef6ee259b1e320c3b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5d9da93659214dfe9927e9968fef44c0f1bd9d3908869d2f52f516c278323ecc">
   
     
       
@@ -401,7 +401,7 @@ Email:&nbsp;<a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9dcb5fae2da916803f18311ab650010a7f7b048319c9dc3c0ffa80cd21f4da41">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-39f3d50171f1f01a8acb16be48876250e8f636669ce38ed4a72e65ec72faaa67">
   
     
       
@@ -415,7 +415,7 @@ Email:&nbsp;<a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-93daa593142f47aa8f4ad2c28da1d417cf6d8602fbec4d9c5d1f817978a767de">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6f8633fec9b04fa59c22118df4736f6bcd7ede2a7e6e0cdb2a08f6b6786f50e1">
   
     
       
@@ -538,7 +538,7 @@ Email:&nbsp;<a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-bf3ffa9e97c6acd9bd4659225bf0fa3b8dcf644c59332402fdcbd71883a615b6">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8cad7b6c677e8f5290ce72830becb640685d86b91c9d4f5b099d3c16ef67cda9">
   
     
       
@@ -552,7 +552,7 @@ Email:&nbsp;<a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-00ec228312f817939f30bc7f1a0b7ac3c28d4f187a87da04961782faacb43636">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3c8e9244083170ccad5fdfa9dd980eb85321c13e1411760476c1f2012e17701b">
   
     
       
@@ -665,7 +665,7 @@ Cost:&nbsp;Single - $8.67; Family (Up to two adults, and accompanying children, 
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-697e16b7363a2200283e52420e7d0ade30d188f8153f82e13634b44032a56e25">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a0e6716d788bd116d5136b571cc7113ab16891cb60f21486dbf74db542290677">
   
     
       
@@ -679,7 +679,7 @@ Cost:&nbsp;Single - $8.67; Family (Up to two adults, and accompanying children, 
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-218e1b12dc5461c10ca1810e3aa85cc9df285bcab980429b049a22e828f94e6a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-cbce99a033cc80cd9486e5910e5e3ee7c899d86faca4e39f560b205963f7cf34">
   
     
       
@@ -807,7 +807,7 @@ Cost: $7.56 per child<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9a67dd28402ca2af3c06aa8fef011ab6cd16d16a469987a4149b7087ec30493e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f87ef28aa99264ddf51bd3f6952a22aa42f8eb91f4656caae08bed621af2ffef">
   
     
       
@@ -821,7 +821,7 @@ Cost: $7.56 per child<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-93a66eb149a97fe01c7bc2de09a8733b14fb0f20e04236915025c6e930dbbe07">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c386ed11549a254ef1d7859a316c0a769d5e8594c6a859f7d477929eee323434">
   
     
       
@@ -948,7 +948,7 @@ Cost: $7.56 per child.<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-27c014e861dbf923a24c6148d7d15bc28ea96ddb0d0291c4af3bb6e2f67e699e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-45ab7a0b4cef4922d1a87b01bc892aed3655498236382e054bb5e0cd5643de65">
   
     
       
@@ -962,7 +962,7 @@ Cost: $7.56 per child.<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2a0933efbadf46814358a90dcf14f92b6b8342e718937ada77a4a5660594a6ff">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-54a650d9b37634d1f113f14080b548c81eeacd6cef44ae64c96b4c2822cf7b7a">
   
     
       
@@ -1086,7 +1086,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-84061c17f3d8a2b18cc945d79a83bf34f9816ed85f9a23a62ce64c78a6ba7b1e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5527bb2885302a1b88dcc42e89d147cc0f6223d84bc98c17580828d192e4c27c">
   
     
       
@@ -1100,7 +1100,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e6deb73f2d1bdf620132cdc1de1a6dd425d4ec0e4727f8a5822038517e49549e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-051c740c2f337276ec6ccaefba7381d407bde6433a74b91ef2ae2746d09d307a">
   
     
       
@@ -1205,7 +1205,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-489ced0c3d8f12bb43cfcda889adfc7e7161691f0b40dfa732e76eb4389ece1d">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-25f4180f537586144ed704287f82397cc142929dc75c3c2cd13fdd0e19ae1979">
   
     
       
@@ -1219,7 +1219,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bebffb4dcfc0779d4ec9ffeaeeb6ea465e96f7c7fc5be2a61dd3aeee0cbb2fbc">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-145c6a40fa5b0a310e7c9edac723675eae9432d997d3205f1b2148a3a79b9b56">
   
     
       
@@ -1327,7 +1327,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a67f9bd406ff8ef6a77acda6683ed02eb4484f80163b31a6a13f97e0e1b55dc4">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1bfbf61dc595481f331743aff314f3fe82f0fd03a74556b1d159dcba2dadb3e1">
   
     
       
@@ -1341,7 +1341,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bc399e7cc588f2ada5de7c5d4553aefc380f4266b41193fc3013a8a31d9c6e27">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-48372118cba2ac56f94785392e138441990ea846be41ae2033d57824c83a86d4">
   
     
       
@@ -1442,7 +1442,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-be74bcaba0d5571c5b54c69c74792b3bb8d7866b14faa7ec09981b8a0a01a4f0">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c07f1c48698deeb6209928d31bc06cc84e47c069b091170feedc7102996fc949">
   
     
       
@@ -1456,7 +1456,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-db3490304e6e9271b9759ec475ea21d4729783e23c2eaa992a6d0e671a3ae527">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-60f3950bbc913ae2bb414ff6abf17574f6800cc4d78bc0fe6e05b38a61e5fef8">
   
     
       
@@ -1559,7 +1559,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-77ec8ab732f58511db8060c6a5044fc0ff359216ffa3b9396e7393d007b4d3e2">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c545c6e5c05b0e2f1f934ebfe380244eeed82a40f415a966f5c591143fbec886">
   
     
       
@@ -1573,7 +1573,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0f71c3645f5a02b3b9b69cb266189062e57c3748ba18df965def248fcdfcc4fe">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-31c4e661fabb3302df47733fee10c4e477e92a873d9881129722bf76cf483161">
   
     
       
@@ -2192,7 +2192,7 @@ If YES, a new window will open in the background so you can come back to it when
 Thank you for considering to help out.
         </div>
         <div class="modal-footer">
-          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/treejack/0cb7996a65353cec79f131d37088b5ca">Yes</a>
+          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/chalkmark/f619eed268cee2d0a4b5f53c37588bd2">Yes</a>
           <button type="button" class="btn btn-outline-primary" data-dismiss="modal">No</button>
         </div>
       </div>
@@ -2204,10 +2204,10 @@ Thank you for considering to help out.
 <script src="//ottux.ottawa.ca/widgets/v1.4.5/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9T0FuxDAI_FC8vvQ_FnaoS0uMhfEm2dfXqapqvYdeEDMwMxBFrJlCffPxr3WfzTEYNlvwMKby5VftFfj2C5d3xqMxraieimFWMJKyMDxOf5VFzBIE-8ANfTwZdqbh9swmYYbaMJjkzDjNroxASUqb6NH347bTmnH2qjqucE0SAbvYzV6VLemIQ51JMqStqtzRQQE-jdKL7OfFkOHSnkuV2mtoXe94-mcwJjtqpIBbxNVPyCUmLPb_Sm8mGz1QvwG-eJ6n"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
-<script src="/themes/custom/ottca_theme/dist/js/slider-gallery.min.js?sxrriy" async></script>
+<script src="/themes/custom/ottca_theme/dist/js/slider-gallery.min.js?sxtlye" async></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=6&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9T0FuxDAI_FC8vvQ_FnaoS0uMhfEm2dfXqapqvYdeEDMwMxBFrJlCffPxr3WfzTEYNlvwMKby5VftFfj2C5d3xqMxraieimFWMJKyMDxOf5VFzBIE-8ANfTwZdqbh9swmYYbaMJjkzDjNroxASUqb6NH347bTmnH2qjqucE0SAbvYzV6VLemIQ51JMqStqtzRQQE-jdKL7OfFkOHSnkuV2mtoXe94-mcwJjtqpIBbxNVPyCUmLPb_Sm8mGz1QvwG-eJ6n"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=16&cb=140596334" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=16&cb=1813325440" async></script></body>
 </html>
 
 

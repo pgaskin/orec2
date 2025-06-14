@@ -1,22 +1,22 @@
 GET /en/recreation-and-parks/facilities/place-listing/st-laurent-complex HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=IVgnxx5lST6LcLXO6Lafbwh1S2gAAAAAQUIPAAAAAAB+bbj7euwg5nwdYCxOKcP7; nlbi_243507=F0pIYb/x4iubed0MaXmSIAAAAADGuJ1FpIX5sCFiLzdTHfrn; incap_ses_1353_243507=G5x7U40OfTN8o7lXrdLGEgh1S2gAAAAA3rH5jktCYLeBvwrInupRQQ==
+Cookie: visid_incap_243507=vbsD9bh1TRuVhms10PEMsgfGTGgAAAAAQUIPAAAAAAAI5s9Abqgc9Fj/aMwHIgOC; nlbi_243507=ADF4f27xuET4fptnaXmSIAAAAAC4LxDLMmmsxvr1wN7sajy9; incap_ses_1338_243507=BDqiON6OSXGEvU8JPYiREgjGTGgAAAAAZrPUC/mcgkxvTdN5zA1gmQ==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 462
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Fri, 13 Jun 2025 00:49:07 GMT
-Etag: "1749775282-gzip"
+Date: Sat, 14 Jun 2025 00:47:46 GMT
+Etag: "1749862062-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Fri, 13 Jun 2025 00:41:22 GMT
+Last-Modified: Sat, 14 Jun 2025 00:47:42 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-6b6bb87b7-bm2f4 (Varnish/7.3)
@@ -26,10 +26,10 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 13-7042061-7042065 SNNN RT(1749775624951 122956) q(0 0 0 -1) r(1 1) U24
-X-Varnish: 407867225 372676063
+X-Iinfo: 12-18410514-18410516 SNNy RT(1749861896504 166358) q(0 0 0 -1) r(32 32) U24
+X-Varnish: 461552282
 
-116a7
+12b43
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -49,7 +49,7 @@ X-Varnish: 407867225 372676063
 <link rel="icon" href="/themes/custom/ottca_theme/favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="alternate" hreflang="en" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/st-laurent-complex" />
 <link rel="alternate" hreflang="fr" href="https://ottawa.ca/fr/loisirs-et-parcs/installations/liste-des-lieux/complexe-st-laurent" />
-<script src="/sites/default/files/google_tag/ottawa.ca_google_container/google_tag.script.js?sxrr8v" defer></script>
+<script src="/sites/default/files/google_tag/ottawa.ca_google_container/google_tag.script.js?sxtm7i" defer></script>
 
     <title>St. Laurent Complex | City of Ottawa</title>
     <link rel="stylesheet" media="all" href="/sites/default/files/css/css_Drn593rFDUoihTzZQN9v1XR2tEfF33Y8mbptWhDKecs.css?delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdkF2OwyAMhC_Ehpe9DzIwSVAMjrBpmz39Zn-qRn2x5vNIo7GjiKl12j99JIWLL15YIvGH2sGlLVenQpUWqEsbcjHpobSMZpElbf6iXZIO36RX4vIFh4edWZvPfezE0z86pkOGhVw0yQ398NKQhJ3Mc0kIq4yu_gph_ok0Q3dilijYior3xlfr1OMx3UteYG6nTst5yarPJq_NNNo-IhddkZ0eaqh_n7kV3NX_zqlKHoxvBOJ8og" />
@@ -58,7 +58,7 @@ X-Varnish: 407867225 372676063
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_JrekIGp7B4reuMw_-un1Y91uMszZI1mQ3RbNQruw4LM.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdkF2OwyAMhC_Ehpe9DzIwSVAMjrBpmz39Zn-qRn2x5vNIo7GjiKl12j99JIWLL15YIvGH2sGlLVenQpUWqEsbcjHpobSMZpElbf6iXZIO36RX4vIFh4edWZvPfezE0z86pkOGhVw0yQ398NKQhJ3Mc0kIq4yu_gph_ok0Q3dilijYior3xlfr1OMx3UteYG6nTst5yarPJq_NNNo-IhddkZ0eaqh_n7kV3NX_zqlKHoxvBOJ8og" />
 <link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.5/css/app.css" />
 
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031634","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"popup_survey":{"frequency":"7","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"fc39ad789a76f34af53fa1aa9b7905c6d528134222dd2d195fefcca244d87928"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031634","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"popup_survey":{"frequency":"5","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"fc39ad789a76f34af53fa1aa9b7905c6d528134222dd2d195fefcca244d87928"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9TcuOwjAM_KGGXPZ_Iie1ugY3jmyHUr6eVlqtCAcu1jw8M1nEzRXaT8z_MFwtMDiaT_hwpnqLs_YGfPmjE8Nzj-eZxL1A8l9cMeadYWM6Yu9qEWZohsllWRgH7yxLVKTaIB-4Py4bzQuOXU2pejApBBxyd_9MWtFjDnUUyZHWpnLHABV4dyo2NWm9Jet6xz2-k8PZUDMlXDPOcWChMGH17y_dXFZ6or4Apr2KvA"></script>
 <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.22.1/dist/powerbi.min.js"></script>
 <script src="/modules/contrib/powerbi_embed/js/powerbi_embed-customizer.js?v=1.0.0"></script>
@@ -179,7 +179,7 @@ X-Varnish: 407867225 372676063
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a1edfd3eb9f84b6a69b1c942beaeefcf50e9a963335c5fa93b93aa0aebde04fc">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-75c06963ae798a6151dc5c6a2041044ba7730b2c555d47cde15bec7cf8b41bbf">
   
     
       
@@ -193,7 +193,7 @@ X-Varnish: 407867225 372676063
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-8292f7c75b82eb08b8787fd176a7d18219eaca46859d2562ab0fd72afbc1ef06">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c511153671d22bc649cf597873a80b4c7103dc03ed0df718f7759653750b0232">
   
     
       
@@ -483,7 +483,7 @@ X-Varnish: 407867225 372676063
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d35d6ac3d17d05e52af21f068026b13c95dbda0e65908ebce6231a95ef5c7c4b">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-08eaa33b7ccfed5eb28fbe7a5d7c6a38348c810c71362612a1b3960b7d046564">
   
     
       
@@ -497,7 +497,7 @@ X-Varnish: 407867225 372676063
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ba77cd5b7d825a46013936cd69b5a1b95e35e0916f40be4b5baba8b329385196">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-8f9e426f3d886bdea342594279b82beda23dd15d7d9e24b55c3fb32887627662">
   
     
       
@@ -612,7 +612,7 @@ X-Varnish: 407867225 372676063
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e7edd82cc044e104f650fe5f6a0690e93ab6f69e919d2784b67b4f6b0f2c3544">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1e4af6798f65e88dfc4c8e905f458786733c7459bec83f3886cbdd683736b365">
   
     
       
@@ -626,7 +626,7 @@ X-Varnish: 407867225 372676063
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ab9e5c06db1a3468188c35b92dd190f4e29bbcf78c80f3cc67fba7ec8d67edb1">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-46844c2916aea660ae1a713b432ee259c6de28fc339e497c1df5a491b475e3ea">
   
     
       
@@ -726,6 +726,53 @@ X-Varnish: 407867225 372676063
 </table></div>
       </div>
       </div>
+  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
+          <div class="table-responsive">
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
+	<caption>St. Laurent Complex - weight and cardio room - June 30 to August 31</caption>
+	<tbody>
+		<tr>
+			<td>
+			&nbsp;
+			</td>
+			<td>
+			<strong>Monday</strong>
+			</td>
+			<td>
+			<strong>Tuesday</strong>
+			</td>
+			<td>
+			<strong>Wednesday</strong>
+			</td>
+			<td>
+			<strong>Thursday</strong>
+			</td>
+			<td>
+			<strong>Friday</strong>
+			</td>
+			<td>
+			<strong>Saturday</strong>
+			</td>
+			<td>
+			<strong>Sunday</strong>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			<strong>Weight and cardio room</strong>
+			</td>
+			<td>7 am - 10 pm</td>
+			<td>7 am - 10 pm</td>
+			<td>7 am - 10 pm</td>
+			<td>7 am - 10 pm</td>
+			<td>7 am - 10 pm</td>
+			<td>8 am - 6&nbsp;pm</td>
+			<td>8 am - 6&nbsp;pm</td>
+		</tr>
+	</tbody>
+</table></div>
+      </div>
+      </div>
 
                         </div>
                                           
@@ -795,7 +842,7 @@ X-Varnish: 407867225 372676063
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-371c6747aca1177ade4a6c8c3633bf79587e2c24f9e302bec28736142b6bcbc3">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-dfece5ddf6233f6d59bd5e50f52cd34a7812c21aadb9d643b1a9c64212e5c8b6">
   
     
       
@@ -809,7 +856,7 @@ X-Varnish: 407867225 372676063
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-14c083fc87840c05570fef5f143829dc4c88eab76c78b32c4371bef86c4a841c">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-044144c575e4b583293b0993d035ad0a0178bd69b1af67e3ba60c016a1e4f51e">
   
     
       
@@ -970,6 +1017,99 @@ X-Varnish: 407867225 372676063
 </table></div>
       </div>
       </div>
+  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
+          <div class="table-responsive">
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
+	<caption>St. Laurent Complex - Group fitness - June 30 to August 31</caption>
+	<thead>
+		<tr>
+			<td>&nbsp;</td>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+			<th>Saturday</th>
+			<th>Sunday</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Cardio 50+</th>
+			<td>n/a</td>
+			<td>9 - 10 am</td>
+			<td>n/a</td>
+			<td>9 - 10 am</td>
+			<td>n/a</td>
+			<td>8:30 - 9:25 am</td>
+			<td>n/a</td>
+		</tr>
+		<tr>
+			<th>Cardio and strength 50+</th>
+			<td>9 - 10 am</td>
+			<td>n/a</td>
+			<td>8:30 - 9:25 am</td>
+			<td>n/a</td>
+			<td>9 - 10 am</td>
+			<td>n/a</td>
+			<td>9 - 10 am</td>
+		</tr>
+		<tr>
+			<th>Stretch and strength 50+</th>
+			<td>n/a</td>
+			<td>10 - 10:30 am</td>
+			<td>n/a</td>
+			<td>10 - 10:30 am</td>
+			<td>n/a</td>
+			<td>9:30 - 10 am</td>
+			<td>10 - 10:30 am</td>
+		</tr>
+		<tr>
+			<th>Yoga</th>
+			<td>
+			7:30 - 8:30 pm
+			</td>
+			<td>6 - 7 pm</td>
+			<td>9:30 - 10:30 am</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+		</tr>
+		<tr>
+			<th>Zumba</th>
+			<td>6 - 7 pm</td>
+			<td>n/a</td>
+			<td>6 -&nbsp;7 pm</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>10 - 11 am</td>
+			<td>n/a</td>
+		</tr>
+		<tr>
+			<th>HIIT</th>
+			<td>n/a</td>
+			<td>5 - 5:55 pm</td>
+			<td>n/a</td>
+			<td>5 - 5:55 pm</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+		</tr>
+		<tr>
+			<th>Pilates</th>
+			<td>10 - 10:30 am</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>10 - 10:30 am</td>
+			<td>n/a</td>
+			<td>n/a</td>
+		</tr>
+	</tbody>
+</table></div>
+      </div>
+      </div>
 
                         </div>
                                           
@@ -1039,7 +1179,7 @@ X-Varnish: 407867225 372676063
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-116aaf89ace0ac261f364f84b633fb5b03e735044c770aadd722e18ee8d2c972">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5c335d07048fcf306cd9e414a4abaceaeca03e2582cf9c46afca28b04a5b2eeb">
   
     
       
@@ -1053,7 +1193,7 @@ X-Varnish: 407867225 372676063
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-07019dd8adc53b3b7eefc7108d2ce939aceddac79de3cd07c55335056e37c735">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5c9290848d02507a63c9614235c1b5eb5362c7f85b3cf1f031789e99df843521">
   
     
       
@@ -1155,6 +1295,57 @@ X-Varnish: 407867225 372676063
 </table></div>
       </div>
       </div>
+  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
+          <div class="table-responsive">
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
+	<caption>St. Laurent Complex - drop-in schedule - racquet sports - June 30 to August 31</caption>
+	<thead>
+		<tr>
+			<td>&nbsp;</td>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+			<th>Saturday</th>
+			<th>Sunday</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Badminton - adult&nbsp;</th>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>7 - 9 pm</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>3 - 5 pm</td>
+		</tr>
+		<tr>
+			<th>Badminton -&nbsp;parent with child</th>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>6 - 7 pm</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>2 - 3 pm</td>
+		</tr>
+		<tr>
+			<th>Table tennis - adult</th>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>1:30 - 3:30 pm</td>
+		</tr>
+	</tbody>
+</table></div>
+      </div>
+      </div>
 
                         </div>
                                           
@@ -1224,7 +1415,7 @@ X-Varnish: 407867225 372676063
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1d87b790c5925e6ddadfb9d29bf6a678c6abd4450f0d70ff3e172b0924eb67f3">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c68da5493ce40fe74aa138b1482aff83dd4ad086a02e3b6b324bff164c344116">
   
     
       
@@ -1238,7 +1429,7 @@ X-Varnish: 407867225 372676063
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bb370b3e23f8c332a70ec9ab4c2340be9b25003a472541028163f831a8535c6b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ed704dc5a026b619fc8349a8d08fc12882c6cf1118de97aab9d71ed6096cb60d">
   
     
       
@@ -1375,6 +1566,65 @@ X-Varnish: 407867225 372676063
 </table></div>
       </div>
       </div>
+  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
+          <div class="table-responsive">
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
+	<caption>St. Laurent Complex - Sports -&nbsp;June 30 to August 31</caption>
+	<thead>
+		<tr>
+			<td>&nbsp;</td>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+			<th>Saturday</th>
+			<th>Sunday</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Basketball - Adult</th>
+			<td>7:30 - 9:30 pm</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>7:30 - 9:30 pm</td>
+			<td>n/a</td>
+			<td>n/a</td>
+		</tr>
+		<tr>
+			<th>
+			Basketball - Youth
+			</th>
+			<td>6:15 - 7:15 pm</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>6:15 - 7:15 pm</td>
+			<td>n/a</td>
+			<td>n/a</td>
+		</tr>
+		<tr>
+			<th>Open gym&nbsp;
+			<span>*Reservations not required</span></th>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>9 - 10 am,&nbsp;
+			10 - 11 am,&nbsp;
+			11 am - noon,&nbsp;
+			1 - 2 pm</td>
+			<td>9 - 10 am,&nbsp;
+			10 - 11 am,&nbsp;
+			11 am - noon</td>
+		</tr>
+	</tbody>
+</table></div>
+      </div>
+      </div>
 
                         </div>
                                           
@@ -1481,7 +1731,7 @@ X-Varnish: 407867225 372676063
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-9b7075d3024ca8449ec44603634cd183f147a746632c734ad8ce081d1650192f">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-88748170c772c35d3bc9e6f224088f935c484db3e10b19390bb233759e3a73d9">
   
     
       <div class="view-header">
@@ -1878,7 +2128,7 @@ If YES, a new window will open in the background so you can come back to it when
 Thank you for considering to help out.
         </div>
         <div class="modal-footer">
-          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/treejack/0cb7996a65353cec79f131d37088b5ca">Yes</a>
+          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/chalkmark/f619eed268cee2d0a4b5f53c37588bd2">Yes</a>
           <button type="button" class="btn btn-outline-primary" data-dismiss="modal">No</button>
         </div>
       </div>
