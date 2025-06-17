@@ -1,22 +1,22 @@
 GET /en/recreation-and-parks/facilities/place-listing/nepean-museum HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=qQlXQpRnT1uKEh5pp64PTz1qT2gAAAAAQUIPAAAAAAAYQM9ch2IwmTdSAGG/39Bp; nlbi_243507=PR1tQSC7OS6ODpfGaXmSIAAAAACjJ0ZHqqzotxg2gbsxsw7o; incap_ses_1251_243507=vH+DTOLAbyCp60EJOnJcET1qT2gAAAAAULJmyVMwiG+NHAke/JnEMQ==
+Cookie: visid_incap_243507=vWuUqGFIQqS7o2g3cgo5yPi6UGgAAAAAQUIPAAAAAADgQFsQyFRsZNQWqToWU5yn; nlbi_243507=RZ0qINwx11N5RRh4aXmSIAAAAAAyecBycUdYvJdEBkXXElI/; incap_ses_1286_243507=Np3bYfAFaSqpxEA1ncrYEfi6UGgAAAAA+hSeaLIDtBLo1PmA6xbsZQ==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 3044
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Mon, 16 Jun 2025 00:51:47 GMT
-Etag: "1750035103-gzip"
+Date: Tue, 17 Jun 2025 00:46:53 GMT
+Etag: "1750118166-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Mon, 16 Jun 2025 00:51:43 GMT
+Last-Modified: Mon, 16 Jun 2025 23:56:06 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-6b6bb87b7-bm2f4 (Varnish/7.3)
@@ -26,10 +26,10 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: UNCACHEABLE (poor cacheability)
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 11-26201087-26201088 SNNN RT(1750035006146 97314) q(0 0 0 -1) r(44 44) U24
-X-Varnish: 525241692
+X-Iinfo: 6-20741766-20741776 SNNN RT(1750121208610 5326) q(0 0 0 -1) r(0 0) U24
+X-Varnish: 549229791 552075643
 
-16e68
+15a83
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -49,7 +49,7 @@ X-Varnish: 525241692
 <link rel="icon" href="/themes/custom/ottca_theme/favicon.ico" type="image/vnd.microsoft.icon" />
 <link rel="alternate" hreflang="en" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/nepean-museum" />
 <link rel="alternate" hreflang="fr" href="https://ottawa.ca/fr/loisirs-et-parcs/installations/liste-des-lieux/musee-de-nepean" />
-<script src="/sites/default/files/google_tag/ottawa.ca_google_container/google_tag.script.js?sxxbq8" defer></script>
+<script src="/sites/default/files/google_tag/ottawa.ca_google_container/google_tag.script.js?sxz3tj" defer></script>
 
     <title>Nepean Museum | City of Ottawa</title>
     <link rel="stylesheet" media="all" href="/sites/default/files/css/css_6SOIAQxa2bQl6npx3J7OXA0cKH-rjHYB33Tyq-9XJgQ.css?delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuhEAMu9CU-el90DwMRIQJSjK70NOXvrSoP5EdK7GTLOLmmvb3mJMh5BefWXLiN_OTqc13ZYNZmmGhrKjkoiO1iuaZpazxhkMRRWyiW2L6QMDh1641Vu174uGXholxGFOFXsOOWZOTtMDplO5jJSvygJ5RGopwkGmignGRrhbvZJy-nNyhQdxLGn3Bhv-H3KUL92N4Up3hYU-aLu99sb-Ar87Q294zky2owU5zbD8PexCeFr_rsEntjE-ysYXT" />
@@ -58,7 +58,7 @@ X-Varnish: 525241692
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_JrekIGp7B4reuMw_-un1Y91uMszZI1mQ3RbNQruw4LM.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuhEAMu9CU-el90DwMRIQJSjK70NOXvrSoP5EdK7GTLOLmmvb3mJMh5BefWXLiN_OTqc13ZYNZmmGhrKjkoiO1iuaZpazxhkMRRWyiW2L6QMDh1641Vu174uGXholxGFOFXsOOWZOTtMDplO5jJSvygJ5RGopwkGmignGRrhbvZJy-nNyhQdxLGn3Bhv-H3KUL92N4Up3hYU-aLu99sb-Ar87Q294zky2owU5zbD8PexCeFr_rsEntjE-ysYXT" />
 <link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.5/css/app.css" />
 
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/3017111","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"popup_survey":{"frequency":"5","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"flexslider":{"optionsets":{"slider-gallery--1295258":{"animation":"slide","animationSpeed":600,"direction":"horizontal","slideshow":false,"easing":"swing","smoothHeight":true,"reverse":false,"slideshowSpeed":7000,"animationLoop":true,"randomize":false,"startAt":0,"itemWidth":0,"itemMargin":0,"minItems":0,"maxItems":0,"move":0,"directionNav":true,"controlNav":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":false,"touch":true,"prevText":"Previous","nextText":"Next","namespace":"flex-","selector":".slides \u003E li","sync":"","asNavFor":"","initDelay":0,"useCSS":true,"video":false,"pausePlay":false,"pauseText":"Pause","playText":"Play","pauseOnAction":false,"pauseOnHover":false,"controlsContainer":"","manualControls":"","id":"slider-gallery--1295258"},"slider-gallery-carousel--1295258":{"animation":"slide","animationSpeed":600,"direction":"horizontal","slideshow":false,"easing":"swing","smoothHeight":false,"reverse":false,"slideshowSpeed":7000,"animationLoop":true,"randomize":false,"startAt":0,"itemWidth":210,"itemMargin":4,"minItems":0,"maxItems":0,"move":0,"directionNav":true,"controlNav":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":false,"touch":true,"prevText":"Previous","nextText":"Next","namespace":"flex-","selector":".slides \u003E li","sync":"","asNavFor":"#slider-gallery--1295258","initDelay":0,"useCSS":true,"video":false,"pausePlay":false,"pauseText":"Pause","playText":"Play","pauseOnAction":false,"pauseOnHover":false,"controlsContainer":"","manualControls":"","id":"slider-gallery-carousel--1295258"}},"instances":{"slider-gallery--1295258":"slider-gallery--1295258","slider-gallery-carousel--1295258":"slider-gallery-carousel--1295258"}},"user":{"uid":0,"permissionsHash":"fc39ad789a76f34af53fa1aa9b7905c6d528134222dd2d195fefcca244d87928"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/3017111","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"popup_survey":{"frequency":"7","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"flexslider":{"optionsets":{"slider-gallery--1295258":{"animation":"slide","animationSpeed":600,"direction":"horizontal","slideshow":false,"easing":"swing","smoothHeight":true,"reverse":false,"slideshowSpeed":7000,"animationLoop":true,"randomize":false,"startAt":0,"itemWidth":0,"itemMargin":0,"minItems":0,"maxItems":0,"move":0,"directionNav":true,"controlNav":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":false,"touch":true,"prevText":"Previous","nextText":"Next","namespace":"flex-","selector":".slides \u003E li","sync":"","asNavFor":"","initDelay":0,"useCSS":true,"video":false,"pausePlay":false,"pauseText":"Pause","playText":"Play","pauseOnAction":false,"pauseOnHover":false,"controlsContainer":"","manualControls":"","id":"slider-gallery--1295258"},"slider-gallery-carousel--1295258":{"animation":"slide","animationSpeed":600,"direction":"horizontal","slideshow":false,"easing":"swing","smoothHeight":false,"reverse":false,"slideshowSpeed":7000,"animationLoop":true,"randomize":false,"startAt":0,"itemWidth":210,"itemMargin":4,"minItems":0,"maxItems":0,"move":0,"directionNav":true,"controlNav":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":false,"touch":true,"prevText":"Previous","nextText":"Next","namespace":"flex-","selector":".slides \u003E li","sync":"","asNavFor":"#slider-gallery--1295258","initDelay":0,"useCSS":true,"video":false,"pausePlay":false,"pauseText":"Pause","playText":"Play","pauseOnAction":false,"pauseOnHover":false,"controlsContainer":"","manualControls":"","id":"slider-gallery-carousel--1295258"}},"instances":{"slider-gallery--1295258":"slider-gallery--1295258","slider-gallery-carousel--1295258":"slider-gallery-carousel--1295258"}},"user":{"uid":0,"permissionsHash":"fc39ad789a76f34af53fa1aa9b7905c6d528134222dd2d195fefcca244d87928"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9T0FuxDAI_FC8vvQ_FnaoS0uMhfEm2dfXqapqvYdeEDMwMxBFrJlCffPxr3WfzTEYNlvwMKby5VftFfj2C5d3xqMxraieimFWMJKyMDxOf5VFzBIE-8ANfTwZdqbh9swmYYbaMJjkzDjNroxASUqb6NH347bTmnH2qjqucE0SAbvYzV6VLemIQ51JMqStqtzRQQE-jdKL7OfFkOHSnkuV2mtoXe94-mcwJjtqpIBbxNVPyCUmLPb_Sm8mGz1QvwG-eJ6n"></script>
 <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.22.1/dist/powerbi.min.js"></script>
 <script src="/modules/contrib/powerbi_embed/js/powerbi_embed-customizer.js?v=1.0.0"></script>
@@ -179,7 +179,7 @@ X-Varnish: 525241692
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-dbaaba73795ad5e848a23e3451eca8e584d44f66ab4468c4660eecbd58834849">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6ba6faadddf0b26c8b4646f30ae1b7a2fadab31e0106d61b34b4d20f61bdabf6">
   
     
       
@@ -193,7 +193,7 @@ X-Varnish: 525241692
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9abe654d1bc0bad56c6a2d8e06850df9d42f617102ccf05b7bb60a096c2cfb11">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3f823a070e31c54fdf63d74f7801b8acc65beba999bd64c25069e3e5a39dcd10">
   
     
       
@@ -379,7 +379,7 @@ Subscribe to our monthly "<a href="https://ottawa.ca/esubscriptions">At your mus
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f06882106a538b5a66072c2dff5734de30ba9372c9b1fbb054a39deee0464fec">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c9a9c1d40c586fd439241667f51d7fbc7ae056cfb0c64c0143d0dc8e881d6dcf">
   
     
       
@@ -393,7 +393,7 @@ Subscribe to our monthly "<a href="https://ottawa.ca/esubscriptions">At your mus
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1462e87aea03469fb10d5286fe6d964027e4c70a2c103dda33e56a6bc1305dba">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d603a8a078306502c7dbfbc96ad08a830a65ea24593bc025a7107dd4892d5b09">
   
     
       
@@ -515,7 +515,7 @@ Subscribe to our monthly "<a href="https://ottawa.ca/esubscriptions">At your mus
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-90910dbce97a8b843d900d57990c97bc3095216a93fb87655b390455f64c32f4">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f4dfd95f7f322599c0afc4b3f03d434f36030f491fef5934fbf4a3714b5740fc">
   
     
       
@@ -529,7 +529,7 @@ Subscribe to our monthly "<a href="https://ottawa.ca/esubscriptions">At your mus
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1e95a762c076c21b96ecea7de4d9c5e88bf4acfb68cbf57ae67f5d59f173a311">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b12180a38248b7b1eb05cf59b1ee40c9c00489a70528dd749b5e31026b13ca89">
   
     
       
@@ -645,7 +645,7 @@ September 21 - Metal stamp keychains</strong></span></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-94ed95aea3d08b10a124e0db6f69b4cf38707a02c64eceaf1e382f297d1e62ce">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9cb5df0a112b8d97afc0230da416d046e7857c7d33004f050e8de56f55974f49">
   
     
       
@@ -659,7 +659,7 @@ September 21 - Metal stamp keychains</strong></span></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-fa6bf3c446e969815fe033214a9a7802f2fc80b74605803dcc640bd57c00b410">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3b6e73fd7e7e48d921ba8b88c6ca12325ced338f406da872647ec8e92c53d20a">
   
     
       
@@ -753,126 +753,16 @@ Paint and decorate a salad plate (from Colour Me Mine on Merivale Road). Supplie
                   <div class="layout layout--bootstrap-grid-row-1 row">
 
             
-                              <div class="col collapse-region">
-                  <h2 class="no-toc">
-                              
-  <button aria-expanded="false" aria-controls="section-aa2b6912-8834-4198-95d4-ea70bb70090e" data-target="#section-aa2b6912-8834-4198-95d4-ea70bb70090e" data-toggle="collapse" role="button" class="border border-primary rounded collapse-section no-toc btn-link btn">Museum Fun Day!</button>
-
-                  </h2>
-                  <div class="collapse collapse-wrapper border border-primary border-top-0 no-gutters p-4 w-100" id="section-aa2b6912-8834-4198-95d4-ea70bb70090e">
-                  
+              
                                                                                       <div  class="layout__region layout__region--main col-12">
                           
                                                       <div class="paragraph paragraph--type--article-reference paragraph--view-mode--default">
           
-            <div class="field field--name-field-content-ref field--type-entity-reference-label-override field--label-hidden field__item">
-<article class="node node--type-article node--view-mode-default">
-  
-  <div class="node__content">
-      <div class="layout layout--onecol">
-    <div  class="layout__region layout__region--content">
-      
-
-
-  <span class="field field--name-title field--type-string field--label-hidden"><h2  class="h2">Museum Fun Day!</h2>
-</span>
-
-
-<div class="views-element-container">
-
-
-
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2ea5c2f7e512dd348b8c3a3e001ddc465dccd8b6db68e16bbe46946801c8791d">
-  
-    
-      
-  
-          </div>
-</div>
-
-
-</div>
-<div class="views-element-container">
-
-
-
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a0d79f51a08ae791d9cfdd2f0ac97377762d7901d77609bc91f081a24f19acda">
-  
-    
-      
-  
-          </div>
-</div>
-
-
-</div>
-
-
-
-  
-      <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden field__items">
-              <div class="field__item">  <div class="paragraph paragraph--type--fixed-layout paragraph--view-mode--default">
-                  
-                          
-                                  
-                  <div class="toc-selectors layout layout--bootstrap-fixed-grid-row-1 row">
-
-            
-              
-                                                                                      <div  class="layout__region layout__region--main col-12">
-                          
-                                                      <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Museum Fun Day!&nbsp;</h3>
-<p>Saturday, June 14 from 10 am to 4 pm&nbsp;<br>
-Cost: Pay-what-you-can&nbsp;</p>
-<p>Kick off the summer season with a day of kid-friendly fun at Nepean Museum! Families are invited to explore their community’s history through creativity and play in the museum’s MakerStudio and beyond. From bubble-making and chalk art to a scavenger hunt and vintage board games, we’re ready to celebrate all the museum has to offer.&nbsp;</p>
-<ul>
-<li>DIY bubble wands! Test your wands with different bubble solutions, including a “big bubble” mix.</li>
-<li>Community chalk art project! Help complete a colourful “stained glass” design inspired by the architecture of Faifields Heritage House.</li>
-<li>Build a thaumatrope! Create your own optical illusion toy.</li>
-<li>Learn to play a heritage game! Practice your skills at the “Game of Graces”, a popular 19th century lawn game.</li>
-<li>Test your wits! Complete the scavenger hunt or enjoy a vintage board game.</li>
-</ul>
-<p>Activities are best suited to families with children ages 6 to 12. However, younger children may be able to enjoy the activities with the assistance of an adult or older sibling.</p>
-<h4>Notes</h4>
-<ul>
-<li><span>This is a drop-in style event; advance registration is not required.</span></li>
-<li><span>The primary language of delivery for this program is English. Any printed materials will be provided in both official languages (English/French).&nbsp;</span></li>
-<li><span>Activities take place both indoors and outdoors. In the event of inclement weather, outdoor activities may be adjusted or cancelled without notice.&nbsp;&nbsp;</span></li>
-<li><span>The exhibition gallery and MakerStudio are located on the main level. There is a small set of stairs to access the hallway where the public washrooms and community rooms are located. A staff-operated lift is available for visitors with wheelchairs or mobility devices. Additional information about accessibility can be found on the museum web page. If you have questions or concerns regarding accessibility, please contact the museum by phone at 613-580-9638 or by email at <a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a>.&nbsp;</span></li>
-</ul>
-</div>
-      
       </div>
 
                         </div>
                                           
                     
-                
-            </div>
-          
-      </div>
-</div>
-          </div>
-  
-
-
-    </div>
-  </div>
-
-  </div>
-
-</article>
-</div>
-      
-      </div>
-
-                        </div>
-                                          
-                                        </div>
-                  </div>
-                
                 
             </div>
           
@@ -914,7 +804,7 @@ Cost: Pay-what-you-can&nbsp;</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e95a4a59e0d47f46e79c7293430b358485dbc89a60a88ffceb3bedb83ba7f841">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8ae6bb9ca7eafd25e158dfbb6ed5729c6faca074266a102bee9143b79047c6cc">
   
     
       
@@ -928,7 +818,7 @@ Cost: Pay-what-you-can&nbsp;</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-674684ea6c4350dd126f74346e140c1934d616eee4574e2f940acb7883a6cb3f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e27b0ae86393c5646b4950306c9db576342d2140a6722156313a51057ee7207d">
   
     
       
@@ -1047,7 +937,7 @@ July 26 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-79e07bf76419c177f1acca499a5b3528ff9bbf5d19fd489047b57c16d643e6ba">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-91fe91a8467972b915ecdd617e2d5c71719d3122dba24c863140516069cfe466">
   
     
       
@@ -1061,7 +951,7 @@ July 26 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-fbf9f81a8bf3d71ee8a58b5229920d2ddec556661e548128c1079ece78f02730">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-788bef0cca2a706e82ca326fc9cc6807e3050dfc2a04f743eda8dae64211b291">
   
     
       
@@ -1178,7 +1068,7 @@ July 19 – Secret codes</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-aa981d6ef1ecdd85a0889ad70aaee9e6d4537d299d2407eaa8699b78f62ab9de">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a5c67e13b0cb84cc6e16cbbab3c77f6b1548a9ca7a975d79085860eb9413cb6f">
   
     
       
@@ -1192,7 +1082,7 @@ July 19 – Secret codes</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f1b8fdcec7f342428e49479d3f719a8155c4845a99d6fbdf227683335259c0db">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-eabadb3be2f63f0776e11abb7502a817aab14b1adebf0fab2bce793328d6560d">
   
     
       
@@ -1305,7 +1195,7 @@ Cost: $30.23 per child.<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f85ff8280cbba159eb0ebb1dace93250656f0ee98dc386f7e951cd4a5288cd0e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4a43ce54b559aea925c341e17d165ef1440f367a4fd37748eb416d2d66f71742">
   
     
       
@@ -1319,7 +1209,7 @@ Cost: $30.23 per child.<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-28399baccf988ac7639a15b749d549a98bde385a527ca7788ac294736c8be682">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7beaa912be3dace4d2272af628495677429c9d3cb58347ed7a86ed4064655801">
   
     
       
@@ -1420,7 +1310,7 @@ Cost: $30.23 per child.<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3734287b2a14712d6070585611e202e19089f6f7199c05b26450b415b911fa6e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d362fbb3b47d5d929f7408e83924d626ab93c021907174e45ef8bdf8b34b14eb">
   
     
       
@@ -1434,7 +1324,7 @@ Cost: $30.23 per child.<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-30d07aa918786dcb5ade7fa2f49fbcc54de812548872e5d9355838355410d44d">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-cb304f4c1ed605191cb50d59b09311749d1d25d984dd4a27698975f63976a558">
   
     
       
@@ -1537,7 +1427,7 @@ Cost: $30.23 per child.<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1019859ef481f4da780e24aa57151379149615426db1e17253b88b3e922c3632">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0399fb2fb72e6114ce1c844020f6156e116b54a0fb0390fcd9db397f4564599e">
   
     
       
@@ -1551,7 +1441,7 @@ Cost: $30.23 per child.<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0c3afaa0932f8c8559866a6ac1be550558b02a02f8f08d999afe9da84bd80326">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-cdc4d853e49a34b568c2f3cc441dd9a3de004f042b0483b550f0c9d99bdfe41d">
   
     
       
@@ -1651,7 +1541,7 @@ Cost: $30.23 per child.<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-30654b1cc645ddc6b59246cbf7a57b5c44d7543710ef25bb7a432e52ff217303">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5c5702d5aa2eb80c9013dedae3e46800ce2179f82aeba0428a30a98bf5614a07">
   
     
       
@@ -1665,7 +1555,7 @@ Cost: $30.23 per child.<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2ddbc7b79eff51f9f952c337531a91e9241f52913664ceae1f4f72b9c13b68ed">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d3e45cf225005b992b67fa9c22f5cb8ff7c93c2bbdffb3caef5ad843cdd2ad1e">
   
     
       
@@ -2192,7 +2082,7 @@ If YES, a new window will open in the background so you can come back to it when
 Thank you for considering to help out.
         </div>
         <div class="modal-footer">
-          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/chalkmark/f619eed268cee2d0a4b5f53c37588bd2">Yes</a>
+          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/treejack/0cb7996a65353cec79f131d37088b5ca">Yes</a>
           <button type="button" class="btn btn-outline-primary" data-dismiss="modal">No</button>
         </div>
       </div>
@@ -2204,10 +2094,10 @@ Thank you for considering to help out.
 <script src="//ottux.ottawa.ca/widgets/v1.4.5/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9T0FuxDAI_FC8vvQ_FnaoS0uMhfEm2dfXqapqvYdeEDMwMxBFrJlCffPxr3WfzTEYNlvwMKby5VftFfj2C5d3xqMxraieimFWMJKyMDxOf5VFzBIE-8ANfTwZdqbh9swmYYbaMJjkzDjNroxASUqb6NH347bTmnH2qjqucE0SAbvYzV6VLemIQ51JMqStqtzRQQE-jdKL7OfFkOHSnkuV2mtoXe94-mcwJjtqpIBbxNVPyCUmLPb_Sm8mGz1QvwG-eJ6n"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
-<script src="/themes/custom/ottca_theme/dist/js/slider-gallery.min.js?sxxbq8" async></script>
+<script src="/themes/custom/ottca_theme/dist/js/slider-gallery.min.js?sxz3tj" async></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=6&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9T0FuxDAI_FC8vvQ_FnaoS0uMhfEm2dfXqapqvYdeEDMwMxBFrJlCffPxr3WfzTEYNlvwMKby5VftFfj2C5d3xqMxraieimFWMJKyMDxOf5VFzBIE-8ANfTwZdqbh9swmYYbaMJjkzDjNroxASUqb6NH347bTmnH2qjqucE0SAbvYzV6VLemIQ51JMqStqtzRQQE-jdKL7OfFkOHSnkuV2mtoXe94-mcwJjtqpIBbxNVPyCUmLPb_Sm8mGz1QvwG-eJ6n"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=87&cb=227456384" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=87&cb=1131309334" async></script></body>
 </html>
 
 
