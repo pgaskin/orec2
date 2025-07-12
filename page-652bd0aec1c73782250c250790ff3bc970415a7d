@@ -1,22 +1,22 @@
 GET /en/recreation-and-parks/facilities/place-listing/sandy-hill-arena HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=/eqUWfIyTeygDrh+2JpZRqVfcGgAAAAAQUIPAAAAAACMTqHp/ddlN4mJaqSuV9t3; nlbi_243507=tNGkDeQHUWDHm5NcaXmSIAAAAAC3YPKX283nnHH6QOnhJWXx; incap_ses_482_243507=Nc+UH6FdRm3h9WsI1GiwBqVfcGgAAAAAKp0/uATH4dVLO8cgswGpXQ==
+Cookie: visid_incap_243507=R8AxlZSnRGqBNQ6iG76033mxcWgAAAAAQUIPAAAAAADnFixkhuaMZQACOJ0AwpUL; nlbi_243507=TO9kRo/e+XRrLYvLaXmSIAAAAACrMtnMgtLEoOAIAH7AzKGI; incap_ses_1355_243507=arDxAkXAyny+JElNqO3NEnmxcWgAAAAA/Wscy2NGzecDN9AR1RJN3w==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 422
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Fri, 11 Jul 2025 00:51:20 GMT
-Etag: "1752195078-gzip"
+Date: Sat, 12 Jul 2025 00:52:47 GMT
+Etag: "1752281144-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Fri, 11 Jul 2025 00:51:18 GMT
+Last-Modified: Sat, 12 Jul 2025 00:45:44 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-6b6bb87b7-h6njq (Varnish/7.6)
@@ -26,10 +26,10 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-4738887-4738889 SNNN RT(1752194982568 95779) q(0 0 0 -1) r(19 19) U24
-X-Varnish: 53306897
+X-Iinfo: 13-8313818-8313827 SNNN RT(1752281465362 101969) q(0 0 0 -1) r(0 1) U24
+X-Varnish: 42956027 141433345
 
-b207
+b448
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +182,7 @@ b207
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c808ea7075333a8df14125f37f3b7940567262c07c15b9eaaef75b35a4b52d8a">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-79362538bccff896aec6729288c5983810b7803c4cfce685ac31a06b18b46265">
   
     
       
@@ -196,7 +196,7 @@ b207
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0ac547dcccae8f13a06c725347d22dca7d48a82a158c5972ff268fe1941d51d4">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9481a86c40e70d9476a9dd460bdca273c99e90784a5aa191f9b9a3ab67e7cf73">
   
     
       
@@ -402,7 +402,7 @@ b207
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-343e9128fbe4883f357115aefeff3a3d1287926c9b17b6d2c3b8570dadf9cf29">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-403e9e6db7a53479ff3dd5410492ca12ec4349c6fd16a869198b0dea6da41320">
   
     
       
@@ -416,7 +416,7 @@ b207
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-842c3b203d4a7a4c361184e17d10d1bd511d663ad1ffd66f7680c44230511f86">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-109d36562bcff9e840654a11b53abd3f6f598ae46864c365bb6f7352268bc846">
   
     
       
@@ -453,11 +453,6 @@ b207
           
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule changes</h3>
 <ul>
-<li><strong>Monday, July 7</strong>
-<ul>
-<li>Adult skating, 4 to&nbsp;4:50 pm, cancelled</li>
-</ul>
-</li>
 <li><strong>Friday, July 11</strong>
 <ul>
 <li>Family skating,&nbsp;5 to 5:50 pm, cancelled</li>
@@ -476,98 +471,140 @@ b207
       </div>
   <div class="paragraph paragraph--type--table paragraph--view-mode--default">
           <div class="table-responsive">
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
-	<caption>Sandy Hill Arena - skating - June 1 to August 31</caption>
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table dir="ltr">
+	<caption>Sandy Hill Arena – skating – until August 31</caption>
 	<thead>
 		<tr>
 			<th>
 			&nbsp;
 			</th>
 			<th>
-			Monday
+			Monday &nbsp;
 			</th>
 			<th>
-			Tuesday
+			Tuesday &nbsp;
 			</th>
 			<th>
-			Wednesday
+			Wednesday &nbsp;
 			</th>
 			<th>
-			Thursday
+			Thursday &nbsp;
 			</th>
 			<th>
-			Friday
+			Friday &nbsp;
 			</th>
 			<th>
-			Saturday
+			Saturday &nbsp;
 			</th>
 			<th>
-			Sunday
+			Sunday &nbsp;
 			</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<th>
-			Public skating
+			Public skating &nbsp;
 			</th>
 			<td>
-			n/a
+			n/a &nbsp;
 			</td>
 			<td>
-			n/a
+			9 – 9:50 pm&nbsp;
 			</td>
 			<td>
-			n/a
+			n/a &nbsp;
 			</td>
 			<td>
-			n/a
+			n/a &nbsp;
 			</td>
 			<td>
-			6 - 6:50 pm
+			6 – 6:50 pm &nbsp;
 			</td>
 			<td>
-			n/a
+			n/a &nbsp;
 			</td>
 			<td>
-			4 - 4:50 pm
+			4 – 4:50 pm &nbsp;
 			</td>
 		</tr>
 		<tr>
 			<th>
-			Family skating
+			Figure skating &nbsp;
 			</th>
 			<td>
-			n/a
+			5 – 5:50 pm &nbsp;
 			</td>
 			<td>
-			n/a
+			8 – 8:50 pm&nbsp;
 			</td>
 			<td>
-			n/a
+			n/a &nbsp;
 			</td>
 			<td>
-			n/a
+			n/a &nbsp;
 			</td>
 			<td>
-			5 - 5:50 pm
+			n/a &nbsp;
 			</td>
 			<td>
-			n/a
+			n/a &nbsp;
 			</td>
 			<td>
-			3 - 3:50 pm
+			n/a &nbsp;
 			</td>
 		</tr>
 		<tr>
-			<th>Adult skating</th>
-			<td>4 - 4:50 pm</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
+			<th>
+			Family skating &nbsp;
+			</th>
+			<td>
+			n/a &nbsp;
+			</td>
+			<td>
+			n/a &nbsp;
+			</td>
+			<td>
+			n/a &nbsp;
+			</td>
+			<td>
+			n/a &nbsp;
+			</td>
+			<td>
+			5 – 5:50 pm &nbsp;
+			</td>
+			<td>
+			n/a &nbsp;
+			</td>
+			<td>
+			3 – 3:50 pm &nbsp;
+			</td>
+		</tr>
+		<tr>
+			<th>
+			Adult (18+) skating &nbsp;
+			</th>
+			<td>
+			4 – 4:50 pm &nbsp;
+			</td>
+			<td>
+			n/a &nbsp;
+			</td>
+			<td>
+			n/a &nbsp;
+			</td>
+			<td>
+			n/a &nbsp;
+			</td>
+			<td>
+			n/a &nbsp;
+			</td>
+			<td>
+			n/a &nbsp;
+			</td>
+			<td>
+			n/a &nbsp;
+			</td>
 		</tr>
 	</tbody>
 </table></div>
@@ -642,7 +679,7 @@ b207
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-24f8eafe3346d47cd22a11c399a23812bed00867993bb6555c6b6fd2eca68733">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f108a5b69747b2771976802c0d6320bda632294fc3912cbcd0381cbf480238dc">
   
     
       
@@ -656,7 +693,7 @@ b207
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ebb58cdc5bc55e25b6d2aee671fd2f74c42d109b96bf611821817dbeca710faa">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5e0e276f3b410c8bda29538cb42b187e2a8b29d4bf2caeb212701db4ca07c579">
   
     
       
@@ -868,7 +905,7 @@ b207
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-c49b8c0514215c3f832ba456fff988e29fa3092aab2fbdf2921b8a1eef4df457">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-3482289b0cce135e8d3b7d185fb9791ef6fae1b39ae692b9335a7660b1be8099">
   
     
       <div class="view-header">
