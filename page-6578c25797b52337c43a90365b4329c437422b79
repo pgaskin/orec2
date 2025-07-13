@@ -1,22 +1,22 @@
 GET /en/recreation-and-parks/facilities/place-listing/plant-recreation-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=R8AxlZSnRGqBNQ6iG76033mxcWgAAAAAQUIPAAAAAADnFixkhuaMZQACOJ0AwpUL; nlbi_243507=TO9kRo/e+XRrLYvLaXmSIAAAAACrMtnMgtLEoOAIAH7AzKGI; incap_ses_1355_243507=arDxAkXAyny+JElNqO3NEnmxcWgAAAAA/Wscy2NGzecDN9AR1RJN3w==
+Cookie: visid_incap_243507=CLB59fWsQbiavz8fXkxRCgMEc2gAAAAAQUIPAAAAAACJJviGCzoKm+uo8gjb42gm; nlbi_243507=N8TVUAPLpDNFUYZYaXmSIAAAAAAH4399yohe5whopropruJH; incap_ses_480_243507=l/jdBBFr8ki35OHhpU2pBgMEc2gAAAAAas7do5Jdmlp5W5+y7sl7cg==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 376
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Sat, 12 Jul 2025 00:52:39 GMT
-Etag: "1752281181-gzip"
+Date: Sun, 13 Jul 2025 00:57:36 GMT
+Etag: "1752368255-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Sat, 12 Jul 2025 00:46:21 GMT
+Last-Modified: Sun, 13 Jul 2025 00:57:35 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-6b6bb87b7-h6njq (Varnish/7.6)
@@ -26,10 +26,10 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 13-8313818-8313827 SNNN RT(1752281465362 93686) q(0 0 0 -1) r(1 1) U24
-X-Varnish: 141635186 141886912
+X-Iinfo: 9-16961354-16961356 SNNy RT(1752368132537 122574) q(0 0 0 -1) r(13 13) U24
+X-Varnish: 143344136
 
-e08d
+e008
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +182,7 @@ e08d
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f4d8931ab9354ba1d9f29c70ab297d8e251c6bedc121a010abe3692afc6a00af">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7eb4aa1ebcd023675a3026e3236ece9b1f8762b13d31ba68628f372f117f41e7">
   
     
       
@@ -196,7 +196,7 @@ e08d
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-8381c45d6fddb37cc087b91ccb67d133f71fbda67113b17036576ecd45404f69">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4b2616ec3b5ebde04d45136375e53abbba6fb84edef246a2cbcedbb3fabb90f6">
   
     
       
@@ -273,7 +273,7 @@ e08d
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">8:30 am - 5:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">6:45 am - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">6:45 am - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">6:45 am - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">7:45 am - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">6:45 am - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">8:30 am - 5:30 pm</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">8:30 am - 5:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">6:45 am - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">6:45 am - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">6:45 am - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">7:45 am - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">6:45 am - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">8:30 am - 5:30 pm</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -448,7 +448,7 @@ e08d
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9be94b6fca217dc99602884d2ba625dd0efef163e1c20346d4839428fa8ba82c">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-07a56fb98d448ac32955feada9c024ae004caabfb537d4311fde95e6776c70a2">
   
     
       
@@ -462,7 +462,7 @@ e08d
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-dbcde1ca21501ce6ef86676f8d2011747046519b30190b7db6599fadff794701">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-16294de5bdee268439acfdee3a92b540b83adc9410ae6189ade906cd4824446f">
   
     
       
@@ -691,7 +691,7 @@ e08d
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f1b4845d41fd97bf8a8142317029273c229c0a857c09a4a4179e4b634a09414b">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-71ada06211bdb3ccfd92c0e48d807535d2374c92059240de99173893866b5127">
   
     
       
@@ -705,7 +705,7 @@ e08d
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-22ec1d9e45a2601e126079535076b91d15ece19439cfbf28e596f6e5becaa964">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-8ab266c320e3285ce3771805ebbe5b00793ce197f38ce6dcf3464b1a0695ba71">
   
     
       
@@ -870,7 +870,7 @@ e08d
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3e027fe06bceb25e42ec913da2e655368bc6384b13258ad997b4e68fa7788156">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-12507133c47927d26d3315a79b4c599f0c6fe1e4764cca4431e7c41ff10a3258">
   
     
       
@@ -884,7 +884,7 @@ e08d
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-51fc22e7446a704365b662637b39ac4142ab0e4459e80cfc5ecf1a4c72bc1561">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-cad732766bb9fbc6d2aaff152e87bbd5e4b0924120f2df366dc45613d53dd334">
   
     
       
@@ -1097,7 +1097,7 @@ e08d
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-eb4761d48a2c0de88fcdd603511f399f8a7889b2da400fe4cc501e8858052a12">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-5cd6edaa473e31bff0ca363900490a8aea63a1157da4b01a39f48e2cf068b932">
   
     
       <div class="view-header">
@@ -1465,7 +1465,7 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=98&cb=1274569691" async></script></body>
+  </body>
 </html>
 
 
