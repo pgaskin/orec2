@@ -1,22 +1,22 @@
 GET /en/recreation-and-parks/facilities/place-listing/pinecrest-recreation-complex HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=bo+YsLDoQOGXAzh1SKymg4fremgAAAAAQUIPAAAAAABj8tlJFcJcAMcKwAkwxhMk; nlbi_243507=nE+CRz9R5QDESV2uaXmSIAAAAAC7lecIQISSUuPf/xTFhz+A; incap_ses_225_243507=n7dgNtJVJEVlnor/q1wfA4fremgAAAAA+VwLSW2aoBQ4Oktrjl58Vg==
+Cookie: visid_incap_243507=otqq2m8sTqSVv8WEhAKjYsqPfWgAAAAAQUIPAAAAAADt33By5saOJQDjj6K7dYGB; nlbi_243507=tHVlUkdaGAVI0sJ+aXmSIAAAAACYYbn/n5goLU7HOKHWcy7X; incap_ses_1211_243507=rXqsEQgmpluFrRpDd1bOEMqPfWgAAAAAVzT8gp+6ZtD5UyzC2yhJUg==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 469
+Age: 122
 Cache-Control: max-age=2764800, public
 Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Sat, 19 Jul 2025 00:51:21 GMT
-Etag: "1752885810-gzip"
+Date: Mon, 21 Jul 2025 00:57:09 GMT
+Etag: "1753059304-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Sat, 19 Jul 2025 00:43:30 GMT
+Last-Modified: Mon, 21 Jul 2025 00:55:04 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-6b6bb87b7-h6njq (Varnish/7.6)
@@ -26,10 +26,10 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 14-98262652-98262656 SNNy RT(1752886151337 129833) q(0 0 0 -1) r(1 1) U24
-X-Varnish: 168891969 163812499
+X-Iinfo: 7-9907652-9907654 SNNN RT(1753059275064 154624) q(0 0 0 -1) r(0 0) U24
+X-Varnish: 423205866 420192689
 
-10a8d
+10a8f
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +182,7 @@ X-Varnish: 168891969 163812499
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-96f578ff2c2a6e79b6dc7fb5a143c59f2b83818b4b9da2268f6b67d7bdfd4eec">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-738489a69f510de9fb1578adef85a1a39af256209eb20710c997f4cfa6afaaba">
   
     
       
@@ -196,7 +196,7 @@ X-Varnish: 168891969 163812499
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-aac211a1e057048a93873763ff76d86d7fb1e13c1e76e16908177b4070b02c29">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d93ddfbd514059963cf649a6f2b2fa836b8f5a52c9431334668f0c5f28eca6ea">
   
     
       
@@ -273,7 +273,7 @@ X-Varnish: 168891969 163812499
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">10:30 am - 5:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">7:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">6:30 am - 8:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">7:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">6:30 am - 8:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">7:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">8:00 am - 2:30 pm</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">10:30 am - 5:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">7:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">6:30 am - 8:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">7:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">6:30 am - 8:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">7:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">8:00 am - 2:30 pm</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -447,7 +447,7 @@ X-Varnish: 168891969 163812499
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-422fd1ab122cbaeea28f4580d98b7efbaabb819a1ed304577cf764621cd21da0">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b027ffd7166a612f977833c41a3f60abe3813fa64b86d4c6c962809a4a4f5b50">
   
     
       
@@ -461,7 +461,7 @@ X-Varnish: 168891969 163812499
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-663a33e294a5ed935a91f098376b8d443f5fc58cb4e9a656a8ea162e5bed8811">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-73132467ece1929687d777d95e45583245d6a85cc79591f82462416a06840453">
   
     
       
@@ -650,7 +650,7 @@ X-Varnish: 168891969 163812499
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-26328296a15faad0e39abb72631dd0c6087a1e4a676ff12860841f6cbe4890a1">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ef99639e71fe14178121773f3c86018592b9558ae425be673fc86693bae3ed93">
   
     
       
@@ -664,7 +664,7 @@ X-Varnish: 168891969 163812499
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e432934110e623403ab31c8bf5085c9d6c8181cd3a34e230e182bd5ea3276718">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0504d63a06b5da191fdfc622c86710e673834a015442e2e2993ae286d2ea4e09">
   
     
       
@@ -829,7 +829,7 @@ X-Varnish: 168891969 163812499
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b10d6010512b5b8d17cc010b56461f5fc520acf010b3b1cc2393cc5d74af61d8">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9de2395e1ba59537bec8b0451c318019881d9f986779bb5825d6badfd2db2092">
   
     
       
@@ -843,7 +843,7 @@ X-Varnish: 168891969 163812499
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1a2a8e03a90dc62b073c641ad386eac0a6fb54fe1bf292472cb451bbc9ec7392">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-28836645d207f1d424fd4be68953c9aa902b0876b7d4ac0b9a65fc2077f96a2a">
   
     
       
@@ -1234,7 +1234,7 @@ X-Varnish: 168891969 163812499
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0525ed65f4c03ab94772c3e86290d61c1c9a40706a61a1b0469acd2c7b50b801">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-403de3bddb38dfafb851e48988b20c204400e1689a984e61cffda6bf244ea936">
   
     
       
@@ -1248,7 +1248,7 @@ X-Varnish: 168891969 163812499
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e366d5f7bf759cb497f5038cc8ea5b53f831552852e57069c404bd3bc39a0a4f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-458aec6d82c7da554fa0f0dcbeb2496d884b97c0fcef303ac70880fa3d86fde2">
   
     
       
@@ -1348,7 +1348,7 @@ X-Varnish: 168891969 163812499
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-bd12f594cb9679436a9d7c0b1ee3436e8b35ad14ddb383a9e8842cfa15fc204e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c1f46d12d159716a241067ad9696e2c7845df9fbb93e62f4ab96bb3fdf0c3fb0">
   
     
       
@@ -1362,7 +1362,7 @@ X-Varnish: 168891969 163812499
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-416e731bc53d24fa5bca720e603924337c50421f69be0192812586f37ee0dd90">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-db3164544fc8f38c0a6c7de77c002cd222db873e5a2cf24ed900b195b49f19d3">
   
     
       
@@ -1499,7 +1499,7 @@ X-Varnish: 168891969 163812499
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-bd4a4b38febc20f70046238a040533f83738aaa628a77b36d1c50e3fc63b2bab">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-53e8a22337b13b97b74f3ee0a897477d8e41682cbaa002056bc39d386f4b1365">
   
     
       <div class="view-header">
