@@ -1,22 +1,22 @@
 GET /en/recreation-and-parks/facilities/place-listing/routhier-community-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=otqq2m8sTqSVv8WEhAKjYsqPfWgAAAAAQUIPAAAAAADt33By5saOJQDjj6K7dYGB; nlbi_243507=tHVlUkdaGAVI0sJ+aXmSIAAAAACYYbn/n5goLU7HOKHWcy7X; incap_ses_1211_243507=rXqsEQgmpluFrRpDd1bOEMqPfWgAAAAAVzT8gp+6ZtD5UyzC2yhJUg==
+Cookie: visid_incap_243507=cfwZcnghS5+LAU2FY92crXvgfmgAAAAAQUIPAAAAAACi5LoCMaDl/Hnzo4pPRE8f; nlbi_243507=gpPCOX0MxwBXmvypaXmSIAAAAAAUsGnWraqud4U7HDL8iJzH; incap_ses_890_243507=sXFKfS/sUQqO0tNPr+pZDHvgfmgAAAAAvjTTfstjSJA3UeTlE3dnOQ==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 36
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Mon, 21 Jul 2025 00:57:28 GMT
-Etag: "1753059446-gzip"
+Date: Tue, 22 Jul 2025 00:53:07 GMT
+Etag: "1753145549-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Mon, 21 Jul 2025 00:57:26 GMT
+Last-Modified: Tue, 22 Jul 2025 00:52:29 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-6b6bb87b7-h6njq (Varnish/7.6)
@@ -26,10 +26,10 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 7-9907652-9907654 SNNN RT(1753059275064 171391) q(0 1 1 -1) r(23 23) U24
-X-Varnish: 414091338
+X-Iinfo: 7-17490877-17490879 SNNN RT(1753145468224 119659) q(0 0 0 -1) r(1 1) U24
+X-Varnish: 430715135 430328791
 
-c029
+c20f
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -40,7 +40,7 @@ c029
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/routhier-community-centre" />
 <meta name="dcterms.title" content="Routhier Community Centre" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-07-02" />
+<meta name="dcterms.date" content="2025-07-21" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -182,7 +182,7 @@ c029
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-98a25560881c300b1cc273ba9eb2edf6247e5de7b549185eaf32bdc7f15b0396">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1d148701344e34a7f9cbe84f6883d8b5034cb8999b21f503b6d4959595aad240">
   
     
       
@@ -196,7 +196,7 @@ c029
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-dd2a85f79477d9fb6fc65f137c3ecf679ac7a1d4f3935ca628ab8f78cfaaad6b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-81e86e9277965a13f16a236e23db69076bfda7566970af7e21a39239aab381a6">
   
     
       
@@ -265,7 +265,29 @@ c029
               
                                                                                     <div  class="col-md-4 col-sm-12 col-12 layout__region layout__region--main">
                         
-                                                    <div class="mb-3">
+                                                    
+
+
+  
+            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Civic holiday</h2>
+</div>
+      
+
+
+
+
+  
+            <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><ul>
+<li><span><span><strong><span>Monday, August 4</span></strong></span></span>
+<ul>
+<li><span><span><span><span>Closed&nbsp;</span></span></span></span></li>
+</ul>
+</li>
+</ul>
+</div>
+      
+
+<div class="mb-3">
 
 
 
@@ -273,7 +295,7 @@ c029
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">9:00 am - 6:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">9:00 am - 8:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">9:00 am - 6:00 pm</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">9:00 am - 6:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">9:00 am - 8:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">9:00 am - 6:00 pm</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -400,7 +422,7 @@ c029
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d10564b58817ca60a48d1cb9c2569d8106477abe3c9c0d5cebbf158d54798bc6">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-efc49bd0e6dd7dff05470d31f33c820afedc3e09f74df0483ebe52faa1662b46">
   
     
       
@@ -414,7 +436,7 @@ c029
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6aa64cea113c233afca569e2cb0be3f058877da2101fb527825240f14067bb2a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-03ba5944680b5b14ee15b4da63671edca99645da54b822407aaea123dc5577a5">
   
     
       
@@ -629,7 +651,7 @@ c029
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-90a1210ecc045ce029430dc438e7494acb1ba9676341ff00051c25348c86a3ee">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-18430da86ebaf3d671994d94a7dcab255a5dff4e2ec3d5d5fab76fad10c2349d">
   
     
       
@@ -643,7 +665,7 @@ c029
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-73fffe3f087d49e23356cc5dc2f9a7a01e5d765e581ba0add8ff40dcb17dd4ad">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b9f5753007847fde2b274f7ed8daf1c0e5b6b67795724f9103c0dbe322586ee6">
   
     
       
@@ -845,7 +867,7 @@ c029
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-b24db462806e4dcd436bcb3bb110ef8433625a5c19c8bb394679495e5789a1ec">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-7ddf071dfcbe33a4fb38d47b74ccf7c5768753b21cd09083ff073ab8dc0f1ded">
   
     
       <div class="view-header">
@@ -1199,7 +1221,7 @@ If YES, a new window will open in the background so you can come back to it when
 Thank you for considering to help out.
         </div>
         <div class="modal-footer">
-          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/treejack/b9c915d4ed7f4c98ca062afe8c327cfe">Yes</a>
+          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/chalkmark/objwar6z">Yes</a>
           <button type="button" class="btn btn-outline-primary" data-dismiss="modal">No</button>
         </div>
       </div>
