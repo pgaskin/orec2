@@ -1,22 +1,22 @@
 GET /en/recreation-and-parks/facilities/place-listing/walter-baker-sports-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=6R9e7Ao1Rb6QhieS1t2I7nXKhmgAAAAAQUIPAAAAAABViSL2C6wRtks9Zh2mSR4Y; nlbi_243507=b0N5N50ENi7ub5dWaXmSIAAAAABCmZ0CjkLptW0ZNE54JISx; incap_ses_1544_243507=i44EFjDKOR6ZyIKgM2RtFXbKhmgAAAAAAzBVdnYDyBsia7qDK2o6eQ==
+Cookie: visid_incap_243507=rAur9tWLS/y4MzPvX3XTIk4ciGgAAAAAQUIPAAAAAABjU2xGBk+LB7n25fxenQsN; nlbi_243507=AqNbIDC3x2L9k535aXmSIAAAAABxAEA9X7EYoPPPgB5ysP+V; incap_ses_1251_243507=xQKjBtzO+3NrxI8MQXJcEU4ciGgAAAAA3yQsqps02dyvH6LrjAtlYw==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 203
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Mon, 28 Jul 2025 00:57:52 GMT
-Etag: "1753664271-gzip"
+Date: Tue, 29 Jul 2025 00:59:09 GMT
+Etag: "1753750544-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Mon, 28 Jul 2025 00:57:51 GMT
+Last-Modified: Tue, 29 Jul 2025 00:55:44 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-845fbb9947-8586x (Varnish/7.6)
@@ -26,10 +26,10 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 6-19250808-19250809 SNNN RT(1753664117926 153314) q(0 0 0 -1) r(16 16) U24
-X-Varnish: 7231118
+X-Iinfo: 14-96114817-96114819 SNNy RT(1753750606535 143032) q(0 0 0 -1) r(1 1) U24
+X-Varnish: 14652506 14557196
 
-11f0a
+11d51
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -40,7 +40,7 @@ X-Varnish: 7231118
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/walter-baker-sports-centre" />
 <meta name="dcterms.title" content="Walter Baker Sports Centre" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-07-25" />
+<meta name="dcterms.date" content="2025-07-28" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -182,7 +182,7 @@ X-Varnish: 7231118
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-82487bd595bab7b5ebd2b0077bb84f6da95077eaee67d545739cbb11cec1eaf8">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f672271bcd47cb4346cb52eee1d5bab6ca6887d8badf66ba704b4b5a3d1ecc10">
   
     
       
@@ -196,7 +196,7 @@ X-Varnish: 7231118
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-fd0ed5ef7ac53be8edeea89a8a2a4f91b434bbe3f0566b4392d4e0789f9d133a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a8d235ca810bf61561191ebdb58be2e2a66ab6c1148b702bc6b624490dd5cab3">
   
     
       
@@ -280,17 +280,7 @@ X-Varnish: 7231118
   
             <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><p><strong>Arena A and B are closed until further notice.&nbsp;</strong></p>
 <p><strong>The hot tub/steam room will remain closed until further notice.</strong></p>
-<ul>
-<li><strong>June 11&nbsp;to July 27</strong>
-<ul>
-<li>The pool is closed.</li>
-<li>
-<p>The pool will re-open on&nbsp;Monday, July 28.&nbsp;</p>
-</li>
-</ul>
-</li>
-</ul>
-<h3><span><span><span><span>Civic holiday</span></span></span></span></h3>
+<h3><strong>Civic holiday</strong></h3>
 <ul>
 <li><span><span><strong><span>Monday, August 4</span></strong></span></span>
 <ul>
@@ -309,7 +299,7 @@ X-Varnish: 7231118
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">8:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">6:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">6:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">6:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">6:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">6:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">8:00 am - 8:00 pm</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">8:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">6:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">6:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">6:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">6:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">6:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">8:00 am - 8:00 pm</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -442,7 +432,7 @@ X-Varnish: 7231118
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-649f1170cd8feb5f0f3572f991d30dcd9121d2e267085ec0fe693b6e09651807">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-cc189a2dfb09db90acbe87ba365e54a2a9b4640d292b3de0a6424a16d49c0c5a">
   
     
       
@@ -456,7 +446,7 @@ X-Varnish: 7231118
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6e92b26f9d7dfe58767627364187de66ef40db0508ed80a675a144c0b6790d94">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-205c5b2c045bf8e6ccb39c923ba0cf0660881b5344d2a4cd1d331ba0508840c3">
   
     
       
@@ -497,16 +487,7 @@ X-Varnish: 7231118
       </div>
   <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Closures</h3>
-<ul>
-<li>
-<p>The hot tub and steam room will remain&nbsp;closed until further notice.</p>
-</li>
-<li>
-<p>June 11 to July 27, the pool is closed.&nbsp;The pool will re-open on Monday, July 28.&nbsp;</p>
-</li>
-</ul>
-<h3><span><span><span><span>Schedule change</span></span></span></span></h3>
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3><span><span><span><span>Schedule change</span></span></span></span></h3>
 <ul>
 <li><span><span><strong><span>Monday, August 4</span></strong></span></span>
 <ul>
@@ -725,7 +706,7 @@ X-Varnish: 7231118
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7855540bec5f4f4b30353cec1608cb92fd2ce0160c39bfc1f85ec69321d622df">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-94a2577e3330e2a710fe8425be56277d165fd80cfd29992a2696698637c68f6b">
   
     
       
@@ -739,7 +720,7 @@ X-Varnish: 7231118
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0a74666e37d22359f4e4a26834edd235b1510c24581e0d7188fb950512f6abd2">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-72f0cf0af83f65d83ef9a7e6f27ae951664732fc665a3425b9b92f537e6ade81">
   
     
       
@@ -886,7 +867,7 @@ X-Varnish: 7231118
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-41fb5b9ea3e21629835bcb9ffd2540a96a8b9683d427b9bf2a593d374287728e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f8f16eabc2cc5cab041c9f451aef634ad9ed34a69d3415896956033da0381e93">
   
     
       
@@ -900,7 +881,7 @@ X-Varnish: 7231118
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d69460980685b2386951a76a670826f58856096572d8534e74cfb1561924a565">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a549f72d46a5e0e7cfd6d07109e44bf94f94df2a6f2cfb4c2f3888e54f98025d">
   
     
       
@@ -1120,7 +1101,7 @@ X-Varnish: 7231118
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e8649dca6e654380da10638a698fb99023b4a50cd48469c82bc83665270957dc">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6f9cdf77c6a29b140b41447499a2f977362d9b38df3a427f30527b1ed0fd1955">
   
     
       
@@ -1134,7 +1115,7 @@ X-Varnish: 7231118
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6c4105d251eeb8ec2e863e50f001cec34e8e36494244d2ba33c2d6661ce8ba0a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6a1f2a5148370b7ea85e9495c99e3bd07c5797291e7f563608a125f1ca24d56c">
   
     
       
@@ -1286,7 +1267,7 @@ X-Varnish: 7231118
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d1f975eca6adaf4b1e1784dd5cef9bd2c146b7dc980f965dd5567ed421ccbe75">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-466dd6ee84f879e5842ed1fe28f76136b69d5316501cc6e229baf1ddf1cbe9fb">
   
     
       
@@ -1300,7 +1281,7 @@ X-Varnish: 7231118
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ccd8e7ed8debbb838fc1f19e1d8712a2ea398f8cdafea2d60a1db6548e156e42">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-95ad4f063a44485e14a3021de42181f6d51d7edae3442854d3e7ec2d3df0a8d3">
   
     
       
@@ -1400,7 +1381,7 @@ X-Varnish: 7231118
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b69383a49d657ba5df88e2d567e2357ecf49a580677b9b67bc33d9c86ca8190e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5bc9d3c3fc168dbf15f63f1bfed2859238369bd79381aad7ef3d1323dc34b969">
   
     
       
@@ -1414,7 +1395,7 @@ X-Varnish: 7231118
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e2113bbee10997d9f6abb6874f3a5c76cf931646c25c5f3fb6df2ef238af9270">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-99a0661695e3e1b2bf28cd783e0a4ac529567768985d2905c88dd2a3e19fa37b">
   
     
       
@@ -1559,7 +1540,7 @@ X-Varnish: 7231118
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-4f80ea2bdbe331dd13aa014e58105af0da94021a92c1347e126e1af4c5236c57">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-6570cdfcf25c30640436ce3a5f45f092ee0e5169f1a48e01546192eaf83ee2aa">
   
     
       <div class="view-header">
