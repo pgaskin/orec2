@@ -1,22 +1,22 @@
 GET /en/recreation-and-parks/facilities/place-listing/cumberland-heritage-village-museum HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=aWBwEzMuS1GoRkGleNKDkeLgm2gAAAAAQUIPAAAAAADW77A11wuCpdy4XcOGEz1G; nlbi_243507=0Z1TIlULqUyC/C3laXmSIAAAAAA7k3sFq2B6mNSIMnZceWXv; incap_ses_1244_243507=1s7hSFkxska6YS7czJNDEeLgm2gAAAAAHK1Uy/RrM/pFt8c2LXTegw==
+Cookie: visid_incap_243507=51xMB0lgS+K8ZEyBdos6AswnnWgAAAAAQUIPAAAAAABZcmpS6XZ0ynG1XCgwetMG; nlbi_243507=IkPaSpUCOxpw8IfraXmSIAAAAABRDsXmDIPzHKmTVg2jrtOW; incap_ses_387_243507=pg9/DpmptVQIvnBB1+ZeBcwnnWgAAAAAUBCdiUSxg3e608KMeM6a6Q==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 245
+Age: 334
 Cache-Control: max-age=2764800, public
 Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Wed, 13 Aug 2025 00:48:56 GMT
-Etag: "1755045888-gzip"
+Date: Thu, 14 Aug 2025 00:03:58 GMT
+Etag: "1755129499-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Wed, 13 Aug 2025 00:44:48 GMT
+Last-Modified: Wed, 13 Aug 2025 23:58:19 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-59cfcdcf86-lqb5m (Varnish/7.6)
@@ -26,10 +26,10 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: UNCACHEABLE (poor cacheability)
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 14-62086321-62086323 SNNN RT(1755046115390 21546) q(0 1 1 -1) r(1 1) U24
-X-Varnish: 13216438 13377942
+X-Iinfo: 3-49099231-49099232 SNNy RT(1755129805366 32628) q(0 1 1 -1) r(1 1) U24
+X-Varnish: 14416855 16492839
 
-28c0e
+28c14
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -55,7 +55,7 @@ X-Varnish: 13216438 13377942
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_hIkusDorgaFGgFGXEC9NC5A6M1oAesgy7eoj0vqGGoQ.css?delta=1&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUNFuwzAI_CEvftn_RNgmCQsxFuA22dc3W1c12gu6O9AdkETcXKF9xgSGIb35zJKAP8wPpjpfOxuawYwW8oqFXHSkWrB6YslrvOCQRTEW7Q14gC_Yn0IV3YDpGwPufpqvr5E_GibG3ZgK6unmOCs4SQ0Mh3QfC1mWG-oRpWIWDjJNlHFcpKvFKxmnnyR31CDuGUZfcMP_l11bJ-77cKcyo4cGCmd2W-y14FsZem09MdmCJdhhjtvzgzfCu8XfOmxSOuMDdaqMMQ" />
 <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_ficoQSKZF4gspM8Xw4o8s9S1lQ5Y18vf8Wg45nlJ3ZY.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUNFuwzAI_CEvftn_RNgmCQsxFuA22dc3W1c12gu6O9AdkETcXKF9xgSGIb35zJKAP8wPpjpfOxuawYwW8oqFXHSkWrB6YslrvOCQRTEW7Q14gC_Yn0IV3YDpGwPufpqvr5E_GibG3ZgK6unmOCs4SQ0Mh3QfC1mWG-oRpWIWDjJNlHFcpKvFKxmnnyR31CDuGUZfcMP_l11bJ-77cKcyo4cGCmd2W-y14FsZem09MdmCJdhhjtvzgzfCu8XfOmxSOuMDdaqMMQ" />
-<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.5/css/app.css" />
+<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.13/css/app.css" />
 
     <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/3013601","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx9UkuWAyEIvJDdbuY-PlRinKD4BJN0Tj9O5tedxWx4FAUChZ5ZRTu0N-tB0Pgd_nWXd1kIFEX3fCL2QIvoRrmmPVNQBBKKCReMWbm7XCNW9cThYne-CdzRVu4FKD_Q4F3nWxcb-2hA6zc0J8K7UI7YZ7Fi6qCZq0nMidApJJumecUrvMP9GCyGYOOhLmYJfMW-Wa4YmGb8sdlPY_h0ygHdmUcXuwfu9DmnKnbDqgGcnrGgndUETWYLTrPTgXuRaE9Nf9zXW44J9UC0PndchEOelX6ocpVDgmTFXFqf8y9QgTbN4SXjqZVLQDRXNA06TM3aWX6E_Yuso7bhKcsZo2ncRnMy-hU3uweTuWH32WHxGO0BLYHyvOf_KUOUy7xwN7KJYvn6bNeMN7FPuxaOg_ADN3UCLQ","theme":"ottca_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NDWQN39"]},"popup_survey":{"frequency":"10","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"flexslider":{"optionsets":{"slider-gallery--1293712":{"animation":"slide","animationSpeed":600,"direction":"horizontal","slideshow":false,"easing":"swing","smoothHeight":true,"reverse":false,"slideshowSpeed":7000,"animationLoop":true,"randomize":false,"startAt":0,"itemWidth":0,"itemMargin":0,"minItems":0,"maxItems":0,"move":0,"directionNav":true,"controlNav":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":false,"touch":true,"prevText":"Previous","nextText":"Next","namespace":"flex-","selector":".slides \u003E li","sync":"","asNavFor":"","initDelay":0,"useCSS":true,"video":false,"pausePlay":false,"pauseText":"Pause","playText":"Play","pauseOnAction":false,"pauseOnHover":false,"controlsContainer":"","manualControls":"","id":"slider-gallery--1293712"},"slider-gallery-carousel--1293712":{"animation":"slide","animationSpeed":600,"direction":"horizontal","slideshow":false,"easing":"swing","smoothHeight":false,"reverse":false,"slideshowSpeed":7000,"animationLoop":true,"randomize":false,"startAt":0,"itemWidth":210,"itemMargin":4,"minItems":0,"maxItems":0,"move":0,"directionNav":true,"controlNav":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":false,"touch":true,"prevText":"Previous","nextText":"Next","namespace":"flex-","selector":".slides \u003E li","sync":"","asNavFor":"#slider-gallery--1293712","initDelay":0,"useCSS":true,"video":false,"pausePlay":false,"pauseText":"Pause","playText":"Play","pauseOnAction":false,"pauseOnHover":false,"controlsContainer":"","manualControls":"","id":"slider-gallery-carousel--1293712"}},"instances":{"slider-gallery--1293712":"slider-gallery--1293712","slider-gallery-carousel--1293712":"slider-gallery-carousel--1293712"}},"user":{"uid":0,"permissionsHash":"00421f04a516e62ab5fd682154acf58b171d34702d4b904e073c1e280f2fee35"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
@@ -182,7 +182,7 @@ X-Varnish: 13216438 13377942
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3559898a44ebb8a41ab8209cbdfed12c9a9c6c0ffea16766741052921b1164f8">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c7e29fedf9bed53b9257ec9202aeb69cc7cac3852cf724f9a0cd8cc31b5350fc">
   
     
       
@@ -196,7 +196,7 @@ X-Varnish: 13216438 13377942
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bcf625808803fc06b5e9088da72fcce635f8374e413eb6cc8ce5befc1fccaf3e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e342e2cea0673f52ed57e79a2352a585ea13d2acc0fa625dc7b4d93463526f46">
   
     
       
@@ -392,7 +392,7 @@ Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscription
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0d9ebe339c1480697695c1225804ec2fd31a531145e1b0930c2af416c8fd619e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6892e4791a28ec6e160e1e9ac0738682eed795cb7b43ce9f1bc9eb05791065f7">
   
     
       
@@ -406,7 +406,7 @@ Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscription
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a8c9e914e75ce7f6ea4b5f8be131183a1850655dc7c30c2476ea5288d90a8ec6">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-90f6399607c6f54d33d045143037d7ef2be2b92004af249fccef5c3a60314fb5">
   
     
       
@@ -506,7 +506,7 @@ Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscription
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-539dda926f0f6d61791afa611be2d8a046cd788199e8a5332f409f99d7da352e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-52a2b8f4743fd6e4092a58b89055f7ca18e73a9863274e5faf763fec68758233">
   
     
       
@@ -520,7 +520,7 @@ Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscription
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-950f8be4255e421bad00cdc61d52e3463720bb5015532f12576bccac3adefd21">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b8e18b64beaaf39c65840a6e39f9a49db6bf064f3cfa2e28ec55d18f7bbd2ff5">
   
     
       
@@ -637,7 +637,7 @@ Try your hand at exam questions pulled from an era-appropriate Ontario Teachersâ
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-029c2c03e83d8db6935ab6dec4779a1a8e61f180c0718cdb7532d7ecaf5935ea">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c0827f40c9a822d0c64ea2681f7801df31f13b56d541e63c04afe66f797b49b7">
   
     
       
@@ -651,7 +651,7 @@ Try your hand at exam questions pulled from an era-appropriate Ontario Teachersâ
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f390252533eafecbd33041a8132dfe4123b82da7c53bb5e397be2fc059ad50c1">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bec5afc77bb9874bebe19a026d1190e49c98ea744372a4c1cdea7fb44599f9d6">
   
     
       
@@ -779,7 +779,7 @@ Cost (non-resident): $62.50 plus tax (ages 15 and up); $31.25 plus tax (ages 3 t
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0f8d80dcda83887d56b0dace27d6ea5dbf59f72ea08e6e048f2473a9cf1c1f9f">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3271ebd0d823bcdb4063fa4678c323e6068a2f813797fcc057c17311ded3c9e1">
   
     
       
@@ -793,7 +793,7 @@ Cost (non-resident): $62.50 plus tax (ages 15 and up); $31.25 plus tax (ages 3 t
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d7bf453eafb0a33cccbfae695c48a34a8a1cf2259f2f07782ce47268c5d52f1b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-932276a065019c087a891ec560afd46590c6d986efeabc299dc9572e83edb966">
   
     
       
@@ -962,7 +962,7 @@ Cost: $77.21 + tax (per person)<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1fd1d30eebf3cab1b3f3d680c33db9ed84c74e13376e8af31635233cb51516d4">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-21066aa89e2df802e5f07f8d674e92549ff370d356780e2a43d8fa7e0019d9ac">
   
     
       
@@ -976,7 +976,7 @@ Cost: $77.21 + tax (per person)<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-eb8a2ab0f2cfc01cfdf67917c40f5cdee641de6de08b3b7e13937265d08c93e1">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7935918e9f1d11fdbe98d54d10246e9e269ddf87f63e07200830b1d81402728a">
   
     
       
@@ -1219,7 +1219,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2072294ae6d61a95dca190f45c9469609407e9d21da99908f4347178f94df313">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-afdb57704aada533b6104307532a7d07c6f3dc301665cec32512e12aa0fbefa7">
   
     
       
@@ -1233,7 +1233,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6f176cf558af36e9f2eeed91f8a78a801a6941d737d1af8e62472606c923d117">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9126424f081c698ae6d668835729488c0d1964770eb61859da6208204d82e5fb">
   
     
       
@@ -1348,7 +1348,7 @@ Cost: $50 per person (plus tax). Brunch is included in the ticket price.<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ac5c1b33765219c41d0d8a9cce94d0ea83e05cbdc9128e83060d663d2b05af6d">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-19cf4759a5729da26170145101bc49730abf2aedde0ad4d3c6ca4a94b8f62cbc">
   
     
       
@@ -1362,7 +1362,7 @@ Cost: $50 per person (plus tax). Brunch is included in the ticket price.<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-00c6f65aa349a6c1d3f3bf464eadeeaed71301ebfa49f7a8a8b322896b1596a5">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6687e07fb177cdf941433a1b9a7d470296c41dc8c73242d3449df0f88b9dc3ff">
   
     
       
@@ -1488,7 +1488,7 @@ Cost: $50 per person (plus tax). Brunch is included in the ticket price.<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-428f1a244a9f896242ebc8651909f454438eaf1b15df44c69d76dee0eb7f39e8">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-59b77d8187b686a67e2e34f62d4da235de5e98b84481a9155d9260af4934904b">
   
     
       
@@ -1502,7 +1502,7 @@ Cost: $50 per person (plus tax). Brunch is included in the ticket price.<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9dd4daaefd1f552f53fae02a0a091db08edbb2c2a2b3b61cd1a686462b2b4759">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6820347f057acdec5d93e7b2081bd14db6c369b0c6095ccbff8b6e74ee63353f">
   
     
       
@@ -1643,7 +1643,7 @@ Cost: $50 per person (plus tax). Brunch is included in the ticket price.<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b563591582d6bb90986b49fcb9990cc830ab839d4f87d67430114b3694163977">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-029ce5bd1c4627b42f4c72efc4e7fb5d6d0a273b161ed61819384af05e20747d">
   
     
       
@@ -1657,7 +1657,7 @@ Cost: $50 per person (plus tax). Brunch is included in the ticket price.<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4d144a6a8afbb547188098e4141760d634f8f6b778e3923ad28a3feb5fa08f4e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6273e1a37417a07bc225fdd60a3b9378a0db38f6d48d913922fb4cb337a13da9">
   
     
       
@@ -1759,7 +1759,7 @@ Cost: $50 per person (plus tax). Brunch is included in the ticket price.<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-31a6a9fe9b94c110104ce26ee854569e771558037edfeca7977aaf79f77e166c">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ffd4f71e245ff068d1d5c4c67fa3c5dd593b76e0862ec14786b523468f298c9d">
   
     
       
@@ -1773,7 +1773,7 @@ Cost: $50 per person (plus tax). Brunch is included in the ticket price.<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-95b71f48f8b565484675082dd4c05ab50d01b5e3eff1437cd062721a13bebacb">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d42cf5f5d305cff99324b6cfc1ab5918bc2b5aad8aafb19d37eb76c35bfc5fca">
   
     
       
@@ -1876,7 +1876,7 @@ Cost: $50 per person (plus tax). Brunch is included in the ticket price.<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-61a79e9e8ac8a199c739eae1eb610fd1908cf540494ddee7746215d3f20671b1">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ecaa5a217e9ea48cddfb2c3011e3782c76b5011b172636cd5afc5194835d32a4">
   
     
       
@@ -1890,7 +1890,7 @@ Cost: $50 per person (plus tax). Brunch is included in the ticket price.<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3d500a6368697efdaced16f2aba2bf51b445a04cec791e7331af2ef7853199a6">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a519d8b8c0fba728abe0a5f9727e5e2454d80275471b859b29a9d09ae8419567">
   
     
       
@@ -1991,7 +1991,7 @@ Cost: $50 per person (plus tax). Brunch is included in the ticket price.<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-aae2c6e738a7f54da531dda75280683ca464c51d2c3d31ba566ee74a08ee8015">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7c27aa8979eec3d0d2ab945bc67811f0b17d8538ba0dffc11daebb103a4c25b8">
   
     
       
@@ -2005,7 +2005,7 @@ Cost: $50 per person (plus tax). Brunch is included in the ticket price.<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1f2b1d6f5310e5fc3923a5c20d8d47e15bed06e6fe59a3da49d243d3a072c8b6">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d605dd4b8e8ed9ab07de80628deecc1b5da160eb817b7fb4d22804a772c73ae7">
   
     
       
@@ -2872,14 +2872,14 @@ Thank you for considering to help out.
   </div>
 
     <script src="/sites/default/files/js/js_vbqXGSVFFjC94Hma6-MoYncglvJ8cc0REQE5tEvI9OA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.5/js/chunk-vendors.js" async></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.5/js/app.js" async></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.13/js/chunk-vendors.js" async></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.13/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/themes/custom/ottca_theme/dist/js/slider-gallery.min.js?t0mo1v" async></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=6&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=32&cb=7156583" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=32&cb=2068342449" async></script></body>
 </html>
 
 
