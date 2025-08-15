@@ -1,35 +1,35 @@
 GET /en/recreation-and-parks/facilities/place-listing/jack-purcell-community-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=51xMB0lgS+K8ZEyBdos6AswnnWgAAAAAQUIPAAAAAABZcmpS6XZ0ynG1XCgwetMG; nlbi_243507=IkPaSpUCOxpw8IfraXmSIAAAAABRDsXmDIPzHKmTVg2jrtOW; incap_ses_387_243507=pg9/DpmptVQIvnBB1+ZeBcwnnWgAAAAAUBCdiUSxg3e608KMeM6a6Q==
+Cookie: visid_incap_243507=b5cKqqb0RHGwh051El8D80x5nmgAAAAAQUIPAAAAAAAALmPu0UkoV5gW0ahindcY; nlbi_243507=Q4+5IYhYA1C3u9hcaXmSIAAAAAB3FtB7lCb2/QmOuox0jB7p; incap_ses_1353_243507=HcvCdPEWBkC/UV8HudLGEkx5nmgAAAAACN1gwII67dYJq90DAFD/Hw==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 452
+Age: 55
 Cache-Control: max-age=2764800, public
 Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Thu, 14 Aug 2025 00:04:27 GMT
-Etag: "1755129413-gzip"
+Date: Fri, 15 Aug 2025 00:04:34 GMT
+Etag: "1755216217-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Wed, 13 Aug 2025 23:56:53 GMT
+Last-Modified: Fri, 15 Aug 2025 00:03:37 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-59cfcdcf86-lqb5m (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
 X-Cdn: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-49099231-49099232 SNNy RT(1755129805366 62490) q(0 0 0 -1) r(1 1) U24
-X-Varnish: 15926582 12348810
+X-Iinfo: 12-78597716-78597720 SNNy RT(1755216204670 69991) q(0 0 0 -1) r(0 0) U24
+X-Varnish: 695631 2810292
 
-d51a
+d529
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -55,12 +55,12 @@ d51a
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_hIkusDorgaFGgFGXEC9NC5A6M1oAesgy7eoj0vqGGoQ.css?delta=1&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
 <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_ficoQSKZF4gspM8Xw4o8s9S1lQ5Y18vf8Wg45nlJ3ZY.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
-<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.13/css/app.css" />
+<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.26/css/app.css" />
 
     <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031600","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx9UsuSAyEI_CFnvOz_WKjEkKhYgklmv37NPmdy2EsXTYNQjZ5ZRTu0N-tB0Pgd_w2XiywZFEX3esrsIS-iW6aa9kpBEUgoJlwxknJ3VCNW9ZnD1e5iE7ijrdwLZHpHgw-db11t7KNBXr-pScwpo1NINk145Stc4HFMFpNh46EukgS-Yd8sVwycZ_59s08wfDpRQHfm0cXuiTs9F1LFblg1gNMzFrSzO0OTOYLTnHTQXrzYSzMej_VOMaEehNap6iIcaHb6ocpVDgVCilRan_svUCFvSkFMgw5p2nyWH5v-MuuobfhMcsZoGrfRnIx-w83uyVTu2D05LB6jPbAlZJrX-b9kiHKZ9-pGNlEsX1_nRngX-4lr4TgyfgCH7u4z","theme":"ottca_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NDWQN39"]},"popup_survey":{"frequency":"10","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"00421f04a516e62ab5fd682154acf58b171d34702d4b904e073c1e280f2fee35"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
-<script src="/modules/contrib/google_tag/js/gtag.js?t0mo1v"></script>
-<script src="/modules/contrib/google_tag/js/gtm.js?t0mo1v"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?t0zm4u"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?t0zm4u"></script>
 <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.22.1/dist/powerbi.min.js"></script>
 <script src="/modules/contrib/powerbi_embed/js/powerbi_embed-customizer.js?v=1.0.0"></script>
 
@@ -182,60 +182,10 @@ d51a
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-53e5dcb4ab9da67cc6ec5c1a63e6e8b10bf851744fda70c3d0b902966b0bc824">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-54ba907ee3135472feb27c11c6c0ecf5014ce86b39026d56fd482539508f9ebc">
   
     
       
-      <div class="view-content">
-          <div>
-<article class="node node--type-alert node--view-mode-default">
-  
-  <div class="node__content">
-    
-          
-  
-<div class="alert-info alert-dismissible fade show alert">
-  <div class="alert-message">
-      <h4 class="alert-heading"><div>
-
-
-  <span class="field field--name-title field--type-string field--label-hidden">Drop-in swimming during heat warning</span>
-
-
-</div>
-</h4>
-    
-
-
-  
-            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>All pools (indoor and outdoor) have adjusted to accommodate additional public swimmers during scheduled lane swims.</p>
-</div>
-      
-
-
-  </div>
-      <button type="button" class="close" data-dismiss="alert">
-      <span class="sr-only">Close <h4 class="alert-heading"><div>
-
-
-  <span class="field field--name-title field--type-string field--label-hidden">Drop-in swimming during heat warning</span>
-
-
-</div>
-</h4></span>
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-
-
-
-
-  </div>
-
-</article>
-</div>
-
-    </div>
   
           </div>
 </div>
@@ -246,7 +196,7 @@ d51a
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f2cd7bf179773af5d86b46e1d053a68fc1e2c56820cb36d655294410cc984ace">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-07a99dee6c0aaa991a98ed592d8d820ba4072bc5c6a9ce21f6e12f35fcea3858">
   
     
       
@@ -324,7 +274,7 @@ d51a
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">9:00 am - 5:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">7:30 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">7:30 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">7:30 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">7:30 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">7:30 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">9:00 am - 5:00 pm</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">9:00 am - 5:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">7:30 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">7:30 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">7:30 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">7:30 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">7:30 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">9:00 am - 5:00 pm</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -500,7 +450,7 @@ d51a
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2c6db7db1c4085afae01c5355a31b19c12bdaaccef1f50e7221e04fbb300dbd3">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-57db11a3d6c1d44579b60cb4f14177ee52bf6d42ce3770b9ad872285b0e3dc1a">
   
     
       
@@ -514,7 +464,7 @@ d51a
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3d1d91c12c78dd1b755e48f11c80daa27bada569641e3fa16291be2ed451e6c7">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-052b8e4313f0585f0fa64b0867f0312a56e804bc0bbca804808202407f6ea278">
   
     
       
@@ -875,7 +825,7 @@ d51a
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e8c3c65420b289412e724bc38ec3ed1f42c26e1a542cb88c387bca502f5b0e19">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-804adc42f4e6a4a3cd2c7bc12ba9d5a35efe82af875b39bcea53e0a04886fe4a">
   
     
       
@@ -889,7 +839,7 @@ d51a
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1e0978ede508d30f8878b2d844307c8a8323ef4d78035d2d566b1b1b694409cf">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bf04b09cb689694a2322af2e17881955e95e42734b961ba4a0ddbfeff04de429">
   
     
       
@@ -1058,7 +1008,7 @@ d51a
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-2f76de43e3aaa85e42d9663af5213c70e3583ccbe72761e217f20cc65f85ff4d">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-0ca51900f417fa57a7d4efd7f8cc001c727a1dedd4e4016b3d9e34879108a9f0">
   
     
       <div class="view-header">
@@ -1211,6 +1161,16 @@ d51a
       <li class="nav-item">
         <a href="https://ottawa.ca/fr/service-la-clientele#section-475d5f00-a78b-4e35-b71b-eb0be784992a" target="_self" class="angle-right nav-link">En personne</a>
               </li>
+          
+            
+      <li class="nav-item">
+        <a href="https://ottawa.ca/en/form/feedback" class="angle-right nav-link">Problem with the website</a>
+              </li>
+          
+            
+      <li class="nav-item">
+        <a href="https://ottawa.ca/fr/form/feedback" class="angle-right nav-link">Un problème concernant le site Web</a>
+              </li>
         </ul>
   
 
@@ -1278,6 +1238,16 @@ d51a
               
             
       <li class="nav-item">
+        <a href="https://bsky.app/profile/fr.ottawa.ca" target="_blank" class="bluesky nav-link">Bluesky</a>
+              </li>
+          
+            
+      <li class="nav-item">
+        <a href="https://bsky.app/profile/en.ottawa.ca" target="_blank" class="bluesky nav-link">Bluesky</a>
+              </li>
+          
+            
+      <li class="nav-item">
         <a href="https://www.facebook.com/villedottawa" target="_blank" class="facebook nav-link">Facebook</a>
               </li>
           
@@ -1324,6 +1294,16 @@ d51a
             
       <li class="nav-item">
         <a href="https://forms.ottawa.ca/en/form/esubscriptions/signup-form" target="_blank" class="envelope nav-link">eSubscriptions</a>
+              </li>
+          
+            
+      <li class="nav-item">
+        <a href="https://www.linkedin.com/company/city-of-ottawa/" target="_blank" class="linkedin nav-link">LinkedIn</a>
+              </li>
+          
+            
+      <li class="nav-item">
+        <a href="https://www.linkedin.com/company/city-of-ottawa/" target="_blank" class="linkedin nav-link">LinkedIn</a>
               </li>
         </ul>
   
@@ -1424,13 +1404,13 @@ Thank you for considering to help out.
   </div>
 
     <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.13/js/chunk-vendors.js" async></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.13/js/app.js" async></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.26/js/chunk-vendors.js" async></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.26/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=60&cb=1523232980" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=60&cb=1245981486" async></script></body>
 </html>
 
 

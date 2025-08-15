@@ -1,35 +1,35 @@
 GET /en/recreation-and-parks/facilities/place-listing/plant-recreation-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=51xMB0lgS+K8ZEyBdos6AswnnWgAAAAAQUIPAAAAAABZcmpS6XZ0ynG1XCgwetMG; nlbi_243507=IkPaSpUCOxpw8IfraXmSIAAAAABRDsXmDIPzHKmTVg2jrtOW; incap_ses_387_243507=pg9/DpmptVQIvnBB1+ZeBcwnnWgAAAAAUBCdiUSxg3e608KMeM6a6Q==
+Cookie: visid_incap_243507=b5cKqqb0RHGwh051El8D80x5nmgAAAAAQUIPAAAAAAAALmPu0UkoV5gW0ahindcY; nlbi_243507=Q4+5IYhYA1C3u9hcaXmSIAAAAAB3FtB7lCb2/QmOuox0jB7p; incap_ses_1353_243507=HcvCdPEWBkC/UV8HudLGEkx5nmgAAAAACN1gwII67dYJq90DAFD/Hw==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 572
+Age: 503
 Cache-Control: max-age=2764800, public
 Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Thu, 14 Aug 2025 00:05:16 GMT
-Etag: "1755129342-gzip"
+Date: Fri, 15 Aug 2025 00:05:20 GMT
+Etag: "1755215815-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Wed, 13 Aug 2025 23:55:42 GMT
+Last-Modified: Thu, 14 Aug 2025 23:56:55 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-59cfcdcf86-lqb5m (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
 X-Cdn: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-49099231-49099232 SNNy RT(1755129805366 111135) q(0 1 1 -1) r(1 1) U24
-X-Varnish: 16814315 15784283
+X-Iinfo: 12-78597716-78597720 SNNy RT(1755216204670 115685) q(0 0 0 -1) r(0 0) U24
+X-Varnish: 2715682 529217
 
-1074a
+10758
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -55,12 +55,12 @@ X-Varnish: 16814315 15784283
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_hIkusDorgaFGgFGXEC9NC5A6M1oAesgy7eoj0vqGGoQ.css?delta=1&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
 <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_ficoQSKZF4gspM8Xw4o8s9S1lQ5Y18vf8Wg45nlJ3ZY.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
-<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.13/css/app.css" />
+<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.26/css/app.css" />
 
     <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031621","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx9UsuSAyEI_CFnvOz_WKjEkKhYgklmv37NPmdy2EsXTYNQjZ5ZRTu0N-tB0Pgd_w2XiywZFEX3esrsIS-iW6aa9kpBEUgoJlwxknJ3VCNW9ZnD1e5iE7ijrdwLZHpHgw-db11t7KNBXr-pScwpo1NINk145Stc4HFMFpNh46EukgS-Yd8sVwycZ_59s08wfDpRQHfm0cXuiTs9F1LFblg1gNMzFrSzO0OTOYLTnHTQXrzYSzMej_VOMaEehNap6iIcaHb6ocpVDgVCilRan_svUCFvSkFMgw5p2nyWH5v-MuuobfhMcsZoGrfRnIx-w83uyVTu2D05LB6jPbAlZJrX-b9kiHKZ9-pGNlEsX1_nRngX-4lr4TgyfgCH7u4z","theme":"ottca_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NDWQN39"]},"popup_survey":{"frequency":"10","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"00421f04a516e62ab5fd682154acf58b171d34702d4b904e073c1e280f2fee35"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
-<script src="/modules/contrib/google_tag/js/gtag.js?t0mo1v"></script>
-<script src="/modules/contrib/google_tag/js/gtm.js?t0mo1v"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?t0zm4u"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?t0zm4u"></script>
 <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.22.1/dist/powerbi.min.js"></script>
 <script src="/modules/contrib/powerbi_embed/js/powerbi_embed-customizer.js?v=1.0.0"></script>
 
@@ -182,60 +182,10 @@ X-Varnish: 16814315 15784283
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f01d95521693bdf08c271916c511939c43936d4f8ff01f68e49b952c06d6d02f">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f3b59f6c889ff67a7a4c1b1d66e7388ca66adcfef25c5be6aeabf888475468e2">
   
     
       
-      <div class="view-content">
-          <div>
-<article class="node node--type-alert node--view-mode-default">
-  
-  <div class="node__content">
-    
-          
-  
-<div class="alert-info alert-dismissible fade show alert">
-  <div class="alert-message">
-      <h4 class="alert-heading"><div>
-
-
-  <span class="field field--name-title field--type-string field--label-hidden">Drop-in swimming during heat warning</span>
-
-
-</div>
-</h4>
-    
-
-
-  
-            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>All pools (indoor and outdoor) have adjusted to accommodate additional public swimmers during scheduled lane swims.</p>
-</div>
-      
-
-
-  </div>
-      <button type="button" class="close" data-dismiss="alert">
-      <span class="sr-only">Close <h4 class="alert-heading"><div>
-
-
-  <span class="field field--name-title field--type-string field--label-hidden">Drop-in swimming during heat warning</span>
-
-
-</div>
-</h4></span>
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-
-
-
-
-  </div>
-
-</article>
-</div>
-
-    </div>
   
           </div>
 </div>
@@ -246,7 +196,7 @@ X-Varnish: 16814315 15784283
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9a5444b6db5a3d16a13f9468d5616d035700e4a2d0f59777ac29fca7a5726ad5">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1c0eb38b8b2f38eaa8028950c053d86b7b0a5151e502e53803a17528ff87983a">
   
     
       
@@ -498,7 +448,7 @@ X-Varnish: 16814315 15784283
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4f186392f15d49c0e3a3172f114f40fe88ea395700a92c8e36bf845959c828b3">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-78c8c0499352992fcba134ff423392da9f5bb7ef5f5324c7ceecf86bf574fcc3">
   
     
       
@@ -512,7 +462,7 @@ X-Varnish: 16814315 15784283
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-56c4a56a088306d5239c7866d3dcf7bd6b5c3e203d0c522bd70c04432d33ac7b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-447e077e353f3ee6edaa722ca357cacde618096023f7d291a8e50a7c72de947d">
   
     
       
@@ -759,7 +709,7 @@ X-Varnish: 16814315 15784283
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6a17e92dd7e8eb40b51550456295ef4bb94e5aca84a5120dd357ea8c0a4355b7">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7cf87e26d960aaf25dadddb8a775e7246070c7423805a03d44ecd1c8a7883d6b">
   
     
       
@@ -773,7 +723,7 @@ X-Varnish: 16814315 15784283
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5ae9b1352f4ab65561f387693238b66860de63312bb937f7a5f08d86847ce78a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ec0fea2b307ba955fcce377a2d82c202aee0a92ebe5edf7a89a3931c497726ae">
   
     
       
@@ -956,7 +906,7 @@ X-Varnish: 16814315 15784283
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a456b6a0e6c18e82324f8e038649e8f693b963e2f6f2d8a85a63029ccb4937ef">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e422b6d5be0448aaf02c4bf2b51bc00b68fa0f71105a3dfccced5550327e0c3c">
   
     
       
@@ -970,7 +920,7 @@ X-Varnish: 16814315 15784283
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-da52ce18e01fdbf373bdc76b11b04fa057758049ae41c38f4edc27e9c278c4c1">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-096e6d88d712f85274116d68b4df472b31e2ebade3000de48295352cf9a79cd3">
   
     
       
@@ -1165,7 +1115,7 @@ X-Varnish: 16814315 15784283
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-69428074d187e267ad11904f2722adb226d194fbec08ab3ebdc4a19ad8075a02">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a7a41735b0b4192f76143d40664240f1fa4d9065ba52ae03821808cf0aa025ea">
   
     
       
@@ -1179,7 +1129,7 @@ X-Varnish: 16814315 15784283
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2bf40a2b415b90f90a21c231266798fb50bc3c4840e110d25416fe800f730714">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7bd2b5ba887a481ff74d4f66f73b30a0ace0e272195c17b888ce8a5685973fba">
   
     
       
@@ -1662,7 +1612,7 @@ X-Varnish: 16814315 15784283
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-fc16d539d0d8fcb7cf0eeeca22d5354117a0d0de49f9210e017dedc579a9e014">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-ea86d95592a6787e46abe5c2a85640bb8022d44c6a5d0f94366eb7bb4ec2ba54">
   
     
       <div class="view-header">
@@ -1811,6 +1761,16 @@ X-Varnish: 16814315 15784283
       <li class="nav-item">
         <a href="https://ottawa.ca/fr/service-la-clientele#section-475d5f00-a78b-4e35-b71b-eb0be784992a" target="_self" class="angle-right nav-link">En personne</a>
               </li>
+          
+            
+      <li class="nav-item">
+        <a href="https://ottawa.ca/en/form/feedback" class="angle-right nav-link">Problem with the website</a>
+              </li>
+          
+            
+      <li class="nav-item">
+        <a href="https://ottawa.ca/fr/form/feedback" class="angle-right nav-link">Un problème concernant le site Web</a>
+              </li>
         </ul>
   
 
@@ -1878,6 +1838,16 @@ X-Varnish: 16814315 15784283
               
             
       <li class="nav-item">
+        <a href="https://bsky.app/profile/fr.ottawa.ca" target="_blank" class="bluesky nav-link">Bluesky</a>
+              </li>
+          
+            
+      <li class="nav-item">
+        <a href="https://bsky.app/profile/en.ottawa.ca" target="_blank" class="bluesky nav-link">Bluesky</a>
+              </li>
+          
+            
+      <li class="nav-item">
         <a href="https://www.facebook.com/villedottawa" target="_blank" class="facebook nav-link">Facebook</a>
               </li>
           
@@ -1924,6 +1894,16 @@ X-Varnish: 16814315 15784283
             
       <li class="nav-item">
         <a href="https://forms.ottawa.ca/en/form/esubscriptions/signup-form" target="_blank" class="envelope nav-link">eSubscriptions</a>
+              </li>
+          
+            
+      <li class="nav-item">
+        <a href="https://www.linkedin.com/company/city-of-ottawa/" target="_blank" class="linkedin nav-link">LinkedIn</a>
+              </li>
+          
+            
+      <li class="nav-item">
+        <a href="https://www.linkedin.com/company/city-of-ottawa/" target="_blank" class="linkedin nav-link">LinkedIn</a>
               </li>
         </ul>
   
@@ -2024,13 +2004,13 @@ Thank you for considering to help out.
   </div>
 
     <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.13/js/chunk-vendors.js" async></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.13/js/app.js" async></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.26/js/chunk-vendors.js" async></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.26/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=98&cb=225064781" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=98&cb=1320308678" async></script></body>
 </html>
 
 
