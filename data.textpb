@@ -8,7 +8,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/albion-heatherington-recreation-centre"
     _date {
-      seconds: 1755734566
+      seconds: 1755821000
     }
   }
   address:
@@ -37,7 +37,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/alexander-community-centre"
     _date {
-      seconds: 1755734567
+      seconds: 1755821002
     }
   }
   address:
@@ -58,7 +58,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/alfred-taylor-recreation-centre"
     _date {
-      seconds: 1755734569
+      seconds: 1755821003
     }
   }
   address:
@@ -78,7 +78,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/aquaview-community-hall"
     _date {
-      seconds: 1755734569
+      seconds: 1755821004
     }
   }
   address:
@@ -97,7 +97,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/bayshore-community-building"
     _date {
-      seconds: 1755734570
+      seconds: 1755821006
     }
   }
   address:
@@ -118,7 +118,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/beacon-hill-north-community-centre"
     _date {
-      seconds: 1755734572
+      seconds: 1755821007
     }
   }
   address:
@@ -136,7 +136,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/bearbrook-community-building"
     _date {
-      seconds: 1755734573
+      seconds: 1755821008
     }
   }
   address:
@@ -154,7 +154,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/bearbrook-pool"
     _date {
-      seconds: 1755734574
+      seconds: 1755821009
     }
   }
   address:
@@ -755,11 +755,287 @@ facilities {
   }
 }
 facilities {
+  name: "Beaverbrook Pool - Kanata"
+  source {
+    url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/beaverbrook-pool-kanata"
+    _date {
+      seconds: 1755821009
+    }
+  }
+  address:
+    "1002 Beaverbrook Lane\n"
+    "Ottawa ON K2K 1L1\n"
+    "Canada"
+  _lnglat {
+    lng: -75.902596
+    lat: 45.328922
+  }
+  special_hours_html:
+    "<ul>\n"
+    "<li><strong>Monday, July 28 to Friday, August 22</strong>\n"
+    "<ul>\n"
+    "<li>Reduced lane swim, 9 to 10 am, <em>added</em>\n"
+    "<ul>\n"
+    "<li>Weekdays only (not including Saturday and Sunday)</li>\n"
+    "</ul>\n"
+    "</li>\n"
+    "</ul>\n"
+    "</li>\n"
+    "</ul>\n"
+  schedule_groups {
+    label: "Drop-in schedule - swim"
+    _title: "Swim"
+    schedule_changes_html:
+      "<ul>\n"
+      "<li><span><strong>Monday, July 28 to Friday, August 22</strong></span>\n"
+      "<ul>\n"
+      "<li><span>Reduced lane swim, 9 to 10 am, <em>added</em></span>\n"
+      "<ul>\n"
+      "<li><span>Weekdays only (not including Saturday and Sunday)</span></li>\n"
+      "</ul>\n"
+      "</li>\n"
+      "</ul>\n"
+      "</li>\n"
+      "</ul>"
+    schedules {
+      caption: "Beaverbrook outdoor pool - swim - June 30 to August 24"
+      _name: "beaverbrook outdoor pool - swim"
+      days: "Monday"
+      days: "Tuesday"
+      days: "Wednesday"
+      days: "Thursday"
+      days: "Friday"
+      days: "Saturday"
+      days: "Sunday"
+      activities {
+        label: "Lane swim"
+        _name: "lane swim"
+        days {
+          times {
+            label: "8 - 9 am"
+            _start: 480
+            _end: 540
+            _wkday: MONDAY
+          }
+          times {
+            label: "Noon - 1 pm"
+            _start: 720
+            _end: 780
+            _wkday: MONDAY
+          }
+          times {
+            label: "6 - 8 pm"
+            _start: 1080
+            _end: 1200
+            _wkday: MONDAY
+          }
+        }
+        days {
+          times {
+            label: "8 - 9 am"
+            _start: 480
+            _end: 540
+            _wkday: TUESDAY
+          }
+          times {
+            label: "Noon - 1 pm"
+            _start: 720
+            _end: 780
+            _wkday: TUESDAY
+          }
+          times {
+            label: "6:30 - 8 pm"
+            _start: 1110
+            _end: 1200
+            _wkday: TUESDAY
+          }
+        }
+        days {
+          times {
+            label: "8 - 9 am"
+            _start: 480
+            _end: 540
+            _wkday: WEDNESDAY
+          }
+          times {
+            label: "Noon - 1 pm"
+            _start: 720
+            _end: 780
+            _wkday: WEDNESDAY
+          }
+          times {
+            _wkday: WEDNESDAY
+          }
+        }
+        days {
+          times {
+            label: "8 - 9 am"
+            _start: 480
+            _end: 540
+            _wkday: THURSDAY
+          }
+          times {
+            label: "Noon - 1 pm"
+            _start: 720
+            _end: 780
+            _wkday: THURSDAY
+          }
+          times {
+            label: "6:30 - 8 pm"
+            _start: 1110
+            _end: 1200
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "8 - 9 am"
+            _start: 480
+            _end: 540
+            _wkday: FRIDAY
+          }
+          times {
+            label: "Noon - 1 pm"
+            _start: 720
+            _end: 780
+            _wkday: FRIDAY
+          }
+          times {
+            label: "6:30 - 8 pm"
+            _start: 1110
+            _end: 1200
+            _wkday: FRIDAY
+          }
+        }
+        days {
+          times {
+            label: "10:30 am - noon"
+            _start: 630
+            _end: 720
+            _wkday: SATURDAY
+          }
+          times {
+            label: "5 - 6 pm"
+            _start: 1020
+            _end: 1080
+            _wkday: SATURDAY
+          }
+        }
+        days {
+          times {
+            label: "10:30 am - noon"
+            _start: 630
+            _end: 720
+            _wkday: SUNDAY
+          }
+          times {
+            label: "5 - 6 pm"
+            _start: 1020
+            _end: 1080
+            _wkday: SUNDAY
+          }
+        }
+      }
+      activities {
+        label: "Public swim"
+        _name: "public swim"
+        days {
+          times {
+            label: "1 - 5 pm"
+            _start: 780
+            _end: 1020
+            _wkday: MONDAY
+          }
+        }
+        days {
+          times {
+            label: "1 - 6:30 pm"
+            _start: 780
+            _end: 1110
+            _wkday: TUESDAY
+          }
+        }
+        days {
+          times {
+            label: "1 - 5 pm"
+            _start: 780
+            _end: 1020
+            _wkday: WEDNESDAY
+          }
+        }
+        days {
+          times {
+            label: "1 - 6:30 pm"
+            _start: 780
+            _end: 1110
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "1 - 6:30 pm"
+            _start: 780
+            _end: 1110
+            _wkday: FRIDAY
+          }
+        }
+        days {
+          times {
+            label: "Noon - 5 pm"
+            _start: 720
+            _end: 1020
+            _wkday: SATURDAY
+          }
+        }
+        days {
+          times {
+            label: "Noon - 5 pm"
+            _start: 720
+            _end: 1020
+            _wkday: SUNDAY
+          }
+        }
+      }
+      activities {
+        label: "Preschool swim"
+        _name: "preschool swim"
+        days {
+        }
+        days {
+        }
+        days {
+        }
+        days {
+        }
+        days {
+        }
+        days {
+          times {
+            label: "10:30 am - noon"
+            _start: 630
+            _end: 720
+            _wkday: SATURDAY
+          }
+        }
+        days {
+          times {
+            label: "10:30 am - noon"
+            _start: 630
+            _end: 720
+            _wkday: SUNDAY
+          }
+        }
+      }
+    }
+  }
+  _errors: "warning: failed to parse time range \"\\u00a0\""
+}
+facilities {
   name: "Bell Centennial Arena"
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/bell-centennial-arena"
     _date {
-      seconds: 1755734576
+      seconds: 1755821010
     }
   }
   address:
@@ -889,7 +1165,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/belltown-dome"
     _date {
-      seconds: 1755734577
+      seconds: 1755821010
     }
   }
   address:
@@ -907,7 +1183,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/ben-franklin-place"
     _date {
-      seconds: 1755734578
+      seconds: 1755821011
     }
   }
   address:
@@ -932,7 +1208,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/ben-franklin-place-rink"
     _date {
-      seconds: 1755734579
+      seconds: 1755821013
     }
   }
   address:
@@ -949,7 +1225,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/bernard-grandmaitre-arena"
     _date {
-      seconds: 1755734581
+      seconds: 1755821015
     }
   }
   address:
@@ -963,7 +1239,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/billings-estate-national-historic-site"
     _date {
-      seconds: 1755734584
+      seconds: 1755821019
     }
   }
   address:
@@ -986,7 +1262,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/bob-macquarrie-recreation-complex-orleans"
     _date {
-      seconds: 1755734584
+      seconds: 1755821019
     }
   }
   address:
@@ -3242,7 +3518,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/brewer-pool-and-arena"
     _date {
-      seconds: 1755734585
+      seconds: 1755821019
     }
   }
   address:
@@ -3571,6 +3847,215 @@ facilities {
         }
       }
     }
+    schedules {
+      caption: "Brewer Pool - swim and aquafit - September 2 to November 2"
+      _name: "swim and aquafit"
+      days: "Monday"
+      days: "Tuesday"
+      days: "Wednesday"
+      days: "Thursday"
+      days: "Friday"
+      days: "Saturday"
+      days: "Sunday"
+      activities {
+        label: "Lane swim"
+        _name: "lane swim"
+        days {
+          times {
+            label: "7:30 am - 1 pm"
+            _start: 450
+            _end: 780
+            _wkday: MONDAY
+          }
+          times {
+            label: "8:35 - 9:35 pm"
+            _start: 1235
+            _end: 1295
+            _wkday: MONDAY
+          }
+        }
+        days {
+          times {
+            label: "8 - 9 am"
+            _start: 480
+            _end: 540
+            _wkday: TUESDAY
+          }
+          times {
+            label: "11 am - noon"
+            _start: 660
+            _end: 720
+            _wkday: TUESDAY
+          }
+          times {
+            label: "8 - 9:30 pm"
+            _start: 1200
+            _end: 1290
+            _wkday: TUESDAY
+          }
+        }
+        days {
+          times {
+            label: "7:30 - 9:30 am"
+            _start: 450
+            _end: 570
+            _wkday: WEDNESDAY
+          }
+          times {
+            label: "11:30 am - 1 pm"
+            _start: 690
+            _end: 780
+            _wkday: WEDNESDAY
+          }
+          times {
+            label: "8 - 9:30 pm"
+            _start: 1200
+            _end: 1290
+            _wkday: WEDNESDAY
+          }
+        }
+        days {
+          times {
+            label: "8 - 9 am"
+            _start: 480
+            _end: 540
+            _wkday: THURSDAY
+          }
+          times {
+            label: "11 am - noon"
+            _start: 660
+            _end: 720
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "7:30 - 9:30 am"
+            _start: 450
+            _end: 570
+            _wkday: FRIDAY
+          }
+          times {
+            label: "11:30 am - 1 pm"
+            _start: 690
+            _end: 780
+            _wkday: FRIDAY
+          }
+        }
+        days {
+          times {
+            label: "12:30 - 1:30 pm"
+            _start: 750
+            _end: 810
+            _wkday: SATURDAY
+          }
+        }
+        days {
+          times {
+            label: "12:30 - 1:30 pm"
+            _start: 750
+            _end: 810
+            _wkday: SUNDAY
+          }
+        }
+      }
+      activities {
+        label: "Public swim"
+        _name: "public swim"
+        days {
+        }
+        days {
+        }
+        days {
+        }
+        days {
+        }
+        days {
+        }
+        days {
+          times {
+            label: "1:30 - 2:30 pm"
+            _start: 810
+            _end: 870
+            _wkday: SATURDAY
+          }
+        }
+        days {
+          times {
+            label: "1:30 - 2:30 pm"
+            _start: 810
+            _end: 870
+            _wkday: SUNDAY
+          }
+        }
+      }
+      activities {
+        label: "Aquafit general"
+        _name: "aquafit general"
+        days {
+        }
+        days {
+          times {
+            label: "9:05 - 10 am"
+            _start: 545
+            _end: 600
+            _wkday: TUESDAY
+          }
+          times {
+            label: "10 - 10:55 am"
+            _start: 600
+            _end: 655
+            _wkday: TUESDAY
+          }
+        }
+        days {
+          times {
+            label: "9:35 - 10:30 am"
+            _start: 575
+            _end: 630
+            _wkday: WEDNESDAY
+          }
+          times {
+            label: "10:30 - 11:25 am"
+            _start: 630
+            _end: 685
+            _wkday: WEDNESDAY
+          }
+        }
+        days {
+          times {
+            label: "9:05 - 10 am"
+            _start: 545
+            _end: 600
+            _wkday: THURSDAY
+          }
+          times {
+            label: "10 - 10:55 am"
+            _start: 600
+            _end: 655
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "9:35 - 10:30 am"
+            _start: 575
+            _end: 630
+            _wkday: FRIDAY
+          }
+          times {
+            label: "10:30 - 11:25 am"
+            _start: 630
+            _end: 685
+            _wkday: FRIDAY
+          }
+        }
+        days {
+        }
+        days {
+        }
+      }
+    }
   }
 }
 facilities {
@@ -3579,7 +4064,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/bridlewood-community-centre"
     _date {
-      seconds: 1755734586
+      seconds: 1755821021
     }
   }
   address:
@@ -3605,7 +4090,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/canterbury-recreation-complex"
     _date {
-      seconds: 1755734586
+      seconds: 1755821021
     }
   }
   address:
@@ -4559,11 +5044,13 @@ facilities {
         days {
         }
         days {
+        }
+        days {
           times {
             label: "11:45 am - 12:30 pm"
             _start: 705
             _end: 750
-            _wkday: TUESDAY
+            _wkday: WEDNESDAY
           }
         }
         days {
@@ -4573,10 +5060,8 @@ facilities {
             label: "11:45 am - 12:30 pm"
             _start: 705
             _end: 750
-            _wkday: THURSDAY
+            _wkday: FRIDAY
           }
-        }
-        days {
         }
         days {
         }
@@ -4663,7 +5148,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/cardelrec-recreation-complex-goulbourn"
     _date {
-      seconds: 1755734586
+      seconds: 1755821021
     }
   }
   address:
@@ -4675,6 +5160,14 @@ facilities {
     lat: 45.263355
   }
   special_hours_html:
+    "<ul>\n"
+    "<li><strong>Saturday, August 23</strong>\n"
+    "<ul>\n"
+    "<li>Indoor cycling, 7:30 to 8:30 am, cancelled</li>\n"
+    "</ul>\n"
+    "</li>\n"
+    "</ul>\n"
+    "<h3>Closures</h3>\n"
     "<ul>\n"
     "<li><strong><span><span><span><span>August 11 to September 1</span></span></span></span></strong>\n"
     "<ul>\n"
@@ -5253,10 +5746,9 @@ facilities {
     _title: "Group Fitness"
     schedule_changes_html:
       "<ul>\n"
-      "<li><strong>August 25 to September 1</strong>\n"
+      "<li><strong>Saturday August 23</strong>\n"
       "<ul>\n"
-      "<li>The facility is closed for annual maintenance.</li>\n"
-      "<li>The arenas remain open.</li>\n"
+      "<li>Indoor cycling, 7:30 to 8:30 am, cancelled</li>\n"
       "</ul>\n"
       "</li>\n"
       "</ul>"
@@ -5885,12 +6377,6 @@ facilities {
           }
         }
         days {
-          times {
-            label: "7:30 - 8:30 am"
-            _start: 450
-            _end: 510
-            _wkday: SUNDAY
-          }
         }
       }
       activities {
@@ -6677,7 +7163,7 @@ facilities {
     label: "Drop-in schedule - skating"
     _title: "Skating"
     schedules {
-      caption: "CARDELREC Recreation Complex Goulbourn - skating - July 3 to September 1"
+      caption: "CARDELREC Recreation Complex Goulbourn - skating - July 3 to August 30"
       _name: "skating"
       days: "Monday"
       days: "Tuesday"
@@ -6760,7 +7246,7 @@ facilities {
       }
     }
     schedules {
-      caption: "CARDELREC Recreation Complex Goulbourn - skating - September 3 to March 28"
+      caption: "CARDELREC Recreation Complex Goulbourn - skating - September 1, 2025 to March 28, 2026"
       _name: "skating"
       days: "Monday"
       days: "Tuesday"
@@ -6949,7 +7435,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/carleton-heights-community-centre"
     _date {
-      seconds: 1755734586
+      seconds: 1755821023
     }
   }
   address:
@@ -7107,7 +7593,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/carlington-recreation-centre"
     _date {
-      seconds: 1755734586
+      seconds: 1755821024
     }
   }
   address:
@@ -7130,7 +7616,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/champagne-fitness-centre"
     _date {
-      seconds: 1755734587
+      seconds: 1755821025
     }
   }
   address:
@@ -7379,7 +7865,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/chapman-mills-community-building"
     _date {
-      seconds: 1755734588
+      seconds: 1755821027
     }
   }
   address:
@@ -7402,7 +7888,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/charlie-conacher-community-building"
     _date {
-      seconds: 1755734591
+      seconds: 1755821029
     }
   }
   address:
@@ -7425,7 +7911,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/churchill-seniors-centre"
     _date {
-      seconds: 1755734592
+      seconds: 1755821031
     }
   }
   address:
@@ -7552,7 +8038,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/constance-and-buckhams-bay-community-centre"
     _date {
-      seconds: 1755734593
+      seconds: 1755821032
     }
   }
   address:
@@ -7565,7 +8051,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/corkstown-pool"
     _date {
-      seconds: 1755734595
+      seconds: 1755821033
     }
   }
   address:
@@ -7741,7 +8227,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/crestview-pool"
     _date {
-      seconds: 1755734595
+      seconds: 1755821034
     }
   }
   address:
@@ -8259,7 +8745,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/cumberland-heritage-village-museum"
     _date {
-      seconds: 1755734595
+      seconds: 1755821037
     }
   }
   address:
@@ -8285,7 +8771,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/deborah-anne-kirwan-pool"
     _date {
-      seconds: 1755734596
+      seconds: 1755821037
     }
   }
   address:
@@ -8562,7 +9048,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/dempsey-community-centre"
     _date {
-      seconds: 1755734596
+      seconds: 1755821040
     }
   }
   address:
@@ -8600,7 +9086,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/diane-deans-greenboro-community-centre"
     _date {
-      seconds: 1755734596
+      seconds: 1755821040
     }
   }
   address:
@@ -9952,7 +10438,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/dovercourt-recreation-centre"
     _date {
-      seconds: 1755734597
+      seconds: 1755821041
     }
   }
   address:
@@ -9970,7 +10456,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/earl-armstrong-arena"
     _date {
-      seconds: 1755734598
+      seconds: 1755821042
     }
   }
   address:
@@ -9987,7 +10473,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/entrance-pool"
     _date {
-      seconds: 1755734599
+      seconds: 1755821043
     }
   }
   address:
@@ -10626,7 +11112,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/eva-james-memorial-community-centre"
     _date {
-      seconds: 1755734599
+      seconds: 1755821046
     }
   }
   address:
@@ -11584,7 +12070,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/fairfields-heritage-house"
     _date {
-      seconds: 1755734600
+      seconds: 1755821049
     }
   }
   address:
@@ -11601,7 +12087,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/fallingbrook-community-centre"
     _date {
-      seconds: 1755734601
+      seconds: 1755821050
     }
   }
   address:
@@ -11622,7 +12108,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/fisher-park-community-centre"
     _date {
-      seconds: 1755734602
+      seconds: 1755821051
     }
   }
   address:
@@ -11644,7 +12130,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/foster-farm-community-centre"
     _date {
-      seconds: 1755734603
+      seconds: 1755821053
     }
   }
   address:
@@ -11667,7 +12153,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/francois-dupuis-recreation-centre"
     _date {
-      seconds: 1755734603
+      seconds: 1755821053
     }
   }
   address:
@@ -11698,7 +12184,7 @@ facilities {
       "</li>\n"
       "</ul>"
     schedules {
-      caption: "Francois Dupuis Recreation Centre - swim and aquafit - June 23 to September 2"
+      caption: "Francois Dupuis Recreation Centre - swim and aquafit - June 23 to August 24"
       _name: "francois dupuis recreation centre - swim and aquafit"
       days: "Monday"
       days: "Tuesday"
@@ -12441,7 +12927,1420 @@ facilities {
       }
     }
     schedules {
-      caption: "Francois Dupuis Recreation Centre - swim and aquafit - September 2 to December 21"
+      caption: "Francois Dupuis Recreation Centre - swim and aquafit - August 25 to 31"
+      _name: "francois dupuis recreation centre - swim and aquafit"
+      days: "Monday"
+      days: "Tuesday"
+      days: "Wednesday"
+      days: "Thursday"
+      days: "Friday"
+      days: "Saturday"
+      days: "Sunday"
+      activities {
+        label: "Lane swim"
+        _name: "lane swim"
+        days {
+          times {
+            label: "7:30 - 8:30 am"
+            _start: 450
+            _end: 510
+            _wkday: MONDAY
+          }
+          times {
+            label: "Noon - 1:30 pm"
+            _start: 720
+            _end: 810
+            _wkday: MONDAY
+          }
+          times {
+            label: "7:30 - 8:30 pm"
+            _start: 1170
+            _end: 1230
+            _wkday: MONDAY
+          }
+        }
+        days {
+          times {
+            label: "7:30 - 8:30 am"
+            _start: 450
+            _end: 510
+            _wkday: TUESDAY
+          }
+          times {
+            label: "Noon - 1:30 pm"
+            _start: 720
+            _end: 810
+            _wkday: TUESDAY
+          }
+          times {
+            label: "6:30 - 8:30 pm"
+            _start: 1110
+            _end: 1230
+            _wkday: TUESDAY
+          }
+        }
+        days {
+          times {
+            label: "7:30 - 8:30 am"
+            _start: 450
+            _end: 510
+            _wkday: WEDNESDAY
+          }
+          times {
+            label: "Noon - 1:30 pm"
+            _start: 720
+            _end: 810
+            _wkday: WEDNESDAY
+          }
+          times {
+            label: "7:30 - 8:30 pm"
+            _start: 1170
+            _end: 1230
+            _wkday: WEDNESDAY
+          }
+        }
+        days {
+          times {
+            label: "7:30 - 8:30 am"
+            _start: 450
+            _end: 510
+            _wkday: THURSDAY
+          }
+          times {
+            label: "Noon - 1:30 pm"
+            _start: 720
+            _end: 810
+            _wkday: THURSDAY
+          }
+          times {
+            label: "7:30 - 8:30 pm"
+            _start: 1170
+            _end: 1230
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "7:30 - 8:30 am"
+            _start: 450
+            _end: 510
+            _wkday: FRIDAY
+          }
+          times {
+            label: "Noon - 1:30 pm"
+            _start: 720
+            _end: 810
+            _wkday: FRIDAY
+          }
+          times {
+            label: "4:30 - 6 pm"
+            _start: 990
+            _end: 1080
+            _wkday: FRIDAY
+          }
+          times {
+            label: "7:30 - 8:30 pm"
+            _start: 1170
+            _end: 1230
+            _wkday: FRIDAY
+          }
+        }
+        days {
+          times {
+            label: "9:30 - 11:30 am"
+            _start: 570
+            _end: 690
+            _wkday: SATURDAY
+          }
+          times {
+            label: "3 - 4 pm"
+            _start: 900
+            _end: 960
+            _wkday: SATURDAY
+          }
+        }
+        days {
+          times {
+            label: "11:30 am - 1 pm"
+            _start: 690
+            _end: 780
+            _wkday: SUNDAY
+          }
+          times {
+            label: "3 - 4 pm"
+            _start: 900
+            _end: 960
+            _wkday: SUNDAY
+          }
+        }
+      }
+      activities {
+        label: "Lane swim - shared pool"
+        _name: "lane swim - shared pool"
+        days {
+          times {
+            label: "10:30 am - noon"
+            _start: 630
+            _end: 720
+            _wkday: MONDAY
+          }
+          times {
+            label: "4:30 - 7:30 pm"
+            _start: 990
+            _end: 1170
+            _wkday: MONDAY
+          }
+        }
+        days {
+          times {
+            label: "10:30 am - noon"
+            _start: 630
+            _end: 720
+            _wkday: TUESDAY
+          }
+        }
+        days {
+          times {
+            label: "10:30 am - noon"
+            _start: 630
+            _end: 720
+            _wkday: WEDNESDAY
+          }
+          times {
+            label: "4:30 - 7:30 pm"
+            _start: 990
+            _end: 1170
+            _wkday: WEDNESDAY
+          }
+        }
+        days {
+          times {
+            label: "10:30 am - noon"
+            _start: 630
+            _end: 720
+            _wkday: THURSDAY
+          }
+          times {
+            label: "6:30 - 7:30 pm"
+            _start: 1110
+            _end: 1170
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "10:30 am - noon"
+            _start: 630
+            _end: 720
+            _wkday: FRIDAY
+          }
+          times {
+            label: "6 - 7:30 pm"
+            _start: 1080
+            _end: 1170
+            _wkday: FRIDAY
+          }
+        }
+        days {
+          times {
+            label: "11:30 am - 1 pm"
+            _start: 690
+            _end: 780
+            _wkday: SATURDAY
+          }
+        }
+        days {
+          times {
+            label: "8:30 - 9:30 am"
+            _start: 510
+            _end: 570
+            _wkday: SUNDAY
+          }
+          times {
+            label: "10:30 am - 1 pm"
+            _start: 630
+            _end: 780
+            _wkday: SUNDAY
+          }
+        }
+      }
+      activities {
+        label: "Preschool swim - therapeutic pool"
+        _name: "preschool swim - therapeutic pool"
+        days {
+        }
+        days {
+        }
+        days {
+        }
+        days {
+        }
+        days {
+        }
+        days {
+          times {
+            label: "9:30 - 11:30 am"
+            _start: 570
+            _end: 690
+            _wkday: SATURDAY
+          }
+        }
+        days {
+          times {
+            label: "9:30 - 10:30 am"
+            _start: 570
+            _end: 630
+            _wkday: SUNDAY
+          }
+        }
+      }
+      activities {
+        label: "Public swim - therapeutic pool"
+        _name: "public swim - therapeutic pool"
+        days {
+          times {
+            label: "Noon - 1:30 pm"
+            _start: 720
+            _end: 810
+            _wkday: MONDAY
+          }
+          times {
+            label: "1:30 - 4 pm"
+            _start: 810
+            _end: 960
+            _wkday: MONDAY
+          }
+        }
+        days {
+          times {
+            label: "Noon - 1:30 pm"
+            _start: 720
+            _end: 810
+            _wkday: TUESDAY
+          }
+          times {
+            label: "3 - 4 pm"
+            _start: 900
+            _end: 960
+            _wkday: TUESDAY
+          }
+          times {
+            label: "6:30 - 8:30 pm"
+            _start: 1110
+            _end: 1230
+            _wkday: TUESDAY
+          }
+        }
+        days {
+          times {
+            label: "1 - 4 pm"
+            _start: 780
+            _end: 960
+            _wkday: WEDNESDAY
+          }
+        }
+        days {
+          times {
+            label: "Noon - 1:30 pm"
+            _start: 720
+            _end: 810
+            _wkday: THURSDAY
+          }
+          times {
+            label: "3 - 4 pm"
+            _start: 900
+            _end: 960
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "Noon - 1:30 pm"
+            _start: 720
+            _end: 810
+            _wkday: FRIDAY
+          }
+          times {
+            label: "1:30 - 4 pm"
+            _start: 810
+            _end: 960
+            _wkday: FRIDAY
+          }
+          times {
+            label: "4:30 - 6 pm"
+            _start: 990
+            _end: 1080
+            _wkday: FRIDAY
+          }
+          times {
+            label: "6 - 7:30 pm"
+            _start: 1080
+            _end: 1170
+            _wkday: FRIDAY
+          }
+          times {
+            label: "7:30 - 8:30 pm"
+            _start: 1170
+            _end: 1230
+            _wkday: FRIDAY
+          }
+        }
+        days {
+          times {
+            label: "11:30 am - 1 pm"
+            _start: 690
+            _end: 780
+            _wkday: SATURDAY
+          }
+          times {
+            label: "1 - 3 pm"
+            _start: 780
+            _end: 900
+            _wkday: SATURDAY
+          }
+        }
+        days {
+          times {
+            label: "10:30 am - 1 pm"
+            _start: 630
+            _end: 780
+            _wkday: SUNDAY
+          }
+          times {
+            label: "1 - 3 pm"
+            _start: 780
+            _end: 900
+            _wkday: SUNDAY
+          }
+        }
+      }
+      activities {
+        label: "Public swim - 25m pool"
+        _name: "public swim - 25m pool"
+        days {
+          times {
+            label: "1:30 - 4 pm"
+            _start: 810
+            _end: 960
+            _wkday: MONDAY
+          }
+        }
+        days {
+          times {
+            label: "3 - 4 pm"
+            _start: 900
+            _end: 960
+            _wkday: TUESDAY
+          }
+        }
+        days {
+          times {
+            label: "1:30 - 4 pm"
+            _start: 810
+            _end: 960
+            _wkday: WEDNESDAY
+          }
+        }
+        days {
+          times {
+            label: "3 - 4 pm"
+            _start: 900
+            _end: 960
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "1:30 - 4 pm"
+            _start: 810
+            _end: 960
+            _wkday: FRIDAY
+          }
+          times {
+            label: "6 - 7:30 pm"
+            _start: 1080
+            _end: 1170
+            _wkday: FRIDAY
+          }
+        }
+        days {
+          times {
+            label: "11:30 am - 1 pm"
+            _start: 690
+            _end: 780
+            _wkday: SATURDAY
+          }
+          times {
+            label: "1 - 3 pm"
+            _start: 780
+            _end: 900
+            _wkday: SATURDAY
+          }
+        }
+        days {
+          times {
+            label: "1 - 3 pm"
+            _start: 780
+            _end: 900
+            _wkday: SUNDAY
+          }
+        }
+      }
+      activities {
+        label: "Aqua general deep"
+        _name: "aqua general deep"
+        days {
+          times {
+            label: "8:30 - 9:25 am"
+            _start: 510
+            _end: 565
+            _wkday: MONDAY
+          }
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: MONDAY
+          }
+        }
+        days {
+          times {
+            label: "8:30 - 9:25 am"
+            _start: 510
+            _end: 565
+            _wkday: TUESDAY
+          }
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: TUESDAY
+          }
+          times {
+            label: "5:30 - 6:25 pm"
+            _start: 1050
+            _end: 1105
+            _wkday: TUESDAY
+          }
+        }
+        days {
+          times {
+            label: "8:30 - 9:25 am"
+            _start: 510
+            _end: 565
+            _wkday: WEDNESDAY
+          }
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: WEDNESDAY
+          }
+        }
+        days {
+          times {
+            label: "5:30 - 6:25 pm"
+            _start: 1050
+            _end: 1105
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "8:30 - 9:25 am"
+            _start: 510
+            _end: 565
+            _wkday: FRIDAY
+          }
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: FRIDAY
+          }
+        }
+        days {
+        }
+        days {
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: SUNDAY
+          }
+        }
+      }
+      activities {
+        label: "Aqua general shallow"
+        _name: "aqua general shallow"
+        days {
+          times {
+            label: "8:30 - 9:25 am"
+            _start: 510
+            _end: 565
+            _wkday: MONDAY
+          }
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: MONDAY
+          }
+        }
+        days {
+          times {
+            label: "8:30 - 9:25 am"
+            _start: 510
+            _end: 565
+            _wkday: TUESDAY
+          }
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: TUESDAY
+          }
+          times {
+            label: "5:30 - 6:25 pm"
+            _start: 1050
+            _end: 1105
+            _wkday: TUESDAY
+          }
+        }
+        days {
+          times {
+            label: "8:30 - 9:25 am"
+            _start: 510
+            _end: 565
+            _wkday: WEDNESDAY
+          }
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: WEDNESDAY
+          }
+        }
+        days {
+          times {
+            label: "8:30 - 9:25 am"
+            _start: 510
+            _end: 565
+            _wkday: THURSDAY
+          }
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: THURSDAY
+          }
+          times {
+            label: "5:30 - 6:25 pm"
+            _start: 1050
+            _end: 1105
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "8:30 - 9:25 am"
+            _start: 510
+            _end: 565
+            _wkday: FRIDAY
+          }
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: FRIDAY
+          }
+        }
+        days {
+        }
+        days {
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: SUNDAY
+          }
+        }
+      }
+      activities {
+        label: "Sauna"
+        _name: "sauna"
+        days {
+          times {
+            label: "7:30 am - 4 pm"
+            _start: 450
+            _end: 960
+            _wkday: MONDAY
+          }
+          times {
+            label: "4:30 - 8:30 pm"
+            _start: 990
+            _end: 1230
+            _wkday: MONDAY
+          }
+        }
+        days {
+          times {
+            label: "7:30 am - 1:30 pm"
+            _start: 450
+            _end: 810
+            _wkday: TUESDAY
+          }
+          times {
+            label: "3 - 4 pm"
+            _start: 900
+            _end: 960
+            _wkday: TUESDAY
+          }
+          times {
+            label: "5:30 - 8:30 pm"
+            _start: 1050
+            _end: 1230
+            _wkday: TUESDAY
+          }
+        }
+        days {
+          times {
+            label: "7:30 am - 4 pm"
+            _start: 450
+            _end: 960
+            _wkday: WEDNESDAY
+          }
+          times {
+            label: "4:30 - 8:30 pm"
+            _start: 990
+            _end: 1230
+            _wkday: WEDNESDAY
+          }
+        }
+        days {
+          times {
+            label: "7:30 - 1:30 pm"
+            _start: 1170
+            _end: 2250
+            _wkday: THURSDAY
+          }
+          times {
+            label: "3 - 4 pm"
+            _start: 900
+            _end: 960
+            _wkday: THURSDAY
+          }
+          times {
+            label: "5:30 - 8:30 pm"
+            _start: 1050
+            _end: 1230
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "7:30 am - 4 pm"
+            _start: 450
+            _end: 960
+            _wkday: FRIDAY
+          }
+          times {
+            label: "4:30 - 8:30 pm"
+            _start: 990
+            _end: 1230
+            _wkday: FRIDAY
+          }
+        }
+        days {
+          times {
+            label: "9:30 am - 4 pm"
+            _start: 570
+            _end: 960
+            _wkday: SATURDAY
+          }
+        }
+        days {
+          times {
+            label: "8:30 am - 4 pm"
+            _start: 510
+            _end: 960
+            _wkday: SUNDAY
+          }
+        }
+      }
+    }
+    schedules {
+      caption: "Francois Dupuis Recreation Centre - swim and aquafit - September 2 to 7"
+      _name: "francois dupuis recreation centre - swim and aquafit"
+      days: "Tuesday"
+      days: "Wednesday"
+      days: "Thursday"
+      days: "Friday"
+      days: "Saturday"
+      days: "Sunday"
+      activities {
+        label: "Lane swim"
+        _name: "lane swim"
+        days {
+          times {
+            label: "7:30 am - 8:30 am"
+            _start: 450
+            _end: 510
+            _wkday: TUESDAY
+          }
+          times {
+            label: "10:30 am - 1 pm"
+            _start: 630
+            _end: 780
+            _wkday: TUESDAY
+          }
+          times {
+            label: "2:30 pm - 3:30 pm"
+            _start: 870
+            _end: 930
+            _wkday: TUESDAY
+          }
+          times {
+            label: "7 pm - 9 pm"
+            _start: 1140
+            _end: 1260
+            _wkday: TUESDAY
+          }
+        }
+        days {
+          times {
+            label: "7:30 am - 8:30 am"
+            _start: 450
+            _end: 510
+            _wkday: WEDNESDAY
+          }
+          times {
+            label: "10:30 am - 12:30 pm"
+            _start: 630
+            _end: 750
+            _wkday: WEDNESDAY
+          }
+          times {
+            label: "2 pm - 3 pm"
+            _start: 840
+            _end: 900
+            _wkday: WEDNESDAY
+          }
+        }
+        days {
+          times {
+            label: "7:30 am - 8:30 am"
+            _start: 450
+            _end: 510
+            _wkday: THURSDAY
+          }
+          times {
+            label: "10:30 am - 1 pm"
+            _start: 630
+            _end: 780
+            _wkday: THURSDAY
+          }
+          times {
+            label: "2:30 pm - 3:30 pm"
+            _start: 870
+            _end: 930
+            _wkday: THURSDAY
+          }
+          times {
+            label: "6:30 - 9 pm"
+            _start: 1110
+            _end: 1260
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "7:30 am - 8:30 am"
+            _start: 450
+            _end: 510
+            _wkday: FRIDAY
+          }
+          times {
+            label: "10:30 am - 1 pm"
+            _start: 630
+            _end: 780
+            _wkday: FRIDAY
+          }
+          times {
+            label: "2:30 pm - 3:30 pm"
+            _start: 870
+            _end: 930
+            _wkday: FRIDAY
+          }
+          times {
+            label: "5 - 9 pm"
+            _start: 1020
+            _end: 1260
+            _wkday: FRIDAY
+          }
+        }
+        days {
+          times {
+            label: "9 am - 1 pm"
+            _start: 540
+            _end: 780
+            _wkday: SATURDAY
+          }
+          times {
+            label: "3 - 4 pm"
+            _start: 900
+            _end: 960
+            _wkday: SATURDAY
+          }
+        }
+        days {
+          times {
+            label: "10:30 am - 1 pm"
+            _start: 630
+            _end: 780
+            _wkday: SUNDAY
+          }
+        }
+      }
+      activities {
+        label: "Lane swim - shared pool"
+        _name: "lane swim - shared pool"
+        days {
+          times {
+            label: "8:30 am - 10:30 am"
+            _start: 510
+            _end: 630
+            _wkday: TUESDAY
+          }
+          times {
+            label: "1 pm - 2:30 pm"
+            _start: 780
+            _end: 870
+            _wkday: TUESDAY
+          }
+          times {
+            label: "6 - 9 pm"
+            _start: 1080
+            _end: 1260
+            _wkday: TUESDAY
+          }
+        }
+        days {
+          times {
+            label: "8:30 am - 10:30 am"
+            _start: 510
+            _end: 630
+            _wkday: WEDNESDAY
+          }
+          times {
+            label: "12:30 pm - 2 pm"
+            _start: 750
+            _end: 840
+            _wkday: WEDNESDAY
+          }
+          times {
+            label: "6 - 9 pm"
+            _start: 1080
+            _end: 1260
+            _wkday: WEDNESDAY
+          }
+        }
+        days {
+          times {
+            label: "8:30 am - 10:30 am"
+            _start: 510
+            _end: 630
+            _wkday: THURSDAY
+          }
+          times {
+            label: "1 pm - 2:30 pm"
+            _start: 780
+            _end: 870
+            _wkday: THURSDAY
+          }
+          times {
+            label: "5:30 - 6:30 pm"
+            _start: 1050
+            _end: 1110
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "8:30 am - 10:30 am"
+            _start: 510
+            _end: 630
+            _wkday: FRIDAY
+          }
+          times {
+            label: "1 pm - 2:30 pm"
+            _start: 780
+            _end: 870
+            _wkday: FRIDAY
+          }
+          times {
+            label: "7 pm - 9 pm"
+            _start: 1140
+            _end: 1260
+            _wkday: FRIDAY
+          }
+        }
+        days {
+        }
+        days {
+          times {
+            label: "9:30 - 10:30 am"
+            _start: 570
+            _end: 630
+            _wkday: SUNDAY
+          }
+        }
+      }
+      activities {
+        label: "Preschool swim - therapeutic pool"
+        _name: "preschool swim - therapeutic pool"
+        days {
+          times {
+            label: "9:30 - 10:30 am"
+            _start: 570
+            _end: 630
+            _wkday: TUESDAY
+          }
+        }
+        days {
+          times {
+            label: "9:30 - 10:30 am"
+            _start: 570
+            _end: 630
+            _wkday: WEDNESDAY
+          }
+        }
+        days {
+          times {
+            label: "9:30 - 10:30 am"
+            _start: 570
+            _end: 630
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "9:30 - 10:30 am"
+            _start: 570
+            _end: 630
+            _wkday: FRIDAY
+          }
+        }
+        days {
+          times {
+            label: "8 - 9 am"
+            _start: 480
+            _end: 540
+            _wkday: SATURDAY
+          }
+        }
+        days {
+          times {
+            label: "8 - 9 am"
+            _start: 480
+            _end: 540
+            _wkday: SUNDAY
+          }
+        }
+      }
+      activities {
+        label: "Public swim - therapeutic pool"
+        _name: "public swim - therapeutic pool"
+        days {
+          times {
+            label: "11:30 am - 2:30 pm"
+            _start: 690
+            _end: 870
+            _wkday: TUESDAY
+          }
+          times {
+            label: "8 - 9 pm"
+            _start: 1200
+            _end: 1260
+            _wkday: TUESDAY
+          }
+        }
+        days {
+          times {
+            label: "12:30 - 2 pm"
+            _start: 750
+            _end: 840
+            _wkday: WEDNESDAY
+          }
+        }
+        days {
+          times {
+            label: "10:30 am - 2:30 pm"
+            _start: 630
+            _end: 870
+            _wkday: THURSDAY
+          }
+          times {
+            label: "8 pm - 9 pm"
+            _start: 1200
+            _end: 1260
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "11:30 am - 3:30 pm"
+            _start: 690
+            _end: 930
+            _wkday: FRIDAY
+          }
+          times {
+            label: "5 - 9 pm"
+            _start: 1020
+            _end: 1260
+            _wkday: FRIDAY
+          }
+        }
+        days {
+          times {
+            label: "9 am - 3 pm"
+            _start: 540
+            _end: 900
+            _wkday: SATURDAY
+          }
+        }
+        days {
+          times {
+            label: "9 am - 3 pm"
+            _start: 540
+            _end: 900
+            _wkday: SUNDAY
+          }
+        }
+      }
+      activities {
+        label: "Public swim - 25m pool"
+        _name: "public swim - 25m pool"
+        days {
+          times {
+            label: "1 - 2:30 pm"
+            _start: 780
+            _end: 870
+            _wkday: TUESDAY
+          }
+        }
+        days {
+          times {
+            label: "12:30 - 2 pm"
+            _start: 750
+            _end: 840
+            _wkday: WEDNESDAY
+          }
+        }
+        days {
+          times {
+            label: "1 - 2:30 pm"
+            _start: 780
+            _end: 870
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "1 - 2:30 pm"
+            _start: 780
+            _end: 870
+            _wkday: FRIDAY
+          }
+          times {
+            label: "7 - 9 pm"
+            _start: 1140
+            _end: 1260
+            _wkday: FRIDAY
+          }
+        }
+        days {
+          times {
+            label: "1 - 3 pm"
+            _start: 780
+            _end: 900
+            _wkday: SATURDAY
+          }
+        }
+        days {
+          times {
+            label: "1 - 3 pm"
+            _start: 780
+            _end: 900
+            _wkday: SUNDAY
+          }
+        }
+      }
+      activities {
+        label: "Aqua general deep"
+        _name: "aqua general deep"
+        days {
+          times {
+            label: "8:30 - 9:25 am"
+            _start: 510
+            _end: 565
+            _wkday: TUESDAY
+          }
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: TUESDAY
+          }
+          times {
+            label: "6 - 6:55 pm"
+            _start: 1080
+            _end: 1135
+            _wkday: TUESDAY
+          }
+        }
+        days {
+          times {
+            label: "8:30 - 9:25 am"
+            _start: 510
+            _end: 565
+            _wkday: WEDNESDAY
+          }
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: WEDNESDAY
+          }
+        }
+        days {
+          times {
+            label: "8:30 - 9:25 am"
+            _start: 510
+            _end: 565
+            _wkday: THURSDAY
+          }
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: THURSDAY
+          }
+          times {
+            label: "5:30 - 6:25 pm"
+            _start: 1050
+            _end: 1105
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "8:30 - 9:25 am"
+            _start: 510
+            _end: 565
+            _wkday: FRIDAY
+          }
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: FRIDAY
+          }
+        }
+        days {
+        }
+        days {
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: SUNDAY
+          }
+        }
+      }
+      activities {
+        label: "Aqua general shallow"
+        _name: "aqua general shallow"
+        days {
+          times {
+            label: "8:30 - 9:25 am"
+            _start: 510
+            _end: 565
+            _wkday: TUESDAY
+          }
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: TUESDAY
+          }
+          times {
+            label: "6 - 6:55 pm"
+            _start: 1080
+            _end: 1135
+            _wkday: TUESDAY
+          }
+        }
+        days {
+          times {
+            label: "8:30 - 9:25 am"
+            _start: 510
+            _end: 565
+            _wkday: WEDNESDAY
+          }
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: WEDNESDAY
+          }
+        }
+        days {
+          times {
+            label: "8:30 - 9:25 am"
+            _start: 510
+            _end: 565
+            _wkday: THURSDAY
+          }
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: THURSDAY
+          }
+          times {
+            label: "5:30 - 6:25 pm"
+            _start: 1050
+            _end: 1105
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "8:30 - 9:25 am"
+            _start: 510
+            _end: 565
+            _wkday: FRIDAY
+          }
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: FRIDAY
+          }
+        }
+        days {
+        }
+        days {
+          times {
+            label: "9:30 - 10:25 am"
+            _start: 570
+            _end: 625
+            _wkday: SUNDAY
+          }
+        }
+      }
+      activities {
+        label: "Aqua lite - warm pool"
+        _name: "aqua lite - warm pool"
+        days {
+          times {
+            label: "2:30 - 3:25 pm"
+            _start: 870
+            _end: 925
+            _wkday: TUESDAY
+          }
+        }
+        days {
+        }
+        days {
+        }
+        days {
+        }
+        days {
+        }
+        days {
+        }
+      }
+      activities {
+        label: "Sauna"
+        _name: "sauna"
+        days {
+          times {
+            label: "7:30 am - 3:30 pm"
+            _start: 450
+            _end: 930
+            _wkday: TUESDAY
+          }
+          times {
+            label: "6 - 9 pm"
+            _start: 1080
+            _end: 1260
+            _wkday: TUESDAY
+          }
+        }
+        days {
+          times {
+            label: "7:30 am - 3 pm"
+            _start: 450
+            _end: 900
+            _wkday: WEDNESDAY
+          }
+          times {
+            label: "6 - 9 pm"
+            _start: 1080
+            _end: 1260
+            _wkday: WEDNESDAY
+          }
+        }
+        days {
+          times {
+            label: "7:30 am - 3:30 pm"
+            _start: 450
+            _end: 930
+            _wkday: THURSDAY
+          }
+          times {
+            label: "5:30 - 9 pm"
+            _start: 1050
+            _end: 1260
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "7:30 am - 3:30 pm"
+            _start: 450
+            _end: 930
+            _wkday: FRIDAY
+          }
+          times {
+            label: "5 - 9 pm"
+            _start: 1020
+            _end: 1260
+            _wkday: FRIDAY
+          }
+        }
+        days {
+          times {
+            label: "9 am - 4 pm"
+            _start: 540
+            _end: 960
+            _wkday: SATURDAY
+          }
+        }
+        days {
+          times {
+            label: "9:30 am - 4 pm"
+            _start: 570
+            _end: 960
+            _wkday: SUNDAY
+          }
+        }
+      }
+    }
+    schedules {
+      caption: "Francois Dupuis Recreation Centre - swim and aquafit - September 8 to December 21"
       _name: "francois dupuis recreation centre - swim and aquafit"
       days: "Monday"
       days: "Tuesday"
@@ -12510,12 +14409,6 @@ facilities {
             label: "7:30 - 8:30 am"
             _start: 450
             _end: 510
-            _wkday: WEDNESDAY
-          }
-          times {
-            label: "9:30 - 10:30 am"
-            _start: 570
-            _end: 630
             _wkday: WEDNESDAY
           }
           times {
@@ -12627,14 +14520,8 @@ facilities {
         }
         days {
           times {
-            label: "8:30 - 9:30 am"
+            label: "8:30 - 11:30 am"
             _start: 510
-            _end: 570
-            _wkday: WEDNESDAY
-          }
-          times {
-            label: "10:30 - 11:30 am"
-            _start: 630
             _end: 690
             _wkday: WEDNESDAY
           }
@@ -12734,6 +14621,12 @@ facilities {
           }
         }
         days {
+          times {
+            label: "9:30 - 10:30 am"
+            _start: 570
+            _end: 630
+            _wkday: WEDNESDAY
+          }
         }
         days {
           times {
@@ -14225,7 +16118,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/fred-barrett-arena"
     _date {
-      seconds: 1755734604
+      seconds: 1755821053
     }
   }
   address:
@@ -14455,7 +16348,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/general-burns-pool"
     _date {
-      seconds: 1755734606
+      seconds: 1755821053
     }
   }
   address:
@@ -14714,7 +16607,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/genest-pool"
     _date {
-      seconds: 1755734606
+      seconds: 1755821054
     }
   }
   address:
@@ -15159,7 +17052,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/glebe-community-centre"
     _date {
-      seconds: 1755734609
+      seconds: 1755821056
     }
   }
   address:
@@ -15177,7 +17070,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/glen-cairn-community-centre"
     _date {
-      seconds: 1755734610
+      seconds: 1755821058
     }
   }
   address:
@@ -15195,7 +17088,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/glen-cairn-pool"
     _date {
-      seconds: 1755734610
+      seconds: 1755821058
     }
   }
   address:
@@ -15208,9 +17101,10 @@ facilities {
   }
   special_hours_html:
     "<ul>\n"
-    "<li><span><span><strong><span>Saturday, August 30 to Monday, September 1</span></strong></span></span>\n"
+    "<li><strong>Main Pool will be closed for the remainder of the day, August 21</strong></li>\n"
+    "<li><strong>Saturday, August 30 to Monday, September 1</strong>\n"
     "<ul>\n"
-    "<li><span><span><span><span>Noon to 4 pm</span></span></span></span></li>\n"
+    "<li>Noon to 4 pm</li>\n"
     "</ul>\n"
     "</li>\n"
     "</ul>\n"
@@ -15727,7 +17621,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/greely-community-centre"
     _date {
-      seconds: 1755734611
+      seconds: 1755821059
     }
   }
   address:
@@ -15750,7 +17644,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/heron-road-community-centre"
     _date {
-      seconds: 1755734612
+      seconds: 1755821061
     }
   }
   address:
@@ -15772,7 +17666,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/heron-seniors-centre"
     _date {
-      seconds: 1755734613
+      seconds: 1755821063
     }
   }
   address:
@@ -15797,7 +17691,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/hintonburg-community-centre"
     _date {
-      seconds: 1755734616
+      seconds: 1755821064
     }
   }
   address:
@@ -15901,7 +17795,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/howard-darwin-centennial-arena"
     _date {
-      seconds: 1755734619
+      seconds: 1755821066
     }
   }
   address:
@@ -16045,7 +17939,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/hunt-club-riverside-park-community-centre"
     _date {
-      seconds: 1755734620
+      seconds: 1755821068
     }
   }
   address:
@@ -16927,7 +18821,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/ja-dulude-arena"
     _date {
-      seconds: 1755734621
+      seconds: 1755821069
     }
   }
   address:
@@ -16944,7 +18838,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/jack-charron-arena"
     _date {
-      seconds: 1755734623
+      seconds: 1755821071
     }
   }
   address:
@@ -16970,7 +18864,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/jack-purcell-community-centre"
     _date {
-      seconds: 1755734624
+      seconds: 1755821072
     }
   }
   address:
@@ -17510,7 +19404,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/jim-durrell-recreation-centre"
     _date {
-      seconds: 1755734625
+      seconds: 1755821074
     }
   }
   address:
@@ -17657,7 +19551,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/jim-tubman-chevrolet-rink"
     _date {
-      seconds: 1755734626
+      seconds: 1755821076
     }
   }
   address:
@@ -18412,7 +20306,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/john-g-mlacak-centre"
     _date {
-      seconds: 1755734627
+      seconds: 1755821078
     }
   }
   address:
@@ -18437,7 +20331,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/johnny-leroux-stittsville-community-arena"
     _date {
-      seconds: 1755734628
+      seconds: 1755821080
     }
   }
   address:
@@ -18457,7 +20351,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/kanata-leisure-centre-and-wave-pool"
     _date {
-      seconds: 1755734628
+      seconds: 1755821080
     }
   }
   address:
@@ -20006,7 +21900,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/kanata-seniors-centre"
     _date {
-      seconds: 1755734628
+      seconds: 1755821082
     }
   }
   address:
@@ -20370,7 +22264,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/kars-recreation-hall"
     _date {
-      seconds: 1755734629
+      seconds: 1755821082
     }
   }
   address:
@@ -20390,7 +22284,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/katimavik-pool"
     _date {
-      seconds: 1755734630
+      seconds: 1755821082
     }
   }
   address:
@@ -20636,7 +22530,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/ken-ross-park-field-house"
     _date {
-      seconds: 1755734631
+      seconds: 1755821084
     }
   }
   address:
@@ -20656,7 +22550,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/kenmore-community-centre"
     _date {
-      seconds: 1755734632
+      seconds: 1755821085
     }
   }
   address:
@@ -20680,7 +22574,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/lansdowne-park"
     _date {
-      seconds: 1755734632
+      seconds: 1755821085
     }
   }
   address:
@@ -20743,7 +22637,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/larkin-house-community-centre"
     _date {
-      seconds: 1755734633
+      seconds: 1755821087
     }
   }
   address:
@@ -20761,7 +22655,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/lindenlea-community-centre"
     _date {
-      seconds: 1755734635
+      seconds: 1755821088
     }
   }
   address:
@@ -20779,7 +22673,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/lois-kemp-arena-blackburn"
     _date {
-      seconds: 1755734636
+      seconds: 1755821089
     }
   }
   address:
@@ -20800,7 +22694,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/lowertown-community-centre-and-pool"
     _date {
-      seconds: 1755734637
+      seconds: 1755821091
     }
   }
   address:
@@ -21237,7 +23131,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/manor-park-community-centre"
     _date {
-      seconds: 1755734639
+      seconds: 1755821092
     }
   }
   address:
@@ -21255,7 +23149,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/manotick-community-centre-and-mike-oneil-arena"
     _date {
-      seconds: 1755734641
+      seconds: 1755821094
     }
   }
   address:
@@ -21419,7 +23313,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/margaret-rywak-community-building"
     _date {
-      seconds: 1755734642
+      seconds: 1755821096
     }
   }
   address:
@@ -21442,7 +23336,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/mcnabb-arena-and-community-centre"
     _date {
-      seconds: 1755734644
+      seconds: 1755821099
     }
   }
   address:
@@ -21459,7 +23353,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/meridian-theatres-centrepointe"
     _date {
-      seconds: 1755734646
+      seconds: 1755821099
     }
   }
   address:
@@ -21477,7 +23371,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/metcalfe-community-centre-and-larry-robinson-arena"
     _date {
-      seconds: 1755734647
+      seconds: 1755821099
     }
   }
   address:
@@ -21497,7 +23391,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/michele-heights-community-centre"
     _date {
-      seconds: 1755734649
+      seconds: 1755821101
     }
   }
   address:
@@ -21524,7 +23418,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/minto-recreation-complex-barrhaven"
     _date {
-      seconds: 1755734649
+      seconds: 1755821101
     }
   }
   address:
@@ -24017,7 +25911,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/navan-memorial-centre"
     _date {
-      seconds: 1755734651
+      seconds: 1755821102
     }
   }
   address:
@@ -24047,7 +25941,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/nepean-creative-arts-centre"
     _date {
-      seconds: 1755734653
+      seconds: 1755821104
     }
   }
   address:
@@ -24069,7 +25963,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/nepean-museum"
     _date {
-      seconds: 1755734653
+      seconds: 1755821107
     }
   }
   address:
@@ -24086,7 +25980,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/nepean-seniors-centre"
     _date {
-      seconds: 1755734654
+      seconds: 1755821109
     }
   }
   address:
@@ -24456,7 +26350,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/nepean-sportsplex"
     _date {
-      seconds: 1755734655
+      seconds: 1755821109
     }
   }
   address:
@@ -24476,7 +26370,7 @@ facilities {
     "</li>\n"
     "<li><strong>Labour Day - Monday, September 1</strong>\n"
     "<ul>\n"
-    "<li>The pool and Aquatics Centre will be closed.</li>\n"
+    "<li>The pool and Aquatics Centre are closed.</li>\n"
     "</ul>\n"
     "</li>\n"
     "<li><strong>August 16 to September 14</strong>\n"
@@ -24753,7 +26647,7 @@ facilities {
     label: "Drop-in schedule - swim and aquafit"
     _title: "Swim And Aquafit"
     schedules {
-      caption: "Nepean Sportsplex - swim and aquafit - August 16 to 24"
+      caption: "Nepean Sportsplex - swim and aquafit - August 16 to 22"
       _name: "swim and aquafit"
       days: "Monday"
       days: "Tuesday"
@@ -25895,7 +27789,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/nepean-visual-arts-centre"
     _date {
-      seconds: 1755734655
+      seconds: 1755821110
     }
   }
   address:
@@ -25917,7 +27811,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/old-town-hall-community-centre"
     _date {
-      seconds: 1755734657
+      seconds: 1755821111
     }
   }
   address:
@@ -25931,7 +27825,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/osgoode-community-centre-and-stuart-holmes-arena"
     _date {
-      seconds: 1755734659
+      seconds: 1755821113
     }
   }
   address:
@@ -25954,7 +27848,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/ottawa-south-community-centre"
     _date {
-      seconds: 1755734659
+      seconds: 1755821115
     }
   }
   address:
@@ -25978,7 +27872,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/overbrook-community-centre"
     _date {
-      seconds: 1755734660
+      seconds: 1755821115
     }
   }
   address:
@@ -26335,7 +28229,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/pat-clark-community-centre"
     _date {
-      seconds: 1755734661
+      seconds: 1755821117
     }
   }
   address:
@@ -26464,7 +28358,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/pinecrest-recreation-complex"
     _date {
-      seconds: 1755734661
+      seconds: 1755821117
     }
   }
   address:
@@ -28666,7 +30560,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/pinheys-point-historic-site-0"
     _date {
-      seconds: 1755734662
+      seconds: 1755821117
     }
   }
   address:
@@ -28682,7 +30576,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/plant-recreation-centre"
     _date {
-      seconds: 1755734662
+      seconds: 1755821117
     }
   }
   address:
@@ -30831,7 +32725,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/rj-kennedy-community-centre-and-arena"
     _date {
-      seconds: 1755734663
+      seconds: 1755821118
     }
   }
   address:
@@ -30854,7 +32748,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/ray-friel-recreation-complex"
     _date {
-      seconds: 1755734663
+      seconds: 1755821118
     }
   }
   address:
@@ -33297,7 +35191,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/richcraft-recreation-complex-kanata"
     _date {
-      seconds: 1755734663
+      seconds: 1755821118
     }
   }
   address:
@@ -34816,7 +36710,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/richelieu-vanier-community-centre"
     _date {
-      seconds: 1755734665
+      seconds: 1755821119
     }
   }
   address:
@@ -34827,6 +36721,14 @@ facilities {
     lng: -75.659996
     lat: 45.4438
   }
+  special_hours_html:
+    "<ul>\n"
+    "<li><strong>Monday, September 1</strong>\n"
+    "<ul>\n"
+    "<li>Closed</li>\n"
+    "</ul>\n"
+    "</li>\n"
+    "</ul>\n"
   schedule_groups {
     label: "Drop-in schedule - racquet sports"
     _title: "Racquet Sports"
@@ -34837,7 +36739,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/richmond-memorial-community-centre"
     _date {
-      seconds: 1755734666
+      seconds: 1755821121
     }
   }
   address:
@@ -34859,7 +36761,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/rideauview-community-centre"
     _date {
-      seconds: 1755734667
+      seconds: 1755821123
     }
   }
   address:
@@ -34941,7 +36843,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/rockcliffe-park-community-centre"
     _date {
-      seconds: 1755734668
+      seconds: 1755821125
     }
   }
   address:
@@ -34964,7 +36866,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/ron-kolbus-lakeside-centre"
     _date {
-      seconds: 1755734671
+      seconds: 1755821127
     }
   }
   address:
@@ -34986,7 +36888,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/routhier-community-centre"
     _date {
-      seconds: 1755734672
+      seconds: 1755821129
     }
   }
   address:
@@ -35279,7 +37181,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/sandy-hill-arena"
     _date {
-      seconds: 1755734673
+      seconds: 1755821129
     }
   }
   address:
@@ -35569,7 +37471,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/sandy-hill-community-centre"
     _date {
-      seconds: 1755734674
+      seconds: 1755821131
     }
   }
   address:
@@ -35594,7 +37496,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/sawmill-creek-community-centre-and-pool"
     _date {
-      seconds: 1755734674
+      seconds: 1755821133
     }
   }
   address:
@@ -36496,7 +38398,7 @@ facilities {
       }
     }
     schedules {
-      caption: "Sawmill Creek Pool - group fitness - September 3-December 20"
+      caption: "Sawmill Creek Pool - group fitness - September 3 to December 20"
       _name: "sawmill creek pool - group fitness"
       days: "Monday"
       days: "Tuesday"
@@ -36543,7 +38445,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/shenkman-arts-centre"
     _date {
-      seconds: 1755734675
+      seconds: 1755821133
     }
   }
   address:
@@ -36568,7 +38470,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/south-fallingbrook-community-centre"
     _date {
-      seconds: 1755734676
+      seconds: 1755821135
     }
   }
   address:
@@ -36592,7 +38494,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/southpointe-community-building"
     _date {
-      seconds: 1755734677
+      seconds: 1755821136
     }
   }
   address:
@@ -36617,7 +38519,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/splash-wave-pool"
     _date {
-      seconds: 1755734678
+      seconds: 1755821136
     }
   }
   address:
@@ -36921,7 +38823,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/st-laurent-complex"
     _date {
-      seconds: 1755734678
+      seconds: 1755821138
     }
   }
   address:
@@ -36934,21 +38836,13 @@ facilities {
   }
   special_hours_html:
     "<ul>\n"
-    "<li><strong>Wednesday, August 20</strong>\n"
-    "<ul>\n"
-    "<li>Yoga, 10 to 11 am, cancelled</li>\n"
-    "</ul>\n"
-    "</li>\n"
-    "</ul>\n"
-    "<h4>Labour Day</h4>\n"
-    "<ul>\n"
     "<li><strong>Monday, September 1</strong>\n"
     "<ul>\n"
     "<li>8 am to 6 pm</li>\n"
     "</ul>\n"
     "</li>\n"
     "</ul>\n"
-    "<h5>Closure</h5>\n"
+    "<h3>Closure</h3>\n"
     "<ul>\n"
     "<li><strong>June 2 to December 31</strong>\n"
     "<ul>\n"
@@ -37038,14 +38932,6 @@ facilities {
   schedule_groups {
     label: "Drop-in schedule - group fitness"
     _title: "Group Fitness"
-    schedule_changes_html:
-      "<ul>\n"
-      "<li><strong>Wednesday, August 20</strong>\n"
-      "<ul>\n"
-      "<li>Yoga, 10 to 11 am, cancelled</li>\n"
-      "</ul>\n"
-      "</li>\n"
-      "</ul>"
     schedules {
       caption: "St. Laurent Complex - Group fitness - June 30 to August 31"
       _name: "group fitness"
@@ -37545,7 +39431,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/tanglewood-community-centre"
     _date {
-      seconds: 1755734680
+      seconds: 1755821138
     }
   }
   address:
@@ -37572,7 +39458,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/terry-fox-athletic-facility"
     _date {
-      seconds: 1755734681
+      seconds: 1755821139
     }
   }
   address:
@@ -37606,7 +39492,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/tom-brown-arena"
     _date {
-      seconds: 1755734682
+      seconds: 1755821141
     }
   }
   address:
@@ -37815,7 +39701,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/tony-graham-recreation-complex-kanata"
     _date {
-      seconds: 1755734683
+      seconds: 1755821141
     }
   }
   address:
@@ -37892,7 +39778,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/vernon-recreation-centre"
     _date {
-      seconds: 1755734685
+      seconds: 1755821143
     }
   }
   address:
@@ -37909,7 +39795,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/w-erskine-johnston-arena"
     _date {
-      seconds: 1755734686
+      seconds: 1755821145
     }
   }
   address:
@@ -37931,7 +39817,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/walter-baker-sports-centre"
     _date {
-      seconds: 1755734686
+      seconds: 1755821145
     }
   }
   address:
@@ -38598,7 +40484,7 @@ facilities {
       }
     }
     schedules {
-      caption: "Walter Baker Sports Centre - Swim and Aquafit - September 2 to December 19"
+      caption: "Walter Baker Sports Centre - swim and aquafit - September 2 to December 19"
       _name: "swim and aquafit"
       days: "Monday"
       days: "Tuesday"
@@ -38608,7 +40494,7 @@ facilities {
       days: "Saturday"
       days: "Sunday"
       activities {
-        label: "Lane Swim"
+        label: "Lane swim"
         _name: "lane swim"
         days {
           times {
@@ -38722,7 +40608,7 @@ facilities {
         }
       }
       activities {
-        label: "Half Lane Swim"
+        label: "Half lane swim"
         _name: "half lane swim"
         days {
           times {
@@ -38794,7 +40680,7 @@ facilities {
         }
       }
       activities {
-        label: "Hot tub and Steam Room"
+        label: "Hot tub and steam room"
         _name: "hot tub and steam room"
         days {
           times {
@@ -38884,7 +40770,7 @@ facilities {
         }
       }
       activities {
-        label: "Public Swim"
+        label: "Public swim"
         _name: "public swim"
         days {
         }
@@ -38974,7 +40860,7 @@ facilities {
         }
       }
       activities {
-        label: "Aquafit general - Shallow"
+        label: "Aquafit general - shallow"
         _name: "aquafit general - shallow"
         days {
           times {
@@ -39040,7 +40926,7 @@ facilities {
         }
       }
       activities {
-        label: "Aquafit general - Deep"
+        label: "Aquafit general - deep"
         _name: "aquafit general - deep"
         days {
           times {
@@ -39088,11 +40974,11 @@ facilities {
         }
       }
       activities {
-        label: "Aquafit Lite"
+        label: "Aquafit lite"
         _name: "aquafit lite"
         days {
           times {
-            label: "10:45 - 11:45am"
+            label: "10:45 - 11:45 am"
             _start: 645
             _end: 705
             _wkday: MONDAY
@@ -39915,7 +41801,6 @@ facilities {
       }
     }
   }
-  _errors: "failed to parse schedule \"\" (group \"Drop-in schedule - swim and aquafit\"): row size mismatch"
 }
 facilities {
   name: "Westcliffe Community Building"
@@ -39925,7 +41810,7 @@ facilities {
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/westcliffe-community-building"
     _date {
-      seconds: 1755734688
+      seconds: 1755821147
     }
   }
   address:
