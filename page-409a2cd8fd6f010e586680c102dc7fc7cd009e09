@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/billings-estate-national-historic-site HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 0
-Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:03:41 GMT
-Etag: "1756166621-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:03:41 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: UNCACHEABLE (poor cacheability)
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 19538) q(0 1 1 -1) r(6 6) U24
-X-Varnish: 13783914
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9761fd1dcc93ef9f-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:10:29 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=UUt4P9wdp2W%2B%2FA6L2woU24E9XIe5b8tDKgF4krMDoLs87BC%2BuSjGNgcasd%2BSTivAeEUj5mOY%2BA9CIK6l%2B1KoNXPo2fU20N08GYO1k%2FHFdoRz%2BPunU2uXUrvhmNAtzg%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-1a17c
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ X-Varnish: 13783914
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9b2b43038f7cf49cfb489093945b96c3521585d78ae49d141ff4c5f91db690a2">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-925c413b5c1a1337e36e431a4602a3f8dc6e0d138d083e4d8fee8aca3e57af7d">
   
     
       
@@ -196,7 +186,7 @@ X-Varnish: 13783914
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-986a98df890b4ebcd98da70604013e5930c8a37f0caaab873a738493a02585e4">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-55b549c54f03466bd620c959ba301bd826fa13cca2200f1a810d8d6328e50439">
   
     
       
@@ -305,7 +295,7 @@ X-Varnish: 13783914
   
             <div class="clearfix text-formatted field field--name-field-place-address-info field--type-text-long field--label-hidden field__item"><p>Tel.: <a href="tel:613-580-2088">613-580-2088</a><br>
 Fax: 613-247-4832<br>
-Email:&nbsp;<a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a></p>
+Email:&nbsp;<a href="/cdn-cgi/l/email-protection#95f8e0e6f0e0f8e6d5fae1e1f4e2f4bbf6f4"><span class="__cf_email__" data-cfemail="5b362e283e2e36281b342f2f3a2c3a75383a">[email&#160;protected]</span></a></p>
 <p><a href="https://www.facebook.com/billingsestate/">Facebook</a><br>
 <a href="https://www.instagram.com/billingsestatemuseum/">Instagram</a></p>
 <p>Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscriptions/signup-form" target="_blank">At your museum</a>" eNewsletter.&nbsp;</p>
@@ -319,7 +309,7 @@ Email:&nbsp;<a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a></p>
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a></div>
+              <div class="field__item"><a href="/cdn-cgi/l/email-protection#305d454355455d43705f44445147511e5351"><span class="__cf_email__" data-cfemail="1d70686e7868706e5d7269697c6a7c337e7c">[email&#160;protected]</span></a></div>
               </div>
       </div>
 
@@ -404,7 +394,7 @@ Email:&nbsp;<a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-09d03647a044b79e8e0386f008c1a8ecd2a4e453e162ae3f91ca87c833704109">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4a8695838e51c27a2e8bbb3885d161eb7b3f75ef322e4e46983ac39c25e3ff19">
   
     
       
@@ -418,7 +408,7 @@ Email:&nbsp;<a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b50b07a9ba8701b18b4d55bd0839a135705bd3931835f74352577a046bb56842">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4f0d56c32435536a86445853326a6c5fe688aa1baa0ab06da15d19913b260ae3">
   
     
       
@@ -519,7 +509,7 @@ Email:&nbsp;<a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a6143760a8ffafb0dc60fd6282f1f15540ea124abcf195e3451ad104fb025cae">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1879d6a224abbb99f8d1c7f121bd1f4f2274818e50c0687abf3019c669d30deb">
   
     
       
@@ -533,7 +523,7 @@ Email:&nbsp;<a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f5b8e5341f08b30ff63a5feb49b6956a4db6ba4afd5b8c4e23176d88973375e9">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a3d05f27885f4f4e2b3b458494c2913e5381d8f29f69626d12a2fbaec7e54d5c">
   
     
       
@@ -572,7 +562,7 @@ Cost: $75 </span>+ tax (per person)<span>. <a href="https://anc.ca.apm.activecom
 <li><span><span>Advance registration is required. Workshops with insufficient registration may be cancelled. If an alternative cannot be offered, a refund will be issued.&nbsp;</span></span></li>
 <li><span><span>Please note that the final design may vary from the finished project pictured in marketing materials.&nbsp;</span></span></li>
 <li><span><span>Visit the <a href="https://ottawa.ca/en/family-and-social-services/older-adults/financial-assistance#section-89551f56-14c3-4f6e-b24c-5e5072350977" target="_blank">Ottawa Hand in Hand</a> web page for information on available financial supports to facilitate participation in recreation and culture programs. &nbsp;</span></span></li>
-<li><span><span>This workshop will be hosted on the second floor of the museum which&nbsp;is only accessible by stairs. If you have questions or concerns regarding accessibility, please contact the museum by phone at 613-580-2088 or by email at <u><a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a>.</u> Additional <a href="https://ottawa.ca/en/arts-heritage-and-events/museums-and-historic-sites/billings-estate-national-historic-site#section-b845e1ce-a7ef-4d99-8537-32a0ed2b0084" target="_blank">information about accessibility</a> can be found on the museum web page. </span></span></li>
+<li><span><span>This workshop will be hosted on the second floor of the museum which&nbsp;is only accessible by stairs. If you have questions or concerns regarding accessibility, please contact the museum by phone at 613-580-2088 or by email at <u><a href="/cdn-cgi/l/email-protection#4429313721312937042b30302533256a2725"><span class="__cf_email__" data-cfemail="0469717761716977446b70706573652a6765">[email&#160;protected]</span></a>.</u> Additional <a href="https://ottawa.ca/en/arts-heritage-and-events/museums-and-historic-sites/billings-estate-national-historic-site#section-b845e1ce-a7ef-4d99-8537-32a0ed2b0084" target="_blank">information about accessibility</a> can be found on the museum web page. </span></span></li>
 </ul>
 </div>
       
@@ -668,7 +658,7 @@ Cost: $75 </span>+ tax (per person)<span>. <a href="https://anc.ca.apm.activecom
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3b1c5fe7e49525929a0e9faa0ad9a40c9910ca25160ec41b759bafb19c63fe35">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-25dbf09ff5664d4426ed8dc3d24d4af320a56ed16312651f5d4765a8f6d2007d">
   
     
       
@@ -682,7 +672,7 @@ Cost: $75 </span>+ tax (per person)<span>. <a href="https://anc.ca.apm.activecom
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3cd9f641205779873f6d965bfedff318447bdea81fb81cbd2ac440351a43ab04">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-da3a46a43981107df244dda594c225dc6dcc62d6f0ad982924a22d200931f3cf">
   
     
       
@@ -734,7 +724,7 @@ Cost: $7.56 per child<br>
 <li>Activities take place outdoors. Please dress your child for weather conditions, including clothing and shoes you are comfortable with getting dirty. A hat, sunscreen, and bug spray are recommended.</li>
 <li>Please pack a small snack and a bottle of water for your child.</li>
 <li>This program is delivered rain or shine. In the event of poor weather conditions, activities may be adapted or moved inside. In the rare event that the session must be cancelled due to inclement weather, all registered participants will be contacted directly with further information.</li>
-<li>Activities take place on the museum grounds which include grassy and uneven terrain. The simulated dig site is at ground level, but activities can be modified for table-top access. Accessible washrooms are available on the ground floor of the museum. If you have questions or concerns about accessibility, please contact 613-580-2088 or <a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a>.</li>
+<li>Activities take place on the museum grounds which include grassy and uneven terrain. The simulated dig site is at ground level, but activities can be modified for table-top access. Accessible washrooms are available on the ground floor of the museum. If you have questions or concerns about accessibility, please contact 613-580-2088 or <a href="/cdn-cgi/l/email-protection#3d50484e5848504e7d5249495c4a5c135e5c"><span class="__cf_email__" data-cfemail="7d10080e1808100e3d1209091c0a1c531e1c">[email&#160;protected]</span></a>.</li>
 <li>Sessions with insufficient registration may be cancelled. If the session cannot be rescheduled, a refund will be issued.</li>
 </ul>
 <p>&nbsp;</p>
@@ -810,7 +800,7 @@ Cost: $7.56 per child<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1f58fc7088fc35f8192ab8abf4be1a8d2ece22d93653ff4c7304ea604ba74fba">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0ca5ec6a5c9e9c145a0b06cdfc48662a9343bbb956fce188c8cfa3c076bdf0e2">
   
     
       
@@ -824,7 +814,7 @@ Cost: $7.56 per child<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c8687e6ba160674f82fb1ecfd475c5b5fa2065bae911fe0027f0c6a95ee26f48">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f8cf6c013e4c54d7803d3d8139c999dac6bdc3d710e51762313a726cccdeabed">
   
     
       
@@ -876,7 +866,7 @@ Cost: $7.56 per child.<br>
 <li>Some activities take place outdoors. Please dress your child for weather conditions, including clothing and shoes you are comfortable with getting dirty. A hat, sunscreen, and bug spray are recommended.</li>
 <li>Please pack a small snack and a bottle of water for your child.</li>
 <li>This program is delivered rain or shine. In the event of poor weather conditions, activities may be adapted or moved inside. In the rare event that the session must be cancelled due to inclement weather, all registered participants will be contacted directly with further information.</li>
-<li>Some activities take place on the museum grounds which include grassy and uneven terrain. Accessible washrooms are available on the ground floor of the museum. If you have questions or concerns about accessibility, please contact 613-580-2088 or <a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a>.</li>
+<li>Some activities take place on the museum grounds which include grassy and uneven terrain. Accessible washrooms are available on the ground floor of the museum. If you have questions or concerns about accessibility, please contact 613-580-2088 or <a href="/cdn-cgi/l/email-protection#eb869e988e9e8698ab849f9f8a9c8ac5888a"><span class="__cf_email__" data-cfemail="721f070117071f01321d06061305135c1113">[email&#160;protected]</span></a>.</li>
 <li>Sessions with insufficient registration may be cancelled. If the session cannot be rescheduled, a refund will be issued.</li>
 </ul>
 </div>
@@ -951,7 +941,7 @@ Cost: $7.56 per child.<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b4b15fce16fd9eb16827869b1052f2be2db4581b282d6f7d77ecc53c640a832b">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a96871cb49babdc0b36eb4e9369e758de1287840be4a369961bea9bd84388ee5">
   
     
       
@@ -965,7 +955,7 @@ Cost: $7.56 per child.<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f1bbeaddbce31d0d9b4b7886642b1c29d9f3445dcc77763581b8b5d33b8050bf">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4064c8e9f01487b3339275506153326a47504b7bf5fe0ee6bcaa23b754e5a2fe">
   
     
       
@@ -1008,9 +998,9 @@ Add Devon cream: $3.49 (taxes included)</p>
 <ul>
 <li><strong>Large groups: </strong>Reservations of 7 or more guests must be confirmed by the tearoom coordinator (call 613-580-2088 ext. 35258). Groups will be seated at tables of four or six. To keep pathways clear, tables cannot be pushed together.</li>
 <li><strong>Allergies:</strong> We will make all reasonable efforts to accommodate allergies and dietary restrictions identified during the reservation process but cannot ensure an environment free from all risk of cross-contamination. Regrettably, we cannot guarantee to meet last minute requests for accommodations at the time of service. If your allergy or dietary needs change, please contact the museum in advance of your seating to update your reservation.</li>
-<li><strong>Accessibility:</strong> Tea on the Lawn is served outside under an open-sided tent with a stone floor which may be rough or uneven in some areas. A passenger drop-off and pick-up zone is available in front of the lobby entrance. If you have questions or concerns regarding accessibility, please inform staff at the time of reservation or contact the museum by email at <a href="mailto:BillingsEstateTea@ottawa.ca">BillingsEstateTea@ottawa.ca</a>. Additional <a href="https://ottawa.ca/en/node/1007407/">information about accessibility</a> can be found on the museum webpage.</li>
+<li><strong>Accessibility:</strong> Tea on the Lawn is served outside under an open-sided tent with a stone floor which may be rough or uneven in some areas. A passenger drop-off and pick-up zone is available in front of the lobby entrance. If you have questions or concerns regarding accessibility, please inform staff at the time of reservation or contact the museum by email at <a href="/cdn-cgi/l/email-protection#1052797c7c797e7763556364716475447571507f64647167713e7371"><span class="__cf_email__" data-cfemail="a2e0cbcececbccc5d1e7d1d6c3d6c7f6c7c3e2cdd6d6c3d5c38cc1c3">[email&#160;protected]</span></a>. Additional <a href="https://ottawa.ca/en/node/1007407/">information about accessibility</a> can be found on the museum webpage.</li>
 <li><strong>Weather:</strong>&nbsp;In the rare event that weather conditions or other unforeseen circumstances necessitate the cancellation of Tea on the Lawn, all guests will be contacted directly with further information.</li>
-<li>If you require assistance with your Tea on the Lawn reservation, please email&nbsp;<a href="mailto:BillingsEstateTea@ottawa.ca">BillingsEstateTea@ottawa.ca</a>&nbsp;or call 613-580-2088 ext. 35258.</li>
+<li>If you require assistance with your Tea on the Lawn reservation, please email&nbsp;<a href="/cdn-cgi/l/email-protection#14567d78787d7a7367516760756071407175547b60607563753a7775"><span class="__cf_email__" data-cfemail="32705b5e5e5b5c5541774146534657665753725d46465345531c5153">[email&#160;protected]</span></a>&nbsp;or call 613-580-2088 ext. 35258.</li>
 </ul>
 <h3>Picnic on the museum grounds</h3>
 <p>Visitors are welcome to bring their own snacks&nbsp;and picnic on the museum grounds. To preserve the artefacts in the museum, no eating or drinking is permitted in the exhibition spaces. Outside food is also not permitted in the tent where Tea on the Lawn is served.</p>
@@ -1086,7 +1076,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b12168ef382caaa7dad3a07b2543a01d9af90c58f3639d490b76d4dccd3202ae">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1b62b4e720efba745f8371c94d16679d04ae2af9f066c7985f2cee9bb09ea746">
   
     
       
@@ -1100,7 +1090,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b50fc28096e3dce41eb31a204be16167d50b37f367ed08a73cccb98defdf2235">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-573280b1378f8c009eadd1142a1144d024eb49a4f9a4fbb84a903866629b0d32">
   
     
       
@@ -1131,7 +1121,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 <p>April 23 to October 10, 2025<br>
 <a href="https://ottawa.ca/en/node/1031554/">Regular admission fees apply</a></p>
 <p>“Beyond Billings” showcases a selection of belongings from the Billings Estate National Historic Site collection chosen by 12 individual curators from the Carleton University Curatorial Studies program (CURA 5001). “Beyond Billings” explores how museum objects are perceived from different viewpoints. Each object, highlighted as a vignette, sparks new questions about the Billings family and how they lived, while also inviting you to consider the life of the item beyond its arrival to the Billings family.</p>
-<p>The exhibition is located on the second floor of the house which is accessible by stairs only. A visual guide is available to visitors who cannot access the second floor. If you have questions or concerns regarding accessibility, please contact the museum at 613-580-2088 or by email at <a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a>.&nbsp;</p>
+<p>The exhibition is located on the second floor of the house which is accessible by stairs only. A visual guide is available to visitors who cannot access the second floor. If you have questions or concerns regarding accessibility, please contact the museum at 613-580-2088 or by email at <a href="/cdn-cgi/l/email-protection#563b232533233b2516392222372137783537"><span class="__cf_email__" data-cfemail="177a626472627a6457786363766076397476">[email&#160;protected]</span></a>.&nbsp;</p>
 <p>&nbsp;</p>
 </div>
       
@@ -1205,7 +1195,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2d5e2d1487453bd2b01cb8f581c92869669c170d43e38c08b0d1b9af7a1ff3c5">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c6810dba935cd368e68054c7b6e8e75cf98386f0512a38943c2cf59074ba4b0d">
   
     
       
@@ -1219,7 +1209,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3955975587c597327ace1d1a98899978e451f76e2215162ce63db4a6d5a7e8f9">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0029f1de8a0b0531cb24115c164497483323cbd6d8d774f463ec68113dbe3f02">
   
     
       
@@ -1327,7 +1317,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-68c0d6bbcf1779359a799eefd26974428d0fadd55bb5815d2ca529cb5cef43e3">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-80a0f13a416341c21f2583d27f18a38ec0c64e1713f028623c94351ba3675e63">
   
     
       
@@ -1341,7 +1331,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a289b0c3dd83ac46d52c70e579ad4bb5dc56e23194bc2c6b7d8860478e58087e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3b8d8bf963b36802d45e5a8c53545729f0c56960d8940a3b0561443363e61679">
   
     
       
@@ -1369,7 +1359,7 @@ Add Devon cream: $3.49 (taxes included)</p>
                                                       <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>Reminiscent of a country estate, the nearly 200-year-old manor house and surrounding eight acres of landscaped greenspace and gardens provide a picturesque and historical backdrop for your special event.</p>
-<p>For more information, please contact our Customer Service Booking Clerk. Call <strong>613-580-2088</strong> or email <a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a>.</p>
+<p>For more information, please contact our Customer Service Booking Clerk. Call <strong>613-580-2088</strong> or email <a href="/cdn-cgi/l/email-protection#48253d3b2d3d253b08273c3c293f29662b29"><span class="__cf_email__" data-cfemail="e588909680908896a58a9191849284cb8684">[email&#160;protected]</span></a>.</p>
 </div>
       
       </div>
@@ -1442,7 +1432,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a561b7798dfff6062c76e1f9180abe80a8f2cfd2f04a7a7e587c5b55d92ea923">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c2c2992fa3deef2365c7f4d1fb1162e88cb3169cb6441cff59ae59e3e98cc12e">
   
     
       
@@ -1456,7 +1446,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-427dc6dd35bcaa6c921a2e9da2d4578f28dc97e949a3ec0c20d46367996116bf">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-94c1ebd0251c6284406f04ab5acebd25bc24a5491d65d0af377f4f309f42f4a9">
   
     
       
@@ -1486,7 +1476,7 @@ Add Devon cream: $3.49 (taxes included)</p>
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The City of Ottawa Museums are committed to offering residents meaningful and rewarding volunteer experiences.</p>
 <p>Heritage volunteers play an invaluable role in preserving our unique heritage and in providing museum visitors of all ages with opportunities to appreciate our shared story.</p>
 <p>Thank you to all our volunteer team members for their continued support.</p>
-<p>The museums are not currently accepting new volunteers. If you have any questions about the volunteer program or would like to be notified when volunteering resumes, please contact <a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a>.</p>
+<p>The museums are not currently accepting new volunteers. If you have any questions about the volunteer program or would like to be notified when volunteering resumes, please contact <a href="/cdn-cgi/l/email-protection#cea3bbbdabbba3bd8ea1babaafb9afe0adaf"><span class="__cf_email__" data-cfemail="5f322a2c3a2a322c1f302b2b3e283e713c3e">[email&#160;protected]</span></a>.</p>
 </div>
       
       </div>
@@ -1559,7 +1549,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-66204495e18c0f685aa907a6a9376479ff24ea1d89a62a27eb7ce76a5857b8a8">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ed7f2f047219af1faab5f97890d3c2e7a5d7e065b5439367f4efbaedf7640caa">
   
     
       
@@ -1573,7 +1563,7 @@ Add Devon cream: $3.49 (taxes included)</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5f80ab60d57f31da4896ba78da4226c3d64b21ceacc23b60d739a6a1a2d2670c">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-64c727531f9ee9a6a1f9303ce7fa562f1294b19127463ddd3260b8734968c7f1">
   
     
       
@@ -2251,7 +2241,7 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_vbqXGSVFFjC94Hma6-MoYncglvJ8cc0REQE5tEvI9OA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_vbqXGSVFFjC94Hma6-MoYncglvJ8cc0REQE5tEvI9OA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
@@ -2259,9 +2249,6 @@ Thank you for considering to help out.
 <script src="/themes/custom/ottca_theme/dist/js/slider-gallery.min.js?t1clew" async></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=6&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=16&cb=823631905" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=258603012" async></script></body>
 </html>
-
-
-0
 

@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/nepean-sportsplex HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 454
-Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:05:02 GMT
-Etag: "1756166245-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Mon, 25 Aug 2025 23:57:25 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 100994) q(0 1 1 -1) r(1 1) U24
-X-Varnish: 19360020 24347285
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 97620647bf734411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:16:48 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=LBOlUX27lm5bePqQo5DTCN5GoiGum3nmT8PLRDjuwjOtt4fLQnz8cO3I2PqRu5Tdb49n3IVtAIcKcv%2FFSMi4xGPt6w2vjhezrAe0lUr5PNUvkggv7EbEl3MWLpcjxg%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-2bc05
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -40,7 +30,7 @@ X-Varnish: 19360020 24347285
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/nepean-sportsplex" />
 <meta name="dcterms.title" content="Nepean Sportsplex" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-08-25" />
+<meta name="dcterms.date" content="2025-08-27" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -182,7 +172,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b8d43a7d6f28855b5bc995c8f246a07744dddb2e9823f36b65ce2e0401ebbc80">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b2cb76f70f3b42a977f25e8a8681fdd61187c098ad1f600219410184484ad6fe">
   
     
       
@@ -196,7 +186,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-320b749e7de1dfc69e33e76d198c3169879d14e6dfb797bd8f74a8ba6f8c3e7d">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-82d98668e87074034dfeeae37ada542607e56e7c34368e11bb3e05f25f34d2bd">
   
     
       
@@ -307,7 +297,7 @@ X-Varnish: 19360020 24347285
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">9:00 am - 5:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">6:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">8:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">6:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">8:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">6:30 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">9:00 am - 7:00 pm</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">9:00 am - 5:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">6:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">8:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">6:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">8:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">6:30 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">9:00 am - 7:00 pm</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -390,7 +380,7 @@ X-Varnish: 19360020 24347285
 <li>Athletics - option 1</li>
 <li>Nepean Seniors Recreation Centre&nbsp;and Nepean Visual Arts Centre - option 2</li>
 </ul>
-<p><a href="mailto:NepeanSportsplex@ottawa.ca">nepeansportsplex@ottawa.ca</a></p>
+<p><a href="/cdn-cgi/l/email-protection#105e756075717e43607f626463607c7568507f64647167713e7371"><span class="__cf_email__" data-cfemail="016f647164606f72716e737572716d6479416e75756076602f6260">[email&#160;protected]</span></a></p>
 <p>Also in Nepean Sportsplex:</p>
 <ul>
 <li><a href="https://ottawa.ca/en/recreation-and-parks/recreation-facilities/facility-listing/nepean-visual-arts-centre">Nepean Visual Arts Centre</a></li>
@@ -406,7 +396,7 @@ X-Varnish: 19360020 24347285
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="mailto:nepeansportsplex@ottawa.ca">nepeansportsplex@ottawa.ca</a></div>
+              <div class="field__item"><a href="/cdn-cgi/l/email-protection#0e606b7e6b6f607d7e617c7a7d7e626b764e617a7a6f796f206d6f"><span class="__cf_email__" data-cfemail="b7d9d2c7d2d6d9c4c7d8c5c3c4c7dbd2cff7d8c3c3d6c0d699d4d6">[email&#160;protected]</span></a></div>
               </div>
       </div>
 
@@ -524,7 +514,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-22e80223cc5a459b53f388fec79bab9eddcaeee3871531396f747eb6c95e452a">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7b67b4661efb2264e6690ac809515b218c35a774b3b97b0ee022f6bf23a5337d">
   
     
       
@@ -538,7 +528,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6b97353658e234bce9475158b1b687a1430111223e58dd7db51a54d6d6f3131e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a77d91ec8a3cd5e3f963e6be43c19a6d11dfa79f922e7e6bea50b883a2f3fd59">
   
     
       
@@ -910,7 +900,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2dd4bf1b2efa91ca1b2dd4d51ac0e26fc94536d1bd6f85a170e5ae3f317c1504">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b8b9a527e33791db34ee17f359a83264541d51be5bd42ae8a496c378cdb63597">
   
     
       
@@ -924,7 +914,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a1ee71a8996c8f2ac8e5f8d70d4cbe9a8469c8c8236af0bc249b796fffe7bfd8">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-be208ec86151234ae61ec061be8d4d95505356b6ec260d549acffe60a66a89f0">
   
     
       
@@ -1019,13 +1009,13 @@ X-Varnish: 19360020 24347285
 			7 - 8 am
 			</td>
 			<td>
-			7 - 8 am
+			n/a
 			</td>
 			<td>
 			7 - 8 am
 			</td>
 			<td>
-			7 - 8 am
+			n/a
 			</td>
 			<td>
 			7 - 8 am
@@ -1075,7 +1065,7 @@ X-Varnish: 19360020 24347285
 			11 am - 1 pm
 			</td>
 			<td>
-			11 am - 1 pm
+			n/a
 			</td>
 			<td>
 			1 - 3 pm
@@ -1239,7 +1229,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6147f0ec0d68adf66e69916a35e54619a0b6c83e4a48eee68cd281c03a0b3d8f">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5f3c4f19515e2eb18e0ae57e25157323b8bab100ddc21f06369a01e5ef8ee64e">
   
     
       
@@ -1253,7 +1243,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f67df8effbd52a268fa421794e95adada991c8cbf07a5f32b467b7f586ee60ef">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9ae1f8c568fd0f0fc36f4480c057b84370b0dadfdbd674a29f20004e00414954">
   
     
       
@@ -1431,7 +1421,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7b5cd7ca20c368731e5f92353d2807c0a455bcb57a57ea6fb5ddaf75a177076f">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5637e37828e08ade21a46552acfb0eb3ce2b6b4364e24a0ccd48c503ab884663">
   
     
       
@@ -1445,7 +1435,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-860c339b72b48b551bd4d02befd52c0c18bced5fe0842b1cac184dd8bc00476d">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6b9cdcdb14911c451f9de4572657b252869a3695ec41590a92b8d9e71ad0f6c5">
   
     
       
@@ -2099,7 +2089,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-99b3d0ef1f0921cec85744a1f4e3fcd0ab4762f4d21cc510f74e3156f08c6903">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3d27e84e49df60be0dfb2358fdeca5a2095af589c8a503f09a0cf7bae5eb6b61">
   
     
       
@@ -2113,7 +2103,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-93b239633e974ff89ce3950a7d305dc684b5fec3e6014ab676d95eeb72ff950e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7c76cdd2552bfcf3fc23cf791f4589c80fe1c5fd921308e13ff23c20ced7d14b">
   
     
       
@@ -2371,7 +2361,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8f53ec32a21af2d59c142c7b61ddb323ca7e840c54513f176f12f1045ca36407">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-84bad41a78d46ecd1be5b1c4c85aa528a26eedfb5cb2b2ad416ea6055b138b29">
   
     
       
@@ -2385,7 +2375,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-cc7153c1db5e2249f18a9f3d30c3af88ca723d131e0e3db9facfd38a9c15ddc8">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-82b27c1333c2cdfd95c33816ac5e55ae6ecc61bf5a8a50b17de857dab48dcbf0">
   
     
       
@@ -2575,7 +2565,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4d5f937b3e4c2f77a1f8f5d491cde3819a1dfd9d3879c849566deed627230b38">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3e9d71d0d46c99b75d606a7d6075d5e79051a7941e9e8060b5b259d9c6f2d203">
   
     
       
@@ -2589,7 +2579,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e1e4a58680ac91c18858d43a9311505b9acfc50425f109fcaa3bfae59df387e8">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f2e6dc5a598f043940014644937454f72636d47c19bb36051db6b66c2a4f1055">
   
     
       
@@ -2785,7 +2775,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d2cddc65f165da267da59b27b417da49c2fb1e6b215838828086adbc8d11dda1">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f34e5a456791bc8f3ec03dc6e874a480a063a9d1e2dee4967344c6b39f750b4c">
   
     
       
@@ -2799,7 +2789,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-812cdd6e083afffed28b510e67cb8d233cda99cd6c78caf7782d036b4e279953">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3f6de2b145785f747a0a9f4b09173e4c9bba28dafd02ebfd286c0a0d6bf6a5b0">
   
     
       
@@ -2873,17 +2863,17 @@ X-Varnish: 19360020 24347285
                               <div class="col collapse-region">
                   <h2 class="no-toc">
                               
-  <button aria-expanded="false" aria-controls="section-d860f363-4aa2-4db0-9d11-18275d2ac00b" data-target="#section-d860f363-4aa2-4db0-9d11-18275d2ac00b" data-toggle="collapse" role="button" class="border border-primary rounded collapse-section no-toc btn-link btn">Christmas Craft Show: Call to artists and artisans</button>
+  <button aria-expanded="false" aria-controls="section-45c1e1a3-26a9-4079-92b7-fc4b8ababc74" data-target="#section-45c1e1a3-26a9-4079-92b7-fc4b8ababc74" data-toggle="collapse" role="button" class="border border-primary rounded collapse-section no-toc btn-link btn">Nepean Sportsplex Christmas Craft Show</button>
 
                   </h2>
-                  <div class="collapse collapse-wrapper border border-primary border-top-0 no-gutters p-4 w-100" id="section-d860f363-4aa2-4db0-9d11-18275d2ac00b">
+                  <div class="collapse collapse-wrapper border border-primary border-top-0 no-gutters p-4 w-100" id="section-45c1e1a3-26a9-4079-92b7-fc4b8ababc74">
                   
                                                                                       <div  class="layout__region layout__region--main col-12">
                           
-                                                      <div class="paragraph paragraph--type--article-reference paragraph--view-mode--default">
+                                                      <div class="paragraph paragraph--type--page-reference paragraph--view-mode--default">
           
             <div class="field field--name-field-content-ref field--type-entity-reference-label-override field--label-hidden field__item">
-<article class="node node--type-article node--view-mode-default">
+<article class="node node--type-landing-page node--view-mode-teaser">
   
   <div class="node__content">
       <div class="layout layout--onecol">
@@ -2891,71 +2881,16 @@ X-Varnish: 19360020 24347285
       
 
 
-  <span class="field field--name-title field--type-string field--label-hidden"><h2  class="h2">Christmas Craft Show: Call to artists and artisans</h2>
+  <span class="field field--name-title field--type-string field--label-hidden"><h3  class="h2"><a href="https://ottawa.ca/en/recreation-and-parks/nepean-sportsplex-christmas-craft-show">Nepean Sportsplex Christmas Craft Show</a></h3>
 </span>
 
 
-<div class="views-element-container">
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5c3ce28308b3a18cdce6018e0b5f68670e178e0bfa8ce01c67b981d9f19e1d6a">
   
-    
+            <div class="field field--name-field-formatted-summary field--type-string-long field--label-hidden field__item">Over 100 local and national artisans featured each year...</div>
       
-  
-          </div>
-</div>
-
-
-</div>
-<div class="views-element-container">
-
-
-
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bbf7e527bbe8cb04999f16ab12374576fcd5f8fa2d9c01cf5cf058195529b10b">
-  
-    
-      
-  
-          </div>
-</div>
-
-
-</div>
-
-
-
-  
-      <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden field__items">
-              <div class="field__item">  <div class="paragraph paragraph--type--fixed-layout paragraph--view-mode--default">
-                  
-                          
-                                  
-                  <div class="toc-selectors layout layout--bootstrap-fixed-grid-row-1 row">
-
-            
-              
-                                                                                      <div  class="layout__region layout__region--main col-12">
-                          
-                                                      <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>Applications are now closed.</p>
-<p>&nbsp;</p>
-</div>
-      
-      </div>
-
-                        </div>
-                                          
-                    
-                
-            </div>
-          
-      </div>
-</div>
-          </div>
-  
 
 
     </div>
@@ -2964,6 +2899,12 @@ X-Varnish: 19360020 24347285
   </div>
 
 </article>
+</div>
+      
+      </div>
+  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
+          
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p><a href="https://ottawa.ca/en/recreation-and-parks/nepean-sportsplex-christmas-craft-show">The Christmas Craft Show returns, <strong>November 6 to 9!</strong></a></p>
 </div>
       
       </div>
@@ -3014,7 +2955,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-8b4f56a9bbc2e2dc6276105e753ec1a1034305ed665128afe65c46cdf030961e">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-df9624efc58d003951569b44b76f925853bffedc13fdc7f2efb04b8e29900dde">
   
     
       <div class="view-header">
@@ -3105,7 +3046,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d0a09f6106de686b5169917d15ada0fb31650ac1c3ef6fa445594d57f35be922">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1e84b960f5a29e24152500838cd501babbb0ebd25be03c23a1466fdc47282716">
   
     
       
@@ -3119,7 +3060,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-fdfa4477b2ad14981ae4468301ee07f03a7e499116b67f9684d4bc2bee48e774">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ae575f8de4bcbb3848c955ca97ff7c1945c3736d33e2751a13d872bf04eede8d">
   
     
       
@@ -3225,7 +3166,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-fae8391d4122e538f7111052ecddc0c7ee7f0ee70ff42f0fc5f2e27ed31365f1">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1c90edda540413834ba50e7b6d6b7ed6fcdd9120648184551d2b53342f0abce0">
   
     
       
@@ -3239,7 +3180,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-626eadd111640f12149f68823de13190976957ef85019c29bbd923026bde4c33">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c78e64375d2f6c495ac18dc1953e86713cc724f9ff4832c274bba7127d50d76e">
   
     
       
@@ -3275,7 +3216,7 @@ X-Varnish: 19360020 24347285
 <li><strong>Guidance every step of the way</strong>: Our experienced team is here to assist you from start to finish. We understand that wedding planning can be overwhelming, so count on us to make it stress-free. Your happiness is our priority.&nbsp;</li>
 </ul>
 <p>It’s a perfect union! By choosing the Nepean Sportsplex as your wedding venue, you’re creating a perfect union. Combine our elegant spaces with the exceptional services provided by Tulips and Maple, and your wedding day will be nothing short of magical.&nbsp;&nbsp;</p>
-<p><a href="mailto:nepeansportsplex@ottawa.ca">Contact us by email</a> to arrange a tour and personal consultation.  </p>
+<p><a href="/cdn-cgi/l/email-protection#cba5aebbaeaaa5b8bba4b9bfb8bba7aeb38ba4bfbfaabcaae5a8aa">Contact us by email</a> to arrange a tour and personal consultation.  </p>
 </div>
       
       </div>
@@ -3683,7 +3624,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-fee3aa0556616f9d89c29b807b0a04f0899b6439e4de1da887961471302e6171">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c87649dd0a2537b51514d30e244b9a818251a2e8926b9aa115549e78d6ed75cd">
   
     
       
@@ -3697,7 +3638,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9456d5eec203a943a4d1e82d459ff6a491b24f444735898ff552e942c8497904">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-97b031830a3d044170d56e31a6019d6136fc25f9f89652f9d8db1052619a2c4e">
   
     
       
@@ -3841,7 +3782,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-cdf2a1237026570bd9b406bc702c95e4005aaf5e01dd975c3e1b92f51a819825">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a9cd0f826fddb8f2f7cd497c81710fdb586ca23d8ae8bc8d30895abbc4fc9e74">
   
     
       
@@ -3855,7 +3796,7 @@ X-Varnish: 19360020 24347285
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c17e93296cd49ab2eab24ac562851437ec5a8ccc942ff016cf0d4b9744f0e98d">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3068aad3b711fd202c563aa8f55ac4322ba261756c3854e79c1d3a7832f12369">
   
     
       
@@ -3999,7 +3940,7 @@ Daytime: Fall/Winter/Spring</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f8217dd6c128cebd27edb118cfe51e000d99a56613ba3bf611b5c740ec595646">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9239bd83530136f30ef475d0d588b0f1405bf280103e7773001df3362a1610fb">
   
     
       
@@ -4013,7 +3954,7 @@ Daytime: Fall/Winter/Spring</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d9bac3721c8c8e9fc630d51e05b7d882764b04c9fbfe348bb416368a9059c772">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4edb39404acd450b5585384372790285a9d891f31cc2add90dc06be5c8dfc485">
   
     
       
@@ -4060,13 +4001,13 @@ Daytime: Fall/Winter/Spring</p>
 <h4>Curling league&nbsp;</h4>
 <ul>
 <li>Beginner mixed league (ages 18+)&nbsp;</li>
-<li><a href="mailto:SportsplexAthletics@ottawa.ca" target="_blank">SportsplexAthletics@ottawa.ca</a>&nbsp;for additional information.</li>
+<li><a href="/cdn-cgi/l/email-protection#f3a0839c818780839f968bb2879b9f96879a9080b39c8787928492dd9092" target="_blank"><span class="__cf_email__" data-cfemail="de8daeb1acaaadaeb2bba69faab6b2bbaab7bdad9eb1aaaabfa9bff0bdbf">[email&#160;protected]</span></a>&nbsp;for additional information.</li>
 </ul>
 <h4>Book a bonspiel (rental)</h4>
 <ul>
 <li>Set up a bonspiel for team building with your friends or work colleagues. </li>
 <li>If you are interested in additional catering options, please fill out the <a href="https://www.tulipsandmaple.ca/ottawa/contact-us/" target="_blank">online request form for Tulips and Maple Catering</a>.&nbsp;</li>
-<li>For ice rental information and availability, please email <a href="mailto:SportsplexAthletics@ottawa.ca" target="_blank">SportsplexAthletics@ottawa.ca</a>.</li>
+<li>For ice rental information and availability, please email <a href="/cdn-cgi/l/email-protection#ca99baa5b8beb9baa6afb28bbea2a6afbea3a9b98aa5bebeabbdabe4a9ab" target="_blank"><span class="__cf_email__" data-cfemail="66351609141215160a031e27120e0a03120f051526091212071107480507">[email&#160;protected]</span></a>.</li>
 </ul>
 <h4>Bar/lounge and boardroom</h4>
 <p>These hours are subject to change.</p>
@@ -4150,7 +4091,7 @@ Daytime: Fall/Winter/Spring</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b34699f43ead396c6f5edfcaf9bdcef3ad60446acec01e307c56d628be2bc3f3">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f1c768f239d47648ec806ddc0cc765d7acc4f9467584c270930c452e72088fe5">
   
     
       
@@ -4164,7 +4105,7 @@ Daytime: Fall/Winter/Spring</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bd74876e8c9ab20aad3fe4110b9da8c5c7cece328e8f5e67d03e7b00665ab8c9">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-87b694c50a4a0daf28dce51ce0e94ba3f5a18b36c285f8d1b721a627d79ebaf3">
   
     
       
@@ -4620,7 +4561,7 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_vbqXGSVFFjC94Hma6-MoYncglvJ8cc0REQE5tEvI9OA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_vbqXGSVFFjC94Hma6-MoYncglvJ8cc0REQE5tEvI9OA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
@@ -4628,9 +4569,6 @@ Thank you for considering to help out.
 <script src="/themes/custom/ottca_theme/dist/js/slider-gallery.min.js?t1clew" async></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=6&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=89&cb=1039826224" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1626503802" async></script></body>
 </html>
-
-
-0
 

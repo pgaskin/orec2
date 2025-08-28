@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/dempsey-community-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 0
-Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:03:59 GMT
-Etag: "1756166637-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:03:57 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 35920) q(0 1 1 -1) r(16 16) U24
-X-Varnish: 24096964
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 976202a028894411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:14:12 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=svU81DJAo80v2zfJHfiYWrYUuI1SEpuy9DqHcVvhysNu41lcavmaaCbiO%2Bpbuk3XOxjBGLTP8cpwa%2Bc126oUPlp88CMNYFh017kUvNXx8D28a%2FLlYpPeIPIxWaL6ZA%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-b0b5
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ b0b5
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-95290cdb6731562960b5e56d1517ec5eb1a0ed0719459dbfa6b2c04510c19a75">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1593801949422d2cab473e86c7e72e7c4223f43663e9e3bf1b098757bf55f54a">
   
     
       
@@ -196,7 +186,7 @@ b0b5
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f5e5c802a2f27e8c3e6b5b07a93c1b0a86ac467b6238b86c58a242c5a5c4da3c">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-225225b07368bfecbaf732efa1ca1f971251db576954bb550ede80e74920e588">
   
     
       
@@ -295,7 +285,7 @@ b0b5
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">9:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">9:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">9:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">9:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">9:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">9:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">9:00 am - 10:00 pm</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">9:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">9:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">9:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">9:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">9:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">9:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">9:00 am - 10:00 pm</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -346,7 +336,7 @@ b0b5
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="mailto:Dempsey@ottawa.ca">Dempsey@ottawa.ca</a></div>
+              <div class="field__item"><a href="/cdn-cgi/l/email-protection#440021293437213d042b30302533256a2725"><span class="__cf_email__" data-cfemail="92d6f7ffe2e1f7ebd2fde6e6f3e5f3bcf1f3">[email&#160;protected]</span></a></div>
               </div>
       </div>
 
@@ -421,7 +411,7 @@ b0b5
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-edd1b8d65082115953581ae29a63d1f8ee65209c5c478b00c8782d737d7f35eb">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5b5e65bfebead9bd719c1887e50de61ac66635c21f9e32f04b57090156389e5b">
   
     
       
@@ -435,7 +425,7 @@ b0b5
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9852260723f2b393615eac1e6803c4309de1736354f1e6cce266c745d0dd8939">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9e5837f5974ea2aeea0b353d172c7b3b635ae81462a86025830fb8b8577e233f">
   
     
       
@@ -585,7 +575,7 @@ Plot Rental for non-residents of Ottawa – $81.99</p>
 <p>Garden Shed Rental – $33.53</p>
 <p>– All fees include taxes</p>
 <p><strong>Registration methods</strong></p>
-<p><strong>Online payment</strong>&nbsp;– contact&nbsp;<a href="mailto:Jardinkilborngarden@ottawa.ca" target="blank">Jardinkilborngarden@ottawa.ca</a>&nbsp;with your name and plot number(s), we will then provide a link to online payment.</p>
+<p><strong>Online payment</strong>&nbsp;– contact&nbsp;<a href="/cdn-cgi/l/email-protection#94def5e6f0fdfafffdf8f6fbe6faf3f5e6f0f1fad4fbe0e0f5e3f5baf7f5" target="blank"><span class="__cf_email__" data-cfemail="662c0714020f080d0f0a0409140801071402030826091212071107480507">[email&#160;protected]</span></a>&nbsp;with your name and plot number(s), we will then provide a link to online payment.</p>
 <ul>
 <li>Please allow time for us to process your registration. There is no risk of you losing your plot.</li>
 <li>Acceptable payment methods: Mastercard or VISA (Debit Visa is not accepted)</li>
@@ -962,16 +952,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=34&cb=451092094" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1490155819" async></script></body>
 </html>
-
-
-0
 

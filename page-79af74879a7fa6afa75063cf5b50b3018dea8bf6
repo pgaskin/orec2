@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/alfred-taylor-recreation-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 0
-Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:03:26 GMT
-Etag: "1756166605-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:03:25 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 4002) q(0 1 1 -1) r(10 10) U24
-X-Varnish: 19836183
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9761fc34ad65ef9f-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:09:49 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=SoFE5t3kMIW4ZdRdgLW2i9vYa9dFYGy5TFfcZJPzbyMX89h9g3MW1Xi0HCBh4PlmXUL%2FeqeMYHl0vYDWamc%2FwJALPtkowuo0tzmZ6yFoL8PmSJLfgBZgmla1pCpjlw%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-890a
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ X-Varnish: 19836183
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d0ba9c2628452d2b0162947dac223c0900fd34135c866398142aecc4cd2f3bbb">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-273148f581c85734174235ace630ae9fb456d33d1a61ffa2cbc7f80cd8605ea6">
   
     
       
@@ -196,7 +186,7 @@ X-Varnish: 19836183
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7e689ecd43a9d33ae23dd41f9527bd9c36d771d31797bb19d0fa7a387f58f7d4">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-463bc0fb0b4f6877124fc55f5d8b350f5b072748a528fbe7fff7bfcf694d1193">
   
     
       
@@ -259,7 +249,7 @@ X-Varnish: 19836183
 
 
   
-            <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><p>Please contact&nbsp;<a href="mailto:ngra@hotmail.ca">ngra@hotmail.ca</a> for opening hours and washroom availability.</p>
+            <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><p>Please contact&nbsp;<a href="/cdn-cgi/l/email-protection#224c455043624a4d564f434b4e0c4143"><span class="__cf_email__" data-cfemail="d1bfb6a3b091b9bea5bcb0b8bdffb2b0">[email&#160;protected]</span></a> for opening hours and washroom availability.</p>
 </div>
       
 
@@ -300,7 +290,7 @@ X-Varnish: 19836183
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="mailto:osgooderideaurecreation@ottawa.ca">osgooderideaurecreation@ottawa.ca</a></div>
+              <div class="field__item"><a href="/cdn-cgi/l/email-protection#1c736f7b737378796e7578797d696e797f6e797d687573725c7368687d6b7d327f7d"><span class="__cf_email__" data-cfemail="c6a9b5a1a9a9a2a3b4afa2a3a7b3b4a3a5b4a3a7b2afa9a886a9b2b2a7b1a7e8a5a7">[email&#160;protected]</span></a></div>
               </div>
       </div>
 
@@ -349,7 +339,7 @@ X-Varnish: 19836183
                           
                                                       <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>For&nbsp;<strong>hall rental</strong>&nbsp;information and availability, please email&nbsp;<a href="mailto:ngra@hotmail.ca">ngra@hotmail.ca</a>.</p>
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>For&nbsp;<strong>hall rental</strong>&nbsp;information and availability, please email&nbsp;<a href="/cdn-cgi/l/email-protection#c8a6afbaa988a0a7bca5a9a1a4e6aba9"><span class="__cf_email__" data-cfemail="6709001506270f08130a060e0b490406">[email&#160;protected]</span></a>.</p>
 </div>
       
       </div>
@@ -400,7 +390,7 @@ X-Varnish: 19836183
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-d683d6ff7c374d84b9f3352419acaf603af2d6f2e3feb4451818ef0ec285c2b9">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-14378f22f5ee2c155d5106f1fe97b20152b54a7d2913b267156c43e641fcb6a8">
   
     
       <div class="view-header">
@@ -789,16 +779,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=974420810" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1297704830" async></script></body>
 </html>
-
-
-0
 

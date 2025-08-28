@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/heron-seniors-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 0
-Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:04:19 GMT
-Etag: "1756166658-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:04:18 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: UNCACHEABLE (poor cacheability)
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 56550) q(0 1 1 -1) r(11 11) U24
-X-Varnish: 23446773
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 97620408183d4411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:15:11 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=pVNkCarqQb8ATz%2BPtEUWon8w7QOQXb%2Fo2IIG2xQfjP29wHp1UjZB0GYBPMjtdSPJ4zCUBU%2F75TNdWMNwpIdQKIWq5YpxqYiHeO6qAMhqewfNYyjKd3Y99eUuIfX33Q%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-a7af
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ a7af
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b9e9beaeae33aad45b9e23284a8df1f10a6f2973de6cdf5ea0a24e5ff4cff5cc">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d243b31a6dc4181998e76e21e23b2274c7ac4f0d2b74d31b0b72a0d9a3261616">
   
     
       
@@ -196,7 +186,7 @@ a7af
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-12e873eabcf73b6cbfb162c8932b24c3359ff9402b7c65a81ce0eb04de87bafd">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d9ffc61237471e9cdde4e8cbb4e444f84ee16f543f7504603c505c37a0e1f677">
   
     
       
@@ -404,7 +394,7 @@ a7af
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c0a23d7754422650dfe91cde634d07dee3fbaaf079174673fc813df7dc8eda5d">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-523dac6bc14533f2a6c4bd99b763a1c50a11fdaedb93cb15c8b039ec7d1d5114">
   
     
       
@@ -418,7 +408,7 @@ a7af
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5b9629835aade4eb91e85f21fa46bb695b29d2f365f09ebf0d5508bd41d8ebcf">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-dd8d94c13c0559e0423ddedd4c6b672890df29ab657695c29b79b0cf8b66be6e">
   
     
       
@@ -565,7 +555,7 @@ a7af
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-8d57331e305e3ca95bbb7037783156917f1167f8fa02937a4b1f07c71f64e9a8">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-dd50a3b2e6b94b2fa9c20eb6d0f764dba43b364c205613c9a2bab716020f65ce">
   
     
       <div class="view-header">
@@ -989,9 +979,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=54&cb=88751801" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1056409870" async></script></body>
 </html>
-
-
-0
 

@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/belltown-dome HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 0
-Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:03:37 GMT
-Etag: "1756166615-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:03:35 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 13670) q(0 1 1 -1) r(20 20) U24
-X-Varnish: 13783912
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9761fc9babceef9f-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:10:09 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=yP3pJBCI9lkZ1LWeZiECybOTNyBvXiWyyoGQywQCCuy2yl59R81vvTkoyZHEyaTrFY35yA5h0kKab6373m6F9SMH%2F%2BBQHwQ2dNWxn88Ni2PH2h0DQtaH4S9To4idbg%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-87f0
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ X-Varnish: 13783912
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a984fff3ea39e918f10cb5026f0c768053338d0d459bdc028eef3554e19bcb59">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9666518982a4f6c3d15078bb537c08dc706f02f2ec2dd2761ac4678cb257574d">
   
     
       
@@ -196,7 +186,7 @@ X-Varnish: 13783912
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-846b71561a4b6f44e4216bd31292f52bb49c49d85271417ee017b250bdc90ad6">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3d12b0126354d2e6be58cc22a989368e06f6c50690e4b7681e41eb561fafd636">
   
     
       
@@ -318,7 +308,7 @@ X-Varnish: 13783912
 
   
             <div class="clearfix text-formatted field field--name-field-place-address-info field--type-text-long field--label-hidden field__item"><p><a href="tel:613-828-3313">613-828-3313</a> - After 5 pm weekdays and 8 am Saturday and Sunday.</p>
-<p><strong>Ice rental:</strong> <a href="mailto:sports@ottawa.ca">sports@ottawa.ca</a></p>
+<p><strong>Ice rental:</strong> <a href="/cdn-cgi/l/email-protection#b2c1c2ddc0c6c1f2ddc6c6d3c5d39cd1d3"><span class="__cf_email__" data-cfemail="3a494a55484e497a554e4e5b4d5b14595b">[email&#160;protected]</span></a></p>
 </div>
       
 
@@ -329,7 +319,7 @@ X-Varnish: 13783912
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="mailto:sports@ottawa.ca">sports@ottawa.ca</a></div>
+              <div class="field__item"><a href="/cdn-cgi/l/email-protection#e192918e939592a18e9595809680cf8280"><span class="__cf_email__" data-cfemail="b6c5c6d9c4c2c5f6d9c2c2d7c1d798d5d7">[email&#160;protected]</span></a></div>
               </div>
       </div>
 
@@ -378,7 +368,7 @@ X-Varnish: 13783912
                           
                                                       <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>For ice rental information and availability, please email <a href="mailto:sports@ottawa.ca">sports@ottawa.ca</a>.</p>
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>For ice rental information and availability, please email <a href="/cdn-cgi/l/email-protection#5724273825232417382323362036793436"><span class="__cf_email__" data-cfemail="493a39263b3d3a09263d3d283e28672a28">[email&#160;protected]</span></a>.</p>
 </div>
       
       </div>
@@ -429,7 +419,7 @@ X-Varnish: 13783912
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-9cbbac7678f1002db9df9674b64d448c1d901ee25fffb6051862d205b5acd30c">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-7415aa167737ac3ee9a5865f954626d62dec94d35ebcbd05f91ce277f10c3afe">
   
     
       <div class="view-header">
@@ -794,16 +784,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=12&cb=206072362" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=455786025" async></script></body>
 </html>
-
-
-0
 

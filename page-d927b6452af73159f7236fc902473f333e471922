@@ -1,33 +1,25 @@
-GET /en HTTP/0.0
-Host: meridiancentrepointe.com
-Cookie: visid_incap_2420082=66pEercYRpeCM9qdotlkliT6rGgAAAAAQUIPAAAAAABZJFWqtHe9EN62jBrQcbmr; nlbi_2420082=CJ6+VOkA2zkKipLNg1toJQAAAABJ0xvgzS5EOL1yHCZEvKpO; incap_ses_1538_2420082=uV4EdXhu0i5GGgiJDxNYFST6rGgAAAAAipYc9TOHt5OYGghDiaeIsg==
-Referer: https://meridiancentrepointe.com/
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+GET /en/recreation-and-parks/facilities/place-listing/meridian-theatres-centrepointe HTTP/1.1
+Host: ottawa.ca
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
-Age: 0
-Cache-Control: must-revalidate, no-cache, private
-Cache-Tags: MISS
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:04:53 GMT
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: X-Consumer-ID,Accept-Encoding
-Via: 1.1 coo-prod-meridian-httpcache-kube-httpcache-6795cc6fcd-ww699 (Varnish/7.6)
-X-Cdn: Imperva
-X-Consumer-Id: dbafdaf4-d3b5-4609-ad17-0d94afc096a6
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: HIT
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
+Access-Control-Allow-Origin: *
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 976205d8eb904411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:16:23 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Qg6DKD4OoQvXY3DsPFND7cT0k12DGoA4MzgIa7oHDJ799hmLdmQxeOoHpMwlqc%2Fa87x%2FE2L6%2FbB8ooOR3P1pIi%2FTZ8JwVGA%2FEdCJaNGmH8IkyTj72SRQP26XRf3YwQ%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
 X-Frame-Options: SAMEORIGIN
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 13-82177749-82177751 SNNN RT(1756166692999 261) q(0 1 1 -1) r(2 2) U12
-X-Varnish: 2265568
+X-Powered-By: Express
 
-8d57
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head><script src="/wolnere-of-prough-and-more-Lady-When-Sonnence-th" async></script>
@@ -194,7 +186,7 @@ X-Varnish: 2265568
     <div class="views-element-container" id="block-views-block-theater-news-articles-block-2" data-block-plugin-id="views_block:theater_news_articles-block_2">
   
     
-      <div><div class="js-view-dom-id-5d12a1c272e71b269fff02b1504d68b209ff280917c707d2cace6398b96c4524">
+      <div><div class="js-view-dom-id-c196ae9b0a2ca6e698310f10e521769e7d39367257c19df5ba9230e96f8a18cc">
   
   
   
@@ -248,7 +240,7 @@ X-Varnish: 2265568
 		<div class="views-element-container" data-block-plugin-id="views_block:event_listings-block_1">
   
     
-      <div><div class="js-view-dom-id-2312aeb95bc703a638fb676aedf5c8f52173b7f2f1a5342fc8c121c7f6008f00">
+      <div><div class="js-view-dom-id-871d6fb53649908e3fcb2711f270b53e42696017093c18185b0688b70d849d16">
   
   
   
@@ -475,7 +467,7 @@ X-Varnish: 2265568
             </a>
         </li>
         <li class="nav-item">
-            <a title="Opens a new window" target="_blank" class="nav-link social-link social-link--dark" href="mailto:meridiancentrepointe@ottawa.ca">
+            <a title="Opens a new window" target="_blank" class="nav-link social-link social-link--dark" href="/cdn-cgi/l/email-protection#650800170c010c040b06000b111700150a0c0b1100250a11110412044b0604">
                 <i aria-hidden="true" class="fas fa-envelope fa-3x"></i>
 				<span class="visually-hidden">Send Email to Meridian Theatres @ Centrepointe Opens a new window</span>
             </a>
@@ -505,7 +497,7 @@ X-Varnish: 2265568
       <div class="views-element-container" data-block-plugin-id="views_block:event_listings-block_4">
   
     
-      <div><div class="home-page-featured-events text-center js-view-dom-id-bbb212cc56eea1173b1ccd3b0da53e617758051c5028253a5ca5c2a1efe09ab8">
+      <div><div class="home-page-featured-events text-center js-view-dom-id-647c1fc8a3d14d4db566980dcd897b40e930e52b4241b8129109897f98ed236e">
   
   
   
@@ -690,12 +682,12 @@ X-Varnish: 2265568
 		<p>
 		Box Office<br>
 		<a href="tel:+1-613-580-2700">613-580-2700</a><br>
-		<a href="mailto:BilletterieTMTCPBoxoffice@ottawa.ca">BilletterieTMTCPBoxoffice@ottawa.ca</a>
+		<a href="/cdn-cgi/l/email-protection#8dcfe4e1e1e8f9f9e8ffe4e8d9c0d9ceddcfe2f5e2ebebe4eee8cde2f9f9ecfaeca3eeec"><span class="__cf_email__" data-cfemail="9ddff4f1f1f8e9e9f8eff4f8c9d0c9decddff2e5f2fbfbf4fef8ddf2e9e9fceafcb3fefc">[email&#160;protected]</span></a>
 		</p>
 		<p>
 		General Inquiries<br>
 		<a href="tel:+1-613-580-2701">613-580-2701</a><br>
-		<a href="mailto:meridiancentrepointe@ottawa.ca">meridiancentrepointe@ottawa.ca</a>
+		<a href="/cdn-cgi/l/email-protection#3c51594e5558555d525f5952484e594c53555248597c5348485d4b5d125f5d"><span class="__cf_email__" data-cfemail="7a171f08131e131b14191f140e081f0a1513140e1f3a150e0e1b0d1b54191b">[email&#160;protected]</span></a>
 		</p>
 	</address>
 </div>		<div class="col-12 col-sm-6 col-md-5 col-lg-3 mb-5 order-sm-4 order-md-4 order-lg-3 social-block" id="block-sociallinks" data-block-plugin-id="block_theatre_social">
@@ -726,7 +718,7 @@ X-Varnish: 2265568
             </a>
         </li>
         <li class="nav-item">
-            <a title="Opens a new window" target="_blank" class="nav-link social-link social-link--dark" href="mailto:meridiancentrepointe@ottawa.ca">
+            <a title="Opens a new window" target="_blank" class="nav-link social-link social-link--dark" href="/cdn-cgi/l/email-protection#f69b93849f929f979895939882849386999f988293b6998282978197d89597">
                 <i aria-hidden="true" class="fas fa-envelope fa-3x"></i>
 				<span class="visually-hidden">Send Email to Meridian Theatres @ Centrepointe Opens a new window</span>
             </a>
@@ -775,7 +767,7 @@ X-Varnish: 2265568
     </ul>
 </div>
 
-<script type="text/javascript">
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
     var ssaUrl = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'wl-clickserv.index.digital/conv/c8b82ed83bca0e1c';
     new Image().src = ssaUrl;
     (function(d) {
@@ -827,7 +819,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
     
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"en\/","currentPath":"node\/31","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"blazy\/bio.ajax,layout_builder\/twocol_section,layout_discovery\/onecol,ottawatheatretheme\/global-scripts,ottawatheatretheme\/global-styling,system\/base,theatre_blocks\/theatre-vue-advertisement,views\/views.ajax,views\/views.module","theme":"ottawatheatretheme","theme_token":null},"ajaxTrustedUrl":{"\/en\/search":true},"views":{"ajax_path":"\/en\/views\/ajax","ajaxViews":{"views_dom_id:bbb212cc56eea1173b1ccd3b0da53e617758051c5028253a5ca5c2a1efe09ab8":{"view_name":"event_listings","view_display_id":"block_4","view_args":"","view_path":"\/node\/31","view_base_path":"our-season","view_dom_id":"bbb212cc56eea1173b1ccd3b0da53e617758051c5028253a5ca5c2a1efe09ab8","pager_element":0},"views_dom_id:2312aeb95bc703a638fb676aedf5c8f52173b7f2f1a5342fc8c121c7f6008f00":{"view_name":"event_listings","view_display_id":"block_1","view_args":"","view_path":"\/node\/31","view_base_path":"our-season","view_dom_id":"2312aeb95bc703a638fb676aedf5c8f52173b7f2f1a5342fc8c121c7f6008f00","pager_element":0}}},"ajax":[],"user":{"uid":0,"permissionsHash":"94a0b38f3fe368344e51c6bfff902b439897f1e291efcfe55b08657b4220a798"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"en\/","currentPath":"node\/31","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"blazy\/bio.ajax,layout_builder\/twocol_section,layout_discovery\/onecol,ottawatheatretheme\/global-scripts,ottawatheatretheme\/global-styling,system\/base,theatre_blocks\/theatre-vue-advertisement,views\/views.ajax,views\/views.module","theme":"ottawatheatretheme","theme_token":null},"ajaxTrustedUrl":{"\/en\/search":true},"views":{"ajax_path":"\/en\/views\/ajax","ajaxViews":{"views_dom_id:647c1fc8a3d14d4db566980dcd897b40e930e52b4241b8129109897f98ed236e":{"view_name":"event_listings","view_display_id":"block_4","view_args":"","view_path":"\/node\/31","view_base_path":"our-season","view_dom_id":"647c1fc8a3d14d4db566980dcd897b40e930e52b4241b8129109897f98ed236e","pager_element":0},"views_dom_id:871d6fb53649908e3fcb2711f270b53e42696017093c18185b0688b70d849d16":{"view_name":"event_listings","view_display_id":"block_1","view_args":"","view_path":"\/node\/31","view_base_path":"our-season","view_dom_id":"871d6fb53649908e3fcb2711f270b53e42696017093c18185b0688b70d849d16","pager_element":0}}},"ajax":[],"user":{"uid":0,"permissionsHash":"94a0b38f3fe368344e51c6bfff902b439897f1e291efcfe55b08657b4220a798"}}</script>
 <script src="/core/assets/vendor/jquery/jquery.min.js?v=3.7.0"></script>
 <script src="/core/assets/vendor/once/once.min.js?v=1.0.1"></script>
 <script src="/core/misc/drupalSettingsLoader.js?v=10.1.8"></script>
@@ -861,8 +853,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="/core/modules/views/js/ajax_view.js?v=10.1.8"></script>
 <script src="/modules/custom/theatre_blocks/vue-components/dist/main.js?syarm5"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1956686508" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1725143601" async></script></body>
 </html>
-
-0
-

@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/ben-franklin-place HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 0
-Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:03:38 GMT
-Etag: "1756166617-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:03:37 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 15633) q(0 1 1 -1) r(13 13) U24
-X-Varnish: 24320140
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9761fcba7a8cef9f-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:10:10 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=oRV8WoCHFIFmveiMvSEJvuIhOUeO6qbX3bfB84V9%2F8uP1XegeDcAZ6TwykLTYOiIRr0BA3k35nx8iOV04MSqJvvuTyCoZK%2BoufHvCK%2F4eV51bSfpl9nCUjJ3x9Tc2A%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-71bd
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ X-Varnish: 24320140
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c930d54ecb2db934551b455b0000bb722af0800f1aece313d4034baf40dbb739">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-db8f699dbb4011aa201adb3c33084d9711565b0f305eb23ae82b595dfbf41d6a">
   
     
       
@@ -196,7 +186,7 @@ X-Varnish: 24320140
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b1aafe700829ee5e96ae978662d9b76e70e53517f371a963c1e322f2a3abf182">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b324733fbf73d1cb037391fb97a89fdd0a67415ea71fa992b6b19d4425a8aa29">
   
     
       
@@ -314,7 +304,7 @@ X-Varnish: 24320140
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="mailto:bfprentals@ottawa.ca">bfprentals@ottawa.ca</a></div>
+              <div class="field__item"><a href="/cdn-cgi/l/email-protection#5331352321363d27323f20133c27273224327d3032"><span class="__cf_email__" data-cfemail="3654504644535842575a4576594242574157185557">[email&#160;protected]</span></a></div>
               </div>
       </div>
 
@@ -663,16 +653,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_U8UzRuMCtfbQT6GbHeG18LGC9a-Y73bBYOEtwoHRBkA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jcGOwyAMRH8IwmX_BxlisW4NRmCapF-_iVRVpYe9jOaNx5ogol0b1B8X3tbeumVQ7GpwV6Zyd2sbFXh5oUkiidErJJdO-eYFbrDPYTYMz8NdYkQ1gtdfzOjCwbAxnVOf6TXiKUrpU3z6sS8brQnnfm1U1HaJBGzDUP3-7LEJM7Y5JEXKtckDLRTgQyl2U6WO6vtoDzzcJ5yXDVsgjzng6iaykQmL_l8ZXSXTE9sfE7eTWQ"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_U8UzRuMCtfbQT6GbHeG18LGC9a-Y73bBYOEtwoHRBkA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jcGOwyAMRH8IwmX_BxlisW4NRmCapF-_iVRVpYe9jOaNx5ogol0b1B8X3tbeumVQ7GpwV6Zyd2sbFXh5oUkiidErJJdO-eYFbrDPYTYMz8NdYkQ1gtdfzOjCwbAxnVOf6TXiKUrpU3z6sS8brQnnfm1U1HaJBGzDUP3-7LEJM7Y5JEXKtckDLRTgQyl2U6WO6vtoDzzcJ5yXDVsgjzng6iaykQmL_l8ZXSXTE9sfE7eTWQ"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jcGOwyAMRH8IwmX_BxlisW4NRmCapF-_iVRVpYe9jOaNx5ogol0b1B8X3tbeumVQ7GpwV6Zyd2sbFXh5oUkiidErJJdO-eYFbrDPYTYMz8NdYkQ1gtdfzOjCwbAxnVOf6TXiKUrpU3z6sS8brQnnfm1U1HaJBGzDUP3-7LEJM7Y5JEXKtckDLRTgQyl2U6WO6vtoDzzcJ5yXDVsgjzng6iaykQmL_l8ZXSXTE9sfE7eTWQ"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jcGOwyAMRH8IwmX_BxlisW4NRmCapF-_iVRVpYe9jOaNx5ogol0b1B8X3tbeumVQ7GpwV6Zyd2sbFXh5oUkiidErJJdO-eYFbrDPYTYMz8NdYkQ1gtdfzOjCwbAxnVOf6TXiKUrpU3z6sS8brQnnfm1U1HaJBGzDUP3-7LEJM7Y5JEXKtckDLRTgQyl2U6WO6vtoDzzcJ5yXDVsgjzng6iaykQmL_l8ZXSXTE9sfE7eTWQ"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=13&cb=2020813649" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=149931184" async></script></body>
 </html>
-
-
-0
 

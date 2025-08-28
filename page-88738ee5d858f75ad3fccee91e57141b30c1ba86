@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/jim-tubman-chevrolet-rink HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 0
-Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:04:30 GMT
-Etag: "1756166668-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:04:28 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 66167) q(0 1 1 -1) r(25 25) U24
-X-Varnish: 23446786
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9762048858f84411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:15:32 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Ov0O4AwNY387rJw7ssSq0TUxm7rsfcIitMzGojfkpmircLbWUxq2LqW2oygr%2BYraaioH2vOl8Ln4CJCA0O3EdmO4DVmIMouU2Un5mAOYVoitqDVYVDM%2BCFkmEcgtjQ%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-13de9
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ X-Varnish: 23446786
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-350f60c1d4099cfc19796c243fb0dc71af56f05c878c062f5dcea9cc26fb48a3">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-54f458805965ffc9174faa21e3dc97daa8024121029b2c77f815cf027dec10ee">
   
     
       
@@ -196,7 +186,7 @@ X-Varnish: 23446786
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b8d7f0ed17720aa81cd9973965c227815a7d75c98cf991011de9deb3c9ba7829">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9bc0342bf5a99fcb25ebc2537dabe3d723b00ca78250379942e7c9eb254edc1f">
   
     
       
@@ -285,7 +275,7 @@ X-Varnish: 23446786
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">10:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">8:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">8:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">8:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">8:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">8:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">10:00 am - 10:00 pm</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">10:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">8:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">8:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">8:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">8:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">8:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">10:00 am - 10:00 pm</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -342,7 +332,7 @@ X-Varnish: 23446786
 
 
   
-            <div class="clearfix text-formatted field field--name-field-place-address-info field--type-text-long field--label-hidden field__item"><p>Slab rental:&nbsp;<a href="mailto:JTCrink@ottawa.ca">JTCrink@ottawa.ca</a></p>
+            <div class="clearfix text-formatted field field--name-field-place-address-info field--type-text-long field--label-hidden field__item"><p>Slab rental:&nbsp;<a href="/cdn-cgi/l/email-protection#03495740716a6d68436c77776274622d6062"><span class="__cf_email__" data-cfemail="86ccd2c5f4efe8edc6e9f2f2e7f1e7a8e5e7">[email&#160;protected]</span></a></p>
 </div>
       
 
@@ -353,7 +343,7 @@ X-Varnish: 23446786
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="mailto:JTCrink@ottawa.ca">JTCrink@ottawa.ca</a></div>
+              <div class="field__item"><a href="/cdn-cgi/l/email-protection#58120c1b2a31363318372c2c392f39763b39"><span class="__cf_email__" data-cfemail="33796770415a5d58735c47475244521d5052">[email&#160;protected]</span></a></div>
               </div>
       </div>
 
@@ -508,7 +498,7 @@ X-Varnish: 23446786
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-900dc2063823ba2fb8f0a9df27a1b52cbe6de8d26a4b346a56160e88e8c427c7">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-75d653dde6f2d1174ab98d25840370407b9f3b56bed3ec0f14073c304526a411">
   
     
       
@@ -522,7 +512,7 @@ X-Varnish: 23446786
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-338846caf55459c640a2e6060db1dcec92ad6f9eef9b3440f2fc9e27eadea65e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-50bf2111db4d5489f21d1376008c6b8732bc95985c968274da2be69b0efa6c63">
   
     
       
@@ -549,7 +539,7 @@ X-Varnish: 23446786
                           
                                                       <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>For information about skating at Jim Tubman Chevrolet Rink, please phone 613-580-3600 or send an email to&nbsp;<a href="mailto:JTCrink@ottawa.ca">JTCrink@ottawa.ca</a>.</p>
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>For information about skating at Jim Tubman Chevrolet Rink, please phone 613-580-3600 or send an email to&nbsp;<a href="/cdn-cgi/l/email-protection#501a041322393e3b103f24243127317e3331"><span class="__cf_email__" data-cfemail="f1bba5b283989f9ab19e8585908690df9290">[email&#160;protected]</span></a>.</p>
 <p><a href="https://ottawa.ca/en/recreation-and-culture/skating/drop-skating">Play free, additional details, descriptions, fees and cancellation information.</a></p>
 <p>The schedules listed in the charts below are subject to change.</p>
 <p>Changes will be reflected in the online reservation process.</p>
@@ -666,7 +656,7 @@ X-Varnish: 23446786
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-005968339e351f0b3903649fdc70b7a5dfbf8cad12960fd6750de50e67b1d4cd">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-878f5e5ee2deff5b35a7b1a5287ee56a41d6435e2e58bc12a70559a0297d507e">
   
     
       
@@ -680,7 +670,7 @@ X-Varnish: 23446786
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9250631c5cd4121b48246356aec118c6ca5049471c5eaaed66dbd8b83bf9e436">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c16f0109efb20156b512cb53011ad5161aacd32d892231bda9f5faec6424bb37">
   
     
       
@@ -707,7 +697,7 @@ X-Varnish: 23446786
                           
                                                       <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>For information please phone <a href="tel:613-580-3600">613-580-3600</a> or send an email to&nbsp;<a href="mailto:JTCrink@ottawa.ca">JTCrink@ottawa.ca</a>.</p>
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>For information please phone <a href="tel:613-580-3600">613-580-3600</a> or send an email to&nbsp;<a href="/cdn-cgi/l/email-protection#511b051223383f3a113e25253026307f3230"><span class="__cf_email__" data-cfemail="29637d6a5b40474269465d5d485e48074a48">[email&#160;protected]</span></a>.</p>
 <p><a href="https://ottawa.ca/en/recreation-and-culture/sports-and-fitness#section-c17098d1-2f01-48fe-8c4d-57c5072be830">Play free, additional details, descriptions, fees and cancellation information</a>.</p>
 <p><strong>*Reservations not required</strong></p>
 </div>
@@ -1507,7 +1497,7 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_vbqXGSVFFjC94Hma6-MoYncglvJ8cc0REQE5tEvI9OA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_vbqXGSVFFjC94Hma6-MoYncglvJ8cc0REQE5tEvI9OA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
@@ -1515,9 +1505,6 @@ Thank you for considering to help out.
 <script src="/themes/custom/ottca_theme/dist/js/slider-gallery.min.js?t1clew" async></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=6&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=62&cb=995104874" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1452250495" async></script></body>
 </html>
-
-
-0
 

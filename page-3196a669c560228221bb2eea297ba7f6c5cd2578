@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/crestview-pool HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 109
-Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:03:56 GMT
-Etag: "1756166526-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:02:06 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 34187) q(0 2 2 -1) r(2 2) U24
-X-Varnish: 24096961 18930756
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9762027c7aa24411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:14:06 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=tdNQCB0dUqR42Y6A2R2ucJwcoeuwqpNi1mj7zlBkBkcQlPOaP37otne36WTluoTddvP%2F4De2Mm7ixsFmF3q%2BbT7%2Fnq2n9lgRM6%2FVWslK6tTySbnIdGB2KunqTUdaqQ%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-af77
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ af77
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-93f237931a3b66b0dd8a70ee7f6da28401650a114d672a6ab0dbd6fca840a54f">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c5f43aaf289c7f3e63b4d8b6c3bfe5ad78fcaebc58ea185a4718b58b9af2336d">
   
     
       
@@ -196,7 +186,7 @@ af77
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-39c2093e9743afbf2ca515ef6375e81a50a4da700228c5887d5e2199bbb52ddb">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3abe0b9e89aad005289997e1fa7a73dd253d8451d1957336b58d6d4b90ff00a4">
   
     
       
@@ -314,7 +304,7 @@ af77
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="mailto:nepeansportsplex@ottawa.ca">nepeansportsplex@ottawa.ca</a></div>
+              <div class="field__item"><a href="/cdn-cgi/l/email-protection#d8b6bda8bdb9b6aba8b7aaacaba8b4bda098b7acacb9afb9f6bbb9"><span class="__cf_email__" data-cfemail="47292237222629343728353334372b223f07283333263026692426">[email&#160;protected]</span></a></div>
               </div>
       </div>
 
@@ -389,7 +379,7 @@ af77
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-73f610cb9c87bfede5dab3af7e06623969199488eb01630f38bbb376694b193e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c27e1c4a50a9fdd686645d8cb2bdd619c5d4063bbeb27c4ad5b281c1bca20a4b">
   
     
       
@@ -403,7 +393,7 @@ af77
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-879f01e13c94143a2cc81351ec32745e6d6fb96bbc3a2f9873656b27ed285598">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-377b49715b4d7ae1721a4c1764cd6cd5ac8353371d97c3d488e94ab890257ab9">
   
     
       
@@ -543,7 +533,7 @@ af77
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ceb8b4157fe6cb3f5d6218aecd5bdcc6b637b192ee06e8a985c7d83665b256ca">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b9cdcdf049d3c955fd7dd8a4d68312e6729b6b656de95b0fd659c1e0277773de">
   
     
       
@@ -557,7 +547,7 @@ af77
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6d2cb2f24effe5495de34dbf447f098a3d7c99367b3fcd3c807220f646635c22">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2a0fa9ec196a909c66e5cc9934b81e29cadad78a877abd14310eb946579395ba">
   
     
       
@@ -787,7 +777,7 @@ af77
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-38c59459f90f598ff9caa86941230eebec566153d3f65d396b70c6f29da469f2">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-861d0305162319986dcd0e526c6cfc3e10cad46988760dd00950720fd7b5355b">
   
     
       <div class="view-header">
@@ -1185,16 +1175,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=31&cb=1216801588" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1872699279" async></script></body>
 </html>
-
-
-0
 

@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/champagne-fitness-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 0
-Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:03:48 GMT
-Etag: "1756166627-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:03:47 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 25754) q(0 1 1 -1) r(11 11) U24
-X-Varnish: 13783923
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9761fdbda9aaef9f-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:10:52 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=XbCJ%2FhH%2Fa6K2SNqWGPR7jZrH6WPybLXzGnRsUwZGg4v%2BpZ3NZScUwRmtEWBcjBB4ELidp4GkqYmYaGqV56pC7T7r7OZo%2B7bIHaj87bKFbLJfHOrvxEqN6aUXs4oUkw%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-c22f
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ c22f
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d1663884ec9345e3a1db93feba6542ad0a2049979c0f8c9bb948ab1db0e180f7">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e62c9bb23a4e6bb9cd71411ff6f8059fc39ca45d47b99cdbba5ca9e6087c4db8">
   
     
       
@@ -196,7 +186,7 @@ c22f
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-39c544a1f4038d748381612cbc558109e80c5e833dfc08091ac9caf724761345">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-57dedaaef5fab962cbd50cef330ae1c739f1a97dce1ad9df0dcb84f510e63a42">
   
     
       
@@ -273,7 +263,7 @@ c22f
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">9:00 am - 2:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">6:30 am - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">6:30 am - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">6:30 am - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">9:30 am - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">6:30 am - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">9:00 am - 2:00 pm</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">9:00 am - 2:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">6:30 am - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">6:30 am - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">6:30 am - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">9:30 am - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">6:30 am - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">9:00 am - 2:00 pm</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -379,7 +369,7 @@ c22f
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-95513372c0b6fc4b81554b829defc8ca43db61d28d7a0717ecc33569edefc025">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-111a7ef73e1ea0c42a2f2285ed7437eacebc1dfab2708188fe364137bf8acbf3">
   
     
       
@@ -393,7 +383,7 @@ c22f
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-936844213865f08938d94526db44e439af58195c0bbae940abd966b4ec7e7936">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9977a91dd05f4e7a2f652ca9bc810dde474d03982a93e831bb658ee0447f34ed">
   
     
       
@@ -558,7 +548,7 @@ c22f
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-23abd3e763db9b3566cf1df6f9a8dcaeba2522281263c2e4a3b0e655477249fd">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-89d1e46e6df6bce023c3e0c48441fd102287f70e6fbd4215323e486484ebe70d">
   
     
       
@@ -572,7 +562,7 @@ c22f
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f81cc5b7bbb710c2fa5590a35d49ee46d02d615bca136312a95a5a15ce42b37b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a10a32705b0b26c7985899149b5b837fa3f5cf470d429cc23231e537416a5283">
   
     
       
@@ -738,7 +728,7 @@ c22f
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-ad2e96a337ecc94ac28cad86397b6c63825a0fa189be79fd9949c9ef2d586ab2">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-48f8ed99c10fedeefd4ea110f17020f38aaadcd38806371a2a0f8862be18168c">
   
     
       <div class="view-header">
@@ -1183,9 +1173,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=24&cb=1100026301" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=83730714" async></script></body>
 </html>
-
-
-0
 

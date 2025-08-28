@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/lansdowne-park HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 409
-Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:04:39 GMT
-Etag: "1756166267-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Mon, 25 Aug 2025 23:57:47 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 77170) q(0 1 1 -1) r(2 2) U24
-X-Varnish: 23187713 21719544
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9762051728124411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:15:55 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=KMMA7jQ%2FdLJ6azsNSyAB%2F3BmwZSq0mSXHA8rQWobTIdg48zoEnbkq2YbL578oTZRVrZlabDkzrPx43A%2BN4mP5QAY0GjRJF2ToRzaTCjfY7BoNUU0N88m%2BVLM8B2hsQ%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-260d6
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ X-Varnish: 23187713 21719544
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7bf9b4d9908e379859331277bfc2abd65d497865588d06ee69c188c1b715fd5b">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6cc9d88a85b763f27d34a070eec31c140207cfaebde140a50593c1edf54b8108">
   
     
       
@@ -196,7 +186,7 @@ X-Varnish: 23187713 21719544
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1302feaeadb31f0a856d4fcc2599034ad984a4e362145c95b8b69c8f620389bb">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bac2bdad78f20a7adcc436671e1bbc22ae21ca302b05b9de6435c821b88fcbc9">
   
     
       
@@ -343,7 +333,7 @@ X-Varnish: 23187713 21719544
 
 
   
-            <div class="clearfix text-formatted field field--name-field-place-address-info field--type-text-long field--label-hidden field__item"><p>General inquiry:&nbsp;<a href="mailto:parc.lansdowne.park@ottawa.ca">parc.lansdowne.park@ottawa.ca</a>&nbsp;or 613-580-2429</p>
+            <div class="clearfix text-formatted field field--name-field-place-address-info field--type-text-long field--label-hidden field__item"><p>General inquiry:&nbsp;<a href="/cdn-cgi/l/email-protection#35455447561b59545b46515a425b501b4554475e755a41415442541b5654"><span class="__cf_email__" data-cfemail="55253427367b39343b26313a223b307b2534273e153a21213422347b3634">[email&#160;protected]</span></a>&nbsp;or 613-580-2429</p>
 </div>
       
 
@@ -408,7 +398,7 @@ X-Varnish: 23187713 21719544
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-469689b1e5ea862c0536075dd894bf33fe9f040df8cb1f999aa15487412c72fa">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9ece44622e186948581583888153834aa90d82d1ba597064d9880744a332a919">
   
     
       
@@ -422,7 +412,7 @@ X-Varnish: 23187713 21719544
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e0ceb3ef472f01108dd68d9ad13af34f6e6dad5b3bb90d3683fbbcccc7205fa6">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d1f503ff8dfb35a97b45b55fbb096a599284159701961917acc0f340e70f5fea">
   
     
       
@@ -455,39 +445,11 @@ X-Varnish: 23187713 21719544
 </div>
       
       </div>
-  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
-          <div class="table-responsive">
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
-	<caption>Lansdowne Park - sports -&nbsp;May 20 to August 26</caption>
-	<thead>
-		<tr>
-			<td>&nbsp;</td>
-			<th>Monday</th>
-			<th>Tuesday</th>
-			<th>Wednesday</th>
-			<th>Thursday</th>
-			<th>Friday</th>
-			<th>Saturday</th>
-			<th>Sunday</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th>Roller-skating</th>
-			<td>n/a</td>
-			<td>
-			6:15&nbsp;- 7:15 pm,
-			7:20 - 8:20 pm&nbsp;
-			</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-	</tbody>
-</table></div>
-      </div>
+  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
+          
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p><strong>Roller skating will resume in October.</strong></p>
+</div>
+      
       </div>
 
                         </div>
@@ -558,7 +520,7 @@ X-Varnish: 23187713 21719544
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-8c8f702dbaa2bccec5e0e573e1f578a6e893396a1e10ff6fd447349fa1ac02d3">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-e149463258e1d2409bef3c841ec23b793c68df5d3ded8241d5af04b6928c1848">
   
     
       <div class="view-header">
@@ -649,7 +611,7 @@ X-Varnish: 23187713 21719544
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a46f7950ccec6f40c9a9477e9aa43562674f00294678352880c52241360da8f5">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2853f250bd546b595b5cc2ec5329660f5cfacf2b38118ce1308cdf92cd9e836a">
   
     
       
@@ -663,7 +625,7 @@ X-Varnish: 23187713 21719544
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4ee32e85e2a3474323476d69315baaacd2642e6cf572e11f03ac09073b39b176">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-49f8123706b7b50e714459084caad38f53502f0e835b247f143f06dd09f12e0c">
   
     
       
@@ -872,7 +834,7 @@ X-Varnish: 23187713 21719544
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e1fb3bd1541aeb36c29e0f6d7a632257824233e63ec249fb30c6ff4e29e02eb4">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-fa42a8358ce7c35a926eb3dacc9f0588f7c35881bdf3c055e85daf1aeb126ca7">
   
     
       
@@ -886,7 +848,7 @@ X-Varnish: 23187713 21719544
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-69a687bf3a30a03c2f662241c5d9b797f577ef9522eb1e069e67c5a5704706a8">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-cd4f00709a6012d08e37e40566c211c1552612b4aa0a9a9370e6ca0318a8e089">
   
     
       
@@ -1030,7 +992,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-59b902d9f37b52e1bda227df2b5ee8a1cafa8a38989c763666f9d501b352fdd3">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4c2eeb396d6260a352610be2888341abb96e9dbc96057a2826be40764a8a6ab2">
   
     
       
@@ -1044,7 +1006,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-78dd12db779d8f103518304ea45be95e224357f20476e63573fed703682da50b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-999b903196dc98088e0064780e4be4cc3f054f33f80be9fcd3a4410832fea173">
   
     
       
@@ -1738,7 +1700,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3db8bbee742eada28f268429c38019c1e38c19f267951b4dc37723b40af54b2c">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-932bda0df2ddcbd7ee28d69f8e6e9b483fab4560c38f8796b1f1901c24108646">
   
     
       
@@ -1752,7 +1714,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1e84e9c8c09875a445a9cd3ccc36940f4af4cb41095245bd866a6dc5a74f4c51">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-94fd02f90973edfc407bd1ae06c8cbe3fce769e2623526ef1d9ed6cdd318c852">
   
     
       
@@ -1852,7 +1814,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-18690781414deb3197b3085f13bd47de6fc5b31fd1a68ceddc98ab3c12d4c973">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0f7cb5119e653a4426665572fbadb21b444dff7ed17d078f1a75b5c2f84bf1a2">
   
     
       
@@ -1866,7 +1828,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4fe9a28d759e6d7b91f3709eefd258c8f7def017cfe64eca07fcfdf392016445">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c6dbfc86f042b823b782c23b111fd69d64722adac60fe39756c9d7b26cd71549">
   
     
       
@@ -1967,7 +1929,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b86dc7a377faa3f9896a2a8c68f112b00fdb9c10b203243d5c11aab3386e4aa2">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-679061a90798ffb531fe2d91856d0852e33fb8b7831e17a84ed852ea83c94b19">
   
     
       
@@ -1981,7 +1943,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c73e04a0335b81672f79b29067c968d7c25130786048c6db0ef7c50e402d491b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-13c326947cb43864b7e6ee79384f551e7ee46921af226112001d31c1fa48c32a">
   
     
       
@@ -2242,7 +2204,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3e63e47ea884da51ea588b20eddec90f9f0259acbea9b35a0d0f92679827896c">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ceacd21518e12c68418a3637af7480c7aad9f2e9debc3af1ec7e295a722713dc">
   
     
       
@@ -2256,7 +2218,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-39e7a5cde4c16285c0469297bd26fbd6278421eb3ed59c3b9671e8a450895d6f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-fec69c9fb54e5abc6af9282338f220f31bd68125146f66143e25bfc91f42a86a">
   
     
       
@@ -2364,7 +2326,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-104ecf8c6034eeef9ef83c6475ea5df632d14bf6be01cb41fb6ae7ea45f80561">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ba9f26dadc8094a38bbbf8b815af1899e0298b3547010f374f78f718e83f5bbb">
   
     
       
@@ -2378,7 +2340,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a00e6f9f219383286ffdfd49ce4d9577b94df353fca893f9b2f2124b6dd7f58b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-df7f07a32fe44c69f42dedc253d39bf21483dfca3773e25c97c8025b346acb7b">
   
     
       
@@ -2417,7 +2379,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 <p>Open daily, 7&nbsp;am to 11&nbsp;pm&nbsp;(weather permitting)</p>
 <h3>Final Pass Skate Shop</h3>
 <p>Skate sharpening and rental services are available on site.&nbsp;Group and party rentals are available.</p>
-<p>For additional information&nbsp;visit the <a href="https://www.finalpass.ca/locations/landsdowne/">Final Pass website</a> or email <a href="mailto:morelkevo@gmail.com">morelkevo@gmail.com</a>.</p>
+<p>For additional information&nbsp;visit the <a href="https://www.finalpass.ca/locations/landsdowne/">Final Pass website</a> or email <a href="/cdn-cgi/l/email-protection#d3bebca1b6bfb8b6a5bc93b4beb2babffdb0bcbe"><span class="__cf_email__" data-cfemail="e38e8c91868f8886958ca3848e828a8fcd808c8e">[email&#160;protected]</span></a>.</p>
 <h4>Hours of operation</h4>
 <p>PD days and other special dates, on a case-by-case basis and on availability of staff.</p>
 <ul>
@@ -2810,7 +2772,7 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_vbqXGSVFFjC94Hma6-MoYncglvJ8cc0REQE5tEvI9OA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_vbqXGSVFFjC94Hma6-MoYncglvJ8cc0REQE5tEvI9OA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
@@ -2818,9 +2780,6 @@ Thank you for considering to help out.
 <script src="/themes/custom/ottca_theme/dist/js/slider-gallery.min.js?t1clew" async></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=6&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=71&cb=565941066" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=58191579" async></script></body>
 </html>
-
-
-0
 

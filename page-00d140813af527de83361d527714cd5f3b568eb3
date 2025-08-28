@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/hunt-club-riverside-park-community-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 0
-Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:04:23 GMT
-Etag: "1756166661-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:04:21 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 59974) q(0 1 1 -1) r(20 20) U24
-X-Varnish: 23908010
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 976204418ef94411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:15:19 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=caf0lNGy%2BZjBl6DXmwQoyNLVMefdFKPSr9MLhMrb2PfltiPAeA6qHNC85oMa2%2FxeAyn3bQX54HSL%2BIcebiZMa1UvKmrJ%2FM9bByPMYV5j93Hcij3l%2FBti1c63EQJIYg%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-117e7
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ X-Varnish: 23908010
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c6c1e5a281a9a2736b2699a609c685f29ebf56d79d01ff9bda85b4050d0bb569">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-dfe312d4ae145e93a4c84e715f1baaad9e6b39ee92a12e0b47f45fd33a91015b">
   
     
       
@@ -196,7 +186,7 @@ X-Varnish: 23908010
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-38fc16b990ab04a9cf607705a0a8f38e52f58338196b04eabe7908ab69b0652c">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-54cf1d3b5fbae3ec933fa719e3c5102b0b2a98f8da18af5c38290bcc4c41e2bd">
   
     
       
@@ -347,7 +337,7 @@ X-Varnish: 23908010
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="mailto:HCRCC@ottawa.ca">HCRCC@ottawa.ca</a></div>
+              <div class="field__item"><a href="/cdn-cgi/l/email-protection#98d0dbcadbdbd8f7ececf9eff9b6fbf9"><span class="__cf_email__" data-cfemail="c38b8091808083acb7b7a2b4a2eda0a2">[email&#160;protected]</span></a></div>
               </div>
       </div>
 
@@ -465,7 +455,7 @@ X-Varnish: 23908010
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e1a6b9f61c72aaf0da0b210de54a8585dc6395540ec204191c2f81a121889032">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-208c847c0c014ec40e0362d3f24a4ddb407e4796e2829347f8a519b1ca7cd0a9">
   
     
       
@@ -479,7 +469,7 @@ X-Varnish: 23908010
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-04d28ce6c0b2205e4d4518be7d5443d4cc078d0cb75b479ffd6cc24b0862191e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-8ad2829bdfda62d157cd6b4bc3c015ea3b2579eeeea90707e0565f5d161f66fd">
   
     
       
@@ -625,7 +615,7 @@ X-Varnish: 23908010
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-233bdcaa39c7d16e790540d54560dc6582c32502cd9edffd8ce59e1793a2ee78">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ae5475977d6ac0f93f8782bd7e530fc3d0765a744690c238f15e3a8df6c31a59">
   
     
       
@@ -639,7 +629,7 @@ X-Varnish: 23908010
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4266a0a465fd39d4e0d58c13cab53191886024a2263600c0449494f10a47c6b8">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f47fb8e31472c9be8b77d700a9383f39260be04155814c23fa3d5519221bc22d">
   
     
       
@@ -901,7 +891,7 @@ X-Varnish: 23908010
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6a220dec138dfb9a383f7671ccc739400de1bf05b2868851e5ba52dcb15a14e0">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-af27839b5a1817702568004ecb9e7165708b4f5ed02d9c187b6fb663341377ec">
   
     
       
@@ -915,7 +905,7 @@ X-Varnish: 23908010
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-fcaaa94980c6299c7bb69cc05e7460cc45f4d01da463fc343dff735596504a97">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bce86351b742e957604874c60e47c2a1811514d706e970e3bc6085c84d3bbee9">
   
     
       
@@ -1173,7 +1163,7 @@ X-Varnish: 23908010
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8f6cc3b31855361817218cc18c76690547c5b636d2f6105eb114b422a00d6182">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-77d3d8f857740115dadb9b6b98c075183d454acf5feea947e7d3a9140bcd8996">
   
     
       
@@ -1187,7 +1177,7 @@ X-Varnish: 23908010
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-67d5f41888cd8d0fe931f2c7230ac89407cef6bd733e2039d2707143c86d598e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-41aab101155e27dc028a1b87191eab5888e3902ec35dbc2a70024e3ba9c12524">
   
     
       
@@ -1595,7 +1585,7 @@ X-Varnish: 23908010
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-a7d5bc1728a35c8f2be97b9111bbc871330ee4113dc749e57f14fa206b980570">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-d18da51ef2d95a4b77180df445cc782c22c2e28832e263214217ce9781c6a67c">
   
     
       <div class="view-header">
@@ -1985,16 +1975,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=57&cb=2140518262" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=629118368" async></script></body>
 </html>
-
-
-0
 

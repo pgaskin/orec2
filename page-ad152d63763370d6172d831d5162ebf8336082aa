@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/manotick-community-centre-and-mike-oneil-arena HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 0
-Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:04:49 GMT
-Etag: "1756166688-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:04:48 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 86066) q(0 1 1 -1) r(19 19) U24
-X-Varnish: 21123762
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 976205981e954411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:16:14 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=wcXuRwlfpYAgTXYBTuGcDxXzsKmbOH2oHO%2BJ7SLr1vF1FVYhoG6QKnFt3ZEpiuwiCwR7SBc8%2BybY1lJQ4rIyS4rfaUt9Lfv5C3GdWwDi3h1Zsq8k3ftJU87H%2FkxHpA%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-b84a
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ b84a
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9353eb7c244564a309987ba1efa74ee1b3a986a7021234905a1d2d8952a6bb17">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-12c9175428c98e964da22731bb72c9849e16517602377e69548b2b8ba907ef8a">
   
     
       
@@ -196,7 +186,7 @@ b84a
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-adc904277de40b6373db3004ff5ee873694cbbce285013f628d90dbeb66b3db9">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-113f28a82f7bab49268e94c651564148dbc923230ea58c677324e6600b4f5bd2">
   
     
       
@@ -311,7 +301,7 @@ b84a
 <li><a href="https://ottawa.ca/en/recreation-and-parks/facilities-and-rentals/rental-information/rent-ice#section-1860cc75-5216-4770-bae3-72b9b07a0e59">Ice and slab rentals</a></li>
 </ul>
 <p><strong>Program inquiries:</strong></p>
-<p><a href="mailto:publicskating@ottawa.ca">Public Skating email</a>&nbsp;or 613-580-2666</p>
+<p><a href="/cdn-cgi/l/email-protection#0e7e7b6c62676d7d656f7a6760694e617a7a6f796f206d6f">Public Skating email</a>&nbsp;or 613-580-2666</p>
 </div>
       
 
@@ -376,7 +366,7 @@ b84a
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4bd46829654a9c311c929e88bd946989bb974dd230f8f48a523414b2489f1209">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3c7a18ccbe49177e922a9e483554e0bbe1025dc3653e1ac8c3215adc2f44cd7b">
   
     
       
@@ -390,7 +380,7 @@ b84a
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-70243c2469b1199690cd3c9fc1ee5e656606fe8b48150e8640bad5805f76ffbb">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-8a77d9afe4a5d2ebb3eca8c3484270f78dbb25e23370598156671aa432e30d97">
   
     
       
@@ -529,7 +519,7 @@ b84a
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-955f45bea8fe534a964f281ef647e0ca9c25e482a7e501de89b397b854ce3c9b">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9f42adb6232ebaf232db2fc672f6a5a2d7ed4fad50f2e4401ebf4b1e36c832e5">
   
     
       
@@ -543,7 +533,7 @@ b84a
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d3c19df3de86efd249222d0c60c2e9360e35746fb7f44f45b91c5c156206cfd4">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-779c1cc7a05a1f1a078e3ec7ed04bfda4373563568216cbb31fab149a04e668a">
   
     
       
@@ -570,9 +560,10 @@ b84a
                           
                                                       <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The schedules listed in the charts below are subject to change. Holiday hours and programs may vary.</p>
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The schedules listed in the charts below are subject to change.&nbsp;Holiday hours and programs may vary.</p>
 <p><a href="https://ottawa.ca/en/recreation-and-culture/skating/drop-skating">Additional details, descriptions, fees and cancellation information</a>.</p>
-<p><strong>Reservations not required.</strong></p>
+<p><strong><a href="https://ottawa.ca/en/recreation-and-parks/skating/safety-regulations" hreflang="en">Safety and regulations</a></strong></p>
+<p>Reservations not required.</p>
 </div>
       
       </div>
@@ -732,7 +723,7 @@ b84a
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-0ce891a912140b0152290724bdc317619f3ac9150cb415869b34ba13590cdda5">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-77d46213bb32155effbfbe07f3fc4b043cefd11c813629f0798c1048c9ebc30a">
   
     
       <div class="view-header">
@@ -1128,16 +1119,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=77&cb=1030524291" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=3&cb=1258064376" async></script></body>
 </html>
-
-
-0
 

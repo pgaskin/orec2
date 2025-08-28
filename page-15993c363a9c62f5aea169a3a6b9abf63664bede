@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/fairfields-heritage-house HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 0
-Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:04:04 GMT
-Etag: "1756166643-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:04:03 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: UNCACHEABLE (poor cacheability)
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 41968) q(0 1 1 -1) r(7 7) U24
-X-Varnish: 21786107
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 976203191f644411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:14:34 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=GYKnfluM%2BP5ipH6c%2BxETJBuUIXDkHNXbN%2Bb7%2F2nuKXZeisJEdKG3sis8cGntx6hE%2BC2qy36GwfrsFf5qW1Qxb%2F2B2g5Kw1XmekkkxcydU5nRRdmy30Lm%2F2ZKmi0pcQ%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-15dbf
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ X-Varnish: 21786107
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-10d8c3354869ce0e166818db3d47a39afc600a288c02469983ae0057c66038d6">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9c45b58b9169349b444a194563aaa15f6ab9065d52b99d0820da38ee0a272012">
   
     
       
@@ -196,7 +186,7 @@ X-Varnish: 21786107
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d7de3d8d79a7773b307340716148d6ce4fc7571c655605af921d019bbd4c5480">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-667e26f7ad9684d7e661c4b9d87b3241bf987b0b8015467f5231af67bce22533">
   
     
       
@@ -305,7 +295,7 @@ X-Varnish: 21786107
   
             <div class="clearfix text-formatted field field--name-field-place-address-info field--type-text-long field--label-hidden field__item"><p><a href="https://ottawa.ca/en/recreation-and-parks/facilities/facility-rentals?facility_rentals_facets%5B0%5D=facility%3AFairfields%20Heritage%20House">Facility rentals</a></p>
 <p>Tel: <a href="tel:613-580-9638">613-580-9638</a> (Nepean Museum)<br>
-Email:&nbsp;<a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a><br>
+Email:&nbsp;<a href="/cdn-cgi/l/email-protection#365b434553435b4576594242574157185557"><span class="__cf_email__" data-cfemail="98f5edebfdedf5ebd8f7ececf9eff9b6fbf9">[email&#160;protected]</span></a><br>
 Facebook:&nbsp;<a href="https://www.facebook.com/FairfieldsHeritageHouse/" target="_blank">@FairfieldsHeritageHouse</a><br>
 Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscriptions/signup-form" target="_blank">At your museum</a>" eNewsletter.&nbsp;</p>
 </div>
@@ -383,7 +373,7 @@ Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscription
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-05aa1a1178bbf2a2e8c580d53cb529305a7665116a8e6abe747f981dee39a218">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5e8f24f1cfdb63b72b2ee4af69f9fd5f7ddbbd11982984fb46d13ba21ddeb7cc">
   
     
       
@@ -397,7 +387,7 @@ Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscription
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a6bf3b032837c101f068f438c7a515af13bf08870b63ac0653f077cf76cc7625">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7fe26d48744828a9270371576fd3abd2d721fbed619866a09f7a3aaa727723a0">
   
     
       
@@ -498,7 +488,7 @@ Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscription
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9fafb6613d6a1da56caa30ab7e442addad384a5aa7e3e3e49a747a8dd3535217">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-60941bc36d4d7894e8fbb6a6297124f78534fadc76183646423ca85fcffed8eb">
   
     
       
@@ -512,7 +502,7 @@ Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscription
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0baa0f60b17e7ddda772b75d18a642c8ddd14d67dfe1970b6e866b252a44c250">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4073a377998d418d64812b41560eed1a9f63ca980ecbca4091de123f6c54fcf2">
   
     
       
@@ -548,7 +538,7 @@ Cost: $85 + tax (per person) . <a href="https://anc.ca.apm.activecommunities.com
 <ul>
 <li>This program is delivered in English.</li>
 <li>This program takes place outdoors under an open-sided tent. Please check weather conditions and dress appropriately for conditions. Sunscreen and bug spray are recommended.</li>
-<li>The museum grounds include grassy and uneven terrain. If you have questions or concerns regarding accessibility, please contact 613-580-9638 (Nepean Museum) or email <a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a>. Additional information about accessibility can be found on the museum webpage.</li>
+<li>The museum grounds include grassy and uneven terrain. If you have questions or concerns regarding accessibility, please contact 613-580-9638 (Nepean Museum) or email <a href="/cdn-cgi/l/email-protection#bad7cfc9dfcfd7c9fad5cecedbcddb94d9db"><span class="__cf_email__" data-cfemail="96fbe3e5f3e3fbe5d6f9e2e2f7e1f7b8f5f7">[email&#160;protected]</span></a>. Additional information about accessibility can be found on the museum webpage.</li>
 <li>In the event of inclement weather, the program will be moved indoors to the community room. The community room is located on the second floor of the heritage house and is accessible by stairs only.</li>
 <li>Advance registration is required. Workshops with insufficient registration may be cancelled. If an alternative cannot be offered, a refund will be issued.</li>
 <li>Visit the <a href="https://ottawa.ca/en/family-and-social-services/older-adults/financial-assistance#section-89551f56-14c3-4f6e-b24c-5e5072350977">Ottawa Hand in Hand</a> webpage for information on available financial supports to facilitate participation in recreation and culture programs.</li>
@@ -625,7 +615,7 @@ Cost: $85 + tax (per person) . <a href="https://anc.ca.apm.activecommunities.com
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a9bde53bf1f026af88bf5fc269aa1ddc2cb4009aba7e1fff5bf44da2939b6394">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-17cd06354079d4701873fabe5e989aea966d06675594f055e4665f4190e6268e">
   
     
       
@@ -639,7 +629,7 @@ Cost: $85 + tax (per person) . <a href="https://anc.ca.apm.activecommunities.com
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e12705719bfd02607cb9f3d01fec563e652fbfb2c239f62466a7a3b7be10c39b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-dfc0c92af0d7c29b5156cb6fd6c1a879e9389c5c4acde60891688a00a5f8361e">
   
     
       
@@ -690,7 +680,7 @@ Cost: $7.56 per child<br>
 <li>Activities take place outdoors. Please dress your child for weather conditions, including clothing and shoes you are comfortable with getting dirty. A hat, sunscreen, and bug spray are recommended.</li>
 <li>Please pack a small snack and a bottle of water for your child.</li>
 <li>This program is delivered rain or shine. In the event of poor weather conditions, activities may be adapted or moved under the gazebo or inside the museum. In the rare event that the session must be cancelled due to inclement weather, all registered participants will be contacted directly with further information.</li>
-<li>Activities take place on the museum grounds which include grassy and uneven terrain. The simulated dig site is at ground level, but activities can be modified for table-top access. An accessible washroom is available on the ground floor of the museum. If you have questions or concerns about accessibility, please contact 613-580-9638 (Nepean Museum) or <a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a>.&nbsp;</li>
+<li>Activities take place on the museum grounds which include grassy and uneven terrain. The simulated dig site is at ground level, but activities can be modified for table-top access. An accessible washroom is available on the ground floor of the museum. If you have questions or concerns about accessibility, please contact 613-580-9638 (Nepean Museum) or <a href="/cdn-cgi/l/email-protection#6f021a1c0a1a021c2f001b1b0e180e410c0e"><span class="__cf_email__" data-cfemail="18756d6b7d6d756b58776c6c796f79367b79">[email&#160;protected]</span></a>.&nbsp;</li>
 <li>Sessions with insufficient registration may be cancelled. If the session cannot be rescheduled, a refund will be issued.</li>
 </ul>
 </div>
@@ -765,7 +755,7 @@ Cost: $7.56 per child<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-01b1530f1d2395f709ca0eec32df34937108aca5eb5074caf770f1324afe97d6">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3087b2b0bdef60e00241812523f3656b2bb8eec7b17def66c1a77ef5ab488d41">
   
     
       
@@ -779,7 +769,7 @@ Cost: $7.56 per child<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-dcc91cf471019dd9fa2cf3d7280dcde52148f286b76514c12f370affa57a7c2e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4124099005009f4f8385c70c0dfd2a5f185ddb4b64ad2a98d7cdd4f7b0eedb12">
   
     
       
@@ -817,7 +807,7 @@ Cost: $30.23 per child. <a href="https://anc.ca.apm.activecommunities.com/ottawa
 <li>This program is delivered in English.</li>
 <li>Please pack a peanut-free snack and water.</li>
 <li>Sessions with insufficient registration may be cancelled. If an alternative cannot be offered, a refund will be issued.</li>
-<li>If you have questions or concerns regarding accessibility, contact the museum at 613-580-9638 or <a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a>. Additional <a href="https://ottawa.ca/en/node/1007482/">information regarding accessibility</a> is available on the museum webpage.</li>
+<li>If you have questions or concerns regarding accessibility, contact the museum at 613-580-9638 or <a href="/cdn-cgi/l/email-protection#335e464056465e40735c47475244521d5052"><span class="__cf_email__" data-cfemail="a1ccd4d2c4d4ccd2e1ced5d5c0d6c08fc2c0">[email&#160;protected]</span></a>. Additional <a href="https://ottawa.ca/en/node/1007482/">information regarding accessibility</a> is available on the museum webpage.</li>
 </ul>
 </div>
       
@@ -891,7 +881,7 @@ Cost: $30.23 per child. <a href="https://anc.ca.apm.activecommunities.com/ottawa
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a3f35ac4ea7be3524d80c545d6f45b148f0d0087527872b2e1a66c7e8a5123c3">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-38d66524f035a9e1222b3b045735acdff2d6a3692dd3dea1ab6ab42bc046a30b">
   
     
       
@@ -905,7 +895,7 @@ Cost: $30.23 per child. <a href="https://anc.ca.apm.activecommunities.com/ottawa
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4fb28cda4a50d85d5f384275dd1e55fa970eef2fc1e94a3749d20a2831027362">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-8686699b84b4811ce9ee8ac70fa374d9e362394a0f9851b92a0f3e9072c0c90d">
   
     
       
@@ -948,7 +938,7 @@ September 28 - Metal stamp keychains</strong></p>
 <li>This is a drop-in style program; families are welcome to join the activities at any time during the advertised hours. Please note that the craft activity can only be offered as long as supplies last.</li>
 <li>Weekend Crafters is best suited to families with children ages 6 to 12. However, younger children may be able to enjoy the activities with the assistance of an adult or older sibling.</li>
 <li>The primary language of delivery for this program is English. Any printed materials will be provided in both official languages (English/French).</li>
-<li><span>The crafts and scavenger hunt will be held outside (weather permitting) and on the first floor of the house. The museum is a heritage house. Due to building standards of the time, not all parts of the museum may be accessible to all. </span>If you have questions or concerns regarding accessibility, please contact 613-580-9638 (Nepean Museum) or <a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a>. Additional <a href="https://ottawa.ca/en/node/1007482">information about accessibility</a> can be found on the museum webpage.</li>
+<li><span>The crafts and scavenger hunt will be held outside (weather permitting) and on the first floor of the house. The museum is a heritage house. Due to building standards of the time, not all parts of the museum may be accessible to all. </span>If you have questions or concerns regarding accessibility, please contact 613-580-9638 (Nepean Museum) or <a href="/cdn-cgi/l/email-protection#84e9f1f7e1f1e9f7c4ebf0f0e5f3e5aae7e5"><span class="__cf_email__" data-cfemail="8fe2fafceafae2fccfe0fbfbeef8eea1ecee">[email&#160;protected]</span></a>. Additional <a href="https://ottawa.ca/en/node/1007482">information about accessibility</a> can be found on the museum webpage.</li>
 </ul>
 </div>
       
@@ -1066,7 +1056,7 @@ September 28 - Metal stamp keychains</strong></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-80a926eb4199671cf262922be4c44ec29879765e78b91f630d36a8958c40a0a5">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c8380d3befb46a6abe84173c745eb7eeb94e072f2a7a82ee11bb62be0c3f1a22">
   
     
       
@@ -1080,7 +1070,7 @@ September 28 - Metal stamp keychains</strong></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7055dc19b6354d43974e3ce66836a9b1cf0ea564841868031b5d62883f5af3fc">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-fcf3e2bf6cfb3cdf0a337b31d197ceaf8130211301e7c32cff7a88f05fa2d4c0">
   
     
       
@@ -1192,7 +1182,7 @@ September 28 - Metal stamp keychains</strong></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-fad22277862ded0dd2536d90ba0014ca7f555806a3228bb074b30c450c296b66">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-370b37fffd13c61dd4503c3d1802650f583d30ed52e86e11d909bd4e9a2a968e">
   
     
       
@@ -1206,7 +1196,7 @@ September 28 - Metal stamp keychains</strong></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-fffcb2a934c91b3cdb68b7ad1b55dcedac8debb3ec8e23941b3c4a3d336d0fb4">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e70c5ebc23ea5662def314c5adbfa6570fce09e298d1cfd474481f1bb22ecd0b">
   
     
       
@@ -1236,7 +1226,7 @@ September 28 - Metal stamp keychains</strong></p>
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The City of Ottawa Museums are committed to offering residents meaningful and rewarding volunteer experiences.</p>
 <p>Heritage volunteers play an invaluable role in preserving our unique heritage and in providing museum visitors of all ages with opportunities to appreciate our shared story.</p>
 <p>Thank you to all our volunteer team members for their continued support.</p>
-<p>To enquire about volunteering, please contact <a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a>.</p>
+<p>To enquire about volunteering, please contact <a href="/cdn-cgi/l/email-protection#4e233b3d2b3b233d0e213a3a2f392f602d2f"><span class="__cf_email__" data-cfemail="cea3bbbdabbba3bd8ea1babaafb9afe0adaf">[email&#160;protected]</span></a>.</p>
 </div>
       
       </div>
@@ -1309,7 +1299,7 @@ September 28 - Metal stamp keychains</strong></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c99b301a2a1994195da4a5076d24cb3082e8fae88bc5ed67b62350d3700d2bb7">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c40a9c73c8f6acbde01ba2b1760d67f49160ee864f5d7adff7d1715887882bfb">
   
     
       
@@ -1323,7 +1313,7 @@ September 28 - Metal stamp keychains</strong></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ac6cf2c21de057c260b19efb802ad43fcc93dc5261a40c65d7e5305dc3edad00">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f4c3c0d665d48a87fa90f4cf95cbe76b340abc570266d617c82f1cbc9c6db82d">
   
     
       
@@ -1351,7 +1341,7 @@ September 28 - Metal stamp keychains</strong></p>
                                                       <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>A 19th-century Gothic Revival farmhouse sitting on two acres of greenspace provides a picturesque backdrop for your intimate outdoor gathering.</p>
-<p>Please note that rentals are not being offered at this time. If you have questions regarding the rental program, please contact our Customer Service Booking Clerk by calling <strong>613-580-9638</strong> or emailing <a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a>.</p>
+<p>Please note that rentals are not being offered at this time. If you have questions regarding the rental program, please contact our Customer Service Booking Clerk by calling <strong>613-580-9638</strong> or emailing <a href="/cdn-cgi/l/email-protection#83eef6f0e6f6eef0c3ecf7f7e2f4e2ade0e2"><span class="__cf_email__" data-cfemail="4b263e382e3e26380b243f3f2a3c2a65282a">[email&#160;protected]</span></a>.</p>
 </div>
       
       </div>
@@ -1424,7 +1414,7 @@ September 28 - Metal stamp keychains</strong></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-17144c2ba6d2041037a0579cf444ad03e2c8d46d419c60ed9bb04f645f251d9e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6b337c4298533a2e09d14458f9d5cc94b7f5dad2421335d43ef2cbc5d0e22111">
   
     
       
@@ -1438,7 +1428,7 @@ September 28 - Metal stamp keychains</strong></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b27d1abb2cb488c9d55897cf8066893d60504de5ddc3e368d10b0fb106bfeeb2">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7211c17772a46acd267ad4721a801adf393487a53217f3879bcb481b51e4df2f">
   
     
       
@@ -1964,7 +1954,7 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_vbqXGSVFFjC94Hma6-MoYncglvJ8cc0REQE5tEvI9OA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_vbqXGSVFFjC94Hma6-MoYncglvJ8cc0REQE5tEvI9OA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
@@ -1972,9 +1962,6 @@ Thank you for considering to help out.
 <script src="/themes/custom/ottca_theme/dist/js/slider-gallery.min.js?t1clew" async></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=6&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=40&cb=1028676390" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1619397122" async></script></body>
 </html>
-
-
-0
 

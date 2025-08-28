@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/entrance-pool HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 171
-Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:04:01 GMT
-Etag: "1756166468-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:01:08 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 39686) q(0 1 1 -1) r(2 2) U24
-X-Varnish: 21786106 23048111
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 976202e13c2b4411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:14:23 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=xMLI1CqZQuTxiPRvvcUfOF7%2FWHPdRHvI5h0ITYy9Y%2Bqh78qOJe18qGSH2p04nR1lp0mCd6gfWbm%2F1eGhv%2FZg5RN5rwN9keBNpcq4c8uMPAK%2B9fkWzHEj6zAWTestSA%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-b206
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ b206
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-13597b58033863a194f045c3f2fa7ca2964132c3eccc2411c5407c6759391e23">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0b5ed94ea7d9401edb4c6f103b6ccde3555c3e488ca79a80e7e9ae508eee3d86">
   
     
       
@@ -196,7 +186,7 @@ b206
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-317e08c7e4bd69274fbc21a3ff5d526af6bb1d3de5b27a84838abac764c92937">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-29c257a0b269c36b77bae34c4f503309bf6bc67c299de0ddf3376044c5900059">
   
     
       
@@ -292,7 +282,7 @@ b206
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="mailto:entrancepool@ottawa.ca">entrancepool@ottawa.ca</a></div>
+              <div class="field__item"><a href="/cdn-cgi/l/email-protection#adc8c3d9dfccc3cec8ddc2c2c1edc2d9d9ccdacc83cecc"><span class="__cf_email__" data-cfemail="71141f0503101f1214011e1e1d311e05051006105f1210">[email&#160;protected]</span></a></div>
               </div>
       </div>
 
@@ -367,7 +357,7 @@ b206
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e473745943bbea2a2934ad30bb4b35a31ec6ee274e7ef52aedf9c928f5eb1b3e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ae0cf543e52ba848c2f29c30ac752b68589f26ad4a571393e5e64eba55130f1a">
   
     
       
@@ -381,7 +371,7 @@ b206
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0a5b60821b973f8dbf32c3c72e0bbd5cbebbe0b194d24eccf884ebf695fcfb99">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-71ed04982f757dbe6845a1ea5560232af086fbd5694ec7eefcd461ac17639cf1">
   
     
       
@@ -519,7 +509,7 @@ b206
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c65ea46db3031cdc706db44d169e444d900b38e6ddfc1dac88e70526433e7285">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4a3f502833a77956c9f3817b41b7d3dcb61e4847dfb1783882aeb96f0f2bca03">
   
     
       
@@ -533,7 +523,7 @@ b206
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f527a00e5f3be03d3181617e906031d726e150bd5d0d484437d5261417951227">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3e73925fa8c52541a2edd2021de99d8a138544a66454e40ee7ccec6cf0b74619">
   
     
       
@@ -820,7 +810,7 @@ b206
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-3dbeff826a088a35bcaad4bd52387b5f9b8052c8984ebf37bbaf5e1772a656b3">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-1cef11d25ece05983c195166d5f74112f775ee01540f94281687e194033e4f91">
   
     
       <div class="view-header">
@@ -1211,16 +1201,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=38&cb=889843404" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=482255119" async></script></body>
 </html>
-
-
-0
 

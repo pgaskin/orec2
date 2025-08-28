@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/minto-recreation-complex-barrhaven HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 531
-Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:04:56 GMT
-Etag: "1756166163-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Mon, 25 Aug 2025 23:56:03 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 94841) q(0 1 1 -1) r(2 2) U24
-X-Varnish: 23741663 23446470
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 976205fb18244411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:16:30 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=8Ed%2BrLn8OROM9VH07eDOM0uKpDXJnvXd3HrRMMJX6%2Bz1oodd%2Fo%2BTIx5S9Y6hr8w96VX4YAk8%2FXnBaygiVct%2BoKQ0FzorRomJ1hpJFE2QP4ZL43O87y7lrKlS8cdZwA%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-19134
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -40,7 +30,7 @@ X-Varnish: 23741663 23446470
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/minto-recreation-complex-barrhaven" />
 <meta name="dcterms.title" content="Minto Recreation Complex - Barrhaven" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-08-19" />
+<meta name="dcterms.date" content="2025-08-26" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -182,7 +172,7 @@ X-Varnish: 23741663 23446470
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c5e63afa45e8f9d16c2e0ed07b064ebbb6b2acd58d5b3a456ff8fbcedf428dec">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b45efef4b423ec970804bf98389ba25166fe654e9bf679cb48f872ee6c09f5ae">
   
     
       
@@ -196,7 +186,7 @@ X-Varnish: 23741663 23446470
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f46e7e700064dbbc6636c0df1e63508b3f03747566257e411873df446d33b40c">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f1883b3867c8cd4fe5aecfac43ceaefeba2cf735a0f21ddd53824ea9ccd6a1d1">
   
     
       
@@ -246,8 +236,8 @@ X-Varnish: 23741663 23446470
 
   
             <div class="clearfix text-formatted field field--name-field-description field--type-text-long field--label-hidden field__item"><p>The Minto Recreation Complex - Barrhaven was recently listed by Chatelaine Magazine as one of the <strong>top 10 best indoor pools in Canada</strong>! Read the <a href="https://www.chatelaine.com/living/best-indoor-pools-canada/#gallery/best-indoor-pools-in-canada/3">Best Indoor Pools in Canada article</a>.</p>
-<p>The Minto Recreation Complex - Barrhaven&nbsp;includes a six lane, 25&nbsp;metre&nbsp;lap pool with three&nbsp;metre&nbsp;and one&nbsp;metre&nbsp;diving boards, and an access ramp (Pool Rentals, please contact&nbsp;<a href="mailto:mrcb@ottawa.ca">mrcb@ottawa.ca</a>). Two&nbsp;NHL sized ice rinks (one rink is accessible), with accessible change rooms (please contact City Wide Allocations&nbsp;<a href="mailto:sports@ottawa.ca">sports@ottawa.ca</a>&nbsp;for ice rentals).</p>
-<p>Outside find an artificial turf sports field designed to meet&nbsp;CFL&nbsp;and FIFA design standards (please contact City Wide Allocations <a href="mailto:sports@ottawa.ca">sports@ottawa.ca</a>&nbsp;for field rentals).</p>
+<p>The Minto Recreation Complex - Barrhaven&nbsp;includes a six lane, 25&nbsp;metre&nbsp;lap pool with three&nbsp;metre&nbsp;and one&nbsp;metre&nbsp;diving boards, and an access ramp (Pool Rentals, please contact&nbsp;<a href="/cdn-cgi/l/email-protection#09647b6a6b49667d7d687e68276a68"><span class="__cf_email__" data-cfemail="98f5eafbfad8f7ececf9eff9b6fbf9">[email&#160;protected]</span></a>). Two&nbsp;NHL sized ice rinks (one rink is accessible), with accessible change rooms (please contact City Wide Allocations&nbsp;<a href="/cdn-cgi/l/email-protection#ec9f9c839e989fac8398988d9b8dc28f8d"><span class="__cf_email__" data-cfemail="4c3f3c233e383f0c2338382d3b2d622f2d">[email&#160;protected]</span></a>&nbsp;for ice rentals).</p>
+<p>Outside find an artificial turf sports field designed to meet&nbsp;CFL&nbsp;and FIFA design standards (please contact City Wide Allocations <a href="/cdn-cgi/l/email-protection#4330332c313730032c37372234226d2022"><span class="__cf_email__" data-cfemail="92e1e2fde0e6e1d2fde6e6f3e5f3bcf1f3">[email&#160;protected]</span></a>&nbsp;for field rentals).</p>
 <p>Artwork suspended from the ceiling named&nbsp;Mr.&nbsp;Kurokawa.&nbsp;</p>
 <p>Minto,&nbsp;an active sponsor of community initiatives, is proud to be associated with the City of Ottawa's Community Champions Program.</p>
 </div>
@@ -290,7 +280,7 @@ X-Varnish: 23741663 23446470
 </ul>
 <h3>Closure</h3>
 <ul>
-<li><strong>September 1 to 15</strong>
+<li><strong>September 1 to 14</strong>
 <ul>
 <li>The gymnasium is closed.</li>
 </ul>
@@ -307,7 +297,7 @@ X-Varnish: 23741663 23446470
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">6:45 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">6:15 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">6:15 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">6:15 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">6:15 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">6:15 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">7:15 am - 9:00 pm</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">6:45 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">6:15 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">6:15 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">6:15 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">6:15 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">6:15 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">7:15 am - 9:00 pm</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -367,7 +357,7 @@ X-Varnish: 23741663 23446470
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="mailto:MRCB@ottawa.ca">MRCB@ottawa.ca</a></div>
+              <div class="field__item"><a href="/cdn-cgi/l/email-protection#f6bba4b5b4b6998282978197d89597"><span class="__cf_email__" data-cfemail="e3aeb1a0a1a38c9797829482cd8082">[email&#160;protected]</span></a></div>
               </div>
       </div>
 
@@ -485,7 +475,7 @@ X-Varnish: 23741663 23446470
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-88f195483a86d6ad167ac14f6bc6f8631f11e09b0dda758984852c5906a652f9">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8d5c1d1a9bb02862f2ab42c1b437daf18bcfe41e9025170c6e222c6e81cd4c46">
   
     
       
@@ -499,7 +489,7 @@ X-Varnish: 23741663 23446470
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b5f5d321843acf76a10170ee747b8c0bc5c6f7ad0f74a2e88b1e4e3c7a9c33c4">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-77ac4ed227766ad51c32518a22c5c187e0db2216eb39a563471aea021a549c41">
   
     
       
@@ -686,7 +676,7 @@ X-Varnish: 23741663 23446470
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a55db770d015ad84896f33d52f541e553eefc6c82b997ad1a6be65a210208bad">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f633f7a35bb6ecd70540a0e3921d17c072e9e25d94d8c7da0ea50f83535c6be5">
   
     
       
@@ -700,7 +690,7 @@ X-Varnish: 23741663 23446470
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2b70dd0ff6dbbac7fa41119b95dca18988ed95e1546bd13b2e58f1bdc773a6a7">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2652b60a8ac7a5fbcc568471052e2e1cda3fa19bad6bd6d782f79f3e682af98a">
   
     
       
@@ -1141,7 +1131,7 @@ X-Varnish: 23741663 23446470
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0a05229938a49a598f84ee959cf9fe38f0be09307a07476e45cb1053bb811fab">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-10fc3fdc7975065c9c85698dd99497454ad84ff13e980788e46eeaf4e8dcd865">
   
     
       
@@ -1155,7 +1145,7 @@ X-Varnish: 23741663 23446470
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4270f98440db77f78769842b9c3185f3aecfeb7ff7b157a7e016085a9f3b07ee">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6d8c6ebd0d1b55b5c15492d87026058140ef28a434ad9d60d27e7e66c2757245">
   
     
       
@@ -1290,7 +1280,7 @@ X-Varnish: 23741663 23446470
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4343eb3591a3f3089640404bca6d8117372bdffe72c66f524f8b80586439a079">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-bf7db641c1b79133bcf9fae6a057911eef5eaf4b90d823c88071c20e0e8323f7">
   
     
       
@@ -1304,7 +1294,7 @@ X-Varnish: 23741663 23446470
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-cba61893d76ccaff242a99ce157a31ff6ed46f9af65320bcd37d678ed03607e4">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-904f84213c07bc872a7e370f2b20071854ed6d5698dd4dfd9f67c044d819371d">
   
     
       
@@ -1756,7 +1746,7 @@ X-Varnish: 23741663 23446470
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-88a22bca268d7b627ea217a0c64b6bea7f27bc89748c7f7cbb8deacd275b85dc">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c3a64a818a239798c2d10685fbd6b9798ea0fc55089718466ca957e672232121">
   
     
       
@@ -1770,7 +1760,7 @@ X-Varnish: 23741663 23446470
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-946e6f7bad20991ce8ec71c3c80ba4e57878c86ef0059ce7f339aba11ed9f71b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4f812df7de02b6cfe145a4a91835ea521d579f75bd86fe543f8fa628bd924055">
   
     
       
@@ -2085,7 +2075,7 @@ X-Varnish: 23741663 23446470
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1841af471d66cb866a22cbf18010b5dd27efaba0ae628fdfe8c7e89a4a4fbe3a">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c06de71049d4ee700791d803fe535b9c6c010685334ed9c3829bdaf62250b858">
   
     
       
@@ -2099,7 +2089,7 @@ X-Varnish: 23741663 23446470
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-112efdf0d2886869e149b7e0fae247dc1163a87af41419cb721e705cfc63e54f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f41ff024a7f0e9fcab92b1f195ff5f805d1fff675f675d4f844d56373c0cd421">
   
     
       
@@ -2156,7 +2146,7 @@ X-Varnish: 23741663 23446470
 </ul>
 <h3>Closure</h3>
 <ul>
-<li><strong>September 1 to 15</strong>
+<li><strong>September 1 to 14</strong>
 <ul>
 <li>The gymnasium is closed.</li>
 </ul>
@@ -2483,7 +2473,7 @@ X-Varnish: 23741663 23446470
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2d4ef935c5c237cb83bee56ff53ee2f38b324467a98821dff67829ee2a9488cd">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a01a6a186423df8c1b5b8e36ddf1fd05f0838dce30523c3b6eb65dfef76d1482">
   
     
       
@@ -2497,7 +2487,7 @@ X-Varnish: 23741663 23446470
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d7795ab645a4faadc9087a40435f7843869b55f55215cd708db59c657f6ee5ed">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4bd1bebc1ddea3eef248ef0b55b338cefed9476ab97a6f4486702b2924967f28">
   
     
       
@@ -2526,7 +2516,7 @@ X-Varnish: 23741663 23446470
           
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The schedules listed in the charts below are subject to change.&nbsp;Holiday hours and programs may vary. Changes will be reflected in the online reservation process.</p>
 <p><a href="https://ottawa.ca/en/recreation-and-culture/skating/drop-skating">Play free, additional details, descriptions, fees and cancellation information.</a></p>
-<p><a href="https://ottawa.ca/en/recreation-and-parks/skating/safety-regulations">Safety requirements and regulations.</a></p>
+<p><strong><a href="https://ottawa.ca/en/recreation-and-parks/skating/safety-regulations" hreflang="en">Safety and regulations</a></strong></p>
 </div>
       
       </div>
@@ -2811,7 +2801,7 @@ X-Varnish: 23741663 23446470
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-d464bcc1b361fa60517765271f8305ed8f37f7c85ac1cd882f9b52048a3120ad">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-737cb0e2ea0bdc60c4fcd094d1ddfc635057ea206b56b2a5f44d07ed06cdc44c">
   
     
       <div class="view-header">
@@ -3212,16 +3202,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=84&cb=1623402512" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1323753813" async></script></body>
 </html>
-
-
-0
 

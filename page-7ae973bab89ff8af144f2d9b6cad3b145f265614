@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/general-burns-pool HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 0
-Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:04:12 GMT
-Etag: "1756166651-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:04:11 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 48991) q(0 1 1 -1) r(14 14) U24
-X-Varnish: 23907984
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9762037e4ab84411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:14:50 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4ZLJKTqdrlXHIXC0%2Fcnqs5XvO5lcmiSJ%2F0q%2F%2Blm%2BlwJvkf%2FmO61j0%2F0YUygTtAyFOHjE5d3SD1W4ulv6PsI%2BCm9lIOym%2B3CYW%2Fax8hL4dynxVCugVU%2BGpfYAfFVfzg%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-b088
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ b088
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-59685b783f8a5986c3bd06d29a5afc9e5c66e3c140504054ba089832f6af5855">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-93d56a0d231648cc4cfc985ac71b41cd20683e2c9221ca17656c82cb63e519b6">
   
     
       
@@ -196,7 +186,7 @@ b088
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3f8cdd0734a84c9a67bbcf00ea722ae572090b0c6da68e87e846c478938a3fe4">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-87910780e90b5baab129ef6e4a205910c84c916d95fc6fb0200fd9acedf7711d">
   
     
       
@@ -376,7 +366,7 @@ b088
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3d4c2ac9861ff3311faba4399c6947ac32bdd456765886ac4958436de5f18ed6">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-330e176b2540e0e2b309dc71b6563070ddfd533cca853b6e2ba8aaf0ac020cd6">
   
     
       
@@ -390,7 +380,7 @@ b088
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d3113af37173386da953f9cf96580bebcbc1b2dd9a9ab6ae028e9f04a9eae032">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0d5fa34b1189a00cc5af210a24a58c4a08c919c3d5b84d0b3f68f425add7b752">
   
     
       
@@ -518,7 +508,7 @@ b088
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-373716d19c2bea73c5b4134d40ef1002c4425c5966c63fa1bbdfa5f045d78e1e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-050de628b128ba15e250ba5b596d307ed0044369c4cecf54d707475f214c9416">
   
     
       
@@ -532,7 +522,7 @@ b088
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7a2f9a089bda2f0c60d396214f7a479c96b36122b6082bf5ad58bb6340f91f41">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d9d9e1e3d08ae1ae193705a937b35769ecca2fb5c6a26ba37938dfb8acb405ca">
   
     
       
@@ -725,7 +715,7 @@ b088
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-49bdc638c999609cae6796807541f270cc2a7bcfd35b063a7dc1ac1dcffee72c">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-7ad33115e9da3af393de625ce7f80f4b9c409665f304e03a8d88ef66db35c562">
   
     
       <div class="view-header">
@@ -1122,9 +1112,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=46&cb=1704189577" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=846986920" async></script></body>
 </html>
-
-
-0
 

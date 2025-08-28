@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/fred-barrett-arena HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 0
-Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:04:10 GMT
-Etag: "1756166649-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:04:09 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 47790) q(0 1 1 -1) r(11 11) U24
-X-Varnish: 21338912
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 976203721a5b4411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:14:46 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=T9Lfxq8yH0I%2BNJOUHQKizd8HgxDprjUho6X7XnwJC6mFftvTf%2BFI%2BHgXj4MdMQYyQPtBuMWFCwsL6z5wGwA%2FYSES9iDyytsMvSQlgGZob3OK8UccDOKSsyogob%2Fg1w%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-c0fc
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -40,7 +30,7 @@ c0fc
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/fred-barrett-arena" />
 <meta name="dcterms.title" content="Fred Barrett Arena" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-08-12" />
+<meta name="dcterms.date" content="2025-08-26" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -182,7 +172,7 @@ c0fc
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-67a38afd7b7ab3ddd480f3e2448e07d1b79d6c65b90bd57e6232650c45eaabd9">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4e93d7040135738c8b0664f2460c674aeff3e0448569831282990fe90ddd12a1">
   
     
       
@@ -196,7 +186,7 @@ c0fc
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7f8fce213a1445d9ac439cc6121bb40b9daf53f4144b24326816367c2585fada">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c7c3cf8a02e9dc1aa7f35cf374a3386d75955a49319589539458c1f7b520c13f">
   
     
       
@@ -259,42 +249,6 @@ c0fc
 
 
   
-            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Schedule changes</h2>
-</div>
-      
-
-
-
-
-  
-            <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><ul>
-<li><strong>Sunday, August 17</strong>
-<ul>
-<li>Adult skating,&nbsp;1:15 to&nbsp;2:05 pm, cancelled</li>
-<li>Family skating,&nbsp;2:15 to 3:05 pm, cancelled</li>
-</ul>
-</li>
-<li><strong>Friday, August 22</strong>
-<ul>
-<li>Public skating,&nbsp;8:15 to 9:05 pm,&nbsp;cancelled</li>
-<li>Child hockey (6 to 12 years),&nbsp;6:15 to 7:05 pm,&nbsp;cancelled</li>
-<li>Youth hockey (13 to 17 years), 7:15 to&nbsp;8:05 pm,&nbsp;cancelled</li>
-</ul>
-</li>
-<li><strong>Sunday, August 24</strong><strong>​​​​​​​</strong>
-<ul>
-<li>​​​​​​​Adult skating,&nbsp;1:15 to&nbsp;2:05 pm, cancelled</li>
-<li>Family skating,&nbsp;2:15 to 3:05 pm, cancelled</li>
-</ul>
-</li>
-</ul>
-</div>
-      
-
-
-
-
-  
             <div class="field field--name-field-special-hours-below field--type-string field--label-hidden field__item"><h2  class="h3">Facility hours</h2>
 </div>
       
@@ -348,7 +302,7 @@ c0fc
 <li><a href="https://ottawa.ca/en/recreation-and-parks/facilities-and-rentals/rental-information/rent-ice#section-1860cc75-5216-4770-bae3-72b9b07a0e59">Ice or slab rentals</a></li>
 </ul>
 <p><strong>Program inquiries:</strong></p>
-<p><a href="mailto:publicskating@ottawa.ca">Public Skating information</a></p>
+<p><a href="/cdn-cgi/l/email-protection#82f2f7e0eeebe1f1e9e3f6ebece5c2edf6f6e3f5e3ace1e3">Public Skating information</a></p>
 <p>&nbsp;</p>
 </div>
       
@@ -360,7 +314,7 @@ c0fc
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="mailto:rideauview@ottawa.ca">rideauview@ottawa.ca</a></div>
+              <div class="field__item"><a href="/cdn-cgi/l/email-protection#15677c71707460637c7062557a61617462743b7674"><span class="__cf_email__" data-cfemail="44362d20212531322d2133042b30302533256a2725">[email&#160;protected]</span></a></div>
               </div>
       </div>
 
@@ -426,7 +380,7 @@ c0fc
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1db10161d7d5237fb5a441ae8d38fd1320493606a982c38ad69b1ae0d004b418">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c344bc579bc4f2f1b0a16d3a67bd894a1e963d3acb13db993b34b8795e8319a5">
   
     
       
@@ -440,7 +394,7 @@ c0fc
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-00dfbc900ccd2940154def131c179eefedabef55187f689f1900c3e3e96460aa">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-67afa6acfd638d871721c415a61b0858bb542dd985f81901fab5989116cec85f">
   
     
       
@@ -470,31 +424,6 @@ c0fc
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The schedules listed in the charts below are subject to change. Holiday hours and programs may vary. Changes will be reflected through the booking process.</p>
 <p><a href="https://ottawa.ca/en/recreation-and-culture/skating/drop-skating">Play free, additional details, descriptions, fees and cancellation information</a>.</p>
 <p><strong>Reservations not required.</strong></p>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule changes</h3>
-<ul>
-<li><strong>Sunday, August 17</strong>
-<ul>
-<li>Adult skating,&nbsp;1:15 to&nbsp;2:05 pm, cancelled</li>
-<li>Family skating,&nbsp;2:15 to 3:05 pm, cancelled</li>
-</ul>
-</li>
-<li><strong>Friday, August 22</strong>
-<ul>
-<li>Public skating,&nbsp;8:15 to 9:05 pm,&nbsp;cancelled</li>
-</ul>
-</li>
-<li><strong>Sunday, August 24</strong>
-<ul>
-<li>Adult skating,&nbsp;1:15 to&nbsp;2:05 pm, cancelled</li>
-<li>Family skating,&nbsp;2:15 to 3:05 pm, cancelled</li>
-</ul>
-</li>
-</ul>
 </div>
       
       </div>
@@ -555,6 +484,59 @@ c0fc
 			<td>3:15 - 4:05 pm</td>
 			<td>
 			2:15 - 3:05 pm
+			</td>
+		</tr>
+	</tbody>
+</table></div>
+      </div>
+      </div>
+  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
+          <div class="table-responsive">
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
+	<caption>Fred Barrett Arena - skating - September 9, 2025, to March 15, 2026</caption>
+	<thead>
+		<tr>
+			<td>&nbsp;</td>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+			<th>Saturday</th>
+			<th>Sunday</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>
+			Public skating
+			</th>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>
+			8 - 8:50 pm
+			</td>
+			<td>n/a</td>
+			<td>
+			2 - 2:50 pm
+			</td>
+		</tr>
+		<tr>
+			<th>
+			Family skating
+			</th>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>
+			n/a
+			</td>
+			<td>n/a</td>
+			<td>
+			1 - 1:50 pm
 			</td>
 		</tr>
 	</tbody>
@@ -630,7 +612,7 @@ c0fc
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5bb29ce552be1f03c17c42e1d4a5870e94f9ccb45a23974ed531b80166b30c9f">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-20b53cc54fbcc9815e575f8c9dfcc36e4a406ae32f719914397a2421ef427e9c">
   
     
       
@@ -644,7 +626,7 @@ c0fc
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-88db09b71af1b2efe4b82b3736e462f23a0b47f7c2b755114c6c8cc1a7a1e58c">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-01aa3737834d27270b705cf412ca149154d9c2ae90baf6253ff7e34f7ef3cc84">
   
     
       
@@ -679,20 +661,6 @@ c0fc
   <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p><a class="btn btn-primary" href="https://reservation.frontdesksuite.ca/rcfs/arenafredbarrett">Ice sports - Reserve a spot at Fred Barrett Arena</a></p>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule change</h3>
-<ul>
-<li><strong>Friday, August 22</strong>
-<ul>
-<li>Child hockey (6 to 12 years),&nbsp;6:15 to 7:05 pm,&nbsp;cancelled</li>
-<li>Youth hockey (13 to 17 years), 7:15 to&nbsp;8:05 pm,&nbsp;cancelled</li>
-</ul>
-</li>
-</ul>
 </div>
       
       </div>
@@ -734,6 +702,81 @@ c0fc
 			<td>n/a</td>
 			<td>n/a</td>
 			<td>7:15 - 8:05 pm</td>
+			<td>n/a</td>
+			<td>n/a</td>
+		</tr>
+	</tbody>
+</table></div>
+      </div>
+      </div>
+  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
+          <div class="table-responsive">
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
+	<caption>Fred Barrett Arena - ice sports - September 9, 2025, to March 15, 2026</caption>
+	<thead>
+		<tr>
+			<td>&nbsp;</td>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+			<th>Saturday</th>
+			<th>Sunday</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Figure skating</th>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>3 - 3:50 pm</td>
+			<td>n/a</td>
+			<td>n/a</td>
+		</tr>
+		<tr>
+			<th>Child hockey (6 to 12 years)</th>
+			<td>n/a</td>
+			<td>4 - 4:50 pm</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>
+			5 - 5:50 pm
+			</td>
+			<td>n/a</td>
+			<td>
+			n/a
+			</td>
+		</tr>
+		<tr>
+			<th>Ringette</th>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>6 - 6:50 pm</td>
+			<td>n/a</td>
+			<td>n/a</td>
+		</tr>
+		<tr>
+			<th>Stick and Puck - youth and adult</th>
+			<td>n/a</td>
+			<td>3 - 3:50 pm</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+		</tr>
+		<tr>
+			<th>Youth hockey (13 to 17 years)</th>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>4 - 4:50 pm</td>
 			<td>n/a</td>
 			<td>n/a</td>
 		</tr>
@@ -846,7 +889,7 @@ c0fc
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-2260a1c58446a4a8ce3ce0721273ec3f936a95af512849f40dd31624700f383d">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-54463adfd2bef3229d6527da31ac6953f0d17e5a75125aa62af5d58064c22489">
   
     
       <div class="view-header">
@@ -1238,16 +1281,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=45&cb=105359460" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=319005625" async></script></body>
 </html>
-
-
-0
 

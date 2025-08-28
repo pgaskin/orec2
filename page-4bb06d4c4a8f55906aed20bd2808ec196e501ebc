@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/kanata-seniors-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 546
-Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:04:34 GMT
-Etag: "1756166127-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Mon, 25 Aug 2025 23:55:27 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 72585) q(0 2 2 -1) r(2 2) U24
-X-Varnish: 23908023 13783628
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 976204cd78df4411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:15:43 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ARtcSELjlJXydz4wGmfSIdI9T8%2B3Nf%2BgoIOQ%2BkDo68VVA6IGlA1%2BHUIyvM724rXuifhxWqG2oB2dtBmOBv85MLuxO56C0SBhB1V66W4hhDAzi%2BwM3hbZm2sPskTTvQ%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-d529
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ d529
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-59c9545c29e32e50bac15ece235aaccb7e958c99446b78b5962414d2bddcee0f">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7b374b125532b59cbf082eaa39a028c3bf5414d8910762c5d8b0f0fde520a355">
   
     
       
@@ -196,7 +186,7 @@ d529
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-cd226f36689256a4da0f26befaa8b4a125f0e4476aae98c065c6ae821eada6f2">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-381c1192647361894ffdf563fdc289a1447842fbfa5b3fee50d9fc3514fe899b">
   
     
       
@@ -461,7 +451,7 @@ d529
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-374dbc0c0e22d2d3a41ff7e05e04ca74a0e7c0b7783a2bb64d5046f9c6b602fd">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-923152a3e090595baa6bb67d0a340a2109f3254640fd70c3f9b134e44e39141c">
   
     
       
@@ -475,7 +465,7 @@ d529
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5d72574614c7b285859a6b55be80ce38200571b5ff0f4a37aa3a98a6b1c6d934">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-13d0c14a790304d24a0688f13e197db432fb04823080ed3f4e4648dc368b3f23">
   
     
       
@@ -720,7 +710,7 @@ d529
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e5cfce404df739fd9b3fe6248d924669f9e475839715e29dd6d2d1908d4b00e7">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-fe95d0a73adbf122535c475fc79a7661e18b230284983e79efa537d98937d4e2">
   
     
       
@@ -734,7 +724,7 @@ d529
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-15fe9e7b2524ab3b3e98d64d92ee56f6cd3d1d31626c9550d0250e0b5059e7c2">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-34f89b42a74a9ad8a2021e04a7614e9ca30979a64f1bae11095044f1116f665c">
   
     
       
@@ -882,7 +872,7 @@ d529
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-817e003369c9d36698cba033d831e1e58a6d5f1cc456567ceee076713a688a3f">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-f0d67a26494cfd313b2fcaee456639ccc680d616335cc07827cee6165a89890b">
   
     
       <div class="view-header">
@@ -1313,9 +1303,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=66&cb=872680086" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=974719716" async></script></body>
 </html>
-
-
-0
 

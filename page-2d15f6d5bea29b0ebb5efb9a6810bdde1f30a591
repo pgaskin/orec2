@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/ray-friel-recreation-complex HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 432
-Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:05:16 GMT
-Etag: "1756166282-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Mon, 25 Aug 2025 23:58:02 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 114266) q(0 1 1 -1) r(2 2) U24
-X-Varnish: 21339009 21617091
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 97620737a8a24411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:17:20 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=mTnA45XeFnxDpLQMr0fDG7Pp3%2BHrJLXQ8K7S0V6OQiNPAA0A77ywDmXeOnsZk8PXHpWr101NHQkNHj2mo0iSrh4LR2kDVBsRYPz4cYv%2FTKaatDfE6%2F0%2BO5u9tfq8ig%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-16766
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ X-Varnish: 21339009 21617091
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-08ec4c2b15d98772abdfec511346f3a02d7a36c43642ed1c345431ab2ed3aed5">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b71b2b15bcbb348754540583cc013e107f6f7038aa586a529a17f209d0ed3cfb">
   
     
       
@@ -196,7 +186,7 @@ X-Varnish: 21339009 21617091
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-88a5ff572643072faf2278020907040e86b314a2928969075ac24dc946459d4e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-426ae3e1b7699500c9c96cbe893bde2c862d20da276bfe6048f1bb907f5ba28d">
   
     
       
@@ -295,7 +285,7 @@ X-Varnish: 21339009 21617091
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">8:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">8:00 am - 8:00 pm</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">8:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">8:00 am - 8:00 pm</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -351,7 +341,7 @@ X-Varnish: 21339009 21617091
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="mailto:rayfriel@ottawa.ca">rayfriel@ottawa.ca</a></div>
+              <div class="field__item"><a href="/cdn-cgi/l/email-protection#1664776f70647f737a56796262776177387577"><span class="__cf_email__" data-cfemail="285a49514e5a414d4468475c5c495f49064b49">[email&#160;protected]</span></a></div>
               </div>
       </div>
 
@@ -469,7 +459,7 @@ X-Varnish: 21339009 21617091
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4d58c5033394c208002bfb460bc8583b0a643828dfc99244a5ac56fb11a8f0fe">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6bac63ec0e5125b5894a9f5a329a9d71dc862e1d953e79a4280e740658b49b55">
   
     
       
@@ -483,7 +473,7 @@ X-Varnish: 21339009 21617091
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bb411daee17e21650551653a1925e6b230168bde3fb7365b21d0bd1b9659b807">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b642857d9e71e9427e4303efedd33ac905d1b12246da9d603108e96b9e538c2d">
   
     
       
@@ -643,12 +633,6 @@ X-Varnish: 21339009 21617091
 </table></div>
       </div>
       </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p><a class="btn btn-primary" href="https://reservation.frontdesksuite.ca/rcfs/rayfriel">Skating - Reserve a spot at Ray Friel Recreation Complex</a></p>
-</div>
-      
-      </div>
   <div class="paragraph paragraph--type--table paragraph--view-mode--default">
           <div class="table-responsive">
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table dir="ltr">
@@ -669,7 +653,7 @@ X-Varnish: 21339009 21617091
 			Pick-up hockey 18+&nbsp;
 			</th>
 			<td>
-			&nbsp;Noon -&nbsp;1:30 pm&nbsp;
+			n/a
 			</td>
 		</tr>
 	</tbody>
@@ -745,7 +729,7 @@ X-Varnish: 21339009 21617091
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-cd4fa054d1d448873fd926b21329938c9473b07fd4f0b10189f189df96afd338">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-af864ed4533a4a81c476e946654e93faf1978ad458850a72c08eacd487287ffb">
   
     
       
@@ -759,7 +743,7 @@ X-Varnish: 21339009 21617091
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0a7e502e71ac27be7cc026c7d85a2392511492b39159331d27e001935fba531f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-533a69469164a5a9af52fcb881715e72c8b55c3fe6b61bf64ed70706f59fe9c1">
   
     
       
@@ -1277,7 +1261,7 @@ X-Varnish: 21339009 21617091
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c6f378e4ac9616497cfb3bcc4c793e8a2a171de4660dbd46e8906c2508f02406">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ae01cd7f930d22359164d371de663ee2ec0defce97e723de678958e5f5e49369">
   
     
       
@@ -1291,7 +1275,7 @@ X-Varnish: 21339009 21617091
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-8b031d418483d35614a8b6813b16a7aa0d33838797739f0feb8e65dbe37c9e0a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-29544494f1f3695370de84b9563864f0a5f4de72821a302f2a65290ea5b488f1">
   
     
       
@@ -1439,7 +1423,7 @@ X-Varnish: 21339009 21617091
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0640b5a42e8c814822ffd2903f0178673b3b8871c36ab7d17fce7f84ff61d5cf">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-14e45a6aa94997fa0d09def242085cc292e601b0690b1002ab76ffa786cd64d9">
   
     
       
@@ -1453,7 +1437,7 @@ X-Varnish: 21339009 21617091
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-81dc7da416185ac13435b8d64f4c1fa96491bf2ffa3ae3134d3c1d8121678202">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-de5ed5593ef21bbc4cc6f4dcce0015a09bc472b57febae1d8da0458442faf000">
   
     
       
@@ -2581,7 +2565,7 @@ X-Varnish: 21339009 21617091
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-46a55396bcfc50d02dfa09aa9a9e4c7e8de1b03ba3a774da53723a359aa10325">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-85300d2eaa71dce881366951969fd642191329701074dd2c33fb18d3d7b6b243">
   
     
       
@@ -2595,7 +2579,7 @@ X-Varnish: 21339009 21617091
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-75523887aecd7cd35d483413a249b0a753899df96f43bacb6c07104754b3ff07">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f38ebd628a3f14705ad74eeb2afe1f9c51a0281dee63a0db144e5355807cbc0c">
   
     
       
@@ -2882,7 +2866,7 @@ X-Varnish: 21339009 21617091
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-62fa963e01d8fd75abb66870c1570562e5e903e24650133028b083f15de94edc">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-9589eebef0dce2bb043c13ac0d1e6fac83e3d834da91c70bd789d0d777c64848">
   
     
       <div class="view-header">
@@ -3325,16 +3309,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=100&cb=571609553" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1055150854" async></script></body>
 </html>
-
-
-0
 

@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/richcraft-recreation-complex-kanata HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 414
-Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:05:16 GMT
-Etag: "1756166300-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Mon, 25 Aug 2025 23:58:20 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 114448) q(0 1 1 -1) r(2 2) U24
-X-Varnish: 23048325 13430795
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 97620745a9ac4411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:17:23 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=sbVwIgmxU%2FOGiAkugFE8q6ZSQczDIt4qYSByU6MqmnS%2BEJO6ypo9Y8mMTWkweLiFdi2UTz0SVfnor6yBEQBIOLQ5ZL%2FqcW7IL%2FrYchSyokbCct98HWCvUAds1uzeuA%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-1914b
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -40,7 +30,7 @@ X-Varnish: 23048325 13430795
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/richcraft-recreation-complex-kanata" />
 <meta name="dcterms.title" content="Richcraft Recreation Complex-Kanata" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-08-25" />
+<meta name="dcterms.date" content="2025-08-27" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -182,7 +172,7 @@ X-Varnish: 23048325 13430795
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-650554692b354d5e2c1071aa725aae2e5e9a199345b414719cb61f149cfd4bab">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b296db537118f243e5909a7d2d3015e218740b7f571f2b78f0687adc531acfe1">
   
     
       
@@ -196,7 +186,7 @@ X-Varnish: 23048325 13430795
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a678561925b4e8bfb2c23618baa79bc93d83efa8f1f65f8be984e2456261725f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b346053b6766a8942745516b86c02cd237e7a21f00cb3f6a1dcff7cf70fb987a">
   
     
       
@@ -278,17 +268,6 @@ X-Varnish: 23048325 13430795
 
   
             <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><ul>
-<li><strong>Monday,&nbsp;August 25</strong>
-<ul>
-<li>Cardio and strength, 6:15 to&nbsp;7:15 pm, cancelled</li>
-</ul>
-</li>
-<li><strong>Tuesday, August 26</strong>
-<ul>
-<li>All aquafit, cancelled</li>
-<li>Bootcamp,&nbsp;7 to&nbsp;8 am, cancelled</li>
-</ul>
-</li>
 <li><strong>Thursday, August 28&nbsp;</strong>
 <ul>
 <li>All aquafit, cancelled</li>
@@ -328,7 +307,7 @@ X-Varnish: 23048325 13430795
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">8:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">6:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">6:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">6:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">6:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">8:00 am - 8:00 pm</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">8:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">6:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">6:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">6:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">6:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">8:00 am - 8:00 pm</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -384,7 +363,7 @@ X-Varnish: 23048325 13430795
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="mailto:RRCK@ottawa.ca">RRCK@ottawa.ca</a></div>
+              <div class="field__item"><a href="/cdn-cgi/l/email-protection#b7e5e5f4fcf7d8c3c3d6c0d699d4d6"><span class="__cf_email__" data-cfemail="f0a2a2b3bbb09f8484918791de9391">[email&#160;protected]</span></a></div>
               </div>
       </div>
 
@@ -502,7 +481,7 @@ X-Varnish: 23048325 13430795
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e85e6466cf863e909432a11f75e4a539c4de474933ba5eb8eafe7fc2b7151aee">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-751bc3a70d12720330e9fefd023059b5cca41eac0a8e88331d00767d9ce75bbb">
   
     
       
@@ -516,7 +495,7 @@ X-Varnish: 23048325 13430795
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a4b523893d50ca1b8ac5dab15f8133aba938e00029fc68d5286c06b54e390dfc">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-84723ff295705faf07258237d7750c18a50d9b846519ba4bbcd08fd9b2a8783f">
   
     
       
@@ -678,7 +657,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-68c2506f8ba6b7b352e470ee6ea47525c741a99c0c01ae3db25b979e2bb8f591">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8afdeac859be4f9a4b33699ac53777b89f78035e49690b829af6e2bbc86e265f">
   
     
       
@@ -692,7 +671,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e51495c6cb158cdba899ccca3fc971bf2726fb9cc33c70a81e19d59d2178e5d6">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-339f0b1939690f4a29030fe57a852fdb8665fdfff75d0b5b85f82c4a96247597">
   
     
       
@@ -730,11 +709,6 @@ The weight and cardio room is closed.</strong></p>
           
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule changes</h3>
 <ul>
-<li><strong>Tuesday, August 26</strong>
-<ul>
-<li>All aquafit cancelled</li>
-</ul>
-</li>
 <li><strong>Thursday, August 28</strong>
 <ul>
 <li>All aquafit cancelled</li>
@@ -1318,7 +1292,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a8aa1bd70e78676b833fd8b9812a902fb2b5daed78c7e8c307384412d02ba6da">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ef064c3e2fbe4c4a906ebbcddd75a0372b5b2480a979e62d74337d0ab6043634">
   
     
       
@@ -1332,7 +1306,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5ac36eb5e490cfa75eb73f9ebf3f09e522fc3e77c7c60c5fae23c4c76e94a5bd">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-04799e9a6feb55c9ea0cb218832835d08d6725cf37a8790329efe19fb55198b0">
   
     
       
@@ -1493,7 +1467,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-820cb8db8a5a488729bf572e3fbc3b048ed6df9324e1b0177fef09a34b7bbe5c">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b221b90d7e826cb274fd4eb0b26f238877ba5eb11dc5d20cb506933f41da026f">
   
     
       
@@ -1507,7 +1481,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-288804281d3f653cf06e11abb44d4fa277ccd89c11c53aa3984ea2ba84ac52cc">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5878ab5efb30ee7db67688cc9c6175ae6f76a2fa14e04bda8cc8df3ad5eaa1a8">
   
     
       
@@ -1544,16 +1518,6 @@ The weight and cardio room is closed.</strong></p>
           
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule changes</h3>
 <ul>
-<li><strong>Monday. August 25</strong>
-<ul>
-<li>Cardio and strength, 6:15 to&nbsp;7:15 pm, cancelled</li>
-</ul>
-</li>
-<li><strong>Tuesday, August 26</strong>
-<ul>
-<li>Bootcamp,&nbsp;7 to&nbsp;8 am, cancelled</li>
-</ul>
-</li>
 <li><strong>Thursday, August 28&nbsp;</strong>
 <ul>
 <li>Bootcamp,&nbsp;7 to&nbsp;8 am, cancelled</li>
@@ -1916,7 +1880,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-342df41ccfd847e6643ad0c292649c5a608e4083e8110d40c8fa8a7be6a41b06">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-df08617efabbe814678c8a6095265ee27a598b94906dcf96273a343387af1df1">
   
     
       
@@ -1930,7 +1894,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-06bfa29ee42e63ae284364950dcd6506f74bbbfe25dc50d1002862224ed281b6">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-01aa00b2e97fdc041608793283ed884868bf36da587e2ea3a10b6b2d5746bdbb">
   
     
       
@@ -2268,9 +2232,7 @@ The weight and cardio room is closed.</strong></p>
 			2:30 - 3:30 pm,&nbsp;
 			6 - 7 pm</td>
 			<td>1:30 - 2:30 pm,&nbsp;
-			2:30 - 3:30 pm,&nbsp;
-			3:45 - 4:45 pm,&nbsp;
-			4:45 - 5:54 pm</td>
+			2:30 - 3:30 pm</td>
 			<td>1:30 - 2:30 pm,&nbsp;
 			2:30 - 3:30 pm</td>
 			<td>7:30 - 8:30 am,&nbsp;
@@ -2382,7 +2344,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-fbe35ead082c9dfa1cb56888da86942ccf56d26db47d75edb98fc3bb743f61d5">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-82f96c172ae4d210476aed10695cd5848f76b04406c661f7da70b89f7a1ae8f1">
   
     
       
@@ -2396,7 +2358,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-faab3ca2497ba18a2f5d3efaa65d052059fbaa9c9ea58f7ec464ae95ff62810d">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6dec1fb775ac99c4c81f8c52fdaba76b6244e292d4ad8f97fe8e6979f1ee7f32">
   
     
       
@@ -3121,7 +3083,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-e4c903ed662ad8f916cc195c59f218403165312c3ba0f528cc16930c8fab00a0">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-cc1b070f318401a16863851be8c5d76d7121fbe08dc53735516b483ecb37dc37">
   
     
       <div class="view-header">
@@ -3566,16 +3528,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=101&cb=1097685393" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1576869214" async></script></body>
 </html>
-
-
-0
 

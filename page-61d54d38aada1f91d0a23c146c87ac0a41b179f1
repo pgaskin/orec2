@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/carleton-heights-community-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 0
-Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:03:46 GMT
-Etag: "1756166625-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:03:45 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 23246) q(0 1 1 -1) r(12 12) U24
-X-Varnish: 12903868
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9761fd978b70ef9f-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:10:47 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=5YiSvvG4oCTFHGcVqVaoOf5%2FXgDi6XNvlw9cHHfyocDQAbJyWknpu0SXOkh1aTFa8VPCe7TkuCDTmI5%2ByWT%2F5kmL2qs%2F7WJ4xSc6Xa%2FVZyC5bM0i1fHCXMC4bwkwpg%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-d627
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ d627
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7147838d9089793bf6bae9e625155d7673094ac78f763e66e21b29adea809a81">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-893f096035817643189a5282329b9de42cee09053388227ab82833e317507280">
   
     
       
@@ -196,7 +186,7 @@ d627
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-522724b449d959c59d9097803b0abf86bcff6bf9eeccbe6b4621beda354af0cc">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c0bcc2099ebc9a6c481fdb3eb3bb55a9736fcb25dd355a7ea496e4f413b18dc5">
   
     
       
@@ -325,7 +315,7 @@ d627
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="mailto:Carleton.Heights@ottawa.ca">Carleton.Heights@ottawa.ca</a></div>
+              <div class="field__item"><a href="/cdn-cgi/l/email-protection#dd9ebcafb1b8a9b2b3f395b8b4bab5a9ae9db2a9a9bcaabcf3bebc"><span class="__cf_email__" data-cfemail="246745564841504b4a0a6c414d434c5057644b50504553450a4745">[email&#160;protected]</span></a></div>
               </div>
       </div>
 
@@ -443,7 +433,7 @@ d627
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e2b328d39060e67011aa2f75b0e5053d5972db288a2876e0f8d0b7cba48d0f4b">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-fca10ab5621ea65c8cd11973387458dcb08cc53932a4cfa663f3c256120b2923">
   
     
       
@@ -457,7 +447,7 @@ d627
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d6b44541d53fd6814f5dbcc405ed7523602b1a3d001902cc77fce9315c531e4b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-234ff13af9ae91e89965f1602c78f8c9cd2c2006405531ec9b71540a9233ecf2">
   
     
       
@@ -725,7 +715,7 @@ d627
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f462957550d0dc4d7203fbfa03267beb6af2777489d8d7ff2aacbb945a4bb675">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a53b88e4c2afe0068d95cab7c9a57a378730ba26fb16b3ea7766fe6a600f0e87">
   
     
       
@@ -739,7 +729,7 @@ d627
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-497f1011e0a07b105fc6550e9a08ea48f6811b65ac0eab760672c1b3c6096620">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0cd83ab85181682b0ac13b6cccc76f154fa5af6003ff7604da18914349eeac89">
   
     
       
@@ -852,7 +842,7 @@ d627
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-7863973810bdf71fb4de56f938c65b9473f67b6d166b876ab0587f086d05e767">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-f553877e691caa13d1e6929e3b91dee0fa5624e13106711094d979fe29e3f2b9">
   
     
       <div class="view-header">
@@ -1333,16 +1323,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=22&cb=1351086281" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1622639870" async></script></body>
 </html>
-
-
-0
 

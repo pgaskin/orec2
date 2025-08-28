@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/jim-durrell-recreation-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 0
-Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:04:27 GMT
-Etag: "1756166667-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:04:27 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 65222) q(0 1 1 -1) r(9 9) U24
-X-Varnish: 23446784
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 97620473abcf4411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:15:28 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=9%2Bf5F1RdldrGVtLz2954IA2RSey24NJ%2Bw4vnHHcTiKGzIZn8D43KZWkKwnXDJWMpkB6iDs3UsXyZjsXUIZrvxPO9GxKqy7f8P9zv5qXeGTr5mcAmA9%2FsvAqsi1LF%2BA%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-ca0d
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -40,7 +30,7 @@ ca0d
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/jim-durrell-recreation-centre" />
 <meta name="dcterms.title" content="Jim Durrell Recreation Centre" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-08-12" />
+<meta name="dcterms.date" content="2025-08-26" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -182,7 +172,7 @@ ca0d
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3ed561a2879622ae32313a90ea6c817f481ee1c286b5dcf0647d8588de2ac62e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ec7e3d0f15fd805b38c3ca607c0b8aebb4d8057cb06c9d0a0c90a03b44be14f9">
   
     
       
@@ -196,7 +186,7 @@ ca0d
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-be7c9c853f3cab641e743b5f4bb9fd7794a3405d92253196482494abf2a70496">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-758d1eea23c459fae55ef7192b53093fec1e7f6ad11c04f7b313004806b90036">
   
     
       
@@ -269,28 +259,6 @@ ca0d
 
 
   
-            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Schedule change</h2>
-</div>
-      
-
-
-
-
-  
-            <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><ul>
-<li><strong>Wednesday, August 20</strong>
-<ul>
-<li>Ringette (10 to 14 years), 6 to&nbsp;6:50 pm, cancelled</li>
-</ul>
-</li>
-</ul>
-</div>
-      
-
-
-
-
-  
             <div class="field field--name-field-special-hours-below field--type-string field--label-hidden field__item"><h2  class="h3">Customer Service hours</h2>
 </div>
       
@@ -352,8 +320,8 @@ ca0d
 </ul>
 <p><strong>Program inquiries:</strong></p>
 <ul>
-<li><a href="mailto:publicskating@ottawa.ca">Public Skating information</a></li>
-<li><a href="mailto:rss-epr@ottawa.ca">Learn to Skate programs</a></li>
+<li><a href="/cdn-cgi/l/email-protection#7b0b0e1917121808101a0f12151c3b140f0f1a0c1a55181a">Public Skating information</a></li>
+<li><a href="/cdn-cgi/l/email-protection#aedcdddd83cbdedceec1dadacfd9cf80cdcf">Learn to Skate programs</a></li>
 </ul>
 <p><a href="https://www.google.com/maps?hl=en&amp;ll=45.372499,-75.65869&amp;spn=0.005841,0.015696&amp;sll=45.372676,-75.657804&amp;layer=c&amp;cid=9720728543319086489&amp;panoid=dvjNBQPUk-ly9Uz8EYznQg&amp;cbp=13,56.25,,0,0&amp;gl=US&amp;t=m&amp;z=17&amp;cbll=45.372411,-75.658774">Virtual Tour</a></p>
 </div>
@@ -366,7 +334,7 @@ ca0d
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="mailto:JimDurrell@ottawa.ca">JimDurrell@ottawa.ca</a></div>
+              <div class="field__item"><a href="/cdn-cgi/l/email-protection#b2f8dbdff6c7c0c0d7dedef2ddc6c6d3c5d39cd1d3"><span class="__cf_email__" data-cfemail="9cd6f5f1d8e9eeeef9f0f0dcf3e8e8fdebfdb2fffd">[email&#160;protected]</span></a></div>
               </div>
       </div>
 
@@ -484,7 +452,7 @@ ca0d
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b1f6fa09f892f37be2e0c67b8c83afc390ae59cffd0c9b4a3bc38cf9cfe3d0f6">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0e835d87fe49afdc08776f5fc4f0062ca03db5481316643fe4e75bf3428fa706">
   
     
       
@@ -498,7 +466,7 @@ ca0d
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-47127950dffa14f17514143a31309cdc698f8533936347dbe1e07462f0066175">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-97ef0e50cd596af2497932129f8c0ae626495079bf52bae804e9fb85ae9e18ec">
   
     
       
@@ -525,9 +493,10 @@ ca0d
                           
                                                       <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The schedules listed in the charts below are subject to change.&nbsp;Holiday hours and programs may vary.&nbsp;</p>
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The schedules listed in the charts below are subject to change.&nbsp;Holiday hours and programs may vary.</p>
 <p><a href="https://ottawa.ca/en/recreation-and-culture/skating/drop-skating">Additional details, descriptions, fees and cancellation information</a>.</p>
-<p><strong>Reservations not required.</strong></p>
+<p><a href="https://ottawa.ca/en/recreation-and-parks/skating/safety-regulations"><strong>Safety and regulations</strong></a></p>
+<p>Reservations not required.</p>
 </div>
       
       </div>
@@ -604,6 +573,89 @@ ca0d
 </table></div>
       </div>
       </div>
+  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
+          <div class="table-responsive">
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
+	<caption>Jim Durrell Recreation Centre - skating - September 15, 2025&nbsp;to April 30, 2026</caption>
+	<thead>
+		<tr>
+			<th>
+			&nbsp;
+			</th>
+			<th>
+			Monday
+			</th>
+			<th>
+			Tuesday
+			</th>
+			<th>
+			Wednesday
+			</th>
+			<th>
+			Thursday
+			</th>
+			<th>
+			Friday
+			</th>
+			<th>
+			Saturday
+			</th>
+			<th>
+			Sunday
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>
+			Public skating
+			</th>
+			<td>
+			n/a
+			</td>
+			<td>
+			n/a
+			</td>
+			<td>
+			n/a
+			</td>
+			<td>
+			Noon - 12:50 pm
+			</td>
+			<td>
+			n/a
+			</td>
+			<td>
+			n/a
+			</td>
+			<td>
+			4 - 4:50 pm
+			</td>
+		</tr>
+		<tr>
+			<th>Family skating</th>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>3 - 3:50 pm</td>
+		</tr>
+		<tr>
+			<th>Adult 18+ skating</th>
+			<td>n/a</td>
+			<td>11 - 11:50 am</td>
+			<td>n/a</td>
+			<td>11 - 11:50 am</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+		</tr>
+	</tbody>
+</table></div>
+      </div>
+      </div>
 
                         </div>
                                           
@@ -673,7 +725,7 @@ ca0d
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c348ff2d0b48a1fa94bbb497e55a2f418cf91874bc4969767c1a786292d881ce">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c48379062eb2625be9f0b358b6e1b164d996a32100ab5fddeb6cd44f7aad2e99">
   
     
       
@@ -687,7 +739,7 @@ ca0d
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5f4ddbdd9a67c4c42b8280e29d518de039508bee542a0e7efcc4726f8d3ade59">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-92884fdfd79da4a3ecfbe28cbd75b2c98cd2f57f67856102c87d26b96524aa41">
   
     
       
@@ -714,27 +766,15 @@ ca0d
                           
                                                       <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The schedules listed in the charts below are subject to change.&nbsp;Holiday hours and programs may vary. Changes will be reflected through the booking process.</p>
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The schedules listed in the charts below are subject to change.&nbsp;Holiday hours and programs may vary.</p>
 <p><a href="https://ottawa.ca/en/recreation-and-culture/skating/drop-skating">Additional details, descriptions, fees and cancellation information</a>.</p>
+<p><a href="https://ottawa.ca/en/recreation-and-parks/skating/safety-regulations"><strong>Safety and regulations</strong></a></p>
 </div>
       
       </div>
   <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p><a class="btn btn-primary" href="https://reservation.frontdesksuite.ca/rcfs/arenajimdurrell">Ice sports - Reserve a spot at Jim Durrell Arena</a></p>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule change</h3>
-<ul>
-<li><strong>Wednesday, August 20</strong>
-<ul>
-<li>Ringette (10 to 14 years), 6 to&nbsp;6:50 pm, cancelled</li>
-</ul>
-</li>
-</ul>
 </div>
       
       </div>
@@ -796,6 +836,109 @@ ca0d
 			<td>
 			n/a&nbsp;
 			</td>
+		</tr>
+	</tbody>
+</table></div>
+      </div>
+      </div>
+  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
+          <div class="table-responsive">
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
+	<caption>Jim Durrell Recreation Centre - ice sports - September 15, 2025, to April 30, 2026</caption>
+	<thead>
+		<tr>
+			<td>
+			 &nbsp;
+			</td>
+			<th>
+			Monday&nbsp;
+			</th>
+			<th>
+			Tuesday&nbsp;
+			</th>
+			<th>
+			Wednesday&nbsp;
+			</th>
+			<th>
+			Thursday&nbsp;
+			</th>
+			<th>
+			Friday&nbsp;
+			</th>
+			<th>
+			Saturday&nbsp;
+			</th>
+			<th>
+			Sunday&nbsp;
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Hockey 35+</th>
+			<td>n/a</td>
+			<td>Noon - 12:50 pm</td>
+			<td>n/a&nbsp;</td>
+			<td>n/a&nbsp;</td>
+			<td>n/a&nbsp;</td>
+			<td>n/a&nbsp;</td>
+			<td>n/a&nbsp;</td>
+		</tr>
+		<tr>
+			<th>Hockey - child&nbsp;(6 to 12 years)</th>
+			<td>5 - 5:50 pm</td>
+			<td>n/a&nbsp;</td>
+			<td>n/a&nbsp;</td>
+			<td>n/a&nbsp;</td>
+			<td>n/a&nbsp;</td>
+			<td>n/a&nbsp;</td>
+			<td>n/a&nbsp;</td>
+		</tr>
+		<tr>
+			<th>
+			Ringette (10 to 14 years)
+			</th>
+			<td>
+			n/a
+			</td>
+			<td>
+			n/a&nbsp;
+			</td>
+			<td>
+			n/a
+			</td>
+			<td>
+			4:15 - 5:05 pm
+			</td>
+			<td>
+			n/a&nbsp;
+			</td>
+			<td>
+			n/a&nbsp;
+			</td>
+			<td>
+			n/a&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<th>Stick and puck - youth and adult</th>
+			<td>4 - 4:50 pm</td>
+			<td>n/a&nbsp;</td>
+			<td>n/a&nbsp;</td>
+			<td>n/a&nbsp;</td>
+			<td>n/a&nbsp;</td>
+			<td>n/a&nbsp;</td>
+			<td>n/a&nbsp;</td>
+		</tr>
+		<tr>
+			<th>Stick and puck - preschool and child</th>
+			<td>n/a&nbsp;</td>
+			<td>n/a&nbsp;</td>
+			<td>n/a&nbsp;</td>
+			<td>3:15 - 4:05 pm</td>
+			<td>n/a&nbsp;</td>
+			<td>n/a&nbsp;</td>
+			<td>n/a&nbsp;</td>
 		</tr>
 	</tbody>
 </table></div>
@@ -906,7 +1049,7 @@ ca0d
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-d96bf4a653cc6f8330d807c5e477d816b33bfb1916041e48852db13d69d48b41">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-6fd3c1b5e3ba7089d3cd9f3c5218c6bc7c21ee671e0226e385e4e6ab282c569e">
   
     
       <div class="view-header">
@@ -1289,16 +1432,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=61&cb=946598585" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1578447005" async></script></body>
 </html>
-
-
-0
 

@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/tony-graham-recreation-complex-kanata HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 365
-Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:05:34 GMT
-Etag: "1756166367-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Mon, 25 Aug 2025 23:59:27 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 132063) q(0 1 1 -1) r(2 2) U24
-X-Varnish: 15269854 23564023
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 97620898aad04411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:18:18 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=i23j7wK84jjZclg%2B7JmnxT75EcMHEXnEU497t4XNoBiv9mYLbZBCYjqU%2FNYE4SBLPQ%2FPdVP4kvow%2BjYGl07aCKkZjsVydDdbSNlWIuaOp9gVB7hXNCVZcMsqG8rKDQ%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-cb92
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ cb92
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9b3123747c64d3605f2da58c93adb8c1ffaaeeec9fa0ce98e1e68c02a2f4d8f4">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-729e32d9cd25d87b6ba8c72d8908bac785d6c513f895a0bbe0fbb216c4bc06fc">
   
     
       
@@ -196,7 +186,7 @@ cb92
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5a3e3e22476cd3af20aad2d84ebd07d6a2af83b72067e6cc548d25fef677097b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a656452f1ce68f2d8dbf8a488e073bb7060ee02835eb9bcbf059ee6e3849ca26">
   
     
       
@@ -297,7 +287,7 @@ cb92
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">9:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">9:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">9:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">9:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">9:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">9:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">9:00 am - 8:00 pm</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">9:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">9:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">9:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">9:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">9:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">9:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">9:00 am - 8:00 pm</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -376,7 +366,7 @@ cb92
 </ul>
 <p><strong>Program inquiries:</strong></p>
 <ul>
-<li><a href="mailto:publicskating@ottawa.ca">Public Skating information</a></li>
+<li><a href="/cdn-cgi/l/email-protection#8dfdf8efe1e4eefee6ecf9e4e3eacde2f9f9ecfaeca3eeec">Public Skating information</a></li>
 </ul>
 </div>
       
@@ -388,7 +378,7 @@ cb92
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="mailto:TGRC@ottawa.ca">TGRC@ottawa.ca</a></div>
+              <div class="field__item"><a href="/cdn-cgi/l/email-protection#7a2e3d28393a150e0e1b0d1b54191b"><span class="__cf_email__" data-cfemail="3561726776755a41415442541b5654">[email&#160;protected]</span></a></div>
               </div>
       </div>
 
@@ -506,7 +496,7 @@ cb92
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6b5546621851fbaddc49018ffe13a172a2025915093454348f6a8e41e75bebec">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5946e5e743318152f76cf17d5290b3b917a6705448d69228a5f3c27a2cb9e6c4">
   
     
       
@@ -520,7 +510,7 @@ cb92
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0306426ab65a45c435ab6b35c87665f40c6200602c0d67a47785cc7cbd6ab467">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2b00199d63a7373c8581bd68daea8238b5759650a367d5edebd961e86261c08f">
   
     
       
@@ -555,12 +545,11 @@ cb92
       </div>
   <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Closure</h3>
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Notice</h3>
 <ul>
-<li><strong>August 30 to September 12</strong>
+<li><strong>August 27 to September 15</strong>
 <ul>
-<li>The facility is closed for annual maintenance.</li>
-<li>The arenas remain open.</li>
+<li>No drop-in skating available.</li>
 </ul>
 </li>
 </ul>
@@ -670,7 +659,7 @@ cb92
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-fe6420f090d24508dce4e97d675ab4f58fa485ec64a4537d174659edb661a2ea">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-85528f51fcb880029673231cf955489948098e23b51ba41425b59398929e1d80">
   
     
       
@@ -684,7 +673,7 @@ cb92
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7eed0a798fd147bfdec0dfb03ac199a3ca82b971325425c532492c3f2e2e902d">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d15e7fad6d716db9131687b45e6be46b2849e28c68521edcf05e9cf9bc0b9c6b">
   
     
       
@@ -719,6 +708,19 @@ cb92
   <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p><a class="btn btn-primary" href="https://reservation.frontdesksuite.ca/rcfs/ArenaKanata">Ice sports - Reserve a spot at Tony Graham Recreation Complex – Kanata</a></p>
+</div>
+      
+      </div>
+  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
+          
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Notice</h3>
+<ul>
+<li><strong>August 27 to September 15</strong>
+<ul>
+<li>No drop-in ice sports available.</li>
+</ul>
+</li>
+</ul>
 </div>
       
       </div>
@@ -822,7 +824,7 @@ cb92
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-cde569e05847785662238b730a427a2b8c1a4ef785f157ea718c3eb8772d67d3">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-f9a56a631065897fda043fb2b26aebae9a867ddc1b6a27224ec1da8fb91f8f88">
   
     
       <div class="view-header">
@@ -1218,16 +1220,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  </body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2104375958" async></script></body>
 </html>
-
-
-0
 

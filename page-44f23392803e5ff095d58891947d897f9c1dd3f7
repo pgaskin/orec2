@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing?page=4 HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 0
-Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:05:21 GMT
-Etag: "1756166720-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:05:20 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: UNCACHEABLE (poor cacheability)
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 118558) q(0 1 1 -1) r(8 8) U24
-X-Varnish: 18930865
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 976207851e624411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:17:34 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=36blL1xV%2BPimejwbhzF9yCf2hIyS41FgrubnDYd0Vi5QNbFi3BKHsMQ9MS22UrjSkOCizZe47mlzjmkMoTE8bGkcBQV6DY5189l%2FBI9bMtIZySuaxzRtZaybk%2FyXwQ%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-f64f
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -234,7 +224,7 @@ f64f
 
 
 
-  <div class="views-element-container"><div class="faceted-search-page view view-place-listing-search view-id-place_listing_search view-display-id-place_listing_search js-view-dom-id-7b4dbe4660b5baf7bb2b1f7d87b61b856574b4d8c9a4c404ed000917f68ba690">
+  <div class="views-element-container"><div class="faceted-search-page view view-place-listing-search view-id-place_listing_search view-display-id-place_listing_search js-view-dom-id-1744fea271545c9d50dcf49473b24a5d05afc06eef108b74f23f9d1c02337901">
   
     
       <div class="view-header">
@@ -726,9 +716,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9kEuugzAMRTeUkEn3g5zgUrcOjhKnQFffVPCeoINOLN_j35W9iBbNkC7O_6f2XiyDYlGDizJNDzfkmoC7XZorBNTyRzfVhRuGh5fFzjSMqGYUGRl7hdGNLXzrDu6wnGE0DK_VfYIR1QB9kElxUredsBlZYLBXCbXsHXrDiM6vDDNTc3yk29QJfez31Naeccvr0u3Gj4WUaVJbJBCw9VX1e7KELMyYz5AUKaYsT7QwAa9KoZgkqaa-1PzE1R1Fq8yYPfUYPQ7upGxgah_43VKLSqQX5jf1CLYR"></script>
 
-  </body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1272831640" async></script></body>
 </html>
-
-
-0
 

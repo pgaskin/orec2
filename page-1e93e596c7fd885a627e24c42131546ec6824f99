@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/ottawa-south-community-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 0
-Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:05:10 GMT
-Etag: "1756166709-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:05:09 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 107399) q(0 1 1 -1) r(12 12) U24
-X-Varnish: 24414485
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 976206ca89b74411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:17:03 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=VdbwOKXnD%2B%2B5oliq8%2BJBXsTrddSgKQjDnd%2BAik23z9GlVE6DTRjHm7U%2BVhD%2FMPFregD3YGdwWud4ewZQ7c2HqvLeiO8dgt7ank2HWIehIuCzld2jku3BFDuU5Ngakg%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-818c
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ X-Varnish: 24414485
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f8e9cb646bd73717e381c4e6c878329c556556617e96c691ac98a147918608a5">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c01cba264dbedf43d879a19f263c4122e036c1597561b42821426777a00506cf">
   
     
       
@@ -196,7 +186,7 @@ X-Varnish: 24414485
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bca796bb79a64b184d60de5d19ceaab21ee61e8e453d704b7f08a89516d6b9ee">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-97e38092aaf5db85b2368a35452d78d194cd42387974d312e90f414595316ba7">
   
     
       
@@ -320,7 +310,7 @@ X-Varnish: 24414485
             <div class="clearfix text-formatted field field--name-field-place-address-info field--type-text-long field--label-hidden field__item"><h3>City of Ottawa</h3>
 <ul>
 <li><a href="tel:613-247-4790">613-247-4790</a></li>
-<li><a href="mailto:ottawasouth@ottawa.ca">ottawasouth@ottawa.ca</a></li>
+<li><a href="/cdn-cgi/l/email-protection#7e110a0a1f091f0d110b0a163e110a0a1f091f501d1f"><span class="__cf_email__" data-cfemail="ef809b9b8e988e9c809a9b87af809b9b8e988ec18c8e">[email&#160;protected]</span></a></li>
 <li><a href="https://ottawa.ca/en/recreation-and-parks/facilities/facility-rentals?facility_rentals_facets%5B0%5D=facility%3AOttawa%20South%20Community%20Centre">Facility rentals</a></li>
 <li><a href="https://www.google.com/maps/place/Ottawa+South+Community+Centre/@45.3946858,-75.6818056,3a,75y,100.83h,90t/data=!3m6!1e1!3m4!1sjZnFm2x6DCQAAAQJOEo39g!2e0!7i13312!8i6656!4m5!3m4!1s0x0:0x3bf00871bdf4262a!8m2!3d45.3946842!4d-75.6817419!6m1!1e1?hl=en">Virtual Tour</a></li>
 </ul>
@@ -328,7 +318,7 @@ X-Varnish: 24414485
 <p><strong>Recreation programs</strong></p>
 <ul>
 <li><a href="https://oldottawasouth.ca/">Old Ottawa South Community Association</a></li>
-<li><a href="mailto:info@oldottawasouth.ca">info@oldottawasouth.ca</a></li>
+<li><a href="/cdn-cgi/l/email-protection#422b2c242d022d2e262d3636233523312d37362a6c2123"><span class="__cf_email__" data-cfemail="5f363139301f30333b302b2b3e283e2c302a2b37713c3e">[email&#160;protected]</span></a></li>
 <li><a href="tel:613-695-6790">613-695-6790</a></li>
 </ul>
 </div>
@@ -718,16 +708,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=93&cb=1106356616" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1978389288" async></script></body>
 </html>
-
-
-0
 

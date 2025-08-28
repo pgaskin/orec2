@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/sandy-hill-community-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 0
-Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:05:25 GMT
-Etag: "1756166725-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:05:25 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 123190) q(0 1 1 -1) r(8 8) U24
-X-Varnish: 23048332
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 976207f83bef4411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:17:51 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=gugillfbZ8mJNABzzIl8TfEt%2FUPF%2FWBQvSa5ij1NVVopPE0ombOSkcsbESNKdpYlZQSLHzlUdIlKkc9M9NaXPx57qGHbpPuSrP0azRmyRx%2BHNfzkL1lAf2tUezOe6w%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-afc2
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ afc2
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-48f46050df05fec96794d880e08c69ad759cd12e04aecd6258f98d0c978430c7">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7c19e0ff996699c21aa8b23102e3e18ddd7c96355b89d2cfa288c851b242349c">
   
     
       
@@ -196,7 +186,7 @@ afc2
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bbecd6511155dc6d13eb538dc35c133a107c530d66a61e0171b7b843164fde99">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5d9b350f3809da611813206a0dfb9457bffd3e4183b362fdb3ee6b08e97e05a5">
   
     
       
@@ -295,7 +285,7 @@ afc2
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">9:00 am - 5:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">9:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">Closed</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">9:00 am - 5:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">9:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">Closed</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -336,13 +326,13 @@ afc2
 
   
             <div class="clearfix text-formatted field field--name-field-place-address-info field--type-text-long field--label-hidden field__item"><h3>Community Centre</h3>
-<p><a href="mailto:sandyhill@ottawa.ca">sandyhill@ottawa.ca</a><br>
+<p><a href="/cdn-cgi/l/email-protection#0370626d677a6b6a6f6f436c77776274622d6062"><span class="__cf_email__" data-cfemail="4f3c2e212b36272623230f203b3b2e382e612c2e">[email&#160;protected]</span></a><br>
 <a href="tel:6135641062">613-564-1062</a></p>
 <p><a href="https://www.google.com/maps/place/Sandy+Hill+Community+Centre/@45.4229704,-75.6777455,3a,75y,60h,90t/data=!3m8!1e1!3m6!1sAF1QipN02-51ytbBN3BFl6yMlYXu6hAmGnNMyAMYdwpJ!2e10!3e11!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipN02-51ytbBN3BFl6yMlYXu6hAmGnNMyAMYdwpJ%3Dw203-h100-k-no-pi0-ya60-ro0-fo100!7i13312!8i6656!4m17!1m9!3m8!1s0x4cce050973c2097b:0x4d02fd8d1796bf9a!2s250+Somerset+St.+E,+Ottawa,+ON+K1N+6V6!3b1!8m2!3d45.4227696!4d-75.6777087!10e5!16s%2Fg%2F11bw3xw8y2!3m6!1s0x4cce05098242e9fb:0xd145e18b48d3e1ae!8m2!3d45.4227951!4d-75.6777187!10e5!16s%2Fg%2F11r_p66dx?entry=ttu">Virtual Tour</a></p>
 <p><a href="https://ottawa.ca/en/recreation-and-parks/facilities/facility-rentals?text=&amp;facility_rentals_facets%5B0%5D=facility%3ASandy%20Hill%20Community%20Centre">Facility rentals</a></p>
 <h4><a href="https://ottawa.ca/en/recreation-and-parks/recreation-facilities/facility-listing/sandy-hill-arena">Sandy Hill Arena</a></h4>
-<p><strong>Public skating:</strong> <a href="mailto:publicskating@ottawa.ca">publicskating@ottawa.ca</a><br>
-<strong>Ice rental:</strong> <a href="mailto:sports@ottawa.ca">sports@ottawa.ca</a></p>
+<p><strong>Public skating:</strong> <a href="/cdn-cgi/l/email-protection#b3c3c6d1dfdad0c0d8d2c7daddd4f3dcc7c7d2c4d29dd0d2"><span class="__cf_email__" data-cfemail="1a6a6f7876737969717b6e73747d5a756e6e7b6d7b34797b">[email&#160;protected]</span></a><br>
+<strong>Ice rental:</strong> <a href="/cdn-cgi/l/email-protection#790a09160b0d0a39160d0d180e18571a18"><span class="__cf_email__" data-cfemail="3645465944424576594242574157185557">[email&#160;protected]</span></a></p>
 </div>
       
 
@@ -353,7 +343,7 @@ afc2
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="mailto:sandyhill@ottawa.ca">sandyhill@ottawa.ca</a></div>
+              <div class="field__item"><a href="/cdn-cgi/l/email-protection#3340525d574a5b5a5f5f735c47475244521d5052"><span class="__cf_email__" data-cfemail="e89b89868c9180818484a8879c9c899f89c68b89">[email&#160;protected]</span></a></div>
               </div>
       </div>
 
@@ -497,7 +487,7 @@ afc2
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-b108e405206485baab7b9239591e9b228b7a153b956e368ae21cdd376925c331">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-1416a7fde5d75221b1e3563c6972e6106daccef9ca42a9791f3afdc3aa00aafa">
   
     
       <div class="view-header">
@@ -938,16 +928,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  </body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=551518069" async></script></body>
 </html>
-
-
-0
 

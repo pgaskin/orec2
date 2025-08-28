@@ -1,35 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing/ron-kolbus-lakeside-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 0
-Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:05:23 GMT
-Etag: "1756166722-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 26 Aug 2025 00:05:22 GMT
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: MISS
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 SNNy RT(1756166601841 120513) q(0 1 1 -1) r(11 11) U24
-X-Varnish: 21973198
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 976207b85b604411-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:17:42 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=SRovSXUjt3la5sBAJlLYYbJVy647CM9aaACwfpRnhwj3VYM7K%2BfWjxCsFN28tC0WcmAHpOAUSErpCRU8P0%2FKlIeRZD8qgbfr2UeUpcVfsnhoKClJ1MeeAVhV5gtxVA%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-d5c9
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +172,7 @@ d5c9
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-565f39129b8bab9fd87fd316f42da58a92b7db96ecc77b2b7c8ccc9f1277481c">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f5c987365500528b3c08186e15f87e381d82ffe7fc40990a61ddc98cf0d15daa">
   
     
       
@@ -196,7 +186,7 @@ d5c9
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-dbba9bd16ee85e064670be5d0c93b5a36ab094ac13df85c52b982993df608e77">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d074639408b80e2679423618cbf590eb10165c9c0d2e8a91d36a8aceb75144a0">
   
     
       
@@ -346,7 +336,7 @@ d5c9
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="mailto:ronkolbuslakeside@ottawa.ca">ronkolbuslakeside@ottawa.ca</a></div>
+              <div class="field__item"><a href="/cdn-cgi/l/email-protection#92e0fdfcf9fdfef0e7e1fef3f9f7e1fbf6f7d2fde6e6f3e5f3bcf1f3"><span class="__cf_email__" data-cfemail="3d4f52535652515f484e515c56584e5459587d5249495c4a5c135e5c">[email&#160;protected]</span></a></div>
               </div>
       </div>
 
@@ -464,7 +454,7 @@ d5c9
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2fa2e198d690811783b8e2c7d49db95f184b606c929268bbd6cfa0fd92a7d12b">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-65eeff13e0298158ea5703cbec313e7987418e897335e0e9e6333e0e4af69cd7">
   
     
       
@@ -478,7 +468,7 @@ d5c9
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-02e604b2b9dc8a110503c85ef925fd69a47b526f26778a67643e2f7150eb4efd">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-44f1ef5fe31ddf206512e3f05c1db9361a2737c83d28b71db13cac05890bdfcf">
   
     
       
@@ -642,7 +632,7 @@ d5c9
                                                       <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p><a href="https://ottawa.ca/en/recreation-and-parks/facilities/facility-rentals?text=&amp;facility_rentals_facets%5B0%5D=facility%3ARon%20Kolbus%20Lakeside%20Centre">Enquire about availability and/or reserve a space with this facility</a>.&nbsp;</p>
-<p>To request a facility tour, e-mail <a href="mailto:rklc@ottawa.ca">rklc@ottawa.ca</a>.</p>
+<p>To request a facility tour, e-mail <a href="/cdn-cgi/l/email-protection#67150c0b0427081313061006490406"><span class="__cf_email__" data-cfemail="98eaf3f4fbd8f7ececf9eff9b6fbf9">[email&#160;protected]</span></a>.</p>
 <p>The City of Ottawa has hundreds of indoor and outdoor spaces suitable for special events, meetings, sports, and gatherings of all kinds.&nbsp;<a href="https://ottawa.ca/en/recreation-and-parks/facilities-and-rentals/rental-information" target="_blank">Find out more</a>.</p>
 </div>
       
@@ -694,7 +684,7 @@ d5c9
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-2bdfd7878c8399afa2518f1c970905aba1a19a9445e8c9c303a06841b45c8ed0">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-dfa17fc8e3d2d408c7489e843f68ae8745b68aa861e35f0b1fa1961ad9b1209a">
   
     
       <div class="view-header">
@@ -1129,16 +1119,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
 <script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  </body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2121262879" async></script></body>
 </html>
-
-
-0
 

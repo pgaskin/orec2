@@ -1,37 +1,25 @@
 GET /en/recreation-and-parks/facilities/place-listing HTTP/1.1
 Host: ottawa.ca
-User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+xxx-use-proxy: true
 
-HTTP/1.1 200 OK
-Transfer-Encoding: chunked
-Accept-Ranges: bytes
+HTTP/2.0 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
+Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
 Access-Control-Allow-Origin: *
-Age: 410
-Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
-Connection: keep-alive
-Content-Language: en
-Content-Type: text/html; charset=UTF-8
-Date: Tue, 26 Aug 2025 00:03:21 GMT
-Etag: "1756166191-gzip"
-Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Mon, 25 Aug 2025 23:56:31 GMT
-Set-Cookie: visid_incap_243507=tKTHpIDUTdyE2SNg+Rrpisn5rGgAAAAAQUIPAAAAAADF8X7qIC/gbiAZGM+J80Z0; expires=Tue, 25 Aug 2026 06:55:19 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=tTqHC7fFg1tgVHqFaXmSIAAAAAAMdkX7oRVt2gxeFDDurFOz; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_892_243507=sOubUGGCJEJW5bv6rgVhDMn5rGgAAAAAUikORFQXVSIeailpnxbVJw==; path=/; Domain=.ottawa.ca
-Strict-Transport-Security: max-age=31536000; includeSubDomains
-Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
-X-Cdn: Imperva
-X-Content-Type-Options: nosniff
-X-Drupal-Cache: MISS
-X-Drupal-Dynamic-Cache: UNCACHEABLE (poor cacheability)
-X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
-X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-45841799-45841801 NNNY CT(32 38 0) RT(1756166601841 16) q(0 1 1 0) r(1 1) U24
-X-Varnish: 19836179 22935215
+Alt-Svc: h3=":443"; ma=86400
+Cf-Cache-Status: DYNAMIC
+Cf-Ray: 9761fb2929f2377d-EWR
+Content-Type: text/html; charset=utf-8
+Date: Thu, 28 Aug 2025 07:09:08 GMT
+Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=q51AC8Iv5ZS9kUaINiwhdlnNEdyXJnVVA6c5k4%2F826wdHuY5zpM5%2Fk5X8wrq68ZsUqBsRL%2Byq4deYyqO7Snh3I0aHvrQZxopUjyM8Mmpl4XuF3FZR1RfAbILKhWaeA%3D%3D"}]}
+Server: cloudflare
+Vary: accept-encoding
+X-Frame-Options: sameorigin
+X-Frame-Options: SAMEORIGIN
+X-Powered-By: Express
 
-1088c
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -235,7 +223,7 @@ X-Varnish: 19836179 22935215
 
 
 
-  <div class="views-element-container"><div class="faceted-search-page view view-place-listing-search view-id-place_listing_search view-display-id-place_listing_search js-view-dom-id-36de89fb0d5dffd584a14b48180c270ff8f5d6e7523b9d751224c127abde9bea">
+  <div class="views-element-container"><div class="faceted-search-page view view-place-listing-search view-id-place_listing_search view-display-id-place_listing_search js-view-dom-id-8f3b79863176d412a2c4465291844bd843970dac1949b6bfc5eee66170a4d005">
   
     
       <div class="view-header">
@@ -763,9 +751,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9kEuugzAMRTeUkEn3g5zgUrcOjhKnQFffVPCeoINOLN_j35W9iBbNkC7O_6f2XiyDYlGDizJNDzfkmoC7XZorBNTyRzfVhRuGh5fFzjSMqGYUGRl7hdGNLXzrDu6wnGE0DK_VfYIR1QB9kElxUredsBlZYLBXCbXsHXrDiM6vDDNTc3yk29QJfez31Naeccvr0u3Gj4WUaVJbJBCw9VX1e7KELMyYz5AUKaYsT7QwAa9KoZgkqaa-1PzE1R1Fq8yYPfUYPQ7upGxgah_43VKLSqQX5jf1CLYR"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=31634521" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1068182570" async></script></body>
 </html>
-
-
-0
 
