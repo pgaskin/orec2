@@ -6,7 +6,6 @@ import (
 	"cmp"
 	"context"
 	"crypto/sha1"
-	"encoding/base64"
 	"encoding/hex"
 	"encoding/json"
 	"errors"
@@ -526,7 +525,7 @@ func fetch(ctx context.Context, u string, cacheType, cacheKey string, limiter *r
 		}
 
 		if proxy && *Zyte {
-			resp, err = zyte(req)
+			resp, err = zyte(req, true)
 		} else {
 			req.Header.Set("User-Agent", *UserAgent)
 			resp, err = http.DefaultClient.Do(req)
@@ -559,14 +558,14 @@ func fetch(ctx context.Context, u string, cacheType, cacheKey string, limiter *r
 }
 
 // zyte does a request through zyte.
-func zyte(req *http.Request) (*http.Response, error) {
+func zyte(req *http.Request, followRedirect bool) (*http.Response, error) {
 	ctx := req.Context()
 
 	zreqObj := map[string]any{
 		"httpResponseBody":    true,
 		"httpResponseHeaders": true,
 		"url":                 req.URL.String(),
-		"followRedirect":      true,
+		"followRedirect":      followRedirect,
 	}
 	if req.Method != http.MethodGet {
 		zreqObj["httpRequestMethod"] = req.Method
@@ -581,7 +580,7 @@ func zyte(req *http.Request) (*http.Response, error) {
 			return io.NopCloser(bytes.NewReader(buf)), nil
 		}
 		req.Body, _ = req.GetBody()
-		zreqObj["httpRequestBody"] = base64.StdEncoding.EncodeToString(buf)
+		zreqObj["httpRequestBody"] = buf // base64
 	}
 	if cookies := req.Cookies(); len(cookies) != 0 {
 		return nil, fmt.Errorf("cookies not supported")
@@ -606,7 +605,7 @@ func zyte(req *http.Request) (*http.Response, error) {
 	var zrespObj struct {
 		URL                 string  `json:"url"`
 		StatusCode          int     `json:"statusCode"`
-		HTTPResponseBody    *string `json:"httpResponseBody"`
+		HTTPResponseBody    *[]byte `json:"httpResponseBody"` // base64
 		HTTPResponseHeaders *[]struct {
 			Name  string `json:"name"`
 			Value string `json:"value"`
@@ -690,7 +689,7 @@ func zyte(req *http.Request) (*http.Response, error) {
 	freq.Header["xxx-use-proxy"] = []string{"zyte"}
 
 	fresp := &http.Response{
-		Status:     strconv.Itoa(zrespObj.StatusCode) + http.StatusText(zrespObj.StatusCode),
+		Status:     http.StatusText(zrespObj.StatusCode),
 		StatusCode: zrespObj.StatusCode,
 		Proto:      req.Proto,
 		ProtoMajor: req.ProtoMajor,
@@ -702,9 +701,7 @@ func zyte(req *http.Request) (*http.Response, error) {
 	for _, h := range *zrespObj.HTTPResponseHeaders {
 		fresp.Header[h.Name] = append(fresp.Header[h.Name], h.Value)
 	}
-	if body, err := base64.StdEncoding.DecodeString(*zrespObj.HTTPResponseBody); err != nil {
-		return nil, fmt.Errorf("decode response body: %w", err)
-	} else if len(body) != 0 {
+	if buf := *zrespObj.HTTPResponseBody; len(buf) != 0 {
 		for k := range fresp.Header {
 			if textproto.CanonicalMIMEHeaderKey(k) == "Content-Encoding" {
 				fresp.ContentLength = -1
@@ -719,7 +716,7 @@ func zyte(req *http.Request) (*http.Response, error) {
 				}
 			}
 		}
-		fresp.Body = io.NopCloser(bytes.NewReader(body))
+		fresp.Body = io.NopCloser(bytes.NewReader(buf))
 	}
 	return fresp, nil
 }
