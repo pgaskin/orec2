@@ -6,6 +6,10 @@ on:
   schedule:
     - cron: 0 0 * * *
   workflow_dispatch:
+    inputs:
+      zyte:
+        required: false
+        type: boolean
 
 permissions:
   contents: write
@@ -40,7 +44,9 @@ jobs:
       - run: git worktree add cache cache
       - run: rm -fv cache/page-*
         if: ${{ github.event_name != 'push' }} # we only want to clear the cached data if it's a scheduled or forced update... otherwise, just download anything new if needed
-      - run: go run ./scraper -cache-dir ./cache
+      - run: go run ./scraper -cache-dir ./cache ${{ github.event.inputs != null && (github.event.inputs.zyte == true || github.event.inputs.zyte == 'true') && '-zyte' || '' }}
+        env:
+          ZYTE_APIKEY: ${{ secrets.zyte_apikey }}
       - run: |
           git -C cache add . && { git -C cache diff --cached --quiet || git -C cache commit -m "update cache (${{ github.event_name == 'push' && 'partial' || 'full' }} reason: ${{github.event_name}} scraper: $(git rev-parse HEAD))" ; } && git -C cache push
   scrape:
