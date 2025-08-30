@@ -1,24 +1,35 @@
 GET /en/recreation-and-parks/facilities/place-listing/francois-dupuis-recreation-centre HTTP/1.1
 Host: ottawa.ca
-xxx-use-proxy: true
+xxx-use-proxy: zyte
 
-HTTP/2.0 200 OK
-Access-Control-Allow-Credentials: true
-Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
-Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
+HTTP/1.1 200 200OK
+Connection: close
+Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Alt-Svc: h3=":443"; ma=86400
-Cf-Cache-Status: DYNAMIC
-Cf-Ray: 97620364d87c4411-EWR
-Content-Type: text/html; charset=utf-8
-Date: Thu, 28 Aug 2025 07:14:44 GMT
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=3GW3tq9Dv%2Fd%2FHEg3J0%2B2cwobGSwAgGG%2Bx0RrqVvjXsQthWJx8PcDkQEc7mqro%2Fh3CUUxnZLLGuodgjLvvXFw%2FB0rw8iIL7DAi1eaTxzJgEpwWnQj4OwrelFjmXIPLw%3D%3D"}]}
-Server: cloudflare
-Vary: accept-encoding
-X-Frame-Options: sameorigin
-X-Frame-Options: SAMEORIGIN
-X-Powered-By: Express
+Age: 0
+Cache-Control: max-age=2764800, public
+Cache-Tags: MISS
+Connection: keep-alive
+Content-Type: text/html; charset=UTF-8
+Content-language: en
+Date: Sat, 30 Aug 2025 08:59:26 GMT
+ETag: "1756544365-gzip"
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Last-Modified: Sat, 30 Aug 2025 08:59:25 GMT
+Set-Cookie: visid_incap_243507=wo5f07C7Tp2qj5Gd81w7z2y9smgAAAAAQUIPAAAAAABx83eZXGF41bAUsT+gd5bn; expires=Sat, 29 Aug 2026 11:08:03 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=V76welaRgDBqa+zjaXmSIAAAAAAjflhaaGf8oON+w7nnMfeD; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_1843_243507=5hrZSNThiRpReyxdSqeTGW29smgAAAAAGusU/usDkv+QUmxDu81StA==; path=/; Domain=.ottawa.ca
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Vary: Cookie,Accept-Encoding
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
+X-CDN: Imperva
+X-Content-Type-Options: nosniff
+X-Drupal-Cache: MISS
+X-Drupal-Dynamic-Cache: MISS
+X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
+X-Generator: Drupal 10 (https://www.drupal.org)
+X-Iinfo: 61-65972672-65972714 NNNN CT(31 39 0) RT(1756544365485 100) q(0 0 0 0) r(1 12) U24
+X-Varnish: 29829680
 
 
 <!DOCTYPE html>
@@ -30,7 +41,7 @@ X-Powered-By: Express
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/francois-dupuis-recreation-centre" />
 <meta name="dcterms.title" content="François Dupuis Recreation Centre" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-08-27" />
+<meta name="dcterms.date" content="2025-08-29" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -44,13 +55,13 @@ X-Powered-By: Express
     <link rel="stylesheet" media="all" href="/sites/default/files/css/css_wlb9_FVo8iOCc388ZH60AOLjPX-LribjnIHAjDDK6to.css?delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_hIkusDorgaFGgFGXEC9NC5A6M1oAesgy7eoj0vqGGoQ.css?delta=1&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
 <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
-<link rel="stylesheet" media="all" href="/sites/default/files/css/css_51Bb-4Zjct-9lU5HQy0U_61TzM5g45ZukpPpokSRsnM.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
-<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.28/css/app.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css__BzoYDnbHMmrYiFSh96avEQ3e9ez5OKomOkGZuSJfmQ.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
+<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.29/css/app.css" />
 
     <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031637","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx9UsuSAyEI_CFnvOz_WKjEkKhYgklmv37NPmdy2EsXTYNQjZ5ZRTu0N-tB0Pgd_w2XiywZFEX3esrsIS-iW6aa9kpBEUgoJlwxknJ3VCNW9ZnD1e5iE7ijrdwLZHpHgw-db11t7KNBXr-pScwpo1NINk145Stc4HFMFpNh46EukgS-Yd8sVwycZ_59s08wfDpRQHfm0cXuiTs9F1LFblg1gNMzFrSzO0OTOYLTnHTQXrzYSzMej_VOMaEehNap6iIcaHb6ocpVDgVCilRan_svUCFvSkFMgw5p2nyWH5v-MuuobfhMcsZoGrfRnIx-w83uyVTu2D05LB6jPbAlZJrX-b9kiHKZ9-pGNlEsX1_nRngX-4lr4TgyfgCH7u4z","theme":"ottca_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NDWQN39"]},"popup_survey":{"frequency":"10","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"2b10bb50a9c4a88da976ceacddbf75faec45ec1bdb36757dcce69ecfb8e7c867"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
-<script src="/modules/contrib/google_tag/js/gtag.js?t1clew"></script>
-<script src="/modules/contrib/google_tag/js/gtm.js?t1clew"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?t1pj7h"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?t1pj7h"></script>
 <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.22.1/dist/powerbi.min.js"></script>
 <script src="/modules/contrib/powerbi_embed/js/powerbi_embed-customizer.js?v=1.0.0"></script>
 
@@ -172,7 +183,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-03f303c0fe2ee73f356ea5d921de7c2487a7ddfdc0aeeed18a29c3ad06bcfcc2">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ec9f1d75cf472c46ca56946f05107624aa5cefb7facc16fab0db429e0dc52e1e">
   
     
       
@@ -186,7 +197,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-00ad18da3b5e6327b01e7b1fef958c3942b73d9e1ce5703397341500de9860b9">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f339416104a311c0074acb2d4e2bb42f4d5e33435ab05a9babea5ceba0e42211">
   
     
       
@@ -259,7 +270,7 @@ X-Powered-By: Express
 
 
   
-            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Schedule changes</h2>
+            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Labour Day</h2>
 </div>
       
 
@@ -268,15 +279,6 @@ X-Powered-By: Express
 
   
             <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><ul>
-<li><strong>Thursday, August 28</strong>
-<ul>
-<li><strong>Aqua general shallow</strong>, 8:30 to 9:25 am&nbsp;<strong>and&nbsp;</strong>9:30 to 10:25 am,&nbsp;cancelled</li>
-<li><strong>Aqua general deep</strong>, 8:30 to 9:25 am&nbsp;<strong>and&nbsp;</strong>9:30 to 10:25 am,&nbsp;cancelled</li>
-</ul>
-</li>
-</ul>
-<h3>Labour Day</h3>
-<ul>
 <li><span><span><strong><span>Monday, September 1</span></strong></span></span>
 <ul>
 <li><span><span><span><span>Closed</span></span></span></span></li>
@@ -460,7 +462,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4805c1e07a26b9ed0c254ffcaeca408f118c6a59875de973e12a14a669eefb24">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5afd4a5d2708fa896a3957e0716abbbcd3182817b2412b98106e88ff407490f3">
   
     
       
@@ -474,7 +476,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7ba4fee8224824322e1920c5bfab4c7e88d2090cecf53c1c35222078165cbd46">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3e3a5c362cc21e3d7d6527b55a4a7e6918783ea3df6dd3b0284a3b4cb049f982">
   
     
       
@@ -510,14 +512,8 @@ X-Powered-By: Express
       </div>
   <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3><span><span><span><span>Schedule changes</span></span></span></span></h3>
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Labour Day</h3>
 <ul>
-<li><strong><span><span><span><span>Thursday, August 28</span></span></span></span></strong>
-<ul>
-<li><span><span><span><span><strong>Aqua general shallow</strong>, 8:30 to 9:25 am <strong>and </strong>9:30 to 10:25 am,&nbsp;cancelled</span></span></span></span></li>
-<li><span><span><span><span><strong>Aqua general deep</strong>, 8:30 to 9:25 am <strong>and </strong>9:30 to 10:25 am,&nbsp;cancelled</span></span></span></span></li>
-</ul>
-</li>
 <li><span><span><strong><span>Monday, September 1</span></strong></span></span>
 <ul>
 <li><span><span><span><span>The facility is closed and all programs cancelled.</span></span></span></span></li>
@@ -566,8 +562,7 @@ X-Powered-By: Express
 			7:30 - 8:30 pm</td>
 			<td>9:30 - 11:30 am,&nbsp;
 			3 - 4 pm</td>
-			<td>11:30 am - 1 pm,&nbsp;
-			3 - 4 pm</td>
+			<td>3 - 4 pm</td>
 		</tr>
 		<tr>
 			<th>
@@ -596,8 +591,8 @@ X-Powered-By: Express
 			<td>
 			11:30 am - 1 pm
 			</td>
-			<td>8:30 – 9:30 am,
-			10:30 am – 1 pm&nbsp;&nbsp;</td>
+			<td>8:30 - 9:30 am,
+			10:30 am -&nbsp;1 pm&nbsp;&nbsp;</td>
 		</tr>
 		<tr>
 			<th><strong><span>Preschool swim</span></strong> -
@@ -1203,7 +1198,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-85e932ca5f97f2b2cc91ab0a94322f4a4112cda4c8bc450a74e40227515a033e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-cac9d2bd650aa0b2dc0fd254364f6e2be5460080cdbcd8e929b7d5bf60bca3ff">
   
     
       
@@ -1217,7 +1212,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ac603b3896a69bfc46052711c32e5eb32d5bd6e2dce18df5376a1492ced674f2">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-46c86febffdccd979a8b89fec2b0b3581b5c57f3f2007ec1dfc75b65198cc365">
   
     
       
@@ -1385,7 +1380,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8ab1c63b1249fa99c565914225a383b54c94fa2e806a9fe28e2ef8d970266843">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d5108d71e80cefb0243060c2b57baa1bf74fea4f5b2be5fdda856fe34e30835e">
   
     
       
@@ -1399,7 +1394,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-8fd6a683fdc628220441f7fedb6bed2a2f8114bfffedc09575cab6ef3424128c">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-507620b8eef259165d6693eea06a6b7ef746af5939fb7e7965d57d2ad0d6fe64">
   
     
       
@@ -1624,26 +1619,6 @@ X-Powered-By: Express
 			<td>n/a</td>
 		</tr>
 		<tr>
-			<th>Pilates</th>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>6:30 - 7:30 pm</td>
-			<td>n/a</td>
-			<td>6:30 - 7:30 pm</td>
-			<td>n/a</td>
-			<td>9:30 - 10:30 am</td>
-		</tr>
-		<tr>
-			<th>Pilates 50 +</th>
-			<td>1 - 2 pm</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
 			<th>
 			Yoga
 			</th>
@@ -1654,7 +1629,7 @@ X-Powered-By: Express
 			n/a
 			</td>
 			<td>
-			7:45 - 8:45 pm
+			n/a
 			</td>
 			<td>
 			n/a
@@ -1669,8 +1644,8 @@ X-Powered-By: Express
 		</tr>
 		<tr>
 			<th>Yoga 50 +</th>
-			<td>9:30 - 10:30 am</td>
-			<td>11:15 am - 12:15 pm</td>
+			<td>10:45 - 11:45 am</td>
+			<td>n/a</td>
 			<td>1 - 2 pm</td>
 			<td>n/a</td>
 			<td>n/a</td>
@@ -1792,7 +1767,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-387a641caf77db573fb9fa47ff97af5e6cd40169f40640f6e411c3558e6a43b0">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c534e2f801ff985215c3bd511e58f001fe137fb77e5bc2865dc6cb37048ea994">
   
     
       
@@ -1806,7 +1781,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-755b7ff55d0d176573e32ae2b2a7630086392573cc5681429e34cd9ad6c60fb3">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-07aa5be3909c25e01da12d5f44144c5dfa2bcfa6d71ea1063b2d36b270da35f2">
   
     
       
@@ -2010,7 +1985,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-76da50137f1fb1a9a01cfdef768308e1d5e4d0fd76ee35ea4acd5eaf223bcb6c">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-15ab4a7541d96ffb6d9473c78f6ba5439899ac46e78a31b1e4837580c12a87c5">
   
     
       
@@ -2024,7 +1999,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9aa9bc8453d5dd302afcc63cf6197b4ed37b530965c875a8230c9a1268b43c2b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6ecc46efcb2b11424da89bc1079161c538c05ba1e6df1aab46445ae718ce47f5">
   
     
       
@@ -2243,7 +2218,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-8ea9fd3bd02c1d3293e814cb5329783930fe0daa7530305bad6dc7886a72d01c">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-585ad38a07e07fcda382b500538d0d626e00849fd1c2d67468cdb62cab1a8f58">
   
     
       <div class="view-header">
@@ -2642,12 +2617,12 @@ Thank you for considering to help out.
   </div>
 
     <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.29/js/chunk-vendors.js" async></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.29/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1370989963" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1133454981" async></script></body>
 </html>
 

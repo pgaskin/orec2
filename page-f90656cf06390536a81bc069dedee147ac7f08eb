@@ -1,24 +1,35 @@
 GET /en/recreation-and-parks/facilities/place-listing/lansdowne-park HTTP/1.1
 Host: ottawa.ca
-xxx-use-proxy: true
+xxx-use-proxy: zyte
 
-HTTP/2.0 200 OK
-Access-Control-Allow-Credentials: true
-Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
-Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
+HTTP/1.1 200 200OK
+Connection: close
+Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Alt-Svc: h3=":443"; ma=86400
-Cf-Cache-Status: DYNAMIC
-Cf-Ray: 9762051728124411-EWR
-Content-Type: text/html; charset=utf-8
-Date: Thu, 28 Aug 2025 07:15:55 GMT
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=KMMA7jQ%2FdLJ6azsNSyAB%2F3BmwZSq0mSXHA8rQWobTIdg48zoEnbkq2YbL578oTZRVrZlabDkzrPx43A%2BN4mP5QAY0GjRJF2ToRzaTCjfY7BoNUU0N88m%2BVLM8B2hsQ%3D%3D"}]}
-Server: cloudflare
-Vary: accept-encoding
-X-Frame-Options: sameorigin
-X-Frame-Options: SAMEORIGIN
-X-Powered-By: Express
+Age: 148
+Cache-Control: max-age=2764800, public
+Cache-Tags: HIT
+Connection: keep-alive
+Content-Type: text/html; charset=UTF-8
+Content-language: en
+Date: Sat, 30 Aug 2025 09:00:17 GMT
+ETag: "1756544267-gzip"
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Last-Modified: Sat, 30 Aug 2025 08:57:47 GMT
+Set-Cookie: visid_incap_243507=bNs/6MH+RIOJXLgklL5njaG9smgAAAAAQUIPAAAAAACIkDxWwCV1iIBPmkUkRTn/; expires=Sun, 30 Aug 2026 07:25:07 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=d3H1NN9emjQXflDzaXmSIAAAAAAIk+5fPMMOmJjE2dfFgMSW; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_1307_243507=rjcTXasF7VhBg00XA2YjEqG9smgAAAAAfa9tBv4yjsgpCmTwOveyYw==; path=/; Domain=.ottawa.ca
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Vary: Cookie,Accept-Encoding
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
+X-CDN: Imperva
+X-Content-Type-Options: nosniff
+X-Drupal-Cache: MISS
+X-Drupal-Dynamic-Cache: MISS
+X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
+X-Generator: Drupal 10 (https://www.drupal.org)
+X-Iinfo: 14-148108100-148108115 NNNY CT(31 40 0) RT(1756544417851 102) q(0 0 0 0) r(0 0) U24
+X-Varnish: 29829750 30083903
 
 
 <!DOCTYPE html>
@@ -44,13 +55,13 @@ X-Powered-By: Express
     <link rel="stylesheet" media="all" href="/sites/default/files/css/css_88VAcc9N19bb_PCpYakQj1vK_8w-kW8sESlOR1rEA3A.css?delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvBANP71PZGCa0BiMsNlNevqNul1t1B9rHtaM5SBiap3apw-kcOHNF5ZA_KF2cK7L1SlQpQXq4oaUTfqca0K1wBI3f8EuSodPfTTiib5pfwpVeiHOP3DY7QzfXit_1H0xduWc0M80w9LJslTHdMiwOWWNckM_vFREYSdmkWZbUfD_6qt14rFP95wWmGvU6cxtq77K38o0ahuBs65ITg81lOd3bhl39b9zKpIG4wGR832r" />
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_hIkusDorgaFGgFGXEC9NC5A6M1oAesgy7eoj0vqGGoQ.css?delta=1&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvBANP71PZGCa0BiMsNlNevqNul1t1B9rHtaM5SBiap3apw-kcOHNF5ZA_KF2cK7L1SlQpQXq4oaUTfqca0K1wBI3f8EuSodPfTTiib5pfwpVeiHOP3DY7QzfXit_1H0xduWc0M80w9LJslTHdMiwOWWNckM_vFREYSdmkWZbUfD_6qt14rFP95wWmGvU6cxtq77K38o0ahuBs65ITg81lOd3bhl39b9zKpIG4wGR832r" />
 <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
-<link rel="stylesheet" media="all" href="/sites/default/files/css/css_51Bb-4Zjct-9lU5HQy0U_61TzM5g45ZukpPpokSRsnM.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvBANP71PZGCa0BiMsNlNevqNul1t1B9rHtaM5SBiap3apw-kcOHNF5ZA_KF2cK7L1SlQpQXq4oaUTfqca0K1wBI3f8EuSodPfTTiib5pfwpVeiHOP3DY7QzfXit_1H0xduWc0M80w9LJslTHdMiwOWWNckM_vFREYSdmkWZbUfD_6qt14rFP95wWmGvU6cxtq77K38o0ahuBs65ITg81lOd3bhl39b9zKpIG4wGR832r" />
-<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.28/css/app.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css__BzoYDnbHMmrYiFSh96avEQ3e9ez5OKomOkGZuSJfmQ.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvBANP71PZGCa0BiMsNlNevqNul1t1B9rHtaM5SBiap3apw-kcOHNF5ZA_KF2cK7L1SlQpQXq4oaUTfqca0K1wBI3f8EuSodPfTTiib5pfwpVeiHOP3DY7QzfXit_1H0xduWc0M80w9LJslTHdMiwOWWNckM_vFREYSdmkWZbUfD_6qt14rFP95wWmGvU6cxtq77K38o0ahuBs65ITg81lOd3bhl39b9zKpIG4wGR832r" />
+<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.29/css/app.css" />
 
     <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031552","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx9ksuyIyEIhl_IbjfzPl2ojPEExRJM0nn6YXIu053FbCh-PqAQDMwqOqD_8gEEXTjoH3f5kIVAUfTIM3EAWkR3Ki0fSUURyCguXjEV5bGVlrBpII5Xf_Bd5IG-8ahA5YkOH2q9rj6N2YHWL-l-Ez6ESsJhxYp5gBZuLjNnwk0h-2zmXa_wAY9zsDqCnaduqUjkG47dc8PIZPHn7v8ax6oRNr1gRW-EoIuVc7YuJ_b2_CMyfz7We0kZ9QT6sPkX4VisMkxVbnJKkKJYah822wINaNcS3zJee9gyENn4rsMA20e_yPfS_kXW2foMVOSCyXXus28yxw13fxRG7jhC2bAGTP6klkjFbvX_lCnK1a43nOyiWD8_0q3gXfzLrpXTJPwDlYfzmA","theme":"ottca_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NDWQN39"]},"popup_survey":{"frequency":"10","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"flexslider":{"optionsets":{"slider-gallery--1098746":{"animation":"slide","animationSpeed":600,"direction":"horizontal","slideshow":false,"easing":"swing","smoothHeight":true,"reverse":false,"slideshowSpeed":7000,"animationLoop":true,"randomize":false,"startAt":0,"itemWidth":0,"itemMargin":0,"minItems":0,"maxItems":0,"move":0,"directionNav":true,"controlNav":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":false,"touch":true,"prevText":"Previous","nextText":"Next","namespace":"flex-","selector":".slides \u003E li","sync":"","asNavFor":"","initDelay":0,"useCSS":true,"video":false,"pausePlay":false,"pauseText":"Pause","playText":"Play","pauseOnAction":false,"pauseOnHover":false,"controlsContainer":"","manualControls":"","id":"slider-gallery--1098746"},"slider-gallery-carousel--1098746":{"animation":"slide","animationSpeed":600,"direction":"horizontal","slideshow":false,"easing":"swing","smoothHeight":false,"reverse":false,"slideshowSpeed":7000,"animationLoop":true,"randomize":false,"startAt":0,"itemWidth":210,"itemMargin":4,"minItems":0,"maxItems":0,"move":0,"directionNav":true,"controlNav":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":false,"touch":true,"prevText":"Previous","nextText":"Next","namespace":"flex-","selector":".slides \u003E li","sync":"","asNavFor":"#slider-gallery--1098746","initDelay":0,"useCSS":true,"video":false,"pausePlay":false,"pauseText":"Pause","playText":"Play","pauseOnAction":false,"pauseOnHover":false,"controlsContainer":"","manualControls":"","id":"slider-gallery-carousel--1098746"}},"instances":{"slider-gallery--1098746":"slider-gallery--1098746","slider-gallery-carousel--1098746":"slider-gallery-carousel--1098746"}},"user":{"uid":0,"permissionsHash":"2b10bb50a9c4a88da976ceacddbf75faec45ec1bdb36757dcce69ecfb8e7c867"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
-<script src="/modules/contrib/google_tag/js/gtag.js?t1clew"></script>
-<script src="/modules/contrib/google_tag/js/gtm.js?t1clew"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?t1pj7h"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?t1pj7h"></script>
 <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.22.1/dist/powerbi.min.js"></script>
 <script src="/modules/contrib/powerbi_embed/js/powerbi_embed-customizer.js?v=1.0.0"></script>
 
@@ -172,7 +183,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6cc9d88a85b763f27d34a070eec31c140207cfaebde140a50593c1edf54b8108">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-bbb2715136b4ab9c3146efee6f2945747253393a9ecd828b9ed12335afcdc78f">
   
     
       
@@ -186,7 +197,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bac2bdad78f20a7adcc436671e1bbc22ae21ca302b05b9de6435c821b88fcbc9">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-511204e21b836032a52e60349f312ec0a5c3f520b179c9bc1cb9e8c38987c9b7">
   
     
       
@@ -333,7 +344,7 @@ X-Powered-By: Express
 
 
   
-            <div class="clearfix text-formatted field field--name-field-place-address-info field--type-text-long field--label-hidden field__item"><p>General inquiry:&nbsp;<a href="/cdn-cgi/l/email-protection#35455447561b59545b46515a425b501b4554475e755a41415442541b5654"><span class="__cf_email__" data-cfemail="55253427367b39343b26313a223b307b2534273e153a21213422347b3634">[email&#160;protected]</span></a>&nbsp;or 613-580-2429</p>
+            <div class="clearfix text-formatted field field--name-field-place-address-info field--type-text-long field--label-hidden field__item"><p>General inquiry:&nbsp;<a href="mailto:parc.lansdowne.park@ottawa.ca">parc.lansdowne.park@ottawa.ca</a>&nbsp;or 613-580-2429</p>
 </div>
       
 
@@ -398,7 +409,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9ece44622e186948581583888153834aa90d82d1ba597064d9880744a332a919">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-253497dad16d73e46563b290f606d398f1f1b2a6d909dc5191e467b67dfd0887">
   
     
       
@@ -412,7 +423,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d1f503ff8dfb35a97b45b55fbb096a599284159701961917acc0f340e70f5fea">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7694344b848432ef8b57dbc3b707cb0b151b44b64214bca7dea37ea5441fcbcf">
   
     
       
@@ -520,7 +531,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-e149463258e1d2409bef3c841ec23b793c68df5d3ded8241d5af04b6928c1848">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-d736e491e1149bbf5d20c39ba8e9fb13e6809887276f50e0b3195f3d7fdf676c">
   
     
       <div class="view-header">
@@ -611,7 +622,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2853f250bd546b595b5cc2ec5329660f5cfacf2b38118ce1308cdf92cd9e836a">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d717b99e4bf95d100b6a5eb7ad6e08b280a6320c66e3fc2b8ebf94363399b968">
   
     
       
@@ -625,7 +636,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-49f8123706b7b50e714459084caad38f53502f0e835b247f143f06dd09f12e0c">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-95fb8102a48d1ef258fb7cd86486822982b91fdfc7f8ca5b25777369eeedccc5">
   
     
       
@@ -834,7 +845,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-fa42a8358ce7c35a926eb3dacc9f0588f7c35881bdf3c055e85daf1aeb126ca7">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-825b7d64453a750c070fa7467f7e731a5355c2dfa3058ab9c881b0a7e8e065d3">
   
     
       
@@ -848,7 +859,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-cd4f00709a6012d08e37e40566c211c1552612b4aa0a9a9370e6ca0318a8e089">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-8170d37993d30b21fdc865c019b089e10c540312a6095617e0558e79aec952bf">
   
     
       
@@ -992,7 +1003,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4c2eeb396d6260a352610be2888341abb96e9dbc96057a2826be40764a8a6ab2">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-27edfb9dc4a0ac0a6b7f933d8047c7568b8664a5ee286da3a3722faa44e47a57">
   
     
       
@@ -1006,7 +1017,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-999b903196dc98088e0064780e4be4cc3f054f33f80be9fcd3a4410832fea173">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9cacc0ec5445a4edf34d799050056b17fff360513392e8fb9087f865860042f3">
   
     
       
@@ -1700,7 +1711,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-932bda0df2ddcbd7ee28d69f8e6e9b483fab4560c38f8796b1f1901c24108646">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-914721ddfaeb1739643d691983aa1f0d36409988afd8d5d38af52770b126fc5d">
   
     
       
@@ -1714,7 +1725,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-94fd02f90973edfc407bd1ae06c8cbe3fce769e2623526ef1d9ed6cdd318c852">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-34b030f97d745b784fbd0940648c3679f398a414a53c719e34bda6310b754472">
   
     
       
@@ -1814,7 +1825,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0f7cb5119e653a4426665572fbadb21b444dff7ed17d078f1a75b5c2f84bf1a2">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d772ec15894426089a9a819a36d0ae43c0f847be797afa9a8c1a679413213b99">
   
     
       
@@ -1828,7 +1839,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c6dbfc86f042b823b782c23b111fd69d64722adac60fe39756c9d7b26cd71549">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-98972fa4035b7979c19ba5e3527893a091c73f83473f931a4f25472281ebeb1a">
   
     
       
@@ -1929,7 +1940,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-679061a90798ffb531fe2d91856d0852e33fb8b7831e17a84ed852ea83c94b19">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3b31b02e2e343b91b14b409b4dce16f5579d3ee03ce6e4b0625dbba2f4ce9b98">
   
     
       
@@ -1943,7 +1954,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-13c326947cb43864b7e6ee79384f551e7ee46921af226112001d31c1fa48c32a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-43afb95cdcf8c228e3928e23ffbd3a534923c52792ed648d11dbcaf221b8cacb">
   
     
       
@@ -2204,7 +2215,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ceacd21518e12c68418a3637af7480c7aad9f2e9debc3af1ec7e295a722713dc">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-483a4f346d2da6ec18f65c5763293c2e435fc36dbe24c7456c2acf67fc42a1ec">
   
     
       
@@ -2218,7 +2229,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-fec69c9fb54e5abc6af9282338f220f31bd68125146f66143e25bfc91f42a86a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bde8ef52867b0bb3051c3a5f3a6f6766a64635208a929c00e31f2eca3fe64c4e">
   
     
       
@@ -2326,7 +2337,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ba9f26dadc8094a38bbbf8b815af1899e0298b3547010f374f78f718e83f5bbb">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-39ef970bac52f3f73337b0fbb785177ae29d2749860a97be7d87447f385d4764">
   
     
       
@@ -2340,7 +2351,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-df7f07a32fe44c69f42dedc253d39bf21483dfca3773e25c97c8025b346acb7b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5482f6f3a417a070f35e0bc4ab3a51b2d14fa7d353ba6f1484292ff71d2c4d61">
   
     
       
@@ -2379,7 +2390,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 <p>Open daily, 7&nbsp;am to 11&nbsp;pm&nbsp;(weather permitting)</p>
 <h3>Final Pass Skate Shop</h3>
 <p>Skate sharpening and rental services are available on site.&nbsp;Group and party rentals are available.</p>
-<p>For additional information&nbsp;visit the <a href="https://www.finalpass.ca/locations/landsdowne/">Final Pass website</a> or email <a href="/cdn-cgi/l/email-protection#d3bebca1b6bfb8b6a5bc93b4beb2babffdb0bcbe"><span class="__cf_email__" data-cfemail="e38e8c91868f8886958ca3848e828a8fcd808c8e">[email&#160;protected]</span></a>.</p>
+<p>For additional information&nbsp;visit the <a href="https://www.finalpass.ca/locations/landsdowne/">Final Pass website</a> or email <a href="mailto:morelkevo@gmail.com">morelkevo@gmail.com</a>.</p>
 <h4>Hours of operation</h4>
 <p>PD days and other special dates, on a case-by-case basis and on availability of staff.</p>
 <ul>
@@ -2772,14 +2783,14 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_vbqXGSVFFjC94Hma6-MoYncglvJ8cc0REQE5tEvI9OA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
+    <script src="/sites/default/files/js/js_vbqXGSVFFjC94Hma6-MoYncglvJ8cc0REQE5tEvI9OA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.29/js/chunk-vendors.js" async></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.29/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
-<script src="/themes/custom/ottca_theme/dist/js/slider-gallery.min.js?t1clew" async></script>
+<script src="/themes/custom/ottca_theme/dist/js/slider-gallery.min.js?t1pj7h" async></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=6&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=58191579" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1589258307" async></script></body>
 </html>
 

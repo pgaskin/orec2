@@ -1,24 +1,35 @@
 GET /en/recreation-and-parks/facilities/place-listing/constance-and-buckhams-bay-community-centre HTTP/1.1
 Host: ottawa.ca
-xxx-use-proxy: true
+xxx-use-proxy: zyte
 
-HTTP/2.0 200 OK
-Access-Control-Allow-Credentials: true
-Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
-Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
+HTTP/1.1 200 200OK
+Connection: close
+Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Alt-Svc: h3=":443"; ma=86400
-Cf-Cache-Status: DYNAMIC
-Cf-Ray: 976202663cab4411-EWR
-Content-Type: text/html; charset=utf-8
-Date: Thu, 28 Aug 2025 07:14:02 GMT
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=FlRFJicsOO3LNZRdjj5q38U%2FqdhnkeUhWjCY2%2FybDeueAdPJFeC4kl04Vtw0cfyqOszzVO48sSegjjDdjl9NofeRnVxdRZ9dZSWnnQvQWjhn7nliEH3AJdEPbXcArA%3D%3D"}]}
-Server: cloudflare
-Vary: accept-encoding
-X-Frame-Options: sameorigin
-X-Frame-Options: SAMEORIGIN
-X-Powered-By: Express
+Age: 0
+Cache-Control: max-age=2764800, public
+Cache-Tags: MISS
+Connection: keep-alive
+Content-Type: text/html; charset=UTF-8
+Content-language: en
+Date: Sat, 30 Aug 2025 08:58:27 GMT
+ETag: "1756544307-gzip"
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Last-Modified: Sat, 30 Aug 2025 08:58:27 GMT
+Set-Cookie: visid_incap_243507=BRYciyDfSFCNOt9uLwfanzK9smgAAAAAQUIPAAAAAACvxk7Reon4iTYBq6Oy/Sz0; expires=Sun, 30 Aug 2026 06:54:57 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=LWofatTe31WEfvSnaXmSIAAAAABqCE1bzvQy1sF59fVIYrVs; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_1214_243507=Pun+V+5yDw+sQbvlBf/YEDO9smgAAAAAsFyHQ3kTIL5NfbQMBYeQPw==; path=/; Domain=.ottawa.ca
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Vary: Cookie,Accept-Encoding
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
+X-CDN: Imperva
+X-Content-Type-Options: nosniff
+X-Drupal-Cache: MISS
+X-Drupal-Dynamic-Cache: MISS
+X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
+X-Generator: Drupal 10 (https://www.drupal.org)
+X-Iinfo: 12-94913657-94913658 NNNN CT(31 40 0) RT(1756544306873 272) q(0 0 1 0) r(1 7) U24
+X-Varnish: 26834531
 
 
 <!DOCTYPE html>
@@ -44,13 +55,13 @@ X-Powered-By: Express
     <link rel="stylesheet" media="all" href="/sites/default/files/css/css_jqMeplQUjdqG2YJt6n8K-V0bTgOKrZ2W04j2P9syV7c.css?delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdj-EOwiAMhF8Ixx_fZylwQRzQhXZu8-ldnEbin-buvqbpOWYVbTRfrSOBcT8fMzvKF9E9pxp7UiBCEWL8hJCU25hqQFWX2U-208Zzgw1tmSkPdKftDCq3Qjk9YbDpcXz6rnysYVVPo95Q8P9Gjw69bMOaQoQa2UVRzhaPhFXsew6Fw5LxAiUNWpY" />
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_hIkusDorgaFGgFGXEC9NC5A6M1oAesgy7eoj0vqGGoQ.css?delta=1&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdj-EOwiAMhF8Ixx_fZylwQRzQhXZu8-ldnEbin-buvqbpOWYVbTRfrSOBcT8fMzvKF9E9pxp7UiBCEWL8hJCU25hqQFWX2U-208Zzgw1tmSkPdKftDCq3Qjk9YbDpcXz6rnysYVVPo95Q8P9Gjw69bMOaQoQa2UVRzhaPhFXsew6Fw5LxAiUNWpY" />
 <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
-<link rel="stylesheet" media="all" href="/sites/default/files/css/css_51Bb-4Zjct-9lU5HQy0U_61TzM5g45ZukpPpokSRsnM.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdj-EOwiAMhF8Ixx_fZylwQRzQhXZu8-ldnEbin-buvqbpOWYVbTRfrSOBcT8fMzvKF9E9pxp7UiBCEWL8hJCU25hqQFWX2U-208Zzgw1tmSkPdKftDCq3Qjk9YbDpcXz6rnysYVVPo95Q8P9Gjw69bMOaQoQa2UVRzhaPhFXsew6Fw5LxAiUNWpY" />
-<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.28/css/app.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css__BzoYDnbHMmrYiFSh96avEQ3e9ez5OKomOkGZuSJfmQ.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdj-EOwiAMhF8Ixx_fZylwQRzQhXZu8-ldnEbin-buvqbpOWYVbTRfrSOBcT8fMzvKF9E9pxp7UiBCEWL8hJCU25hqQFWX2U-208Zzgw1tmSkPdKftDCq3Qjk9YbDpcXz6rnysYVVPo95Q8P9Gjw69bMOaQoQa2UVRzhaPhFXsew6Fw5LxAiUNWpY" />
+<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.29/css/app.css" />
 
     <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/3024966","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx9kU1uxCAMhS9Ewqb3iQyxqCeAETb5mdOXaauKzKKbp_f4bAvZjllFK5QP60DQuCH_2ekhUwRF0ZGHyA7iJHpFymEkCUUgoBi_4UrKdaG8YlYX2W928MZzRZu5Joj0RIOn9lmbXWsrEOffaAJziLgoBBu6vOcZHnDeH5OJ8LzsSwyrelj0ExO-_3lE3bdzPmgNqDdQKmWdhD31TtdUOcutQEiRUqm84wQZ4qXkxRQurSzS6o6XHUMnB1ZHCyaHq72lyUfqy_m_pIly6uuqRi5RTD-X2wkPsd86J15bxC_1Drqt","theme":"ottca_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NDWQN39"]},"popup_survey":{"frequency":"10","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"2b10bb50a9c4a88da976ceacddbf75faec45ec1bdb36757dcce69ecfb8e7c867"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jcGOwyAMRH8IwmX_BxlisW4NRmCapF-_iVRVpYe9jOaNx5ogol0b1B8X3tbeumVQ7GpwV6Zyd2sbFXh5oUkiidErJJdO-eYFbrDPYTYMz8NdYkQ1gtdfzOjCwbAxnVOf6TXiKUrpU3z6sS8brQnnfm1U1HaJBGzDUP3-7LEJM7Y5JEXKtckDLRTgQyl2U6WO6vtoDzzcJ5yXDVsgjzng6iaykQmL_l8ZXSXTE9sfE7eTWQ"></script>
-<script src="/modules/contrib/google_tag/js/gtag.js?t1clew"></script>
-<script src="/modules/contrib/google_tag/js/gtm.js?t1clew"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?t1pj7h"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?t1pj7h"></script>
 <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.22.1/dist/powerbi.min.js"></script>
 <script src="/modules/contrib/powerbi_embed/js/powerbi_embed-customizer.js?v=1.0.0"></script>
 
@@ -172,7 +183,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-bb1ebe5b47ea80a06086390f390b9d665ab8bdcf9284b3029572539a932c106f">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f0a593dfb5c85b3eaf1ebe2bf94df16cebbd927e704d11552242a5255d800e04">
   
     
       
@@ -186,7 +197,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5c23f7fc7e28cfc4b8f200456a08b022ce593536998799f2cf85c8bd3b684ad6">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-def26009d05432bd4e49c8f714ce0e0cf7ff211a015f58956122a102f8945d33">
   
     
       
@@ -290,7 +301,7 @@ X-Powered-By: Express
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="/cdn-cgi/l/email-protection#d3babdb5bc93b0bcbda0a7b2bdb0b6b1b2aafdb0b2"><span class="__cf_email__" data-cfemail="4b22252d240b282425383f2a25282e292a3265282a">[email&#160;protected]</span></a></div>
+              <div class="field__item"><a href="mailto:info@constancebay.ca">info@constancebay.ca</a></div>
               </div>
       </div>
 
@@ -615,13 +626,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_U8UzRuMCtfbQT6GbHeG18LGC9a-Y73bBYOEtwoHRBkA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jcGOwyAMRH8IwmX_BxlisW4NRmCapF-_iVRVpYe9jOaNx5ogol0b1B8X3tbeumVQ7GpwV6Zyd2sbFXh5oUkiidErJJdO-eYFbrDPYTYMz8NdYkQ1gtdfzOjCwbAxnVOf6TXiKUrpU3z6sS8brQnnfm1U1HaJBGzDUP3-7LEJM7Y5JEXKtckDLRTgQyl2U6WO6vtoDzzcJ5yXDVsgjzng6iaykQmL_l8ZXSXTE9sfE7eTWQ"></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
+    <script src="/sites/default/files/js/js_U8UzRuMCtfbQT6GbHeG18LGC9a-Y73bBYOEtwoHRBkA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jcGOwyAMRH8IwmX_BxlisW4NRmCapF-_iVRVpYe9jOaNx5ogol0b1B8X3tbeumVQ7GpwV6Zyd2sbFXh5oUkiidErJJdO-eYFbrDPYTYMz8NdYkQ1gtdfzOjCwbAxnVOf6TXiKUrpU3z6sS8brQnnfm1U1HaJBGzDUP3-7LEJM7Y5JEXKtckDLRTgQyl2U6WO6vtoDzzcJ5yXDVsgjzng6iaykQmL_l8ZXSXTE9sfE7eTWQ"></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.29/js/chunk-vendors.js" async></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.29/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jcGOwyAMRH8IwmX_BxlisW4NRmCapF-_iVRVpYe9jOaNx5ogol0b1B8X3tbeumVQ7GpwV6Zyd2sbFXh5oUkiidErJJdO-eYFbrDPYTYMz8NdYkQ1gtdfzOjCwbAxnVOf6TXiKUrpU3z6sS8brQnnfm1U1HaJBGzDUP3-7LEJM7Y5JEXKtckDLRTgQyl2U6WO6vtoDzzcJ5yXDVsgjzng6iaykQmL_l8ZXSXTE9sfE7eTWQ"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jcGOwyAMRH8IwmX_BxlisW4NRmCapF-_iVRVpYe9jOaNx5ogol0b1B8X3tbeumVQ7GpwV6Zyd2sbFXh5oUkiidErJJdO-eYFbrDPYTYMz8NdYkQ1gtdfzOjCwbAxnVOf6TXiKUrpU3z6sS8brQnnfm1U1HaJBGzDUP3-7LEJM7Y5JEXKtckDLRTgQyl2U6WO6vtoDzzcJ5yXDVsgjzng6iaykQmL_l8ZXSXTE9sfE7eTWQ"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1202339868" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=980004175" async></script></body>
 </html>
 

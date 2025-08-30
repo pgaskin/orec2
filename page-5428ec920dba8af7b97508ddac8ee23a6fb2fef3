@@ -1,24 +1,35 @@
 GET /en/recreation-and-parks/facilities/place-listing/richcraft-recreation-complex-kanata HTTP/1.1
 Host: ottawa.ca
-xxx-use-proxy: true
+xxx-use-proxy: zyte
 
-HTTP/2.0 200 OK
-Access-Control-Allow-Credentials: true
-Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
-Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
+HTTP/1.1 200 200OK
+Connection: close
+Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Alt-Svc: h3=":443"; ma=86400
-Cf-Cache-Status: DYNAMIC
-Cf-Ray: 97620745a9ac4411-EWR
-Content-Type: text/html; charset=utf-8
-Date: Thu, 28 Aug 2025 07:17:23 GMT
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=sbVwIgmxU%2FOGiAkugFE8q6ZSQczDIt4qYSByU6MqmnS%2BEJO6ypo9Y8mMTWkweLiFdi2UTz0SVfnor6yBEQBIOLQ5ZL%2FqcW7IL%2FrYchSyokbCct98HWCvUAds1uzeuA%3D%3D"}]}
-Server: cloudflare
-Vary: accept-encoding
-X-Frame-Options: sameorigin
-X-Frame-Options: SAMEORIGIN
-X-Powered-By: Express
+Age: 258
+Cache-Control: max-age=2764800, public
+Cache-Tags: HIT
+Connection: keep-alive
+Content-Type: text/html; charset=UTF-8
+Content-language: en
+Date: Sat, 30 Aug 2025 09:01:17 GMT
+ETag: "1756544217-gzip"
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Last-Modified: Sat, 30 Aug 2025 08:56:57 GMT
+Set-Cookie: visid_incap_243507=IwXSTJaIRE2KtpVziKO8Vt29smgAAAAAQUIPAAAAAAAUGxBB2GPy8nclVu/YiZmt; expires=Sun, 30 Aug 2026 07:00:17 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=zscAWu2otmOyqowBaXmSIAAAAADlVijYCEs++1qztpJuf7AR; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_1840_243507=6+bvKGSlMDrhkuivuf6IGd29smgAAAAAlJUoB146lgLxkxucr+CUog==; path=/; Domain=.ottawa.ca
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Vary: Cookie,Accept-Encoding
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
+X-CDN: Imperva
+X-Content-Type-Options: nosniff
+X-Drupal-Cache: MISS
+X-Drupal-Dynamic-Cache: MISS
+X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
+X-Generator: Drupal 10 (https://www.drupal.org)
+X-Iinfo: 60-252221857-252221900 NNNY CT(33 38 0) RT(1756544477385 116) q(0 0 0 0) r(0 0) U24
+X-Varnish: 30084014 28861470
 
 
 <!DOCTYPE html>
@@ -30,7 +41,7 @@ X-Powered-By: Express
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/richcraft-recreation-complex-kanata" />
 <meta name="dcterms.title" content="Richcraft Recreation Complex-Kanata" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-08-27" />
+<meta name="dcterms.date" content="2025-08-29" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -44,13 +55,13 @@ X-Powered-By: Express
     <link rel="stylesheet" media="all" href="/sites/default/files/css/css_wlb9_FVo8iOCc388ZH60AOLjPX-LribjnIHAjDDK6to.css?delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_hIkusDorgaFGgFGXEC9NC5A6M1oAesgy7eoj0vqGGoQ.css?delta=1&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
 <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
-<link rel="stylesheet" media="all" href="/sites/default/files/css/css_51Bb-4Zjct-9lU5HQy0U_61TzM5g45ZukpPpokSRsnM.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
-<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.28/css/app.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css__BzoYDnbHMmrYiFSh96avEQ3e9ez5OKomOkGZuSJfmQ.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
+<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.29/css/app.css" />
 
     <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031635","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx9UsuSAyEI_CFnvOz_WKjEkKhYgklmv37NPmdy2EsXTYNQjZ5ZRTu0N-tB0Pgd_w2XiywZFEX3esrsIS-iW6aa9kpBEUgoJlwxknJ3VCNW9ZnD1e5iE7ijrdwLZHpHgw-db11t7KNBXr-pScwpo1NINk145Stc4HFMFpNh46EukgS-Yd8sVwycZ_59s08wfDpRQHfm0cXuiTs9F1LFblg1gNMzFrSzO0OTOYLTnHTQXrzYSzMej_VOMaEehNap6iIcaHb6ocpVDgVCilRan_svUCFvSkFMgw5p2nyWH5v-MuuobfhMcsZoGrfRnIx-w83uyVTu2D05LB6jPbAlZJrX-b9kiHKZ9-pGNlEsX1_nRngX-4lr4TgyfgCH7u4z","theme":"ottca_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NDWQN39"]},"popup_survey":{"frequency":"10","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"2b10bb50a9c4a88da976ceacddbf75faec45ec1bdb36757dcce69ecfb8e7c867"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
-<script src="/modules/contrib/google_tag/js/gtag.js?t1clew"></script>
-<script src="/modules/contrib/google_tag/js/gtm.js?t1clew"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?t1pj7h"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?t1pj7h"></script>
 <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.22.1/dist/powerbi.min.js"></script>
 <script src="/modules/contrib/powerbi_embed/js/powerbi_embed-customizer.js?v=1.0.0"></script>
 
@@ -172,7 +183,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b296db537118f243e5909a7d2d3015e218740b7f571f2b78f0687adc531acfe1">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6f87f6cc48f01f99f6fd93e3afc361ada54a1dc078e48eca978abdc36948ce34">
   
     
       
@@ -186,7 +197,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b346053b6766a8942745516b86c02cd237e7a21f00cb3f6a1dcff7cf70fb987a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-8b4f0c944bc61b2b5b1a239351482081afc7124d91b2cc4cbc5c70528ddc4b8c">
   
     
       
@@ -259,7 +270,7 @@ X-Powered-By: Express
 
 
   
-            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Schedule changes</h2>
+            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Labour Day</h2>
 </div>
       
 
@@ -268,18 +279,11 @@ X-Powered-By: Express
 
   
             <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><ul>
-<li><strong>Thursday, August 28&nbsp;</strong>
-<ul>
-<li>All aquafit, cancelled</li>
-<li>Bootcamp,&nbsp;7 to&nbsp;8 am, cancelled</li>
-</ul>
-</li>
-</ul>
-<h3>Labour Day</h3>
-<ul>
 <li><strong>Monday, September 1</strong>
 <ul>
-<li>8 am to 4 pm</li>
+<li>
+<p>8 am to 4 pm</p>
+</li>
 </ul>
 </li>
 </ul>
@@ -363,7 +367,7 @@ X-Powered-By: Express
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="/cdn-cgi/l/email-protection#b7e5e5f4fcf7d8c3c3d6c0d699d4d6"><span class="__cf_email__" data-cfemail="f0a2a2b3bbb09f8484918791de9391">[email&#160;protected]</span></a></div>
+              <div class="field__item"><a href="mailto:RRCK@ottawa.ca">RRCK@ottawa.ca</a></div>
               </div>
       </div>
 
@@ -481,7 +485,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-751bc3a70d12720330e9fefd023059b5cca41eac0a8e88331d00767d9ce75bbb">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2a7ee47a59edc87930d66c87347538090d8029362f72e3b0eacbdfbe80b315ee">
   
     
       
@@ -495,7 +499,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-84723ff295705faf07258237d7750c18a50d9b846519ba4bbcd08fd9b2a8783f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5f8259d551345164e367d03abb41b49dc5224262b47c052308dbaf7dd3ca6ae5">
   
     
       
@@ -657,7 +661,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8afdeac859be4f9a4b33699ac53777b89f78035e49690b829af6e2bbc86e265f">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4ba2819c6d9e9cd1cf774d1004bf87936c96a4ea74a917f70cc679abeb73a4d8">
   
     
       
@@ -671,7 +675,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-339f0b1939690f4a29030fe57a852fdb8665fdfff75d0b5b85f82c4a96247597">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2d9f128512633854785b477cc3153b8f1ce073ce3f2142c6352f731570659461">
   
     
       
@@ -707,15 +711,7 @@ The weight and cardio room is closed.</strong></p>
       </div>
   <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule changes</h3>
-<ul>
-<li><strong>Thursday, August 28</strong>
-<ul>
-<li>All aquafit cancelled</li>
-</ul>
-</li>
-</ul>
-<h3>Labour Day</h3>
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Labour Day</h3>
 <ul>
 <li><strong>Monday, September 1</strong>
 <ul>
@@ -1292,7 +1288,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ef064c3e2fbe4c4a906ebbcddd75a0372b5b2480a979e62d74337d0ab6043634">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7b413edf165482870e3f2c6d22ec57ac511e308e8b9c156935c3d39f7f65c4fe">
   
     
       
@@ -1306,7 +1302,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-04799e9a6feb55c9ea0cb218832835d08d6725cf37a8790329efe19fb55198b0">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-12f9a25a9b4c2552199124b486f3acd392f41d103a875b41a45db1c7bd6519ea">
   
     
       
@@ -1467,7 +1463,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b221b90d7e826cb274fd4eb0b26f238877ba5eb11dc5d20cb506933f41da026f">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-bf63ad45319c4dce46ed52762fc9d489b00d88b52a9e668816d030c6fbd48e7d">
   
     
       
@@ -1481,7 +1477,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5878ab5efb30ee7db67688cc9c6175ae6f76a2fa14e04bda8cc8df3ad5eaa1a8">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ea33f962f18dda8f8570be6ab8892330cb7b6ff9963a75c13b540ec4951ea2d2">
   
     
       
@@ -1511,19 +1507,6 @@ The weight and cardio room is closed.</strong></p>
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The schedules listed in the charts below are subject to change.</p>
 <p>Holiday hours and programs may vary. Changes will be reflected through the booking process.</p>
 <p><a href="https://ottawa.ca/en/recreation-and-culture/sports-and-fitness/drop-sport-and-fitness">Additional details, descriptions, fees and cancellation information.</a></p>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule changes</h3>
-<ul>
-<li><strong>Thursday, August 28&nbsp;</strong>
-<ul>
-<li>Bootcamp,&nbsp;7 to&nbsp;8 am, cancelled</li>
-</ul>
-</li>
-</ul>
 </div>
       
       </div>
@@ -1880,7 +1863,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-df08617efabbe814678c8a6095265ee27a598b94906dcf96273a343387af1df1">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-78162f6ceb6ece557ee50985187cc869649fb5f6ee3c73122fa132482bc008e4">
   
     
       
@@ -1894,7 +1877,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-01aa00b2e97fdc041608793283ed884868bf36da587e2ea3a10b6b2d5746bdbb">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a42d8c322370bbf02e48317f1f06d5f5fa0cb78056f85ac4d2b3cec1fe3d2398">
   
     
       
@@ -2344,7 +2327,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-82f96c172ae4d210476aed10695cd5848f76b04406c661f7da70b89f7a1ae8f1">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7cc8915a0ee5b874b4f044046644c194ea306abb7a08f56477db2f32523712ce">
   
     
       
@@ -2358,7 +2341,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6dec1fb775ac99c4c81f8c52fdaba76b6244e292d4ad8f97fe8e6979f1ee7f32">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-06164fee3519bddbc07f44e4ddc7cb4d92db5d85fdc16910f0ac668d8da525b5">
   
     
       
@@ -3083,7 +3066,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-cc1b070f318401a16863851be8c5d76d7121fbe08dc53735516b483ecb37dc37">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-fe55ccea5a1eb694221ccdea22b7a78d7a4905232443c6ed6d02543818879e9b">
   
     
       <div class="view-header">
@@ -3528,13 +3511,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
+    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.29/js/chunk-vendors.js" async></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.29/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1576869214" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1463894117" async></script></body>
 </html>
 

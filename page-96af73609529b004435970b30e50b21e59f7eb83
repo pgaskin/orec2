@@ -1,24 +1,35 @@
 GET /en/recreation-and-parks/facilities/place-listing/cumberland-heritage-village-museum HTTP/1.1
 Host: ottawa.ca
-xxx-use-proxy: true
+xxx-use-proxy: zyte
 
-HTTP/2.0 200 OK
-Access-Control-Allow-Credentials: true
-Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
-Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
+HTTP/1.1 200 200OK
+Connection: close
+Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Alt-Svc: h3=":443"; ma=86400
-Cf-Cache-Status: DYNAMIC
-Cf-Ray: 97620287d95c4411-EWR
-Content-Type: text/html; charset=utf-8
-Date: Thu, 28 Aug 2025 07:14:08 GMT
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=THY8psYDEMraaGZFke1sxJrBFvlOAhPdrfTQ48RvAQSNw%2BhgOncw9YW3lfA1lbd89OP6417DHeMX8DLJnyUEf%2F2IJ2%2B4%2BaH4Ph%2FJgFRw1rGhE00P7e5xJogfV1YSzA%3D%3D"}]}
-Server: cloudflare
-Vary: accept-encoding
-X-Frame-Options: sameorigin
-X-Frame-Options: SAMEORIGIN
-X-Powered-By: Express
+Age: 0
+Cache-Control: max-age=2764800, public
+Cache-Tags: MISS
+Connection: keep-alive
+Content-Type: text/html; charset=UTF-8
+Content-language: en
+Date: Sat, 30 Aug 2025 08:58:34 GMT
+ETag: "1756544311-gzip"
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Last-Modified: Sat, 30 Aug 2025 08:58:31 GMT
+Set-Cookie: visid_incap_243507=NnE7m9ObSd6P37nIKJsMeje9smgAAAAAQUIPAAAAAACzLuP5cFzaQDZyZomwJpc1; expires=Sun, 30 Aug 2026 08:37:26 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=ADB0cegYDCEjZ5GtaXmSIAAAAAC+XQI7sM9uctkqvD5y72fe; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_482_243507=1rNYCZ6OABi87Ydo3WiwBjq9smgAAAAAPwVm3xvUYjoZnIdy/V4Xdg==; path=/; Domain=.ottawa.ca
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Vary: Cookie,Accept-Encoding
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
+X-CDN: Imperva
+X-Content-Type-Options: nosniff
+X-Drupal-Cache: MISS
+X-Drupal-Dynamic-Cache: UNCACHEABLE (poor cacheability)
+X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
+X-Generator: Drupal 10 (https://www.drupal.org)
+X-Iinfo: 10-73729215-73729218 NNNY CT(31 45 0) RT(1756544311218 82) q(0 0 0 0) r(37 37) U24
+X-Varnish: 30013666
 
 
 <!DOCTYPE html>
@@ -44,13 +55,13 @@ X-Powered-By: Express
     <link rel="stylesheet" media="all" href="/sites/default/files/css/css_fRV-RdFs7cnMBg-7kWAeoAOzIjwL2SWh1BRFCZkcsMk.css?delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUNFuwzAI_CEvftn_RNgmCQsxFuA22dc3W1c12gu6O9AdkETcXKF9xgSGIb35zJKAP8wPpjpfOxuawYwW8oqFXHSkWrB6YslrvOCQRTEW7Q14gC_Yn0IV3YDpGwPufpqvr5E_GibG3ZgK6unmOCs4SQ0Mh3QfC1mWG-oRpWIWDjJNlHFcpKvFKxmnnyR31CDuGUZfcMP_l11bJ-77cKcyo4cGCmd2W-y14FsZem09MdmCJdhhjtvzgzfCu8XfOmxSOuMDdaqMMQ" />
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_hIkusDorgaFGgFGXEC9NC5A6M1oAesgy7eoj0vqGGoQ.css?delta=1&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUNFuwzAI_CEvftn_RNgmCQsxFuA22dc3W1c12gu6O9AdkETcXKF9xgSGIb35zJKAP8wPpjpfOxuawYwW8oqFXHSkWrB6YslrvOCQRTEW7Q14gC_Yn0IV3YDpGwPufpqvr5E_GibG3ZgK6unmOCs4SQ0Mh3QfC1mWG-oRpWIWDjJNlHFcpKvFKxmnnyR31CDuGUZfcMP_l11bJ-77cKcyo4cGCmd2W-y14FsZem09MdmCJdhhjtvzgzfCu8XfOmxSOuMDdaqMMQ" />
 <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
-<link rel="stylesheet" media="all" href="/sites/default/files/css/css_51Bb-4Zjct-9lU5HQy0U_61TzM5g45ZukpPpokSRsnM.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUNFuwzAI_CEvftn_RNgmCQsxFuA22dc3W1c12gu6O9AdkETcXKF9xgSGIb35zJKAP8wPpjpfOxuawYwW8oqFXHSkWrB6YslrvOCQRTEW7Q14gC_Yn0IV3YDpGwPufpqvr5E_GibG3ZgK6unmOCs4SQ0Mh3QfC1mWG-oRpWIWDjJNlHFcpKvFKxmnnyR31CDuGUZfcMP_l11bJ-77cKcyo4cGCmd2W-y14FsZem09MdmCJdhhjtvzgzfCu8XfOmxSOuMDdaqMMQ" />
-<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.28/css/app.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css__BzoYDnbHMmrYiFSh96avEQ3e9ez5OKomOkGZuSJfmQ.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUNFuwzAI_CEvftn_RNgmCQsxFuA22dc3W1c12gu6O9AdkETcXKF9xgSGIb35zJKAP8wPpjpfOxuawYwW8oqFXHSkWrB6YslrvOCQRTEW7Q14gC_Yn0IV3YDpGwPufpqvr5E_GibG3ZgK6unmOCs4SQ0Mh3QfC1mWG-oRpWIWDjJNlHFcpKvFKxmnnyR31CDuGUZfcMP_l11bJ-77cKcyo4cGCmd2W-y14FsZem09MdmCJdhhjtvzgzfCu8XfOmxSOuMDdaqMMQ" />
+<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.29/css/app.css" />
 
     <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/3013601","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx9UkuWAyEIvJDdbuY-PlRinKD4BJN0Tj9O5tedxWx4FAUChZ5ZRTu0N-tB0Pgd_nWXd1kIFEX3fCL2QIvoRrmmPVNQBBKKCReMWbm7XCNW9cThYne-CdzRVu4FKD_Q4F3nWxcb-2hA6zc0J8K7UI7YZ7Fi6qCZq0nMidApJJumecUrvMP9GCyGYOOhLmYJfMW-Wa4YmGb8sdlPY_h0ygHdmUcXuwfu9DmnKnbDqgGcnrGgndUETWYLTrPTgXuRaE9Nf9zXW44J9UC0PndchEOelX6ocpVDgmTFXFqf8y9QgTbN4SXjqZVLQDRXNA06TM3aWX6E_Yuso7bhKcsZo2ncRnMy-hU3uweTuWH32WHxGO0BLYHyvOf_KUOUy7xwN7KJYvn6bNeMN7FPuxaOg_ADN3UCLQ","theme":"ottca_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NDWQN39"]},"popup_survey":{"frequency":"10","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"flexslider":{"optionsets":{"slider-gallery--1293712":{"animation":"slide","animationSpeed":600,"direction":"horizontal","slideshow":false,"easing":"swing","smoothHeight":true,"reverse":false,"slideshowSpeed":7000,"animationLoop":true,"randomize":false,"startAt":0,"itemWidth":0,"itemMargin":0,"minItems":0,"maxItems":0,"move":0,"directionNav":true,"controlNav":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":false,"touch":true,"prevText":"Previous","nextText":"Next","namespace":"flex-","selector":".slides \u003E li","sync":"","asNavFor":"","initDelay":0,"useCSS":true,"video":false,"pausePlay":false,"pauseText":"Pause","playText":"Play","pauseOnAction":false,"pauseOnHover":false,"controlsContainer":"","manualControls":"","id":"slider-gallery--1293712"},"slider-gallery-carousel--1293712":{"animation":"slide","animationSpeed":600,"direction":"horizontal","slideshow":false,"easing":"swing","smoothHeight":false,"reverse":false,"slideshowSpeed":7000,"animationLoop":true,"randomize":false,"startAt":0,"itemWidth":210,"itemMargin":4,"minItems":0,"maxItems":0,"move":0,"directionNav":true,"controlNav":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":false,"touch":true,"prevText":"Previous","nextText":"Next","namespace":"flex-","selector":".slides \u003E li","sync":"","asNavFor":"#slider-gallery--1293712","initDelay":0,"useCSS":true,"video":false,"pausePlay":false,"pauseText":"Pause","playText":"Play","pauseOnAction":false,"pauseOnHover":false,"controlsContainer":"","manualControls":"","id":"slider-gallery-carousel--1293712"}},"instances":{"slider-gallery--1293712":"slider-gallery--1293712","slider-gallery-carousel--1293712":"slider-gallery-carousel--1293712"}},"user":{"uid":0,"permissionsHash":"2b10bb50a9c4a88da976ceacddbf75faec45ec1bdb36757dcce69ecfb8e7c867"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
-<script src="/modules/contrib/google_tag/js/gtag.js?t1clew"></script>
-<script src="/modules/contrib/google_tag/js/gtm.js?t1clew"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?t1pj7h"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?t1pj7h"></script>
 <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.22.1/dist/powerbi.min.js"></script>
 <script src="/modules/contrib/powerbi_embed/js/powerbi_embed-customizer.js?v=1.0.0"></script>
 
@@ -172,7 +183,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0e01bf8b13911d328185e3f64fa281f0eb73791c06ed20bce23e2a793bab628b">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-32863f8fcdf83b723f93f4192ea6d7136f8c611bc197d42a4f0ce6213987bff9">
   
     
       
@@ -186,7 +197,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c83bab3e1b3a6f4d8b83ec1caf865de5f37132c6977d1de306d4f4bce29e012d">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a10b07a40263eb0720ca95c791700976033868e0309171171fe318a70652557e">
   
     
       
@@ -295,7 +306,7 @@ X-Powered-By: Express
   
             <div class="clearfix text-formatted field field--name-field-place-address-info field--type-text-long field--label-hidden field__item"><p><a href="https://ottawa.ca/en/recreation-and-parks/facilities/facility-rentals?facility_rentals_facets%5B0%5D=facility%3ACumberland%20Heritage%20Village%20Museum">Facility rentals</a></p>
 <p>Tel.: <a href="tel:613-580-2988">613-580-2988</a>&nbsp;<br>
-Email:&nbsp;<a href="/cdn-cgi/l/email-protection#024f7771676741776f6067706e636c664f777167776f426d76766375632c6163"><span class="__cf_email__" data-cfemail="274a5254424244524a4542554b4649434a525442524a67485353465046094446">[email&#160;protected]</span></a></p>
+Email:&nbsp;<a href="mailto:MuseeCumberlandMuseum@ottawa.ca">museecumberlandmuseum@ottawa.ca</a></p>
 <p><a href="https://www.facebook.com/cumberlandmuseum/" target="_blank">Facebook</a><br>
 <a href="https://www.instagram.com/cumberlandmuseum/" target="_blank">Instagram</a><br>
 Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscriptions/signup-form" target="_blank">At your museum</a>" eNewsletter.&nbsp;</p>
@@ -382,7 +393,7 @@ Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscription
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c75d4723f82da70440edb5cfefd0aaf1c1b8575ff0ca674fb8106a515cec2bae">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-13544aad87b9d1daf1871b24ab8ece5ee2438e3c87f5ed6759a33cc0b8f5edd3">
   
     
       
@@ -396,7 +407,7 @@ Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscription
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d1daa4eb063a5434a11c6d3d59ef17fddf2ceeb67c5e1bdb459a8935da729922">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4e6efdaebf928c2fd7609790f84f683738adf19765d1473bcc3ecb722dea98ab">
   
     
       
@@ -496,7 +507,7 @@ Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscription
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6730c6c1c84c1da28ce34b7ed4317257abdf3f46cd171d153cc0648342816033">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-06b3ce556fe6de3d369e5d7f4c12a8cbb23e2b3105abc3a771af9077391cc928">
   
     
       
@@ -510,7 +521,7 @@ Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscription
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-17a4c6e4263d8c1e6ed8b5f36e69c431c2f167147ed27c13de4996be7f027f6b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1a5f2da797a96dbe13892a311a059392a250c782c2d0915fcf56ef98f5bd334e">
   
     
       
@@ -627,7 +638,7 @@ Try your hand at exam questions pulled from an era-appropriate Ontario Teachers�
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-90cab3b75df443f47819dd2e464de5ae776ce31a2262686f44921e4768765865">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0995dab358758c42cdedf1f4416b549f494467ad6c8f73fb6486c1ea81056bba">
   
     
       
@@ -641,7 +652,7 @@ Try your hand at exam questions pulled from an era-appropriate Ontario Teachers�
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bc976741d4e79e9b6cfd4572cdeb5dc325f70b8414019c64009bdcdf78a22b62">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ae334c75aaac1354a1d3a1f33f4db135190e43a27a4d4b618832f8c3b94220d3">
   
     
       
@@ -744,7 +755,7 @@ Try your hand at exam questions pulled from an era-appropriate Ontario Teachers�
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8b608d2afb01e7fe477babe24aaa3e3a55d4e7aae0cb344ea86d3c016d769d6c">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ab86e3bea7f1d28933457b1a424cd4acb5c56a3eae351639127e3aa3dc6948c6">
   
     
       
@@ -758,7 +769,7 @@ Try your hand at exam questions pulled from an era-appropriate Ontario Teachers�
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-87287443bc620a8a583457f4ddb505448a0955c447a45a93248a197a57a3e10f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-29f36d3f9689f9e97fc3e5dde722bf02692e2dfb16bdb56e838ee61f36b83e01">
   
     
       
@@ -797,7 +808,7 @@ Cost: $102.95 + tax (per person)<br>
 <li>Advance registration is required. Workshops with insufficient registration may be cancelled. If an alternative cannot be offered, a refund will be issued.</li>
 <li>Visit the <a href="https://ottawa.ca/en/family-and-social-services/older-adults/financial-assistance#section-89551f56-14c3-4f6e-b24c-5e5072350977">Ottawa Hand in Hand</a> web page for information on available financial supports to facilitate participation in recreation and culture programs.</li>
 <li>Please check-in at the Train Station (adjacent to the parking lot) on arrival at the museum. The pathways between buildings are packed gravel.</li>
-<li>If you have questions or concerns regarding accessibility, please contact the museum by phone at 613-580-2988 or by email at <a href="/cdn-cgi/l/email-protection#701d0503151513051d1215021c111e141d050315051d301f04041107115e1311"><span class="__cf_email__" data-cfemail="6b061e180e0e081e06090e19070a050f061e180e1e062b041f1f0a1c0a45080a">[email&#160;protected]</span></a>. Additional <a href="https://ottawa.ca/en/arts-heritage-and-events/museums-and-historic-sites/cumberland-heritage-village-museum/accessibility">information about accessibility</a> can be found on the museum web page.</li>
+<li>If you have questions or concerns regarding accessibility, please contact the museum by phone at 613-580-2988 or by email at <a href="mailto:museecumberlandmuseum@ottawa.ca">museecumberlandmuseum@ottawa.ca</a>. Additional <a href="https://ottawa.ca/en/arts-heritage-and-events/museums-and-historic-sites/cumberland-heritage-village-museum/accessibility">information about accessibility</a> can be found on the museum web page.</li>
 </ul>
 <h3><strong>Introduction to tinsmithing</strong></h3>
 <p>September 21 from 1 pm to 5 pm<br>
@@ -811,7 +822,7 @@ Cost: $102.95 + tax (per person)<br>
 <li><span>Advance registration is required. Workshops with insufficient registration may be cancelled. If an alternative cannot be offered, a refund will be issued.</span></li>
 <li><span>Visit the <a href="https://ottawa.ca/en/family-and-social-services/older-adults/financial-assistance#section-89551f56-14c3-4f6e-b24c-5e5072350977">Ottawa Hand in Hand</a> web page for information on available financial supports to facilitate participation in recreation and culture programs.</span></li>
 <li><span>Please check-in at the Train Station (adjacent to the parking lot) on arrival at the museum. The pathways between buildings are packed gravel.</span></li>
-<li><span>If you have questions or concerns regarding accessibility, please contact the museum by phone at 613-580-2988 or by email at <a href="/cdn-cgi/l/email-protection#bad7cfc9dfdfd9cfd7d8dfc8d6dbd4ded7cfc9dfcfd7fad5cecedbcddb94d9db"><span class="__cf_email__" data-cfemail="264b5355434345534b4443544a4748424b535543534b66495252475147084547">[email&#160;protected]</span></a>. Additional <a href="https://ottawa.ca/en/arts-heritage-and-events/museums-and-historic-sites/cumberland-heritage-village-museum/accessibility">information about accessibility</a> can be found on the museum web page.</span></li>
+<li><span>If you have questions or concerns regarding accessibility, please contact the museum by phone at 613-580-2988 or by email at <a href="mailto:museecumberlandmuseum@ottawa.ca">museecumberlandmuseum@ottawa.ca</a>. Additional <a href="https://ottawa.ca/en/arts-heritage-and-events/museums-and-historic-sites/cumberland-heritage-village-museum/accessibility">information about accessibility</a> can be found on the museum web page.</span></li>
 </ul>
 <h3><strong>Introduction to stained glass</strong></h3>
 <p>September 28, October 19 and November 2 from 1 pm to 5 pm<br>
@@ -825,7 +836,7 @@ Cost: $102.95 + tax (per person)<br>
 <li><span>Advance registration is required. Workshops with insufficient registration may be cancelled. If an alternative cannot be offered, a refund will be issued.</span></li>
 <li><span>Visit the <a href="https://ottawa.ca/en/family-and-social-services/older-adults/financial-assistance#section-89551f56-14c3-4f6e-b24c-5e5072350977">Ottawa Hand in Hand</a> web page for information on available financial supports to facilitate participation in recreation and culture programs.</span></li>
 <li><span>Please check-in at the Train Station (adjacent to the parking lot) on arrival at the museum. The pathways between buildings are packed gravel.</span></li>
-<li><span>If you have questions or concerns regarding accessibility, please contact the museum by phone at 613-580-2988 or by email at <a href="/cdn-cgi/l/email-protection#e28f9791878781978f8087908e838c868f979187978fa28d9696839583cc8183"><span class="__cf_email__" data-cfemail="412c3432242422342c2324332d202f252c343224342c012e35352036206f2220">[email&#160;protected]</span></a>. Additional <a href="https://ottawa.ca/en/arts-heritage-and-events/museums-and-historic-sites/cumberland-heritage-village-museum/accessibility">information about accessibility</a> can be found on the museum web page.</span></li>
+<li><span>If you have questions or concerns regarding accessibility, please contact the museum by phone at 613-580-2988 or by email at <a href="mailto:museecumberlandmuseum@ottawa.ca">museecumberlandmuseum@ottawa.ca</a>. Additional <a href="https://ottawa.ca/en/arts-heritage-and-events/museums-and-historic-sites/cumberland-heritage-village-museum/accessibility">information about accessibility</a> can be found on the museum web page.</span></li>
 </ul>
 <h3>"Initiation à la linogravure" (Introduction to linocut printmaking - presented in French)</h3>
 <p>October 5 from 1 pm to 5 pm<br>
@@ -839,7 +850,7 @@ Cost: $77.21 + tax (per person)<br>
 <li><span>Advance registration is required. Workshops with insufficient registration may be cancelled. If an alternative cannot be offered, a refund will be issued.</span></li>
 <li><span>Visit the <a href="https://ottawa.ca/en/family-and-social-services/older-adults/financial-assistance#section-89551f56-14c3-4f6e-b24c-5e5072350977">Ottawa Hand in Hand</a> web page for information on available financial supports to facilitate participation in recreation and culture programs.</span></li>
 <li><span>Please check-in at the Train Station (adjacent to the parking lot) on arrival at the museum. The pathways between buildings are packed gravel.</span></li>
-<li><span>If you have questions or concerns regarding accessibility, please contact the museum by phone at 613-580-2988 or by email at <a href="/cdn-cgi/l/email-protection#dfb2aaacbababcaab2bdbaadb3beb1bbb2aaacbaaab29fb0ababbea8bef1bcbe"><span class="__cf_email__" data-cfemail="f5988086909096809897908799949b91988086908098b59a8181948294db9694">[email&#160;protected]</span></a>. Additional <a href="https://ottawa.ca/en/arts-heritage-and-events/museums-and-historic-sites/cumberland-heritage-village-museum/accessibility">information about accessibility</a> can be found on the museum web page.</span></li>
+<li><span>If you have questions or concerns regarding accessibility, please contact the museum by phone at 613-580-2988 or by email at <a href="mailto:museecumberlandmuseum@ottawa.ca">museecumberlandmuseum@ottawa.ca</a>. Additional <a href="https://ottawa.ca/en/arts-heritage-and-events/museums-and-historic-sites/cumberland-heritage-village-museum/accessibility">information about accessibility</a> can be found on the museum web page.</span></li>
 </ul>
 <h3><span>Introduction to leatherworking</span></h3>
 <p>October 25 from 1 pm to 5 pm<br>
@@ -853,7 +864,7 @@ Cost: $102.95 + tax (per person)<br>
 <li>Advance registration is required. Workshops with insufficient registration may be cancelled. If an alternative cannot be offered, a refund will be issued.</li>
 <li>Visit the <a href="https://ottawa.ca/en/family-and-social-services/older-adults/financial-assistance#section-89551f56-14c3-4f6e-b24c-5e5072350977">Ottawa Hand in Hand</a> web page for information on available financial supports to facilitate participation in recreation and culture programs.</li>
 <li>Please check-in at the Train Station (adjacent to the parking lot) on arrival at the museum. The pathways between buildings are packed gravel.</li>
-<li>If you have questions or concerns regarding accessibility, please contact the museum by phone at 613-580-2988 or by email at <a href="/cdn-cgi/l/email-protection#65081016000006100807001709040b01081016001008250a11110412044b0604"><span class="__cf_email__" data-cfemail="127f6761777771677f7077607e737c767f676177677f527d66667365733c7173">[email&#160;protected]</span></a>. Additional <a href="https://ottawa.ca/en/arts-heritage-and-events/museums-and-historic-sites/cumberland-heritage-village-museum/accessibility">information about accessibility</a> can be found on the museum web page.</li>
+<li>If you have questions or concerns regarding accessibility, please contact the museum by phone at 613-580-2988 or by email at <a href="mailto:museecumberlandmuseum@ottawa.ca">museecumberlandmuseum@ottawa.ca</a>. Additional <a href="https://ottawa.ca/en/arts-heritage-and-events/museums-and-historic-sites/cumberland-heritage-village-museum/accessibility">information about accessibility</a> can be found on the museum web page.</li>
 </ul>
 <h3><span>Introduction to bookbinding</span></h3>
 <p>October 26 from 1 pm to 5 pm<br>
@@ -867,7 +878,7 @@ Cost: $77.21 + tax (per person)<br>
 <li>Advance registration is required. Workshops with insufficient registration may be cancelled. If an alternative cannot be offered, a refund will be issued.</li>
 <li>Visit the <a href="https://ottawa.ca/en/family-and-social-services/older-adults/financial-assistance#section-89551f56-14c3-4f6e-b24c-5e5072350977">Ottawa Hand in Hand</a> web page for information on available financial supports to facilitate participation in recreation and culture programs.</li>
 <li>Please check-in at the Train Station (adjacent to the parking lot) on arrival at the museum. The pathways between buildings are packed gravel.</li>
-<li>If you have questions or concerns regarding accessibility, please contact the museum by phone at 613-580-2988 or by email at <a href="/cdn-cgi/l/email-protection#79140c0a1c1c1a0c141b1c0b1518171d140c0a1c0c1439160d0d180e18571a18"><span class="__cf_email__" data-cfemail="4c21393f29292f39212e293e202d222821393f2939210c2338382d3b2d622f2d">[email&#160;protected]</span></a>. Additional <a href="https://ottawa.ca/en/arts-heritage-and-events/museums-and-historic-sites/cumberland-heritage-village-museum/accessibility">information about accessibility</a> can be found on the museum web page.</li>
+<li>If you have questions or concerns regarding accessibility, please contact the museum by phone at 613-580-2988 or by email at <a href="mailto:museecumberlandmuseum@ottawa.ca">museecumberlandmuseum@ottawa.ca</a>. Additional <a href="https://ottawa.ca/en/arts-heritage-and-events/museums-and-historic-sites/cumberland-heritage-village-museum/accessibility">information about accessibility</a> can be found on the museum web page.</li>
 </ul>
 <h3><span>Introduction to printmaking</span></h3>
 <p>November 1 from 1 pm to 5 pm<br>
@@ -881,7 +892,7 @@ Cost: $77.21 + tax (per person)<br>
 <li>Advance registration is required. Workshops with insufficient registration may be cancelled. If an alternative cannot be offered, a refund will be issued.</li>
 <li>Visit the <a href="https://ottawa.ca/en/family-and-social-services/older-adults/financial-assistance#section-89551f56-14c3-4f6e-b24c-5e5072350977">Ottawa Hand in Hand</a> web page for information on available financial supports to facilitate participation in recreation and culture programs.</li>
 <li>Please check-in at the Train Station (adjacent to the parking lot) on arrival at the museum. The pathways between buildings are packed gravel.</li>
-<li>If you have questions or concerns regarding accessibility, please contact the museum by phone at 613-580-2988 or by email at <a href="/cdn-cgi/l/email-protection#117c6462747472647c7374637d707f757c646274647c517e65657066703f7270"><span class="__cf_email__" data-cfemail="18756d6b7d7d7b6d757a7d6a7479767c756d6b7d6d7558776c6c796f79367b79">[email&#160;protected]</span></a>. Additional <a href="https://ottawa.ca/en/arts-heritage-and-events/museums-and-historic-sites/cumberland-heritage-village-museum/accessibility">information about accessibility</a> can be found on the museum web page.</li>
+<li>If you have questions or concerns regarding accessibility, please contact the museum by phone at 613-580-2988 or by email at <a href="mailto:museecumberlandmuseum@ottawa.ca">museecumberlandmuseum@ottawa.ca</a>. Additional <a href="https://ottawa.ca/en/arts-heritage-and-events/museums-and-historic-sites/cumberland-heritage-village-museum/accessibility">information about accessibility</a> can be found on the museum web page.</li>
 </ul>
 </div>
       
@@ -955,7 +966,7 @@ Cost: $77.21 + tax (per person)<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-16c629f79acc527009293b24b5fbf96bf885ec50691b037065f98ee3e5014b84">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-de47e90fdf3fcb4fd4740df7888e8964adfafabd145b87dc3855789d49f55da7">
   
     
       
@@ -969,7 +980,7 @@ Cost: $77.21 + tax (per person)<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ceefacf017e26104a8cdb46f323c5bfe0019007ad015001a6dc20a7920ff9cf5">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-dddf4548cb652c26e78de1060516ecb7436a3e04c08bcb59c90f3d1b1ad0ba9b">
   
     
       
@@ -1004,10 +1015,10 @@ Cost: Free<br>
 <strong>Advance registration is required</strong></p>
 <p>Assemble your very own handcrafted leather journal—perfect for capturing all your thoughts and ideas! The journal inserts measure approximately 8” x 5.5” and the finished journal will measure approximately 9” x 6.25”.</p>
 <p>This workshop is beginner friendly. Step-by-step instructions will be provided, and the session will be led by a skilled interpreter from Cumberland Heritage Village Museum. <strong>The project will take one hour to complete.</strong> If you have registered for more than one workshop, we encourage you to pack a lunch to enjoy on site between sessions. Participants are encouraged to explore the museum before or after their workshop (museum hours: 10 am to 5 pm). <strong>This program is supported by a grant from the City of Ottawa’s Older Adult Plan. </strong></p>
-<p><strong>How to register: </strong>Registration is completed online using the links below. If you require assistance with registration, please contact the museum by phone at 613-580-2988 or by email at <a href="/cdn-cgi/l/email-protection#c9a4bcbaacacaabca4abacbba5a8a7ada4bcbaacbca489a6bdbda8bea8e7aaa8"><span class="__cf_email__" data-cfemail="cfa2babcaaaaacbaa2adaabda3aea1aba2babcaabaa28fa0bbbbaeb8aee1acae">[email&#160;protected]</span></a>.</p>
+<p><strong>How to register: </strong>Registration is completed online using the links below. If you require assistance with registration, please contact the museum by phone at 613-580-2988 or by email at <a href="mailto:museecumberlandmuseum@ottawa.ca">museecumberlandmuseum@ottawa.ca</a>.</p>
 <p><a href="https://anc.ca.apm.activecommunities.com/ottawa/activity/search/detail/140772?onlineSiteId=0&amp;locale=en-US&amp;from_original_cui=true">September 13 at 10:30 am (English)</a><br>
 <a href="https://anc.ca.apm.activecommunities.com/ottawa/activity/search/detail/140841?onlineSiteId=0&amp;locale=en-US&amp;from_original_cui=true">September 14 at 10:30 am (French)</a></p>
-<p>If you have questions or concerns about accessibility, please contact the museum by phone at 613-580-2988 or by email at <a href="/cdn-cgi/l/email-protection#95f8e0e6f0f0f6e0f8f7f0e7f9f4fbf1f8e0e6f0e0f8d5fae1e1f4e2f4bbf6f4"><span class="__cf_email__" data-cfemail="264b5355434345534b4443544a4748424b535543534b66495252475147084547">[email&#160;protected]</span></a>. Additional information about accessibility can be found on the museum web page: ottawa.ca/cumberlandmuseum.</p>
+<p>If you have questions or concerns about accessibility, please contact the museum by phone at 613-580-2988 or by email at <a href="mailto:museecumberlandmuseum@ottawa.ca">museecumberlandmuseum@ottawa.ca</a>. Additional information about accessibility can be found on the museum web page: ottawa.ca/cumberlandmuseum.</p>
 <h4><span>Mini-Workshop: Bookbinding – Older Adult (50+)</span></h4>
 <p>September 13 from 11:45 am to 12:45 pm (English) and September 14 from 11:45 am to 12:45 pm (French)<br>
 Ages 50 and up<br>
@@ -1015,10 +1026,10 @@ Cost: Free<br>
 <strong>Advance registration is required&nbsp;</strong></p>
 <p>Start your bookbinding journey! Practice the pamphlet stitch and explore its various adaptations. Assemble your own notebook (approximately 8” x 5.5”) and develop the skills to create future projects at home—perfect for personal use or as thoughtful gifts.</p>
 <p>This workshop is beginner friendly. Step-by-step instructions will be provided, and the session will be led by an interpreter from Cumberland Heritage Village Museum. <strong>The project will take one hour to complete</strong>. If you have registered for more than one workshop, we encourage you to pack a lunch to enjoy on site between sessions. Participants are invited to explore the museum before or after their workshop (museum hours: 10 am to 5 pm). <strong>This program is supported by a grant from the City of Ottawa’s Older Adult Plan. </strong></p>
-<p><strong>How to register: </strong>Registration is completed online using the links below. If you require assistance with registration, please contact the museum by phone at 613-580-2988 or by email at <a href="/cdn-cgi/l/email-protection#1a776f697f7f796f77787f68767b747e776f697f6f775a756e6e7b6d7b34797b"><span class="__cf_email__" data-cfemail="8ee3fbfdebebedfbe3ecebfce2efe0eae3fbfdebfbe3cee1fafaeff9efa0edef">[email&#160;protected]</span></a>.</p>
+<p><strong>How to register: </strong>Registration is completed online using the links below. If you require assistance with registration, please contact the museum by phone at 613-580-2988 or by email at <a href="mailto:museecumberlandmuseum@ottawa.ca">museecumberlandmuseum@ottawa.ca</a>.</p>
 <p><a href="https://anc.ca.apm.activecommunities.com/ottawa/activity/search/detail/140796?onlineSiteId=0&amp;locale=en-US&amp;from_original_cui=true">September 13 at 11:45 am (English)</a><br>
 <a href="https://anc.ca.apm.activecommunities.com/ottawa/activity/search/detail/140839?onlineSiteId=0&amp;locale=en-US&amp;from_original_cui=true">September 14 at 11:45 am(French)</a></p>
-<p>If you have questions or concerns about accessibility, please contact the museum by phone at 613-580-2988 or by email at <a href="/cdn-cgi/l/email-protection#b6dbc3c5d3d3d5c3dbd4d3c4dad7d8d2dbc3c5d3c3dbf6d9c2c2d7c1d798d5d7"><span class="__cf_email__" data-cfemail="cda0b8bea8a8aeb8a0afa8bfa1aca3a9a0b8bea8b8a08da2b9b9acbaace3aeac">[email&#160;protected]</span></a>. Additional information about accessibility can be found on the museum web page: ottawa.ca/cumberlandmuseum.</p>
+<p>If you have questions or concerns about accessibility, please contact the museum by phone at 613-580-2988 or by email at <a href="mailto:museecumberlandmuseum@ottawa.ca">museecumberlandmuseum@ottawa.ca</a>. Additional information about accessibility can be found on the museum web page: ottawa.ca/cumberlandmuseum.</p>
 <h4><span>Mini-Workshop: Printmaking – Older Adult (50+)</span></h4>
 <p>September 13 from 2 pm to 3 pm (English) and September 14 from 2 pm to 3 pm (French)<br>
 Ages 50 and up<br>
@@ -1026,10 +1037,10 @@ Cost: Free<br>
 <strong>Advance registration is required</strong></p>
 <p>Learn the basics of linocut printmaking! Carve a design onto a linoleum block to personalize the cover of a handmade notebook. Participants will have four easy templates (approximately 3.5” x 3.5”) to choose from.</p>
 <p>This workshop is beginner friendly. Step-by-step instructions will be provided, and the session will be led by a skilled interpreter from Cumberland Heritage Village Museum. <strong>The project will take one hour to complete</strong>. If you have registered for more than one workshop, we encourage you to pack a lunch to enjoy on site between sessions. Participants are encouraged to explore the museum before or after their workshop (museum hours: 10 am to 5 pm). <strong>This program is supported by a grant from the City of Ottawa’s Older Adult Plan.</strong></p>
-<p><strong>How to register: </strong>Registration is completed online using the links below. If you require assistance with registration, please contact the museum by phone at 613-580-2988 or by email at <a href="/cdn-cgi/l/email-protection#c7aab2b4a2a2a4b2aaa5a2b5aba6a9a3aab2b4a2b2aa87a8b3b3a6b0a6e9a4a6"><span class="__cf_email__" data-cfemail="d9b4acaabcbcbaacb4bbbcabb5b8b7bdb4acaabcacb499b6adadb8aeb8f7bab8">[email&#160;protected]</span></a>.</p>
+<p><strong>How to register: </strong>Registration is completed online using the links below. If you require assistance with registration, please contact the museum by phone at 613-580-2988 or by email at <a href="mailto:museecumberlandmuseum@ottawa.ca">museecumberlandmuseum@ottawa.ca</a>.</p>
 <p><a href="https://anc.ca.apm.activecommunities.com/ottawa/activity/search/detail/140805?onlineSiteId=0&amp;locale=en-US&amp;from_original_cui=true">September 13 at 2 pm (English)</a><br>
 <a href="https://anc.ca.apm.activecommunities.com/ottawa/activity/search/detail/140833?onlineSiteId=0&amp;locale=en-US&amp;from_original_cui=true">September 14 at 2 pm (French)</a></p>
-<p>If you have questions or concerns about accessibility, please contact the museum by phone at 613-580-2988 or by email at <a href="/cdn-cgi/l/email-protection#45283036202026302827203729242b21283036203028052a31312432246b2624"><span class="__cf_email__" data-cfemail="bbd6cec8deded8ced6d9dec9d7dad5dfd6cec8deced6fbd4cfcfdaccda95d8da">[email&#160;protected]</span></a>. Additional information about accessibility can be found on the museum web page: ottawa.ca/cumberlandmuseum.</p>
+<p>If you have questions or concerns about accessibility, please contact the museum by phone at 613-580-2988 or by email at <a href="mailto:museecumberlandmuseum@ottawa.ca">museecumberlandmuseum@ottawa.ca</a>. Additional information about accessibility can be found on the museum web page: ottawa.ca/cumberlandmuseum.</p>
 </div>
       
       </div>
@@ -1234,7 +1245,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8c203bfda23e060afa9f6de0d65a07bbfce9bc4da1dc762217d1bee98d24fe8a">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-36fd7f0771d720acf682db86468103720759adf37b86533a4d6f76c4a014442d">
   
     
       
@@ -1248,7 +1259,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e72f878dc63e6c015b92e662d468e5fc315e1372790d84a3f46746ddb6d8457a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-12ef835e77648bb49c1a4f5d6f7b324582b3ca0892cc6b323180154dd1576487">
   
     
       
@@ -1374,7 +1385,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5f1ae6af6bd77918be37357ec99b71120755e838d8f68d65ca35304a2ae02875">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4c59160aab7bcb0b48b289fc823c6ea8422eea57bd7941d1c0d4d9b07b0eeb86">
   
     
       
@@ -1388,7 +1399,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-387b2b28a3a8f73732cb2a7f240280b8cda49d60a43c396821aeb724ef024e75">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-23bf38e096e78c822118f0502a830d7f69ce4948b0c39439292049ab6bde3ed2">
   
     
       
@@ -1448,7 +1459,7 @@ Cost: Free<br>
           
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Other items to be aware of</h3>
 <ol>
-<li>The heritage buildings on site were built to the standards of their time and some may not be accessible to all. If you have questions or concerns regarding accessibility, <a href="/cdn-cgi/l/email-protection#a4c9d1d7c1c1c7d1c9c6c1d6c8c5cac0c9d1d7c1d1c9e4cbd0d0c5d3c58ac7c5">contact the museum</a>.</li>
+<li>The heritage buildings on site were built to the standards of their time and some may not be accessible to all. If you have questions or concerns regarding accessibility, <a href="mailto:museecumberlandmuseum@ottawa.ca">contact the museum</a>.</li>
 <li>Please do not bring food or open drinks, other than water, into the buildings. Outdoor picnic areas are available.</li>
 <li>It is recommended not to drink water from the taps. The museum provides water coolers on site; please ensure everyone brings refillable water bottles.</li>
 <li>The host for your visit will be bilingual and all handouts and signage are available in both English and French. However, we cannot guarantee that all experiences will be delivered in both languages.</li>
@@ -1456,7 +1467,7 @@ Cost: Free<br>
 <li>If your group is larger than 120 students, please contact the museum <strong>before</strong> making your booking to ensure there is available capacity to accommodate your group.</li>
 <li>Be sure to fill out the booking form as completely as possible. This ensures that the museum is prepared to give you the best possible experience.</li>
 </ol>
-<p>If you have any questions about the information on this page or about the visit, please contact the <a href="/cdn-cgi/l/email-protection#9af7efe9fffff9eff7f8ffe8f6fbf4fef7efe9ffeff7daf5eeeefbedfbb4f9fb">museum</a>.</p>
+<p>If you have any questions about the information on this page or about the visit, please contact the <a href="mailto:museecumberlandmuseum@ottawa.ca">museum</a>.</p>
 </div>
       
       </div>
@@ -1529,7 +1540,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ff6f23e7d47fcbcac933dd3daf6f166251aeffaf27748267dd5922c6e62d16bd">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3f6c4a1ff410e284280f75f9a396105ee32a7bcb2f8e924556cc2a4af1abf98e">
   
     
       
@@ -1543,7 +1554,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-de3be50d8c4bbc94e63ae61b14780b26f2b51413eb5189a41f6b1a3ae70f081a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2a3ff2fcd8cfdf88391a4faf67aec729d17a3415e699d104ecc85d45ff253837">
   
     
       
@@ -1645,7 +1656,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-04daa52e4433f0e80511e84b652c6a20d8dfa75716bd12c2e20a4b7f4cefe6b6">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-68d156d946b262f9ce3c034e2c5c2674d700c377a11f451f5f881a4c66ce9beb">
   
     
       
@@ -1659,7 +1670,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7c705eed39f222dc99bc571f7d9766857f43fa863ff6f0236d76af2d5e90aa82">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e6f1f396a3895eef1b4e4b79dfa743e26efb578771a9601c7c40e471d987ee88">
   
     
       
@@ -1689,7 +1700,7 @@ Cost: Free<br>
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The City of Ottawa Museums are committed to offering residents meaningful and rewarding volunteer experiences.</p>
 <p>Heritage volunteers play an invaluable role in preserving our unique heritage and in providing museum visitors of all ages with opportunities to appreciate our shared story.</p>
 <p>Thank you to all our volunteer team members for their continued support.</p>
-<p>The museums are not currently accepting new volunteers. If you have any questions about the volunteer program or would like to be notified when volunteering resumes, please contact <a href="/cdn-cgi/l/email-protection#88c5fdfbededcbfde5eaedfae4e9e6ecc5fdfbedfde5c8e7fcfce9ffe9a6ebe9"><span class="__cf_email__" data-cfemail="4d00383e28280e38202f283f212c232900383e2838200d2239392c3a2c632e2c">[email&#160;protected]</span></a>.</p>
+<p>The museums are not currently accepting new volunteers. If you have any questions about the volunteer program or would like to be notified when volunteering resumes, please contact <a href="mailto:MuseeCumberlandMuseum@ottawa.ca">MuseeCumberlandMuseum@ottawa.ca</a>.</p>
 </div>
       
       </div>
@@ -1762,7 +1773,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4f503e40b772a6c9ee85d3d72d2b01fc696c4dfa076b4daefedbb148a0f4a57e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-78c65585e6b6de4fe48b03ff72c90e8503f7b9c5a70122e9c08003d916d76ac5">
   
     
       
@@ -1776,7 +1787,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-be3a76a981b81ed06a2bd344831eb98199d31610cc23501bb12b5274d0c626be">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-393f8439332a75b690956e29b5375501919a6dbf7cd40ecd191963579d2bc5ec">
   
     
       
@@ -1804,7 +1815,7 @@ Cost: Free<br>
                                                       <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>A vintage rural setting with dozens of historic and true-to-era buildings, acres of greenspace, and gardens provide a nostalgic and picturesque backdrop for your special events.</p>
-<p>For more information, please contact our Customer Service Booking Clerk. Call <strong>613-580-2988</strong>&nbsp;or email <a href="/cdn-cgi/l/email-protection#6a071f190f0f091f07080f18060b040e071f190f1f072a051e1e0b1d0b44090b"><span class="__cf_email__" data-cfemail="92ffe7e1f7f7f1e7fff0f7e0fef3fcf6ffe7e1f7e7ffd2fde6e6f3e5f3bcf1f3">[email&#160;protected]</span></a>.</p>
+<p>For more information, please contact our Customer Service Booking Clerk. Call <strong>613-580-2988</strong>&nbsp;or email <a href="mailto:museecumberlandmuseum@ottawa.ca">museecumberlandmuseum@ottawa.ca</a>.</p>
 </div>
       
       </div>
@@ -1877,7 +1888,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-44bc779cbfdd847af83b47c58557f8afee177b04184365cd2e23dbe0354b6f10">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3c9a0ac0fa48694f3841cc75cc440fed388221f445daf5cef56b29683e7f19f5">
   
     
       
@@ -1891,7 +1902,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-03314c9919f922e6d37067a454e92fbba8671ae3e3008307b0ad1bfaf74e2b4f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-48497b7f5399139f8c7dfd9bb036cb5e333a5a73371c99419ea57309283a2ccc">
   
     
       
@@ -2787,14 +2798,14 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_vbqXGSVFFjC94Hma6-MoYncglvJ8cc0REQE5tEvI9OA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
+    <script src="/sites/default/files/js/js_vbqXGSVFFjC94Hma6-MoYncglvJ8cc0REQE5tEvI9OA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.29/js/chunk-vendors.js" async></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.29/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
-<script src="/themes/custom/ottca_theme/dist/js/slider-gallery.min.js?t1clew" async></script>
+<script src="/themes/custom/ottca_theme/dist/js/slider-gallery.min.js?t1pj7h" async></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=6&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1948286122" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=66157745" async></script></body>
 </html>
 

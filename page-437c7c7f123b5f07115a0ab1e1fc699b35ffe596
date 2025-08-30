@@ -1,24 +1,35 @@
 GET /en/recreation-and-parks/facilities/place-listing/cardelrec-recreation-complex-goulbourn HTTP/1.1
 Host: ottawa.ca
-xxx-use-proxy: true
+xxx-use-proxy: zyte
 
-HTTP/2.0 200 OK
-Access-Control-Allow-Credentials: true
-Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
-Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
+HTTP/1.1 200 200OK
+Connection: close
+Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Alt-Svc: h3=":443"; ma=86400
-Cf-Cache-Status: DYNAMIC
-Cf-Ray: 9761fd8a4c25ef9f-EWR
-Content-Type: text/html; charset=utf-8
-Date: Thu, 28 Aug 2025 07:10:44 GMT
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=V7wmH19KZZJRd%2Bc86tq6yNYddF9AW8avDfPEVIEe8GxrMAsyaLmBlckzApUp%2BL9G%2FHV6ztxWCZlcIQIeavDANONA3a978aorbfvrOu7Dtn15n56KqIsxphNL%2FdGDbw%3D%3D"}]}
-Server: cloudflare
-Vary: accept-encoding
-X-Frame-Options: sameorigin
-X-Frame-Options: SAMEORIGIN
-X-Powered-By: Express
+Age: 0
+Cache-Control: max-age=2764800, public
+Cache-Tags: MISS
+Connection: keep-alive
+Content-Type: text/html; charset=UTF-8
+Content-language: en
+Date: Sat, 30 Aug 2025 08:58:11 GMT
+ETag: "1756544289-gzip"
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Last-Modified: Sat, 30 Aug 2025 08:58:09 GMT
+Set-Cookie: visid_incap_243507=EiEFTAEERCGtZ9KCFqoesyG9smgAAAAAQUIPAAAAAACmCHh+D4vyRpt039A9ra6F; expires=Sun, 30 Aug 2026 07:05:47 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=iSbZEZFewxt3B497aXmSIAAAAABn4AwANbFEG/lZb5JBZX/t; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_8216_243507=5p3eaCnR8F3XY/0b6BgFciO9smgAAAAAOJYIM9EOdDfs4P2YQ9J0fw==; path=/; Domain=.ottawa.ca
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Vary: Cookie,Accept-Encoding
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
+X-CDN: Imperva
+X-Content-Type-Options: nosniff
+X-Drupal-Cache: MISS
+X-Drupal-Dynamic-Cache: MISS
+X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
+X-Generator: Drupal 10 (https://www.drupal.org)
+X-Iinfo: 13-145347816-145347847 NNNN CT(31 45 0) RT(1756544289717 105) q(0 0 1 3) r(1 16) U24
+X-Varnish: 28963463
 
 
 <!DOCTYPE html>
@@ -30,7 +41,7 @@ X-Powered-By: Express
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/cardelrec-recreation-complex-goulbourn" />
 <meta name="dcterms.title" content="CARDELREC Recreation Complex Goulbourn" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-08-27" />
+<meta name="dcterms.date" content="2025-08-29" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -44,13 +55,13 @@ X-Powered-By: Express
     <link rel="stylesheet" media="all" href="/sites/default/files/css/css_wlb9_FVo8iOCc388ZH60AOLjPX-LribjnIHAjDDK6to.css?delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_hIkusDorgaFGgFGXEC9NC5A6M1oAesgy7eoj0vqGGoQ.css?delta=1&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
 <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
-<link rel="stylesheet" media="all" href="/sites/default/files/css/css_51Bb-4Zjct-9lU5HQy0U_61TzM5g45ZukpPpokSRsnM.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
-<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.28/css/app.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css__BzoYDnbHMmrYiFSh96avEQ3e9ez5OKomOkGZuSJfmQ.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
+<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.29/css/app.css" />
 
     <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031607","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx9UsuSAyEI_CFnvOz_WKjEkKhYgklmv37NPmdy2EsXTYNQjZ5ZRTu0N-tB0Pgd_w2XiywZFEX3esrsIS-iW6aa9kpBEUgoJlwxknJ3VCNW9ZnD1e5iE7ijrdwLZHpHgw-db11t7KNBXr-pScwpo1NINk145Stc4HFMFpNh46EukgS-Yd8sVwycZ_59s08wfDpRQHfm0cXuiTs9F1LFblg1gNMzFrSzO0OTOYLTnHTQXrzYSzMej_VOMaEehNap6iIcaHb6ocpVDgVCilRan_svUCFvSkFMgw5p2nyWH5v-MuuobfhMcsZoGrfRnIx-w83uyVTu2D05LB6jPbAlZJrX-b9kiHKZ9-pGNlEsX1_nRngX-4lr4TgyfgCH7u4z","theme":"ottca_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NDWQN39"]},"popup_survey":{"frequency":"10","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"2b10bb50a9c4a88da976ceacddbf75faec45ec1bdb36757dcce69ecfb8e7c867"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
-<script src="/modules/contrib/google_tag/js/gtag.js?t1clew"></script>
-<script src="/modules/contrib/google_tag/js/gtm.js?t1clew"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?t1pj7h"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?t1pj7h"></script>
 <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.22.1/dist/powerbi.min.js"></script>
 <script src="/modules/contrib/powerbi_embed/js/powerbi_embed-customizer.js?v=1.0.0"></script>
 
@@ -172,7 +183,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6b288fc6c0b50199cf69fc73b6c6120416762528b2e76a9502ff2de4fc4b38f6">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2c98dd9456564d9bb13d0973bf685f7da1771cdfaca9ac8ba4562d20f621223a">
   
     
       
@@ -186,7 +197,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3952368d7e5a195d364fa48bda8c7580f6d3fd33deb0dca2966b98d033aebe8a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0e9da0ba78e5f6ce53bfc644137d96a495dbbe977352e87ff5ae9d5e8e1e7fa1">
   
     
       
@@ -265,6 +276,16 @@ X-Powered-By: Express
 </ul>
 </li>
 </ul>
+<h3><span><span><span><span>Schedule change</span></span></span></span></h3>
+<ul>
+<li><strong><span><span><span><span>Thursday, September 4</span></span></span></span></strong>
+<ul>
+<li><span><span><span><span>Indoor cycling 6:15 to 7:15 pm, cancelled</span></span></span></span></li>
+<li><span><span><span><span>Yoga, 7:30 to 8:30 pm, cancelled</span></span></span></span></li>
+<li><span><span><span><span>Volleyball - adult, 7:45 to 8:45 pm, cancelled</span></span></span></span></li>
+</ul>
+</li>
+</ul>
 </div>
       
 
@@ -334,7 +355,7 @@ X-Powered-By: Express
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="/cdn-cgi/l/email-protection#771405141037180303160016591416"><span class="__cf_email__" data-cfemail="5536273632153a21213422347b3634">[email&#160;protected]</span></a></div>
+              <div class="field__item"><a href="mailto:crcg@ottawa.ca">crcg@ottawa.ca</a></div>
               </div>
       </div>
 
@@ -452,7 +473,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5fd2114769e81da507ff78d782e27055b457036120ed4c1facb1712d8f9e3e4a">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ef9ad0e0f15fa5fd6e2c6e49958a41c86e5c78e88ede2021cc28c68145c3c164">
   
     
       
@@ -466,7 +487,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6cbeb9cd01482ca21a24842246976092596ba015d3c541f95603037471f93d09">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5116cc37b664110d056fb020673ca2a5995c4b905ad1c2166c2a1ed3c0a9fad9">
   
     
       
@@ -705,7 +726,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d717389c259aeb9e6106ac0aaf27572f114e340b8bd9ea402ac0b3512490d411">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2716278af7c76f9a73aa1e9ea2d0520ea6a2c30d138a0c9625861974678dc439">
   
     
       
@@ -719,7 +740,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c713c8333f288b10c5bab80a07c200d520fafb61604c14da674a0d86c9b4951f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2c29109de49adab39666d9e1e2d67e8338055ff2631c3b779601bf7c82a022d1">
   
     
       
@@ -898,7 +919,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-dca4101dfde957d6dd6bc92a8d7546ca220d52215280d7fb1a660e6fa85a1f8d">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-36f7041a37d295e2bb55513ea9f323cb142717294132f9d349b4b0b230aaef77">
   
     
       
@@ -912,7 +933,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5e1ec497251f18bd1e74d6fd1c2c8d86b2aac8ca46626d1acea1ed4c617766e3">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d4b3bc8314c2bf8317f6dd88ca2e8875c63def6e303a3904344745faf218a0ee">
   
     
       
@@ -953,6 +974,16 @@ X-Powered-By: Express
 <ul>
 <li>The facility is closed for annual maintenance.</li>
 <li>The arenas remain open.</li>
+</ul>
+</li>
+</ul>
+<h3>Schedule change</h3>
+<ul>
+<li><strong>Thursday, September 4</strong>
+<ul>
+<li>Indoor cycling 6:15 to 7:15 pm, cancelled</li>
+<li>Yoga, 7:30 to 8:30 pm, cancelled</li>
+<li>Volleyball - adult, 7:45 to 8:45 pm, cancelled</li>
 </ul>
 </li>
 </ul>
@@ -1286,7 +1317,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3f8541b920120ba69a153c60b1747203122e5695baff13c1a9bf4faa061d095e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b7e2be25f247e71048fd18e4e42f783be478dc38569f843f8465e3b6e8fb17f3">
   
     
       
@@ -1300,7 +1331,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-fe50763cf0d0b47458833e68aa9dea0c41924907af5ed7d9687e093fc24cd427">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c39edec843d44f1c9347f86d5c4ea6b7f0375fee3e5bd6a3179ee547653afb7c">
   
     
       
@@ -1526,7 +1557,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ae0c376cc2823621bc9f9e514e74c6ab123d0a21c17898f17042a7cab81547b0">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f90c6471a175c19ccc6c723920cea413a228a29e413d6e7d4fc02f67b58037ad">
   
     
       
@@ -1540,7 +1571,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ca4ce4466b51d1bfbe3983ffd587e874ffedc9a063888995906cdea602739a91">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9c76ad25d68e6d5e174fd8dd1ec1408432816e4193435e08ab6d28965eebaee0">
   
     
       
@@ -1581,6 +1612,16 @@ X-Powered-By: Express
 <ul>
 <li>The facility is closed for annual maintenance.</li>
 <li>The arenas remain open.</li>
+</ul>
+</li>
+</ul>
+<h3>Schedule change</h3>
+<ul>
+<li><strong>Thursday, September 4</strong>
+<ul>
+<li>Indoor cycling 6:15 to 7:15 pm, cancelled</li>
+<li>Yoga, 7:30 to 8:30 pm, cancelled</li>
+<li>Volleyball - adult, 7:45 to 8:45 pm, cancelled</li>
 </ul>
 </li>
 </ul>
@@ -1775,7 +1816,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-52ff379d1d4c0bf6e9237457e1269f4a5a586af720679e86ff1a9e0cc2f899ee">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-fe537a26fe92f2027787bc0b1f352658b3ca5facf6930cae25a9a24fda34b5b0">
   
     
       
@@ -1789,7 +1830,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-add17af3eee2b73b27acc44a2873723caba48b4b418d51ec39056cd6534586da">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f7e92020cea0155dabd40309fdbf0e137fc73404a161bd99b5effa33039d7090">
   
     
       
@@ -2150,7 +2191,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-1fde2f26fe7f487042e7f1036622cac28db44c3a18d0f748c78ebda5f8cc4aee">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-ac6e49070ea4d9778ee800b7f5dfdcb3745d09b1f22ba3f0141a02a8f175ea47">
   
     
       <div class="view-header">
@@ -2584,13 +2625,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
+    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.29/js/chunk-vendors.js" async></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.29/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=803123338" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=117083935" async></script></body>
 </html>
 

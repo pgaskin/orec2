@@ -1,24 +1,33 @@
 GET /en/recreation-and-parks/facilities/place-listing/nepean-museum HTTP/1.1
 Host: ottawa.ca
-xxx-use-proxy: true
+xxx-use-proxy: zyte
 
-HTTP/2.0 200 OK
-Access-Control-Allow-Credentials: true
-Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
-Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
+HTTP/1.1 200 200OK
+Connection: close
+Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Alt-Svc: h3=":443"; ma=86400
-Cf-Cache-Status: DYNAMIC
-Cf-Ray: 9762061e0da84411-EWR
-Content-Type: text/html; charset=utf-8
-Date: Thu, 28 Aug 2025 07:16:37 GMT
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2F9uuPN%2F%2FFhtPNLHOeVqz9W8pUuiaxH759yZSC02ox2LieFI3kA4wKmK%2FFPWahJ1loB9GDRfaVqtBNwMVnQrPBxhRZoHHAuyUo%2FlrfQUpRlmvAJo7NY0YSFmHBtdqHQ%3D%3D"}]}
-Server: cloudflare
-Vary: accept-encoding
-X-Frame-Options: sameorigin
-X-Frame-Options: SAMEORIGIN
-X-Powered-By: Express
+Age: 322
+Cache-Control: max-age=2764800, public
+Cache-Tags: HIT
+Connection: keep-alive
+Content-Type: text/html; charset=UTF-8
+Content-language: en
+Date: Sat, 30 Aug 2025 09:00:47 GMT
+ETag: "1756544122-gzip"
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Last-Modified: Sat, 30 Aug 2025 08:55:22 GMT
+Set-Cookie: incap_ses_1349_243507=zxYrcleUaVS5xAnUwJy4Er+9smgAAAAA0r7mylCXwMC7SlEmLNc7Dw==; path=/; Domain=.ottawa.ca
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Vary: Cookie,Accept-Encoding
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
+X-CDN: Imperva
+X-Content-Type-Options: nosniff
+X-Drupal-Cache: MISS
+X-Drupal-Dynamic-Cache: UNCACHEABLE (poor cacheability)
+X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
+X-Generator: Drupal 10 (https://www.drupal.org)
+X-Iinfo: 6-52110290-52110294 NNNY CT(42 41 0) RT(1756544447494 127) q(0 0 0 18) r(1 1) U24
+X-Varnish: 30508877 30381915
 
 
 <!DOCTYPE html>
@@ -44,13 +53,13 @@ X-Powered-By: Express
     <link rel="stylesheet" media="all" href="/sites/default/files/css/css_fRV-RdFs7cnMBg-7kWAeoAOzIjwL2SWh1BRFCZkcsMk.css?delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUNFuwzAI_CEvftn_RNgmCQsxFuA22dc3W1c12gu6O9AdkETcXKF9xgSGIb35zJKAP8wPpjpfOxuawYwW8oqFXHSkWrB6YslrvOCQRTEW7Q14gC_Yn0IV3YDpGwPufpqvr5E_GibG3ZgK6unmOCs4SQ0Mh3QfC1mWG-oRpWIWDjJNlHFcpKvFKxmnnyR31CDuGUZfcMP_l11bJ-77cKcyo4cGCmd2W-y14FsZem09MdmCJdhhjtvzgzfCu8XfOmxSOuMDdaqMMQ" />
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_hIkusDorgaFGgFGXEC9NC5A6M1oAesgy7eoj0vqGGoQ.css?delta=1&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUNFuwzAI_CEvftn_RNgmCQsxFuA22dc3W1c12gu6O9AdkETcXKF9xgSGIb35zJKAP8wPpjpfOxuawYwW8oqFXHSkWrB6YslrvOCQRTEW7Q14gC_Yn0IV3YDpGwPufpqvr5E_GibG3ZgK6unmOCs4SQ0Mh3QfC1mWG-oRpWIWDjJNlHFcpKvFKxmnnyR31CDuGUZfcMP_l11bJ-77cKcyo4cGCmd2W-y14FsZem09MdmCJdhhjtvzgzfCu8XfOmxSOuMDdaqMMQ" />
 <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
-<link rel="stylesheet" media="all" href="/sites/default/files/css/css_51Bb-4Zjct-9lU5HQy0U_61TzM5g45ZukpPpokSRsnM.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUNFuwzAI_CEvftn_RNgmCQsxFuA22dc3W1c12gu6O9AdkETcXKF9xgSGIb35zJKAP8wPpjpfOxuawYwW8oqFXHSkWrB6YslrvOCQRTEW7Q14gC_Yn0IV3YDpGwPufpqvr5E_GibG3ZgK6unmOCs4SQ0Mh3QfC1mWG-oRpWIWDjJNlHFcpKvFKxmnnyR31CDuGUZfcMP_l11bJ-77cKcyo4cGCmd2W-y14FsZem09MdmCJdhhjtvzgzfCu8XfOmxSOuMDdaqMMQ" />
-<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.28/css/app.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css__BzoYDnbHMmrYiFSh96avEQ3e9ez5OKomOkGZuSJfmQ.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUNFuwzAI_CEvftn_RNgmCQsxFuA22dc3W1c12gu6O9AdkETcXKF9xgSGIb35zJKAP8wPpjpfOxuawYwW8oqFXHSkWrB6YslrvOCQRTEW7Q14gC_Yn0IV3YDpGwPufpqvr5E_GibG3ZgK6unmOCs4SQ0Mh3QfC1mWG-oRpWIWDjJNlHFcpKvFKxmnnyR31CDuGUZfcMP_l11bJ-77cKcyo4cGCmd2W-y14FsZem09MdmCJdhhjtvzgzfCu8XfOmxSOuMDdaqMMQ" />
+<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.29/css/app.css" />
 
     <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/3017111","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx9UkuWAyEIvJDdbuY-PlRinKD4BJN0Tj9O5tedxWx4FAUChZ5ZRTu0N-tB0Pgd_nWXd1kIFEX3fCL2QIvoRrmmPVNQBBKKCReMWbm7XCNW9cThYne-CdzRVu4FKD_Q4F3nWxcb-2hA6zc0J8K7UI7YZ7Fi6qCZq0nMidApJJumecUrvMP9GCyGYOOhLmYJfMW-Wa4YmGb8sdlPY_h0ygHdmUcXuwfu9DmnKnbDqgGcnrGgndUETWYLTrPTgXuRaE9Nf9zXW44J9UC0PndchEOelX6ocpVDgmTFXFqf8y9QgTbN4SXjqZVLQDRXNA06TM3aWX6E_Yuso7bhKcsZo2ncRnMy-hU3uweTuWH32WHxGO0BLYHyvOf_KUOUy7xwN7KJYvn6bNeMN7FPuxaOg_ADN3UCLQ","theme":"ottca_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NDWQN39"]},"popup_survey":{"frequency":"10","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"flexslider":{"optionsets":{"slider-gallery--1295258":{"animation":"slide","animationSpeed":600,"direction":"horizontal","slideshow":false,"easing":"swing","smoothHeight":true,"reverse":false,"slideshowSpeed":7000,"animationLoop":true,"randomize":false,"startAt":0,"itemWidth":0,"itemMargin":0,"minItems":0,"maxItems":0,"move":0,"directionNav":true,"controlNav":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":false,"touch":true,"prevText":"Previous","nextText":"Next","namespace":"flex-","selector":".slides \u003E li","sync":"","asNavFor":"","initDelay":0,"useCSS":true,"video":false,"pausePlay":false,"pauseText":"Pause","playText":"Play","pauseOnAction":false,"pauseOnHover":false,"controlsContainer":"","manualControls":"","id":"slider-gallery--1295258"},"slider-gallery-carousel--1295258":{"animation":"slide","animationSpeed":600,"direction":"horizontal","slideshow":false,"easing":"swing","smoothHeight":false,"reverse":false,"slideshowSpeed":7000,"animationLoop":true,"randomize":false,"startAt":0,"itemWidth":210,"itemMargin":4,"minItems":0,"maxItems":0,"move":0,"directionNav":true,"controlNav":false,"thumbCaptions":false,"thumbCaptionsBoth":false,"keyboard":true,"multipleKeyboard":false,"mousewheel":false,"touch":true,"prevText":"Previous","nextText":"Next","namespace":"flex-","selector":".slides \u003E li","sync":"","asNavFor":"#slider-gallery--1295258","initDelay":0,"useCSS":true,"video":false,"pausePlay":false,"pauseText":"Pause","playText":"Play","pauseOnAction":false,"pauseOnHover":false,"controlsContainer":"","manualControls":"","id":"slider-gallery-carousel--1295258"}},"instances":{"slider-gallery--1295258":"slider-gallery--1295258","slider-gallery-carousel--1295258":"slider-gallery-carousel--1295258"}},"user":{"uid":0,"permissionsHash":"2b10bb50a9c4a88da976ceacddbf75faec45ec1bdb36757dcce69ecfb8e7c867"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
-<script src="/modules/contrib/google_tag/js/gtag.js?t1clew"></script>
-<script src="/modules/contrib/google_tag/js/gtm.js?t1clew"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?t1pj7h"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?t1pj7h"></script>
 <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.22.1/dist/powerbi.min.js"></script>
 <script src="/modules/contrib/powerbi_embed/js/powerbi_embed-customizer.js?v=1.0.0"></script>
 
@@ -172,7 +181,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-73028373287488303f257ec4ce345f2f762702ee9fdfe991124a6649dc5bc5a2">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-57c53afa8fe78772657a55679ddb1a6e147d28644b6fe176a96a5e25dc553e31">
   
     
       
@@ -186,7 +195,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2fdae8cef3214c4445319121cd1791684c37c46c2620ecd8380fe33bfb2de593">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4d02d56e93a50ac0c7af0df33c0a5eaadd49091c6c899b8d6c8ad8a9fe078127">
   
     
       
@@ -310,7 +319,7 @@ X-Powered-By: Express
 
   
             <div class="clearfix text-formatted field field--name-field-place-address-info field--type-text-long field--label-hidden field__item"><p>Tel:&nbsp;<a href="tel:(613) 580-9638">(613) 580-9638</a><br>
-Email:&nbsp;<a href="/cdn-cgi/l/email-protection#2449515741514957644b50504553450a4745"><span class="__cf_email__" data-cfemail="49243c3a2c3c243a09263d3d283e28672a28">[email&#160;protected]</span></a></p>
+Email:&nbsp;<a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a></p>
 <p><a href="https://www.facebook.com/NepeanMuseum/">Facebook</a><br>
 Subscribe to our monthly "<a href="https://ottawa.ca/esubscriptions">At your museum</a>" eNewsletter.&nbsp;</p>
 </div>
@@ -388,7 +397,7 @@ Subscribe to our monthly "<a href="https://ottawa.ca/esubscriptions">At your mus
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6b253b2aaa0e36f44b1efde618c024c44c0e99a33e6bbc2057dd8a275c5262d3">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-cf2dda9f32d500ecd3961ba89319d433bcd690083054597b751b2e1a9aa61c81">
   
     
       
@@ -402,7 +411,7 @@ Subscribe to our monthly "<a href="https://ottawa.ca/esubscriptions">At your mus
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3865b62bd0d626ad927c27475073664c94b29d96e2bd14baadf46a21bcceff57">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7645cee4630bbae6298e913cdf58af5bcae014cfc7a12362dc97f83fbee946f2">
   
     
       
@@ -502,7 +511,7 @@ Subscribe to our monthly "<a href="https://ottawa.ca/esubscriptions">At your mus
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a75e349af7442502f3cf258efca1f49581e093feae3ac6f471075679a702a11e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1780e90c7d6801e6abcdb61aa53105688adc63980337dee528522932c053de00">
   
     
       
@@ -516,7 +525,7 @@ Subscribe to our monthly "<a href="https://ottawa.ca/esubscriptions">At your mus
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e226d4e67baa48baca15ad760435bb97b4289a4cc7426c6b7e3cc8ccb38544ae">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5824a8971ab5ed0b7153f456fb6f3cb3ab2528dc0a8c92c4225593e3906709d5">
   
     
       
@@ -675,7 +684,7 @@ August 3 - Lego printmaking</strong></span><br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0d39eb29108c8f5f678cb39a989c2f4dde63a81d1fa3ef51fac4ed4cc20ffa4b">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-039b9628884db7a5b86699b513000d44e6884406f4b7051ba0f991bf0441c237">
   
     
       
@@ -689,7 +698,7 @@ August 3 - Lego printmaking</strong></span><br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-93ce953b05ea807898c7c3e71440b4f3ea99b7401c66333704aedbdba02d8025">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a68a3709d7e7891ca371c7f2f55f408642efb9c2feb779572f4baec734267c54">
   
     
       
@@ -734,7 +743,7 @@ October 11 – Neighbourhood collage</p>
 <li>Please dress your child in clothes you are comfortable with getting messy.</li>
 <li>Please pack a peanut-free snack and water.</li>
 <li>Sessions with insufficient registration may be cancelled. If an alternative cannot be offered, a refund will be issued.</li>
-<li>If you have questions or concerns regarding accessibility, contact the museum at 613-580-9638 or <a href="/cdn-cgi/l/email-protection#8ae7fff9efffe7f9cae5fefeebfdeba4e9eb"><span class="__cf_email__" data-cfemail="f598808690809886b59a8181948294db9694">[email&#160;protected]</span></a>. Additional <a href="https://ottawa.ca/en/node/1007484">information regarding accessibility</a> is available on the museum webpage.</li>
+<li>If you have questions or concerns regarding accessibility, contact the museum at 613-580-9638 or <a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a>. Additional <a href="https://ottawa.ca/en/node/1007484">information regarding accessibility</a> is available on the museum webpage.</li>
 </ul>
 </div>
       
@@ -874,7 +883,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4c779e0d8bde5bdc1e39c3f48a19e26decdbd12f0b04168502cb094a260ac351">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f5583505444df17dad286b40413a11cbaa8c096f2138715090982ff66bac9a36">
   
     
       
@@ -888,7 +897,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f5b82c3009dc082bfce3a22fea034c9d66fbd2950e0e939253856003fcef6e82">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a1a5ab9a4ac7a136e1fa6252150a5d56d31ee3f5632e8fb676072a39d2f51861">
   
     
       
@@ -989,7 +998,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-75ebf740e4bcc7ce5550cfa89b7997f3f8d746bf692669675aca437231fec2b3">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-702722cf9215efe1339294ade7f87c053b05688a6d17e21ef3ea043d2b202515">
   
     
       
@@ -1003,7 +1012,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-daae413e5077f07fad7d301eaf159f59dbbf1ae60824ec2225a92c927371a45b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-386c5c5290063c6475a4a98c178ba00f7729a7068f3cf4329b0843b8be6ca5a8">
   
     
       
@@ -1033,7 +1042,7 @@ October 11 – Neighbourhood collage</p>
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The City of Ottawa Museums are committed to offering residents meaningful and rewarding volunteer experiences.</p>
 <p>Heritage volunteers play an invaluable role in preserving our unique heritage and in providing museum visitors of all ages with opportunities to appreciate our shared story.</p>
 <p>Thank you to all our volunteer team members for their continued support.</p>
-<p>The museums are not currently accepting new volunteers. If you have any questions about the volunteer program or would like to be notified when volunteering resumes, please contact&nbsp;<a href="/cdn-cgi/l/email-protection#167b636573637b6556796262776177387577"><span class="__cf_email__" data-cfemail="99f4eceafcecf4ead9f6ededf8eef8b7faf8">[email&#160;protected]</span></a>.</p>
+<p>The museums are not currently accepting new volunteers. If you have any questions about the volunteer program or would like to be notified when volunteering resumes, please contact&nbsp;<a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a>.</p>
 </div>
       
       </div>
@@ -1106,7 +1115,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4aa2b12041278d4eb6be619b744f6b8f4397f3b48e1a3a65c0a9b9d670cc4d2c">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-48cb6361d4673c8f6532ebecf59fe184219ed0cb1ece4afb03b305636d5834aa">
   
     
       
@@ -1120,7 +1129,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-365ec98f1d9c76ace3ba643bee5aaafd7879de62b05d588878b40963866a6786">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e437a5e36485d859cc5e39a05d06155f4248da3e1e29c57a281b95efdb28c751">
   
     
       
@@ -1147,7 +1156,7 @@ October 11 – Neighbourhood collage</p>
                           
                                                       <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>For more information, please contact our Customer Service Booking Clerk. Call <strong>613-580-9638</strong> or email <a href="/cdn-cgi/l/email-protection#a0cdd5d3c5d5cdd3e0cfd4d4c1d7c18ec3c1"><span class="__cf_email__" data-cfemail="5538202630203826153a21213422347b3634">[email&#160;protected]</span></a>.</p>
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>For more information, please contact our Customer Service Booking Clerk. Call <strong>613-580-9638</strong> or email <a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a>.</p>
 </div>
       
       </div>
@@ -1220,7 +1229,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-50838df74717e1f24e8262ae527e50fd0b9e27e97504bf388a581d825f2f5c42">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a03edb6ff74f69dc93e05ee48b4877538daa99c380658e01f7a2d8963e4463a1">
   
     
       
@@ -1234,7 +1243,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d150b2eeb0002002f497d86fa91288041376e1d107faa327ff7db35b7f489546">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-fa4df00506ba2d6920858ae77713452e4edb14cf9c9ed5a89442b4945738682d">
   
     
       
@@ -1798,14 +1807,14 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_vbqXGSVFFjC94Hma6-MoYncglvJ8cc0REQE5tEvI9OA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
+    <script src="/sites/default/files/js/js_vbqXGSVFFjC94Hma6-MoYncglvJ8cc0REQE5tEvI9OA.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.29/js/chunk-vendors.js" async></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.29/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
-<script src="/themes/custom/ottca_theme/dist/js/slider-gallery.min.js?t1clew" async></script>
+<script src="/themes/custom/ottca_theme/dist/js/slider-gallery.min.js?t1pj7h" async></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=6&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=4&cb=1636969683" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=926313170" async></script></body>
 </html>
 

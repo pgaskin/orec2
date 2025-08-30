@@ -1,24 +1,29 @@
-GET /en/recreation-and-parks/facilities/place-listing/shenkman-arts-centre HTTP/1.1
+GET /en HTTP/1.1
 Host: ottawa.ca
-xxx-use-proxy: true
+xxx-use-proxy: zyte
 
-HTTP/2.0 200 OK
-Access-Control-Allow-Credentials: true
-Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
-Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
-Access-Control-Allow-Origin: *
-Alt-Svc: h3=":443"; ma=86400
-Cf-Cache-Status: DYNAMIC
-Cf-Ray: 976208161e914411-EWR
-Content-Type: text/html; charset=utf-8
-Date: Thu, 28 Aug 2025 07:17:55 GMT
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=5Ezv1BbInAcwiXi3Qw8ACTPWl1TARcL3STpg2W2Ll3Z4Gphl6PIYSAbDiWIkw8Pbptp2DkdAcIMvYQLwMrPxuTX6F%2BU%2BOP%2BKMHRjzWX4HyPI7URYFOByofWHUzm1MA%3D%3D"}]}
-Server: cloudflare
-Vary: accept-encoding
-X-Frame-Options: sameorigin
+HTTP/1.1 200 200OK
+Connection: close
+Accept-Ranges: bytes
+Age: 0
+Cache-Control: must-revalidate, no-cache, private
+Cache-Tags: MISS
+Connection: keep-alive
+Content-Type: text/html; charset=UTF-8
+Content-language: en
+Date: Sat, 30 Aug 2025 09:02:11 GMT
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Vary: X-Consumer-ID,Accept-Encoding
+Via: 1.1 coo-prod-shenkman-httpcache-kube-httpcache-76994b4c7b-2nlwn (Varnish/7.6)
+X-CDN: Imperva
+X-Consumer-ID: 892dcac8-627a-4785-acf3-eba3121b6314
+X-Content-Type-Options: nosniff
+X-Drupal-Cache: HIT
 X-Frame-Options: SAMEORIGIN
-X-Powered-By: Express
+X-Generator: Drupal 10 (https://www.drupal.org)
+X-Iinfo: 17-146392780-146392782 NNNY CT(15 29 0) RT(1756544531248 95) q(0 0 0 -1) r(0 0) U12
+X-Varnish: 255267
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -174,7 +179,7 @@ X-Powered-By: Express
     <div class="views-element-container" id="block-views-block-theater-news-articles-block-2" data-block-plugin-id="views_block:theater_news_articles-block_2">
   
     
-      <div><div class="js-view-dom-id-73c7d1f21962bcf206bf5320141203ed7e7247e4063adbc14106365df9bb3d9d">
+      <div><div class="js-view-dom-id-63d524fb24cc1ab0b38646c64ddf2b3716de87196161ea97247abac8756bd65d">
   
   
   
@@ -334,7 +339,7 @@ X-Powered-By: Express
         <div class="views-element-container" data-block-plugin-id="views_block:event_listings-block_1">
   
     
-      <div><div class="js-view-dom-id-96a7022e6db30f5adc1011798a777978d9a8f45cc5caaff2f13dc37f126740ca">
+      <div><div class="js-view-dom-id-902e503b07b14e575a31cbc492fd51f4d624703c4114a34b562a08440d4d0df6">
   
   
   
@@ -559,7 +564,7 @@ X-Powered-By: Express
             </a>
         </li>
         <li class="nav-item">
-            <a title="Opens a new window" target="_blank" class="nav-link social-link social-link--black" href="/cdn-cgi/l/email-protection#77041f12191c1a16191605030414121903051237180303160016591416">
+            <a title="Opens a new window" target="_blank" class="nav-link social-link social-link--black" href="mailto:shenkmanartscentre@ottawa.ca">
                 <i aria-hidden="true" class="fas fa-envelope fa-3x"></i>
 				<span class="visually-hidden">Send Email to Shenkman Arts Centre Opens a new window</span>
             </a>
@@ -595,7 +600,7 @@ X-Powered-By: Express
       <div class="views-element-container" data-block-plugin-id="views_block:event_listings-block_4">
   
     
-      <div><div class="home-page-featured-events text-center js-view-dom-id-1c64b635640b299cf85e3c5cd9f1d4122909f18461acf11e24f16d5d1b18b34c">
+      <div><div class="home-page-featured-events text-center js-view-dom-id-4100c673fea8606e02293fd0ea3fad28f1911c98c759848669acd52ff6f673f0">
   
   
   
@@ -803,7 +808,7 @@ Ottawa, ON K1E 0A1</p>
 <p>General Inquiries<br /><a href="tel:+1-613-580-2787">613-580-ARTS (2787)</a><br />
 Box Office<br /><a href="tel:+1-613-580-2700">613-580-2700</a><br />
 Fax<br /><a href="tel:+1-613-580-2758">613-580-2758</a><br />
-Email<br /><a href="/cdn-cgi/l/email-protection#67140f02090c0a06090615131404020913150227081313061006490406"><span class="__cf_email__" data-cfemail="56253e33383d3b37383724222535333822243316392222372137783537">[email&#160;protected]</span></a></p>
+Email<br /><a href="mailto:shenkmanartscentre@ottawa.ca">shenkmanartscentre@ottawa.ca</a></p>
 </div>
       </address>
 </div><div class="col-12 col-sm-6 col-md-5 col-lg-3 mb-5 order-sm-4 order-md-4 order-lg-3 social-block" id="block-sociallinks" data-block-plugin-id="block_theatre_social">
@@ -834,7 +839,7 @@ Email<br /><a href="/cdn-cgi/l/email-protection#67140f02090c0a060906151314040209
             </a>
         </li>
         <li class="nav-item">
-            <a title="Opens a new window" target="_blank" class="nav-link social-link social-link--black" href="/cdn-cgi/l/email-protection#ed9e85888386808c838c9f999e8e8883999f88ad8299998c9a8cc38e8c">
+            <a title="Opens a new window" target="_blank" class="nav-link social-link social-link--black" href="mailto:shenkmanartscentre@ottawa.ca">
                 <i aria-hidden="true" class="fas fa-envelope fa-3x"></i>
 				<span class="visually-hidden">Send Email to Shenkman Arts Centre Opens a new window</span>
             </a>
@@ -883,7 +888,7 @@ Email<br /><a href="/cdn-cgi/l/email-protection#67140f02090c0a060906151314040209
     </ul>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+<script type="text/javascript">
     var ssaUrl = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'wl-clickserv.index.digital/conv/7be3e6d22115d11b';
     new Image().src = ssaUrl;
     (function(d) {
@@ -943,8 +948,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
     
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"en\/","currentPath":"node\/5","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"blazy\/bio.ajax,layout_builder\/twocol_section,layout_discovery\/onecol,ottawatheatretheme\/date-picker,shenkmantheme\/global-scripts,shenkmantheme\/global-styling,system\/base,theatre_blocks\/theatre-vue-advertisement,views\/views.ajax,views\/views.module","theme":"shenkmantheme","theme_token":null},"ajaxTrustedUrl":{"\/en\/search":true},"views":{"ajax_path":"\/en\/views\/ajax","ajaxViews":{"views_dom_id:1c64b635640b299cf85e3c5cd9f1d4122909f18461acf11e24f16d5d1b18b34c":{"view_name":"event_listings","view_display_id":"block_4","view_args":"","view_path":"\/node\/5","view_base_path":null,"view_dom_id":"1c64b635640b299cf85e3c5cd9f1d4122909f18461acf11e24f16d5d1b18b34c","pager_element":0},"views_dom_id:96a7022e6db30f5adc1011798a777978d9a8f45cc5caaff2f13dc37f126740ca":{"view_name":"event_listings","view_display_id":"block_1","view_args":"","view_path":"\/node\/5","view_base_path":null,"view_dom_id":"96a7022e6db30f5adc1011798a777978d9a8f45cc5caaff2f13dc37f126740ca","pager_element":0}}},"ajax":[],"user":{"uid":0,"permissionsHash":"ddbecec60aee6affd9b71f1eb88cd135f12070fccbafec6ac63710ba87749515"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"en\/","currentPath":"node\/5","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"blazy\/bio.ajax,layout_builder\/twocol_section,layout_discovery\/onecol,ottawatheatretheme\/date-picker,shenkmantheme\/global-scripts,shenkmantheme\/global-styling,system\/base,theatre_blocks\/theatre-vue-advertisement,views\/views.ajax,views\/views.module","theme":"shenkmantheme","theme_token":null},"ajaxTrustedUrl":{"\/en\/search":true},"views":{"ajax_path":"\/en\/views\/ajax","ajaxViews":{"views_dom_id:4100c673fea8606e02293fd0ea3fad28f1911c98c759848669acd52ff6f673f0":{"view_name":"event_listings","view_display_id":"block_4","view_args":"","view_path":"\/node\/5","view_base_path":null,"view_dom_id":"4100c673fea8606e02293fd0ea3fad28f1911c98c759848669acd52ff6f673f0","pager_element":0},"views_dom_id:902e503b07b14e575a31cbc492fd51f4d624703c4114a34b562a08440d4d0df6":{"view_name":"event_listings","view_display_id":"block_1","view_args":"","view_path":"\/node\/5","view_base_path":null,"view_dom_id":"902e503b07b14e575a31cbc492fd51f4d624703c4114a34b562a08440d4d0df6","pager_element":0}}},"ajax":[],"user":{"uid":0,"permissionsHash":"ddbecec60aee6affd9b71f1eb88cd135f12070fccbafec6ac63710ba87749515"}}</script>
 <script src="/sites/default/files/js/js_jireMcsLeFkqMVGCpqqhcIR_Av8Nvm-d0XYnSBFEsJ4.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=shenkmantheme&amp;include=eJx1TssOwyAM-yEYn1QFiNqsKalIaMe-fqjrZYddLPkh29rVcAsRFJ0uWNYNii24YZhZIrBX60xl_mOmSrupEzM4YVhgFb-JDIZ-p7RidQxdmk2ZNMmBtQcpmITdQXhquPCxSW6MLjK8e4gkD3jC6ydxCXdVbMQZa7BTRtGkmIykuPvBFFnSquGm_mjoIY9lIx3fin0AwNdhBw"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=2124916093" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1136471952" async></script></body>
 </html>

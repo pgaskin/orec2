@@ -1,24 +1,30 @@
-GET /en/recreation-and-parks/facilities/place-listing/meridian-theatres-centrepointe HTTP/1.1
+GET /en HTTP/1.1
 Host: ottawa.ca
-xxx-use-proxy: true
+xxx-use-proxy: zyte
 
-HTTP/2.0 200 OK
-Access-Control-Allow-Credentials: true
-Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
-Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
-Access-Control-Allow-Origin: *
-Alt-Svc: h3=":443"; ma=86400
-Cf-Cache-Status: DYNAMIC
-Cf-Ray: 976205d8eb904411-EWR
-Content-Type: text/html; charset=utf-8
-Date: Thu, 28 Aug 2025 07:16:23 GMT
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Qg6DKD4OoQvXY3DsPFND7cT0k12DGoA4MzgIa7oHDJ799hmLdmQxeOoHpMwlqc%2Fa87x%2FE2L6%2FbB8ooOR3P1pIi%2FTZ8JwVGA%2FEdCJaNGmH8IkyTj72SRQP26XRf3YwQ%3D%3D"}]}
-Server: cloudflare
-Vary: accept-encoding
-X-Frame-Options: sameorigin
+HTTP/1.1 200 200OK
+Connection: close
+Accept-Ranges: bytes
+Age: 0
+Cache-Control: must-revalidate, no-cache, private
+Cache-Tags: MISS
+Connection: keep-alive
+Content-Type: text/html; charset=UTF-8
+Content-language: en
+Date: Sat, 30 Aug 2025 09:00:40 GMT
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Set-Cookie: incap_ses_1699_2420082=Fj9fE0bcflVTne1b7w+UF7e9smgAAAAAzV6RnSCkrN0OWJihpr2KKw==; path=/; Domain=.meridiancentrepointe.com
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Vary: X-Consumer-ID,Accept-Encoding
+Via: 1.1 coo-prod-meridian-httpcache-kube-httpcache-6795cc6fcd-ww699 (Varnish/7.6)
+X-CDN: Imperva
+X-Consumer-ID: dbafdaf4-d3b5-4609-ad17-0d94afc096a6
+X-Content-Type-Options: nosniff
+X-Drupal-Cache: HIT
 X-Frame-Options: SAMEORIGIN
-X-Powered-By: Express
+X-Generator: Drupal 10 (https://www.drupal.org)
+X-Iinfo: 58-29071473-29071474 NNNN CT(9 15 0) RT(1756544439918 89) q(0 1 1 0) r(1 1) U12
+X-Varnish: 2513374
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -186,7 +192,7 @@ X-Powered-By: Express
     <div class="views-element-container" id="block-views-block-theater-news-articles-block-2" data-block-plugin-id="views_block:theater_news_articles-block_2">
   
     
-      <div><div class="js-view-dom-id-c196ae9b0a2ca6e698310f10e521769e7d39367257c19df5ba9230e96f8a18cc">
+      <div><div class="js-view-dom-id-2b5129b3cca52c3875505d45d0aab123442e00ae3534d1cbfb3147e3edf934d4">
   
   
   
@@ -240,7 +246,7 @@ X-Powered-By: Express
 		<div class="views-element-container" data-block-plugin-id="views_block:event_listings-block_1">
   
     
-      <div><div class="js-view-dom-id-871d6fb53649908e3fcb2711f270b53e42696017093c18185b0688b70d849d16">
+      <div><div class="js-view-dom-id-c02bf0b5a829efa13e3e04f704469fb422703c828e5c9c60a020c6b4568d89f0">
   
   
   
@@ -291,7 +297,7 @@ X-Powered-By: Express
 		</div>
         <div >
             <div class="teaser-content">
-				<h2 id="node-2565-title" class="h2" >SOLD OUT: An Evening with Jane Goodall </h2>
+				<h2 id="node-2565-title" class="h2" >An Evening with Jane Goodall </h2>
 				<div class="event-content-dates">
 					
             <div><time datetime="2025-09-06T12:00:00Z">September 6, 2025</time>
@@ -352,30 +358,6 @@ X-Powered-By: Express
 	</a>
 </article></li>
           <li><article class="theatre-listing-teaser" >
-	<a href="/en/caities-super-simple-songs" rel="bookmark">
-    <div class="theatre-listing-wrapper">
-		<div class="teaser-image">
-			
-            <div>  <img loading="lazy" src="/sites/default/files/2025-06/Caitie-Simple-Songs-600x600.jpg" width="600" height="600" alt="" />
-
-</div>
-      
-		</div>
-        <div >
-            <div class="teaser-content">
-				<h2 id="node-2579-title" class="h2" >Caitie&#039;s Super Simple Songs Surprise Party </h2>
-				<div class="event-content-dates">
-					
-            <div><time datetime="2025-09-16T12:00:00Z">September 16, 2025</time>
-</div>
-      
-								  	</div>
-			</div>
-		</div>
-    </div>
-	</a>
-</article></li>
-          <li><article class="theatre-listing-teaser" >
 	<a href="/en/matinee-cafe-rideau-ramblers" rel="bookmark">
     <div class="theatre-listing-wrapper">
 		<div class="teaser-image">
@@ -388,6 +370,30 @@ X-Powered-By: Express
         <div >
             <div class="teaser-content">
 				<h2 id="node-2316-title" class="h2" >Matinée Café: The Rideau Ramblers </h2>
+				<div class="event-content-dates">
+					
+            <div><time datetime="2025-09-16T12:00:00Z">September 16, 2025</time>
+</div>
+      
+								  	</div>
+			</div>
+		</div>
+    </div>
+	</a>
+</article></li>
+          <li><article class="theatre-listing-teaser" >
+	<a href="/en/caities-super-simple-songs" rel="bookmark">
+    <div class="theatre-listing-wrapper">
+		<div class="teaser-image">
+			
+            <div>  <img loading="lazy" src="/sites/default/files/2025-06/Caitie-Simple-Songs-600x600.jpg" width="600" height="600" alt="" />
+
+</div>
+      
+		</div>
+        <div >
+            <div class="teaser-content">
+				<h2 id="node-2579-title" class="h2" >Caitie&#039;s Super Simple Songs Surprise Party </h2>
 				<div class="event-content-dates">
 					
             <div><time datetime="2025-09-16T12:00:00Z">September 16, 2025</time>
@@ -467,7 +473,7 @@ X-Powered-By: Express
             </a>
         </li>
         <li class="nav-item">
-            <a title="Opens a new window" target="_blank" class="nav-link social-link social-link--dark" href="/cdn-cgi/l/email-protection#650800170c010c040b06000b111700150a0c0b1100250a11110412044b0604">
+            <a title="Opens a new window" target="_blank" class="nav-link social-link social-link--dark" href="mailto:meridiancentrepointe@ottawa.ca">
                 <i aria-hidden="true" class="fas fa-envelope fa-3x"></i>
 				<span class="visually-hidden">Send Email to Meridian Theatres @ Centrepointe Opens a new window</span>
             </a>
@@ -497,7 +503,7 @@ X-Powered-By: Express
       <div class="views-element-container" data-block-plugin-id="views_block:event_listings-block_4">
   
     
-      <div><div class="home-page-featured-events text-center js-view-dom-id-647c1fc8a3d14d4db566980dcd897b40e930e52b4241b8129109897f98ed236e">
+      <div><div class="home-page-featured-events text-center js-view-dom-id-8377146cf794aa3458690bf8108cd6564ff6ee2514b3e982310b510e670deb5b">
   
   
   
@@ -682,12 +688,12 @@ X-Powered-By: Express
 		<p>
 		Box Office<br>
 		<a href="tel:+1-613-580-2700">613-580-2700</a><br>
-		<a href="/cdn-cgi/l/email-protection#8dcfe4e1e1e8f9f9e8ffe4e8d9c0d9ceddcfe2f5e2ebebe4eee8cde2f9f9ecfaeca3eeec"><span class="__cf_email__" data-cfemail="9ddff4f1f1f8e9e9f8eff4f8c9d0c9decddff2e5f2fbfbf4fef8ddf2e9e9fceafcb3fefc">[email&#160;protected]</span></a>
+		<a href="mailto:BilletterieTMTCPBoxoffice@ottawa.ca">BilletterieTMTCPBoxoffice@ottawa.ca</a>
 		</p>
 		<p>
 		General Inquiries<br>
 		<a href="tel:+1-613-580-2701">613-580-2701</a><br>
-		<a href="/cdn-cgi/l/email-protection#3c51594e5558555d525f5952484e594c53555248597c5348485d4b5d125f5d"><span class="__cf_email__" data-cfemail="7a171f08131e131b14191f140e081f0a1513140e1f3a150e0e1b0d1b54191b">[email&#160;protected]</span></a>
+		<a href="mailto:meridiancentrepointe@ottawa.ca">meridiancentrepointe@ottawa.ca</a>
 		</p>
 	</address>
 </div>		<div class="col-12 col-sm-6 col-md-5 col-lg-3 mb-5 order-sm-4 order-md-4 order-lg-3 social-block" id="block-sociallinks" data-block-plugin-id="block_theatre_social">
@@ -718,7 +724,7 @@ X-Powered-By: Express
             </a>
         </li>
         <li class="nav-item">
-            <a title="Opens a new window" target="_blank" class="nav-link social-link social-link--dark" href="/cdn-cgi/l/email-protection#f69b93849f929f979895939882849386999f988293b6998282978197d89597">
+            <a title="Opens a new window" target="_blank" class="nav-link social-link social-link--dark" href="mailto:meridiancentrepointe@ottawa.ca">
                 <i aria-hidden="true" class="fas fa-envelope fa-3x"></i>
 				<span class="visually-hidden">Send Email to Meridian Theatres @ Centrepointe Opens a new window</span>
             </a>
@@ -767,7 +773,7 @@ X-Powered-By: Express
     </ul>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript">
+<script type="text/javascript">
     var ssaUrl = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'wl-clickserv.index.digital/conv/c8b82ed83bca0e1c';
     new Image().src = ssaUrl;
     (function(d) {
@@ -819,7 +825,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 
     
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"en\/","currentPath":"node\/31","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"blazy\/bio.ajax,layout_builder\/twocol_section,layout_discovery\/onecol,ottawatheatretheme\/global-scripts,ottawatheatretheme\/global-styling,system\/base,theatre_blocks\/theatre-vue-advertisement,views\/views.ajax,views\/views.module","theme":"ottawatheatretheme","theme_token":null},"ajaxTrustedUrl":{"\/en\/search":true},"views":{"ajax_path":"\/en\/views\/ajax","ajaxViews":{"views_dom_id:647c1fc8a3d14d4db566980dcd897b40e930e52b4241b8129109897f98ed236e":{"view_name":"event_listings","view_display_id":"block_4","view_args":"","view_path":"\/node\/31","view_base_path":"our-season","view_dom_id":"647c1fc8a3d14d4db566980dcd897b40e930e52b4241b8129109897f98ed236e","pager_element":0},"views_dom_id:871d6fb53649908e3fcb2711f270b53e42696017093c18185b0688b70d849d16":{"view_name":"event_listings","view_display_id":"block_1","view_args":"","view_path":"\/node\/31","view_base_path":"our-season","view_dom_id":"871d6fb53649908e3fcb2711f270b53e42696017093c18185b0688b70d849d16","pager_element":0}}},"ajax":[],"user":{"uid":0,"permissionsHash":"94a0b38f3fe368344e51c6bfff902b439897f1e291efcfe55b08657b4220a798"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"en\/","currentPath":"node\/31","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"blazy\/bio.ajax,layout_builder\/twocol_section,layout_discovery\/onecol,ottawatheatretheme\/global-scripts,ottawatheatretheme\/global-styling,system\/base,theatre_blocks\/theatre-vue-advertisement,views\/views.ajax,views\/views.module","theme":"ottawatheatretheme","theme_token":null},"ajaxTrustedUrl":{"\/en\/search":true},"views":{"ajax_path":"\/en\/views\/ajax","ajaxViews":{"views_dom_id:8377146cf794aa3458690bf8108cd6564ff6ee2514b3e982310b510e670deb5b":{"view_name":"event_listings","view_display_id":"block_4","view_args":"","view_path":"\/node\/31","view_base_path":"our-season","view_dom_id":"8377146cf794aa3458690bf8108cd6564ff6ee2514b3e982310b510e670deb5b","pager_element":0},"views_dom_id:c02bf0b5a829efa13e3e04f704469fb422703c828e5c9c60a020c6b4568d89f0":{"view_name":"event_listings","view_display_id":"block_1","view_args":"","view_path":"\/node\/31","view_base_path":"our-season","view_dom_id":"c02bf0b5a829efa13e3e04f704469fb422703c828e5c9c60a020c6b4568d89f0","pager_element":0}}},"ajax":[],"user":{"uid":0,"permissionsHash":"94a0b38f3fe368344e51c6bfff902b439897f1e291efcfe55b08657b4220a798"}}</script>
 <script src="/core/assets/vendor/jquery/jquery.min.js?v=3.7.0"></script>
 <script src="/core/assets/vendor/once/once.min.js?v=1.0.1"></script>
 <script src="/core/misc/drupalSettingsLoader.js?v=10.1.8"></script>
@@ -853,5 +859,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="/core/modules/views/js/ajax_view.js?v=10.1.8"></script>
 <script src="/modules/custom/theatre_blocks/vue-components/dist/main.js?syarm5"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1725143601" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2057218678" async></script></body>
 </html>

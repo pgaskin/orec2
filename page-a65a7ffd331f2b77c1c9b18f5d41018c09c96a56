@@ -1,24 +1,32 @@
 GET /en/recreation-and-parks/facilities/place-listing/walter-baker-sports-centre HTTP/1.1
 Host: ottawa.ca
-xxx-use-proxy: true
+xxx-use-proxy: zyte
 
-HTTP/2.0 200 OK
-Access-Control-Allow-Credentials: true
-Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
-Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
+HTTP/1.1 200 200OK
+Connection: close
+Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Alt-Svc: h3=":443"; ma=86400
-Cf-Cache-Status: DYNAMIC
-Cf-Ray: 976208c909454411-EWR
-Content-Type: text/html; charset=utf-8
-Date: Thu, 28 Aug 2025 07:18:25 GMT
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=alwiEdpa16zEN1YPPWz03TV5sfWhjoCsTpsBVegaTuU4TIg06I4%2BRTc3NP4rjpzYZbj0eVWB1FoZxB182z1Sya6JY9tKRc1SJXbsHDajnwUlwv%2FcuofB5Rtkh4t45A%3D%3D"}]}
-Server: cloudflare
-Vary: accept-encoding
-X-Frame-Options: sameorigin
-X-Frame-Options: SAMEORIGIN
-X-Powered-By: Express
+Age: 0
+Cache-Control: max-age=2764800, public
+Cache-Tags: MISS
+Connection: keep-alive
+Content-Type: text/html; charset=UTF-8
+Content-language: en
+Date: Sat, 30 Aug 2025 09:02:34 GMT
+ETag: "1756544552-gzip"
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Last-Modified: Sat, 30 Aug 2025 09:02:32 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Vary: Cookie,Accept-Encoding
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
+X-CDN: Imperva
+X-Content-Type-Options: nosniff
+X-Drupal-Cache: MISS
+X-Drupal-Dynamic-Cache: MISS
+X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
+X-Generator: Drupal 10 (https://www.drupal.org)
+X-Iinfo: 1-5351292-5351293 NNNN CT(14 34 0) RT(1756544551614 1057) q(0 0 0 -1) r(0 17) U24
+X-Varnish: 29829803
 
 
 <!DOCTYPE html>
@@ -44,13 +52,13 @@ X-Powered-By: Express
     <link rel="stylesheet" media="all" href="/sites/default/files/css/css_wlb9_FVo8iOCc388ZH60AOLjPX-LribjnIHAjDDK6to.css?delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_hIkusDorgaFGgFGXEC9NC5A6M1oAesgy7eoj0vqGGoQ.css?delta=1&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
 <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
-<link rel="stylesheet" media="all" href="/sites/default/files/css/css_51Bb-4Zjct-9lU5HQy0U_61TzM5g45ZukpPpokSRsnM.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
-<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.28/css/app.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css__BzoYDnbHMmrYiFSh96avEQ3e9ez5OKomOkGZuSJfmQ.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
+<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.29/css/app.css" />
 
     <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031622","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx9UsuSAyEI_CFnvOz_WKjEkKhYgklmv37NPmdy2EsXTYNQjZ5ZRTu0N-tB0Pgd_w2XiywZFEX3esrsIS-iW6aa9kpBEUgoJlwxknJ3VCNW9ZnD1e5iE7ijrdwLZHpHgw-db11t7KNBXr-pScwpo1NINk145Stc4HFMFpNh46EukgS-Yd8sVwycZ_59s08wfDpRQHfm0cXuiTs9F1LFblg1gNMzFrSzO0OTOYLTnHTQXrzYSzMej_VOMaEehNap6iIcaHb6ocpVDgVCilRan_svUCFvSkFMgw5p2nyWH5v-MuuobfhMcsZoGrfRnIx-w83uyVTu2D05LB6jPbAlZJrX-b9kiHKZ9-pGNlEsX1_nRngX-4lr4TgyfgCH7u4z","theme":"ottca_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NDWQN39"]},"popup_survey":{"frequency":"10","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"2b10bb50a9c4a88da976ceacddbf75faec45ec1bdb36757dcce69ecfb8e7c867"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
-<script src="/modules/contrib/google_tag/js/gtag.js?t1clew"></script>
-<script src="/modules/contrib/google_tag/js/gtm.js?t1clew"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?t1pj7h"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?t1pj7h"></script>
 <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.22.1/dist/powerbi.min.js"></script>
 <script src="/modules/contrib/powerbi_embed/js/powerbi_embed-customizer.js?v=1.0.0"></script>
 
@@ -172,7 +180,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-90c3e8dd8b6f0691378681524e16261b73ef12a98a03b7dd86240a966d1144ee">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-54f1331a4a2eec355b9eec3d2de4c324f377f441892822a48e7c77dbed074689">
   
     
       
@@ -186,7 +194,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bf0d364304787a1129c92d4258f9b98399d6344cd3be208d34153be6cea3bfda">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ac954243f30ca9f90b4e47b815c7421c2e3043c2aa59bdbf6858a5ed99b31889">
   
     
       
@@ -337,7 +345,7 @@ X-Powered-By: Express
 <li><a href="https://www.ottawa.ca/en/recreation-and-parks/facilities-and-rentals/rental-information/pool-rentals">Pool rentals</a></li>
 </ul>
 <p><strong>Program inquiries:</strong></p>
-<p><a href="/cdn-cgi/l/email-protection#cfbfbaada3a6acbca4aebba6a1a88fa0bbbbaeb8aee1acae">Public Skating information</a></p>
+<p><a href="mailto:publicskating@ottawa.ca">Public Skating information</a></p>
 </div>
       
 
@@ -348,7 +356,7 @@ X-Powered-By: Express
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="/cdn-cgi/l/email-protection#6314011000230c17170214024d0002"><span class="__cf_email__" data-cfemail="a1d6c3d2c2e1ced5d5c0d6c08fc2c0">[email&#160;protected]</span></a></div>
+              <div class="field__item"><a href="mailto:wbsc@ottawa.ca">wbsc@ottawa.ca</a></div>
               </div>
       </div>
 
@@ -423,7 +431,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1e0d204088466b9aaab6bd9bbacf759d7ad7ab6da6644a2c803457d4633b62e5">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f1359b178ed109e9c4472bf4fab1c7d012e65c544dcd2bd7c0b34fb66b37661b">
   
     
       
@@ -437,7 +445,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a5162b3990920394800686968987b84b28c40b758a1a34819f1716d995bf6161">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-735e7602097570abc934ee5896be952f252dd74ba4da8daf9f611f976da83670">
   
     
       
@@ -514,53 +522,93 @@ X-Powered-By: Express
                           
                                                       <div class="paragraph paragraph--type--table paragraph--view-mode--default">
           <div class="table-responsive">
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table dir="ltr">
-	<caption>Walter Baker Sports Centre - all drop-ins – Labour Day</caption>
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
+	<caption>Walter Baker Sports Centre - all drop-ins – Labour Day Weekend</caption>
 	<thead>
 		<tr>
-			<td>&nbsp;</td>
-			<th>Monday, September 1</th>
+			<th>
+			&nbsp;
+			</th>
+			<th>
+			Saturday, August 30
+			</th>
+			<th>
+			Sunday, August 31
+			</th>
+			<th>
+			Monday, Sept. 1
+			</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<th>
-			Lane swim&nbsp;&nbsp;
+			Lane swim
 			</th>
+			<td>
+			10 am – 1 pm,&nbsp;4 – 5 pm
+			</td>
+			<td>
+			10 am – 1 pm,&nbsp;4 – 5 pm
+			</td>
 			<td>
 			10 am – 1 pm&nbsp;&nbsp;
 			</td>
 		</tr>
 		<tr>
 			<th>
-			Preschool swim&nbsp;&nbsp;
+			Preschool swim
 			</th>
+			<td>
+			10 am – 1 pm&nbsp;&nbsp;
+			</td>
+			<td>
+			10 am – 1 pm&nbsp;&nbsp;
+			</td>
 			<td>
 			10 am – 1 pm&nbsp;&nbsp;
 			</td>
 		</tr>
 		<tr>
 			<th>
-			Public swim&nbsp;&nbsp;
+			Public swim
 			</th>
 			<td>
-			1 – 4 pm&nbsp;&nbsp;
+			1 – 4 pm
+			</td>
+			<td>
+			1 – 4 pm
+			</td>
+			<td>
+			1 – 4 pm
 			</td>
 		</tr>
 		<tr>
 			<th>
-			Weight and cardio room&nbsp;&nbsp;
+			Weight and cardio room
 			</th>
 			<td>
-			8 am – 5 pm&nbsp;&nbsp;
+			8 am – 8 pm
+			</td>
+			<td>
+			8 am – 8 pm
+			</td>
+			<td>
+			8 am - 5 pm
 			</td>
 		</tr>
 		<tr>
 			<th>
-			Squash courts 2,3,4 and 5&nbsp;&nbsp;
+			Squash courts 2,3,4 and 5
 			</th>
 			<td>
-			8 am – 4:30 pm&nbsp;
+			8 am – 7:30 pm
+			</td>
+			<td>
+			8&nbsp;am – 7:30 pm
+			</td>
+			<td>
+			8 am - 4:30 pm
 			</td>
 		</tr>
 	</tbody>
@@ -636,7 +684,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8da347fe443a49d0c049579459c05ae444d51c2f6586d027b177ce6438855b15">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a5ed419e8962789dd2894321908a7d2e1cc885ef47116834325a7c001b72800c">
   
     
       
@@ -650,7 +698,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-38e84e718cbf080062c02134f5df833f7cb7ca1eed161423fa174f9c5dfa1b4b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3527f3006c3087c72c76da06ef6c85cee3bb157d831d1fe91397c6150bfd7848">
   
     
       
@@ -881,7 +929,7 @@ X-Powered-By: Express
 			Lane swim&nbsp;
 			</th>
 			<td>
-			9:30 -10:30 am,
+			9:30 -10:45 am,
 			11:30 am -&nbsp;1 pm,
 			8 -&nbsp;9 pm&nbsp;
 			</td>
@@ -891,7 +939,7 @@ X-Powered-By: Express
 			8 -&nbsp;9 pm&nbsp;
 			</td>
 			<td>
-			9:30 -&nbsp;10:30 am,
+			9:30 -&nbsp;10:45 am,
 			11:30 am -&nbsp;1 pm&nbsp;
 			</td>
 			<td>
@@ -900,7 +948,7 @@ X-Powered-By: Express
 			8 -&nbsp;9 pm&nbsp;
 			</td>
 			<td>
-			9:30 -&nbsp;10:30 am,
+			9:30 -&nbsp;10:45 am,
 			11:30 am - 1 pm,
 			7:30 - 9 pm&nbsp;
 			</td>
@@ -1179,7 +1227,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7a92553058433601d10187ee9968dcc00ee16569491bfdf362e0fe6a1ed050ff">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e6b035d65bca8c6b3aaa7ba440fa33b8f074502cfe552129fa28134c2c790dff">
   
     
       
@@ -1193,7 +1241,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-50c4a4008e2a4ac45aeef904af4b3e635252fb954aee7291d6621c7ea5c4dbca">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-95aacbd8011c4e05fd283bc816d22aae1cc1e96950f3ec976dd7dd068c7cd6c0">
   
     
       
@@ -1340,7 +1388,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-61280018ba5dc750a13d4d2a1055bec90a8ca1d6e5dab30ae200a2926cdb63ba">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-85c5d1e79cf4d6a6ac3d8e2a9c82b89e6e755ad5bef472574fb06148c7171ffb">
   
     
       
@@ -1354,7 +1402,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ee9c93704ffe13f0e7dbe08e3c01985655a31de8b6c588438221a1250a016445">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4afcefa8186f8ecc15889daeb37b9b2e23e1e067cb49f5ce6a07e4e672ac2f1a">
   
     
       
@@ -1780,7 +1828,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-378d0cc27a7a997a76104088bfacf3be25952375fa69477dce1e8d9dd9654a24">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6a306d019cfae072ce25b482551f12a41dc785946cd661775e5ab9cbb41d2471">
   
     
       
@@ -1794,7 +1842,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a9c1fcc7b33302ba83efe2158894b0c22342e1f07921be881f8036f72eb44469">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-116cc500abce42b60e996f7e09b1b4ea4ff7d21a7a59a4b2527379d7d3d6dae3">
   
     
       
@@ -2009,7 +2057,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-673074e00d9a2786589dbc1c1b3dec3cb64d04aea65845654309988e226fc493">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-400ad1f776d9956e304b72736f3c6c00dae810167d6b11677ad7b7660d7299ba">
   
     
       
@@ -2023,7 +2071,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5a792b27724d72a14f57dc7aa1d1b173b3687d8bbcc34e0501d515ad615030f1">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b2a5edbd1697a72f106ba5a5f4bf87187c3a2b7123681d8219b4ca4b41e32a0d">
   
     
       
@@ -2193,7 +2241,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-80d698ece80c19557b26c0b825ce3d453f9d61b2e71bb061db29e4dd135c9c80">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0dc2dabf07423816ad0fe16af1774de641335a61acac58e8dcf69022855835bf">
   
     
       
@@ -2207,7 +2255,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e2296b797fb74cbe9df7f656f1dc871290be37ff9963bd12659a24968fb77466">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c172894877a64260f41bd4489260fc85076e371e17f891b171a8f9db6892ed36">
   
     
       
@@ -2243,7 +2291,7 @@ X-Powered-By: Express
   <div class="paragraph paragraph--type--table paragraph--view-mode--default">
           <div class="table-responsive">
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table dir="ltr">
-	<caption>Walter Baker Sports Centre - skating -&nbsp;September 2 to December 19</caption>
+	<caption>Walter Baker Sports Centre - skating -&nbsp;September 12, 2025 to April 5, 2026</caption>
 	<thead>
 		<tr>
 			<td>
@@ -2275,7 +2323,7 @@ X-Powered-By: Express
 	<tbody>
 		<tr>
 			<th>
-			Public Skating&nbsp;
+			Public skating&nbsp;
 			</th>
 			<td>
 			n/a&nbsp;
@@ -2411,7 +2459,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-66e3194cf1530845725511f810fe73028b3bb3fe08f1152f6c4d666125b2b09d">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-1822170a5049f89b18f3e1084675da7e047a31423515956db7e5b3f638c04ce4">
   
     
       <div class="view-header">
@@ -2812,13 +2860,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
+    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.29/js/chunk-vendors.js" async></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.29/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1408990017" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1034119395" async></script></body>
 </html>
 

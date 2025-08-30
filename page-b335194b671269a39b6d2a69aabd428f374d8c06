@@ -1,24 +1,33 @@
 GET /en/recreation-and-parks/facilities/place-listing/minto-recreation-complex-barrhaven HTTP/1.1
 Host: ottawa.ca
-xxx-use-proxy: true
+xxx-use-proxy: zyte
 
-HTTP/2.0 200 OK
-Access-Control-Allow-Credentials: true
-Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept, multipart/form-data
-Access-Control-Allow-Methods: HEAD,GET,POST,DELETE,OPTIONS,PUT
+HTTP/1.1 200 200OK
+Connection: close
+Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Alt-Svc: h3=":443"; ma=86400
-Cf-Cache-Status: DYNAMIC
-Cf-Ray: 976205fb18244411-EWR
-Content-Type: text/html; charset=utf-8
-Date: Thu, 28 Aug 2025 07:16:30 GMT
-Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
-Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=8Ed%2BrLn8OROM9VH07eDOM0uKpDXJnvXd3HrRMMJX6%2Bz1oodd%2Fo%2BTIx5S9Y6hr8w96VX4YAk8%2FXnBaygiVct%2BoKQ0FzorRomJ1hpJFE2QP4ZL43O87y7lrKlS8cdZwA%3D%3D"}]}
-Server: cloudflare
-Vary: accept-encoding
-X-Frame-Options: sameorigin
-X-Frame-Options: SAMEORIGIN
-X-Powered-By: Express
+Age: 246
+Cache-Control: max-age=2764800, public
+Cache-Tags: HIT
+Connection: keep-alive
+Content-Type: text/html; charset=UTF-8
+Content-language: en
+Date: Sat, 30 Aug 2025 09:00:43 GMT
+ETag: "1756544195-gzip"
+Expires: Sun, 19 Nov 1978 05:00:00 GMT
+Last-Modified: Sat, 30 Aug 2025 08:56:35 GMT
+Set-Cookie: incap_ses_76_243507=1A/RDzHSyU4s2LR2/wEOAbq9smgAAAAADOmc4plrdy1m+24Kc7yMGA==; path=/; Domain=.ottawa.ca
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Vary: Cookie,Accept-Encoding
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
+X-CDN: Imperva
+X-Content-Type-Options: nosniff
+X-Drupal-Cache: MISS
+X-Drupal-Dynamic-Cache: MISS
+X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
+X-Generator: Drupal 10 (https://www.drupal.org)
+X-Iinfo: 14-148458261-148458268 NNNY CT(31 46 0) RT(1756544443143 85) q(0 1 1 0) r(1 1) U24
+X-Varnish: 30508868 30317697
 
 
 <!DOCTYPE html>
@@ -30,7 +39,7 @@ X-Powered-By: Express
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/minto-recreation-complex-barrhaven" />
 <meta name="dcterms.title" content="Minto Recreation Complex - Barrhaven" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-08-26" />
+<meta name="dcterms.date" content="2025-08-28" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -44,13 +53,13 @@ X-Powered-By: Express
     <link rel="stylesheet" media="all" href="/sites/default/files/css/css_wlb9_FVo8iOCc388ZH60AOLjPX-LribjnIHAjDDK6to.css?delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css_hIkusDorgaFGgFGXEC9NC5A6M1oAesgy7eoj0vqGGoQ.css?delta=1&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
 <link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
-<link rel="stylesheet" media="all" href="/sites/default/files/css/css_51Bb-4Zjct-9lU5HQy0U_61TzM5g45ZukpPpokSRsnM.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
-<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.28/css/app.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css__BzoYDnbHMmrYiFSh96avEQ3e9ez5OKomOkGZuSJfmQ.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
+<link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.29/css/app.css" />
 
     <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031636","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx9UsuSAyEI_CFnvOz_WKjEkKhYgklmv37NPmdy2EsXTYNQjZ5ZRTu0N-tB0Pgd_w2XiywZFEX3esrsIS-iW6aa9kpBEUgoJlwxknJ3VCNW9ZnD1e5iE7ijrdwLZHpHgw-db11t7KNBXr-pScwpo1NINk145Stc4HFMFpNh46EukgS-Yd8sVwycZ_59s08wfDpRQHfm0cXuiTs9F1LFblg1gNMzFrSzO0OTOYLTnHTQXrzYSzMej_VOMaEehNap6iIcaHb6ocpVDgVCilRan_svUCFvSkFMgw5p2nyWH5v-MuuobfhMcsZoGrfRnIx-w83uyVTu2D05LB6jPbAlZJrX-b9kiHKZ9-pGNlEsX1_nRngX-4lr4TgyfgCH7u4z","theme":"ottca_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NDWQN39"]},"popup_survey":{"frequency":"10","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"2b10bb50a9c4a88da976ceacddbf75faec45ec1bdb36757dcce69ecfb8e7c867"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
-<script src="/modules/contrib/google_tag/js/gtag.js?t1clew"></script>
-<script src="/modules/contrib/google_tag/js/gtm.js?t1clew"></script>
+<script src="/modules/contrib/google_tag/js/gtag.js?t1pj7h"></script>
+<script src="/modules/contrib/google_tag/js/gtm.js?t1pj7h"></script>
 <script src="https://cdn.jsdelivr.net/npm/powerbi-client@2.22.1/dist/powerbi.min.js"></script>
 <script src="/modules/contrib/powerbi_embed/js/powerbi_embed-customizer.js?v=1.0.0"></script>
 
@@ -172,7 +181,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b45efef4b423ec970804bf98389ba25166fe654e9bf679cb48f872ee6c09f5ae">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-311e00a26b23fa2870a0e75c0d07c4c521588f54f4c5cc5b40568e0d348d60d7">
   
     
       
@@ -186,7 +195,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f1883b3867c8cd4fe5aecfac43ceaefeba2cf735a0f21ddd53824ea9ccd6a1d1">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-739c8f3ee2da36160c846020928892f8e9be1c38304ed86dc635f350ce5c9c87">
   
     
       
@@ -236,8 +245,8 @@ X-Powered-By: Express
 
   
             <div class="clearfix text-formatted field field--name-field-description field--type-text-long field--label-hidden field__item"><p>The Minto Recreation Complex - Barrhaven was recently listed by Chatelaine Magazine as one of the <strong>top 10 best indoor pools in Canada</strong>! Read the <a href="https://www.chatelaine.com/living/best-indoor-pools-canada/#gallery/best-indoor-pools-in-canada/3">Best Indoor Pools in Canada article</a>.</p>
-<p>The Minto Recreation Complex - Barrhaven&nbsp;includes a six lane, 25&nbsp;metre&nbsp;lap pool with three&nbsp;metre&nbsp;and one&nbsp;metre&nbsp;diving boards, and an access ramp (Pool Rentals, please contact&nbsp;<a href="/cdn-cgi/l/email-protection#09647b6a6b49667d7d687e68276a68"><span class="__cf_email__" data-cfemail="98f5eafbfad8f7ececf9eff9b6fbf9">[email&#160;protected]</span></a>). Two&nbsp;NHL sized ice rinks (one rink is accessible), with accessible change rooms (please contact City Wide Allocations&nbsp;<a href="/cdn-cgi/l/email-protection#ec9f9c839e989fac8398988d9b8dc28f8d"><span class="__cf_email__" data-cfemail="4c3f3c233e383f0c2338382d3b2d622f2d">[email&#160;protected]</span></a>&nbsp;for ice rentals).</p>
-<p>Outside find an artificial turf sports field designed to meet&nbsp;CFL&nbsp;and FIFA design standards (please contact City Wide Allocations <a href="/cdn-cgi/l/email-protection#4330332c313730032c37372234226d2022"><span class="__cf_email__" data-cfemail="92e1e2fde0e6e1d2fde6e6f3e5f3bcf1f3">[email&#160;protected]</span></a>&nbsp;for field rentals).</p>
+<p>The Minto Recreation Complex - Barrhaven&nbsp;includes a six lane, 25&nbsp;metre&nbsp;lap pool with three&nbsp;metre&nbsp;and one&nbsp;metre&nbsp;diving boards, and an access ramp (Pool Rentals, please contact&nbsp;<a href="mailto:mrcb@ottawa.ca">mrcb@ottawa.ca</a>). Two&nbsp;NHL sized ice rinks (one rink is accessible), with accessible change rooms (please contact City Wide Allocations&nbsp;<a href="mailto:sports@ottawa.ca">sports@ottawa.ca</a>&nbsp;for ice rentals).</p>
+<p>Outside find an artificial turf sports field designed to meet&nbsp;CFL&nbsp;and FIFA design standards (please contact City Wide Allocations <a href="mailto:sports@ottawa.ca">sports@ottawa.ca</a>&nbsp;for field rentals).</p>
 <p>Artwork suspended from the ceiling named&nbsp;Mr.&nbsp;Kurokawa.&nbsp;</p>
 <p>Minto,&nbsp;an active sponsor of community initiatives, is proud to be associated with the City of Ottawa's Community Champions Program.</p>
 </div>
@@ -278,11 +287,16 @@ X-Powered-By: Express
 </ul>
 </li>
 </ul>
-<h3>Closure</h3>
+<h3>Closures</h3>
 <ul>
 <li><strong>September 1 to 14</strong>
 <ul>
 <li>The gymnasium is closed.</li>
+</ul>
+</li>
+<li><strong>September 2 to 7</strong>
+<ul>
+<li>The walking track is closed for maintenance.</li>
 </ul>
 </li>
 </ul>
@@ -357,7 +371,7 @@ X-Powered-By: Express
   <div class="field field--name-field-emails field--type-email field--label-inline clearfix">
     <div class="font-weight-normal field__label">Email</div>
           <div class="field__items">
-              <div class="field__item"><a href="/cdn-cgi/l/email-protection#f6bba4b5b4b6998282978197d89597"><span class="__cf_email__" data-cfemail="e3aeb1a0a1a38c9797829482cd8082">[email&#160;protected]</span></a></div>
+              <div class="field__item"><a href="mailto:MRCB@ottawa.ca">MRCB@ottawa.ca</a></div>
               </div>
       </div>
 
@@ -475,7 +489,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8d5c1d1a9bb02862f2ab42c1b437daf18bcfe41e9025170c6e222c6e81cd4c46">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9edac213f7004f29570b07f312c34dcc059591e8b62bc5d87e44f1d7d44675de">
   
     
       
@@ -489,7 +503,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-77ac4ed227766ad51c32518a22c5c187e0db2216eb39a563471aea021a549c41">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-26bebc4a80298467d0e47b76b3c3565fdc54bf5b7b948df9e17504a6a3a1f46f">
   
     
       
@@ -676,7 +690,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f633f7a35bb6ecd70540a0e3921d17c072e9e25d94d8c7da0ea50f83535c6be5">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-09bc6b455f8977fb92b4fbcaa1a94a6da6560127f93837d738e4364be6ba6d73">
   
     
       
@@ -690,7 +704,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2652b60a8ac7a5fbcc568471052e2e1cda3fa19bad6bd6d782f79f3e682af98a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-85617923efac35c267e7c6c91c511b2405030dc5e2cc63750d62f49d9030bfb0">
   
     
       
@@ -1131,7 +1145,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-10fc3fdc7975065c9c85698dd99497454ad84ff13e980788e46eeaf4e8dcd865">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3554e373f36a5535920dcd49f6a7b12622522325e9285e16dceaa4d1c383cdae">
   
     
       
@@ -1145,7 +1159,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6d8c6ebd0d1b55b5c15492d87026058140ef28a434ad9d60d27e7e66c2757245">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-211a3cda5b9d30a61964a18a2b4d9bea272ce5fa4f2f60430378dd929c697802">
   
     
       
@@ -1280,7 +1294,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-bf7db641c1b79133bcf9fae6a057911eef5eaf4b90d823c88071c20e0e8323f7">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-697efc97993ab0fc052cf57b96135bb59ded95d7f6cf16f2f207ec6bca836fe2">
   
     
       
@@ -1294,7 +1308,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-904f84213c07bc872a7e370f2b20071854ed6d5698dd4dfd9f67c044d819371d">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4e77499ff2ed8d9bb6d8bb7092e28fa0bb2db33149ebbbae0616e84848247be0">
   
     
       
@@ -1746,7 +1760,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c3a64a818a239798c2d10685fbd6b9798ea0fc55089718466ca957e672232121">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-46ad0118150427e501573f02723844076ea4bde757944b2f4cd6d76a69dacf33">
   
     
       
@@ -1760,7 +1774,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4f812df7de02b6cfe145a4a91835ea521d579f75bd86fe543f8fa628bd924055">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5505a41069bc90ee6a7a79c607eec3793c8f74338606745438894ec1e1168662">
   
     
       
@@ -2075,7 +2089,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c06de71049d4ee700791d803fe535b9c6c010685334ed9c3829bdaf62250b858">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5715e6a76ebe29907fdd2238709f9f89c8dda8854ad81ed7d7f344d45dfc327e">
   
     
       
@@ -2089,7 +2103,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f41ff024a7f0e9fcab92b1f195ff5f805d1fff675f675d4f844d56373c0cd421">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-90d6e41a13d2fee9e1791956133ee7ecd6f07da934d8dae734dc5986b01cb16d">
   
     
       
@@ -2144,11 +2158,16 @@ X-Powered-By: Express
 </ul>
 </li>
 </ul>
-<h3>Closure</h3>
+<h3>Closures</h3>
 <ul>
 <li><strong>September 1 to 14</strong>
 <ul>
 <li>The gymnasium is closed.</li>
+</ul>
+</li>
+<li><strong>September 2 to 7</strong>
+<ul>
+<li>The walking track is closed for maintenance.</li>
 </ul>
 </li>
 </ul>
@@ -2473,7 +2492,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a01a6a186423df8c1b5b8e36ddf1fd05f0838dce30523c3b6eb65dfef76d1482">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d3aa8af59ba255dc86bc3f22a28791c581303eabcc77e96b006bf024852b443f">
   
     
       
@@ -2487,7 +2506,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4bd1bebc1ddea3eef248ef0b55b338cefed9476ab97a6f4486702b2924967f28">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2b2c6633392e9b743c1468e58cd20c61e44e1fc7900b7a81f4ce1a542cb6a074">
   
     
       
@@ -2801,7 +2820,7 @@ X-Powered-By: Express
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-737cb0e2ea0bdc60c4fcd094d1ddfc635057ea206b56b2a5f44d07ed06cdc44c">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-d91d706313305d6785428c170632b3cee81c82d769196867793bdc38d5d55109">
   
     
       <div class="view-header">
@@ -3202,13 +3221,13 @@ Thank you for considering to help out.
     </div>
   </div>
 
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.28/js/chunk-vendors.js" async></script>
-<script src="//ottux.ottawa.ca/widgets/v1.4.28/js/app.js" async></script>
+    <script src="/sites/default/files/js/js_HSYNvwK-WEDPiwIDfwTTeKykBpedxcb32747ImXiZgc.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.29/js/chunk-vendors.js" async></script>
+<script src="//ottux.ottawa.ca/widgets/v1.4.29/js/app.js" async></script>
 <script src="/sites/default/files/js/js_Fiqtt-_OBljtMj9EMC6h-z4NOxU8wGxZmYU5RJ3qm68.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1323753813" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=170112361" async></script></body>
 </html>
 
