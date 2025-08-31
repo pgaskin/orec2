@@ -6,19 +6,19 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 315
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Sat, 30 Aug 2025 09:44:48 GMT
-ETag: "1756547087-gzip"
+Date: Sun, 31 Aug 2025 08:20:58 GMT
+ETag: "1756628141-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Sat, 30 Aug 2025 09:44:47 GMT
-Set-Cookie: visid_incap_243507=jSU1XPw7QAGZyHh69MTp/Q/IsmgAAAAAQUIPAAAAAADYyu64FOdFCEXW7rZTAo+o; expires=Sun, 30 Aug 2026 06:32:53 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=z1g2FnkYDRirlNUsaXmSIAAAAAASGcozei6W8eSDdyy2Y7Kn; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_1347_243507=9OrqDKv/33FgtFGGw4GxEhDIsmgAAAAAL5k0jo9xZfhnSKMEz/AWNw==; path=/; Domain=.ottawa.ca
+Last-Modified: Sun, 31 Aug 2025 08:15:41 GMT
+Set-Cookie: visid_incap_243507=1sfVY1uVRz6RLRRQUKjshuoFtGgAAAAAQUIPAAAAAABNvUa5iSrLpsOAF8yUPwq+; expires=Mon, 31 Aug 2026 08:12:58 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=MwdnGlz233AsxLXqaXmSIAAAAAC6QzXBKyR2UB6/lsovAA2h; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_130_243507=OUviDRAssUDeOj1OS9vNAeoFtGgAAAAAYYgh52+obaEhfNrLoJREig==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
@@ -28,8 +28,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 2-14650245-14650246 NNNY CT(32 47 0) RT(1756547087441 77) q(0 0 0 0) r(14 14) U24
-X-Varnish: 26835447
+X-Iinfo: 45-42990417-42990420 NNNY CT(13 21 0) RT(1756628458615 204) q(0 0 0 0) r(0 0) U24
+X-Varnish: 28893907 21853035
 
 
 <!DOCTYPE html>
@@ -58,7 +58,7 @@ X-Varnish: 26835447
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css__BzoYDnbHMmrYiFSh96avEQ3e9ez5OKomOkGZuSJfmQ.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
 <link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.29/css/app.css" />
 
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031637","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx9UsuSAyEI_CFnvOz_WKjEkKhYgklmv37NPmdy2EsXTYNQjZ5ZRTu0N-tB0Pgd_w2XiywZFEX3esrsIS-iW6aa9kpBEUgoJlwxknJ3VCNW9ZnD1e5iE7ijrdwLZHpHgw-db11t7KNBXr-pScwpo1NINk145Stc4HFMFpNh46EukgS-Yd8sVwycZ_59s08wfDpRQHfm0cXuiTs9F1LFblg1gNMzFrSzO0OTOYLTnHTQXrzYSzMej_VOMaEehNap6iIcaHb6ocpVDgVCilRan_svUCFvSkFMgw5p2nyWH5v-MuuobfhMcsZoGrfRnIx-w83uyVTu2D05LB6jPbAlZJrX-b9kiHKZ9-pGNlEsX1_nRngX-4lr4TgyfgCH7u4z","theme":"ottca_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NDWQN39"]},"popup_survey":{"frequency":"10","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"2b10bb50a9c4a88da976ceacddbf75faec45ec1bdb36757dcce69ecfb8e7c867"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031637","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx9UsuSAyEI_CFnvOz_WKjEkKhYgklmv37NPmdy2EsXTYNQjZ5ZRTu0N-tB0Pgd_w2XiywZFEX3esrsIS-iW6aa9kpBEUgoJlwxknJ3VCNW9ZnD1e5iE7ijrdwLZHpHgw-db11t7KNBXr-pScwpo1NINk145Stc4HFMFpNh46EukgS-Yd8sVwycZ_59s08wfDpRQHfm0cXuiTs9F1LFblg1gNMzFrSzO0OTOYLTnHTQXrzYSzMej_VOMaEehNap6iIcaHb6ocpVDgVCilRan_svUCFvSkFMgw5p2nyWH5v-MuuobfhMcsZoGrfRnIx-w83uyVTu2D05LB6jPbAlZJrX-b9kiHKZ9-pGNlEsX1_nRngX-4lr4TgyfgCH7u4z","theme":"ottca_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NDWQN39"]},"popup_survey":{"frequency":"10","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"4c11b7b791a1efe68969b1e899b7a3ad803a0bdf40bb7e4561cb272b92e9e653"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="/modules/contrib/google_tag/js/gtag.js?t1pj7h"></script>
 <script src="/modules/contrib/google_tag/js/gtm.js?t1pj7h"></script>
@@ -183,7 +183,7 @@ X-Varnish: 26835447
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7a9c055656e758638523455331cb56a7b908674eef54731f1b0fe7cf53ed7a88">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1404d9b9a49659a199849e8efb149e351a4b6b348fa5d8da6a17e945dd1d5951">
   
     
       
@@ -197,7 +197,7 @@ X-Varnish: 26835447
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-32854a69690ea4fdb31032f82325b65373a94ac3f29f8edca9942a3f2862ae1f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d2102fc10f9c8a44150764f4cf22f1105516d424e1dc1baf67781fddfc516aa8">
   
     
       
@@ -400,13 +400,13 @@ X-Varnish: 26835447
   
             
             <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">    <picture>
-                  <source srcset="/sites/default/files/styles/rectangle_xl/public/images/featured/Exterior.jpg?itok=p8Kc2570 1x, /sites/default/files/styles/2x_rectangle_xl/public/images/featured/Exterior.jpg?itok=WM0R2v-S 2x" media="all and (min-width: 1200px)" type="image/jpeg" width="1020" height="680"/>
-              <source srcset="/sites/default/files/styles/rectangle_lg/public/images/featured/Exterior.jpg?itok=3QdC1NKX 1x, /sites/default/files/styles/2x_rectangle_lg/public/images/featured/Exterior.jpg?itok=4fkANo3R 2x" media="all and (min-width: 992px)" type="image/jpeg" width="900" height="600"/>
-              <source srcset="/sites/default/files/styles/rectangle_lg/public/images/featured/Exterior.jpg?itok=3QdC1NKX 1x, /sites/default/files/styles/2x_rectangle_lg/public/images/featured/Exterior.jpg?itok=4fkANo3R 2x" media="all and (min-width: 768px)" type="image/jpeg" width="900" height="600"/>
-              <source srcset="/sites/default/files/styles/rectangle_lg/public/images/featured/Exterior.jpg?itok=3QdC1NKX 1x" media="all and (min-width: 641px)" type="image/jpeg" width="900" height="600"/>
-              <source srcset="/sites/default/files/styles/rectangle_lg/public/images/featured/Exterior.jpg?itok=3QdC1NKX 1x" media="all and (min-width: 481px)" type="image/jpeg" width="900" height="600"/>
-              <source srcset="/sites/default/files/styles/rectangle_lg/public/images/featured/Exterior.jpg?itok=3QdC1NKX 1x" type="image/jpeg" width="900" height="600"/>
-                  <img loading="eager" width="120" height="80" src="/sites/default/files/styles/rectangle_xs/public/images/featured/Exterior.jpg?itok=j0YLPmDc" alt="François Dupuis Recreation Centre" class="img-fluid w-100" />
+                  <source srcset="/sites/default/files/styles/rectangle_xl/public/images/featured/Exterior.jpg?itok=7ijzNIsO 1x, /sites/default/files/styles/2x_rectangle_xl/public/images/featured/Exterior.jpg?itok=lML32hcR 2x" media="all and (min-width: 1200px)" type="image/jpeg" width="1020" height="680"/>
+              <source srcset="/sites/default/files/styles/rectangle_lg/public/images/featured/Exterior.jpg?itok=0MuPlKld 1x, /sites/default/files/styles/2x_rectangle_lg/public/images/featured/Exterior.jpg?itok=AnAdAlEx 2x" media="all and (min-width: 992px)" type="image/jpeg" width="900" height="600"/>
+              <source srcset="/sites/default/files/styles/rectangle_lg/public/images/featured/Exterior.jpg?itok=0MuPlKld 1x, /sites/default/files/styles/2x_rectangle_lg/public/images/featured/Exterior.jpg?itok=AnAdAlEx 2x" media="all and (min-width: 768px)" type="image/jpeg" width="900" height="600"/>
+              <source srcset="/sites/default/files/styles/rectangle_lg/public/images/featured/Exterior.jpg?itok=0MuPlKld 1x" media="all and (min-width: 641px)" type="image/jpeg" width="900" height="600"/>
+              <source srcset="/sites/default/files/styles/rectangle_lg/public/images/featured/Exterior.jpg?itok=0MuPlKld 1x" media="all and (min-width: 481px)" type="image/jpeg" width="900" height="600"/>
+              <source srcset="/sites/default/files/styles/rectangle_lg/public/images/featured/Exterior.jpg?itok=0MuPlKld 1x" type="image/jpeg" width="900" height="600"/>
+                  <img loading="eager" width="120" height="80" src="/sites/default/files/styles/rectangle_xs/public/images/featured/Exterior.jpg?itok=U-UIUiEg" alt="François Dupuis Recreation Centre" class="img-fluid w-100" />
 
   </picture>
 
@@ -462,7 +462,7 @@ X-Varnish: 26835447
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-66e9cfb14228b9d7f1539fe51a92e07d193c57c9da152ba15be39d0b5ef9a54c">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-079e2fba22e248e8b57e0fbcaca45d8d1b482369c9468130163181f8cb7c287b">
   
     
       
@@ -476,7 +476,7 @@ X-Varnish: 26835447
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d7c421f0dcd7c8d83cff79ffed8c781b4bf769dd8a4f160dbee6b1efef4399d2">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b19c57e42c50f789379ea4e344c535a6d2ea24014f464304663cf5e1c17e4bd6">
   
     
       
@@ -1198,7 +1198,7 @@ X-Varnish: 26835447
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-103959a94f88e205e043009c40cfc030a561aaafe6064c43cf77dfbeb0b4da43">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6a6f93f452d2dd83c3320fa1f514d1979ac4fa4820c4cfb96445723dc8406289">
   
     
       
@@ -1212,7 +1212,7 @@ X-Varnish: 26835447
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9e0dc483611ff8a176234d082777e20f7c134d498b6681b73474f23bf2c82a0f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-047b64048c195328626b3570bf082458574bd63aa05efb954df0fd8e8beb5c57">
   
     
       
@@ -1380,7 +1380,7 @@ X-Varnish: 26835447
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-679bd1b998b6dcc2dce8e6c15c3f55b2ad80cfcb6ca446775def467d7eba7960">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-037439fbc57c9369ff342c9c20f2f7bd02d8e19bbeed8f2d37ed1216dfe8189a">
   
     
       
@@ -1394,7 +1394,7 @@ X-Varnish: 26835447
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-fffac43475c312dda73e9407607beaef81f6bd57181c8a5725b3c89a5a8c5a53">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-88d7c1785b86b2579b471224dab317cbfb1c7463fb71264c09adb7aea1ac69e1">
   
     
       
@@ -1767,7 +1767,7 @@ X-Varnish: 26835447
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f82146792d582a6477017f3d5f858d0ae773dada055efa6510965d2273c36eb6">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e41b70f30166a8f311b2955436ce26ffb24ff8cb5a304b513ffce840ba160f24">
   
     
       
@@ -1781,7 +1781,7 @@ X-Varnish: 26835447
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b0786e6d1cb1ed9ab800cffad0c34de17a9a6784fef472fbd076afabd996b0f5">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ed51b11d7db0a3fe8ee74640bda0ae731c08e33b69f61ed7a77b71c1a14bad99">
   
     
       
@@ -1985,7 +1985,7 @@ X-Varnish: 26835447
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a9a55508edcb1f05b2d69aaa70e49f8bc6cf272d42b0c0199f7afcfc11e1c0ce">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7ca3d3e87b1bc2ff3d514ed588bb4c33fa7bb78b98a923c4bc2447a4b67ef66c">
   
     
       
@@ -1999,7 +1999,7 @@ X-Varnish: 26835447
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4c6c2c3f604f65a6345fc8aeb08b4c7c4547575ad6dde8bfe41c21cf2961c8dc">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-df15c1a898cf7f36aafd1f3e2e4e51a48ae1d3f074ed3810527eb1649c192913">
   
     
       
@@ -2218,7 +2218,7 @@ X-Varnish: 26835447
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-f5791c0b00db1d78a1a75d6620ffc148fc8cdba739e37344b8cb8c5ec183ff7b">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-08e16e67478b578faad7a42c2b2416284f370a6a73d787219bc7c16711ec1f39">
   
     
       <div class="view-header">
@@ -2623,6 +2623,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1472597355" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1976912521" async></script></body>
 </html>
 

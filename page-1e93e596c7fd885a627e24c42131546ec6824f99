@@ -6,27 +6,28 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 208
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Sat, 30 Aug 2025 09:46:17 GMT
-ETag: "1756547177-gzip"
+Date: Sun, 31 Aug 2025 08:22:51 GMT
+ETag: "1756628361-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Sat, 30 Aug 2025 09:46:17 GMT
+Last-Modified: Sun, 31 Aug 2025 08:19:21 GMT
+Set-Cookie: incap_ses_1607_243507=+KM9TuiZGh3tQwJtbDZNFloGtGgAAAAASgnDkDU6a5NadYI4a7iKgg==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
 X-CDN: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 14-158904544-158904558 NNNN CT(31 42 0) RT(1756547177170 82) q(0 0 1 -1) r(1 4) U24
-X-Varnish: 29796426
+X-Iinfo: 45-74915337-74915342 NNNY CT(32 40 0) RT(1756628571026 101) q(0 0 0 16) r(1 1) U24
+X-Varnish: 30942053 30941983
 
 
 <!DOCTYPE html>
@@ -55,7 +56,7 @@ X-Varnish: 29796426
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css__BzoYDnbHMmrYiFSh96avEQ3e9ez5OKomOkGZuSJfmQ.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdT-0OgyAMfCEmf_Y-pkCDzEIJLdPt6WfmjGZ_mvtoLneOWUUb1Lt1IGjcySOxA7qJviiVeHUyikBEMX7GkJTbmErAoo7Yz_aCjeeGNrRegQZ4wLoLhVsGSm80uOoWPh8vP2pY1cOoE2b8r3G1NtzXYUkhopoKDeJWb5Ij7VSGXmp3lGTCYOQlinmf-0y4iP3eIXPohB__zmrK" />
 <link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.29/css/app.css" />
 
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031609","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx9UcuSwyAM-yESLvs_GUM81I3BDDZt069f9p30sBeNZAnPWAQRU2tQ33wARRcO-pdOV50YDNWOfmIJwJPazlTS0cmoCgnVxQ1XMmkLlRWLBZa4-QN3URr6Ii0D0xMdPmzs2vzaegWev6VLIolxMUg-DXjVM1zhcR5mx_Dc_Qc4MYuw2AUz-ijMUHXEJI30yXu552gN3h_zndaEdjJqo2KTSqTxMnQzKXoKKBlSrk1uOEEB3o2iugoN0qjqoj-n_k3mXmoPTHrB1VWpvS7a2w13fxTDuWMLtGAOuPqTmiLTaPj_SFeTPDpvTnc1zF_ffyO8q__EOcvaGd8B8xXV_Q","theme":"ottca_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NDWQN39"]},"popup_survey":{"frequency":"10","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"2b10bb50a9c4a88da976ceacddbf75faec45ec1bdb36757dcce69ecfb8e7c867"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031609","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx9UcuSwyAM-yESLvs_GUM81I3BDDZt069f9p30sBeNZAnPWAQRU2tQ33wARRcO-pdOV50YDNWOfmIJwJPazlTS0cmoCgnVxQ1XMmkLlRWLBZa4-QN3URr6Ii0D0xMdPmzs2vzaegWev6VLIolxMUg-DXjVM1zhcR5mx_Dc_Qc4MYuw2AUz-ijMUHXEJI30yXu552gN3h_zndaEdjJqo2KTSqTxMnQzKXoKKBlSrk1uOEEB3o2iugoN0qjqoj-n_k3mXmoPTHrB1VWpvS7a2w13fxTDuWMLtGAOuPqTmiLTaPj_SFeTPDpvTnc1zF_ffyO8q__EOcvaGd8B8xXV_Q","theme":"ottca_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NDWQN39"]},"popup_survey":{"frequency":"10","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"4c11b7b791a1efe68969b1e899b7a3ad803a0bdf40bb7e4561cb272b92e9e653"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="/modules/contrib/google_tag/js/gtag.js?t1pj7h"></script>
 <script src="/modules/contrib/google_tag/js/gtm.js?t1pj7h"></script>
@@ -180,7 +181,7 @@ X-Varnish: 29796426
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b7fb8ddb9c2a7af2ddbd698a8030c2aa269c8ea51bee2103fa4781871d2af2ff">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-290beb279a2e6a0c8e953b501a2988b5f7623048d55447d1419d2a36701dda64">
   
     
       
@@ -194,7 +195,7 @@ X-Varnish: 29796426
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d6bc163edbc3bacd94094efa2adefe06048fc924b88288f612a9a085ec7df73b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-33bf21e7ec4d6e21d3b352e725fb4119e0ac21faf6853ae48d6a36233bef9029">
   
     
       
@@ -723,6 +724,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=689359747" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=111370397" async></script></body>
 </html>
 

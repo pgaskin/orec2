@@ -6,19 +6,19 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 32
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Sat, 30 Aug 2025 09:47:20 GMT
-ETag: "1756547206-gzip"
+Date: Sun, 31 Aug 2025 08:23:59 GMT
+ETag: "1756628638-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Sat, 30 Aug 2025 09:46:46 GMT
-Set-Cookie: visid_incap_243507=/CNOYCVJQF+Ak5L79bSGMKfIsmgAAAAAQUIPAAAAAABgCWLzqfLPQkAyT/d6WVS6; expires=Sun, 30 Aug 2026 06:23:08 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=FmFsWT1rnVNW2lLXaXmSIAAAAABtxk9CS5AHXmYkd1fAHFV8; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_1700_243507=eDX+GwWERh4NlZhDfJ2XF6jIsmgAAAAADhnnwi3Y1EmyLP1M7sD24w==; path=/; Domain=.ottawa.ca
+Last-Modified: Sun, 31 Aug 2025 08:23:58 GMT
+Set-Cookie: visid_incap_243507=BfPWBuAtSEKWbKRYUzZbC50GtGgAAAAAQUIPAAAAAAA6Fvf+VDyJgCFD8PBUQ1o9; expires=Mon, 31 Aug 2026 08:17:39 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=Px9NObZTvFQGZ//SaXmSIAAAAAAKLTL40CNevJiRTxl8PmSx; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_1539_243507=FC2GI+YSslOdQlS+w6BbFZ4GtGgAAAAA4rYQA/GQ+0NR/6k9/soToA==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
@@ -28,8 +28,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 57-248377205-248374232 PNNN RT(1756547240270 100) q(0 0 0 0) r(1 1) U24
-X-Varnish: 30193927 30382878
+X-Iinfo: 8-25511486-25511487 NNNN CT(31 44 0) RT(1756628638099 103) q(0 0 1 1) r(1 9) U24
+X-Varnish: 28552910
 
 
 <!DOCTYPE html>
@@ -58,7 +58,7 @@ X-Varnish: 30193927 30382878
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css__BzoYDnbHMmrYiFSh96avEQ3e9ez5OKomOkGZuSJfmQ.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
 <link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.29/css/app.css" />
 
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031633","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx9UsuSAyEI_CFnvOz_WKjEkKhYgklmv37NPmdy2EsXTYNQjZ5ZRTu0N-tB0Pgd_w2XiywZFEX3esrsIS-iW6aa9kpBEUgoJlwxknJ3VCNW9ZnD1e5iE7ijrdwLZHpHgw-db11t7KNBXr-pScwpo1NINk145Stc4HFMFpNh46EukgS-Yd8sVwycZ_59s08wfDpRQHfm0cXuiTs9F1LFblg1gNMzFrSzO0OTOYLTnHTQXrzYSzMej_VOMaEehNap6iIcaHb6ocpVDgVCilRan_svUCFvSkFMgw5p2nyWH5v-MuuobfhMcsZoGrfRnIx-w83uyVTu2D05LB6jPbAlZJrX-b9kiHKZ9-pGNlEsX1_nRngX-4lr4TgyfgCH7u4z","theme":"ottca_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NDWQN39"]},"popup_survey":{"frequency":"10","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"2b10bb50a9c4a88da976ceacddbf75faec45ec1bdb36757dcce69ecfb8e7c867"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031633","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx9UsuSAyEI_CFnvOz_WKjEkKhYgklmv37NPmdy2EsXTYNQjZ5ZRTu0N-tB0Pgd_w2XiywZFEX3esrsIS-iW6aa9kpBEUgoJlwxknJ3VCNW9ZnD1e5iE7ijrdwLZHpHgw-db11t7KNBXr-pScwpo1NINk145Stc4HFMFpNh46EukgS-Yd8sVwycZ_59s08wfDpRQHfm0cXuiTs9F1LFblg1gNMzFrSzO0OTOYLTnHTQXrzYSzMej_VOMaEehNap6iIcaHb6ocpVDgVCilRan_svUCFvSkFMgw5p2nyWH5v-MuuobfhMcsZoGrfRnIx-w83uyVTu2D05LB6jPbAlZJrX-b9kiHKZ9-pGNlEsX1_nRngX-4lr4TgyfgCH7u4z","theme":"ottca_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NDWQN39"]},"popup_survey":{"frequency":"10","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"4c11b7b791a1efe68969b1e899b7a3ad803a0bdf40bb7e4561cb272b92e9e653"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="/modules/contrib/google_tag/js/gtag.js?t1pj7h"></script>
 <script src="/modules/contrib/google_tag/js/gtm.js?t1pj7h"></script>
@@ -183,7 +183,7 @@ X-Varnish: 30193927 30382878
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-86fba67b738d4ca993782db4ab552bc9e6a00329897bf7024dcc000d9a4f9b05">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-467888d8b0ba9861aa96507ef8bec4b72d3b1451074ea43992536b9f3f051241">
   
     
       
@@ -197,7 +197,7 @@ X-Varnish: 30193927 30382878
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9f5c9bcf857568d4492b1536fa26fced13e41692a7c2ee45be6cde008a481035">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-780199c27bcd3af3c202ae0baea13ea348fb80e9f0b4400440d4895b68519e13">
   
     
       
@@ -437,13 +437,13 @@ X-Varnish: 30193927 30382878
   
             
             <div class="field field--name-field-media-image field--type-image field--label-hidden field__item">    <picture>
-                  <source srcset="/sites/default/files/styles/rectangle_xl/public/images/featured/DSC_0195.JPG?itok=FXvrFuX6 1x, /sites/default/files/styles/2x_rectangle_xl/public/images/featured/DSC_0195.JPG?itok=3vhp4RWO 2x" media="all and (min-width: 1200px)" type="image/jpeg" width="1027" height="680"/>
-              <source srcset="/sites/default/files/styles/rectangle_lg/public/images/featured/DSC_0195.JPG?itok=lASv2bWT 1x, /sites/default/files/styles/2x_rectangle_lg/public/images/featured/DSC_0195.JPG?itok=saM4jw03 2x" media="all and (min-width: 992px)" type="image/jpeg" width="906" height="600"/>
-              <source srcset="/sites/default/files/styles/rectangle_lg/public/images/featured/DSC_0195.JPG?itok=lASv2bWT 1x, /sites/default/files/styles/2x_rectangle_lg/public/images/featured/DSC_0195.JPG?itok=saM4jw03 2x" media="all and (min-width: 768px)" type="image/jpeg" width="906" height="600"/>
-              <source srcset="/sites/default/files/styles/rectangle_lg/public/images/featured/DSC_0195.JPG?itok=lASv2bWT 1x" media="all and (min-width: 641px)" type="image/jpeg" width="906" height="600"/>
-              <source srcset="/sites/default/files/styles/rectangle_lg/public/images/featured/DSC_0195.JPG?itok=lASv2bWT 1x" media="all and (min-width: 481px)" type="image/jpeg" width="906" height="600"/>
-              <source srcset="/sites/default/files/styles/rectangle_lg/public/images/featured/DSC_0195.JPG?itok=lASv2bWT 1x" type="image/jpeg" width="906" height="600"/>
-                  <img loading="eager" width="121" height="80" src="/sites/default/files/styles/rectangle_xs/public/images/featured/DSC_0195.JPG?itok=g739OMBQ" alt="Splash wave pool" class="img-fluid w-100" />
+                  <source srcset="/sites/default/files/styles/rectangle_xl/public/images/featured/DSC_0195.JPG?itok=PmJD2v1E 1x, /sites/default/files/styles/2x_rectangle_xl/public/images/featured/DSC_0195.JPG?itok=z-qvIclH 2x" media="all and (min-width: 1200px)" type="image/jpeg" width="1027" height="680"/>
+              <source srcset="/sites/default/files/styles/rectangle_lg/public/images/featured/DSC_0195.JPG?itok=iiPeZrQa 1x, /sites/default/files/styles/2x_rectangle_lg/public/images/featured/DSC_0195.JPG?itok=7PMKkuuc 2x" media="all and (min-width: 992px)" type="image/jpeg" width="906" height="600"/>
+              <source srcset="/sites/default/files/styles/rectangle_lg/public/images/featured/DSC_0195.JPG?itok=iiPeZrQa 1x, /sites/default/files/styles/2x_rectangle_lg/public/images/featured/DSC_0195.JPG?itok=7PMKkuuc 2x" media="all and (min-width: 768px)" type="image/jpeg" width="906" height="600"/>
+              <source srcset="/sites/default/files/styles/rectangle_lg/public/images/featured/DSC_0195.JPG?itok=iiPeZrQa 1x" media="all and (min-width: 641px)" type="image/jpeg" width="906" height="600"/>
+              <source srcset="/sites/default/files/styles/rectangle_lg/public/images/featured/DSC_0195.JPG?itok=iiPeZrQa 1x" media="all and (min-width: 481px)" type="image/jpeg" width="906" height="600"/>
+              <source srcset="/sites/default/files/styles/rectangle_lg/public/images/featured/DSC_0195.JPG?itok=iiPeZrQa 1x" type="image/jpeg" width="906" height="600"/>
+                  <img loading="eager" width="121" height="80" src="/sites/default/files/styles/rectangle_xs/public/images/featured/DSC_0195.JPG?itok=3EpSlm0d" alt="Splash wave pool" class="img-fluid w-100" />
 
   </picture>
 
@@ -501,7 +501,7 @@ X-Varnish: 30193927 30382878
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-63ab02d11abc6fe4bacffdbef38e7a6c491498809f0f1e556d51a18f12ab2d95">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-53d84b9d0b57aa4f03653c1cd7cde3ce29fa170d6ff68e53c77243cf4f845b77">
   
     
       
@@ -515,7 +515,7 @@ X-Varnish: 30193927 30382878
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-37038349fe1e89bda7b6274d82322159f7183b8a306cd68542b3e9f5fe315867">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a5714f50190ae78c7d8677ce32307a934d096b4a94e1c97ebd9715cd816433f1">
   
     
       
@@ -560,145 +560,6 @@ X-Varnish: 30193927 30382878
 </ul>
 </div>
       
-      </div>
-  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
-          <div class="table-responsive">
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
-	<caption>Splash Wave Pool - swim and aquafit - June 30 to August 29</caption>
-	<thead>
-		<tr>
-			<th>
-			&nbsp;
-			</th>
-			<th>
-			Monday&nbsp;
-			</th>
-			<th>
-			Tuesday&nbsp;
-			</th>
-			<th>
-			Wednesday&nbsp;
-			</th>
-			<th>
-			Thursday&nbsp;
-			</th>
-			<th>
-			Friday&nbsp;
-			</th>
-			<th>
-			Saturday&nbsp;
-			</th>
-			<th>
-			Sunday&nbsp;
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th>
-			Aquafit general - shallow
-			</th>
-			<td>
-			n/a
-			</td>
-			<td>
-			8 - 9 am
-			</td>
-			<td>
-			n/a
-			</td>
-			<td>
-			8 - 9 am
-			</td>
-			<td>n/a</td>
-			<td>
-			n/a
-			</td>
-			<td>
-			n/a
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Aquafit general -
-			deep
-			</th>
-			<td>8 - 9 am</td>
-			<td>n/a</td>
-			<td>8 - 9 am</td>
-			<td>n/a</td>
-			<td>8 - 9 am</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>
-			Lane swim
-			</th>
-			<td>6 - 8 am
-			&nbsp;</td>
-			<td>8 - 9 am</td>
-			<td>6 - 8 am</td>
-			<td>8 - 9 am</td>
-			<td>6 - 8 am</td>
-			<td>11 am - 3 pm</td>
-			<td>11 am - 3 pm</td>
-		</tr>
-		<tr>
-			<th>Lane swim - reduced</th>
-			<td>11 am - 1 pm</td>
-			<td>11 am - 1 pm</td>
-			<td>11 am - 1 pm</td>
-			<td>11 am - 1 pm</td>
-			<td>11 am - 1 pm</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>
-			Public swim
-			</th>
-			<td>
-			5 - 7 pm
-			</td>
-			<td>
-			n/a
-			</td>
-			<td>
-			5 - 7 pm
-			</td>
-			<td>
-			n/a
-			</td>
-			<td>n/a</td>
-			<td>
-			n/a
-			</td>
-			<td>
-			n/a
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Wave swim
-			</th>
-			<td>
-			1 - 5 pm
-			</td>
-			<td>1 - 5 pm</td>
-			<td>1 - 5 pm</td>
-			<td>1 - 5 pm</td>
-			<td>1 - 5 pm</td>
-			<td>
-			11 am - 3 pm
-			</td>
-			<td>
-			11 am - 3 pm
-			</td>
-		</tr>
-	</tbody>
-</table></div>
-      </div>
       </div>
 
                         </div>
@@ -806,7 +667,7 @@ X-Varnish: 30193927 30382878
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-c32af42231e6056fb66a4533cdfc5b161ef829997cdcffa3cc45c7c349de2b57">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-a755b5d71cf88195ce5dfc64b866bb130e6189f137bb2513c8b64819a82a4cdd">
   
     
       <div class="view-header">
@@ -1248,6 +1109,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2128472768" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=218808456" async></script></body>
 </html>
 

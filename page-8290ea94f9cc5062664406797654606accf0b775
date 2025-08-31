@@ -6,16 +6,17 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 176
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Sat, 30 Aug 2025 09:44:02 GMT
-ETag: "1756546865-gzip"
+Date: Sun, 31 Aug 2025 08:20:17 GMT
+ETag: "1756628415-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Sat, 30 Aug 2025 09:41:05 GMT
+Last-Modified: Sun, 31 Aug 2025 08:20:15 GMT
+Set-Cookie: incap_ses_78_243507=gjonVOa4OSXPs8m1Ch0VAcEFtGgAAAAArPkD69YHr4soNovPnkybxg==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
@@ -25,8 +26,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 14-158886622-158885356 PNNy RT(1756547042598 85) q(0 1 1 -1) r(1 1) U24
-X-Varnish: 30318390 30509133
+X-Iinfo: 10-85907579-85907581 NNNN CT(31 40 0) RT(1756628415814 78) q(0 0 1 1) r(1 16) U24
+X-Varnish: 31560535
 
 
 <!DOCTYPE html>
@@ -55,7 +56,7 @@ X-Varnish: 30318390 30509133
 <link rel="stylesheet" media="all" href="/sites/default/files/css/css__BzoYDnbHMmrYiFSh96avEQ3e9ez5OKomOkGZuSJfmQ.css?delta=3&amp;language=en&amp;theme=ottca_theme&amp;include=eJxdUFtuxCAMvJAbfnofZMAhNAZH2OwmPf2m3a426o81D2vkcRAxtY7bpwuoBOHNM0tA_lA7uLR8dSqpYiaFuFIqJt2XlqhZYImru2CI0smlPjbkCb9wfwpNekUu3wS02xm-vlb-KDAeMsynolFu1A8njaIwyDyXSH6R0dVdiZ9_Is2og5hF9LZQpf8VrtaJxz7dS8pksGHHfFZb9HXJW5lG20bgogsl0EON6vNVt0J3db9zqpIG0wM1WoMA" />
 <link rel="stylesheet" media="all" href="//ottux.ottawa.ca/widgets/v1.4.29/css/app.css" />
 
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031626","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx9UsuSAyEI_CFnvOz_WKjEkKhYgklmv37NPmdy2EsXTYNQjZ5ZRTu0N-tB0Pgd_w2XiywZFEX3esrsIS-iW6aa9kpBEUgoJlwxknJ3VCNW9ZnD1e5iE7ijrdwLZHpHgw-db11t7KNBXr-pScwpo1NINk145Stc4HFMFpNh46EukgS-Yd8sVwycZ_59s08wfDpRQHfm0cXuiTs9F1LFblg1gNMzFrSzO0OTOYLTnHTQXrzYSzMej_VOMaEehNap6iIcaHb6ocpVDgVCilRan_svUCFvSkFMgw5p2nyWH5v-MuuobfhMcsZoGrfRnIx-w83uyVTu2D05LB6jPbAlZJrX-b9kiHKZ9-pGNlEsX1_nRngX-4lr4TgyfgCH7u4z","theme":"ottca_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NDWQN39"]},"popup_survey":{"frequency":"10","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"2b10bb50a9c4a88da976ceacddbf75faec45ec1bdb36757dcce69ecfb8e7c867"}}</script>
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"en\/","currentPath":"node\/1031626","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"gtag":{"tagId":"","consentMode":false,"otherIds":[],"events":[],"additionalConfigInfo":[]},"ajaxPageState":{"libraries":"eJx9UsuSAyEI_CFnvOz_WKjEkKhYgklmv37NPmdy2EsXTYNQjZ5ZRTu0N-tB0Pgd_w2XiywZFEX3esrsIS-iW6aa9kpBEUgoJlwxknJ3VCNW9ZnD1e5iE7ijrdwLZHpHgw-db11t7KNBXr-pScwpo1NINk145Stc4HFMFpNh46EukgS-Yd8sVwycZ_59s08wfDpRQHfm0cXuiTs9F1LFblg1gNMzFrSzO0OTOYLTnHTQXrzYSzMej_VOMaEehNap6iIcaHb6ocpVDgVCilRan_svUCFvSkFMgw5p2nyWH5v-MuuobfhMcsZoGrfRnIx-w83uyVTu2D05LB6jPbAlZJrX-b9kiHKZ9-pGNlEsX1_nRngX-4lr4TgyfgCH7u4z","theme":"ottca_theme","theme_token":null},"ajaxTrustedUrl":[],"gtm":{"tagId":null,"settings":{"data_layer":"dataLayer","include_classes":false,"allowlist_classes":"","blocklist_classes":"","include_environment":false,"environment_id":"","environment_token":""},"tagIds":["GTM-NDWQN39"]},"popup_survey":{"frequency":"10","botlist":"alexa|bot|crawl|bing|facebookexternalhit|feedburner|google|preview|nagios|postrank|pingdom|slurp|spider|yahoo|yandex|sogou"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.8,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":{"native-loading":"native-loading\/ls.native-loading"}},"placeholderSrc":"","preferNative":true,"minified":true,"libraryPath":"\/libraries\/lazysizes"},"data":{"extlink":{"extTarget":true,"extTargetNoOverride":true,"extNofollow":false,"extNoreferrer":true,"extFollowNoOverride":false,"extClass":"ext","extLabel":"(link is external)","extImgClass":false,"extSubdomains":false,"extExclude":"","extInclude":"","extCssExclude":"#ott-header-container,#ottawa-footer,.fa,.fas,.far,.fal,.fab,.jssocials-share a,.jssocials-share-email,.toolbar-menu,.toolbar-tab","extCssExplicit":"","extAlert":false,"extAlertText":"This link will take you to an external web site. We are not responsible for their content.","mailtoClass":"mailto","mailtoLabel":"(link opens email application)","extUseFontAwesome":true,"extIconPlacement":"append","extFaLinkClasses":"fas fa-external-link-alt","extFaMailtoClasses":"far fa-envelope","whitelistedDomains":[]}},"user":{"uid":0,"permissionsHash":"4c11b7b791a1efe68969b1e899b7a3ad803a0bdf40bb7e4561cb272b92e9e653"}}</script>
 <script src="/sites/default/files/js/js_IUhsbUvX21Ps3hl64WY4cANcOV18BWSTsBE14gne23g.js?scope=header&amp;delta=0&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 <script src="/modules/contrib/google_tag/js/gtag.js?t1pj7h"></script>
 <script src="/modules/contrib/google_tag/js/gtm.js?t1pj7h"></script>
@@ -180,7 +181,7 @@ X-Varnish: 30318390 30509133
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-50912c8c320f5737439a7c8f40387e7892f314dec0de4f6f7d9359e574dfda12">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d7b08c7bf9d5042cf4ce433ff0512c7fc7631b28825151f3263c6020c0ee108c">
   
     
       
@@ -194,7 +195,7 @@ X-Varnish: 30318390 30509133
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-18424d739666f24a3e356ff0caf840720cfc263ba70059ddbcdb52ed0949c8e6">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f7d46cf6726f4bfd74b165a9de4f7d2b9eda065536fb95ad18c0b71cc5152f0e">
   
     
       
@@ -449,7 +450,7 @@ X-Varnish: 30318390 30509133
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-de3dc18631cbea683a37666cdf52be6b4889f070f7d5ddc019de3c6b3925c022">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4895c14be288a0bbbc06d238b64016aa9941058aab4b2e5a3d5b49dffb36757d">
   
     
       
@@ -463,7 +464,7 @@ X-Varnish: 30318390 30509133
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c91a6fac1390cc409565b9580f0f29483c51aaad185a1dac57cda83b8b14219c">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d4b4f100ba80025cab4a543ac11c7d21b33a0e62acfa804b85ca3cebb687dc6a">
   
     
       
@@ -817,7 +818,7 @@ X-Varnish: 30318390 30509133
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9f3939827d9fc11697c7474a3720fcc62f71b9dc3133c7b6cef9f8dade4d8452">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-fbf24f4c9d5bfc01f2051bdf74333ea486db009f21b3b94e1387dbf7adc9e515">
   
     
       
@@ -831,7 +832,7 @@ X-Varnish: 30318390 30509133
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-217869786b63d030c01e726ed1557e13c8ff9a473adc5e1b284ec74624845579">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b882bac0976460f82f6c88434c72d12b5d4e7c117f69e1091117a16298ba1462">
   
     
       
@@ -977,7 +978,7 @@ X-Varnish: 30318390 30509133
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-eb2bfa0591afbf49579b24991a5cfe340993606c2ed5e949a9f518b8fddde3cc">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1fc7b23db9f553dba3367a175d1f2b7a2dd3f16d3658f2146ea5f1368c257abd">
   
     
       
@@ -991,7 +992,7 @@ X-Varnish: 30318390 30509133
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bb5ffcb76720c067f837c174d71b77a97fa1f7b270b4e2a0c046432a2e51cc07">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-09846b24aae7bcf75020aa5a5fcf0356f1e897412f0cd245515976faf4d707e3">
   
     
       
@@ -1346,7 +1347,7 @@ X-Varnish: 30318390 30509133
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c42f7f47043034c6bdd9f44e936b97b47a955186750c71cb5eccdbddaa41e9b9">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5d64dbd440fba236950afb67a377774eb27dde3a837a77c8b69257ca3af1f10a">
   
     
       
@@ -1360,7 +1361,7 @@ X-Varnish: 30318390 30509133
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bd7f563e12eb17b1d759210e4e54d4df25094988d6c00c01058b2367635203d0">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-035e128c44bb3878f9c1599594f787f87cefa88bd1277735cb40d531886af64a">
   
     
       
@@ -1674,7 +1675,7 @@ X-Varnish: 30318390 30509133
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7fd54cbbf275707fd10c3bab7a689b793843e4f7d047dc5cddbb2010c0a54c6d">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ed0365e1a5f7bd21ccf6f5d53d28b6f373d300499905235e126eda602e3306fc">
   
     
       
@@ -1688,7 +1689,7 @@ X-Varnish: 30318390 30509133
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0e076019cd9633f758b73cabf1f6868762b8aaac3488962caa8b540e5fd89d11">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-8e052ea79200ce8017789bcceedc07ce830ecdbe009703a5240f15abe56af691">
   
     
       
@@ -2008,7 +2009,7 @@ X-Varnish: 30318390 30509133
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-1b5a5fa2743ef9279af1397fce71c91302e9bdec8b5e238ec4a0317700fe4d5e">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-a486fa70aa1358322e796056d434a78a6d2a9dba53e55434e9137b6062e0d235">
   
     
       <div class="view-header">
@@ -2446,6 +2447,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=676541674" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1878400553" async></script></body>
 </html>
 
