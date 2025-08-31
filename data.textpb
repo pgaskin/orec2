@@ -15958,6 +15958,9 @@ facilities {
   name: "J.A. Dulude Arena"
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/ja-dulude-arena"
+    _date {
+      seconds: 1756629560
+    }
   }
   address:
     "941 Clyde Avenue\n"
@@ -15967,7 +15970,177 @@ facilities {
     lng: -75.74651
     lat: 45.37453
   }
-  _errors: "failed to fetch data: response status 403"
+  schedule_groups {
+    label: "Drop-in schedule - skating"
+    _title: "Skating"
+    schedules {
+      caption: "J.A. Dulude Arena - skating - September 8, 2025 to April 30, 2026"
+      _name: "skating"
+      days: "Monday"
+      days: "Tuesday"
+      days: "Wednesday"
+      days: "Thursday"
+      days: "Friday"
+      days: "Saturday"
+      days: "Sunday"
+      activities {
+        label: "Public skating"
+        _name: "public skate"
+        days {
+          times {
+            label: "11 - 11:50 am"
+            _start: 660
+            _end: 710
+            _wkday: MONDAY
+          }
+        }
+        days {
+          times {
+            label: "11 - 11:50 am"
+            _start: 660
+            _end: 710
+            _wkday: TUESDAY
+          }
+        }
+        days {
+        }
+        days {
+          times {
+            label: "Noon - 12:50 pm"
+            _start: 720
+            _end: 770
+            _wkday: THURSDAY
+          }
+          times {
+            label: "6 - 6:50 pm"
+            _start: 1080
+            _end: 1130
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "Noon - 12:50 pm"
+            _start: 720
+            _end: 770
+            _wkday: FRIDAY
+          }
+        }
+        days {
+          times {
+            label: "2 - 2:50 pm"
+            _start: 840
+            _end: 890
+            _wkday: SATURDAY
+          }
+        }
+        days {
+          times {
+            label: "4 - 4:50 pm"
+            _start: 960
+            _end: 1010
+            _wkday: SUNDAY
+          }
+        }
+      }
+      activities {
+        label: "Family skating"
+        _name: "family skate"
+        days {
+        }
+        days {
+        }
+        days {
+        }
+        days {
+        }
+        days {
+        }
+        days {
+          times {
+            label: "1 - 1:50 pm"
+            _start: 780
+            _end: 830
+            _wkday: SATURDAY
+          }
+        }
+        days {
+          times {
+            label: "3 - 3:50 pm"
+            _start: 900
+            _end: 950
+            _wkday: SUNDAY
+          }
+        }
+      }
+      activities {
+        label: "Skating 50+"
+        _name: "skate 50+"
+        days {
+          times {
+            label: "10 - 10:50 am"
+            _start: 600
+            _end: 650
+            _wkday: MONDAY
+          }
+        }
+        days {
+          times {
+            label: "10 - 10:50 am"
+            _start: 600
+            _end: 650
+            _wkday: TUESDAY
+          }
+        }
+        days {
+        }
+        days {
+          times {
+            label: "11 - 11:50 am"
+            _start: 660
+            _end: 710
+            _wkday: THURSDAY
+          }
+        }
+        days {
+          times {
+            label: "11 - 11:50 am"
+            _start: 660
+            _end: 710
+            _wkday: FRIDAY
+          }
+        }
+        days {
+        }
+        days {
+        }
+      }
+      activities {
+        label: "Figure skating"
+        _name: "figure skate"
+        days {
+        }
+        days {
+        }
+        days {
+        }
+        days {
+          times {
+            label: "7 - 7:50 pm"
+            _start: 1140
+            _end: 1190
+            _wkday: THURSDAY
+          }
+        }
+        days {
+        }
+        days {
+        }
+        days {
+        }
+      }
+    }
+  }
 }
 facilities {
   name: "Jack Charron Arena"
@@ -36256,6 +36429,9 @@ facilities {
   name: "Richmond Memorial Community Centre"
   source {
     url: "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/richmond-memorial-community-centre"
+    _date {
+      seconds: 1756629561
+    }
   }
   address:
     "6095 Perth Street\n"
@@ -36265,7 +36441,6 @@ facilities {
     lng: -75.83844
     lat: 45.19575
   }
-  _errors: "failed to fetch data: response status 403"
 }
 facilities {
   name: "Rideauview Community Centre"
