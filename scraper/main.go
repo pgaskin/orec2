@@ -45,6 +45,7 @@ var (
 	CacheDir     = flag.String("cache-dir", "", "cache pages in the specified directory")
 	Nominatim    = flag.String("nominatim", "https://nominatim.geocoding.ai", "nominatim base url")
 	NominatimQPS = flag.Float64("nominatim-qps", 1, "maximum nominatim queries per second")
+	PageQPS      = flag.Float64("page-qps", 0.5, "maximum page fetches per second")
 	PlaceListing = flag.String("place-listing", "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing", "place listing url to start scraping from")
 	UserAgent    = flag.String("user-agent", defaultUserAgent(), "user agent for requests")
 	Zyte         = flag.Bool("zyte", false, "use zyte (set ZYTE_APIKEY)")
@@ -72,6 +73,10 @@ func defaultUserAgent() string {
 
 var nominatimLimit = sync.OnceValue(func() *rate.Limiter {
 	return rate.NewLimiter(rate.Limit(*NominatimQPS), 1)
+})
+
+var pageLimit = sync.OnceValue(func() *rate.Limiter {
+	return rate.NewLimiter(rate.Limit(*PageQPS), 1)
 })
 
 func init() {
@@ -445,7 +450,7 @@ func geocode(ctx context.Context, addr string) (lng, lat float64, attrib string,
 func fetchPage(ctx context.Context, u string) (*goquery.Document, time.Time, error) {
 	slog.Info("fetch page", "url", u)
 
-	resp, err := fetch(ctx, u, "page", u, nil, true)
+	resp, err := fetch(ctx, u, "page", u, pageLimit(), true)
 	if err != nil {
 		return nil, time.Time{}, err
 	}
@@ -611,6 +616,7 @@ func zyte(req *http.Request, followRedirect bool) (*http.Response, error) {
 			Value string `json:"value"`
 		} `json:"httpResponseHeaders"`
 	}
+	retryBanLimit := 3
 	for {
 		if *ZyteLimit == 0 {
 			return nil, fmt.Errorf("zyte request limit reached")
@@ -650,6 +656,12 @@ func zyte(req *http.Request, followRedirect bool) (*http.Response, error) {
 				}
 			}
 			return nil, fmt.Errorf("failed to parse rate-limit retry-after %q", s)
+		}
+		if zresp.StatusCode == 520 && retryBanLimit > 0 {
+			slog.Warn("zyte temporary error, retrying in a second")
+			time.Sleep(time.Second)
+			retryBanLimit--
+			continue
 		}
 		if *ZyteLimit > 0 {
 			*ZyteLimit--
