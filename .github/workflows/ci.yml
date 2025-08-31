@@ -10,6 +10,9 @@ on:
       zyte:
         required: false
         type: boolean
+      keep_facility_list:
+        required: false
+        type: boolean
 
 permissions:
   contents: write
@@ -42,8 +45,10 @@ jobs:
           go-version-file: go.mod
       - run: git config --global user.name github-actions && git config --global user.email github-actions@github.com
       - run: git worktree add cache cache
-      - run: rm -fv cache/page-*
+      - run: grep -m1 'GET ' cache/page-* | grep -v 'place-listing[^/]' | cut -d':' -f1 | xargs rm
         if: ${{ github.event_name != 'push' }} # we only want to clear the cached data if it's a scheduled or forced update... otherwise, just download anything new if needed
+      - run: rm -fv cache/page-*
+        if: ${{ github.event_name != 'push' && !(github.event.inputs != null && (github.event.inputs.keep_facility_list == true || github.event.inputs.keep_facility_list == 'true')) }} # we only want to clear the cached data if it's a scheduled or forced update... otherwise, just download anything new if needed
       - run: go run ./scraper -cache-dir ./cache ${{ github.event.inputs != null && (github.event.inputs.zyte == true || github.event.inputs.zyte == 'true') && '-zyte' || '' }}
         env:
           ZYTE_APIKEY: ${{ secrets.zyte_apikey }}
