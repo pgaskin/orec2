@@ -1,8 +1,14 @@
-syntax = "proto3";
+edition = "2023";
 
 package orec2;
 
+import "google/protobuf/go_features.proto";
 import "google/protobuf/timestamp.proto";
+
+option features.json_format = ALLOW;
+option features.utf8_validation = VERIFY;
+option features.field_presence = IMPLICIT;
+option features.(pb.go).api_level = API_OPAQUE;
 
 // underscored fields are ones which contain data parsed or otherwise enriched
 // by the scraper rather than coming directly from the source page, and are set
@@ -19,9 +25,9 @@ message Data {
 message Facility {
     string name = 1;
     string description = 2 [json_name="desc"];
-    Source source = 3;
+    Source source = 3 [features.field_presence=LEGACY_REQUIRED];
     string address = 4;
-    optional LngLat _lnglat = 5 [json_name="_lnglat"];
+    LngLat _lnglat = 5 [json_name="_lnglat", features.field_presence=EXPLICIT];
     string notifications_html = 6; // raw html
     string special_hours_html = 7; // raw html
     repeated ScheduleGroup schedule_groups = 8;
@@ -30,7 +36,7 @@ message Facility {
 
 message Source {
     string url = 1;
-    optional google.protobuf.Timestamp _date = 2 [json_name="_date"]; // unix epoch seconds
+    google.protobuf.Timestamp _date = 2 [json_name="_date", features.field_presence=EXPLICIT]; // unix epoch seconds
 }
 
 message LngLat {
@@ -62,12 +68,13 @@ message Schedule {
 
 message TimeRange {
     string label = 1;
-    optional int32 _start = 2 [json_name="_start"];  // minutes from 00:00, not set if parse error
-    optional int32 _end = 3 [json_name="_end"]; // minutes from 00:00, not set if parse error
-    optional Weekday _wkday = 4 [json_name="_wkday"];// sunday = 0, not set if parse error
+    int32 _start = 2 [json_name="_start", features.field_presence=EXPLICIT];  // minutes from 00:00, not set if parse error
+    int32 _end = 3 [json_name="_end", features.field_presence=EXPLICIT]; // minutes from 00:00, not set if parse error
+    Weekday _wkday = 4 [json_name="_wkday", features.field_presence=EXPLICIT];// sunday = 0, not set if parse error
 }
 
 enum Weekday {
+    option features.enum_type = CLOSED;
     SUNDAY = 0;
     MONDAY = 1;
     TUESDAY = 2;
