@@ -657,7 +657,7 @@ func zyte(req *http.Request, followRedirect bool) (*http.Response, error) {
 			}
 			return nil, fmt.Errorf("failed to parse rate-limit retry-after %q", s)
 		}
-		if zresp.StatusCode == 520 && retryBanLimit > 0 {
+		if (zresp.StatusCode == 500 || zresp.StatusCode == 520) && retryBanLimit > 0 {
 			slog.Warn("zyte temporary error, retrying in a second")
 			time.Sleep(time.Second)
 			retryBanLimit--
