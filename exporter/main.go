@@ -11,6 +11,7 @@ import (
 	"log/slog"
 	"os"
 	"path/filepath"
+	"strings"
 	"time"
 
 	"github.com/ncruces/go-sqlite3"
@@ -25,12 +26,12 @@ import (
 )
 
 var (
-	CSV    = flag.String("csv", "", "write csv to this directory")
+	CSV    = flag.String("csv", "", "write csv to this directory") // lossy
 	JSON   = flag.String("json", "", "write json to this file")
 	PB     = flag.String("pb", "", "write binary protobuf to this file")
 	TextPB = flag.String("textpb", "", "write textpb to this file")
-	Sqlite = flag.String("sqlite", "", "write sqlite database to this file")
-	Pretty = flag.Bool("pretty", false, "prettify output (-json -textpb)")
+	Sqlite = flag.String("sqlite", "", "write sqlite database to this file") // lossy
+	Pretty = flag.Bool("pretty", false, "prettify output (-json -textpb -csv)")
 	// TODO: plain html schedule dump?
 )
 
@@ -473,6 +474,7 @@ func exportCSV(db *sql.DB, table, outname string) error {
 	defer f.Close()
 
 	cw := csv.NewWriter(f)
+	cw.UseCRLF = true
 
 	cw.Write(cols)
 
@@ -490,6 +492,14 @@ func exportCSV(db *sql.DB, table, outname string) error {
 		}
 		for i, v := range values {
 			if v.Valid {
+				if *Pretty {
+					switch {
+					case strings.HasSuffix(cols[i], "_html"):
+						v.String = strings.ReplaceAll(v.String, "\n", " ") // collapse newlines in html so the csv is nicer
+					case cols[i] == "facility_address":
+						v.String = strings.ReplaceAll(v.String, "\n", ", ") // collapse address so the csv is nicer
+					}
+				}
 				valueStrs[i] = v.String
 			} else {
 				valueStrs[i] = ""
