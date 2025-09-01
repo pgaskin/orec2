@@ -366,12 +366,21 @@ func run(pb string) error {
 		if err := os.Mkdir(*CSV, 0777); err != nil && !errors.Is(err, os.ErrExist) {
 			return fmt.Errorf("export csv: %w", err)
 		}
-		if err := os.WriteFile(filepath.Join(*CSV, "schema.ddl"), []byte(ddl), 0666); err != nil {
-			return fmt.Errorf("export csv: %w", err)
-		}
-		tables, err := getSqliteTables(db)
+		tables, err := getSqliteTables(db, false)
 		if err != nil {
 			return fmt.Errorf("export csv: get tables: %w", err)
+		}
+		var ddl bytes.Buffer
+		for _, table := range tables {
+			x, err := tableDDL(db, table)
+			if err != nil {
+				return fmt.Errorf("export csv: get table ddl for %q: %w", table, err)
+			}
+			ddl.WriteString(x)
+			ddl.WriteString("\r\n")
+		}
+		if err := os.WriteFile(filepath.Join(*CSV, "schema.ddl"), ddl.Bytes(), 0666); err != nil {
+			return fmt.Errorf("export csv: %w", err)
 		}
 		for _, table := range tables {
 			if err := exportCSV(db, table, filepath.Join(*CSV, table+".csv")); err != nil {
@@ -440,8 +449,12 @@ func protoTimestampAsTimeOrZero(t *timestamppb.Timestamp) time.Time {
 	return time.Time{}
 }
 
-func getSqliteTables(db *sql.DB) ([]string, error) {
-	rows, err := db.Query(`SELECT name FROM sqlite_master WHERE type='table'`)
+func getSqliteTables(db *sql.DB, includeViews bool) ([]string, error) {
+	types := []string{"table"}
+	if includeViews {
+		types = append(types, "view")
+	}
+	rows, err := db.Query(`SELECT name FROM sqlite_master WHERE type IN ` + sqliteList(types) + ``)
 	if err != nil {
 		return nil, err
 	}
@@ -456,6 +469,19 @@ func getSqliteTables(db *sql.DB) ([]string, error) {
 		tables = append(tables, name)
 	}
 	return tables, rows.Err()
+}
+
+func sqliteList(a []string) string {
+	var b strings.Builder
+	b.WriteByte('(')
+	for i, v := range a {
+		if i != 0 {
+			b.WriteByte(',')
+		}
+		b.WriteString(sqlite3.Quote(v))
+	}
+	b.WriteByte(')')
+	return b.String()
 }
 
 func exportCSV(db *sql.DB, table, outname string) error {
@@ -522,4 +548,11 @@ func exportCSV(db *sql.DB, table, outname string) error {
 		return err
 	}
 	return nil
+}
+
+func tableDDL(db *sql.DB, table string) (string, error) {
+	row := db.QueryRow(`SELECT sql FROM sqlite_master WHERE name = ?`, table)
+	var ddl string
+	row.Scan(&ddl)
+	return ddl, row.Err()
 }
