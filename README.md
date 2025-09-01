@@ -4,6 +4,13 @@ Scraper and website for viewing and filtering City of Ottawa drop-in recreation 
 
 The cached pages and geocoding data can be found on the [cache](https://github.com/pgaskin/orec2/tree/cache) branch. The parsed data can be found on the [data](https://github.com/pgaskin/orec2/tree/data) branch. The data is updated daily.
 
+| Format | Description | Link |
+| --- | --- | --- |
+| CSV | Easiest to use with existing software. Format may change over time. Lossy. | [data-csv.zip](https://github.com/pgaskin/orec2/archive/refs/heads/data-csv.zip) ([schema](https://github.com/pgaskin/orec2/raw/refs/heads/data-csv/schema.ddl)) |
+| JSON | Easiest to use for ad-hoc queries. Format may change over time. | [data.json](https://github.com/pgaskin/orec2/raw/refs/heads/data/data.json) |
+| Protobuf | Best for integration with custom software. Most stable format. | [data.pb](https://github.com/pgaskin/orec2/raw/refs/heads/data/data.pb) ([schema](https://github.com/pgaskin/orec2/raw/refs/heads/data/data.proto)) |
+| TextPB | Best for manual inspection. Textual version of the protobuf. | [data.textpb](https://github.com/pgaskin/orec2/raw/refs/heads/data/data.textpb) |
+
 You can run `git -c "diff.wsErrorHighlight=none" -c "diff.context=3" -c "diff.interHunkContext=0" -c "diff.indentHeuristic=true" -c "diff.orec_pb.cachetextconv=false" -c "diff.orec_pb.xfuncname=^\s*[+&]\s*(.+)" -c "diff.orec_pb.textconv=go run github.com/pgaskin/orec2/textconv" log --textconv -pw --patience data -- data.pb` to view a diff of the schedule data over time.
 
 The website is coming soon.
