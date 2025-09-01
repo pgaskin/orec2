@@ -366,6 +366,9 @@ func run(pb string) error {
 		if err := os.Mkdir(*CSV, 0777); err != nil && !errors.Is(err, os.ErrExist) {
 			return fmt.Errorf("export csv: %w", err)
 		}
+		if err := os.WriteFile(filepath.Join(*CSV, "schema.ddl"), []byte(ddl), 0666); err != nil {
+			return fmt.Errorf("export csv: %w", err)
+		}
 		tables, err := getSqliteTables(db)
 		if err != nil {
 			return fmt.Errorf("export csv: get tables: %w", err)
