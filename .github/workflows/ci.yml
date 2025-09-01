@@ -69,10 +69,13 @@ jobs:
       - run: git config --global user.name github-actions && git config --global user.email github-actions@github.com
       - run: git worktree add cache cache
       - run: git worktree add data data
-      - run: rm -fv data/*
+      - run: git worktree add data-csv data-csv
+      - run: rm -fv data/* csv/*
       - run: cp schema/schema.proto data/data.proto
       - run: go run ./scraper -cache-dir ./cache -no-fetch -scrape ./data.pb
-      - run: go run ./exporter -json ./data/data.json -pb ./data/data.pb -textpb ./data/data.textpb -pretty ./data.pb
+      - run: go run ./exporter -json ./data/data.json -pb ./data/data.pb -textpb ./data/data.textpb -csv ./data-csv -pretty ./data.pb
       - run: |
           git -C data add . && { git -C data diff --cached --quiet || git -C data commit -m "update data (reason: ${{github.event_name}} scraper: $(git rev-parse HEAD) cache: $(git -C cache rev-parse HEAD))" ; } && git -C data push
+      - run: |
+          git -C data-csv add . && { git -C data-csv diff --cached --quiet || git -C data-csv commit -m "update data (reason: ${{github.event_name}} scraper: $(git rev-parse HEAD) cache: $(git -C cache rev-parse HEAD))" ; } && git -C data-csv push
   # TODO: build and deploy frontend
