@@ -377,7 +377,7 @@ func run(pb string) error {
 				return fmt.Errorf("export csv: get table ddl for %q: %w", table, err)
 			}
 			ddl.WriteString(x)
-			ddl.WriteString("\r\n")
+			ddl.WriteString(";\r\n")
 		}
 		if err := os.WriteFile(filepath.Join(*CSV, "schema.ddl"), ddl.Bytes(), 0666); err != nil {
 			return fmt.Errorf("export csv: %w", err)
