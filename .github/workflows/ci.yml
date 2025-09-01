@@ -35,6 +35,7 @@ jobs:
     needs: [test]
     name: Update cached pages
     runs-on: ubuntu-latest
+    if: ${{ github.repository_owner == 'pgaskin' }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -67,7 +68,9 @@ jobs:
         with:
           go-version-file: go.mod
       - run: git config --global user.name github-actions && git config --global user.email github-actions@github.com
-      - run: git worktree add cache cache
+      - run: git fetch --refmap='' https://github.com/pgaskin/orec2 cache:refs/upstream/cache
+        if: ${{ github.repository_owner != 'pgaskin' }}
+      - run: git worktree add cache ${{ github.repository_owner == 'pgaskin' && 'cache' || 'refs/upstream/cache' }}
       - run: git worktree add data data
       - run: git worktree add data-csv data-csv
       - run: rm -fv data/* csv/*
@@ -75,7 +78,6 @@ jobs:
       - run: go run ./scraper -cache-dir ./cache -no-fetch -scrape ./data.pb
       - run: go run ./exporter -json ./data/data.json -pb ./data/data.pb -textpb ./data/data.textpb -csv ./data-csv -pretty ./data.pb
       - run: |
-          git -C data add . && { git -C data diff --cached --quiet || git -C data commit -m "update data (reason: ${{github.event_name}} scraper: $(git rev-parse HEAD) cache: $(git -C cache rev-parse HEAD))" ; } && git -C data push
+          git -C data add . && { git -C data diff --cached --quiet || git -C data commit -m "update data (reason: ${{github.event_name}} scraper: $(git rev-parse HEAD) cache: ${{ github.repository_owner == 'pgaskin' && '' || 'pgaskin/orec2@' }}$(git -C cache rev-parse HEAD))" ; } && git -C data push
       - run: |
-          git -C data-csv add . && { git -C data-csv diff --cached --quiet || git -C data-csv commit -m "update data (reason: ${{github.event_name}} scraper: $(git rev-parse HEAD) cache: $(git -C cache rev-parse HEAD))" ; } && git -C data-csv push
-  # TODO: build and deploy frontend
+          git -C data-csv add . && { git -C data-csv diff --cached --quiet || git -C data-csv commit -m "update data (reason: ${{github.event_name}} scraper: $(git rev-parse HEAD) cache: ${{ github.repository_owner == 'pgaskin' && '' || 'pgaskin/orec2@' }}$(git -C cache rev-parse HEAD))" ; } && git -C data-csv push
