@@ -6,19 +6,17 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 190
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Sun, 31 Aug 2025 08:20:42 GMT
-ETag: "1756628248-gzip"
+Date: Mon, 01 Sep 2025 05:15:41 GMT
+ETag: "1756703737-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Sun, 31 Aug 2025 08:17:28 GMT
-Set-Cookie: visid_incap_243507=ARhPP1ZdQmGNOq74yoTobtkFtGgAAAAAQUIPAAAAAADM3K4m29vxLMVfYopUZBxq; expires=Mon, 31 Aug 2026 06:54:05 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=elMwWcGfWWupJIP5aXmSIAAAAADx17L9yPa8wNo6pomtTITu; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_8217_243507=pV5/OpV0mWeY2GZjXaYIctkFtGgAAAAAozS818TvPcm5VhlZWbYL3A==; path=/; Domain=.ottawa.ca
+Last-Modified: Mon, 01 Sep 2025 05:15:37 GMT
+Set-Cookie: incap_ses_480_243507=VdMLX+RdAgZgl0U7r02pBvwrtWgAAAAAhEscKMHTug3lDBaQSzb6RA==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
@@ -28,8 +26,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: UNCACHEABLE (poor cacheability)
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 12-54426817-54426819 NNNY CT(14 23 0) RT(1756628441897 85) q(0 0 0 0) r(0 0) U24
-X-Varnish: 26296614 31588428
+X-Iinfo: 5-118361016-118361028 NNNN CT(32 43 0) RT(1756703737522 110) q(0 0 1 2) r(1 34) U24
+X-Varnish: 31330428
 
 
 <!DOCTYPE html>
@@ -183,7 +181,7 @@ X-Varnish: 26296614 31588428
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-13bb7f6df28f79ad8f57f772a1b10bd575d05cc29b9fe650e24667bcc2cebc6d">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ee2f31d5fa0e9d79b5218a288e4420089d11981fcfa626a9166d01ebb95dee92">
   
     
       
@@ -197,7 +195,7 @@ X-Varnish: 26296614 31588428
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ded3a1b0f4a6cd04211572ec2e7eb95838d9091e5657bd94116c99c74d4f10af">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c29f93e014a81489ef66ec3a5b3e582dcf58cff01cb8c81ebb80022b9fe52fdf">
   
     
       
@@ -393,7 +391,7 @@ Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscription
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-90c8ea61103b4e98a8bbd1b947530fbd63bcd85a20e3359498ac97bee5825af5">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ced3efc779fd051d20a6c95aa186f9e1b3d98fb45ac3bae17dbc450da7640807">
   
     
       
@@ -407,7 +405,7 @@ Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscription
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a03867ad59379dfce1eec6e9364a51c3c193704815ad95a71d24594ff3b79cf7">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ff96472b7acce6282ae39c4e46bd1a72f3e94593f6043e7193e72eafc32a6989">
   
     
       
@@ -507,7 +505,7 @@ Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscription
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7eee901bfcd19f2f9292c571146cb2359fa56ba02562ca8bad9f70f30ba73294">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-64a875e621343ee483b3cdeb773db59eb21c493fc57bfdefba97da4e6642b92a">
   
     
       
@@ -521,7 +519,7 @@ Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscription
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-aec957c8eabe9037a67ccc8e4cdcb54f1ede990728df062845befc3227c12940">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6a65cc481bcd84ed3b34d2232dcccf8c2fbf82f3e49da91208259e177e76a0bb">
   
     
       
@@ -638,7 +636,7 @@ Try your hand at exam questions pulled from an era-appropriate Ontario Teachersâ
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ee81a4ff34cb6249a38fbe4baf3f5cd2210da20bf110c408ceb81b53e710cc59">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-fada19413123acb8ad2740e2d3c82a9f1392f58974e2129bd7b868e168ce4154">
   
     
       
@@ -652,7 +650,7 @@ Try your hand at exam questions pulled from an era-appropriate Ontario Teachersâ
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-8dc7d4b4048082bc6c3c49c8a6464a9e50b144e81d874dc6982294aec7adda71">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-17c54a59f661185c91fd3b24e2579fc7ede00fafef3f914eec4b25724a2d4f0a">
   
     
       
@@ -755,7 +753,7 @@ Try your hand at exam questions pulled from an era-appropriate Ontario Teachersâ
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-33595c226959c2f9be3d4c79ae6b418a07036d3076e5872ee76208dbeef59d27">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c46a864a1bb8a0a0d21dc664d268fa3b94fe1fc225aa9564b1752fe39537a6ff">
   
     
       
@@ -769,7 +767,7 @@ Try your hand at exam questions pulled from an era-appropriate Ontario Teachersâ
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c9202309ab7decf0015daa0c44a4253a8ef6a36bc09714d1e595e7aaa6eb2f43">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-485df6c8c51d3532ba843b1a4092a5cb3dd82804e23b0a7c0179a2f18a0b887f">
   
     
       
@@ -966,7 +964,7 @@ Cost: $77.21 + tax (per person)<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c18238525aa20739d525f7b85668fe8dc8390936a466d47a125ad53f87d2e230">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-06c7e0e67e0704cc70f011a2d1847b81c4f3c9977286891fa0d5e4c885d90867">
   
     
       
@@ -980,7 +978,7 @@ Cost: $77.21 + tax (per person)<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-36ff9c7c7dab11f1e3821c801ca26f03d8e9a4862e00278c46479bc2f511738a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6c25b30c477035277d4dbb7f06f0277cfa55fe6d9db6a1d4403f0d3874a00072">
   
     
       
@@ -1245,7 +1243,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1032c38b2a4d42a1088d2a8ddf810c3202c8d5b056e9a19cf4a1d8f9c9fda310">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e3bfb035f4f9c81f8eecffbfc995324162f23c90c8b33929065741db049bb653">
   
     
       
@@ -1259,7 +1257,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a27571dcba1bc66dfb771b62808318d0bfc23d87224e9e680e6d66a62772431b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c0dd6939821e97387b89c79aa10f91f9980743535edf81bb01462b285365c9fe">
   
     
       
@@ -1385,7 +1383,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-64f4fd2843b32d3ebf4a50ebca11aa63db74735356e4e39fa78f8db2f8d45a86">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-968084b2ba34f93d62e4141c249df830e729579e6054d365389fc1279d2ad18b">
   
     
       
@@ -1399,7 +1397,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-cb792f7d7ceb6ca8998a8b2502869f3c0b8a3e5981499594a59b5d98f8c75d96">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0d92092c7ef2c760031453b4e4afaba7984cf2371691de6512f2e1f659c6a651">
   
     
       
@@ -1540,7 +1538,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ec014c557a2e263fe69d5ee18c854d718faa5af2215ac971ab46c9ebeab6ba03">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e61c5d8b9ec258d867d9527771827c9b763ea57e2647822c721287089ea36911">
   
     
       
@@ -1554,7 +1552,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c95ef274aafc97b14e866afa97b07725332e1f99c459fd8eeca0e43342de90e8">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4d6be2366434ef62159b2c8c2c3d4b93e6ccff1b4e509520ca4bd25a563c1807">
   
     
       
@@ -1656,7 +1654,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9b29bee66ba029dac60314cd0b893930c822b208045c2e5d2a8e86f62a1101bf">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ead777d9b6e3fddbc0604f456fb52d50d81b462c7885e5cb6747bd748ea3cc75">
   
     
       
@@ -1670,7 +1668,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e6b16c9a65b6eaa2e7aa0d589b246cab8a7fae2ebd7668bdd87cd0146b52d88d">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d82638b7cb984014dd983cdac907b1cc71a8ee9f5a7be9469c7c59208eaca543">
   
     
       
@@ -1773,7 +1771,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d9f36ebf7953738e197f1b30246fd3fb387927d15511ecbeafa369d59e16d1ca">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d2ab4b60ddc0df1e5cf3c4102a1238c09de404a98ca4dc4c821c99df8fee5cf5">
   
     
       
@@ -1787,7 +1785,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5b3cc2f06c64ea4256d8efb9af7cdf1903ea6749101e777c522eda55bfb6f004">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-251a2e516f6f9e4a42078f4c86cba3f8f775d16cd9a46a0152485f1d79840ecb">
   
     
       
@@ -1888,7 +1886,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-558d61c3f5ed6922097580d3e94f9c6bc043791bfade3e7ab953dca5291692d8">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e1049ed2e320d0d4a2db93eaacb9f3acfc61a60739bcb9bd47235822391837fb">
   
     
       
@@ -1902,7 +1900,7 @@ Cost: Free<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-394357a65ab924dd8d119b1da042c28a49130ba51c12a57e6790b02127dff21b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-03564415c8e582f5efb73fb2077974100e51dd48f2913a75317e5f93f158b4dc">
   
     
       
@@ -2806,6 +2804,6 @@ Thank you for considering to help out.
 <script src="/themes/custom/ottca_theme/dist/js/slider-gallery.min.js?t1pj7h" async></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=6&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=796855743" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=569356118" async></script></body>
 </html>
 

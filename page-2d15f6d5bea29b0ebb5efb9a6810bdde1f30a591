@@ -6,19 +6,19 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 449
+Age: 58
 Cache-Control: max-age=2764800, public
 Cache-Tags: HIT
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Sun, 31 Aug 2025 08:23:05 GMT
-ETag: "1756628135-gzip"
+Date: Mon, 01 Sep 2025 05:18:47 GMT
+ETag: "1756703867-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Sun, 31 Aug 2025 08:15:35 GMT
-Set-Cookie: visid_incap_243507=uZbowI2KR2CAfMgSMJui8WkGtGgAAAAAQUIPAAAAAAA6fDy+aUkV35FqjHsJfADU; expires=Mon, 31 Aug 2026 06:34:15 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=jT+gaZ/gojmR0mk5aXmSIAAAAABvuXRDCvOvTDXJut6yS0yg; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_1349_243507=cicbSZSKMyprTW3VwJy4EmkGtGgAAAAAENZwx2485qv89cRoXWJQig==; path=/; Domain=.ottawa.ca
+Last-Modified: Mon, 01 Sep 2025 05:17:47 GMT
+Set-Cookie: visid_incap_243507=mduxU3rXQx+um63DeUIOALYstWgAAAAAQUIPAAAAAABUVNaB7YZE7XW21odtKsAF; expires=Mon, 31 Aug 2026 07:23:46 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=M1FRbVuq9DmhT098aXmSIAAAAAB/wNwga/qIeCrxxqG6UWX8; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_1841_243507=xpFxEbAIX1TotkgPRIyMGbcstWgAAAAAQAo5KVSLLdK+ViSgiDC4hw==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
@@ -28,8 +28,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 11-101533186-101533192 NNNN CT(31 43 0) RT(1756628585724 79) q(0 0 1 0) r(1 1) U24
-X-Varnish: 28465343 24901026
+X-Iinfo: 62-349184968-349185000 NNNN CT(31 53 0) RT(1756703927171 95) q(0 0 0 3) r(2 2) U24
+X-Varnish: 21035047 32147480
 
 
 <!DOCTYPE html>
@@ -41,7 +41,7 @@ X-Varnish: 28465343 24901026
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/ray-friel-recreation-complex" />
 <meta name="dcterms.title" content="Ray Friel Recreation Complex" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-08-29" />
+<meta name="dcterms.date" content="2025-08-31" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -183,7 +183,7 @@ X-Varnish: 28465343 24901026
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-027e91ff5f864048a841688e65a5015dbe580bf3db881f7a8a3f1dff6d8af76b">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f7418425551470359f2a0f5ce0d5367bfaa04b7584cbbedac47193846922757e">
   
     
       
@@ -197,7 +197,7 @@ X-Varnish: 28465343 24901026
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-cd252c292e7e8442f1701497ffdd9fd4214a2b357ad8db6ba4632bbf5e8df7b9">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ba28f028bc58de070362e6d1e92462944e7ecc3fd53370f95b6437d3ca2a363e">
   
     
       
@@ -270,7 +270,7 @@ X-Varnish: 28465343 24901026
 
 
   
-            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Schedule changes</h2>
+            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Closure</h2>
 </div>
       
 
@@ -278,16 +278,7 @@ X-Varnish: 28465343 24901026
 
 
   
-            <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><p>&nbsp;</p>
-<ul>
-<li><strong>Saturday, August 30</strong>
-<ul>
-<li>Lane swim, 7:30 to 9:00 am, cancelled</li>
-</ul>
-</li>
-</ul>
-<h4>Closure</h4>
-<ul>
+            <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><ul>
 <li><strong>September 22 to November 3</strong>
 <ul>
 <li>The pool, sauna and hot tub are closed.</li>
@@ -479,7 +470,7 @@ X-Varnish: 28465343 24901026
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1a10b59cc0dbfe49cb3345b0080a8134625b1023b53d7834bf93468fa74ffcaa">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-34eafc47c949d1bb95fae6ad81e138cbdf9ca63ef8fafc022b6aadf975b57d3a">
   
     
       
@@ -493,7 +484,7 @@ X-Varnish: 28465343 24901026
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b9724dde7c54945424e2953ca22f96bf51f1b6d0972a9fa8661f08b28440c752">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b8a42086534984c6c4fa742d4ede8cdbd88f71accfab85e4b88560312ccafaeb">
   
     
       
@@ -749,7 +740,7 @@ X-Varnish: 28465343 24901026
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-cfa80d37298ab51e7170b5573e77d16d3e264f002c25fce5c41699a08ebc9f6f">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-10f9227f962358f0f64914e85035451552c783f07623a6bc6533937e806bd505">
   
     
       
@@ -763,7 +754,7 @@ X-Varnish: 28465343 24901026
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2e02677ddfe4b141314b25f42a18f50ef4245d727b5f381ad74b3d438375e75d">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f1ce540ed5df8bc11212406456170186919e5713439857acb5eb6ea9aee0763c">
   
     
       
@@ -798,13 +789,8 @@ X-Varnish: 28465343 24901026
       </div>
   <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule changes</h3>
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule change</h3>
 <ul>
-<li><strong>Saturday, August 30</strong>
-<ul>
-<li>Lane swim, 7:30 to 9:00 am, cancelled</li>
-</ul>
-</li>
 <li><strong>Monday, September 1</strong>
 <ul>
 <li>See <a href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/ray-friel-recreation-complex/ray-friel-recreation-complex-holiday-drop-schedule">Labour Day schedule</a>.</li>
@@ -1286,7 +1272,7 @@ X-Varnish: 28465343 24901026
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f591db95b31529fb31e3aae7a0f10aa6bbbed7237d1ddf84646a59f642e88a69">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-37cee9d362df7a271cc3000ff41ba3ba01e07e2295797f9282e355ea54417638">
   
     
       
@@ -1300,7 +1286,7 @@ X-Varnish: 28465343 24901026
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-338b706336fda6ce97e94ffe71d73ae66f4c81970d32baa4bd5e9ed80854a6c1">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-fa28d222de11a48104c89e3c027847d657e48eefe930c65870d597b41dff3d97">
   
     
       
@@ -1448,7 +1434,7 @@ X-Varnish: 28465343 24901026
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5d6a81d25c38263b46a834b0c51419d23061ad9421bc43c28f1f4af8d05b242a">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-08d32c90ea01d78087fc5715caf5a471c2791da0270a27b32046955ab00ad74c">
   
     
       
@@ -1462,7 +1448,7 @@ X-Varnish: 28465343 24901026
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7fbc4721f5158c0939f5d3586354ccb650699f3d3f2d2db7cd260b6c8ee04773">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d70e5ee9ad8def9776f37091809725e6616f4e63d0c415443f5408a10e21ef0e">
   
     
       
@@ -2590,7 +2576,7 @@ X-Varnish: 28465343 24901026
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ff620b128ebdd0f560b1131f0f1b357ace2d666b7c831fe7afc21bce14a27d17">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-24f87844e89ea59999a1f758863b1940d22ba49b3f183805b0c10af1750a831d">
   
     
       
@@ -2604,7 +2590,7 @@ X-Varnish: 28465343 24901026
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ee9663466103c4b727bb9b8d2ffb0b8144e2feaae9347fca477f23b972472f0f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-cb537147ad0291ef841957fe734a32901bab950dc83b9e3ec6e931752efe0145">
   
     
       
@@ -2891,7 +2877,7 @@ X-Varnish: 28465343 24901026
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-1a9b6d7164b0b16ed92dc559ae609e356f33cda0da9fc90f7117561e0722a99d">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-8a8641b0e3611d338e267ba02695b01740b7096c87bbc2159c3a10d0361a4f0e">
   
     
       <div class="view-header">
@@ -3341,6 +3327,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1859371320" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1550994799" async></script></body>
 </html>
 
