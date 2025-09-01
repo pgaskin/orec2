@@ -31,18 +31,18 @@ var tmpl = template.Must(template.New("").Funcs(template.FuncMap{
 		return b.String()
 	},
 }).Parse(`
-{{- range $f := .Facilities }}
-{{- range $g := .ScheduleGroups }}
-{{- range $s := .Schedules }}
-{{ansi 33}}{{.Caption}}{{ansi}}
-{{- range .Activities }}
-+ {{ansi 33}}{{.Label}}{{ansi}}
-    {{- range $i, $ts := .Days }}
-    {{- if .Times }}
-    {{ansi 35}}{{index $s.Days $i}}{{ansi}}
+{{- range $f := .GetFacilities }}
+{{- range $g := .GetScheduleGroups }}
+{{- range $s := .GetSchedules }}
+{{ansi 33}}{{.GetCaption}}{{ansi}}
+{{- range .GetActivities }}
++ {{ansi 33}}{{.GetLabel}}{{ansi}}
+    {{- range $i, $ts := .GetDays }}
+    {{- if .GetTimes }}
+    {{ansi 35}}{{index $s.GetDays $i}}{{ansi}}
     {{- end }}
-    {{- range $j, $t := .Times }}{{if gt (len $ts.Times) 1}}
-      {{else}} {{end}}{{.Label}}
+    {{- range $j, $t := .GetTimes }}{{if gt (len $ts.GetTimes) 1}}
+      {{else}} {{end}}{{.GetLabel}}
     {{- end }}
     {{- end }}
 {{""}}
@@ -59,8 +59,8 @@ func main() {
 	} else if err := proto.Unmarshal(buf, &data); err != nil {
 		panic(err)
 	}
-	data.Facilities = slices.DeleteFunc(data.Facilities, func(facility *schema.Facility) bool {
-		switch facility.Name {
+	data.SetFacilities(slices.DeleteFunc(data.GetFacilities(), func(facility *schema.Facility) bool {
+		switch facility.GetName() {
 		case "CARDELREC Recreation Complex Goulbourn",
 			"Kanata Leisure Centre and Wave Pool",
 			"Minto Recreation Complex - Barrhaven",
@@ -68,24 +68,24 @@ func main() {
 			"Tony Graham Recreation Complex - Kanata":
 			return true // exclude
 		}
-		facility.ScheduleGroups = slices.DeleteFunc(facility.ScheduleGroups, func(group *schema.ScheduleGroup) bool {
-			group.Schedules = slices.DeleteFunc(group.Schedules, func(schedule *schema.Schedule) bool {
-				schedule.Activities = slices.DeleteFunc(schedule.Activities, func(activity *schema.Schedule_Activity) bool {
+		facility.SetScheduleGroups(slices.DeleteFunc(facility.GetScheduleGroups(), func(group *schema.ScheduleGroup) bool {
+			group.SetSchedules(slices.DeleteFunc(group.GetSchedules(), func(schedule *schema.Schedule) bool {
+				schedule.SetActivities(slices.DeleteFunc(schedule.GetActivities(), func(activity *schema.Schedule_Activity) bool {
 					switch {
-					case strings.Contains(activity.XName, "adult skate"):
-					case strings.Contains(activity.XName, "family skate"):
-					case strings.Contains(activity.XName, "public skate"):
+					case strings.Contains(activity.GetXName(), "adult skate"):
+					case strings.Contains(activity.GetXName(), "family skate"):
+					case strings.Contains(activity.GetXName(), "public skate"):
 					//case strings.Contains(activity.XName, "lane swim"):
 					default:
 						return true // include
 					}
-					for _, day := range activity.Days {
-						day.Times = slices.DeleteFunc(day.Times, func(tr *schema.TimeRange) bool {
-							if tr.XWkday == nil || tr.XStart == nil || tr.XEnd == nil {
+					for _, day := range activity.GetDays() {
+						day.SetTimes(slices.DeleteFunc(day.GetTimes(), func(tr *schema.TimeRange) bool {
+							if !tr.HasXWkday() || !tr.HasXStart() || !tr.HasXEnd() {
 								return false // cannot filter
 							}
 							var tvals []schema.ClockRange
-							switch time.Weekday(*tr.XWkday) {
+							switch time.Weekday(tr.GetXWkday()) {
 							case time.Saturday, time.Sunday:
 								tvals = append(tvals, schema.MakeClockRange(12, 00, 23, 00))
 							default:
@@ -93,20 +93,20 @@ func main() {
 								tvals = append(tvals, schema.MakeClockRange(18, 00, 23, 00))
 							}
 							return !slices.ContainsFunc(tvals, func(v schema.ClockRange) bool {
-								return schema.ClockRange{Start: schema.ClockTime(*tr.XStart), End: schema.ClockTime(*tr.XEnd)}.Overlaps(v) // exclude if doesn't overlap
+								return schema.ClockRange{Start: schema.ClockTime(tr.GetXStart()), End: schema.ClockTime(tr.GetXEnd())}.Overlaps(v) // exclude if doesn't overlap
 							})
-						})
+						}))
 					}
-					return !slices.ContainsFunc(activity.Days, func(day *schema.Schedule_ActivityDay) bool {
-						return len(day.Times) != 0 // exclude if empty
+					return !slices.ContainsFunc(activity.GetDays(), func(day *schema.Schedule_ActivityDay) bool {
+						return len(day.GetTimes()) != 0 // exclude if empty
 					})
-				})
-				return len(schedule.Activities) == 0 // exclude if empty
-			})
-			return len(group.Schedules) == 0 // exclude if empty
-		})
-		return len(facility.ScheduleGroups) == 0 // exclude if empty
-	})
+				}))
+				return len(schedule.GetActivities()) == 0 // exclude if empty
+			}))
+			return len(group.GetSchedules()) == 0 // exclude if empty
+		}))
+		return len(facility.GetScheduleGroups()) == 0 // exclude if empty
+	}))
 	if err := tmpl.Execute(os.Stderr, &data); err != nil {
 		panic(err)
 	}
