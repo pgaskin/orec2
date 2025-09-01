@@ -114,7 +114,7 @@ func run(ctx context.Context) error {
 		slog.Info("using zyte", "limit", *ZyteLimit)
 	}
 	var (
-		data      schema.Data
+		data      schema.Data_builder
 		geoAttrib = map[string]struct{}{}
 		cur       = *PlaceListing
 	)
@@ -135,21 +135,21 @@ func run(ctx context.Context) error {
 		}
 
 		if err := scrapePlaceListings(doc, content, func(u *url.URL, name, address string) error {
-			var facility schema.Facility
+			var facility schema.Facility_builder
 			facility.Name = name
 			facility.Address = address
-			facility.Source = &schema.Source{
+			facility.Source = schema.Source_builder{
 				Url: u.String(),
-			}
+			}.Build()
 
 			if lng, lat, attrib, hasLngLat, err := geocode(ctx, address); err != nil {
 				slog.Warn("failed to geocode place", "name", name, "address", address, "error", err)
 				facility.XErrors = append(facility.XErrors, fmt.Sprintf("failed to resolve address: %v", err))
 			} else if hasLngLat {
-				facility.XLnglat = &schema.LngLat{
+				facility.XLnglat = schema.LngLat_builder{
 					Lat: float32(lat),
 					Lng: float32(lng),
-				}
+				}.Build()
 				if attrib != "" {
 					geoAttrib[attrib] = struct{}{}
 				}
@@ -159,13 +159,13 @@ func run(ctx context.Context) error {
 			if err != nil {
 				slog.Warn("failed to fetch place", "name", name, "error", err)
 				facility.XErrors = append(facility.XErrors, fmt.Sprintf("failed to fetch data: %v", err))
-				data.Facilities = append(data.Facilities, &facility)
+				data.Facilities = append(data.Facilities, facility.Build())
 				return nil
 			} else {
 				slog.Info("got place", "name", name)
 			}
 			if !date.IsZero() {
-				facility.Source.XDate = timestamppb.New(date)
+				facility.Source.SetXDate(timestamppb.New(date))
 			}
 			if *Scrape == "" {
 				return nil
@@ -204,7 +204,7 @@ func run(ctx context.Context) error {
 				}
 
 				if err := scrapeCollapseSections(node, func(label string, content *goquery.Selection) error {
-					var group schema.ScheduleGroup
+					var group schema.ScheduleGroup_builder
 					group.Label = label
 
 					if !strings.Contains(label, "drop-in") && !strings.Contains(label, "schedule") && content.Find(`a[href*="reservation.frontdesksuite"],p:contains("schedules listed in the charts below"),th:contains("Monday")`).Length() == 0 {
@@ -236,7 +236,7 @@ func run(ctx context.Context) error {
 
 				schedule:
 					for _, table := range content.Find("table").EachIter() {
-						var schedule schema.Schedule
+						var schedule schema.Schedule_builder
 
 						schedule.Caption = normalizeText(table.Find("caption").First().Text(), false, false)
 
@@ -272,7 +272,7 @@ func run(ctx context.Context) error {
 									}
 								}
 							} else {
-								var activity schema.Schedule_Activity
+								var activity schema.Schedule_Activity_builder
 								if cells.Length() != len(schedule.Days)+1 {
 									facility.XErrors = append(facility.XErrors, fmt.Sprintf("failed to parse schedule %q (group %q): row size mismatch", schedule.Caption, group.Label))
 									continue schedule
@@ -331,7 +331,7 @@ func run(ctx context.Context) error {
 											}, normalizeText(t, false, true)) == "n/a" {
 												continue
 											}
-											var trange schema.TimeRange
+											var trange schema.TimeRange_builder
 											trange.Label = strings.TrimSpace(normalizeText(t, false, false))
 											if wkday != -1 {
 												trange.XWkday = ptrTo(schema.Weekday(wkday))
@@ -343,14 +343,14 @@ func run(ctx context.Context) error {
 												slog.Warn("failed to parse time range", "range", t)
 												facility.XErrors = append(facility.XErrors, fmt.Sprintf("warning: failed to parse time range %q", t))
 											}
-											times = append(times, &trange)
+											times = append(times, trange.Build())
 										}
-										activity.Days = append(activity.Days, &schema.Schedule_ActivityDay{
+										activity.Days = append(activity.Days, schema.Schedule_ActivityDay_builder{
 											Times: times,
-										})
+										}.Build())
 									}
 								}
-								schedule.Activities = append(schedule.Activities, &activity)
+								schedule.Activities = append(schedule.Activities, activity.Build())
 							}
 						}
 						if len(schedule.Days) == 0 || len(schedule.Activities) == 0 {
@@ -358,10 +358,10 @@ func run(ctx context.Context) error {
 							continue schedule
 						}
 
-						group.Schedules = append(group.Schedules, &schedule)
+						group.Schedules = append(group.Schedules, schedule.Build())
 					}
 
-					facility.ScheduleGroups = append(facility.ScheduleGroups, &group)
+					facility.ScheduleGroups = append(facility.ScheduleGroups, group.Build())
 					return nil
 				}); err != nil {
 					return err
@@ -372,7 +372,7 @@ func run(ctx context.Context) error {
 				facility.XErrors = append(facility.XErrors, fmt.Sprintf("failed to extract facility information: %v", err))
 			}
 
-			data.Facilities = append(data.Facilities, &facility)
+			data.Facilities = append(data.Facilities, facility.Build())
 			return nil
 		}); err != nil {
 			return err
@@ -392,7 +392,7 @@ func run(ctx context.Context) error {
 		slog.Info("saving protobuf data to file", "name", *Scrape)
 		if buf, err := (proto.MarshalOptions{
 			Deterministic: true,
-		}).Marshal(&data); err != nil {
+		}).Marshal(data.Build()); err != nil {
 			return fmt.Errorf("save data: %w", err)
 		} else if err := os.WriteFile(*Scrape, buf, 0644); err != nil {
 			return fmt.Errorf("save data: %w", err)

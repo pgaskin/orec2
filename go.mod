@@ -11,7 +11,7 @@ require (
 	github.com/protocolbuffers/txtpbfmt v0.0.0-20250326144435-a5fe55684d52
 	golang.org/x/text v0.24.0
 	golang.org/x/time v0.11.0
-	google.golang.org/protobuf v1.36.6
+	google.golang.org/protobuf v1.36.8
 )
 
 require (

@@ -48,10 +48,7 @@ var tmpl = template.Must(template.New("").Funcs(template.FuncMap{
 		}
 		return s
 	},
-	"wkdayshort": func(x *schema.Weekday) string {
-		if x == nil {
-			return ""
-		}
+	"wkdayshort": func(x schema.Weekday) string {
 		switch x.AsWeekday() {
 		case time.Sunday:
 			return "su"
@@ -75,68 +72,68 @@ var tmpl = template.Must(template.New("").Funcs(template.FuncMap{
 	"quote": strconv.Quote,
 	"upper": strings.ToUpper,
 	"tr2cr": func(x *schema.TimeRange) *schema.ClockRange {
-		if x.XStart == nil || x.XEnd == nil {
+		if !x.HasXStart() || !x.HasXEnd() {
 			return nil
 		}
 		return &schema.ClockRange{
-			Start: schema.ClockTime(*x.XStart),
-			End:   schema.ClockTime(*x.XEnd),
+			Start: schema.ClockTime(x.GetXStart()),
+			End:   schema.ClockTime(x.GetXEnd()),
 		}
 	},
 }).Parse(`
-{{- range $i, $a := .Attribution }}{{if $i}}{{"\n"}}{{end}}{{$a}}{{ end -}}
+{{- range $i, $a := .GetAttribution }}{{if $i}}{{"\n"}}{{end}}{{$a}}{{ end -}}
 
-{{- range $fi, $f := .Facilities }}
+{{- range $fi, $f := .GetFacilities }}
 {{- "\n\n======\n\n" -}}
 
-{{ $f.Name }}
-{{"  "}}{{ with $f.Source }}{{.Url}}{{ end }}
+{{ $f.GetName }}
+{{"  "}}{{ with $f.GetSource }}{{.GetUrl}}{{ end }}
 
-{{- with $f.XErrors }}
-{{"\n+ "}}ERRORS ({{$f.Name}})
+{{- with $f.GetXErrors }}
+{{"\n+ "}}ERRORS ({{$f.GetName}})
 {{- range . }}
 - {{.}}
 {{- end }}
 {{- end }}
 
-{{- with $f.Address }}
-{{"\n+ "}}ADDRESS ({{$f.Name}})
+{{- with $f.GetAddress }}
+{{"\n+ "}}ADDRESS ({{$f.GetName}})
 {{ . | trim | wrap 120 | prefix "  " }}
-{{ with $f.XLnglat }}{{"  "}}{{.Lng}}, {{.Lat}}{{ end }}
+{{ with $f.GetXLnglat }}{{"  "}}{{.GetLng}}, {{.GetLat}}{{ end }}
 {{- end }}
 
-{{- with $f.Description }}
-{{"\n+ "}}DESCRIPTION ({{$f.Name}})
-{{ . | trim | wrap 120 | prefix "  " }}
-{{- end }}
-
-{{- with $f.NotificationsHtml }}
-{{"\n+ "}}NOTIFICATIONS ({{$f.Name}})
+{{- with $f.GetDescription }}
+{{"\n+ "}}DESCRIPTION ({{$f.GetName}})
 {{ . | trim | wrap 120 | prefix "  " }}
 {{- end }}
 
-{{- with $f.SpecialHoursHtml }}
-{{"\n+ "}}SPECIAL HOURS ({{$f.Name}})
+{{- with $f.GetNotificationsHtml }}
+{{"\n+ "}}NOTIFICATIONS ({{$f.GetName}})
 {{ . | trim | wrap 120 | prefix "  " }}
 {{- end }}
 
-{{- range $gi, $g := .ScheduleGroups }}
-{{"\n+ "}}GROUP {{ or $g.XTitle $g.Label | quote }} ({{$f.Name}})
+{{- with $f.GetSpecialHoursHtml }}
+{{"\n+ "}}SPECIAL HOURS ({{$f.GetName}})
+{{ . | trim | wrap 120 | prefix "  " }}
+{{- end }}
 
-{{- with $g.ScheduleChangesHtml }}
+{{- range $gi, $g := .GetScheduleGroups }}
+{{"\n+ "}}GROUP {{ or $g.GetXTitle $g.GetLabel | quote }} ({{$f.GetName}})
+
+{{- with $g.GetScheduleChangesHtml }}
 {{"  + "}}SCHEDULE CHANGES
 {{ . | trim | wrap 120 | prefix "  | " }}
 {{- end }}
 
-{{- range $si, $s := .Schedules }}
-{{"  &  "}}{{$s.Caption}} ({{$f.Name}} > {{ or $g.XTitle $g.Label }})
-{{- range $sai, $sa := .Activities }}
-{{- range $di, $d := .Days }}
-{{- range $dti, $dt := .Times }}
+{{- range $si, $s := .GetSchedules }}
+{{"  &  "}}{{$s.GetCaption}} ({{$f.GetName}} > {{ or $g.GetXTitle $g.GetLabel }})
+{{- range $sai, $sa := .GetActivities }}
+{{- range $di, $d := .GetDays }}
+{{- range $dti, $dt := .GetTimes }}
 {{"    ~" -}}
-{{" "}}[{{or (wkdayshort $dt.XWkday | upper) (index $s.Days $di) }} {{with (tr2cr $dt)}}{{.Format false}}{{else}}{{quote $dt.Label}}{{end -}}]{{/**/ -}}
-{{" "}}{{or $sa.XName $sa.Label -}}
-{{" "}}({{$f.Name}}){{/**/ -}}
+{{" "}}[{{if $dt.HasXWkday}}{{wkdayshort $dt.GetXWkday | upper}}{{else}}{{index $s.GetDays $di}}{{end}} {{with (tr2cr $dt)}}{{.Format false}}{{else}}{{quote $dt.GetLabel}}{{end -}}]{{/**/ -}}
+{{" "}}{{or $sa.GetXName $sa.GetLabel -}}
+{{" "}}({{$f.GetName}}){{/**/ -}}
 {{- end }}
 {{- end }}
 {{- end }}

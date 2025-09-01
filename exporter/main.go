@@ -237,12 +237,12 @@ func run(pb string) error {
 			return fmt.Errorf("initialize db: %w", err)
 		}
 
-		for _, attrib := range data.Attribution {
+		for _, attrib := range data.GetAttribution() {
 			if _, err := db.Exec(`INSERT INTO metadata (key, value) VALUES ('attribution', ?)`, attrib); err != nil {
 				return fmt.Errorf("insert attribution: %w", err)
 			}
 		}
-		for _, facility := range data.Facilities {
+		for _, facility := range data.GetFacilities() {
 			var facilityID int64
 			if err := db.QueryRow(
 				`INSERT INTO facilities (
@@ -256,19 +256,19 @@ func run(pb string) error {
 				?, ?, ?,
 				?, ?
 			) RETURNING id`,
-				facility.Source.Url, protoTimestampAsTimeOrZero(facility.Source.XDate),
-				facility.Name, facility.Description,
-				facility.Address, lngOrNil(facility.XLnglat), latOrNil(facility.XLnglat),
-				facility.NotificationsHtml, facility.SpecialHoursHtml,
+				facility.GetSource().GetUrl(), protoTimestampAsTimeOrZero(facility.GetSource().GetXDate()),
+				facility.GetName(), facility.GetDescription(),
+				facility.GetAddress(), lngOrNil(facility.GetXLnglat()), latOrNil(facility.GetXLnglat()),
+				facility.GetNotificationsHtml(), facility.GetSpecialHoursHtml(),
 			).Scan(&facilityID); err != nil {
 				return fmt.Errorf("insert facility: %w", err)
 			}
-			for _, scrapeError := range facility.XErrors {
+			for _, scrapeError := range facility.GetXErrors() {
 				if _, err := db.Exec(`INSERT INTO scrape_errors (facility_id, message) VALUES (?, ?)`, facilityID, scrapeError); err != nil {
 					return fmt.Errorf("insert scrape error: %w", err)
 				}
 			}
-			for _, scheduleGroup := range facility.ScheduleGroups {
+			for _, scheduleGroup := range facility.GetScheduleGroups() {
 				var scheduleGroupID int64
 				if err := db.QueryRow(
 					`INSERT INTO schedule_groups (
@@ -281,12 +281,12 @@ func run(pb string) error {
 					?
 				) RETURNING id`,
 					facilityID,
-					scheduleGroup.XTitle, scheduleGroup.Label,
-					scheduleGroup.ScheduleChangesHtml,
+					scheduleGroup.GetXTitle(), scheduleGroup.GetLabel(),
+					scheduleGroup.GetScheduleChangesHtml(),
 				).Scan(&scheduleGroupID); err != nil {
 					return fmt.Errorf("insert schedule group: %w", err)
 				}
-				for _, schedule := range scheduleGroup.Schedules {
+				for _, schedule := range scheduleGroup.GetSchedules() {
 					var scheduleID int64
 					if err := db.QueryRow(
 						`INSERT INTO schedules (
@@ -297,12 +297,12 @@ func run(pb string) error {
 						?, ?
 					) RETURNING id`,
 						scheduleGroupID,
-						schedule.Caption, schedule.Caption, // same for now, have both for compatibility if we decide to parse it more
+						schedule.GetCaption(), schedule.GetCaption(), // same for now, have both for compatibility if we decide to parse it more
 					).Scan(&scheduleID); err != nil {
 						return fmt.Errorf("insert schedule: %w", err)
 					}
-					dayIDs := make([]int64, len(schedule.Days))
-					for i, day := range schedule.Days {
+					dayIDs := make([]int64, len(schedule.GetDays()))
+					for i, day := range schedule.GetDays() {
 						dayID := &dayIDs[i]
 						if err := db.QueryRow(`SELECT id FROM days WHERE day = ?`, day).Scan(dayID); err != nil {
 							if errors.Is(err, sql.ErrNoRows) {
@@ -313,19 +313,19 @@ func run(pb string) error {
 							}
 						}
 					}
-					for _, activity := range schedule.Activities {
+					for _, activity := range schedule.GetActivities() {
 						var activityID int64
-						if err := db.QueryRow(`SELECT id FROM activities WHERE activity = ?`, activity.XName).Scan(&activityID); err != nil {
+						if err := db.QueryRow(`SELECT id FROM activities WHERE activity = ?`, activity.GetXName()).Scan(&activityID); err != nil {
 							if errors.Is(err, sql.ErrNoRows) {
-								err = db.QueryRow(`INSERT INTO activities (activity) VALUES (?) RETURNING id`, activity.XName).Scan(&activityID)
+								err = db.QueryRow(`INSERT INTO activities (activity) VALUES (?) RETURNING id`, activity.GetXName()).Scan(&activityID)
 							}
 							if err != nil {
 								return fmt.Errorf("insert activity: %w", err)
 							}
 						}
-						for activityDayIdx, activityDay := range activity.Days {
+						for activityDayIdx, activityDay := range activity.GetDays() {
 							dayID := dayIDs[activityDayIdx]
-							for _, activityTime := range activityDay.Times {
+							for _, activityTime := range activityDay.GetTimes() {
 								if _, err := db.Exec(
 									`INSERT INTO schedule_times (
 									schedule_id, day_id, activity_id,
@@ -337,8 +337,8 @@ func run(pb string) error {
 									?, ?, ?
 								)`,
 									scheduleID, dayID, activityID,
-									activity.Label, activityTime.Label,
-									wkday2OrNil(activityTime.XWkday), trangeStartOrNil(activityTime), trangeDurationOrNil(activityTime),
+									activity.GetLabel(), activityTime.GetLabel(),
+									wkday2OrNil(activityTime.GetXWkday(), activityTime.HasXWkday()), trangeStartOrNil(activityTime), trangeDurationOrNil(activityTime),
 								); err != nil {
 									return fmt.Errorf("insert activity time: %w", err)
 								}
@@ -391,21 +391,21 @@ var weekdays = [7]string{
 }
 
 func trangeStartOrNil(x *schema.TimeRange) *int {
-	if x != nil && x.XStart != nil && x.XEnd != nil && *x.XEnd >= *x.XStart {
-		return pointer(int(*x.XStart))
+	if x != nil && x.HasXStart() && x.HasXEnd() && x.GetXEnd() >= x.GetXStart() {
+		return pointer(int(x.GetXStart()))
 	}
 	return nil
 }
 
 func trangeDurationOrNil(x *schema.TimeRange) *int {
-	if x != nil && x.XStart != nil && x.XEnd != nil && *x.XEnd >= *x.XStart {
-		return pointer(int(*x.XEnd - *x.XStart))
+	if x != nil && x.HasXStart() && x.HasXEnd() && x.GetXEnd() >= x.GetXStart() {
+		return pointer(int(x.GetXEnd() - x.GetXStart()))
 	}
 	return nil
 }
 
-func wkday2OrNil(x *schema.Weekday) *string {
-	if x != nil {
+func wkday2OrNil(x schema.Weekday, has bool) *string {
+	if has {
 		return pointer(weekdays[x.AsWeekday()])
 	}
 	return nil
@@ -413,14 +413,14 @@ func wkday2OrNil(x *schema.Weekday) *string {
 
 func lngOrNil(lnglat *schema.LngLat) *float32 {
 	if lnglat != nil {
-		return pointer(lnglat.Lng)
+		return pointer(lnglat.GetLng())
 	}
 	return nil
 }
 
 func latOrNil(lnglat *schema.LngLat) *float32 {
 	if lnglat != nil {
-		return pointer(lnglat.Lat)
+		return pointer(lnglat.GetLat())
 	}
 	return nil
 }
