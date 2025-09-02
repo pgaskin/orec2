@@ -533,6 +533,8 @@ facilities {
         days {
           times {
             label: "5 - 5:50 pm pm"
+            _start: 1020
+            _end: 1070
             _wkday: WEDNESDAY
           }
         }
@@ -592,7 +594,6 @@ facilities {
       }
     }
   }
-  _errors: "warning: failed to parse time range \"5 - 5:50 pm pm\""
 }
 facilities {
   name: "Belltown Dome"
@@ -5355,6 +5356,8 @@ facilities {
         days {
           times {
             label: "7:30 to - 8:30 am"
+            _start: 450
+            _end: 510
             _wkday: TUESDAY
           }
         }
@@ -5363,12 +5366,16 @@ facilities {
         days {
           times {
             label: "7:30 to - 8:30 am"
+            _start: 450
+            _end: 510
             _wkday: THURSDAY
           }
         }
         days {
           times {
             label: "7:30 to - 8:30 am"
+            _start: 450
+            _end: 510
             _wkday: FRIDAY
           }
         }
@@ -6100,9 +6107,6 @@ facilities {
       }
     }
   }
-  _errors: "warning: failed to parse time range \"7:30 to\\u00a0- 8:30 am\""
-  _errors: "warning: failed to parse time range \"7:30 to\\u00a0- 8:30 am\""
-  _errors: "warning: failed to parse time range \"7:30 to\\u00a0- 8:30 am\""
 }
 facilities {
   name: "Carleton Heights Community Centre"
