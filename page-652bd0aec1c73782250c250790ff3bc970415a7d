@@ -6,30 +6,27 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 383
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Mon, 01 Sep 2025 05:19:05 GMT
-ETag: "1756703560-gzip"
+Date: Tue, 02 Sep 2025 00:57:34 GMT
+ETag: "1756774653-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Mon, 01 Sep 2025 05:12:40 GMT
-Set-Cookie: visid_incap_243507=MeVa+i8cQDKgfieHBRX1hcgstWgAAAAAQUIPAAAAAADS8aVVuOZlpTZNnykdPRHH; expires=Mon, 31 Aug 2026 07:23:53 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=IUhmCyZmjg3nNixkaXmSIAAAAABiCu68xHHhA3OHIY4Nzsnx; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_1342_243507=IzuzcwNYFBdvkCFTSr6fEsgstWgAAAAAhIooogZH6p1Ife6WK4pwIQ==; path=/; Domain=.ottawa.ca
+Last-Modified: Tue, 02 Sep 2025 00:57:33 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
 X-CDN: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 12-137386583-137386605 NNNY CT(31 40 0) RT(1756703944965 119) q(0 0 0 0) r(0 0) U24
-X-Varnish: 32041781 31939013
+X-Iinfo: 46-81553402-81553405 NNNN CT(32 39 0) RT(1756774653185 110) q(0 0 1 -1) r(1 8) U24
+X-Varnish: 33063919
 
 
 <!DOCTYPE html>
@@ -183,7 +180,7 @@ X-Varnish: 32041781 31939013
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-dc0385221c593b45b2782b46aa65ec846ef97680f6bae4f1470166ac6a827246">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0e77f808b20d9fa715bbb01b639517e65f67a7f8648554bcbdba5a70d8b5408b">
   
     
       
@@ -197,7 +194,7 @@ X-Varnish: 32041781 31939013
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-24dc4ad2b87a34e2832243b9d787fd89a31d2562a7278b21596021cf92cbb5b9">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3894fdb95818f1b7873959ed121eb5c39445006a61ddd7f151428b4cb3a9a261">
   
     
       
@@ -368,7 +365,7 @@ X-Varnish: 32041781 31939013
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1e713c278b8c5fa6ae5db80c79f7cff830b03e39ff8911e6194704e5407d4a99">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f5d9eb372ad8432eb087921c6d5c7968fb920ec093d04b63bf8f10d488c59730">
   
     
       
@@ -382,7 +379,7 @@ X-Varnish: 32041781 31939013
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ca44f82e00e412570be95a289e91396b30155dc30ac1ffb0e9922bba636c7c8d">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-985ef3c1b865830804078524103792b913524aceeb096e1b7e9d8837370a0062">
   
     
       
@@ -687,7 +684,7 @@ X-Varnish: 32041781 31939013
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-44b4985193a9f87b2c28a75e2eda75cbe5e1f671e40b0ec7391da3244d5c78c0">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b3a729aa20efdb2d6bcce81e140e40a2deefecadfc41dfa6ab3fbc5572826079">
   
     
       
@@ -701,7 +698,7 @@ X-Varnish: 32041781 31939013
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bad9b61b53b78f5925f2a119dca9a2bc6e9b6c04400378605080db7db99b8339">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1c510ed51e83a6849c579de387974933bc47ffdce1a5bf72afddb229af9f750f">
   
     
       
@@ -963,7 +960,7 @@ X-Varnish: 32041781 31939013
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-5547ba88f593d6422015111cac1a79e973d45eb70dcbb966593599a317aa76d3">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-faef9b7706e9740cade7a1ac818ce59010c8254752dd3062b0a41d23a9a060a9">
   
     
       <div class="view-header">
@@ -1341,6 +1338,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1698282932" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1701436629" async></script></body>
 </html>
 
