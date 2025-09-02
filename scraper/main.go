@@ -1010,7 +1010,13 @@ func normalizeText(s string, newlines, lower bool) string {
 }
 
 func parseClockRange(s string) (r schema.ClockRange, ok bool) {
+	strict := false
+
 	s = strings.ReplaceAll(normalizeText(s, false, true), " ", "")
+
+	parseSeparator := func(s string) (s1, s2 string, ok bool) {
+		return stringsCutFirst(s, "-", "to")
+	}
 
 	parsePart := func(s string, mdef byte) (t schema.ClockTime, m byte, ok bool) {
 		switch s {
@@ -1025,8 +1031,26 @@ func parseClockRange(s string) (r schema.ClockRange, ok bool) {
 				sh, sm, m = s[:2], s[2:], 0 // military time
 			} else {
 				if s, ok = strings.CutSuffix(s, "pm"); ok {
+					if !strict {
+						for {
+							x, ok := strings.CutSuffix(strings.TrimRight(s, " "), "pm")
+							if !ok {
+								break
+							}
+							s = x // be lenient about duplicate pm suffixes
+						}
+					}
 					m = 'p' // 12h pm
 				} else if s, ok = strings.CutSuffix(s, "am"); ok {
+					if !strict {
+						for {
+							x, ok := strings.CutSuffix(strings.TrimRight(s, " "), "am")
+							if !ok {
+								break
+							}
+							s = x // be lenient about duplicate am suffixes
+						}
+					}
 					m = 'a' // 12h am
 				} else {
 					m = mdef // 24h or assumed am/pm
@@ -1076,11 +1100,20 @@ func parseClockRange(s string) (r schema.ClockRange, ok bool) {
 	if s == "" {
 		return r, false // empty
 	}
-	s1, s2, ok := strings.Cut(s, "-")
+	s1, s2, ok := parseSeparator(s)
 	if !ok {
-		s1, s2, ok = strings.Cut(s, "to")
-		if !ok {
-			return r, false // single time
+		return r, false // single time
+	}
+	if !strict {
+		for {
+			s2a, s2b, ok := parseSeparator(s2)
+			if !ok {
+				break // no extraneous separators
+			}
+			if strings.TrimSpace(s2a) != "" || strings.TrimSpace(s2b) == "" {
+				break // junk on the left side, or nothing on the right side
+			}
+			s2 = s2b // be lenient about extraneous separators with nothing in between (it's a frequent typo)
 		}
 	}
 	if s1 == "" || s2 == "" {
@@ -1102,6 +1135,9 @@ func parseClockRange(s string) (r schema.ClockRange, ok bool) {
 		if !ok {
 			return r, false // lhs hour is now invalid
 		}
+		if m1 != m2 {
+			panic("wtf") // should be impossible (m1 == 0 thus it didn't include am/pm, and we reparsed it with m2)
+		}
 	}
 	if t1 == t2 {
 		return r, false // zero range
@@ -1110,6 +1146,23 @@ func parseClockRange(s string) (r schema.ClockRange, ok bool) {
 		t2 += 24 * 60 // next day
 	}
 	return schema.ClockRange{Start: t1, End: t2}, true
+}
+
+// stringsCutFirst is like [strings.Cut], but selects the earliest of multiple
+// possible separators.
+func stringsCutFirst(s string, sep ...string) (before, after string, ok bool) {
+	sn, si := 0, -1
+	for _, sep := range sep {
+		if i := strings.Index(s, sep); i >= 0 {
+			if si < 0 || i < si {
+				sn, si = len(sep), i
+			}
+		}
+	}
+	if si >= 0 {
+		return s[:si], s[si+sn:], true
+	}
+	return s, "", false
 }
 
 func ptrTo[T any](x T) *T {
