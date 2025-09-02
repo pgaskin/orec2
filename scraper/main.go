@@ -173,6 +173,9 @@ func run(ctx context.Context) error {
 			if err := func() error {
 				content, err := scrapeMainContentBlock(doc)
 				if err != nil {
+					if tmp, err := url.Parse(cur); err == nil && !strings.EqualFold(doc.Url.Hostname(), tmp.Hostname()) {
+						return fmt.Errorf("facility page %q is not a City of Ottawa webpage", doc.Url)
+					}
 					return err
 				}
 
