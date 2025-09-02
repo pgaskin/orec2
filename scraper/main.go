@@ -697,6 +697,7 @@ func zyte(req *http.Request, followRedirect bool) (*http.Response, error) {
 		return nil, fmt.Errorf("parse response url: %w", err)
 	} else {
 		freq.URL = ru
+		freq.Host = ru.Host
 	}
 	freq.Header["xxx-use-proxy"] = []string{"zyte"}
 
