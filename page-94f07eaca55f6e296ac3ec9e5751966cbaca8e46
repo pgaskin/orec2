@@ -6,19 +6,17 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 759
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Tue, 02 Sep 2025 00:53:58 GMT
-ETag: "1756773678-gzip"
+Date: Wed, 03 Sep 2025 03:27:10 GMT
+ETag: "1756870029-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 02 Sep 2025 00:41:18 GMT
-Set-Cookie: visid_incap_243507=MFx9GEoySg+VgNbV9UNYwiVAtmgAAAAAQUIPAAAAAACX8e9PSD64QDyrC6fmxV4/; expires=Tue, 01 Sep 2026 06:33:51 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=183fQtDXEkvM/PmzaXmSIAAAAACnW2SEF/EMDGBGfbFvx11W; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_1353_243507=uANdDqrjRQwZvc5eu9LGEiZAtmgAAAAA4sMAuwo/zHM0CKb2JrO+SA==; path=/; Domain=.ottawa.ca
+Last-Modified: Wed, 03 Sep 2025 03:27:09 GMT
+Set-Cookie: incap_ses_1845_243507=mN2QX/ZODFkSz2+gN8KaGY61t2gAAAAAVF86NSQh4VoqMe6jCBG9qQ==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
@@ -28,8 +26,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 7-65937195-65937204 NNNN CT(33 38 0) RT(1756774438520 81) q(0 0 1 1) r(1 1) U24
-X-Varnish: 30820807 31929786
+X-Iinfo: 53-188445710-188445724 NNNY CT(32 33 0) RT(1756870029632 104) q(0 0 0 5) r(10 10) U24
+X-Varnish: 33584618
 
 
 <!DOCTYPE html>
@@ -41,7 +39,7 @@ X-Varnish: 30820807 31929786
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/brewer-pool-and-arena" />
 <meta name="dcterms.title" content="Brewer Pool and Arena" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-08-29" />
+<meta name="dcterms.date" content="2025-09-02" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -183,7 +181,7 @@ X-Varnish: 30820807 31929786
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2508ae9a7438218e8b24ba37a0569ee3fbee144eebfb7728c5757112d05f886b">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b0ecfd9a07c0bd8bc0c29ecfe5d717cd336f6195fe2b86c68c273abbca48b82f">
   
     
       
@@ -197,7 +195,7 @@ X-Varnish: 30820807 31929786
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-96541b50c1212c29e25551c96afbc2fab1ef7c6e187a2c8a822f3eee3314bc2d">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b507a69e9b62130a5a32b208d3e72bc092a33321c2bb5ee682567bd95dc5d07f">
   
     
       
@@ -246,7 +244,7 @@ X-Varnish: 30820807 31929786
 
 
   
-            <div class="clearfix text-formatted field field--name-field-description field--type-text-long field--label-hidden field__item"><p>Brewer Pool boasts a 25 metre, six lane pool with a sauna. There is a small lounge with kitchen amenities available for rent.</p>
+            <div class="clearfix text-formatted field field--name-field-description field--type-text-long field--label-hidden field__item"><p>Brewer Pool boasts a 25 metre, six lane pool with a sauna. There is a small lounge available for rent.</p>
 <p>The arena has one ice surface and the area is home to the outdoor ice oval in winter, weather permitting.</p>
 </div>
       
@@ -271,7 +269,7 @@ X-Varnish: 30820807 31929786
 
 
   
-            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Labour Day weekend</h2>
+            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Schedule changes</h2>
 </div>
       
 
@@ -280,20 +278,14 @@ X-Varnish: 30820807 31929786
 
   
             <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><ul>
-<li><strong>Saturday, August 30 to Monday, September 1</strong>
-<ul>
-<li>Closed</li>
-</ul>
-</li>
-</ul>
-<h3>Schedule changes</h3>
-<ul>
 <li><strong>Sunday, September 7</strong>
 <ul>
 <li>Public skating, 3 to&nbsp;3:50 pm, cancelled</li>
 <li>Family skating, 2 to&nbsp;2:50 pm, cancelled</li>
 </ul>
 </li>
+</ul>
+<ul>
 <li><strong>Sunday, September 14</strong>
 <ul>
 <li>Public skating, 3 to&nbsp;3:50 pm, cancelled</li>
@@ -312,7 +304,7 @@ X-Varnish: 30820807 31929786
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">12:30 pm - 7:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">7:30 am - 2:00 pm<br />5:00 pm - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">7:30 am - 12:00 pm<br />5:00 pm - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">7:30 am - 1:00 pm<br />5:00 pm - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">7:30 am - 12:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">7:30 am - 2:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">9:30 am - 2:30 pm</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">12:30 pm - 7:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">7:30 am - 2:00 pm<br />5:00 pm - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">7:30 am - 12:00 pm<br />5:00 pm - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">7:30 am - 1:00 pm<br />5:00 pm - 9:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">7:30 am - 12:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">7:30 am - 2:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">9:30 am - 2:30 pm</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -490,7 +482,7 @@ X-Varnish: 30820807 31929786
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-82d419c53a58b1a1d1f6d1b1ff8c0c8ddf56a7b38ebe74c5e480b7cbdd69aa2e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d46f244e15851d60ad616805d2ed2bfaa24bab6b99e91017a2b7b0518045d18d">
   
     
       
@@ -504,7 +496,7 @@ X-Varnish: 30820807 31929786
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-856213021145f1a5f874b5a3bad7c6ec9b2a448b3b9071c4c87f456efa567b99">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-fd6e944d58cca53ee94c6a0563db75335a9639d68ae9d5cd5b738dd08b80fa30">
   
     
       
@@ -534,19 +526,6 @@ X-Varnish: 30820807 31929786
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The schedules listed in the charts below are subject to change.&nbsp;Holiday hours and programs may vary.&nbsp;</p>
 <p><a href="https://ottawa.ca/en/recreation-and-culture/swimming/drop-swimming-and-aquafit#">Play free, additional details, descriptions, fees and cancellation information</a>.</p>
 <p><strong>Reservations not required.</strong></p>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule changes</h3>
-<ul>
-<li><strong>Saturday, August 30 to Monday, September 1</strong>
-<ul>
-<li>The facility is closed and all programs cancelled.</li>
-</ul>
-</li>
-</ul>
 </div>
       
       </div>
@@ -721,7 +700,7 @@ X-Varnish: 30820807 31929786
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-341a536726a0fa727893feb25d5cea133a95e081a8a27b9b6bef2442d74023f5">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b299e48f5377f777f6a1a1ebfc29ee7c44ca589653afbad8c218f47e29e1f7b9">
   
     
       
@@ -735,7 +714,7 @@ X-Varnish: 30820807 31929786
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9cff95ad88b7e21dd0fb5c6728fca55e250fd1f00a079715e114fa0b90260a8b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5488768f49d08641b75f3b7cd47975c4afc61436de836807081e6dd6f88e5164">
   
     
       
@@ -937,7 +916,7 @@ X-Varnish: 30820807 31929786
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-a1170ac3f774fffb1465331530886f28d07658cb46ab2d1f0f7038c51c0580ff">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-e910589846f1d61ed805d17ca0c473a9f296dfe19791d7edaefbeb22deab3537">
   
     
       <div class="view-header">
@@ -1377,6 +1356,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2033507767" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=492634978" async></script></body>
 </html>
 

@@ -6,19 +6,19 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 80
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Tue, 02 Sep 2025 00:55:30 GMT
-ETag: "1756774529-gzip"
+Date: Wed, 03 Sep 2025 03:28:41 GMT
+ETag: "1756870040-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 02 Sep 2025 00:55:29 GMT
-Set-Cookie: visid_incap_243507=RiTZ2PNFRvq2YNkCXCIqAoBAtmgAAAAAQUIPAAAAAACOlDoZ8xp4JZh75R7xTS3y; expires=Tue, 01 Sep 2026 08:37:45 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=b3GAIJeyXk0gU8bCaXmSIAAAAAAXOjak+vKUsCZCYgypXrWI; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_1607_243507=h3NAZMl0oiXU3cd0bDZNFoFAtmgAAAAAtUVcEssBFtXal+iKq5Llow==; path=/; Domain=.ottawa.ca
+Last-Modified: Wed, 03 Sep 2025 03:27:20 GMT
+Set-Cookie: visid_incap_243507=ccC3e2IOSCWX2UBuPelsz+m1t2gAAAAAQUIPAAAAAAC/LCAjd7vyoYVdK9LKCfBd; expires=Wed, 02 Sep 2026 07:25:13 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=2Yi5MWdtAnocMxmHaXmSIAAAAAA7lEBkkL6ePgnVKoJE4Yqc; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_1341_243507=vC18LkI+dmc/K5euyzCcEum1t2gAAAAALYJO0JUPtN/DNxuVH277/w==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
@@ -28,8 +28,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 59-283866610-283866726 NNNY CT(49 98 0) RT(1756774529177 377) q(0 1 1 5) r(11 11) U24
-X-Varnish: 33431088
+X-Iinfo: 12-150587614-150587628 NNNN CT(31 37 0) RT(1756870121667 94) q(0 0 1 0) r(1 1) U24
+X-Varnish: 34207537 34166015
 
 
 <!DOCTYPE html>
@@ -41,7 +41,7 @@ X-Varnish: 33431088
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/jim-durrell-recreation-centre" />
 <meta name="dcterms.title" content="Jim Durrell Recreation Centre" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-08-26" />
+<meta name="dcterms.date" content="2025-09-02" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -183,7 +183,7 @@ X-Varnish: 33431088
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0fc9f91146be0ae75d319cfbe7cae342674b2e99b43a03662b49875f8a456636">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-277393b958ca660f05b087d9ee2142ec934050d4ffc6477bc9e7bbb3ac35a909">
   
     
       
@@ -197,7 +197,7 @@ X-Varnish: 33431088
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c097527c907b818ff25583397931554914d04f814f6ede067ca7217f0739db00">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1625aaccd723d806e27d07438c38b4a74a66e3b293e844c182ec7ed0807a84e5">
   
     
       
@@ -463,7 +463,7 @@ X-Varnish: 33431088
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-245aa63d828c809985ec5cdcb5ef178b5cbbf4ce7012cac8d8c3786a8e26d867">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7fc556c5510a7d998ac898493493dc3dbed9c9a7e918569064bff95d321b1537">
   
     
       
@@ -477,7 +477,7 @@ X-Varnish: 33431088
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-04c61ab410aa8e94c41ebeb716393350995673518c96edccc28c18d3c7165a33">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-23e39088cfa519856a08583896a0db8760e32cad4b552564230bb8afc2a22bec">
   
     
       
@@ -510,79 +510,6 @@ X-Varnish: 33431088
 <p>Reservations not required.</p>
 </div>
       
-      </div>
-  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
-          <div class="table-responsive">
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
-	<caption>Jim Durrell Recreation Centre - skating - July 7 to August 31</caption>
-	<thead>
-		<tr>
-			<th>
-			&nbsp;
-			</th>
-			<th>
-			Monday
-			</th>
-			<th>
-			Tuesday
-			</th>
-			<th>
-			Wednesday
-			</th>
-			<th>
-			Thursday
-			</th>
-			<th>
-			Friday
-			</th>
-			<th>
-			Saturday
-			</th>
-			<th>
-			Sunday
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th>
-			Public skating
-			</th>
-			<td>
-			5:15 - 6:05 pm
-			</td>
-			<td>
-			n/a
-			</td>
-			<td>
-			n/a
-			</td>
-			<td>
-			n/a
-			</td>
-			<td>
-			n/a
-			</td>
-			<td>
-			n/a
-			</td>
-			<td>
-			4:15 - 5:05 pm&nbsp;
-			</td>
-		</tr>
-		<tr>
-			<th>Family skating</th>
-			<td>4:15 - 5:05 pm</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>3:15 - 4:05 pm&nbsp;</td>
-		</tr>
-	</tbody>
-</table></div>
-      </div>
       </div>
   <div class="paragraph paragraph--type--table paragraph--view-mode--default">
           <div class="table-responsive">
@@ -736,7 +663,7 @@ X-Varnish: 33431088
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-23ad66a1c685e15f430bd804dbe39adc3c46792faeda230b02b38d86d1470b01">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-71bcc2f7510a7d8006dbaf9ed6ff7c7cea6da924665148970f32ddec24f67090">
   
     
       
@@ -750,7 +677,7 @@ X-Varnish: 33431088
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-dd5124062193d9520b0fbbfaa2036bb25f9e155cbb84934ad9a164528fd8ac87">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-753968a3b119a2d2047929a2e255428070ca035fbb627a1d612bd52dcce0095f">
   
     
       
@@ -788,69 +715,6 @@ X-Varnish: 33431088
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p><a class="btn btn-primary" href="https://reservation.frontdesksuite.ca/rcfs/arenajimdurrell">Ice sports - Reserve a spot at Jim Durrell Arena</a></p>
 </div>
       
-      </div>
-  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
-          <div class="table-responsive">
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
-	<caption>Jim Durrell Recreation Centre - ice sports - July 7 to August 31</caption>
-	<thead>
-		<tr>
-			<td>
-			 &nbsp;
-			</td>
-			<th>
-			Monday&nbsp;
-			</th>
-			<th>
-			Tuesday&nbsp;
-			</th>
-			<th>
-			Wednesday&nbsp;
-			</th>
-			<th>
-			Thursday&nbsp;
-			</th>
-			<th>
-			Friday&nbsp;
-			</th>
-			<th>
-			Saturday&nbsp;
-			</th>
-			<th>
-			Sunday&nbsp;
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th>
-			Ringette (10 to 14 years)&nbsp;
-			</th>
-			<td>
-			n/a
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-			<td>
-			6 - 6:50 pm
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-		</tr>
-	</tbody>
-</table></div>
-      </div>
       </div>
   <div class="paragraph paragraph--type--table paragraph--view-mode--default">
           <div class="table-responsive">
@@ -1060,7 +924,7 @@ X-Varnish: 33431088
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-78396d0c45047ee5d84174ac129d9fbfce81279d610ffa87cfb677e06c0eccdd">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-dc981556bef8fe705597e89c405647feafac7c6a63bb02d046f7fef73a8550e4">
   
     
       <div class="view-header">
@@ -1450,6 +1314,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1710412715" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=703996404" async></script></body>
 </html>
 

@@ -6,30 +6,30 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 633
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Tue, 02 Sep 2025 00:53:57 GMT
-ETag: "1756773801-gzip"
+Date: Wed, 03 Sep 2025 03:27:09 GMT
+ETag: "1756870027-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 02 Sep 2025 00:43:21 GMT
-Set-Cookie: visid_incap_243507=zNl7Z4uwS+qMUivRpQd9BCRAtmgAAAAAQUIPAAAAAACybAGKis3QiU4FT0hAsMer; expires=Tue, 01 Sep 2026 06:32:41 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=Umr+HKetXiStxfI5aXmSIAAAAAAkZ7VpdwdxFPNv2g79rKfI; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_1347_243507=KvzBV1KHFC8i6FCJw4GxEiVAtmgAAAAAKdynbidb5lERwqiItUyNCw==; path=/; Domain=.ottawa.ca
+Last-Modified: Wed, 03 Sep 2025 03:27:07 GMT
+Set-Cookie: visid_incap_243507=KpEatAA9TYWsbWNz97d/fYq1t2gAAAAAQUIPAAAAAAAXhqmBH2wfyP9c3HNI0rTX; expires=Wed, 02 Sep 2026 08:36:24 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=I4kHFf3TaGJTjE1baXmSIAAAAAAYpsNPzC17bOTU5l5EtUnO; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_1607_243507=ZxJ0FgZ2EV3jdlB8bDZNFoy1t2gAAAAArL3zSn2gpmSoDURDQv5t9Q==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
 X-CDN: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 13-164048045-164048076 NNNN CT(40 38 0) RT(1756774436953 197) q(0 1 1 0) r(2 2) U24
-X-Varnish: 33063632 33000200
+X-Iinfo: 61-331479995-331480041 NNNY CT(31 44 0) RT(1756870027654 102) q(0 0 0 0) r(13 13) U24
+X-Varnish: 34865529
 
 
 <!DOCTYPE html>
@@ -41,7 +41,7 @@ X-Varnish: 33063632 33000200
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/bob-macquarrie-recreation-complex-orleans" />
 <meta name="dcterms.title" content="Bob MacQuarrie Recreation Complex - Orléans" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-08-25" />
+<meta name="dcterms.date" content="2025-09-02" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -183,7 +183,7 @@ X-Varnish: 33063632 33000200
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9df8fba6604fd8a74b60f46e4cf2dd0a1533bc566743df42c50948591392e848">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b3ff790e9a208e86a1a56cef37aae270ea85abe8078fdd7876b076c760a6b341">
   
     
       
@@ -197,7 +197,7 @@ X-Varnish: 33063632 33000200
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e3f1ee8cb3020513cc445c7eba76587abae4a623f2a38367c727f7bb47f4593d">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-305dc860dce6a1d4c5ff7c7b15bbbd20bd8f1ebaea53d1956b79f8e1ecd9df25">
   
     
       
@@ -271,7 +271,7 @@ X-Varnish: 33063632 33000200
 
 
   
-            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Labour Day hours</h2>
+            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Closure</h2>
 </div>
       
 
@@ -280,22 +280,6 @@ X-Varnish: 33063632 33000200
 
   
             <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><ul>
-<li><strong>Monday, September 1</strong>
-<ul>
-<li>Closed</li>
-</ul>
-</li>
-</ul>
-<h3>Schedule changes</h3>
-<ul>
-<li><strong>August 30</strong>
-<ul>
-<li>Public skating and figure skating, cancelled</li>
-</ul>
-</li>
-</ul>
-<h3>Closure</h3>
-<ul>
 <li>
 <ul>
 	</ul>
@@ -319,7 +303,7 @@ X-Varnish: 33063632 33000200
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">8:00 am - 6:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">8:00 am - 6:00 pm</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">8:00 am - 6:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">8:00 am - 6:00 pm</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -452,7 +436,7 @@ X-Varnish: 33063632 33000200
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ba52183a99977ea1b017d0e7ad9622d392386634aa009acc657eac51ef5d581a">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-23dee55c0d68e62b378d559d1221eb1fafc4013290f117fa0441a9c88863b3fb">
   
     
       
@@ -466,7 +450,7 @@ X-Varnish: 33063632 33000200
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-15d2b5567f5631427bc113a4446f5c960d31a3bd40d94f1a0394be09e951be87">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bb2595969eb96831cbe6dbd643388ccc584c8780680a1473fd3bedb6cb7e923b">
   
     
       
@@ -820,7 +804,7 @@ X-Varnish: 33063632 33000200
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-218406d15cc56d94591edd4915c6040bc9510bc2c380ab003ef30d56f2634313">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4fc49768f89de406194a9b56fcd1b3aa44e43f126e02793b9e34be9d03db564e">
   
     
       
@@ -834,7 +818,7 @@ X-Varnish: 33063632 33000200
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ca9b1875974aa2a2701dbe6154a550872a2b644dc1441d59b8098c8350d7e5bf">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-077c59579fa783f604f5490ed0ef84315344d33bc70cb9a7fcf6fc8777a72e4f">
   
     
       
@@ -864,19 +848,6 @@ X-Varnish: 33063632 33000200
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The schedules listed in the charts below are subject to change.&nbsp;Holiday hours and programs may vary. The changes will be reflected in the online reservation process.</p>
 <p><a href="https://ottawa.ca/en/recreation-and-culture/sports-and-fitness/drop-sport-and-fitness">Additional details, descriptions, fees and cancellation information.</a></p>
 <p><strong>Reservations not required.</strong></p>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule change</h3>
-<ul>
-<li><strong>Monday, September 1</strong>
-<ul>
-<li>The facility is closed and all programs cancelled.</li>
-</ul>
-</li>
-</ul>
 </div>
       
       </div>
@@ -980,7 +951,7 @@ X-Varnish: 33063632 33000200
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ff4f8c11ff10a9182fd95b543cba21829c041a4edbf3638e20692bd77df311e2">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9153b100fb73917445ae14052d162a90d904878d3e4735669e87189eeaddfef8">
   
     
       
@@ -994,7 +965,7 @@ X-Varnish: 33063632 33000200
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a085e22981361c280eca4c4e8f38bfdbd32b4186d59f761807fdd3f61393f072">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c974bc8e74c0771a405627b5a15dce95b8a84ef3c3f42a7b8cbfa0acc67c4135">
   
     
       
@@ -1024,19 +995,6 @@ X-Varnish: 33063632 33000200
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The schedules listed in the charts below are subject to change.&nbsp;Holiday hours and programs may vary. The changes will be reflected in the online reservation process.</p>
 <p><a href="https://ottawa.ca/en/recreation-and-culture/sports-and-fitness/drop-sport-and-fitness">Additional details, descriptions, fees and cancellation information.</a></p>
 <p><a class="btn btn-primary" href="https://reservation.frontdesksuite.ca/rcfs/bobmacquarrie">Reserve a spot for indoor cycling</a></p>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule change</h3>
-<ul>
-<li><strong>Monday, September 1</strong>
-<ul>
-<li>The facility is closed and all programs cancelled.</li>
-</ul>
-</li>
-</ul>
 </div>
       
       </div>
@@ -1349,7 +1307,7 @@ X-Varnish: 33063632 33000200
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d92aa3033c081c929312b57c2bd239c082b1edc1d9d23f68171142dec1e0533b">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0ed048b6121682d0716bcfb0d0348166ca8225e2e617c3edc9158d77ca2a6bdb">
   
     
       
@@ -1363,7 +1321,7 @@ X-Varnish: 33063632 33000200
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-efb707fde4b0e85cee388dfe25abfe63dbfaa2d012a00194d55b26a4e1988a94">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-04a538bf0f72d6a0ddf0f729a2664e5ae8bfa7c4ebff762a76dc0b5406525d68">
   
     
       
@@ -1393,19 +1351,6 @@ X-Varnish: 33063632 33000200
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The schedules listed in the charts below are subject to change.&nbsp;Holiday hours and programs may vary. The changes will be reflected in the online reservation process.</p>
 <p><a href="https://ottawa.ca/en/recreation-and-culture/sports-and-fitness/drop-sport-and-fitness">Additional details, descriptions, fees and cancellation information.</a></p>
 <p><a class="btn btn-primary" href="https://reservation.frontdesksuite.ca/rcfs/bobmacquarrie">Reserve a spot at Bob MacQuarrie Recreation Complex - Orléans</a></p>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule change</h3>
-<ul>
-<li><strong>Monday, September 1</strong>
-<ul>
-<li>The facility is closed and all programs cancelled.</li>
-</ul>
-</li>
-</ul>
 </div>
       
       </div>
@@ -1677,7 +1622,7 @@ X-Varnish: 33063632 33000200
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-da51976a96a86bc008d396946cd4db2f9f81286d4c9de77c28222ae02cdf7cf6">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ef93b253167a6a85259ecd84ebb9c5319464d3ace533faa999548ca40205df5d">
   
     
       
@@ -1691,7 +1636,7 @@ X-Varnish: 33063632 33000200
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-8c3571c3be643fccb76770d67154b4e4257fab2f98db0009d932da031e82f37b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9f984988f500c9990ab88e34db3fc7877530bff7a75fbe6e0ec77c604bd0a86f">
   
     
       
@@ -1723,108 +1668,6 @@ X-Varnish: 33063632 33000200
 <p><strong>*Reservations not required</strong></p>
 </div>
       
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule change</h3>
-<ul>
-<li><strong>Monday, September 1</strong>
-<ul>
-<li>The facility is closed and all programs cancelled.</li>
-</ul>
-</li>
-</ul>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
-          <div class="table-responsive">
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
-	<caption>Bob MacQuarrie Recreation Complex-Orléans -&nbsp;skating -&nbsp;July 1 to August 31</caption>
-	<thead>
-		<tr>
-			<td>
-			&nbsp;
-			</td>
-			<th>
-			Monday&nbsp;
-			</th>
-			<th>
-			Tuesday&nbsp;
-			</th>
-			<th>
-			Wednesday&nbsp;
-			</th>
-			<th>
-			Thursday&nbsp;
-			</th>
-			<th>
-			Friday&nbsp;
-			</th>
-			<th>
-			Saturday&nbsp;
-			</th>
-			<th>
-			Sunday&nbsp;
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th>
-			Public skating&nbsp;
-			</th>
-			<td>
-			n/a&nbsp;
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-			<td>
-			n/a
-			</td>
-			<td>
-			n/a
-			</td>
-			<td>
-			n/a
-			</td>
-			<td>
-			4:15 - 5:05 pm
-			</td>
-			<td>
-			n/a
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Figure skating&nbsp;
-			</th>
-			<td>
-			n/a&nbsp;
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-			<td>
-			n/a
-			</td>
-			<td>
-			5:15 - 6:05 pm
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-		</tr>
-	</tbody>
-</table></div>
-      </div>
       </div>
   <div class="paragraph paragraph--type--table paragraph--view-mode--default">
           <div class="table-responsive">
@@ -2011,7 +1854,7 @@ X-Varnish: 33063632 33000200
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-61da0a78478d07ce35f6bee0ddabc5c03bab1da80a4acc997c0c98f000ae028a">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-cb9c5572fabc58035acc726c6772fc685e0662059c07da9ab66e42c87feff50a">
   
     
       <div class="view-header">
@@ -2449,6 +2292,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=510372423" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1069555329" async></script></body>
 </html>
 

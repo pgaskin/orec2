@@ -6,30 +6,30 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 130
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Tue, 02 Sep 2025 00:56:57 GMT
-ETag: "1756774616-gzip"
+Date: Wed, 03 Sep 2025 03:30:11 GMT
+ETag: "1756870078-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 02 Sep 2025 00:56:56 GMT
-Set-Cookie: visid_incap_243507=SHtEa53rQa+52mins4//utdAtmgAAAAAQUIPAAAAAAB70cV0/IUgt52F7bDKuig2; expires=Tue, 01 Sep 2026 08:37:45 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=ygjfE6CY3Dr6mPKFaXmSIAAAAAD7HkWb7KU6RXjTQUQ/BVjz; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_1607_243507=GMUzZC/bS0n0Rcl0bDZNFthAtmgAAAAA6eJB8LrPwE5ZSf1eukj9fg==; path=/; Domain=.ottawa.ca
+Last-Modified: Wed, 03 Sep 2025 03:27:58 GMT
+Set-Cookie: visid_incap_243507=OIPmnCRpRAOrGlBGVR3Lt0K2t2gAAAAAQUIPAAAAAABfeBrLzAhhCoBOjEI8PYVv; expires=Wed, 02 Sep 2026 08:39:50 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=znk4ZxYlQGRkTnu8aXmSIAAAAABmpc7+rCbwNPBEayUXbHSy; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_1548_243507=lHPDfRVvgnm6sjaON5p7FUK2t2gAAAAA/9pUu/dJ/6CRUjikyn3+kg==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
 X-CDN: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 59-283888397-283888433 NNNY CT(32 42 0) RT(1756774616417 115) q(0 0 0 3) r(12 12) U24
-X-Varnish: 33431110
+X-Iinfo: 14-189383663-189383677 NNNN CT(31 45 0) RT(1756870211107 101) q(0 0 0 1) r(1 1) U24
+X-Varnish: 34327094 34420039
 
 
 <!DOCTYPE html>
@@ -41,7 +41,7 @@ X-Varnish: 33431110
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/richcraft-recreation-complex-kanata" />
 <meta name="dcterms.title" content="Richcraft Recreation Complex-Kanata" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-08-29" />
+<meta name="dcterms.date" content="2025-09-02" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -183,7 +183,7 @@ X-Varnish: 33431110
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ff4517bc0cddac57f6ed43a65b781247aca24670047c5f555e9486429e4dbb27">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2c0c12680dbde270abbe4b12a3dad45175169ac2c8f38d27c0e7616681bef173">
   
     
       
@@ -197,7 +197,7 @@ X-Varnish: 33431110
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-67c200c03a58fb3929f1fa7a04fdd53f46ba78323495576e212c29905e1fed3f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4dc3b12db23e4e2795a700b46d5118551746fc250de837ddfd4f07b832b5a88a">
   
     
       
@@ -270,7 +270,7 @@ X-Varnish: 33431110
 
 
   
-            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Labour Day</h2>
+            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Closures</h2>
 </div>
       
 
@@ -279,16 +279,6 @@ X-Varnish: 33431110
 
   
             <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><ul>
-<li><strong>Monday, September 1</strong>
-<ul>
-<li>
-<p>8 am to 4 pm</p>
-</li>
-</ul>
-</li>
-</ul>
-<h3>Closures</h3>
-<ul>
 <li><strong>September 2 to 7</strong>
 <ul>
 <li>The&nbsp;<strong>facility</strong>&nbsp;is closed for annual maintenance.</li>
@@ -311,7 +301,7 @@ X-Varnish: 33431110
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">8:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">6:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">6:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">6:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">6:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">8:00 am - 8:00 pm</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">8:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">6:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">6:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">6:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">6:00 am - 10:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">8:00 am - 8:00 pm</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -459,182 +449,6 @@ X-Varnish: 33431110
                               <div class="col collapse-region">
                   <h2 class="no-toc">
                               
-  <button aria-expanded="false" aria-controls="section-952b09e5-e9f0-4e3c-abb8-47b8ecab4302" data-target="#section-952b09e5-e9f0-4e3c-abb8-47b8ecab4302" data-toggle="collapse" role="button" class="border border-primary rounded collapse-section no-toc btn-link btn">Drop-in schedule - Labour Day  </button>
-
-                  </h2>
-                  <div class="collapse collapse-wrapper border border-primary border-top-0 no-gutters p-4 w-100" id="section-952b09e5-e9f0-4e3c-abb8-47b8ecab4302">
-                  
-                                                                                      <div  class="layout__region layout__region--main col-12">
-                          
-                                                      <div class="paragraph paragraph--type--article-reference paragraph--view-mode--default">
-          
-            <div class="field field--name-field-content-ref field--type-entity-reference-label-override field--label-hidden field__item">
-<article class="node node--type-article node--view-mode-default">
-  
-  <div class="node__content">
-      <div class="layout layout--onecol">
-    <div  class="layout__region layout__region--content">
-      
-
-
-  <span class="field field--name-title field--type-string field--label-hidden"><h2  class="h2">Drop-in schedule - Labour Day  </h2>
-</span>
-
-
-<div class="views-element-container">
-
-
-
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8606679bbf57d62d861f164c2e986eff72f59033ab99229d970cc7bad8f0fc2d">
-  
-    
-      
-  
-          </div>
-</div>
-
-
-</div>
-<div class="views-element-container">
-
-
-
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-857117459035cf11451a415219a0adeba2fdb62af8bb99518e72fbeca44cf28f">
-  
-    
-      
-  
-          </div>
-</div>
-
-
-</div>
-
-
-
-  
-      <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden field__items">
-              <div class="field__item">  <div class="paragraph paragraph--type--fixed-layout paragraph--view-mode--default">
-                  
-                          
-                                  
-                  <div class="toc-selectors layout layout--bootstrap-fixed-grid-row-1 row">
-
-            
-              
-                                                                                      <div  class="layout__region layout__region--main col-12">
-                          
-                                                      <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The schedules listed in the charts below are subject to change.</p>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p><strong>Fitness, sports and racquet sports are not available.<br>
-The weight and cardio room is closed.</strong></p>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
-          <div class="table-responsive">
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table dir="ltr">
-	<caption>Richcraft Recreation Complex Kanata – swim drop-ins - Labour Day</caption>
-	<thead>
-		<tr>
-			<td>
-			&nbsp;
-			</td>
-			<th>
-			Monday, September 1&nbsp;
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th>
-			Lane swim
-			</th>
-			<td>
-			8 am – 12:30 pm
-
-			&nbsp;
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Public swim
-			</th>
-			<td>
-			8 am – 12:30 pm
-
-			&nbsp;
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Public swim
-			</th>
-			<td>
-			12:30&nbsp;– 4 pm
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Sauna
-			</th>
-			<td>
-			8 am – 4 pm
-			</td>
-		</tr>
-	</tbody>
-</table></div>
-      </div>
-      </div>
-
-                        </div>
-                                          
-                    
-                
-            </div>
-          
-      </div>
-</div>
-          </div>
-  
-
-
-    </div>
-  </div>
-
-  </div>
-
-</article>
-</div>
-      
-      </div>
-
-                        </div>
-                                          
-                                        </div>
-                  </div>
-                
-                
-            </div>
-          
-      </div>
-</div>
-              <div class="field__item">  <div class="paragraph paragraph--type--layout paragraph--view-mode--default">
-                  
-                          
-                
-                  <div class="layout layout--bootstrap-grid-row-1 row">
-
-            
-                              <div class="col collapse-region">
-                  <h2 class="no-toc">
-                              
   <button aria-expanded="false" aria-controls="section-abca7af1-e370-40d8-91f5-139764ffc7db" data-target="#section-abca7af1-e370-40d8-91f5-139764ffc7db" data-toggle="collapse" role="button" class="border border-primary rounded collapse-section no-toc btn-link btn">Drop-in schedule - swim and aquafit </button>
 
                   </h2>
@@ -661,7 +475,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-cd76fc5bfe1637a2d50999bc990ce9f0019536a157b5e43f486b830a08363807">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6d521f57aa321c5abd727dc7241af2ffe337c0046bcdfb5d06e1f36d445e6467">
   
     
       
@@ -675,7 +489,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-58cd2c310caef5209af500f7fa62c8f2a6aecb7445a096ac80f5cb5c3fcc42ae">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5ecdb0321f7509e17090956d3c70f67a49262f31e0f6daf6e5f4b05f686c8d2b">
   
     
       
@@ -711,15 +525,7 @@ The weight and cardio room is closed.</strong></p>
       </div>
   <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Labour Day</h3>
-<ul>
-<li><strong>Monday, September 1</strong>
-<ul>
-<li>See <a href="https://ottawa.ca/en/richcraft-recreation-complex-kanata-holiday-drop-schedule">Labour Day schedule</a>.</li>
-</ul>
-</li>
-</ul>
-<h3>Closures</h3>
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Closures</h3>
 <ul>
 <li><strong>September 2 to 7</strong>
 <ul>
@@ -734,237 +540,6 @@ The weight and cardio room is closed.</strong></p>
 </ul>
 </div>
       
-      </div>
-  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
-          <div class="table-responsive">
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
-	<caption>Richcraft Recreation Complex Kanata - swim and aquafit -&nbsp;June 30 to August 31</caption>
-	<thead>
-		<tr>
-			<th>
-			&nbsp;
-			</th>
-			<th>
-			Monday&nbsp;
-			</th>
-			<th>
-			Tuesday&nbsp;
-			</th>
-			<th>
-			Wednesday&nbsp;
-			</th>
-			<th>
-			Thursday&nbsp;
-			</th>
-			<th>
-			Friday&nbsp;
-			</th>
-			<th>
-			Saturday&nbsp;
-			</th>
-			<th>
-			Sunday&nbsp;
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th>
-			Reduced lane swim  *Reservations not required.&nbsp;
-			</th>
-			<td>
-			6:30 - 9&nbsp;am,&nbsp;
-			Noon - 1 pm&nbsp;
-			</td>
-			<td>
-			7:30 - 8:30 am,&nbsp;
-			Noon - 1 pm,
-			9 - 10 pm&nbsp;&nbsp;&nbsp;
-			</td>
-			<td>
-			6:30 - 9&nbsp;am,&nbsp;
-			Noon - 1 pm,
-			7 -&nbsp;9 pm&nbsp;
-			</td>
-			<td>7:30 - 8:30 am,&nbsp;
-			Noon - 1 pm,
-			9 - 10 pm&nbsp;&nbsp;&nbsp;</td>
-			<td>
-			6:30 - 9&nbsp;am,&nbsp;
-			Noon - 1 pm
-			</td>
-			<td>
-			n/a
-			</td>
-			<td>
-			n/a
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Lane swim *Reservations not required.&nbsp;
-			</th>
-			<td>
-			7 - 9 pm&nbsp;&nbsp;
-			</td>
-			<td>
-			7 - 9 pm&nbsp;
-			</td>
-			<td>
-			n/a
-
-			&nbsp;
-			</td>
-			<td>
-			7 - 9 pm&nbsp;
-			</td>
-			<td>
-			4 - 6 pm&nbsp;
-			</td>
-			<td>
-			8 - 9:30 am,
-			4 - 6 pm&nbsp;
-			</td>
-			<td>
-			8 - 10:30 am,&nbsp;
-			4 - 6 pm&nbsp;
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Public swim -  leisure pool only *Reservations not required.&nbsp;
-			</th>
-			<td>
-			6:30 - 8:30 am,&nbsp;
-			7 - 9 pm
-			</td>
-			<td>
-			7:30 - 8:30 am,&nbsp;
-			7 - 9 pm
-
-			&nbsp;
-			</td>
-			<td>
-			6:30 - 8:30 am,&nbsp;
-			7 - 9 pm
-			</td>
-			<td>
-			7:30 - 8:30 am,&nbsp;
-			7 - 9 pm
-
-			&nbsp;
-			</td>
-			<td>
-			6:30 - 8:30 am,
-			4 - 6 pm&nbsp;&nbsp;
-			</td>
-			<td>
-			8 - 9:30 am,
-			4 - 6 pm&nbsp;&nbsp;
-			</td>
-			<td>
-			8 -&nbsp;10:30 am,
-			4&nbsp;-&nbsp;6 pm&nbsp;
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Public swim  *Reservations not required.&nbsp;
-			</th>
-			<td>
-			1 - 4 pm&nbsp;
-			</td>
-			<td>1 - 4 pm&nbsp;</td>
-			<td>1 - 4 pm&nbsp;</td>
-			<td>1 - 4 pm&nbsp;</td>
-			<td>1 - 4 pm&nbsp;</td>
-			<td>
-			12:30 - 4 pm&nbsp;&nbsp;
-			</td>
-			<td>
-			1:30 - 4 pm&nbsp;&nbsp;
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Aquafit - deep&nbsp;
-			</th>
-			<td>
-			n/a
-			</td>
-			<td>8:30&nbsp;-&nbsp;9:30 am,
-			9:30&nbsp;-&nbsp;10:30 am&nbsp;</td>
-			<td>
-			n/a
-			</td>
-			<td>
-			8:30&nbsp;-&nbsp;9:30 am,
-			9:30&nbsp;-&nbsp;10:30 am&nbsp;
-			</td>
-			<td>
-			n/a
-			</td>
-			<td>
-			n/a
-			</td>
-			<td>
-			n/a
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Aquafit - shallow&nbsp;
-			</th>
-			<td>
-			n/a
-			</td>
-			<td>8:30&nbsp;-&nbsp;9:30 am,
-			9:30&nbsp;-&nbsp;10:30 am&nbsp;</td>
-			<td>
-			n/a
-			</td>
-			<td>8:30&nbsp;-&nbsp;9:30 am,
-			9:30&nbsp;-&nbsp;10:30 am&nbsp;</td>
-			<td>
-			n/a
-			</td>
-			<td>
-			n/a
-			</td>
-			<td>
-			n/a
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Sauna&nbsp;
-			*Reservations not required.
-			</th>
-			<td>
-			6:30 am -&nbsp;9 pm&nbsp;&nbsp;
-			</td>
-			<td>
-			7:30 am -&nbsp;9 pm&nbsp;&nbsp;
-			</td>
-			<td>
-			6:30 am - 9 pm&nbsp;
-			</td>
-			<td>
-			7:30 am - 9 pm&nbsp;
-			</td>
-			<td>
-			6:30 am - 6 pm&nbsp;
-			</td>
-			<td>
-			8 am - 4 pm&nbsp;&nbsp;
-			</td>
-			<td>
-			8 am - 4 pm&nbsp;&nbsp;
-			</td>
-		</tr>
-	</tbody>
-</table></div>
-      </div>
       </div>
   <div class="paragraph paragraph--type--table paragraph--view-mode--default">
           <div class="table-responsive">
@@ -1288,7 +863,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0746d3fb97095fe8d48c10dd92b317cf2c2ecd794e789ba512f18f9d8a5a3c49">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-bbe03bec5c9d887c309cc57c094baff5100375594e09ff2a5dd0d5ca6693f5c0">
   
     
       
@@ -1302,7 +877,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-beb5379bf848a77f09c6ef961c7981153553b6de08757783e9d3ba61b472de86">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e2bfbb86edcd9e25accec2817a92405c7f225a89f88084c9873420699c5861fe">
   
     
       
@@ -1332,19 +907,6 @@ The weight and cardio room is closed.</strong></p>
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p><a href="https://ottawa.ca/en/recreation-and-culture/sports-and-fitness/drop-sport-and-fitness">Additional details, descriptions, fees and cancellation information.</a></p>
 <p>The schedules listed in the charts below are subject to change.</p>
 <p><strong>Reservations not required.</strong></p>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Labour Day</h3>
-<ul>
-<li><strong>Monday, September 1</strong>
-<ul>
-<li>The weight and cardio room is closed.</li>
-</ul>
-</li>
-</ul>
 </div>
       
       </div>
@@ -1463,7 +1025,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8f2858fe83a5d00c321c88efae748be630fbc55ed54d19cd348658bed7f84905">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-17690268b58948e7e00fe829dd5efc5c79568327675f130c4b939ad1fc9107d5">
   
     
       
@@ -1477,7 +1039,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b94467d5d0c9d6f0e710c8472146644212d44792f4df1add2893c0d89dbacb6d">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e660d5d7c3a226533fb8229de126bfbb0eb98831dec2247bbfc3c33839cc7452">
   
     
       
@@ -1512,19 +1074,6 @@ The weight and cardio room is closed.</strong></p>
       </div>
   <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Labour Day</h3>
-<ul>
-<li><strong>Monday, September 1</strong>
-<ul>
-<li>See&nbsp;<a href="https://ottawa.ca/en/richcraft-recreation-complex-kanata-holiday-drop-schedule">Labour Day schedule</a>.</li>
-</ul>
-</li>
-</ul>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Closure</h3>
 <ul>
 <li><strong>September 2 to 7</strong>
@@ -1541,132 +1090,6 @@ The weight and cardio room is closed.</strong></p>
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p><a class="btn btn-primary" href="https://reservation.frontdesksuite.ca/rcfs/richcraftkanata">Reserve a spot at Richcraft Recreation Complex-Kanata</a></p>
 </div>
       
-      </div>
-  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
-          <div class="table-responsive">
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
-	<caption>Richcraft Recreation Complex - Kanata - group fitness - June 30 to August 31</caption>
-	<thead>
-		<tr>
-			<th>&nbsp;</th>
-			<th>Monday</th>
-			<th>Tuesday</th>
-			<th>Wednesday</th>
-			<th>Thursday</th>
-			<th>Friday</th>
-			<th>Saturday</th>
-			<th>Sunday</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th>Bootcamp</th>
-			<td>n/a</td>
-			<td>7 - 8 am</td>
-			<td>n/a</td>
-			<td>7 - 8 am</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>Cardio and strength</th>
-			<td>6:15 - 7:15 pm</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>6:45 - 7:45 pm</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>Cardio 50+</th>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>9&nbsp;- 10&nbsp;am</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>HIIT</th>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>5:30 -&nbsp;6:30 pm&nbsp;</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>Indoor cycling</th>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>6:30 - 7:30 am</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>TRX</th>
-			<td>n/a</td>
-			<td>5:30 - 6:30 pm</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>Yoga</th>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>9:45 - 10:45 am,&nbsp;
-			11 am - noon</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>Zumba</th>
-			<td>7:30 - 8:30 pm</td>
-			<td>9:30 - 10:30 am</td>
-			<td>
-			6 - 7 pm,&nbsp;
-			7 - 8 pm
-			</td>
-			<td>8:30 - 9:30 am</td>
-			<td>6 - 7 pm,&nbsp;
-			7 - 8 pm</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>Zumba Gold</th>
-			<td>9:30 - 10:30 am</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>9:30 - 10:30 am</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>Zumba Toning</th>
-			<td>n/a</td>
-			<td>6:15 - 7:15 pm</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-	</tbody>
-</table></div>
-      </div>
       </div>
   <div class="paragraph paragraph--type--table paragraph--view-mode--default">
           <div class="table-responsive">
@@ -1863,7 +1286,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a8693d7388e4cd7d857f0da0db42e876a59c010f88aa38dc4592b9de25b34e4d">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4ecb84e2271f26fc0bf0d1ae87abfed856c0e0d754e2f6d6af7d4448f969a1a8">
   
     
       
@@ -1877,7 +1300,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e309988f8041bf584886737b9f8a1ad4b8fc44495dbbc5ee9557945523217b29">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4661a00ebf37186439e9436e8d7da51a02c0b70fad3f861a3594eca8bbc87724">
   
     
       
@@ -1912,19 +1335,6 @@ The weight and cardio room is closed.</strong></p>
       </div>
   <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Labour Day</h3>
-<ul>
-<li><strong>Monday, September 1</strong>
-<ul>
-<li>See&nbsp;<a href="https://ottawa.ca/en/richcraft-recreation-complex-kanata-holiday-drop-schedule">Labour Day schedule</a>.</li>
-</ul>
-</li>
-</ul>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Closure</h3>
 <ul>
 <li><strong>September 2 to 7</strong>
@@ -1935,159 +1345,6 @@ The weight and cardio room is closed.</strong></p>
 </ul>
 </div>
       
-      </div>
-  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
-          <div class="table-responsive">
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
-	<caption>Richcraft Recreation Complex-Kanata - racquet sports -&nbsp;June 30 to August 31</caption>
-	<thead>
-		<tr>
-			<th>
-			&nbsp;
-			</th>
-			<th>
-			Monday&nbsp;
-			</th>
-			<th>
-			Tuesday&nbsp;
-			</th>
-			<th>
-			Wednesday&nbsp;
-			</th>
-			<th>
-			Thursday&nbsp;
-			</th>
-			<th>
-			Friday&nbsp;
-			</th>
-			<th>
-			Saturday&nbsp;
-			</th>
-			<th>
-			Sunday&nbsp;
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th>
-			Badminton doubles - adult &nbsp;
-			</th>
-			<td>
-			n/a&nbsp;
-
-			 &nbsp;
-			</td>
-			<td>
-			7:45 - 8:45 pm,
-			8:45 - 9:45 pm &nbsp;
-			</td>
-			<td>
-			n/a&nbsp;
-
-			 &nbsp;
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Badminton doubles – all ages 
-			</th>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-
-			 &nbsp;
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Badminton - family &nbsp;
-			</th>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>7:45 - 8:45 pm,
-			8:45 - 9:45 pm </td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			8:30 - 9:30 am,
-			9:30 - 10:30 am  &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-
-			 &nbsp;
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Table Tennis - adult &nbsp;
-			</th>
-			<td>
-			n/a  &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			7:45 - 8:45 pm,
-			8:45 - 9:45 pm 
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-			<td>
-			7:45 - 8:45 pm
-
-			&nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-		</tr>
-	</tbody>
-</table></div>
-      </div>
       </div>
   <div class="paragraph paragraph--type--table paragraph--view-mode--default">
           <div class="table-responsive">
@@ -2327,7 +1584,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f0279d3a5a2017702892ae5b1967f3ff866e9a004346337d356693e0366fc516">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8cf81971c4ff8b27e9c0b8ea27dd398cfb6861fdeada6ff0924faa14ce360b0d">
   
     
       
@@ -2341,7 +1598,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e7387803b88d6b53845ac9d3db9ff9a41774c9567cb9a5fd42231b0d05ea1f29">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-82fbba92f4e96106817da1a38a1f61d816223d30c310a5a940b4b9ed9c0ea2d7">
   
     
       
@@ -2376,19 +1633,6 @@ The weight and cardio room is closed.</strong></p>
       </div>
   <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Labour Day</h3>
-<ul>
-<li><strong>Monday, September 1</strong>
-<ul>
-<li>See&nbsp;<a href="https://ottawa.ca/en/richcraft-recreation-complex-kanata-holiday-drop-schedule">Labour Day schedule</a>.</li>
-</ul>
-</li>
-</ul>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Closure</h3>
 <ul>
 <li><strong>September 2 to 7</strong>
@@ -2399,301 +1643,6 @@ The weight and cardio room is closed.</strong></p>
 </ul>
 </div>
       
-      </div>
-  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
-          <div class="table-responsive">
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
-	<caption>Richcraft Recreation Complex - Kanata -&nbsp;sports -&nbsp;June 30 to Aug 31</caption>
-	<thead>
-		<tr>
-			<th>
-			&nbsp;
-			</th>
-			<th>
-			Monday&nbsp;
-			</th>
-			<th>
-			Tuesday&nbsp;
-			</th>
-			<th>
-			Wednesday&nbsp;
-			</th>
-			<th>
-			Thursday&nbsp;
-			</th>
-			<th>
-			Friday&nbsp;
-			</th>
-			<th>
-			Saturday&nbsp;
-			</th>
-			<th>
-			Sunday&nbsp;
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th>
-			Kindergym&nbsp;
-			</th>
-			<td>
-			n/a &nbsp;
-
-			 &nbsp;
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-
-			 &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-
-			 &nbsp;
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-			<td>
-			8:30 - 9:30 am,&nbsp;
-			9:30 - 10:30 am,&nbsp;
-			10:30&nbsp;-&nbsp;11:30 am&nbsp;
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Open Gym &nbsp;
-			</th>
-			<td>
-			n/a &nbsp;
-
-			&nbsp;
-
-			 &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>n/a &nbsp;</td>
-			<td>
-			5:30 - 6:30 pm, 6:30 - 7:30 pm&nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-
-			 &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			2&nbsp;- 3 pm, &nbsp;
-			3&nbsp;- 4 pm &nbsp;
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Open Gym - youth &nbsp;
-			</th>
-			<td>
-			5:30-6:30 pm&nbsp;
-
-			 &nbsp;
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-
-			 &nbsp;
-			</td>
-			<td>
-			5:30 - 6:30 pm&nbsp;
-
-			&nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			Noon - 1 pm,
-			1 - 2 pm&nbsp;
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Open Gym - family &nbsp;
-			</th>
-			<td>
-			6:30 – 7:30 pm&nbsp;
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-
-			 &nbsp;
-			</td>
-			<td>
-			6:30 - 7:30 pm &nbsp;
-			</td>
-			<td>
-			5:30 - 6:30 pm, 6:30 - 7:30 pm&nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Basketball - adult &nbsp;
-			</th>
-			<td>
-			n/a &nbsp;
-
-			 &nbsp;
-			</td>
-			<td>
-			5:30 - 6:30 pm,&nbsp;
-			6:30 - 7:30 pm&nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-
-			 &nbsp;
-			</td>
-			<td>
-			8:30 - 9:30 am, &nbsp;
-			9:30 -10:30 am, &nbsp;
-			10:30 -11:30 am  &nbsp;
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Rockwall  &nbsp;
-			</th>
-			<td>
-			n/a &nbsp;
-
-			 &nbsp;
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-
-			 &nbsp;
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-
-			 &nbsp;
-			</td>
-			<td>
-			n/a&nbsp;
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Volleyball - adult &nbsp;
-			</th>
-			<td>
-			8 - 9 pm, &nbsp;
-			9 - 10 pm &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			8 - 9 pm, &nbsp;
-			9 - 10 pm &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-			<td>
-			5:30 - 6:30 pm, &nbsp;
-			6:30 - 7:30 pm&nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Volleyball - youth&nbsp;
-			</th>
-			<td>
-			8 - 9 pm, &nbsp;
-			9 - 10 pm &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-
-			&nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-
-			&nbsp;
-			</td>
-			<td>
-			8 - 9 pm, &nbsp;
-			9 - 10 pm &nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-
-			&nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-
-			&nbsp;
-			</td>
-			<td>
-			n/a &nbsp;
-
-			&nbsp;
-			</td>
-		</tr>
-	</tbody>
-</table></div>
-      </div>
       </div>
   <div class="paragraph paragraph--type--table paragraph--view-mode--default">
           <div class="table-responsive">
@@ -3066,7 +2015,7 @@ The weight and cardio room is closed.</strong></p>
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-ff20ba09458910594f5f7e78c6429a49f384ed0497762f755d6b33f29c4238f0">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-df5cc47eb2898b592ef237891fe44f308acb9b10532d593345fa2117cfad9fd9">
   
     
       <div class="view-header">
@@ -3518,6 +2467,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1307197280" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=380310011" async></script></body>
 </html>
 

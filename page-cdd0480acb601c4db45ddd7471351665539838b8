@@ -6,30 +6,30 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 581
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Tue, 02 Sep 2025 00:54:35 GMT
-ETag: "1756773892-gzip"
+Date: Wed, 03 Sep 2025 03:27:48 GMT
+ETag: "1756870066-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 02 Sep 2025 00:44:52 GMT
-Set-Cookie: visid_incap_243507=UqrINenbTCeQcu2rhjgOb0pAtmgAAAAAQUIPAAAAAADfEP5g42dyDTjAFFchNtpr; expires=Tue, 01 Sep 2026 08:37:29 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=GLL3TV7R2yZcPtt8aXmSIAAAAABxjaGLRMxMDlCOHi6m9/eO; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_482_243507=2JE6PhmUMxCfGYJr3WiwBkpAtmgAAAAA6PlPV7LPpk6N07dhjEcvJA==; path=/; Domain=.ottawa.ca
+Last-Modified: Wed, 03 Sep 2025 03:27:46 GMT
+Set-Cookie: visid_incap_243507=FZRaPKa5TcGsm+nGX8LcxrK1t2gAAAAAQUIPAAAAAADT8fHVsDvARnbAcSjHbgr1; expires=Wed, 02 Sep 2026 07:49:05 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=7aL6IDn5JUdRmzk9aXmSIAAAAAALEL20DNgf/Jg8MTKswJu0; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_1842_243507=Ev6cHkv8RTcg0XNfwBmQGbO1t2gAAAAAHyectfOt79nmTsC82yxfGA==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
 X-CDN: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 3-91925730-91925738 NNNY CT(47 37 0) RT(1756774475005 100) q(0 0 0 2) r(0 0) U24
-X-Varnish: 33522134 33112694
+X-Iinfo: 62-384001944-384001994 NNNY CT(31 46 0) RT(1756870066851 111) q(0 1 1 1) r(12 12) U24
+X-Varnish: 33966465
 
 
 <!DOCTYPE html>
@@ -41,7 +41,7 @@ X-Varnish: 33522134 33112694
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/diane-deans-greenboro-community-centre" />
 <meta name="dcterms.title" content="Diane Deans Greenboro Community Centre" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-08-16" />
+<meta name="dcterms.date" content="2025-09-02" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -183,7 +183,7 @@ X-Varnish: 33522134 33112694
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-00b09517fe80d152bd2623d4acfe2b10fe2a63cbf1dbf7784e5badb01a3c89cc">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e8bd70168ca2b274fe1c6993b74a2164787263bf505ac1c08216c8a74b186697">
   
     
       
@@ -197,7 +197,7 @@ X-Varnish: 33522134 33112694
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1f0d69a780f85f28ad9478486b2dff23685801f6f4ba8b0ae360407b51a66233">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b8fda5a7c84ace4bfa1d5b3eeb8e75280250d81df0a628f9019a634e5bb63b72">
   
     
       
@@ -266,29 +266,7 @@ X-Varnish: 33522134 33112694
               
                                                                                     <div  class="col-md-4 col-sm-12 col-12 layout__region layout__region--main">
                         
-                                                    
-
-
-  
-            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Labour Day</h2>
-</div>
-      
-
-
-
-
-  
-            <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><ul>
-<li><span><span><strong><span>Monday, September 1</span></strong></span></span>
-<ul>
-<li><span><span><span><span>Closed&nbsp;</span></span></span></span></li>
-</ul>
-</li>
-</ul>
-</div>
-      
-
-<div class="mb-3">
+                                                    <div class="mb-3">
 
 
 
@@ -296,7 +274,7 @@ X-Varnish: 33522134 33112694
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">8:00 am - 6:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">7:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">7:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">7:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">7:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">7:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">8:00 am - 6:00 pm</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">8:00 am - 6:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">7:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">7:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">7:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">7:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">7:30 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">8:00 am - 6:00 pm</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -466,7 +444,7 @@ X-Varnish: 33522134 33112694
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-cbf4e5d5a6891a6070b83d5d513a497424afb48cec33f6b01816298b04390a6e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-79fcd8b88f2b1f0221329e799a2e2222dd97d1a8e2787c558e2b8c67d4f1dba0">
   
     
       
@@ -480,7 +458,7 @@ X-Varnish: 33522134 33112694
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c9528cdcfb699b0a206db1e948526ab269e4f7396e33ba39c2543ec61d576a7a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-324626b90e355ff6b9e413d202c20de27c0955e79a8662b7c8783cc9edbd1f72">
   
     
       
@@ -512,50 +490,6 @@ X-Varnish: 33522134 33112694
 <p><strong>Reservations not required.</strong></p>
 </div>
       
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3><span><span><span><span>Schedule change</span></span></span></span></h3>
-<ul>
-<li><span><span><strong><span>Monday, September 1</span></strong></span></span>
-<ul>
-<li><span><span><span><span>The facility is closed and all programs cancelled.</span></span></span></span></li>
-</ul>
-</li>
-</ul>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
-          <div class="table-responsive">
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
-	<caption>Diane Deans Greenboro Community Centre - weight and cardio room - June 30 to August 31</caption>
-	<thead>
-		<tr>
-			<td>&nbsp;</td>
-			<th>Monday</th>
-			<th>Tuesday</th>
-			<th>Wednesday</th>
-			<th>Thursday</th>
-			<th>Friday</th>
-			<th>Saturday</th>
-			<th>Sunday</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th>Weight and cardio room</th>
-			<td>7:30 am - 9 pm</td>
-			<td>7:30 am - 9 pm</td>
-			<td>7:30 am - 9 pm</td>
-			<td>7:30 am - 9 pm</td>
-			<td>7:30 am - 9 pm</td>
-			<td>8 am - 6&nbsp;pm</td>
-			<td>8 am - 6&nbsp;pm</td>
-		</tr>
-	</tbody>
-</table></div>
-      </div>
       </div>
   <div class="paragraph paragraph--type--table paragraph--view-mode--default">
           <div class="table-responsive">
@@ -657,7 +591,7 @@ X-Varnish: 33522134 33112694
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-606bb2b10945b7d9793433cda281bf19d56a2e3063d7cb7d772ae934fd7a07b7">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-75aa3a0bacab352b77093d30e1b866c875d6a9487fe07a6cedcbd18364fe1d8c">
   
     
       
@@ -671,7 +605,7 @@ X-Varnish: 33522134 33112694
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-47b22282a6e92407ff4c3a917f2090364a4a35f7279b7c97fbb61ddefbd2156f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-285c63caea89ccba8277fab4c8936a789e9d0e149d75a6eb26e8ba534fd9f073">
   
     
       
@@ -708,181 +642,6 @@ X-Varnish: 33522134 33112694
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p><a class="btn btn-primary" href="https://reservation.frontdesksuite.ca/rcfs/greenborocommunitycentre">Reserve a spot at Greenboro Community Centre</a></p>
 </div>
       
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule change</h3>
-<ul>
-<li><strong>Monday, September 1</strong>
-<ul>
-<li>The facility is closed and all programs cancelled.</li>
-</ul>
-</li>
-</ul>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
-          <div class="table-responsive">
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
-	<caption>Diane Deans Greenboro Community Centre - group fitness - June 29 to August 31</caption>
-	<thead>
-		<tr>
-			<td>&nbsp;</td>
-			<th>Monday</th>
-			<th>Tuesday</th>
-			<th>Wednesday</th>
-			<th>Thursday</th>
-			<th>Friday</th>
-			<th>Saturday</th>
-			<th>Sunday</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th>Bootcamp</th>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>5:45 - 6:45 pm</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>Cardio and strength</th>
-			<td>9:15&nbsp;- 10:15 am,&nbsp;
-			Noon - 1 pm</td>
-			<td>5:45 - 6:45 pm</td>
-			<td>n/a</td>
-			<td>9&nbsp;- 10&nbsp;am</td>
-			<td>9 - 10 am</td>
-			<td>9 - 10 am</td>
-			<td>9 - 10 am</td>
-		</tr>
-		<tr>
-			<th>Cardio and strength 50+</th>
-			<td>10:45 - 11:45 am</td>
-			<td>10:45 - 11:45 am</td>
-			<td>n/a</td>
-			<td>10:45 - 11:45 am</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>Core Conditioning</th>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>9 - 10 am</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>HIIT</th>
-			<td>5:45 - 6:45 pm</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>Indoor cycling</th>
-			<td>9 - 10 am</td>
-			<td>7 - 8 pm</td>
-			<td>9 - 10 am</td>
-			<td>n/a</td>
-			<td>9 - 10 am</td>
-			<td>8 - 9 am</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>Intervals</th>
-			<td>n/a</td>
-			<td>9 - 10 am</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>Pilates</th>
-			<td>9:15 - 10:15 am</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>Strength 50+</th>
-			<td>n/a</td>
-			<td>9:15 - 10:15 am</td>
-			<td>n/a</td>
-			<td>9:15 - 10:15 am</td>
-			<td>9:30 - 10:30 am</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>Yoga</th>
-			<td>7 - 8 pm</td>
-			<td>11 am - noon</td>
-			<td>7 - 8 pm</td>
-			<td>11 am - noon</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>Yoga 50+</th>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>9:15 - 10:15 am</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>Zumba</th>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>6 - 7 pm</td>
-			<td>n/a</td>
-			<td>10:30 - 11:30 am</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>Zumba Gold</th>
-			<td>9:15 - 10:15 am</td>
-			<td>n/a</td>
-			<td>10:45 - 11:45 am</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-		<tr>
-			<th>Zumba Toning</th>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>n/a</td>
-			<td>10:45 - 11:45 am</td>
-			<td>n/a</td>
-			<td>n/a</td>
-		</tr>
-	</tbody>
-</table></div>
-      </div>
       </div>
   <div class="paragraph paragraph--type--table paragraph--view-mode--default">
           <div class="table-responsive">
@@ -1114,7 +873,7 @@ X-Varnish: 33522134 33112694
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-026afd828d8e4c7d86ff4554304743d13d8e95f85cda330cc15540c34535526d">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-78569239bede35d7dce3b55bb676981a01f13d0d9fc576e832235cbd2984af6c">
   
     
       
@@ -1128,7 +887,7 @@ X-Varnish: 33522134 33112694
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b6699ca32fca51f871964c2ba6bb7e39aadf5e9dbce197658d67ac2d1434b739">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6a84dbcbc0b2ac45441c68e790112a454a89584dc584dbd364566d9e75e53b2f">
   
     
       
@@ -1163,19 +922,6 @@ X-Varnish: 33522134 33112694
   <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p><a class="btn btn-primary" href="https://reservation.frontdesksuite.ca/rcfs/greenborocommunitycentre">Reserve a spot at Greenboro Community Centre</a></p>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule change</h3>
-<ul>
-<li><strong>Monday, September 1</strong>
-<ul>
-<li>The facility is closed and all programs cancelled.</li>
-</ul>
-</li>
-</ul>
 </div>
       
       </div>
@@ -1313,7 +1059,7 @@ X-Varnish: 33522134 33112694
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d740a950dd7c9a4191140ae36052c6376324bcd50d01e5b3213f29ae6ab8fbbb">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-cb0b8c71dafa060127135adb566ab13b85d0d30b33c53f363e3ee8de5c82d947">
   
     
       
@@ -1327,7 +1073,7 @@ X-Varnish: 33522134 33112694
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-099e9a9f99da9fc9e0d9eaf6033a956cb5e9aefa3be6f8fe637bc5594a360e52">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0b3cc5a67e861147eeb43f36378cb4f7a9a844a8f535e70624d027b98fc8b1c9">
   
     
       
@@ -1496,7 +1242,7 @@ X-Varnish: 33522134 33112694
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-46917efb00e4ea96edd6d9113b488d1f6ffa07d88fb284e868a23ae85312348d">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-b1a2561f87aad7ebb3c9b62e361d230372f7d0a09a45937bed163ebe7d77fb9a">
   
     
       <div class="view-header">
@@ -1891,6 +1637,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=157147824" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=991406414" async></script></body>
 </html>
 

@@ -6,19 +6,19 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 587
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Tue, 02 Sep 2025 00:54:25 GMT
-ETag: "1756773877-gzip"
+Date: Wed, 03 Sep 2025 03:27:37 GMT
+ETag: "1756870057-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 02 Sep 2025 00:44:37 GMT
-Set-Cookie: visid_incap_243507=MyoosH7vRxeEne4XKneti0FAtmgAAAAAQUIPAAAAAAAvAWNqMO1w89vccv4RM9kR; expires=Tue, 01 Sep 2026 07:49:26 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=IIRFUM0/X3NBRfuqaXmSIAAAAAA7pqnmOps+EE1NWu+/a1HI; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_1842_243507=VDpZLwK5F3df5D5ZwBmQGUFAtmgAAAAA74nGxyiCBkIdaemhcjl2Sg==; path=/; Domain=.ottawa.ca
+Last-Modified: Wed, 03 Sep 2025 03:27:37 GMT
+Set-Cookie: visid_incap_243507=meX+FOZYRtua/kDm1VIHL6i1t2gAAAAAQUIPAAAAAAAk1JzXt3G3dDs7/sCUeawN; expires=Wed, 02 Sep 2026 07:37:27 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=baitNPCE+RcaXzq+aXmSIAAAAAA9eeBVhvL5hjn93lKkRcLl; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_489_243507=CbfzHm2uRzeYVpzTaEfJBqi1t2gAAAAAb3vy4ojVedcPEhp2eUDftQ==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
@@ -28,8 +28,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 53-189088741-189088781 NNNY CT(31 35 0) RT(1756774465310 99) q(0 0 0 0) r(0 0) U24
-X-Varnish: 32936143 33031648
+X-Iinfo: 1-33876284-33876285 NNNY CT(14 22 0) RT(1756870057123 87) q(0 0 0 0) r(7 7) U24
+X-Varnish: 34512683
 
 
 <!DOCTYPE html>
@@ -41,7 +41,7 @@ X-Varnish: 32936143 33031648
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/crestview-pool" />
 <meta name="dcterms.title" content="Crestview Pool" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-08-31" />
+<meta name="dcterms.date" content="2025-09-02" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -183,7 +183,7 @@ X-Varnish: 32936143 33031648
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1c9d86efbd0eb1556104c49ab761aa40bdbc41ca1d8e675ba6a5b0ed78ddb6c2">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4c9fef7c98dd6bf8d2bdfbadfc714775cec57463ae4bfc24b80188471e3f2f14">
   
     
       
@@ -197,7 +197,7 @@ X-Varnish: 32936143 33031648
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e9d43475895c3975f052a882bc9ff928fa369dd1f41d588ff7deba743c8c2683">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c6f5bc99bd160a411f0eff83a430538bf6e557c33bfdfe23a84bd3ccb2b20000">
   
     
       
@@ -260,7 +260,7 @@ X-Varnish: 32936143 33031648
 
 
   
-            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Labour Day hours</h2>
+            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Closure</h2>
 </div>
       
 
@@ -268,13 +268,7 @@ X-Varnish: 32936143 33031648
 
 
   
-            <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><ul>
-<li><strong><span><span>Monday, September 1</span></span></strong>
-<ul>
-<li><span><span>11 am to 5 pm</span></span></li>
-</ul>
-</li>
-</ul>
+            <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><p><strong>Closed for the season.</strong></p>
 </div>
       
 
@@ -364,160 +358,6 @@ X-Varnish: 32936143 33031648
                               <div class="col collapse-region">
                   <h2 class="no-toc">
                               
-  <button aria-expanded="false" aria-controls="section-90f86620-9140-4815-bcbd-c2926d77eac9" data-target="#section-90f86620-9140-4815-bcbd-c2926d77eac9" data-toggle="collapse" role="button" class="border border-primary rounded collapse-section no-toc btn-link btn">Drop-in schedule - Labour Day </button>
-
-                  </h2>
-                  <div class="collapse collapse-wrapper border border-primary border-top-0 no-gutters p-4 w-100" id="section-90f86620-9140-4815-bcbd-c2926d77eac9">
-                  
-                                                                                      <div  class="layout__region layout__region--main col-12">
-                          
-                                                      <div class="paragraph paragraph--type--article-reference paragraph--view-mode--default">
-          
-            <div class="field field--name-field-content-ref field--type-entity-reference-label-override field--label-hidden field__item">
-<article class="node node--type-article node--view-mode-default">
-  
-  <div class="node__content">
-      <div class="layout layout--onecol">
-    <div  class="layout__region layout__region--content">
-      
-
-
-  <span class="field field--name-title field--type-string field--label-hidden"><h2  class="h2">Drop-in schedule - Labour Day </h2>
-</span>
-
-
-<div class="views-element-container">
-
-
-
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d5c7fd81e9dab8d408527fa4bf1aeeddb1b7683216a0bf8fea662c743be6159f">
-  
-    
-      
-  
-          </div>
-</div>
-
-
-</div>
-<div class="views-element-container">
-
-
-
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1628e8fde8ef6cec407eb1b144e8584cd3aa4c384d5ef9de585ffa467bf99e96">
-  
-    
-      
-  
-          </div>
-</div>
-
-
-</div>
-
-
-
-  
-      <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden field__items">
-              <div class="field__item">  <div class="paragraph paragraph--type--fixed-layout paragraph--view-mode--default">
-                  
-                          
-                                  
-                  <div class="toc-selectors layout layout--bootstrap-fixed-grid-row-1 row">
-
-            
-              
-                                                                                      <div  class="layout__region layout__region--main col-12">
-                          
-                                                      <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The schedules listed in the charts below are subject to change.</p>
-<p><strong>Reservations not required.</strong></p>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
-          <div class="table-responsive">
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
-	<caption>Crestview Outdoor Pool -&nbsp;swim -&nbsp;Monday, September 1</caption>
-	<thead>
-		<tr>
-			<td>
-			&nbsp;
-			</td>
-			<th>
-			Monday, September 1
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th>
-			Lane swim&nbsp;&nbsp;
-
-			&nbsp;
-			</th>
-			<td>
-			11 am -&nbsp;1 pm&nbsp;
-			</td>
-		</tr>
-		<tr>
-			<th>
-			Public swim&nbsp;&nbsp;&nbsp;
-
-			&nbsp;
-			</th>
-			<td>
-			1 -&nbsp;5 pm&nbsp;
-			</td>
-		</tr>
-	</tbody>
-</table></div>
-      </div>
-      </div>
-
-                        </div>
-                                          
-                    
-                
-            </div>
-          
-      </div>
-</div>
-          </div>
-  
-
-
-    </div>
-  </div>
-
-  </div>
-
-</article>
-</div>
-      
-      </div>
-
-                        </div>
-                                          
-                                        </div>
-                  </div>
-                
-                
-            </div>
-          
-      </div>
-</div>
-              <div class="field__item">  <div class="paragraph paragraph--type--layout paragraph--view-mode--default">
-                  
-                          
-                
-                  <div class="layout layout--bootstrap-grid-row-1 row">
-
-            
-                              <div class="col collapse-region">
-                  <h2 class="no-toc">
-                              
   <button aria-expanded="false" aria-controls="section-ea634c1c-60aa-4096-a81c-fb1d00f769b5" data-target="#section-ea634c1c-60aa-4096-a81c-fb1d00f769b5" data-toggle="collapse" role="button" class="border border-primary rounded collapse-section no-toc btn-link btn">Browse and register for courses and camps (Summer only)</button>
 
                   </h2>
@@ -544,7 +384,7 @@ X-Varnish: 32936143 33031648
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-f6c2ae9ae4e2638f59479c3af35dcd9f9bf55af021d87ddb7fb558a7230c74f5">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-d0f6334099166c96dd46eb2737533a3ce30693fd1c9579d1758dd60e1ad601cf">
   
     
       <div class="view-header">
@@ -949,6 +789,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=914745307" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=563759946" async></script></body>
 </html>
 
