@@ -44,8 +44,11 @@ git \
 - Scraped fields have minimal processing. This helps keep the scraper reliable and reduces the likelihood of accidentally missing important information.
 - Optional fields are available which contain best-effort parsing and normalization of scraped fields (to assist with usage), including:
   - Normalized schedule group name.
+  - Normalized schedule name (facility and date range stripped).
+  - Raw schedule date range (if stripped from the normalized schedule name).
+  - Parsed schedule date range.
   - Normalized schedule activity name.
   - Activity time range and weekday as an integer.
-- Overlapping schedules (e.g., holiday schedules) are not merged. These schedules are not consistently formatted as they are manually named and created, so although I attempt to parse time ranges, I don't use them to merge schedules. It is easier to just organize everything as originally formatted and leave it to the user to decide what to do with it. This helps keep the scraper reliable and reduces the likelihood of accidentally missing important information.
+- Overlapping schedules (e.g., holiday schedules) are not merged. These schedules are not consistently formatted as they are manually named and created, so although I attempt to parse time ranges, I don't use them to merge schedules. This helps keep the scraper reliable and reduces the likelihood of accidentally missing important information.
 - Any potential parsing problems are included in an array of error messages for each facility.
 - A protobuf schema is used for maintainability, but it may be changed in backwards-incompatible ways if needed.
