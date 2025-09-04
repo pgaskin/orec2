@@ -201,6 +201,7 @@ func TestParseDateRange(t *testing.T) {
 		{"Plant Recreation Centre - group fitness{ - }Monday, August 25 to Friday, August 29", 8_25_2, 8_29_6},
 		{"Ray Friel Recreation Complex - skating - Labour Day", 0, 0},
 		{"Walter Baker Sports Centre - Weight and cardio room", 0, 0},
+		{"Plant Recreation Centre - all drop-ins{ - }August 30 and 31", 8_30_0, 8_31_0},
 
 		// synthetic test cases
 		{"test{ - }dummy January 1", 0, 0},
@@ -208,6 +209,9 @@ func TestParseDateRange(t *testing.T) {
 		{"test{ - }January", 0, 0},
 		{"test{ - }January - January", 0, 0},
 		{"test{ - }January, January", 0, 0},
+		{"test{ - }January 1 and 1", 0, 0},
+		{"test{ - }January 1 and 2", 1_01_0, 1_02_0},
+		{"test{ - }January 1 and 3", 0, 0},
 		// TODO: more
 	} {
 		tcP, sep, _ := strings.Cut(tc.S, "{")

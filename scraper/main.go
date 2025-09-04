@@ -1220,8 +1220,12 @@ func parseDateRange(s string) (r schema.DateRange, ok bool) {
 		s, until = strings.CutPrefix(s, "until ")
 	}
 
+	var and, to bool
 	leftStr, rightStr, to := strings.Cut(s, " to ")
-	if to && (starting || until) {
+	if !to {
+		leftStr, rightStr, and = strings.Cut(s, " and ")
+	}
+	if (and || to) && (starting || until) {
 		return r, false // can't both be a range and a one-sided date
 	}
 
@@ -1259,7 +1263,6 @@ func parseDateRange(s string) (r schema.DateRange, ok bool) {
 			}
 		}
 		if !ok {
-			fmt.Println("no weekday/month")
 			return schema.MakeDate(year, month, day, wkday), false // no weekday/month found
 		}
 
@@ -1325,8 +1328,13 @@ func parseDateRange(s string) (r schema.DateRange, ok bool) {
 	}
 
 	switch {
-	case to: // ... to ...
+	case to, and: // ... and/to ...
 		var right schema.Date
+		if and {
+			if _, hasYear := left.Year(); hasYear {
+				return r, false // cannot have year for an "and" range
+			}
+		}
 		if day, err := strconv.ParseInt(rightStr, 10, 0); err == nil && day >= 1 && day <= 32 {
 			year, hasYear := left.Year()
 			if !hasYear {
@@ -1336,7 +1344,18 @@ func parseDateRange(s string) (r schema.DateRange, ok bool) {
 			if !hasMonth {
 				month = 0
 			}
+			if and {
+				leftDay, hasLeftDay := left.Day()
+				if !hasLeftDay {
+					return r, false // must have left day for an "and" range
+				}
+				if leftDay+1 != int(day) {
+					return r, false // right day must be 1 more than the left day for an "and" range
+				}
+			}
 			right, ok = schema.MakeDate(year, month, int(day), -1), true
+		} else if and {
+			return r, false // must only have day number for an "and" range
 		} else {
 			right, ok = parsePart(rightStr)
 		}
