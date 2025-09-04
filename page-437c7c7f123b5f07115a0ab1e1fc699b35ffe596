@@ -6,19 +6,19 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 72
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Wed, 03 Sep 2025 03:27:16 GMT
-ETag: "1756869962-gzip"
+Date: Thu, 04 Sep 2025 04:13:35 GMT
+ETag: "1756959214-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Wed, 03 Sep 2025 03:26:02 GMT
-Set-Cookie: visid_incap_243507=AB2hcFGMTK2qXFRK8mzav5S1t2gAAAAAQUIPAAAAAADLI6ZZVCvUAlSP8qO/OMw7; expires=Wed, 02 Sep 2026 07:41:34 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=TpmZApM5lUDHZ2DpaXmSIAAAAAAcTnF6aZFXDjhnXY++cDd/; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_115_243507=qJJOEPV/Qm3zmgeDSpCYAZS1t2gAAAAARRoft7nILPxhwDY/pAch0A==; path=/; Domain=.ottawa.ca
+Last-Modified: Thu, 04 Sep 2025 04:13:34 GMT
+Set-Cookie: visid_incap_243507=ascwZo3RS7Sol5u3ZiiDLu0RuWgAAAAAQUIPAAAAAADOstIEUxIbgHNdKcoQDIwu; expires=Thu, 03 Sep 2026 07:47:42 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=L5maXHyBUQh2zMPJaXmSIAAAAAA9cOonmyOWrM/9ZrdsBER/; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_1425_243507=Mvj3ZndUNRMhqpINVZ7GE+4RuWgAAAAA8Hn4x4cGFy02JDXhCGqDXg==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
@@ -28,8 +28,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 11-32760201-32760204 NNNY CT(14 29 0) RT(1756870036165 159) q(0 0 0 1) r(1 1) U24
-X-Varnish: 34160156 33028444
+X-Iinfo: 6-55582085-55582087 NNNY CT(13 24 0) RT(1756959213799 191) q(0 0 0 4) r(13 13) U24
+X-Varnish: 34885253
 
 
 <!DOCTYPE html>
@@ -183,7 +183,7 @@ X-Varnish: 34160156 33028444
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-967a52c69b0df2cda454d44897b637dd373c38c7ba97147f9a7a1d6d8840c823">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ed833eae501b5b2f9b99e1131a68401839b98c2e964c93693a12def3d1c9a974">
   
     
       
@@ -197,7 +197,7 @@ X-Varnish: 34160156 33028444
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ccf7bacd38cee0b8721f569cddfeb6a2652e60455ade74377016f7d2396fa3b0">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b9c53827f717ed4ca2ac52f258fb609dedfe3c34f5d78d72c303d10f081f5c9f">
   
     
       
@@ -464,7 +464,7 @@ X-Varnish: 34160156 33028444
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e47fdca2b5a197d09f14ef9dff34b711e989591c7b075404eda24ea3f244a19e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-323b547a37fc3fa316b8d8f4c48d73729ef3311125aa48a87763cf5cbcad97df">
   
     
       
@@ -478,7 +478,7 @@ X-Varnish: 34160156 33028444
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9a310ccdffaf8eb90d96f17196f3af837649130ed199ba94f0ed73f70bc24cdc">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-30211f9f97bbfd4fc26e36d64c05a9966985b3fc2f238b81915a73c35ce6fd8e">
   
     
       
@@ -704,7 +704,7 @@ X-Varnish: 34160156 33028444
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d3e17ac6a75e254a94bc0d50a2964a7630ae6beb736e834b396bee521872b3cf">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e4aca4fac609d11bd459328b41376c186c13d6c537dfae8ee1738b5db11fdb90">
   
     
       
@@ -718,7 +718,7 @@ X-Varnish: 34160156 33028444
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e701b2933895d0e9dd641eaaabdd30c6b0246611bef54bb306361022ac12dd0b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-65240d3864069bc797d2c4f29489ee7c9baee375a59d9d5bb1f5c51cb25ad1f3">
   
     
       
@@ -883,7 +883,7 @@ X-Varnish: 34160156 33028444
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6be1333a36b2d7a4f114b9bc1d45353a69bee0aa0740eee62248e2b9d41b6ee7">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e0260a6d9c634c72e8eb5359da34fffc0984aa4eab4c94b2bcbc319572068f7c">
   
     
       
@@ -897,7 +897,7 @@ X-Varnish: 34160156 33028444
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2fd34807aa17c36a9bb2bbbbde07401fddeac465a8f53545104b17ba439e0c32">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f0bbb809d5cedf0c851c5ccdd2f56a7bb24b641c90ceeb19e27974fff2461600">
   
     
       
@@ -926,7 +926,7 @@ X-Varnish: 34160156 33028444
           
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The schedules listed in the charts below are subject to change.&nbsp;Holiday hours and programs may vary. Changes will be reflected through the booking process.</p>
 <p><a href="https://ottawa.ca/en/recreation-and-culture/sports-and-fitness/drop-sport-and-fitness">Additional details, descriptions, fees and cancellation information.</a></p>
-<p><a class="btn btn-primary" href="https://reservation.frontdesksuite.ca/rcfs/cardelrec">Reserve a spot at CARDELREC Recreation Complex Goulbourn</a></p>
+<p><a class="btn btn-primary" href="https://reservation.frontdesksuite.ca/rcfs/cardelrec">Reserve a spot for indoor cycling</a></p>
 </div>
       
       </div>
@@ -1115,6 +1115,7 @@ X-Varnish: 34160156 33028444
 		<tr>
 			<th>
 			Indoor cycling
+			*Requires reservations
 			</th>
 			<td>
 			7 - 8 am
@@ -1271,7 +1272,7 @@ X-Varnish: 34160156 33028444
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6d4b7140f04476d70f1f661baf6a036bc70ac57884369d9e3824d11f14622a28">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4e5dee2a192532f97d74b01613bbba5cf4cb40cabfbf1058d3de5b855515585a">
   
     
       
@@ -1285,7 +1286,7 @@ X-Varnish: 34160156 33028444
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-87781f20ffbfcb35a1649e4542b8a0566bf494354d0e0ff63b06329b3d7de6e4">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ca094599f1798e32d9240625d8c268cc60b95657144382c499db3253810bb29d">
   
     
       
@@ -1497,7 +1498,7 @@ X-Varnish: 34160156 33028444
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-407cb67a20397e558214504574188589134540349cdcfba47e269c9dfc017d87">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c2db77751200ea1c13aa85f1817912a7c5863c84c1bffd90521df6e14729ed91">
   
     
       
@@ -1511,7 +1512,7 @@ X-Varnish: 34160156 33028444
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-fbaf7278da1f6492e909a7978071b2d9547792601f563901ea8f4e1c2e2aaab4">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a90705a7d7c4d27e102a79fd65fe84e5a174dcc021bef1424c96e7c282c5c33f">
   
     
       
@@ -1745,7 +1746,7 @@ X-Varnish: 34160156 33028444
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9289bb32f67414f392469cfabdf1348326a4c60cf2a35fdc15a100e70231d347">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e08a7f4a7390886c9b67857be1fe21260f0a89436ae07d819f2edb3f4c749a92">
   
     
       
@@ -1759,7 +1760,7 @@ X-Varnish: 34160156 33028444
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b980615ca7c11eecf1a0f9d432e83c9944814e4a9a4b14378805a25264372fd8">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1c329f56eab1806cd0093bbb1bc56c523815100533084bf002d7fb6ed9de7a94">
   
     
       
@@ -2018,7 +2019,7 @@ X-Varnish: 34160156 33028444
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-b24611a89ad53ca4d85677ab3b266383f9e08d3cffcf1b993558a267fd371b51">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-9e26354a839ee0a6b23d86d3dffed12ecc54491cebe84336e89961a6587894dd">
   
     
       <div class="view-header">
@@ -2459,6 +2460,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=871151976" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1000936526" async></script></body>
 </html>
 

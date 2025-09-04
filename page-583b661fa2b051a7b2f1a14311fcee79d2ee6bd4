@@ -6,16 +6,19 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 236
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Wed, 03 Sep 2025 03:29:18 GMT
-ETag: "1756869921-gzip"
+Date: Thu, 04 Sep 2025 04:16:34 GMT
+ETag: "1756959393-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Wed, 03 Sep 2025 03:25:21 GMT
+Last-Modified: Thu, 04 Sep 2025 04:16:33 GMT
+Set-Cookie: visid_incap_243507=KX5pwDoZSB6OKFi7ghvd/6ESuWgAAAAAQUIPAAAAAAACZ1qGNgRaj45eZCXbMj8n; expires=Thu, 03 Sep 2026 07:05:38 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=E6WkMieqvwl8zbU9aXmSIAAAAACj37QaEMHOh9uzuX4p7pzW; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_1538_243507=JRe3RT8/bGC9H1qXDxNYFaESuWgAAAAApLlFWk9EEIlHbK4yGhiVPA==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
@@ -25,8 +28,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: UNCACHEABLE (poor cacheability)
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 60-369131748-369131783 NNNY CT(31 43 0) RT(1756870158531 144) q(0 0 0 -1) r(0 0) U24
-X-Varnish: 34207602 34771442
+X-Iinfo: 11-114640484-114640489 NNNN CT(30 40 0) RT(1756959393801 101) q(0 0 0 1) r(1 3) U24
+X-Varnish: 35665191
 
 
 <!DOCTYPE html>
@@ -232,7 +235,7 @@ X-Varnish: 34207602 34771442
 
 
 
-  <div class="views-element-container"><div class="faceted-search-page view view-place-listing-search view-id-place_listing_search view-display-id-place_listing_search js-view-dom-id-ccaa5e222025f56a53039fe2452404e7a86c0020ea2ced9ff7d6c167c9e0cc4d">
+  <div class="views-element-container"><div class="faceted-search-page view view-place-listing-search view-id-place_listing_search view-display-id-place_listing_search js-view-dom-id-8860f647e1ec8316a52b8b741d0eecc978a8ba7182195931bbc2f596a4389f90">
   
     
       <div class="view-header">
@@ -774,6 +777,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9kEuugzAMRTeUkEn3g5zgUrcOjhKnQFffVPCeoINOLN_j35W9iBbNkC7O_6f2XiyDYlGDizJNDzfkmoC7XZorBNTyRzfVhRuGh5fFzjSMqGYUGRl7hdGNLXzrDu6wnGE0DK_VfYIR1QB9kElxUredsBlZYLBXCbXsHXrDiM6vDDNTc3yk29QJfez31Naeccvr0u3Gj4WUaVJbJBCw9VX1e7KELMyYz5AUKaYsT7QwAa9KoZgkqaa-1PzE1R1Fq8yYPfUYPQ7upGxgah_43VKLSqQX5jf1CLYR"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=316892898" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=886814175" async></script></body>
 </html>
 
