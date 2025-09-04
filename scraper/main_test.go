@@ -251,10 +251,10 @@ func TestParseDateRange(t *testing.T) {
 			continue
 		}
 		if tc.From == 0 && tc.To == 0 {
-			t.Errorf("expected parse(%q) to fail, got %q(%09d,%09d)", dates, r.String(), r.From, r.To)
+			t.Errorf("expected parse(%q) to fail, got %q(%#v,%#v)", dates, r.String(), r.From, r.To)
 		}
 		if tc.From != r.From || tc.To != r.To {
-			t.Errorf("expected parse(%q) to be %q(%09d,%09d), got %q(%09d,%09d)", dates, schema.DateRange{From: tc.From, To: tc.To}.String(), tc.From, tc.To, r.String(), r.From, r.To)
+			t.Errorf("expected parse(%q) to be %q(%#v,%#v), got %q(%#v,%#v)", dates, schema.DateRange{From: tc.From, To: tc.To}.String(), tc.From, tc.To, r.String(), r.From, r.To)
 		}
 		if r.From != 0 {
 			if _, ok := r.From.Month(); !ok {

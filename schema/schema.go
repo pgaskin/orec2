@@ -1,6 +1,8 @@
 package schema
 
 import (
+	"reflect"
+	"slices"
 	"strconv"
 	"strings"
 	"time"
@@ -81,6 +83,21 @@ func (t ClockTime) Norm() ClockTime {
 		t = -1
 	}
 	return t
+}
+
+func (t ClockTime) GoString() string {
+	var b strings.Builder
+	b.WriteString(reflect.TypeOf(t).String())
+	if t < 0 {
+		b.WriteString(strconv.FormatInt(int64(t), 10))
+	} else {
+		b.WriteString("(60*")
+		b.WriteString(strconv.FormatInt(int64(t/60), 10))
+		b.WriteString("+")
+		b.WriteString(strconv.FormatInt(int64(t%60), 10))
+	}
+	b.WriteString(")")
+	return b.String()
 }
 
 type ClockRange struct {
@@ -288,6 +305,32 @@ func (d Date) String() string {
 		}
 		b.WriteString(strconv.Itoa(year))
 	}
+	return b.String()
+}
+
+func (d Date) GoString() string {
+	var b strings.Builder
+	b.WriteString(reflect.TypeOf(d).String())
+	b.WriteString("(")
+	if d <= 0 {
+		b.WriteString(strconv.FormatInt(int64(d), 10))
+	} else {
+		var (
+			c []byte
+			n int
+		)
+		for x := d; x != 0; x /= 10 {
+			switch n {
+			case 1, 3, 5:
+				c = append(c, '_')
+			}
+			c = append(c, '0'+byte(x%10))
+			n++
+		}
+		slices.Reverse(c)
+		b.Write(c)
+	}
+	b.WriteString(")")
 	return b.String()
 }
 

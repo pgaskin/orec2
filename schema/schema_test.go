@@ -1,11 +1,16 @@
 package schema
 
 import (
+	"strings"
 	"testing"
 	"time"
 )
 
 func TestClockTime(t *testing.T) {
+	if !strings.HasSuffix(ClockTime(60*34+56).GoString(), "ClockTime(60*34+56)") {
+		t.Fatal("bad gostring")
+	}
+
 	for _, tc := range []struct {
 		HH1, MM1 int
 		HH2, MM2 int
@@ -54,6 +59,9 @@ func TestDate(t *testing.T) {
 	}
 	if x, ok := tmp.Weekday(); !ok || x != time.Weekday(2) {
 		t.Fatal("bad weekday splitting")
+	}
+	if !strings.HasSuffix(tmp.GoString(), "Date(2222_11_21_3)") {
+		t.Fatal("bad gostring")
 	}
 
 	for _, tc := range []struct {
