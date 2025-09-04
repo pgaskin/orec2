@@ -1,6 +1,12 @@
 package main
 
-import "testing"
+import (
+	"cmp"
+	"strings"
+	"testing"
+
+	"github.com/pgaskin/orec2/schema"
+)
 
 func TestNormalizeText(t *testing.T) {
 	for _, tc := range []struct {
@@ -168,6 +174,99 @@ func TestParseClockRange(t *testing.T) {
 		}
 		if c.End >= 2*24*60 {
 			t.Errorf("parse %q: start time should be before end of next day", tc.A)
+		}
+	}
+}
+
+func TestParseDateRange(t *testing.T) {
+	for _, tc := range []struct {
+		S        string // delimit prefix/range with {}
+		From, To schema.Date
+	}{
+		// a representative sample of real examples
+		//
+		// printf '%s:data.json\n' $(git -C data log --pretty=format:%H data.json) | xargs git show | jq -r '.facilities[].scheduleGroups[].schedules[].caption' | sort -u
+		{"Alexander Community Centre - racquet sports", 0, 0},
+		{"Bearbrook Outdoor Pool - swim and aquafit{ - }August 30 to September 1", 8_30_0, 9_01_0},
+		{"Bearbrook Outdoor Pool - swimming{ - }August 2 to 4", 8_02_0, 8_04_0},
+		{"Bearbrook Outdoor Pool - swimming{ - }Tuesday, July 1", 7_01_3, 7_01_3},
+		{"Beaverbrook outdoor pool - swim{ - }June 14 to 29", 6_14_0, 6_29_0},
+		{"Bob MacQuarrie Recreation Complex - Orléans - group fitness{ - }starting September 8", 9_08_0, 0_0},
+		{"Bob MacQuarrie Recreation Complex-Orléans - Skating{ - }September 3, 2025 to March 29, 2026", 2025_09_03_0, 2026_03_29_0},
+		{"Canterbury Pool - all drop-ins{ - }July 1", 7_01_0, 7_01_0},
+		{"Diane Deans Greenboro Community Centre - weight and cardio room{ - }until June 29", 0, 6_29_0},
+		{"Kanata Seniors Centre - weekly drop-in activities{ - }June, July, August", 0, 0},
+		{"Nepean Seniors Centre", 0, 0},
+		{"Nepean Sportsplex - racquet sports{ - }May 17 to 19", 5_17_0, 5_19_0},
+		{"Plant Recreation Centre - group fitness{ - }Monday, August 25 to Friday, August 29", 8_25_2, 8_29_6},
+		{"Ray Friel Recreation Complex - skating - Labour Day", 0, 0},
+		{"Walter Baker Sports Centre - Weight and cardio room", 0, 0},
+
+		// synthetic test cases
+		{"test{ - }dummy January 1", 0, 0},
+		{"test{ - }until January 1", 0, 1_01_0},
+		{"test{ - }January", 0, 0},
+		{"test{ - }January - January", 0, 0},
+		{"test{ - }January, January", 0, 0},
+		// TODO: more
+	} {
+		tcP, sep, _ := strings.Cut(tc.S, "{")
+		sep, tcR, _ := strings.Cut(sep, "}")
+		tc.S = strings.ReplaceAll(strings.ReplaceAll(tc.S, "{", ""), "}", "")
+		_ = sep
+
+		if tc.S == "" && cmp.Or(tcP, tcR) != "" {
+			panic("invalid test case")
+		}
+		if tcR == "" && cmp.Or(tc.From, tc.To) != 0 {
+			panic("invalid test case")
+		}
+		if tcR == "" && tc.S != tcP {
+			panic("invalid test case")
+		}
+		prefix, dates, ok := cutDateRange(tc.S)
+		if !ok {
+			if tcR != "" {
+				t.Errorf("expected cut(%q) to match, got none", tc.S)
+			}
+			continue
+		}
+		if tcR == "" {
+			t.Errorf("expected cut(%q) to not match, got (%q, %q)", tc.S, prefix, dates)
+			continue
+		}
+		if tcP != prefix || tcR != dates {
+			t.Errorf("expected cut(%q) to be (%q, %q), got (%q, %q)", tc.S, tcP, tcR, prefix, dates)
+			continue
+		}
+		r, ok := parseDateRange(dates)
+		if !ok {
+			if tc.From != 0 || tc.To != 0 {
+				t.Errorf("expected parse(%q) to succeed", dates)
+			}
+			continue
+		}
+		if tc.From == 0 && tc.To == 0 {
+			t.Errorf("expected parse(%q) to fail, got %q(%09d,%09d)", dates, r.String(), r.From, r.To)
+		}
+		if tc.From != r.From || tc.To != r.To {
+			t.Errorf("expected parse(%q) to be %q(%09d,%09d), got %q(%09d,%09d)", dates, schema.DateRange{From: tc.From, To: tc.To}.String(), tc.From, tc.To, r.String(), r.From, r.To)
+		}
+		if r.From != 0 {
+			if _, ok := r.From.Month(); !ok {
+				t.Errorf("bad invariant: parseDateRange should have a month set on from")
+			}
+			if _, ok := r.From.Day(); !ok {
+				t.Errorf("bad invariant: parseDateRange should have a day set on from")
+			}
+		}
+		if r.To != 0 {
+			if _, ok := r.To.Month(); !ok {
+				t.Errorf("bad invariant: parseDateRange should have a month set on to")
+			}
+			if _, ok := r.To.Day(); !ok {
+				t.Errorf("bad invariant: parseDateRange should have a day set on to")
+			}
 		}
 	}
 }

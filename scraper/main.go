@@ -22,6 +22,7 @@ import (
 	"net/url"
 	"os"
 	"path/filepath"
+	"regexp"
 	"slices"
 	"strconv"
 	"strings"
@@ -243,7 +244,20 @@ func run(ctx context.Context) error {
 
 						schedule.Caption = normalizeText(table.Find("caption").First().Text(), false, false)
 
-						name := strings.ToLower(schedule.Caption)
+						// date range suffix
+						name, date, ok := cutDateRange(schedule.Caption)
+						if ok {
+							schedule.XDate = date
+							if r, ok := parseDateRange(date); ok {
+								schedule.XFrom = ptrTo(int32(r.From))
+								schedule.XTo = ptrTo(int32(r.To))
+							} else {
+								facility.XErrors = append(facility.XErrors, fmt.Sprintf("schedule %q: failed to parse date range %q", schedule.Caption, date))
+							}
+						}
+						// " schedule" suffix
+						name = strings.TrimSpace(strings.TrimSuffix(strings.ToLower(name), " schedule"))
+						// facility name prefix
 						if x, ok := strings.CutPrefix(name, strings.ToLower(facility.Name)); ok {
 							name = x
 						} else if x, y, ok := strings.Cut(name, "-"); ok && strings.HasPrefix(strings.ToLower(facility.Name), x) {
@@ -255,15 +269,8 @@ func run(ctx context.Context) error {
 							// added when the year changes, so it's hard to know
 							// if we parsed it correctly
 						}
-						name = strings.TrimSpace(strings.TrimPrefix(strings.TrimSpace(name), "-"))
-						for m := range 12 {
-							if x, _, ok := strings.Cut(name, "- "+strings.ToLower(time.Month(m + 1).String())[:3]); ok {
-								name = x
-								break
-							}
-						}
-						name = strings.TrimSpace(strings.TrimSuffix(name, " schedule"))
-						schedule.XName = name
+						name = strings.TrimLeft(name, " -")
+						schedule.XName = strings.TrimLeft(name, " -")
 
 						// TODO: refactor
 						for _, row := range table.Find("tr").EachIter() {
@@ -1150,6 +1157,206 @@ func parseClockRange(s string) (r schema.ClockRange, ok bool) {
 		t2 += 24 * 60 // next day
 	}
 	return schema.ClockRange{Start: t1, End: t2}, true
+}
+
+var cutDateRangeRe = sync.OnceValue[*regexp.Regexp](func() *regexp.Regexp {
+	var b strings.Builder
+	b.WriteString(`(?i)`)                 // case-insensitive
+	b.WriteString(`^`)                    // anchor
+	b.WriteString(`\s*`)                  // trim whitespace
+	b.WriteString(`(.+?)`)                // prefix
+	b.WriteString(`[ -]*[-][ -]*`)        // separator (spaces/dashes around at least one dash)
+	b.WriteString(`((?:(?:[a-z]+|)\s*)?`) // date range modifier
+	b.WriteString(`(?:`)                  // start of date range:
+	b.WriteString(`(?:`)                  // ... month
+	for i := range 12 {
+		x := time.Month(1 + i).String()
+		if i != 0 {
+			b.WriteString(`|`)
+		}
+		b.WriteString(x[:3]) // first 3
+		b.WriteString(`|`)
+		b.WriteString(x) // or the whole thing
+	}
+	b.WriteString(`)(?:$|[ ,])`) // ... ... followed by a space or comma or end
+	b.WriteString(`|(?:`)        // ... or weekday
+	for i := range 7 {
+		x := time.Weekday(i).String()
+		if i != 0 {
+			b.WriteString(`|`)
+		}
+		b.WriteString(x[:3]) // first 3
+		b.WriteString(`|`)
+		b.WriteString(x) // or the whole thing
+	}
+	b.WriteString(`)(?:$|[ ,])`) // ... ... followed by a space or comma or end
+	b.WriteString(`).*)`)        // and the rest
+	b.WriteString(`\s*`)         // trim whitespace
+	b.WriteString(`$`)           // anchor
+	return regexp.MustCompile(b.String())
+})
+
+// cutDateRange cuts s around the first match of spacs/dash characters followed
+// by a month+space, day+space, or day+comma or day (3 letters) and a
+// non-alphanumeric character. For best results, the string should have already
+// been normalized.
+//
+// note: we do it this way so we can be sure we didn't leave part of a date
+// behind with parseDateRange.
+func cutDateRange(s string) (prefix, dates string, ok bool) {
+	if m := cutDateRangeRe().FindStringSubmatch(s); m != nil {
+		return m[1], m[2], true
+	}
+	return s, "", false
+}
+
+// parseDateRange parses a schedule date range. If successful, the range will
+// always have at least the month and day set on one side.
+func parseDateRange(s string) (r schema.DateRange, ok bool) {
+	s = normalizeText(s, false, true)
+
+	var starting, until bool
+	if s, starting = strings.CutPrefix(s, "starting "); !starting {
+		s, until = strings.CutPrefix(s, "until ")
+	}
+
+	leftStr, rightStr, to := strings.Cut(s, " to ")
+	if to && (starting || until) {
+		return r, false // can't both be a range and a one-sided date
+	}
+
+	parsePart := func(s string) (schema.Date, bool) {
+		var (
+			ok    bool
+			rest               = s
+			year  int          = 0
+			month time.Month   = 0
+			day   int          = 0
+			wkday time.Weekday = -1
+		)
+
+		// parse a weekday or month
+		rest = strings.TrimSpace(rest)
+		s, rest, _ = stringsCutFirst(rest, ",", " ")
+		s = strings.TrimSpace(s)
+		ok = false
+		for i := range 7 {
+			v := time.Weekday(i)
+			x := v.String()
+			if strings.EqualFold(s, x) || strings.EqualFold(s, x[:3]) {
+				wkday, ok = v, true
+				break
+			}
+		}
+		if !ok {
+			for i := range 12 {
+				v := time.Month(i + 1)
+				x := v.String()
+				if strings.EqualFold(s, x) || strings.EqualFold(s, x[:3]) {
+					month, ok = v, true
+					break
+				}
+			}
+		}
+		if !ok {
+			fmt.Println("no weekday/month")
+			return schema.MakeDate(year, month, day, wkday), false // no weekday/month found
+		}
+
+		// if wasn't a month, parse the month next
+		if month == 0 {
+			rest = strings.TrimSpace(rest)
+			s, rest, _ = stringsCutFirst(rest, ",", " ")
+			s = strings.TrimSpace(s)
+			ok = false
+			for i := range 12 {
+				v := time.Month(i + 1)
+				x := v.String()
+				if strings.EqualFold(s, x) || strings.EqualFold(s, x[:3]) {
+					month, ok = v, true
+					break
+				}
+			}
+			if !ok {
+				return schema.MakeDate(year, month, day, wkday), false // no month found after weekday
+			}
+		}
+
+		// parse the day
+		rest = strings.TrimSpace(rest)
+		s, rest, _ = stringsCutFirst(rest, ",", " ")
+		s = strings.TrimSpace(s)
+		ok = false
+		if v, err := strconv.ParseInt(s, 10, 0); err == nil && v >= 1 && v <= 32 {
+			day, ok = int(v), true
+		}
+		if !ok {
+			return schema.MakeDate(year, month, day, wkday), false // invalid day
+		}
+
+		// if there's anything left, parse the year
+		if rest != "" {
+			rest = strings.TrimSpace(rest)
+			s, rest, _ = stringsCutFirst(rest, ",", " ")
+			s = strings.TrimSpace(s)
+			ok = false
+			if v, err := strconv.ParseInt(s, 10, 0); err == nil && v > 2000 && v < 4000 {
+				year, ok = int(v), true
+			}
+			if !ok {
+				return schema.MakeDate(year, month, day, wkday), false // invalid day
+			}
+		}
+
+		// check for trailing junk
+		if rest != "" {
+			return schema.MakeDate(year, month, day, wkday), false // trailing junk
+		}
+
+		// make the date and check it
+		d := schema.MakeDate(year, month, day, wkday)
+		ok = d.IsValid()
+		return d, ok
+	}
+
+	left, ok := parsePart(leftStr)
+	if !ok {
+		return r, false // failed to parse left side or single
+	}
+
+	switch {
+	case to: // ... to ...
+		var right schema.Date
+		if day, err := strconv.ParseInt(rightStr, 10, 0); err == nil && day >= 1 && day <= 32 {
+			year, hasYear := left.Year()
+			if !hasYear {
+				year = 0
+			}
+			month, hasMonth := left.Month()
+			if !hasMonth {
+				month = 0
+			}
+			right, ok = schema.MakeDate(year, month, int(day), -1), true
+		} else {
+			right, ok = parsePart(rightStr)
+		}
+		if !ok {
+			return r, false // failed to parse right side
+		}
+		r.From = left
+		r.To = right
+
+	case starting: // starting ...
+		r.From = left
+
+	case until: // until ...
+		r.To = left
+
+	default: // ...
+		r.From = left
+		r.To = left
+	}
+	return r, true
 }
 
 // stringsCutFirst is like [strings.Cut], but selects the earliest of multiple

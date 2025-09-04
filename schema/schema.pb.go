@@ -599,13 +599,18 @@ func (b0 ScheduleGroup_builder) Build() *ScheduleGroup {
 }
 
 type Schedule struct {
-	state                 protoimpl.MessageState `protogen:"opaque.v1"`
-	xxx_hidden_Caption    string                 `protobuf:"bytes,1,opt,name=caption"`
-	xxx_hidden_XName      string                 `protobuf:"bytes,2,opt,name=_name"`
-	xxx_hidden_Days       []string               `protobuf:"bytes,3,rep,name=days"`
-	xxx_hidden_Activities *[]*Schedule_Activity  `protobuf:"bytes,4,rep,name=activities"`
-	unknownFields         protoimpl.UnknownFields
-	sizeCache             protoimpl.SizeCache
+	state                  protoimpl.MessageState `protogen:"opaque.v1"`
+	xxx_hidden_Caption     string                 `protobuf:"bytes,1,opt,name=caption"`
+	xxx_hidden_XName       string                 `protobuf:"bytes,2,opt,name=_name"`
+	xxx_hidden_XDate       string                 `protobuf:"bytes,5,opt,name=_date"`
+	xxx_hidden_XFrom       int32                  `protobuf:"varint,6,opt,name=_from"`
+	xxx_hidden_XTo         int32                  `protobuf:"varint,7,opt,name=_to"`
+	xxx_hidden_Days        []string               `protobuf:"bytes,3,rep,name=days"`
+	xxx_hidden_Activities  *[]*Schedule_Activity  `protobuf:"bytes,4,rep,name=activities"`
+	XXX_raceDetectHookData protoimpl.RaceDetectHookData
+	XXX_presence           [1]uint32
+	unknownFields          protoimpl.UnknownFields
+	sizeCache              protoimpl.SizeCache
 }
 
 func (x *Schedule) Reset() {
@@ -647,6 +652,27 @@ func (x *Schedule) GetXName() string {
 	return ""
 }
 
+func (x *Schedule) GetXDate() string {
+	if x != nil {
+		return x.xxx_hidden_XDate
+	}
+	return ""
+}
+
+func (x *Schedule) GetXFrom() int32 {
+	if x != nil {
+		return x.xxx_hidden_XFrom
+	}
+	return 0
+}
+
+func (x *Schedule) GetXTo() int32 {
+	if x != nil {
+		return x.xxx_hidden_XTo
+	}
+	return 0
+}
+
 func (x *Schedule) GetDays() []string {
 	if x != nil {
 		return x.xxx_hidden_Days
@@ -671,6 +697,20 @@ func (x *Schedule) SetXName(v string) {
 	x.xxx_hidden_XName = v
 }
 
+func (x *Schedule) SetXDate(v string) {
+	x.xxx_hidden_XDate = v
+}
+
+func (x *Schedule) SetXFrom(v int32) {
+	x.xxx_hidden_XFrom = v
+	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 3, 7)
+}
+
+func (x *Schedule) SetXTo(v int32) {
+	x.xxx_hidden_XTo = v
+	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 4, 7)
+}
+
 func (x *Schedule) SetDays(v []string) {
 	x.xxx_hidden_Days = v
 }
@@ -679,11 +719,38 @@ func (x *Schedule) SetActivities(v []*Schedule_Activity) {
 	x.xxx_hidden_Activities = &v
 }
 
+func (x *Schedule) HasXFrom() bool {
+	if x == nil {
+		return false
+	}
+	return protoimpl.X.Present(&(x.XXX_presence[0]), 3)
+}
+
+func (x *Schedule) HasXTo() bool {
+	if x == nil {
+		return false
+	}
+	return protoimpl.X.Present(&(x.XXX_presence[0]), 4)
+}
+
+func (x *Schedule) ClearXFrom() {
+	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 3)
+	x.xxx_hidden_XFrom = 0
+}
+
+func (x *Schedule) ClearXTo() {
+	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 4)
+	x.xxx_hidden_XTo = 0
+}
+
 type Schedule_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
 
 	Caption    string
 	XName      string
+	XDate      string
+	XFrom      *int32
+	XTo        *int32
 	Days       []string
 	Activities []*Schedule_Activity
 }
@@ -694,6 +761,15 @@ func (b0 Schedule_builder) Build() *Schedule {
 	_, _ = b, x
 	x.xxx_hidden_Caption = b.Caption
 	x.xxx_hidden_XName = b.XName
+	x.xxx_hidden_XDate = b.XDate
+	if b.XFrom != nil {
+		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 3, 7)
+		x.xxx_hidden_XFrom = *b.XFrom
+	}
+	if b.XTo != nil {
+		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 4, 7)
+		x.xxx_hidden_XTo = *b.XTo
+	}
 	x.xxx_hidden_Days = b.Days
 	x.xxx_hidden_Activities = &b.Activities
 	return m0
@@ -1026,10 +1102,13 @@ const file_schema_proto_rawDesc = "" +
 	"\x05label\x18\x01 \x01(\tR\x05label\x12\x16\n" +
 	"\x06_title\x18\x02 \x01(\tR\x06_title\x122\n" +
 	"\x15schedule_changes_html\x18\x03 \x01(\tR\x13scheduleChangesHtml\x12-\n" +
-	"\tschedules\x18\x04 \x03(\v2\x0f.orec2.ScheduleR\tschedules\"\xa8\x02\n" +
+	"\tschedules\x18\x04 \x03(\v2\x0f.orec2.ScheduleR\tschedules\"\xf4\x02\n" +
 	"\bSchedule\x12\x18\n" +
 	"\acaption\x18\x01 \x01(\tR\acaption\x12\x14\n" +
-	"\x05_name\x18\x02 \x01(\tR\x05_name\x12\x12\n" +
+	"\x05_name\x18\x02 \x01(\tR\x05_name\x12\x14\n" +
+	"\x05_date\x18\x05 \x01(\tR\x05_date\x12\x1b\n" +
+	"\x05_from\x18\x06 \x01(\x05B\x05\xaa\x01\x02\b\x01R\x05_from\x12\x17\n" +
+	"\x03_to\x18\a \x01(\x05B\x05\xaa\x01\x02\b\x01R\x03_to\x12\x12\n" +
 	"\x04days\x18\x03 \x03(\tR\x04days\x128\n" +
 	"\n" +
 	"activities\x18\x04 \x03(\v2\x18.orec2.Schedule.ActivityR\n" +

@@ -62,6 +62,9 @@ message Schedule {
     }
     string caption = 1;
     string _name = 2 [json_name="_name"]; // for filtering, parsed out from the caption and normalized (i.e., without facility name or date range), lowercase
+    string _date = 5 [json_name="_date"]; // raw date range, not set if something which looks like a date can't be found in the caption
+    int32 _from = 6 [json_name="_from", features.field_presence=EXPLICIT]; // inclusive from date (YYYYMMDDW), not set if none, parse error, or ambiguous
+    int32 _to = 7 [json_name="_to", features.field_presence=EXPLICIT]; // inclusive to date (YYYYMMDDW), not set if none, parse error, or ambiguous
     repeated string days = 3; // free-form, but usually the day of the week
     repeated Activity activities = 4;
 }

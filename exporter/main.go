@@ -92,7 +92,10 @@ CREATE TABLE schedules (
 	id INTEGER PRIMARY KEY,
 	schedule_group_id INTEGER REFERENCES schedule_groups(id),
 	schedule_caption TEXT NOT NULL,
-	schedule_caption_raw TEXT NOT NULL
+	schedule_caption_raw TEXT NOT NULL,
+	schedule_caption_date_raw TEXT, -- if detected in the caption
+	schedule_date_from INTEGER, -- if parseable, 0 if open-ended start, inclusive start YYYYMMDDW (YYYY is year, 0 if unspecified; MM is month from Jan=1; DD is day; W is weekday from Sun=1, 0 if unspecified)
+	schedule_date_to INTEGER -- if parseable, 0 if open-ended end, inclusive end YYYYMMDDW (ditto)
 );
 
 CREATE TABLE days (
@@ -292,13 +295,16 @@ func run(pb string) error {
 					if err := db.QueryRow(
 						`INSERT INTO schedules (
 						schedule_group_id,
-						schedule_caption, schedule_caption_raw
+						schedule_caption, schedule_caption_raw,
+						schedule_caption_date_raw, schedule_date_from, schedule_date_to
 					) VALUES (
 						?,
-						?, ?
+						?, ?,
+						?, ?, ?
 					) RETURNING id`,
 						scheduleGroupID,
-						schedule.GetCaption(), schedule.GetCaption(), // same for now, have both for compatibility if we decide to parse it more
+						schedule.GetXName(), schedule.GetCaption(), // same for now, have both for compatibility if we decide to parse it more
+						strOrNil(schedule.GetXDate()), schedule.GetXFrom(), schedule.GetXTo(),
 					).Scan(&scheduleID); err != nil {
 						return fmt.Errorf("insert schedule: %w", err)
 					}
@@ -434,6 +440,13 @@ func lngOrNil(lnglat *schema.LngLat) *float32 {
 func latOrNil(lnglat *schema.LngLat) *float32 {
 	if lnglat != nil {
 		return pointer(lnglat.GetLat())
+	}
+	return nil
+}
+
+func strOrNil(str string) *string {
+	if str != "" {
+		return &str
 	}
 	return nil
 }
