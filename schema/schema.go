@@ -329,3 +329,42 @@ func (d DateRange) String() string {
 	}
 	return b.String()
 }
+
+func (tr *TimeRange) AsXParsed() (w time.Weekday, r ClockRange, ok bool) {
+	ok = true
+	if tr.HasXWkday() {
+		w = time.Weekday(tr.GetXWkday())
+	} else {
+		ok = false
+	}
+	if tr.HasXStart() {
+		r.Start = ClockTime(tr.GetXStart())
+	} else {
+		r.Start = -1
+		ok = false
+	}
+	if tr.HasXEnd() {
+		r.End = ClockTime(tr.GetXEnd())
+	} else {
+		r.End = -1
+		ok = false
+	}
+	return
+}
+
+func (s *Schedule) AsXParsedDate() (d DateRange, ok bool) {
+	ok = true
+	if s.HasXFrom() {
+		d.From = Date(s.GetXFrom())
+	} else {
+		d.From = -1
+		ok = false
+	}
+	if s.HasXTo() {
+		d.To = Date(s.GetXTo())
+	} else {
+		d.To = -1
+		ok = false
+	}
+	return
+}

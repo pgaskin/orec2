@@ -46,7 +46,7 @@ func main() {
 			}
 		}
 
-		wd, cr, ok := tr2cr(tr)
+		wd, cr, ok := tr.AsXParsed()
 		if !ok {
 			return false // cannot filter
 		}
@@ -130,12 +130,4 @@ func filter(data *schema.Data, fn func(*schema.Facility, *schema.ScheduleGroup, 
 		}))
 		return len(facility.GetScheduleGroups()) == 0
 	}))
-}
-
-// tr2cr gets the parsed time range, if parseable.
-func tr2cr(tr *schema.TimeRange) (time.Weekday, schema.ClockRange, bool) {
-	if !tr.HasXWkday() || !tr.HasXStart() || !tr.HasXEnd() {
-		return 0, schema.ClockRange{}, false
-	}
-	return time.Weekday(tr.GetXWkday()), schema.ClockRange{Start: schema.ClockTime(tr.GetXStart()), End: schema.ClockTime(tr.GetXEnd())}, true
 }
