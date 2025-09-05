@@ -6,19 +6,16 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 134
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Thu, 04 Sep 2025 04:14:40 GMT
-ETag: "1756959279-gzip"
+Date: Fri, 05 Sep 2025 02:20:31 GMT
+ETag: "1757038696-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Thu, 04 Sep 2025 04:14:39 GMT
-Set-Cookie: visid_incap_243507=HrtH1YzDTXajC3kBnXevgi8SuWgAAAAAQUIPAAAAAADPBECoNV/XJwEZM7yK3Qa3; expires=Thu, 03 Sep 2026 06:52:41 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=QIRTCM6v93UFJ9xeaXmSIAAAAABC3qW/SJ/uCATW3vkPEmC3; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_892_243507=qRefQYRMJh6ZX+NBsQVhDDASuWgAAAAAi+YPKDRiKT7jqQ9/jPuZ+A==; path=/; Domain=.ottawa.ca
+Last-Modified: Fri, 05 Sep 2025 02:18:16 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
@@ -28,8 +25,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 14-24555442-24555449 NNNY CT(31 43 0) RT(1756959279234 106) q(0 0 0 5) r(13 13) U24
-X-Varnish: 35930538
+X-Iinfo: 55-253598803-253598830 NNNN CT(36 37 0) RT(1757038831093 109) q(0 1 1 -1) r(1 1) U24
+X-Varnish: 37171626 36430376
 
 
 <!DOCTYPE html>
@@ -41,7 +38,7 @@ X-Varnish: 35930538
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/entrance-pool" />
 <meta name="dcterms.title" content="Entrance Pool" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-09-03" />
+<meta name="dcterms.date" content="2025-09-04" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -183,7 +180,7 @@ X-Varnish: 35930538
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-69e49fa3dffcf0528b94d0dcbd9b4f3b0b0bf90149c4e700afb8f4676bec06f6">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-77735d46cef5634733433d51b81fba63aaff9045a90f9cc454082331d535b7fe">
   
     
       
@@ -197,7 +194,7 @@ X-Varnish: 35930538
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-747f86fe9b2d3d56dd8e53eb481c27a4219382eb14c907b0a337a66eb9683adb">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f91c4abd5f098998b0f384b6f8f710241da599c62dbb317b3c0e53655efcff32">
   
     
       
@@ -260,21 +257,7 @@ X-Varnish: 35930538
 
 
   
-            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Schedule change</h2>
-</div>
-      
-
-
-
-
-  
-            <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><ul>
-<li><strong>Wednesday, September 3</strong>
-<ul>
-<li>Swim and aquafit cancelled.</li>
-</ul>
-</li>
-</ul>
+            <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><p>The pool is open until September 9.</p>
 </div>
       
 
@@ -390,7 +373,7 @@ X-Varnish: 35930538
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d7d2752e20eb244d3f00d8e95a86615aedee03669130cbf150168b10b2de1331">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-de13d68c19e20bfc1a08bee04b3925b7d1f737787944d6088281eca9c0ee6f39">
   
     
       
@@ -404,7 +387,7 @@ X-Varnish: 35930538
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6a1dc964802885436f3e57e84191f5857bc1c91a11fde6b74ae9ecbba418e62c">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2f6ea84578ec95fa709c24318c46381fff8c0891173b55d60417184b8a2fe482">
   
     
       
@@ -439,19 +422,6 @@ X-Varnish: 35930538
   <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p><a class="btn btn-primary" href="https://reservation.frontdesksuite.ca/rcfs/entrance">Reserve a spot at Entrance Outdoor Pool</a></p>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule change</h3>
-<ul>
-<li><strong>Wednesday, September 3</strong>
-<ul>
-<li>Swim and aquafit cancelled.</li>
-</ul>
-</li>
-</ul>
 </div>
       
       </div>
@@ -599,7 +569,7 @@ X-Varnish: 35930538
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-240faa23f89d4e7ca361ef535a14a03f7b3e769dee34f72ac60a1f2f26672af6">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-eed77793b30c98a7b568b372d7da5ff309e821684294de69581f79f757b53500">
   
     
       <div class="view-header">
@@ -997,6 +967,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1622319469" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=407479267" async></script></body>
 </html>
 
