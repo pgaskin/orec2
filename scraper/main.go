@@ -208,19 +208,13 @@ func run(ctx context.Context) error {
 				}
 
 				if err := scrapeCollapseSections(node, func(label string, content *goquery.Selection) error {
-					var group schema.ScheduleGroup_builder
-					group.Label = label
-
 					if !strings.Contains(label, "drop-in") && !strings.Contains(label, "schedule") && content.Find(`a[href*="reservation.frontdesksuite"],p:contains("schedules listed in the charts below"),th:contains("Monday")`).Length() == 0 {
 						return nil // probably not a schedule group
 					}
 
-					title := normalizeText(label, false, true)
-					title = strings.TrimPrefix(title, "drop-in schedule")
-					title = strings.TrimPrefix(title, "s ")
-					title = strings.TrimSpace(strings.TrimPrefix(strings.TrimSpace(title), "-"))
-					title = cases.Title(language.English).String(title)
-					group.XTitle = title
+					var group schema.ScheduleGroup_builder
+					group.Label = label
+					group.XTitle = extractScheduleGroupTitle(label)
 
 					if scheduleChangeH := content.Find("h1,h2,h3,h4,h5,h6").FilterFunction(func(i int, s *goquery.Selection) bool {
 						return strings.HasPrefix(strings.TrimSpace(strings.ToLower(s.Text())), "schedule change")
@@ -241,7 +235,6 @@ func run(ctx context.Context) error {
 				schedule:
 					for _, table := range content.Find("table").EachIter() {
 						var schedule schema.Schedule_builder
-
 						schedule.Caption = normalizeText(table.Find("caption").First().Text(), false, false)
 
 						// date range suffix
@@ -290,28 +283,7 @@ func run(ctx context.Context) error {
 								for i, cell := range cells.EachIter() {
 									if i == 0 {
 										activity.Label = normalizeText(cell.Text(), false, false)
-										name := strings.ToLower(activity.Label)
-										name = strings.ReplaceAll(name, "swimming", "swim")
-										name = strings.ReplaceAll(name, "aqualite", "aqua lite")
-										name = strings.ReplaceAll(name, "skating", "skate")
-										name = strings.ReplaceAll(name, "pick up", "pick-up")
-										name = strings.ReplaceAll(name, "sport ", "sports ")
-										name = strings.ReplaceAll(name, "®", "")
-										name = strings.ReplaceAll(name, "50 +", "50+")
-										name = strings.ReplaceAll(name, "18 +", "18+")
-										name = strings.ReplaceAll(name, "16 +", "16+")
-										name = strings.ReplaceAll(name, "- 50+", "50+")
-										name = strings.ReplaceAll(name, "- 18+", "18+")
-										name = strings.ReplaceAll(name, "- 16+", "16+")
-										name, _, _ = strings.Cut(name, " *")
-										name, reduced := strings.CutPrefix(name, "reduced ")
-										if !reduced {
-											name, reduced = strings.CutSuffix(name, "- reduced")
-										}
-										if reduced {
-											name += " - reduced capacity"
-										}
-										activity.XName = name
+										activity.XName = cleanActivityName(cell.Text())
 									} else {
 										hdr := schedule.Days[i-1]
 										wkday := time.Weekday(-1)
@@ -1020,6 +992,102 @@ func normalizeText(s string, newlines, lower bool) string {
 	return strings.TrimSpace(s)
 }
 
+// extractScheduleGroupTitle extracts the title of the schedule group from a
+// section title.
+func extractScheduleGroupTitle(s string) (title string) {
+	title = normalizeText(s, false, true)
+	title = strings.TrimPrefix(title, "drop-in schedule")
+	title = strings.TrimPrefix(title, "s ")
+	title = strings.Trim(title, "- ")
+	title = cases.Title(language.English).String(title)
+	return
+}
+
+// ageRangeRe matches things like "12+", "(18+)", and "(50 +)", also capturing
+// the surrounding dashes/whitespace.
+var ageRangeRe = regexp.MustCompile(`(^|[\s-]+)\(?(?:ages\s+)?([0-9]+)(?:\s*\+)\)?([\s(-]+|$)`) // capture: pre-sep age post-sep
+
+// cutAgeMin removes the age minimum from activity, returning it as an int.
+func cutAgeMin(activity string) (string, int, bool) {
+	if ms := ageRangeRe.FindAllStringSubmatch(activity, -1); len(ms) == 1 {
+		var (
+			whole   = ms[0][0]
+			preSep  = ms[0][1]
+			ageStr  = ms[0][2]
+			postSep = ms[0][3]
+		)
+		if age, err := strconv.ParseInt(ageStr, 0, 10); err == nil && age > 0 && age < 150 {
+			sep := cmp.Or(preSep, postSep)
+			if sep != "" && strings.TrimSpace(sep) == "" {
+				if strings.TrimSpace(postSep) == "" {
+					sep = " " // collapse if all whitespace
+				} else {
+					sep = postSep // pre is all whitespace, but post isn't
+				}
+			}
+			return strings.TrimSpace(strings.ReplaceAll(activity, whole, sep)), int(age), true
+		}
+	}
+	return activity, -1, false
+}
+
+// cutReservationRequirement removes the reservations (not) required text
+// (prefixed by an asterisk) from activity.
+func cutReservationRequirement(activity string) (string, bool, bool) {
+	if i := strings.LastIndex(activity, "*"); i != -1 {
+		switch normalizeText(strings.Trim(activity[i:], "*. ()"), false, true) {
+		case "reservations not required", "reservation not required":
+			return strings.TrimSpace(activity[:i]), false, true
+		case "reservations required", "reservation required", "requires reservations", "requires reservation":
+			return strings.TrimSpace(activity[:i]), true, true
+		}
+	}
+	return activity, false, false
+}
+
+// reducedCapacityRe matches "reduced" or "reduced capacity" at the beginning or
+// end of a string, optionally with spaces/dashes joining it to the rest of the
+// string.
+var reducedCapacityRe = regexp.MustCompile(`(?i)(?:^reduced(?:\s* capacity)?[\s-]*|[\s-]*reduced(?:\s* capacity)?$)`)
+
+// cutReducedCapacity removes the reduced capacity text from activity. The
+// activity name should have already been normalized and lowercased.
+func cutReducedCapacity(activity string) (string, bool) {
+	x := reducedCapacityRe.ReplaceAllLiteralString(activity, "")
+	return x, x != activity
+}
+
+// activityReplacer normalizes word tenses and punctuation in activity names.
+// The string should have already been normalized and lowercased.
+var activityReplacer = strings.NewReplacer(
+	"swimming", "swim",
+	"aqualite", "aqua lite",
+	"skating", "skate",
+	"pick up ", "pick-up ",
+	"pickup ", "pick-up ",
+	"sport ", "sports ",
+	" - courts", " court",
+	" - court", " court",
+	"®", "",
+)
+
+// cleanActivityName cleans up activity names.
+func cleanActivityName(activity string) string {
+	activity = normalizeText(activity, false, true)
+	activity, _, _ = cutReservationRequirement(activity)
+	activity, age, hasAge := cutAgeMin(activity)
+	activity, reduced := cutReducedCapacity(activity)
+	activity = activityReplacer.Replace(activity)
+	if hasAge {
+		activity = strings.TrimRight(activity, "- ") + " " + strconv.Itoa(age) + "+"
+	}
+	if reduced {
+		activity += " - reduced capacity"
+	}
+	return normalizeText(activity, false, false)
+}
+
+// parseClockRange parses a time range for an activity.
 func parseClockRange(s string) (r schema.ClockRange, ok bool) {
 	strict := false
 
