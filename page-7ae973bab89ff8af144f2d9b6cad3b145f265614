@@ -6,30 +6,30 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 346
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Fri, 05 Sep 2025 02:21:17 GMT
-ETag: "1757038530-gzip"
+Date: Sat, 06 Sep 2025 07:50:21 GMT
+ETag: "1757145020-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Fri, 05 Sep 2025 02:15:30 GMT
-Set-Cookie: visid_incap_243507=f3uqflGJST+q7vPKUWZECh1JumgAAAAAQUIPAAAAAAALW8V0X2QEI3Fb85dXGZIU; expires=Fri, 04 Sep 2026 06:29:10 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=gYcJBSdEuB2U78PZaXmSIAAAAACcM/6M3q7UhNghPW0Fb9dF; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_1465_243507=XZaQBWSfMy3mZY9mI7pUFB1JumgAAAAAaa0WFmK5e4XsaoyZFXRg8Q==; path=/; Domain=.ottawa.ca
+Last-Modified: Sat, 06 Sep 2025 07:50:20 GMT
+Set-Cookie: visid_incap_243507=8xU+64/rRo2Znf29pRv/u7vnu2gAAAAAQUIPAAAAAABl0sYzzYVPtP/UMHH7pvN/; expires=Sun, 06 Sep 2026 07:04:38 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=eEpVc4m5xGRQqYBAaXmSIAAAAADLaerJwr4ayOenLPf76/gR; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_1461_243507=Sfn+CisUaWjAWJ6AJoRGFLznu2gAAAAAlu/Fup6kgxJ+RS8W7qcQDw==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
 X-CDN: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 7-2101269-2101274 NNNY CT(14 29 0) RT(1757038877809 108) q(0 0 0 0) r(0 0) U24
-X-Varnish: 36498724 36848811
+X-Iinfo: 11-13096941-13096943 NNNN CT(14 26 0) RT(1757145020168 185) q(0 1 1 1) r(1 13) U24
+X-Varnish: 31189876
 
 
 <!DOCTYPE html>
@@ -183,7 +183,7 @@ X-Varnish: 36498724 36848811
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f5689b9a76f7ef24358c99280d1a47f41e20df563f274c8b4f2cef0ffcf68ef8">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e41946704251a7d613c99478c03f77ade1309f591944e19f06fb7dc3aafa762e">
   
     
       
@@ -197,7 +197,7 @@ X-Varnish: 36498724 36848811
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-481b4b29f3c14e234b2bad43875f88cba8459f4aff0517eb7285dcb826206e5f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7251a801f584dcce52897ef9b92cc0011aaa5378c29cf396044ff69f8d253a5c">
   
     
       
@@ -372,7 +372,7 @@ X-Varnish: 36498724 36848811
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c2b672bd30060499b3840cdca554f640d0af5f40e8586dcac5a5ae235b57644f">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-cc05099251e77e48c9abd683f41f249ceedcb7e70294861aec8ac2eb72f4a35b">
   
     
       
@@ -386,7 +386,7 @@ X-Varnish: 36498724 36848811
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2a4a9ef6b741ebdb156ef06292ab881672cbe690b127edc9ed4b2efee15ddfc9">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d863f19c1ed564d72915d41ec87b1656da94ed1ba87dfa4518975b4a75b643d2">
   
     
       
@@ -433,7 +433,6 @@ X-Varnish: 36498724 36848811
 	<thead>
 		<tr>
 			<td>&nbsp;</td>
-			<th>Monday</th>
 			<th>Tuesday</th>
 			<th>Wednesday</th>
 			<th>Thursday</th>
@@ -449,7 +448,6 @@ X-Varnish: 36498724 36848811
 			<td>Noon - 7 pm</td>
 			<td>Noon - 7 pm</td>
 			<td>Noon - 7 pm</td>
-			<td>Noon - 7 pm</td>
 			<td>10:30 am - 4 pm</td>
 			<td>10:30 am - 4 pm</td>
 		</tr>
@@ -459,13 +457,11 @@ X-Varnish: 36498724 36848811
 			<td>Noon - 7 pm</td>
 			<td>Noon - 7 pm</td>
 			<td>Noon - 7 pm</td>
-			<td>Noon - 7 pm</td>
 			<td>10:30 am - 4 pm</td>
 			<td>10:30 am - 4 pm</td>
 		</tr>
 		<tr>
 			<th>Aquafit</th>
-			<td>11 am - noon</td>
 			<td>11 am - noon</td>
 			<td>11 am - noon</td>
 			<td>11 am - noon</td>
@@ -482,7 +478,7 @@ X-Varnish: 36498724 36848811
   <div class="paragraph paragraph--type--table paragraph--view-mode--default">
           <div class="table-responsive">
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
-	<caption>General Burns outdoor pool - swim and aquafit – September 15 to October 3</caption>
+	<caption>General Burns outdoor pool - swim&nbsp;– September 15 to October 3</caption>
 	<thead>
 		<tr>
 			<td>&nbsp;</td>
@@ -589,7 +585,7 @@ X-Varnish: 36498724 36848811
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-82d888b7a70c66b343d436734e97861949a8e4dc5960690234f7a073d2e25598">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-00f6c88a962f4839b160f6c1cbc79575f0b0e81d6e9d468d9dde3819297b5fde">
   
     
       <div class="view-header">
@@ -986,6 +982,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=476763328" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1924818673" async></script></body>
 </html>
 

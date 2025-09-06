@@ -6,27 +6,27 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 569
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Fri, 05 Sep 2025 02:22:27 GMT
-ETag: "1757038375-gzip"
+Date: Sat, 06 Sep 2025 07:51:11 GMT
+ETag: "1757145069-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Fri, 05 Sep 2025 02:12:55 GMT
+Last-Modified: Sat, 06 Sep 2025 07:51:09 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
 X-CDN: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 12-27897198-27897221 NNNY CT(16 22 0) RT(1757038947325 166) q(0 0 0 -1) r(0 0) U24
-X-Varnish: 36916056 37038920
+X-Iinfo: 6-17685139-17685146 NNNN CT(31 42 0) RT(1757145069506 199) q(0 1 1 -1) r(1 23) U24
+X-Varnish: 38453953
 
 
 <!DOCTYPE html>
@@ -180,7 +180,7 @@ X-Varnish: 36916056 37038920
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9cf5036c2a84102a11efe3f9d0e1c65ee31db2f1434a2e1591972b29197de50a">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ff8e1eff92454b9c67af26f252fd1e2cd1572649ed7659f14471d77d242f6c9a">
   
     
       
@@ -194,7 +194,7 @@ X-Varnish: 36916056 37038920
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0c3f18c50be5195dca3de2fe3b6a001b86d98504da2d0ee473f7e30ec0a6e17a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f9ead7b2accf6c1c522ff7d22dda2d79149760c3553a56db15b32969dacdc24c">
   
     
       
@@ -429,7 +429,7 @@ X-Varnish: 36916056 37038920
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-211c8b6be99dce3e998acdc984b5cc54388790d504bd2e47e5957f9960c93ff9">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5099d03ed81213d56e322d88c7a56f0f64209d9c591529829ed48d386011b906">
   
     
       
@@ -443,7 +443,7 @@ X-Varnish: 36916056 37038920
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-497d1e020936ff7de1c83ab8af5585da2fd8d87e8f6ee6d008910427d0d5fd3f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a383b3a79e133395e65a9aba3d4606715f7e925246027525fa5fb1e1f5dd33f3">
   
     
       
@@ -675,7 +675,7 @@ X-Varnish: 36916056 37038920
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3d4c03385a3c02ad143329ec8e18d09c6ac98fbcbb1915640fd7211972d5fa73">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-abb8f845f5e51a6d0c389b9dccdf3fb3ab21750b46deebc7b1ef9c5a72f9fa7d">
   
     
       
@@ -689,7 +689,7 @@ X-Varnish: 36916056 37038920
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ac23bddfa59a83c894cf437fe77f7c5fcaa7977ed1ec7b9f6557700156b4b608">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5763081f49ea8c5bf3d842e110befc5170b4b9d006e31be8364cfa0fee4761f1">
   
     
       
@@ -837,7 +837,7 @@ X-Varnish: 36916056 37038920
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-e5bbca2b2c5940fea3127ceecd797d003e1166abd820388e1aef91ebd3dc1532">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-03874c9a76558eacea89c79b784e19896f66a68ff82aacf3dcaa265f8deace5b">
   
     
       <div class="view-header">
@@ -1268,6 +1268,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1444732424" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1244574293" async></script></body>
 </html>
 
