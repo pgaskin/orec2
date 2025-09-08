@@ -6,30 +6,30 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 11
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Sun, 07 Sep 2025 12:05:44 GMT
-ETag: "1757246743-gzip"
+Date: Mon, 08 Sep 2025 20:51:39 GMT
+ETag: "1757364686-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Sun, 07 Sep 2025 12:05:43 GMT
-Set-Cookie: visid_incap_243507=SQQPTOcFThaW65CrkQyPcBZ1vWgAAAAAQUIPAAAAAADlekUU+yx9qzAytPFE4uT+; expires=Mon, 07 Sep 2026 06:25:49 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=Sk95PzhrPxAnhmBwaXmSIAAAAAAPUndUYARTmpLC5yg3McPS; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_1251_243507=EbpJIoB8rGeSAg1XSnJcERd1vWgAAAAAPiC5mhtU4bGM8IbAgKRkFg==; path=/; Domain=.ottawa.ca
+Last-Modified: Mon, 08 Sep 2025 20:51:26 GMT
+Set-Cookie: visid_incap_243507=FwSEVL2aQOSURYpxxXvyE9pBv2gAAAAAQUIPAAAAAABbv0JFvEdtBqeK7YpNHyzI; expires=Tue, 08 Sep 2026 06:23:06 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=Icd2M5ysnALR/LKPaXmSIAAAAADZ91dlH5JJg0ezHQN1PdDb; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_1538_243507=msUzF12yqWwHJCPXERNYFdtBv2gAAAAAX5Z/FlNLIh1C/CqAZYMpGg==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
 X-CDN: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 10-30189555-30189559 NNNN CT(275 228 0) RT(1757246742975 81) q(0 0 5 0) r(6 14) U24
-X-Varnish: 39823135
+X-Iinfo: 10-13918037-13918068 NNNN CT(31 42 0) RT(1757364699376 298) q(0 0 1 0) r(1 1) U24
+X-Varnish: 41355788 28568022
 
 
 <!DOCTYPE html>
@@ -41,7 +41,7 @@ X-Varnish: 39823135
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/heron-seniors-centre" />
 <meta name="dcterms.title" content="Heron Seniors Centre" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-08-29" />
+<meta name="dcterms.date" content="2025-09-08" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -183,7 +183,7 @@ X-Varnish: 39823135
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-61a7eddac05b19ca7c4694f030f671dfb6170fa158cf3a43080d4a1419838fe6">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-04721c2f5a9bd5069fdac8da84033ba18378af4509ed92c49f7e7d85cf5b3c7b">
   
     
       
@@ -197,7 +197,7 @@ X-Varnish: 39823135
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5ec3e5ab7fc8b649510b9acd2c8d80891ac5a10661df3ba8e2bf7861e381821b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c49974f9c46f5bf91573efd97be0576a1dfd3b171d98e623a9f01c8ed39e8b7e">
   
     
       
@@ -278,8 +278,11 @@ X-Varnish: 39823135
 
 
   
-            <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><p><span>The facility is closed until further notice.</span></p>
-<p>Heron Seniors Centre programs and drop-in activities are being offered at <a href="https://ottawa.ca/en/recreation-and-parks/recreation-facilities/facility-listing/carleton-heights-community-centre">Carleton Heights Community Centre</a> (1665 Apeldoorn Avenue) during the closure.</p>
+            <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><ul>
+<li><span><strong>The facility is closed until further notice.&nbsp;</strong></span></li>
+<li><span><strong>The cardio and weight room is closed.</strong></span></li>
+</ul>
+<p><span>Heron Seniors Centre programs and drop-in activities are being offered at <a href="https://ottawa.ca/en/recreation-and-parks/recreation-facilities/facility-listing/carleton-heights-community-centre">Carleton Heights Community Centre</a> (1665 Apeldoorn Avenue) during the closure.</span></p>
 <p><span>We are diligently working to bring our programs and services back to the Heron Road Community Centre. Thank you for your patience as we progress through this transition.</span></p>
 </div>
       
@@ -384,7 +387,7 @@ X-Varnish: 39823135
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0cdd410734dfe6258eda91d6c8cd4f1509d16b7828d59513547c8628020dac1d">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-07307d0d76354297137bd13781428b58b6534f9fd8c119b209e13608e8874172">
   
     
       
@@ -398,7 +401,7 @@ X-Varnish: 39823135
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e4d02832854e45f359da6befac071f1baa3f60f7cfccaeac8ceff2bf50c3b4a4">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-08013f8812693166c35c7abf12420aa844852aab5e59403aa35b92959292bacc">
   
     
       
@@ -545,7 +548,7 @@ X-Varnish: 39823135
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-a95f4bdfca69ba8b6e1a2409f448b0ce5c814b8e67acc39d5c6855c79276ac6e">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-f8a5185a39a659d29c125f3e041a2d8cfa3c6bd1c2bbe62b6282a84ce13234a4">
   
     
       <div class="view-header">
@@ -969,6 +972,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=423499931" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1054809923" async></script></body>
 </html>
 

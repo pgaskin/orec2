@@ -6,27 +6,30 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 265
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Sun, 07 Sep 2025 12:07:28 GMT
-ETag: "1757246847-gzip"
+Date: Mon, 08 Sep 2025 20:53:26 GMT
+ETag: "1757364539-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Sun, 07 Sep 2025 12:07:27 GMT
+Last-Modified: Mon, 08 Sep 2025 20:48:59 GMT
+Set-Cookie: visid_incap_243507=7UvbrcyIRXWcnLgXoQXPckZCv2gAAAAAQUIPAAAAAADXnW/Xn0McWafxKy1XZmOI; expires=Tue, 08 Sep 2026 06:23:49 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=YheqJTbRvBFhJdkhaXmSIAAAAAAZ9R2trG+Vjwsi0nHWl0OS; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_1450_243507=SuOyDAFylSoZMEsVwW8fFEZCv2gAAAAA7otfCiel/sJTJ0v32jD3pg==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
 X-CDN: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 28-6345832-6345836 NNNY CT(31 40 0) RT(1757246846984 264) q(0 0 0 -1) r(9 9) U24
-X-Varnish: 39433678
+X-Iinfo: 11-23074172-23074180 NNNY CT(15 20 0) RT(1757364806205 118) q(0 1 1 1) r(1 1) U24
+X-Varnish: 37573484 36688218
 
 
 <!DOCTYPE html>
@@ -38,7 +41,7 @@ X-Varnish: 39433678
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/rideauview-community-centre" />
 <meta name="dcterms.title" content="Rideauview Community Centre" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-09-04" />
+<meta name="dcterms.date" content="2025-09-08" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -180,7 +183,7 @@ X-Varnish: 39433678
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-cde99249372b6d5059b14cb53128e9c17c0fd828ce99ba3f6020bf6f99c06619">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ecdd4ff61372906d1606228803c6e0f8d7db0d3b210785179777406287f1ee8f">
   
     
       
@@ -194,7 +197,7 @@ X-Varnish: 39433678
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b9fdf7c9f388e62ae64080e03d14482cd177d82a1d88e8fddf65a2553a3b039e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0afb7f26280fa9034042b9a068dbd5cd74c0fb4f4f0c96a1d0fbed5f5c3b2a68">
   
     
       
@@ -263,29 +266,7 @@ X-Varnish: 39433678
               
                                                                                     <div  class="col-md-4 col-sm-12 col-12 layout__region layout__region--main">
                         
-                                                    
-
-
-  
-            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Facility closure</h2>
-</div>
-      
-
-
-
-
-  
-            <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><ul>
-<li><strong>Saturday, September 6 and Sunday, September 7</strong>
-<ul>
-<li>The facility is closed and all programs cancelled.</li>
-</ul>
-</li>
-</ul>
-</div>
-      
-
-<div class="mb-3">
+                                                    <div class="mb-3">
 
 
 
@@ -293,7 +274,7 @@ X-Varnish: 39433678
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">8:30 am - 5:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">8:30 am - 5:30 pm</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">8:30 am - 5:30 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">9:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">8:30 am - 5:30 pm</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -420,7 +401,7 @@ X-Varnish: 39433678
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-46011b30cf9f91a2a1796e6c4c48db9086a8631faeb94d083542835ffccbca2b">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c983415a6859862519b7609913169ce4b2dc7a995223a490f8fb2f54ef91989d">
   
     
       
@@ -434,7 +415,7 @@ X-Varnish: 39433678
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-64b718672ebf4205be2c11dfa2cc5ea628ce3f395f2fd6cabc0d4fdae7b3a3b4">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4d223811607bb90e0a7d9feb7334153f349bc5529d4c835c7c815a212fbf1a5e">
   
     
       
@@ -469,19 +450,6 @@ X-Varnish: 39433678
   <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p><a class="btn btn-primary" href="https://reservation.frontdesksuite.ca/rcfs/rideauviewcc">Reserve a spot at Rideauview Community Centre</a></p>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Facility closure</h3>
-<ul>
-<li><strong>Saturday, September 6 and Sunday, September 7</strong>
-<ul>
-<li>The facility is closed and all programs cancelled.</li>
-</ul>
-</li>
-</ul>
 </div>
       
       </div>
@@ -638,7 +606,7 @@ X-Varnish: 39433678
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-69acc89c88b63f583cc25b26c2c54b04bb225475030ecb7e96a9b6dc1054897f">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9e4e0f6eac095e78eafbc5db99106b9d822c1accb1e55107d1b01dc3c2a2fd4e">
   
     
       
@@ -652,7 +620,7 @@ X-Varnish: 39433678
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-cdc6ca9a6b3de63f572487fc10408847bdd743b0dc97f9e2c265b7f03e3f8348">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e8f3e99a0b70d10302cd5b7bd03cb4c16fe0a59bad9f20c6d8cb058d14892d42">
   
     
       
@@ -687,19 +655,6 @@ X-Varnish: 39433678
   <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
           
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p><a class="btn btn-primary" href="https://reservation.frontdesksuite.ca/rcfs/rideauviewcc">Reserve a spot at Rideauview Community Centre</a></p>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Facility closure</h3>
-<ul>
-<li><strong>Saturday, September 6 and Sunday, September 7</strong>
-<ul>
-<li>The facility is closed and all programs cancelled.</li>
-</ul>
-</li>
-</ul>
 </div>
       
       </div>
@@ -896,7 +851,7 @@ X-Varnish: 39433678
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-69037adc3140e74b65f5731179d47abefc1fc72591428d7604aa7c800849074c">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-825dacce83dc260184eb02e24cbe63c7da01343d72bf1c917784a7be07f2beda">
   
     
       <div class="view-header">
@@ -1290,6 +1245,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1530738099" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1789744167" async></script></body>
 </html>
 
