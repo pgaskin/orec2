@@ -6,28 +6,30 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 152
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Tue, 09 Sep 2025 22:02:44 GMT
-ETag: "1757455210-gzip"
+Date: Wed, 10 Sep 2025 20:05:20 GMT
+ETag: "1757534718-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 09 Sep 2025 22:00:10 GMT
-Set-Cookie: incap_ses_1844_243507=snMOaTAsZ0nDANBatjSXGQSkwGgAAAAA0bRXjfJNjiZg34Y5GjuVLg==; path=/; Domain=.ottawa.ca
+Last-Modified: Wed, 10 Sep 2025 20:05:18 GMT
+Set-Cookie: visid_incap_243507=TnA1PSjMQBCWkVKyp5pXAv3ZwWgAAAAAQUIPAAAAAABQH7buJnsawvTKbfmXyA64; expires=Thu, 10 Sep 2026 06:29:51 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=lny5e6OWeisVc99ZaXmSIAAAAAAMd3hfPMiTsT5pF4D9CE1S; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_1353_243507=AKQkCJZzcHzCUCGqvdLGEgDawWgAAAAANSXi8KrdXipssuH3vEDiiQ==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
 X-CDN: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 62-49838405-49838435 NNNN CT(52 39 0) RT(1757455363952 89) q(0 0 1 7) r(2 2) U24
-X-Varnish: 41673359 41673149
+X-Iinfo: 9-23333970-23331603 PNNN RT(1757534717989 107) q(0 0 0 1) r(24 24) U24
+X-Varnish: 43881107
 
 
 <!DOCTYPE html>
@@ -181,7 +183,7 @@ X-Varnish: 41673359 41673149
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-966c74a3485158d3022b29ac521d897e181d0e09a7f744c68c1257e02e0450f3">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-15bb65af625c0e5e7669bb12c3a6cacbd2db5bc0ddfb4ef287bcf759debbb462">
   
     
       
@@ -195,7 +197,7 @@ X-Varnish: 41673359 41673149
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1e00913e19658ff2992adb6c8633e0f3564895181a9a526b63f305d599e0f1eb">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4a3ce29bb1396f8653c6b819773fa0f0361fd7fb46e63c6a777a0616372d942f">
   
     
       
@@ -399,7 +401,7 @@ X-Varnish: 41673359 41673149
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7d32b549f77dac5779b86ec3013b01756897787bd93577078aa67b2d90168519">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d744a0bafe5341d7aefbbfa296a2abea44aa956f082a517850d24be8a6bc0847">
   
     
       
@@ -413,7 +415,7 @@ X-Varnish: 41673359 41673149
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9e3cb000a6a2e4f44cc0e3602980d25aeb4f9239eb19af7c50973174c5ba7c9a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0315632b0b3831fa62ab38dd6e4be1bbffd422b3675e96a543a56a418cd1d502">
   
     
       
@@ -604,7 +606,7 @@ X-Varnish: 41673359 41673149
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-88d6be311e470a5ff8f96dcce0a712e93a33e1cde6ad9bb3af6bdc34e7121999">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e6f7367dbbab2eda767ea2fc3c6c0701db84d26dfaf45f2fa92531e0f8a6382c">
   
     
       
@@ -618,7 +620,7 @@ X-Varnish: 41673359 41673149
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7730406789e938ae3f56168f1f1abf859171c3687791262a24bf98f7134139fb">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ee15c964182eb43053d45f2edc59d7968e4958c55c5255e1b99b4688cb96b3de">
   
     
       
@@ -849,7 +851,7 @@ X-Varnish: 41673359 41673149
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-a730388fb8abf9eadcf45520bfa7a768461ad2d40a053822feb4ddb233deaf93">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-8ed1cd6d9c71d7c4939889615d41e31fc426e2cf06b53be7cc2b523b4ae17eda">
   
     
       <div class="view-header">
@@ -967,32 +969,32 @@ X-Varnish: 41673359 41673149
               
             
       <li class="nav-item">
-        <a href="https://ottawa.ca/en/3-1-1" target="_self" class="angle-right nav-link">Online</a>
+        <a href="/en/3-1-1" target="_self" class="angle-right nav-link" data-drupal-link-system-path="node/1418281">Online</a>
               </li>
           
             
       <li class="nav-item">
-        <a href="https://ottawa.ca/fr/3-1-1" target="_self" class="angle-right nav-link">En ligne </a>
+        <a href="/en/3-1-1" target="_self" class="angle-right nav-link" data-drupal-link-system-path="node/1418281">En ligne </a>
               </li>
           
             
       <li class="nav-item">
-        <a href="https://ottawa.ca/en/3-1-1/services-phone-e-mail-and-person#section-4f246a20-61ad-493f-8e06-a716532f7201" target="_self" class="angle-right nav-link">By phone</a>
+        <a href="/en/3-1-1/services-phone-e-mail-and-person/general-inquiries" target="_self" class="angle-right nav-link" data-drupal-link-system-path="node/1014816">By phone</a>
               </li>
           
             
       <li class="nav-item">
-        <a href="https://ottawa.ca/fr/3-1-1/services-par-telephone-courriel-et-en-personne#section-4f246a20-61ad-493f-8e06-a716532f7201" target="_self" class="angle-right nav-link">Par téléphone</a>
+        <a href="/en/3-1-1/services-phone-e-mail-and-person" target="_self" class="angle-right nav-link" data-drupal-link-system-path="node/1418290">Par téléphone</a>
               </li>
           
             
       <li class="nav-item">
-        <a href="https://ottawa.ca/en/client-services#section-475d5f00-a78b-4e35-b71b-eb0be784992a" target="_self" class="angle-right nav-link">In-person</a>
+        <a href="/en/client-services/city-ottawa-client-service-centres" target="_self" class="angle-right nav-link" data-drupal-link-system-path="node/2194496">In-person</a>
               </li>
           
             
       <li class="nav-item">
-        <a href="https://ottawa.ca/fr/service-la-clientele#section-475d5f00-a78b-4e35-b71b-eb0be784992a" target="_self" class="angle-right nav-link">En personne</a>
+        <a href="/en/client-services/city-ottawa-client-service-centres" target="_self" class="angle-right nav-link" data-drupal-link-system-path="node/2194496">En personne</a>
               </li>
           
             
@@ -1243,6 +1245,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2016083886" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=169495724" async></script></body>
 </html>
 

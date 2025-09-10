@@ -6,19 +6,19 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 141
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Tue, 09 Sep 2025 21:59:00 GMT
-ETag: "1757455139-gzip"
+Date: Wed, 10 Sep 2025 20:01:52 GMT
+ETag: "1757534370-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 09 Sep 2025 21:58:59 GMT
-Set-Cookie: visid_incap_243507=eDGZAUWAT+aysguKr26hfCOjwGgAAAAAQUIPAAAAAAD3LxAOYYnVj3yvqSk8qtRZ; expires=Wed, 09 Sep 2026 06:42:14 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=VoWaUEKFfF0IF/csaXmSIAAAAAAg+VtnvuiPwCd0q8b/4k3X; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_1607_243507=17bQRn6KRwXx0WWHbjZNFiSjwGgAAAAAmCSYM7sdDH685FMS8NvfUQ==; path=/; Domain=.ottawa.ca
+Last-Modified: Wed, 10 Sep 2025 19:59:30 GMT
+Set-Cookie: visid_incap_243507=gVGNJ16tS365L08amdYRmzDZwWgAAAAAQUIPAAAAAADyeYx4F4bAdkU/4mjnNcwS; expires=Thu, 10 Sep 2026 06:50:18 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=qvE1cpvCkXXlcZP5aXmSIAAAAAAg5UhdkG2FPug6hL8yJVQF; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_1844_243507=tgB4RwN5rgfk8CBhtjSXGTDZwWgAAAAAyqdnpVJkKWAPVBrHN7ijkQ==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
@@ -28,8 +28,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 62-84371439-84371472 NNNY CT(32 42 0) RT(1757455139315 106) q(0 1 1 1) r(9 9) U24
-X-Varnish: 43027594
+X-Iinfo: 43-15973302-15973315 NNNY CT(31 35 0) RT(1757534512526 89) q(0 1 1 5) r(1 1) U24
+X-Varnish: 25287508 21628855
 
 
 <!DOCTYPE html>
@@ -183,7 +183,7 @@ X-Varnish: 43027594
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7561e2e1bfaad84ab96855da520e8a7da51ee137a421811fd0cd394ce8ba7a79">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8dc60770e18704fabefc338be38a898471c99dd67ac639a2d03f639099401f2b">
   
     
       
@@ -197,7 +197,7 @@ X-Varnish: 43027594
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-646e0fa5dba84de365e299edefdeab7982aa652307b75818f77a5d126996b6c0">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-56d599df366c8fdbe92e7ad97022679f0555e1e473b8b09513a459e5ca21202b">
   
     
       
@@ -274,7 +274,7 @@ X-Varnish: 43027594
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">Closed</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">8:30 am - 4:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">8:30 am - 4:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">8:30 am - 4:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">8:30 am - 4:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">8:30 am - 4:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">Closed</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">Closed</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">8:30 am - 4:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">8:30 am - 4:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">8:30 am - 4:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">8:30 am - 4:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">8:30 am - 4:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">Closed</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -388,7 +388,7 @@ X-Varnish: 43027594
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-cd394b5d8065da619f338ad418b58df053d775d63cfbd5948136b79e9cc64be9">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-084f75cca7a12d6108d1e45cb7b54f5c83bfb2312bdaf0a08185760d6d42d7c0">
   
     
       
@@ -402,7 +402,7 @@ X-Varnish: 43027594
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5077b8bcafb0e2dd9040f2b55b2dbfe2fa02b79c4fa428f8b1ae57c9eac44b8e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2f4220bf519978ee17e8832504d0d0053e40a17883153a385d16f443b1725579">
   
     
       
@@ -602,7 +602,7 @@ X-Varnish: 43027594
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8d30bfcebfbf0a4e78c8f3a665b700b9e480f80b7c515fc495368025a341335e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-64278d96c09fe9274d358ae085febc027b42613cba89713d35f764699a243ec1">
   
     
       
@@ -616,7 +616,7 @@ X-Varnish: 43027594
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c79ec0c9f24068d8225831131f359222d5666423575fc0cc48f9499a6a09aa39">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-db874552814230c6b12f15a585d86b6d8ed772dd267ff578562a5236dde6ba74">
   
     
       
@@ -764,7 +764,7 @@ X-Varnish: 43027594
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-a2dfb637a7608e1df8bf7519a6f3b6661a9cb19afdffc65fd2dc65a571bafd1c">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-05ea0747b186764b249cdefddb229725cbf4cccd135391925e212fe88d3d4bba">
   
     
       <div class="view-header">
@@ -884,32 +884,32 @@ X-Varnish: 43027594
               
             
       <li class="nav-item">
-        <a href="https://ottawa.ca/en/3-1-1" target="_self" class="angle-right nav-link">Online</a>
+        <a href="/en/3-1-1" target="_self" class="angle-right nav-link" data-drupal-link-system-path="node/1418281">Online</a>
               </li>
           
             
       <li class="nav-item">
-        <a href="https://ottawa.ca/fr/3-1-1" target="_self" class="angle-right nav-link">En ligne </a>
+        <a href="/en/3-1-1" target="_self" class="angle-right nav-link" data-drupal-link-system-path="node/1418281">En ligne </a>
               </li>
           
             
       <li class="nav-item">
-        <a href="https://ottawa.ca/en/3-1-1/services-phone-e-mail-and-person#section-4f246a20-61ad-493f-8e06-a716532f7201" target="_self" class="angle-right nav-link">By phone</a>
+        <a href="/en/3-1-1/services-phone-e-mail-and-person/general-inquiries" target="_self" class="angle-right nav-link" data-drupal-link-system-path="node/1014816">By phone</a>
               </li>
           
             
       <li class="nav-item">
-        <a href="https://ottawa.ca/fr/3-1-1/services-par-telephone-courriel-et-en-personne#section-4f246a20-61ad-493f-8e06-a716532f7201" target="_self" class="angle-right nav-link">Par téléphone</a>
+        <a href="/en/3-1-1/services-phone-e-mail-and-person" target="_self" class="angle-right nav-link" data-drupal-link-system-path="node/1418290">Par téléphone</a>
               </li>
           
             
       <li class="nav-item">
-        <a href="https://ottawa.ca/en/client-services#section-475d5f00-a78b-4e35-b71b-eb0be784992a" target="_self" class="angle-right nav-link">In-person</a>
+        <a href="/en/client-services/city-ottawa-client-service-centres" target="_self" class="angle-right nav-link" data-drupal-link-system-path="node/2194496">In-person</a>
               </li>
           
             
       <li class="nav-item">
-        <a href="https://ottawa.ca/fr/service-la-clientele#section-475d5f00-a78b-4e35-b71b-eb0be784992a" target="_self" class="angle-right nav-link">En personne</a>
+        <a href="/en/client-services/city-ottawa-client-service-centres" target="_self" class="angle-right nav-link" data-drupal-link-system-path="node/2194496">En personne</a>
               </li>
           
             
@@ -1160,6 +1160,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=390287154" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=866954657" async></script></body>
 </html>
 

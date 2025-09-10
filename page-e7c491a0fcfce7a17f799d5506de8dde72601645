@@ -6,30 +6,30 @@ HTTP/1.1 200 OK
 Connection: close
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 19
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Type: text/html; charset=UTF-8
 Content-language: en
-Date: Tue, 09 Sep 2025 21:59:19 GMT
-ETag: "1757455140-gzip"
+Date: Wed, 10 Sep 2025 20:02:21 GMT
+ETag: "1757534540-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 09 Sep 2025 21:59:00 GMT
-Set-Cookie: visid_incap_243507=YfSd925kQ8ielfKYA5npujejwGgAAAAAQUIPAAAAAAACz0toW2G45dX4kRNk7AXX; expires=Wed, 09 Sep 2026 06:19:37 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=VCKldSjiI24VCr8aaXmSIAAAAACoTc9oO3Km4M/kb00FgF+D; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_6523_243507=4DplBNMtuFLewVZcUlqGWjejwGgAAAAAJ7HpbXfBOqqxuutS7ibFJg==; path=/; Domain=.ottawa.ca
+Last-Modified: Wed, 10 Sep 2025 20:02:20 GMT
+Set-Cookie: visid_incap_243507=rl7JjN4wQqyHwVwKGkLuEEvZwWgAAAAAQUIPAAAAAAALGhM/PXhEdLUI4OE+ZxQp; expires=Thu, 10 Sep 2026 06:22:43 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: nlbi_243507=UqMiL3+aFkp8bTOWaXmSIAAAAAAWBSLBD4gf92mpFwR4Cy5k; HttpOnly; path=/; Domain=.ottawa.ca
+Set-Cookie: incap_ses_1540_243507=UxvrXsMiw33AqHsARy5fFUzZwWgAAAAAQNQ39dRF/TfX1B0jquxdgQ==; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
 X-CDN: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 18-37810741-37810768 NNNY CT(13 21 0) RT(1757455159735 181) q(0 1 1 0) r(2 2) U24
-X-Varnish: 41367848 35350108
+X-Iinfo: 10-18126615-18127168 NNNN CT(78 102 0) RT(1757534534992 5460) q(0 1 2 11) r(2 10) U24
+X-Varnish: 21629062
 
 
 <!DOCTYPE html>
@@ -41,7 +41,7 @@ X-Varnish: 41367848 35350108
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/entrance-pool" />
 <meta name="dcterms.title" content="Entrance Pool" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-09-08" />
+<meta name="dcterms.date" content="2025-09-10" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -183,7 +183,7 @@ X-Varnish: 41367848 35350108
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4f0317bc9f623720200b0eb5ff30ebd3fe1eb2134aed3a824ac9f8d616746854">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9632b961bdc67bbe6d704a43bc2260431bf2737dfb247cc70dd92d793268dc32">
   
     
       
@@ -197,7 +197,7 @@ X-Varnish: 41367848 35350108
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-16de4be21465e53327961c1b7d4cc9319b2b5c835cd853850d2a238026cf0308">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c95bdc790731b655f7dfe370db65a626dc671a41122007331b7e33b7986e4e36">
   
     
       
@@ -260,7 +260,7 @@ X-Varnish: 41367848 35350108
 
 
   
-            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Notice</h2>
+            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Facility closure</h2>
 </div>
       
 
@@ -268,17 +268,7 @@ X-Varnish: 41367848 35350108
 
 
   
-            <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><p>The pool is open until September 9.</p>
-<h3>Schedule changes</h3>
-<ul>
-<li><strong>Tuesday, September 9</strong>
-<ul>
-<li>Public swim, 5 to 7 pm, cancelled</li>
-<li>Public swim, 5&nbsp;to 6&nbsp;pm, <strong>added</strong></li>
-<li>Dog swim, 6 to 7 pm, <strong>added</strong></li>
-</ul>
-</li>
-</ul>
+            <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><p><strong>Closed for the season.</strong></p>
 </div>
       
 
@@ -368,217 +358,6 @@ X-Varnish: 41367848 35350108
                               <div class="col collapse-region">
                   <h2 class="no-toc">
                               
-  <button aria-expanded="false" aria-controls="section-d3bcc098-4ca9-44e8-8bad-7749a3ca0bbe" data-target="#section-d3bcc098-4ca9-44e8-8bad-7749a3ca0bbe" data-toggle="collapse" role="button" class="border border-primary rounded collapse-section no-toc btn-link btn">Drop-in schedule - swim</button>
-
-                  </h2>
-                  <div class="collapse collapse-wrapper border border-primary border-top-0 no-gutters p-4 w-100" id="section-d3bcc098-4ca9-44e8-8bad-7749a3ca0bbe">
-                  
-                                                                                      <div  class="layout__region layout__region--main col-12">
-                          
-                                                      <div class="paragraph paragraph--type--article-reference paragraph--view-mode--default">
-          
-            <div class="field field--name-field-content-ref field--type-entity-reference-label-override field--label-hidden field__item">
-<article class="node node--type-article node--view-mode-default">
-  
-  <div class="node__content">
-      <div class="layout layout--onecol">
-    <div  class="layout__region layout__region--content">
-      
-
-
-  <span class="field field--name-title field--type-string field--label-hidden"><h2  class="h2">Drop-in schedule - swim</h2>
-</span>
-
-
-<div class="views-element-container">
-
-
-
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d599e06d7c206f1350c5c207cd249ef9fc13269bb4e3e6f983e3f23f0b9a3127">
-  
-    
-      
-  
-          </div>
-</div>
-
-
-</div>
-<div class="views-element-container">
-
-
-
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9ff4de13e8c91416e7383de0b6761e9d27005b9ebba0cd4164d1cd9b1e889d8d">
-  
-    
-      
-  
-          </div>
-</div>
-
-
-</div>
-
-
-
-  
-      <div class="field field--name-field-paragraphs field--type-entity-reference-revisions field--label-hidden field__items">
-              <div class="field__item">  <div class="paragraph paragraph--type--fixed-layout paragraph--view-mode--default">
-                  
-                          
-                                  
-                  <div class="toc-selectors layout layout--bootstrap-fixed-grid-row-1 row">
-
-            
-              
-                                                                                      <div  class="layout__region layout__region--main col-12">
-                          
-                                                      <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The schedules listed in the charts below are subject to change.&nbsp;Holiday hours and programs may vary.</p>
-<p><a href="https://ottawa.ca/en/recreation-and-culture/swimming/drop-swimming-and-aquafit">Play free, additional details, descriptions, fees and cancellation information.</a></p>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p><a class="btn btn-primary" href="https://reservation.frontdesksuite.ca/rcfs/entrance">Reserve a spot at Entrance Outdoor Pool</a></p>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
-          
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule changes</h3>
-<ul>
-<li><strong>Tuesday, September 9</strong>
-<ul>
-<li>Public swim, 5 to 7 pm, cancelled</li>
-<li>Public swim, 5&nbsp;to 6&nbsp;pm,&nbsp;<strong>added</strong></li>
-<li>Dog swim, 6 to 7 pm,&nbsp;<strong>added</strong></li>
-</ul>
-</li>
-</ul>
-</div>
-      
-      </div>
-  <div class="paragraph paragraph--type--table paragraph--view-mode--default">
-          <div class="table-responsive">
-            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><table>
-	<caption>Entrance Outdoor Pool -&nbsp;swim -&nbsp;September 2 to 9</caption>
-	<thead>
-		<tr>
-			<td>
-			&nbsp;
-			</td>
-			<th>
-			Monday
-			</th>
-			<th>
-			Tuesday
-			</th>
-			<th>
-			Wednesday
-			</th>
-			<th>
-			Thursday
-			</th>
-			<th>
-			Friday
-			</th>
-			<th>
-			Saturday
-			</th>
-			<th>
-			Sunday
-			</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<th>
-			Lane swim&nbsp;
-			<strong>*Reservations not required.</strong>
-			</th>
-			<td>
-			6 - 7 pm
-			</td>
-			<td>4 - 5 pm</td>
-			<td>6 - 7 pm</td>
-			<td>4 - 5 pm</td>
-			<td>6 - 7 pm</td>
-			<td>
-			Noon - 1 pm
-			</td>
-			<td>Noon - 1 pm</td>
-		</tr>
-		<tr>
-			<th>
-			Public swim&nbsp;
-			<strong>*Reservations not required.</strong>
-			</th>
-			<td>
-			4 - 6&nbsp;pm
-			</td>
-			<td>
-			5 - 7 pm
-			</td>
-			<td>4 - 6&nbsp;pm</td>
-			<td>5 - 7 pm</td>
-			<td>4 - 6&nbsp;pm</td>
-			<td>
-			1 - 5 pm
-			</td>
-			<td>
-			1 - 5 pm
-			</td>
-		</tr>
-	</tbody>
-</table></div>
-      </div>
-      </div>
-
-                        </div>
-                                          
-                    
-                
-            </div>
-          
-      </div>
-</div>
-          </div>
-  
-
-
-    </div>
-  </div>
-
-  </div>
-
-</article>
-</div>
-      
-      </div>
-
-                        </div>
-                                          
-                                        </div>
-                  </div>
-                
-                
-            </div>
-          
-      </div>
-</div>
-              <div class="field__item">  <div class="paragraph paragraph--type--layout paragraph--view-mode--default">
-                  
-                          
-                
-                  <div class="layout layout--bootstrap-grid-row-1 row">
-
-            
-                              <div class="col collapse-region">
-                  <h2 class="no-toc">
-                              
   <button aria-expanded="false" aria-controls="section-602534f4-d623-432f-ae18-4fe4c3264fd2" data-target="#section-602534f4-d623-432f-ae18-4fe4c3264fd2" data-toggle="collapse" role="button" class="border border-primary rounded collapse-section no-toc btn-link btn">Browse and register for courses and camps (Summer only)</button>
 
                   </h2>
@@ -605,7 +384,7 @@ X-Varnish: 41367848 35350108
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-1b9a3ca93020eacc167e0172d856bedfa1248396819fafaf892c179978691285">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-73fbd3558d4a37c6498828a25bd992837d70eec39603c27c6d1e2a833c3e50f0">
   
     
       <div class="view-header">
@@ -727,32 +506,32 @@ X-Varnish: 41367848 35350108
               
             
       <li class="nav-item">
-        <a href="https://ottawa.ca/en/3-1-1" target="_self" class="angle-right nav-link">Online</a>
+        <a href="/en/3-1-1" target="_self" class="angle-right nav-link" data-drupal-link-system-path="node/1418281">Online</a>
               </li>
           
             
       <li class="nav-item">
-        <a href="https://ottawa.ca/fr/3-1-1" target="_self" class="angle-right nav-link">En ligne </a>
+        <a href="/en/3-1-1" target="_self" class="angle-right nav-link" data-drupal-link-system-path="node/1418281">En ligne </a>
               </li>
           
             
       <li class="nav-item">
-        <a href="https://ottawa.ca/en/3-1-1/services-phone-e-mail-and-person#section-4f246a20-61ad-493f-8e06-a716532f7201" target="_self" class="angle-right nav-link">By phone</a>
+        <a href="/en/3-1-1/services-phone-e-mail-and-person/general-inquiries" target="_self" class="angle-right nav-link" data-drupal-link-system-path="node/1014816">By phone</a>
               </li>
           
             
       <li class="nav-item">
-        <a href="https://ottawa.ca/fr/3-1-1/services-par-telephone-courriel-et-en-personne#section-4f246a20-61ad-493f-8e06-a716532f7201" target="_self" class="angle-right nav-link">Par téléphone</a>
+        <a href="/en/3-1-1/services-phone-e-mail-and-person" target="_self" class="angle-right nav-link" data-drupal-link-system-path="node/1418290">Par téléphone</a>
               </li>
           
             
       <li class="nav-item">
-        <a href="https://ottawa.ca/en/client-services#section-475d5f00-a78b-4e35-b71b-eb0be784992a" target="_self" class="angle-right nav-link">In-person</a>
+        <a href="/en/client-services/city-ottawa-client-service-centres" target="_self" class="angle-right nav-link" data-drupal-link-system-path="node/2194496">In-person</a>
               </li>
           
             
       <li class="nav-item">
-        <a href="https://ottawa.ca/fr/service-la-clientele#section-475d5f00-a78b-4e35-b71b-eb0be784992a" target="_self" class="angle-right nav-link">En personne</a>
+        <a href="/en/client-services/city-ottawa-client-service-centres" target="_self" class="angle-right nav-link" data-drupal-link-system-path="node/2194496">En personne</a>
               </li>
           
             
@@ -1003,6 +782,6 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1848551102" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1764487183" async></script></body>
 </html>
 
