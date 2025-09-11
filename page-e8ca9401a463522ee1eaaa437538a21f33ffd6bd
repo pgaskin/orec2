@@ -1,36 +1,35 @@
 GET /en/recreation-and-parks/facilities/place-listing/kanata-leisure-centre-and-wave-pool HTTP/1.1
 Host: ottawa.ca
-xxx-use-proxy: zyte
+Cookie: visid_incap_243507=6ZxfTjnbSZed+zZpBgX8Oj0yw2gAAAAAQUIPAAAAAACDuUyFbq8+Gv3SIlKMlY3A; nlbi_243507=tv/RLuEqpgQqPcqTaXmSIAAAAAA2p9lB42tdhF05CfgwyYHO; incap_ses_1251_243507=rVZMQzGi7UhYYMlcSnJcET0yw2gAAAAAMUo8Q64nKNwfMTnEDFW6ow==
+User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 
 HTTP/1.1 200 OK
-Connection: close
+Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 335
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
+Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Content-language: en
-Date: Wed, 10 Sep 2025 20:03:24 GMT
-ETag: "1757534268-gzip"
+Date: Thu, 11 Sep 2025 20:36:15 GMT
+Etag: "1757622974-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Wed, 10 Sep 2025 19:57:48 GMT
-Set-Cookie: visid_incap_243507=EYQErU3YTwe3yD/Ne9odMIzZwWgAAAAAQUIPAAAAAABQXMIytPjtaRdGsrjhalXJ; expires=Thu, 10 Sep 2026 06:29:51 GMT; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: nlbi_243507=JjBzWSqBMRYIYOJLaXmSIAAAAAAz+ayk5mc1jVtzp5Zssp5G; HttpOnly; path=/; Domain=.ottawa.ca
-Set-Cookie: incap_ses_1353_243507=6hwWXU/jdg3ewiCqvdLGEozZwWgAAAAASffoherdE8AoaMc/zEL3oQ==; path=/; Domain=.ottawa.ca
+Last-Modified: Thu, 11 Sep 2025 20:36:14 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
-X-CDN: Imperva
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
+X-Cdn: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 14-70101962-70101969 NNNN CT(38 94 0) RT(1757534604095 99) q(0 0 1 0) r(1 1) U24
-X-Varnish: 44011037 43440060
+X-Iinfo: 8-22361262-22361264 SNNy RT(1757622846593 127949) q(0 0 0 -1) r(9 9) U24
+X-Varnish: 44228856
 
+de66
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -183,7 +182,7 @@ X-Varnish: 44011037 43440060
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2555ee5ad65fdbe512e6427677ae82b101f05daf849726f27e5c4ebc5a4ad16e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-bd8eb3dd9150beb6b4b5c560d5aa1a17ac81c9575d9772e454d902f231755cd1">
   
     
       
@@ -197,7 +196,7 @@ X-Varnish: 44011037 43440060
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-cca4cb0ac5da0e0c6c17ef735ab8f98fadcf7928e496def9a059bad7f92564a6">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-30e1fc5a9ea4c3c8de612603587600bbb1bc5ccd2f4db49e0e4bccb58c4d439d">
   
     
       
@@ -397,7 +396,7 @@ X-Varnish: 44011037 43440060
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4cae13628835612b23393635794fbb53238c7361841ad8789c0e4e61b39aaaad">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-338139dd7cc19c648a6390d05ad217745a71e9c90bacbdeb1e54f2fefea2a39a">
   
     
       
@@ -411,7 +410,7 @@ X-Varnish: 44011037 43440060
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bcc027b70410485af28cadbb6782a75b041c718d3e1b9c45593993545f606b17">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-259bd107b2192cc487d73eeaa6895cb1b696dd375c7f1681e9de5cef3be1ca5f">
   
     
       
@@ -465,7 +464,8 @@ X-Varnish: 44011037 43440060
 			<th>Hot tub and sauna</th>
 			<td>8 am - 1 pm,&nbsp;
 			5 - 9 pm</td>
-			<td>8 am - 1 pm,&nbsp;
+			<td>8 - 10 am,&nbsp;
+			11 am - 1 pm,
 			5 - 9 pm</td>
 			<td>8 am - 1 pm,&nbsp;
 			5 - 9 pm</td>
@@ -482,7 +482,6 @@ X-Varnish: 44011037 43440060
 			11 am - 1 pm,&nbsp;
 			8 - 9 pm</td>
 			<td>8 - 10 am,&nbsp;
-			11 am - 1 pm,&nbsp;
 			8 - 9 pm</td>
 			<td>8 - 10 am,&nbsp;
 			11 am - 1 pm,&nbsp;
@@ -498,7 +497,7 @@ X-Varnish: 44011037 43440060
 		<tr>
 			<th>Preschool swim</th>
 			<td>11 am - 1 pm</td>
-			<td>11 am - 1 pm</td>
+			<td>n/a</td>
 			<td>11 am - 1 pm</td>
 			<td>10 am - 1 pm</td>
 			<td>11 am - 1 pm</td>
@@ -608,7 +607,7 @@ X-Varnish: 44011037 43440060
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4bc94cebd25d1a846cd3a59aacd6256a293d9d03588c62b6570c680d39e4be6c">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-428f92a7cad700db73f35f4f2ebfb95a5435998d6b4d738f29b125c93facdda4">
   
     
       
@@ -622,7 +621,7 @@ X-Varnish: 44011037 43440060
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4396c000ce9948bdb3e62ba56470985531e9d0db1b22815eeeb2b03d699509d6">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4af53492ea199677a59ad963be70339f0a99f49b027f8a78ed5589eaa966cc52">
   
     
       
@@ -755,7 +754,7 @@ X-Varnish: 44011037 43440060
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5530de3cfe46b64129e622262f5bbc09f7c3a414fc7d4a093b4ace9ca6229e12">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f2d074af0023d82546057665579152e8713776362c747c4f25adf954c4449fa4">
   
     
       
@@ -769,7 +768,7 @@ X-Varnish: 44011037 43440060
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bcdd85cf627e3897929c98c7657bbd7a6f254ec53012a2f39dab5ebb25ebf2ae">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-32367e5ef3b9b807444df2173963fd5b4d8ba6f778f99943131e86636e87b881">
   
     
       
@@ -988,7 +987,7 @@ X-Varnish: 44011037 43440060
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-1bbbb18f94118e62e1e6b2c3a44fa8685bad7a5a00127e9077fafe0018a58e5e">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-a46df3fe41684c393a15780dd32fb61e6b17298994176d17b327dba4407250ca">
   
     
       <div class="view-header">
@@ -1434,6 +1433,9 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1177237023" async></script></body>
+  </body>
 </html>
+
+
+0
 
