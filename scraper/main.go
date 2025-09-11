@@ -53,6 +53,8 @@ var (
 	ZyteLimit    = flag.Int("zyte-limit", 150, "zyte request limit")
 )
 
+var ScraperSecret = os.Getenv("OTTCA_SCRAPER_SECRET")
+
 func defaultUserAgent() string {
 	var ua strings.Builder
 	ua.WriteString("ottawa-rec-scraper-bot/0.1")
@@ -81,6 +83,27 @@ var pageLimit = sync.OnceValue(func() *rate.Limiter {
 })
 
 func init() {
+	if ScraperSecret != "" {
+		sha := sha1.Sum([]byte(ScraperSecret))
+		header := "X-Scraper-Secret"
+		next := http.DefaultTransport
+		http.DefaultTransport = roundTripperFunc(func(r *http.Request) (*http.Response, error) {
+			if strings.HasSuffix("."+strings.ToLower(r.URL.Hostname()), ".ottawa.ca") {
+				r2 := *r
+				r = &r2
+				r.Header = maps.Clone(r.Header)
+				r.Header[header] = []string{ScraperSecret}
+			}
+			resp, err := next.RoundTrip(r)
+			if resp != nil && resp.Request != nil && resp.Request.Header != nil {
+				if _, ok := resp.Request.Header[header]; ok {
+					resp.Request.Header[header] = []string{"redacted-" + hex.EncodeToString(sha[:4])}
+				}
+			}
+			return resp, err
+		})
+	}
+	http.DefaultClient.Transport = http.DefaultTransport
 	http.DefaultClient.Jar, _ = cookiejar.New(nil)
 }
 
@@ -113,6 +136,9 @@ func run(ctx context.Context) error {
 	}
 	if *Zyte {
 		slog.Info("using zyte", "limit", *ZyteLimit)
+	}
+	if !*Zyte && ScraperSecret != "" {
+		slog.Info("using scraper secret")
 	}
 	var (
 		data      schema.Data_builder
@@ -1466,3 +1492,11 @@ func stringsCutFirst(s string, sep ...string) (before, after string, ok bool) {
 func ptrTo[T any](x T) *T {
 	return &x
 }
+
+type roundTripperFunc func(*http.Request) (*http.Response, error)
+
+func (fn roundTripperFunc) RoundTrip(r *http.Request) (*http.Response, error) {
+	return fn(r)
+}
+
+var _ http.RoundTripper = roundTripperFunc(nil)

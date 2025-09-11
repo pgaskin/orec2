@@ -53,6 +53,7 @@ jobs:
       - run: go run ./scraper -cache-dir ./cache ${{ github.event.inputs != null && (github.event.inputs.zyte == true || github.event.inputs.zyte == 'true') && '-zyte' || '' }}
         env:
           ZYTE_APIKEY: ${{ secrets.zyte_apikey }}
+          OTTCA_SCRAPER_SECRET: ${{ secrets.ottca_scraper_secret }}
       - run: |
           git -C cache add . && { git -C cache diff --cached --quiet || git -C cache commit -m "update cache (${{ github.event_name == 'push' && 'partial' || 'full' }} reason: ${{github.event_name}} scraper: $(git rev-parse HEAD))" ; } && git -C cache push
   scrape:
