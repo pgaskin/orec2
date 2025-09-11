@@ -1,22 +1,23 @@
 GET /en/recreation-and-parks/facilities/place-listing/nepean-museum HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=6ZxfTjnbSZed+zZpBgX8Oj0yw2gAAAAAQUIPAAAAAACDuUyFbq8+Gv3SIlKMlY3A; nlbi_243507=tv/RLuEqpgQqPcqTaXmSIAAAAAA2p9lB42tdhF05CfgwyYHO; incap_ses_1251_243507=rVZMQzGi7UhYYMlcSnJcET0yw2gAAAAAMUo8Q64nKNwfMTnEDFW6ow==
+Cookie: visid_incap_243507=1UdCCFOST8uiSM41LEcS+T1Ow2gAAAAAQUIPAAAAAADi8XbgevDphEAeP3Hlv9Xv; nlbi_243507=oF7sDjdv7wHhe+mlaXmSIAAAAABkbSrkxbLjRjGkzbW6C7hp; incap_ses_1533_243507=l4hJCLmNGSiJ4IvdxE9GFT5Ow2gAAAAAwwaiuVDsHxarNkLWgJ9Ycw==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+X-Scraper-Secret: redacted-143b6237
 
 HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 645
+Age: 677
 Cache-Control: max-age=2764800, public
 Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Thu, 11 Sep 2025 20:36:58 GMT
-Etag: "1757622373-gzip"
+Date: Thu, 11 Sep 2025 22:36:26 GMT
+Etag: "1757629507-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Thu, 11 Sep 2025 20:26:13 GMT
+Last-Modified: Thu, 11 Sep 2025 22:25:07 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
@@ -26,10 +27,10 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: UNCACHEABLE (poor cacheability)
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 8-22361262-22361264 SNNy RT(1757622846593 171958) q(0 0 0 -1) r(1 1) U24
-X-Varnish: 44661364 44660938
+X-Iinfo: 15-50082134-50082136 SNNN RT(1757630013944 172354) q(0 0 0 -1) r(1 1) U24
+X-Varnish: 43695712 25261059
 
-12bd8
+12bda
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -182,7 +183,7 @@ X-Varnish: 44661364 44660938
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-af33c2212cabbea6d00591c1d9a14defdd0c0119503300908528a7881d57b3ce">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-226371d0b9693028ffa3beb324402c800aac2bc85fb1c7aabf2721dab847d859">
   
     
       
@@ -196,7 +197,7 @@ X-Varnish: 44661364 44660938
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-854a42c545894027acca0a76df75438e1d0c20490ac62432b11c75b78a6b11ad">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-73e0915f9f5aa6ba160454df401890f1fab2b06fe9ad40ce226a9fad275aec1f">
   
     
       
@@ -263,7 +264,7 @@ X-Varnish: 44661364 44660938
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">10:00 am - 5:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">Closed</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">Closed</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">10:00 am - 5:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">10:00 am - 5:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">10:00 am - 5:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">10:00 am - 5:00 pm</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">10:00 am - 5:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">Closed</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">Closed</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">10:00 am - 5:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">10:00 am - 5:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">10:00 am - 5:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">10:00 am - 5:00 pm</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -398,7 +399,7 @@ Subscribe to our monthly "<a href="https://ottawa.ca/esubscriptions">At your mus
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b63dd9d8db374b6f15cb1e769fb7a6afd8ea378c208431db11b5ea40bc0d59ac">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-60b0bec86d41e7091d6f0cfb1d4468f391e6b2af34cdd1d2e3b9482b16337b7f">
   
     
       
@@ -412,7 +413,7 @@ Subscribe to our monthly "<a href="https://ottawa.ca/esubscriptions">At your mus
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-8d9a126dda06b965359b450c9d6f98bd845f522ae7119994fb6a32d677c36538">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ba309a1ddd2e5d5f3fb07422ff5713b1714031fc70b772e65afd0702d2826154">
   
     
       
@@ -512,7 +513,7 @@ Subscribe to our monthly "<a href="https://ottawa.ca/esubscriptions">At your mus
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a0e2cac54c2414e41749ae709a48b8191274d2804cf2c5efda6af6e7a932b0dd">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-dade418b9532048de30b3b22f3b8ed8ae93555fa901d699b4d4bbf140c7ab039">
   
     
       
@@ -526,7 +527,7 @@ Subscribe to our monthly "<a href="https://ottawa.ca/esubscriptions">At your mus
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-790cd2371be063bbc6e31c14bba8cc90a746d3ac3f21f3d1438fea9265cda99e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6ea0d146bfcb8bedc8fe39198af098bdcbe98e8570b7018851f958de24e6a4be">
   
     
       
@@ -685,7 +686,7 @@ August 3 - Lego printmaking</strong></span><br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-423cd668145abb62be604a50569ecbf1ed154b5b2a0d23d0323bf9d7a1ee2770">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1c083d430443a245f399a5eff4408150689f8862779d4e524b45986718b21bfb">
   
     
       
@@ -699,7 +700,7 @@ August 3 - Lego printmaking</strong></span><br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a209974e263b629deb7eeec35851b3fac2f6ceb1297aa180d07670f50d95e28c">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b235228a125ae3c2117881d6186db431192197ba18e6c88fddc24a8cfe82baab">
   
     
       
@@ -884,7 +885,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f8a3d21bc924dd43f2d59cac7da9c28413ef9acc485c093829d133d2bd56be5c">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-19b2abc808df94bfc12438ec9355da0e6451c0a32f864825541eb668812d7df9">
   
     
       
@@ -898,7 +899,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-dbc2134e9165200c86cdaf6bfd416d1fcd078c35cfb58d0d2d1db972480a3aba">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6af6aea414a8d32a9b7df81b6e2c066addf5ab187e96230c20371bf8051acbf0">
   
     
       
@@ -999,7 +1000,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1cacdfe58a57666a04d267d98927a4e94485660a4f7a65050caeae505a84f499">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8f3328235c3f4b6c0499730e9a6b09c88a0e10931bea86fecbd544f0e788eea0">
   
     
       
@@ -1013,7 +1014,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f253caede871c880d547c025208baaf29cb9fc492948df006e6d2adcb2e0bfe4">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3d1b509eeb179c51d0779277f229504c82cf1219eb68ffb2e43a6c3ce08f682e">
   
     
       
@@ -1116,7 +1117,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9995a33a372a3c2fe1cb022d602d3c50994babc6dca6822dbbfdde4375ec80b5">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-38d428e38c0f912b3bd068b824009704cb096082e399a2515f07253f78e633af">
   
     
       
@@ -1130,7 +1131,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-8395b8d206f81eb9f51f22a0f5c0811acd06f1fb009ff6441efe4545fb73c3d4">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-eb1d77bb8d52a00c624e9a076f146dbf3a152eac47a8b0686191599a2f5b410c">
   
     
       
@@ -1230,7 +1231,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-510dc9d3aac7a40041073bcb89460e0503188746accf5cef840bc60f86aa0021">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-cc1e345760eaf25fdae85ee6dc915578d94eaacbf11488a9b1b16c87f09c8a73">
   
     
       
@@ -1244,7 +1245,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-977faa30d0d7f50f32af17165ce7bd3cfc7676dfa1e924a39b59b74d89ba946d">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d1334b0242bb9e1b7b5405b34cbfeee17be78a03075dec7266ccb13876c2f938">
   
     
       
