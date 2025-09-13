@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/ken-ross-park-field-house HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=om9dhi6FTaah/owU3SycO0Njw2gAAAAAQUIPAAAAAAAAv57HuccjhIg8NYFcyEDL; nlbi_243507=rvyAXk4szgDc4Ks3aXmSIAAAAADv5Rnul1eSLtia3lioBW7H; incap_ses_172_243507=7OmIcqoOaT9xiuvNHRFjAkNjw2gAAAAAop16CrpMlOKczPt0+NsLPg==
+Cookie: visid_incap_243507=AV77hf8oRNaTZKFhwk7qDrK0xGgAAAAAQUIPAAAAAADnqy5kmAJnbYYyt3ck3ON3; nlbi_243507=QM2LDvvLwHcZkd1TaXmSIAAAAACX5IZPVbcsB3LghrlLFDKv; incap_ses_239_243507=AeH5G9h1MCkmDQOjshlRA7K0xGgAAAAAibfr4j0h+9frK85Bpgc6VA==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -14,23 +14,23 @@ Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Fri, 12 Sep 2025 00:05:37 GMT
-Etag: "1757635536-gzip"
+Date: Sat, 13 Sep 2025 00:05:16 GMT
+Etag: "1757721915-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Fri, 12 Sep 2025 00:05:36 GMT
+Last-Modified: Sat, 13 Sep 2025 00:05:15 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
 X-Cdn: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 57-118611606-118611632 SNNN RT(1757635396390 140177) q(0 0 0 -1) r(12 12) U24
-X-Varnish: 45553696
+X-Iinfo: 13-82783868-82783873 SNNN RT(1757721779185 136534) q(0 1 1 -1) r(10 10) U24
+X-Varnish: 46023340
 
-8d8a
+8d8d
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -183,7 +183,7 @@ X-Varnish: 45553696
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-cc37884c067145cf8fe175f5f8e6200dd84073f8690580b92c4706a817cb2450">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-fbd85751711919c0287c9fbc4f3ea904439a67cca4b01230b727413531188dda">
   
     
       
@@ -197,7 +197,7 @@ X-Varnish: 45553696
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d1ed60c942a1ace26db3a8abfcafbe05c825810f463fa66fd48da3e93229b899">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7605b18a8aab63068b43183849347b09332cbd3c0fc1082ddcd9feb7afa3e861">
   
     
       
@@ -420,7 +420,7 @@ X-Varnish: 45553696
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-463c859616684b9fccef179c32fefcfe4423183e18a7565ab181757304f82fe6">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-1a186535bcf0d478675c35b292c849f3837157a468ee7c518f749d57e3b976a4">
   
     
       <div class="view-header">
@@ -795,14 +795,14 @@ X-Varnish: 45553696
           </button>
         </div>
         <div class="modal-body">
-          Would you like to participate in a 2-3 minute web experience survey to help us improve our website?
+          Would you like to participate in a 3-5 minute web experience study to help us improve ottawa.ca?
 
 If YES, a new window will open in the background so you can come back to it when you are finished on the website.
 
 Thank you for considering to help out.
         </div>
         <div class="modal-footer">
-          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://forms.ottawa.ca/en/form/fcs/service-ottawa/client-satisfaction-survey">Yes</a>
+          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/chalkmark/7755fe78caceac89d95d2c3134ddde27">Yes</a>
           <button type="button" class="btn btn-outline-primary" data-dismiss="modal">No</button>
         </div>
       </div>

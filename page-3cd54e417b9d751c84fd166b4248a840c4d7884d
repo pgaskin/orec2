@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/old-town-hall-community-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=om9dhi6FTaah/owU3SycO0Njw2gAAAAAQUIPAAAAAAAAv57HuccjhIg8NYFcyEDL; nlbi_243507=rvyAXk4szgDc4Ks3aXmSIAAAAADv5Rnul1eSLtia3lioBW7H; incap_ses_172_243507=7OmIcqoOaT9xiuvNHRFjAkNjw2gAAAAAop16CrpMlOKczPt0+NsLPg==
+Cookie: visid_incap_243507=AV77hf8oRNaTZKFhwk7qDrK0xGgAAAAAQUIPAAAAAADnqy5kmAJnbYYyt3ck3ON3; nlbi_243507=QM2LDvvLwHcZkd1TaXmSIAAAAACX5IZPVbcsB3LghrlLFDKv; incap_ses_239_243507=AeH5G9h1MCkmDQOjshlRA7K0xGgAAAAAibfr4j0h+9frK85Bpgc6VA==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -14,23 +14,23 @@ Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Fri, 12 Sep 2025 00:06:23 GMT
-Etag: "1757635582-gzip"
+Date: Sat, 13 Sep 2025 00:06:01 GMT
+Etag: "1757721959-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Fri, 12 Sep 2025 00:06:22 GMT
+Last-Modified: Sat, 13 Sep 2025 00:05:59 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
 X-Cdn: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 57-118611606-118611632 SNNN RT(1757635396390 185986) q(0 0 0 -1) r(11 11) U24
-X-Varnish: 45463822
+X-Iinfo: 13-82783868-82783873 SNNN RT(1757721779185 180620) q(0 2 2 -1) r(15 15) U24
+X-Varnish: 46381911
 
-87ab
+87ae
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -183,7 +183,7 @@ X-Varnish: 45463822
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0b516e3992ca904777325506ebefdb0a050d06a578f0606906fee27a4421abfb">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6d08a85aa5e03665d27e914bbda01648fcf10c8d84aa05ce8ec2e7ab9f36ac04">
   
     
       
@@ -197,7 +197,7 @@ X-Varnish: 45463822
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-db4f3e575ef5d821512e5f2296846e64eaaa0f87aa173a32311dbc79cb0b7e91">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-18f17814b96523cdbc4776975a677d7627c103ed7ee2ac996b81899673f6b3db">
   
     
       
@@ -428,7 +428,7 @@ X-Varnish: 45463822
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-ad53537ebf84e9a131bd771258100060a658ef5f6e73aaceb20d66ee806248c2">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-72d94065d25d4a4833684ca5cf2535a756ef30d1145322ab002d27b2083c2001">
   
     
       <div class="view-header">
@@ -780,14 +780,14 @@ X-Varnish: 45463822
           </button>
         </div>
         <div class="modal-body">
-          Would you like to participate in a 2-3 minute web experience survey to help us improve our website?
+          Would you like to participate in a 3-5 minute web experience study to help us improve ottawa.ca?
 
 If YES, a new window will open in the background so you can come back to it when you are finished on the website.
 
 Thank you for considering to help out.
         </div>
         <div class="modal-footer">
-          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://forms.ottawa.ca/en/form/fcs/service-ottawa/client-satisfaction-survey">Yes</a>
+          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/chalkmark/7755fe78caceac89d95d2c3134ddde27">Yes</a>
           <button type="button" class="btn btn-outline-primary" data-dismiss="modal">No</button>
         </div>
       </div>

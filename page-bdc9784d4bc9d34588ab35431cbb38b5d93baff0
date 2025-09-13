@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/manor-park-community-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=om9dhi6FTaah/owU3SycO0Njw2gAAAAAQUIPAAAAAAAAv57HuccjhIg8NYFcyEDL; nlbi_243507=rvyAXk4szgDc4Ks3aXmSIAAAAADv5Rnul1eSLtia3lioBW7H; incap_ses_172_243507=7OmIcqoOaT9xiuvNHRFjAkNjw2gAAAAAop16CrpMlOKczPt0+NsLPg==
+Cookie: visid_incap_243507=AV77hf8oRNaTZKFhwk7qDrK0xGgAAAAAQUIPAAAAAADnqy5kmAJnbYYyt3ck3ON3; nlbi_243507=QM2LDvvLwHcZkd1TaXmSIAAAAACX5IZPVbcsB3LghrlLFDKv; incap_ses_239_243507=AeH5G9h1MCkmDQOjshlRA7K0xGgAAAAAibfr4j0h+9frK85Bpgc6VA==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -14,23 +14,23 @@ Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Fri, 12 Sep 2025 00:05:53 GMT
-Etag: "1757635551-gzip"
+Date: Sat, 13 Sep 2025 00:05:30 GMT
+Etag: "1757721929-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Fri, 12 Sep 2025 00:05:51 GMT
+Last-Modified: Sat, 13 Sep 2025 00:05:29 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
 X-Cdn: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 57-118611606-118611632 SNNN RT(1757635396390 155412) q(0 1 1 -1) r(17 17) U24
-X-Varnish: 42510530
+X-Iinfo: 13-82783868-82783873 SNNN RT(1757721779185 150535) q(0 1 1 -1) r(9 9) U24
+X-Varnish: 45365563
 
-8273
+8276
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -183,7 +183,7 @@ X-Varnish: 42510530
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-19c3fdc30b2eefdd47aebd8fd29c86a89118069d698ce22515b127d986d39abd">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2c0a6c1488981039cc752059c578e829e7af54aaa4c4ff3e07e9d5ffea0080f5">
   
     
       
@@ -197,7 +197,7 @@ X-Varnish: 42510530
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-11de06a23fe747d2872baaae9504e7936d4e58afb8528d6d3667055e1e02e520">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c937f70fd40d0116cbde310412c9f13cc36aff77670c1fe11259dcfeeffff561">
   
     
       
@@ -406,7 +406,7 @@ X-Varnish: 42510530
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-db89660fe90de9b8b89002b9cf75607d4298c9b508c1a92382623661d2f40f9b">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-c2a767722b95db4f76d911108098f7f083f7b06b30a84ddf0b86b99926400022">
   
     
       <div class="view-header">
@@ -746,14 +746,14 @@ X-Varnish: 42510530
           </button>
         </div>
         <div class="modal-body">
-          Would you like to participate in a 2-3 minute web experience survey to help us improve our website?
+          Would you like to participate in a 3-5 minute web experience study to help us improve ottawa.ca?
 
 If YES, a new window will open in the background so you can come back to it when you are finished on the website.
 
 Thank you for considering to help out.
         </div>
         <div class="modal-footer">
-          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://forms.ottawa.ca/en/form/fcs/service-ottawa/client-satisfaction-survey">Yes</a>
+          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/chalkmark/7755fe78caceac89d95d2c3134ddde27">Yes</a>
           <button type="button" class="btn btn-outline-primary" data-dismiss="modal">No</button>
         </div>
       </div>

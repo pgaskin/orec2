@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/lindenlea-community-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=om9dhi6FTaah/owU3SycO0Njw2gAAAAAQUIPAAAAAAAAv57HuccjhIg8NYFcyEDL; nlbi_243507=rvyAXk4szgDc4Ks3aXmSIAAAAADv5Rnul1eSLtia3lioBW7H; incap_ses_172_243507=7OmIcqoOaT9xiuvNHRFjAkNjw2gAAAAAop16CrpMlOKczPt0+NsLPg==
+Cookie: visid_incap_243507=AV77hf8oRNaTZKFhwk7qDrK0xGgAAAAAQUIPAAAAAADnqy5kmAJnbYYyt3ck3ON3; nlbi_243507=QM2LDvvLwHcZkd1TaXmSIAAAAACX5IZPVbcsB3LghrlLFDKv; incap_ses_239_243507=AeH5G9h1MCkmDQOjshlRA7K0xGgAAAAAibfr4j0h+9frK85Bpgc6VA==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -14,23 +14,23 @@ Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Fri, 12 Sep 2025 00:05:47 GMT
-Etag: "1757635545-gzip"
+Date: Sat, 13 Sep 2025 00:05:24 GMT
+Etag: "1757721923-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Fri, 12 Sep 2025 00:05:45 GMT
+Last-Modified: Sat, 13 Sep 2025 00:05:23 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
 X-Cdn: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 57-118611606-118611632 SNNN RT(1757635396390 149361) q(0 1 1 -1) r(16 16) U24
-X-Varnish: 45553710
+X-Iinfo: 13-82783868-82783873 SNNN RT(1757721779185 144534) q(0 1 1 -1) r(13 13) U24
+X-Varnish: 45365558
 
-826b
+826e
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -183,7 +183,7 @@ X-Varnish: 45553710
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-840946c42e5e82c3a002b7b19c5a5aae5b99b561c21722c3ba6fb5b952073f04">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-71d2834e59e4bc94af1bc3df3fe61f4eafb437f0c93ac55e121ee10522ffd782">
   
     
       
@@ -197,7 +197,7 @@ X-Varnish: 45553710
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9935630925a297de127e477f99ca4fd70d935d4cd88c2c99da4efef98fd00350">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-685225f73be0b67f91c92200b3d0d82860a2191bb282e5d0f50e6c4c9f6540c6">
   
     
       
@@ -406,7 +406,7 @@ X-Varnish: 45553710
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-c719ab9aec5d90b95de9b43cd7739c329bc22c4506195ddc5ad133eeeca5c705">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-5338769eef786d3386c7f427cbc3601eacd0def3713fe3382aca7da04e3e5ae5">
   
     
       <div class="view-header">
@@ -746,14 +746,14 @@ X-Varnish: 45553710
           </button>
         </div>
         <div class="modal-body">
-          Would you like to participate in a 2-3 minute web experience survey to help us improve our website?
+          Would you like to participate in a 3-5 minute web experience study to help us improve ottawa.ca?
 
 If YES, a new window will open in the background so you can come back to it when you are finished on the website.
 
 Thank you for considering to help out.
         </div>
         <div class="modal-footer">
-          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://forms.ottawa.ca/en/form/fcs/service-ottawa/client-satisfaction-survey">Yes</a>
+          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/chalkmark/7755fe78caceac89d95d2c3134ddde27">Yes</a>
           <button type="button" class="btn btn-outline-primary" data-dismiss="modal">No</button>
         </div>
       </div>
