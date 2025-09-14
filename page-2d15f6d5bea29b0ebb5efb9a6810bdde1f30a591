@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/ray-friel-recreation-complex HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=AV77hf8oRNaTZKFhwk7qDrK0xGgAAAAAQUIPAAAAAADnqy5kmAJnbYYyt3ck3ON3; nlbi_243507=QM2LDvvLwHcZkd1TaXmSIAAAAACX5IZPVbcsB3LghrlLFDKv; incap_ses_239_243507=AeH5G9h1MCkmDQOjshlRA7K0xGgAAAAAibfr4j0h+9frK85Bpgc6VA==
+Cookie: visid_incap_243507=H6MqZEQoR+GkwEF2ptF7lUoGxmgAAAAAQUIPAAAAAACTNIJZmnhqTm/YZ6k7zJZL; nlbi_243507=14Z8YlCgyi4jyJaxaXmSIAAAAADKBFwzPiuVso/kw6clk6kf; incap_ses_1350_243507=x+50Dvh7HWTQSpTCQSq8EkoGxmgAAAAAZABQOeTZECAq9fj9S5fj8g==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,16 +8,16 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 426
+Age: 261
 Cache-Control: max-age=2764800, public
 Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Sat, 13 Sep 2025 00:06:17 GMT
-Etag: "1757721550-gzip"
+Date: Sun, 14 Sep 2025 00:06:42 GMT
+Etag: "1757808139-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Fri, 12 Sep 2025 23:59:10 GMT
+Last-Modified: Sun, 14 Sep 2025 00:02:19 GMT
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
@@ -27,10 +27,10 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 13-82783868-82783873 SNNN RT(1757721779185 198536) q(0 1 1 -1) r(1 1) U24
-X-Varnish: 46697620 46762508
+X-Iinfo: 11-68394469-68394473 SNNN RT(1757808202257 200180) q(0 0 0 -1) r(1 1) U24
+X-Varnish: 47811395 47279012
 
-1234a
+12290
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -41,7 +41,7 @@ X-Varnish: 46697620 46762508
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/ray-friel-recreation-complex" />
 <meta name="dcterms.title" content="Ray Friel Recreation Complex" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-09-09" />
+<meta name="dcterms.date" content="2025-09-13" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -183,7 +183,7 @@ X-Varnish: 46697620 46762508
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b339a0ed17710c99bd6a19ecee3e38c592cca9645f1a585219bf6f8db59c4d99">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0d23a2837141900d20ba386b28640641251379159348d60af4d94d3ca83156e5">
   
     
       
@@ -197,7 +197,7 @@ X-Varnish: 46697620 46762508
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-280b994ba1732612f0bdad5de649b287b1f6e0acfdf0bceb0edce337bcd36074">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c8594ba7c934f2a45232b32f923cb4362697be35c438cb3bf1ed7a558f345582">
   
     
       
@@ -279,11 +279,6 @@ X-Varnish: 46697620 46762508
 
   
             <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><ul>
-<li><strong>September 12</strong>
-<ul>
-<li>Lane swim, 9 to 10 am, cancelled.</li>
-</ul>
-</li>
 <li><strong>September 19</strong>
 <ul>
 <li>Lane swim, 9 to 10 am, cancelled.</li>
@@ -312,7 +307,7 @@ X-Varnish: 46697620 46762508
   <div class="field field--name-field-place-hours-of-operation field--type-office-hours field--label-above">
     <h2 class="h3 field__label">Hours</h2>
           <div class="field__items">
-              <div class="field__item"><div class="office-hours office-hours office-hours-status--open"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">8:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">8:00 am - 8:00 pm</span><span><br /></span></div></div></div>
+              <div class="field__item"><div class="office-hours office-hours office-hours-status--closed"><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Sunday : </span><span class="office-hours__item-slots">8:00 am - 8:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Monday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Tuesday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Wednesday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Thursday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Friday : </span><span class="office-hours__item-slots">6:00 am - 9:00 pm</span><span><br /></span></div><div class="office-hours__item"><span class="office-hours__item-label" style="width: 7.2em;">Saturday : </span><span class="office-hours__item-slots">8:00 am - 8:00 pm</span><span><br /></span></div></div></div>
               </div>
       </div>
 
@@ -486,7 +481,7 @@ X-Varnish: 46697620 46762508
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c46c3547f9027aa004abecf0f037420156e2f6da7ba998576e0260c3281a72a9">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9b0aa1f8bf2219a4c1f42b4276c609b73f2ec3f63932a0a4170d80505595e1cd">
   
     
       
@@ -500,7 +495,7 @@ X-Varnish: 46697620 46762508
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-af53e1ab21b9f972186a848fbeb7384cdb6df6c2e3f7d6f637bd110c5a56ddeb">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-47b0728b785907ebc34766674735d5428740459de0711d19ffc6e4c1db5c0a8b">
   
     
       
@@ -537,11 +532,6 @@ X-Varnish: 46697620 46762508
           
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule changes</h3>
 <ul>
-<li><strong>September 12</strong>
-<ul>
-<li>Lane swim, 9 to 10 am, cancelled.</li>
-</ul>
-</li>
 <li><strong>September 19</strong>
 <ul>
 <li>Lane swim, 9 to 10 am, cancelled.</li>
@@ -824,7 +814,7 @@ X-Varnish: 46697620 46762508
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-78f69cffbee851ff4870dd03eaaf4aba33928d81cc839aaf23ca150459558de4">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b3bc9cf5835516ab83200e26d5dcccf2737777ba798e7002c41ce783460938e8">
   
     
       
@@ -838,7 +828,7 @@ X-Varnish: 46697620 46762508
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-9dcd0674bb6df687445a1f0806bfdbcc22f132968a39c09655c733febc5db42a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2fec8f1d37c4d0ffcf12d12207ce740352f06948fd8468a441acc4150ac3e98b">
   
     
       
@@ -987,7 +977,7 @@ X-Varnish: 46697620 46762508
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-bfeb3b7d7184cdac0cac816694bda16aedf8e36dc9e7c6174784a81aa6a07d52">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-200cfdc8209be5dae9e1a2149d22c1c48c23f49fed1a7ed71e7cf37c7bb32885">
   
     
       
@@ -1001,7 +991,7 @@ X-Varnish: 46697620 46762508
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-58346acfcd906e682418f8a9925f14ee79dfa46c0280b853528f4ac95d21cdc9">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0887525b99a279ea5f8df961eb39a7af5a104e05005ff31e9434f360e3abf479">
   
     
       
@@ -1650,7 +1640,7 @@ X-Varnish: 46697620 46762508
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-21ae71b7a7bed8a4e22cfbf9f00823674ad8205cf921088efb2afdd5297edfef">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-bd78dbab3236eafc1ca5d35ff7507230ce1521f701c4526feb0fd86c06f36bbf">
   
     
       
@@ -1664,7 +1654,7 @@ X-Varnish: 46697620 46762508
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6ea98a5674ebd72d9f5f74c2d44d90e96e6dc12271f3c94d6259bd8e69f4f7fe">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bcf7eb3db723a1caaa0e8c19b55a52e446ce3c8dbc6f9e26b9e226006bedbc41">
   
     
       
@@ -1897,7 +1887,7 @@ X-Varnish: 46697620 46762508
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-80567e5f6f17880db1bed948c08528c99987a15d0b897fb5b32b4e61fc0c3649">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-689400217654d2bc39762ff4245f05c8a9ff657e7c288142c6339f40d603797f">
   
     
       <div class="view-header">
