@@ -44,6 +44,7 @@ var (
 	Scrape       = flag.String("scrape", "", "parse data from pages, writing the protobuf to the specified file")
 	NoFetch      = flag.Bool("no-fetch", false, "don't fetch pages not in cache")
 	CacheDir     = flag.String("cache-dir", "", "cache pages in the specified directory")
+	Geocodio     = flag.Bool("geocodio", false, "use geocodio for geocoding (set GEOCODIO_APIKEY)")
 	Nominatim    = flag.String("nominatim", "https://nominatim.geocoding.ai", "nominatim base url")
 	NominatimQPS = flag.Float64("nominatim-qps", 1, "maximum nominatim queries per second")
 	PageQPS      = flag.Float64("page-qps", 0.5, "maximum page fetches per second")
@@ -78,6 +79,10 @@ var nominatimLimit = sync.OnceValue(func() *rate.Limiter {
 	return rate.NewLimiter(rate.Limit(*NominatimQPS), 1)
 })
 
+var geocodioLimit = sync.OnceValue(func() *rate.Limiter {
+	return rate.NewLimiter(rate.Every(time.Minute/1000), 1)
+})
+
 var pageLimit = sync.OnceValue(func() *rate.Limiter {
 	return rate.NewLimiter(rate.Limit(*PageQPS), 1)
 })
@@ -98,6 +103,26 @@ func init() {
 			if resp != nil && resp.Request != nil && resp.Request.Header != nil {
 				if _, ok := resp.Request.Header[header]; ok {
 					resp.Request.Header[header] = []string{"redacted-" + hex.EncodeToString(sha[:4])}
+				}
+			}
+			return resp, err
+		})
+	}
+	if apikey := os.Getenv("GEOCODIO_APIKEY"); apikey != "" {
+		sha := sha1.Sum([]byte(apikey))
+		header := "Authorization"
+		next := http.DefaultTransport
+		http.DefaultTransport = roundTripperFunc(func(r *http.Request) (*http.Response, error) {
+			if r.URL.Hostname() == "api.geocod.io" {
+				r2 := *r
+				r = &r2
+				r.Header = maps.Clone(r.Header)
+				r.Header[header] = []string{"Bearer " + apikey}
+			}
+			resp, err := next.RoundTrip(r)
+			if resp != nil && resp.Request != nil && resp.Request.Header != nil {
+				if _, ok := resp.Request.Header[header]; ok {
+					resp.Request.Header[header] = []string{"Bearer redacted-" + hex.EncodeToString(sha[:4])}
 				}
 			}
 			return resp, err
@@ -133,6 +158,11 @@ func run(ctx context.Context) error {
 	}
 	if *Scrape == "" {
 		slog.Info("will not parse data")
+	}
+	if *Geocodio {
+		slog.Info("using geocodio for geocoding")
+	} else {
+		slog.Info("using nominatim for geocoding", "url", *Nominatim)
 	}
 	if *Zyte {
 		slog.Info("using zyte", "limit", *ZyteLimit)
@@ -410,6 +440,58 @@ func run(ctx context.Context) error {
 }
 
 func geocode(ctx context.Context, addr string) (lng, lat float64, attrib string, ok bool, err error) {
+	if *Geocodio {
+		return geocodeGeocodio(ctx, addr)
+	}
+	return geocodeNominatim(ctx, addr)
+}
+
+func geocodeGeocodio(ctx context.Context, addr string) (lng, lat float64, attrib string, ok bool, err error) {
+	resp, err := fetchGeocodio(ctx, &url.URL{
+		Path: "v1.9/geocode",
+		RawQuery: url.Values{
+			"q":       {addr},
+			"country": {"CA"},
+		}.Encode(),
+	})
+	if err != nil {
+		return 0, 0, "", false, err
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		var obj struct {
+			Error string
+		}
+		if err := json.NewDecoder(resp.Body).Decode(&obj); err != nil || obj.Error == "" {
+			return 0, 0, "", false, fmt.Errorf("response status %d", resp.StatusCode)
+		}
+		return 0, 0, "", false, fmt.Errorf("response status %d: geocodio error: %q", resp.StatusCode, obj.Error)
+	}
+
+	var obj struct {
+		Results []struct {
+			Location struct {
+				Lat float64
+				Lng float64
+			}
+			Source string
+		}
+	}
+	if err := json.NewDecoder(resp.Body).Decode(&obj); err != nil {
+		return 0, 0, "", false, fmt.Errorf("decode geocodio response: %w", err)
+	}
+	if len(obj.Results) != 0 {
+		r := obj.Results[0]
+		if r.Location.Lat == 0 || r.Location.Lng == 0 {
+			return 0, 0, "", false, fmt.Errorf("decode geocodio response: missing lng/lat")
+		}
+		return r.Location.Lng, r.Location.Lat, "via geocodio (" + r.Source + ")", true, nil
+	}
+	return 0, 0, "", false, nil
+}
+
+func geocodeNominatim(ctx context.Context, addr string) (lng, lat float64, attrib string, ok bool, err error) {
 	resp, err := fetchNominatim(ctx, &url.URL{
 		Path: "search",
 		RawQuery: url.Values{
@@ -494,6 +576,21 @@ func fetchNominatim(ctx context.Context, r *url.URL) (*http.Response, error) {
 	u.RawQuery = q.Encode()
 
 	return fetch(ctx, u.String(), "nominatim", r.String(), nominatimLimit(), false)
+}
+
+func fetchGeocodio(ctx context.Context, r *url.URL) (*http.Response, error) {
+	slog.Info("fetch geocodio", "url", r.String())
+
+	u, err := url.Parse("https://api.geocod.io/")
+	if err != nil {
+		return nil, err
+	}
+	q := u.Query()
+	u = u.ResolveReference(r)
+	maps.Copy(q, r.Query()) // keep orig query params
+	u.RawQuery = q.Encode()
+
+	return fetch(ctx, u.String(), "geocodio", r.String(), geocodioLimit(), false)
 }
 
 func fetch(ctx context.Context, u string, cacheType, cacheKey string, limiter *rate.Limiter, proxy bool) (*http.Response, error) {

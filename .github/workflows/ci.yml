@@ -50,9 +50,10 @@ jobs:
         if: ${{ github.event_name != 'push' }} # we only want to clear the cached data if it's a scheduled or forced update... otherwise, just download anything new if needed
       - run: rm -fv cache/page-*
         if: ${{ github.event_name != 'push' && !(github.event.inputs != null && (github.event.inputs.keep_facility_list == true || github.event.inputs.keep_facility_list == 'true')) }} # we only want to clear the cached data if it's a scheduled or forced update... otherwise, just download anything new if needed
-      - run: go run ./scraper -cache-dir ./cache ${{ github.event.inputs != null && (github.event.inputs.zyte == true || github.event.inputs.zyte == 'true') && '-zyte' || '' }}
+      - run: go run ./scraper -cache-dir ./cache -geocodio ${{ github.event.inputs != null && (github.event.inputs.zyte == true || github.event.inputs.zyte == 'true') && '-zyte' || '' }}
         env:
           ZYTE_APIKEY: ${{ secrets.zyte_apikey }}
+          GEOCODIO_APIKEY: ${{ secrets.geocodio_apikey }}
           OTTCA_SCRAPER_SECRET: ${{ secrets.ottca_scraper_secret }}
       - run: |
           git -C cache add . && { git -C cache diff --cached --quiet || git -C cache commit -m "update cache (${{ github.event_name == 'push' && 'partial' || 'full' }} reason: ${{github.event_name}} scraper: $(git rev-parse HEAD))" ; } && git -C cache push
@@ -76,7 +77,7 @@ jobs:
       - run: git worktree add data-csv data-csv
       - run: rm -fv data/* csv/*
       - run: cp schema/schema.proto data/data.proto
-      - run: go run ./scraper -cache-dir ./cache -no-fetch -scrape ./data.pb
+      - run: go run ./scraper -cache-dir ./cache -geocodio -no-fetch -scrape ./data.pb
       - run: go run ./exporter -json ./data/data.json -pb ./data/data.pb -textpb ./data/data.textpb -csv ./data-csv -pretty ./data.pb
       - run: |
           git -C data add . && { git -C data diff --cached --quiet || git -C data commit -m "update data (reason: ${{github.event_name}} scraper: $(git rev-parse HEAD) cache: ${{ github.repository_owner == 'pgaskin' && '' || 'pgaskin/orec2@' }}$(git -C cache rev-parse HEAD))" ; } && git -C data push
