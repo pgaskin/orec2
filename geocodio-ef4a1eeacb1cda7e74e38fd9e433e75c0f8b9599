@@ -1,0 +1,27 @@
+GET /v1.9/geocode?country=CA&q=10+McKitrick+Drive%0AOttawa+ON+K2L+1T7%0ACanada HTTP/1.1
+Host: api.geocod.io
+Authorization: Bearer redacted-6239dbe9
+User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+
+HTTP/2.0 200 OK
+Access-Control-Allow-Headers: Content-Type, User-Agent
+Access-Control-Allow-Methods: GET, POST, PATCH, DELETE
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Request-Handler
+Cache-Control: no-cache, private
+Content-Security-Policy: default-src 'none';
+Content-Type: application/json
+Date: Mon, 15 Sep 2025 13:38:13 GMT
+Request-Handler: api299
+Server: Unicorns with magic wands (https://www.geocod.io)
+X-Billable-Fields-Count: 0
+X-Billable-Lookups-Count: 1
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Period: 60
+X-Ratelimit-Remaining: 945
+X-Request-Id: 40EC85B3:9818_05A11518:01BB_68C816C4_A4CA2AC:7491
+X-Xss-Protection: 1; mode=block
+
+{"input":{"address_components":{"number":"10","street":"McKitrick","suffix":"Dr","formatted_street":"McKitrick Dr","city":"Ottawa","state":"ON","zip":"K2L 1T7","country":"CA"},"formatted_address":"10 McKitrick Dr, Ottawa, ON K2L 1T7"},"results":[{"address_components":{"number":"10","street":"McKitrick","suffix":"Dr","formatted_street":"McKitrick Dr","city":"Kanata","state":"ON","zip":"K2L","country":"CA"},"address_lines":["10 McKitrick Dr","","Kanata, ON K2L"],"formatted_address":"10 McKitrick Dr, Kanata, ON K2L","location":{"lat":45.293589,"lng":-75.883809},"accuracy":0.9,"accuracy_type":"rooftop","source":"City of Ottawa (Open Government Licence \u2013 City of Ottawa Contains information licensed under the Open Government Licence \u2013 City of Ottawa)"},{"address_components":{"number":"10","street":"McKitrick","suffix":"Dr","formatted_street":"McKitrick Dr","city":"Kanata","state":"ON","zip":"K2L","country":"CA"},"address_lines":["10 McKitrick Dr","","Kanata, ON K2L"],"formatted_address":"10 McKitrick Dr, Kanata, ON K2L","location":{"lat":45.293704,"lng":-75.884719},"accuracy":0.9,"accuracy_type":"point","source":"CanVec+ by Natural Resources Canada"}]}

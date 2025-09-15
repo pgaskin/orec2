@@ -1,0 +1,27 @@
+GET /v1.9/geocode?country=CA&q=2040+Ogilvie+Road%0AOttawa+ON+K1J+7N8%0ACanada HTTP/1.1
+Host: api.geocod.io
+Authorization: Bearer redacted-6239dbe9
+User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+
+HTTP/2.0 200 OK
+Access-Control-Allow-Headers: Content-Type, User-Agent
+Access-Control-Allow-Methods: GET, POST, PATCH, DELETE
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Request-Handler
+Cache-Control: no-cache, private
+Content-Security-Policy: default-src 'none';
+Content-Type: application/json
+Date: Mon, 15 Sep 2025 13:38:29 GMT
+Request-Handler: api310
+Server: Unicorns with magic wands (https://www.geocod.io)
+X-Billable-Fields-Count: 0
+X-Billable-Lookups-Count: 1
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Period: 60
+X-Ratelimit-Remaining: 893
+X-Request-Id: 40EC85B3:9818_05A11518:01BB_68C816D5_A4CABD5:7491
+X-Xss-Protection: 1; mode=block
+
+{"input":{"address_components":{"number":"2040","street":"Ogilvie","suffix":"Rd","formatted_street":"Ogilvie Rd","city":"Ottawa","state":"ON","zip":"K1J 7N8","country":"CA"},"formatted_address":"2040 Ogilvie Rd, Ottawa, ON K1J 7N8"},"results":[{"address_components":{"number":"2040","street":"Ogilvie","suffix":"Rd","formatted_street":"Ogilvie Rd","city":"Gloucester","state":"ON","zip":"K1J","country":"CA"},"address_lines":["2040 Ogilvie Rd","","Gloucester, ON K1J"],"formatted_address":"2040 Ogilvie Rd, Gloucester, ON K1J","location":{"lat":45.437627,"lng":-75.600342},"accuracy":1,"accuracy_type":"rooftop","source":"City of Ottawa (Open Government Licence \u2013 City of Ottawa Contains information licensed under the Open Government Licence \u2013 City of Ottawa)"}]}

@@ -1,0 +1,27 @@
+GET /v1.9/geocode?country=CA&q=300+Des+P%C3%A8res-Blancs+Avenue%0AOttawa+ON+K1L+7L5%0ACanada HTTP/1.1
+Host: api.geocod.io
+Authorization: Bearer redacted-6239dbe9
+User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+
+HTTP/2.0 200 OK
+Access-Control-Allow-Headers: Content-Type, User-Agent
+Access-Control-Allow-Methods: GET, POST, PATCH, DELETE
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Request-Handler
+Cache-Control: no-cache, private
+Content-Security-Policy: default-src 'none';
+Content-Type: application/json
+Date: Mon, 15 Sep 2025 13:38:25 GMT
+Request-Handler: api304
+Server: Unicorns with magic wands (https://www.geocod.io)
+X-Billable-Fields-Count: 0
+X-Billable-Lookups-Count: 1
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Period: 60
+X-Ratelimit-Remaining: 905
+X-Request-Id: 40EC85B3:9818_05A11518:01BB_68C816D1_A4CA9B5:7491
+X-Xss-Protection: 1; mode=block
+
+{"input":{"address_components":{"number":"300","street":"Des P\u00e8res Blancs","suffix":"Ave","formatted_street":"Des P\u00e8res Blancs Ave","city":"Ottawa","state":"ON","zip":"K1L 7L5","country":"CA"},"formatted_address":"300 Des P\u00e8res Blancs Ave, Ottawa, ON K1L 7L5"},"results":[{"address_components":{"number":"300","street":"Des Peres Blancs","suffix":"Ave","formatted_street":"Des Peres Blancs Ave","city":"Vanier","state":"ON","zip":"K1L","country":"CA"},"address_lines":["300 Des Peres Blancs Ave","","Vanier, ON K1L"],"formatted_address":"300 Des Peres Blancs Ave, Vanier, ON K1L","location":{"lat":45.443239,"lng":-75.661211},"accuracy":0.95,"accuracy_type":"range_interpolation","source":"CanVec+ by Natural Resources Canada"},{"address_components":{"number":"310","street":"Des P\u00e8res-Blancs","suffix":"Ave","formatted_street":"Des P\u00e8res-Blancs Ave","city":"Vanier","state":"ON","zip":"K1L","country":"CA"},"address_lines":["310 Des P\u00e8res-Blancs Ave","","Vanier, ON K1L"],"formatted_address":"310 Des P\u00e8res-Blancs Ave, Vanier, ON K1L","location":{"lat":45.442939,"lng":-75.661429},"accuracy":0.89,"accuracy_type":"nearest_rooftop_match","source":"Countrywide (Adapted from Statistics Canada, National Address Register, 2024-05-11. This does not constitute an endorsement by Statistics Canada of this product.)"},{"address_components":{"number":"300","street":"Peres-Blancs","formatted_street":"Peres-Blancs","city":"Vanier","state":"ON","zip":"K1L","country":"CA"},"address_lines":["300 Peres-Blancs","","Vanier, ON K1L"],"formatted_address":"300 Peres-Blancs, Vanier, ON K1L","location":{"lat":45.44404,"lng":-75.661075},"accuracy":0.7,"accuracy_type":"rooftop","source":"City of Ottawa (Open Government Licence \u2013 City of Ottawa Contains information licensed under the Open Government Licence \u2013 City of Ottawa)"},{"address_components":{"number":"310","street":"Peres-Blancs","formatted_street":"Peres-Blancs","city":"Vanier","state":"ON","zip":"K1L","country":"CA"},"address_lines":["310 Peres-Blancs","","Vanier, ON K1L"],"formatted_address":"310 Peres-Blancs, Vanier, ON K1L","location":{"lat":45.44404,"lng":-75.661075},"accuracy":0.59,"accuracy_type":"nearest_rooftop_match","source":"City of Ottawa (Open Government Licence \u2013 City of Ottawa Contains information licensed under the Open Government Licence \u2013 City of Ottawa)"}]}

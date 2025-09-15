@@ -1,0 +1,27 @@
+GET /v1.9/geocode?country=CA&q=1701+Woodroffe+Avenue%2C%0AEntrance+3%0AOttawa+ON+K2G+1W2%0ACanada HTTP/1.1
+Host: api.geocod.io
+Authorization: Bearer redacted-6239dbe9
+User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+
+HTTP/2.0 200 OK
+Access-Control-Allow-Headers: Content-Type, User-Agent
+Access-Control-Allow-Methods: GET, POST, PATCH, DELETE
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Request-Handler
+Cache-Control: no-cache, private
+Content-Security-Policy: default-src 'none';
+Content-Type: application/json
+Date: Mon, 15 Sep 2025 13:38:21 GMT
+Request-Handler: api301
+Server: Unicorns with magic wands (https://www.geocod.io)
+X-Billable-Fields-Count: 0
+X-Billable-Lookups-Count: 1
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Period: 60
+X-Ratelimit-Remaining: 919
+X-Request-Id: 40EC85B3:9818_05A11518:01BB_68C816CD_A4CA76D:7491
+X-Xss-Protection: 1; mode=block
+
+{"input":{"address_components":{"number":"1701","street":"Woodroffe","suffix":"Ave","secondarynumber":"3","formatted_street":"Woodroffe Ave","city":"Ottawa","state":"ON","zip":"K2G 1W2","country":"CA"},"formatted_address":"1701 Woodroffe Ave 3, Ottawa, ON K2G 1W2"},"results":[{"address_components":{"number":"1701","street":"Woodroffe","suffix":"Ave","secondarynumber":"3","formatted_street":"Woodroffe Ave","city":"Nepean","state":"ON","zip":"K2G","country":"CA"},"address_lines":["1701 Woodroffe Ave","3","Nepean, ON K2G"],"formatted_address":"1701 Woodroffe Ave 3, Nepean, ON K2G","location":{"lat":45.326912,"lng":-75.742875},"accuracy":1,"accuracy_type":"rooftop","source":"City of Ottawa (Open Government Licence \u2013 City of Ottawa Contains information licensed under the Open Government Licence \u2013 City of Ottawa)"}]}
