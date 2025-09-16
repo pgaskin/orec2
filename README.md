@@ -39,7 +39,8 @@ git \
 
 ### Features and limitations
 
-- Only basic facility information, longitude/latitude, and schedule information is scraped. This helps keep the scraper reliable and ensures the schema can be kept stable long-term.
+- Only basic facility information and schedule information are scraped. This helps keep the scraper reliable and ensures the schema can be kept stable long-term.
+- Facility addresses are geocoded using geocodio (which has better results than pelias/geocode.earth and nominatim).
 - Schedule changes and facility notifications are scraped on a best-effort basis without additional parsing since these fields are inherently free-form. This helps keep the scraper reliable and reduces the likelihood of accidentally missing important information.
 - Scraped fields have minimal processing. This helps keep the scraper reliable and reduces the likelihood of accidentally missing important information.
 - Optional fields are available which contain best-effort parsing and normalization of scraped fields (to assist with usage), including:

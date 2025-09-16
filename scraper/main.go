@@ -44,18 +44,13 @@ var (
 	Scrape       = flag.String("scrape", "", "parse data from pages, writing the protobuf to the specified file")
 	NoFetch      = flag.Bool("no-fetch", false, "don't fetch pages not in cache")
 	CacheDir     = flag.String("cache-dir", "", "cache pages in the specified directory")
-	Pelias       = flag.String("pelias", "", "use pelias at the specified base url for geocoding (use the value 'geocode.earth' and set GEOCODEEARTH_APIKEY for geocode.earth)")
 	Geocodio     = flag.Bool("geocodio", false, "use geocodio for geocoding (set GEOCODIO_APIKEY)")
-	Nominatim    = flag.String("nominatim", "https://nominatim.geocoding.ai", "nominatim base url")
-	NominatimQPS = flag.Float64("nominatim-qps", 1, "maximum nominatim queries per second")
 	PageQPS      = flag.Float64("page-qps", 0.5, "maximum page fetches per second")
 	PlaceListing = flag.String("place-listing", "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing", "place listing url to start scraping from")
 	UserAgent    = flag.String("user-agent", defaultUserAgent(), "user agent for requests")
 	Zyte         = flag.Bool("zyte", false, "use zyte (set ZYTE_APIKEY)")
 	ZyteLimit    = flag.Int("zyte-limit", 150, "zyte request limit")
 )
-
-// TODO: refactor geocoder options into --geocoder flag
 
 var ScraperSecret = os.Getenv("OTTCA_SCRAPER_SECRET")
 
@@ -78,16 +73,8 @@ func defaultUserAgent() string {
 	return ua.String()
 }
 
-var nominatimLimit = sync.OnceValue(func() *rate.Limiter {
-	return rate.NewLimiter(rate.Limit(*NominatimQPS), 1)
-})
-
 var geocodioLimit = sync.OnceValue(func() *rate.Limiter {
 	return rate.NewLimiter(rate.Every(time.Minute/1000), 1)
-})
-
-var peliasLimit = sync.OnceValue(func() *rate.Limiter {
-	return rate.NewLimiter(rate.Every(time.Second/5), 1)
 })
 
 var pageLimit = sync.OnceValue(func() *rate.Limiter {
@@ -135,31 +122,6 @@ func init() {
 			return resp, err
 		})
 	}
-	if apikey := os.Getenv("GEOCODEEARTH_APIKEY"); apikey != "" {
-		sha := sha1.Sum([]byte(apikey))
-		param := "api_key"
-		next := http.DefaultTransport
-		http.DefaultTransport = roundTripperFunc(func(r *http.Request) (*http.Response, error) {
-			if r.URL.Hostname() == "api.geocode.earth" {
-				r2 := *r
-				r = &r2
-				u2 := *r.URL
-				r.URL = &u2
-				q2 := r.URL.Query()
-				q2[param] = []string{apikey}
-				r.URL.RawQuery = q2.Encode()
-			}
-			resp, err := next.RoundTrip(r)
-			if resp != nil && resp.Request != nil && resp.Request.URL != nil {
-				q := resp.Request.URL.Query()
-				if _, ok := q[param]; ok {
-					q[param] = []string{"redacted-" + hex.EncodeToString(sha[:4])}
-					resp.Request.URL.RawQuery = q.Encode()
-				}
-			}
-			return resp, err
-		})
-	}
 	// TODO: refactor secret header/param redaction
 	http.DefaultClient.Transport = http.DefaultTransport
 	http.DefaultClient.Jar, _ = cookiejar.New(nil)
@@ -167,10 +129,6 @@ func init() {
 
 func main() {
 	flag.Parse()
-
-	if *Pelias == "geocode.earth" {
-		*Pelias = "https://api.geocode.earth/"
-	}
 
 	if err := run(context.Background()); err != nil {
 		fmt.Fprintf(os.Stderr, "error: %v\n", err)
@@ -196,12 +154,10 @@ func run(ctx context.Context) error {
 	if *Scrape == "" {
 		slog.Info("will not parse data")
 	}
-	if *Pelias != "" {
-		slog.Info("using pelias for geocoding", "url", *Pelias)
-	} else if *Geocodio {
+	if *Geocodio {
 		slog.Info("using geocodio for geocoding")
 	} else {
-		slog.Info("using nominatim for geocoding", "url", *Nominatim)
+		slog.Warn("not geocoding addresses")
 	}
 	if *Zyte {
 		slog.Info("using zyte", "limit", *ZyteLimit)
@@ -238,7 +194,9 @@ func run(ctx context.Context) error {
 				Url: u.String(),
 			}.Build()
 
-			if lng, lat, attrib, hasLngLat, err := geocode(ctx, address); err != nil {
+			if !*Geocodio {
+				// skip geocoding
+			} else if lng, lat, attrib, hasLngLat, err := geocode(ctx, address); err != nil {
 				slog.Warn("failed to geocode place", "name", name, "address", address, "error", err)
 				facility.XErrors = append(facility.XErrors, fmt.Sprintf("failed to resolve address: %v", err))
 			} else if hasLngLat {
@@ -478,46 +436,21 @@ func run(ctx context.Context) error {
 	return nil
 }
 
+// geocode geocodes an address using geocodio.
+//
+// As of 2025-09-16, geocodio works better than nominatim and
+// pelias/geocode.earth:
+//
+//   - Nominatim has free public instances with no api key required.
+//   - Pelias has a hosted instance at geocode.earth free for open-source projects.
+//   - Geocodio has a free tier.
+//   - Other geocoding services are expensive or do not allow storing and creating derivative works from the results.
+//   - Geocodio specializes in Canada/US addresses and is the best at resolving addresses with incorrect street names or containing subdivision names.
+//   - Nominatim is fine for well-formed addresses, but is overly strict and fails to geocode ones that Geocodio can.
+//   - Pelias and Geocodio resolve all addresses successfully.
+//   - Pelias is better than Geocodio at choosing a point near the entrance instead of somewhere on the property.
+//   - For incorrect street names, Geocodio is better at resolving them based on the postal code, but Pelias just ignores the street and chooses somewhere seemingly random.
 func geocode(ctx context.Context, addr string) (lng, lat float64, attrib string, ok bool, err error) {
-	if *Pelias != "" {
-		return geocodePelias(ctx, addr)
-	}
-	if *Geocodio {
-		return geocodeGeocodio(ctx, addr)
-	}
-	return geocodeNominatim(ctx, addr)
-}
-
-func geocodePelias(ctx context.Context, addr string) (lng, lat float64, attrib string, ok bool, err error) {
-	resp, err := fetchPelias(ctx, &url.URL{
-		Path: "v1/search",
-		RawQuery: url.Values{
-			"text":             {strings.ReplaceAll(addr, "\n", ", ")},
-			"boundary.country": {"CA"},
-			"layers":           {"address"},
-			"focus.point.lat":  {"45.416256"},
-			"focus.point.lon":  {"-75.674236"},
-		}.Encode(),
-	})
-	if err != nil {
-		return 0, 0, "", false, err
-	}
-	defer resp.Body.Close()
-
-	// TODO: handle 429s
-
-	if resp.StatusCode != http.StatusOK {
-		return 0, 0, "", false, fmt.Errorf("response status %d", resp.StatusCode)
-	}
-
-	lng, lat, attrib, ok, err = geocodeJSON(resp.Body)
-	if resp.Request.URL.Hostname() == "api.geocode.earth" {
-		attrib = "© Geocode Earth, OpenStreetMap, and others. https://geocode.earth/guidelines"
-	}
-	return
-}
-
-func geocodeGeocodio(ctx context.Context, addr string) (lng, lat float64, attrib string, ok bool, err error) {
 	resp, err := fetchGeocodio(ctx, &url.URL{
 		Path: "v1.9/geocode",
 		RawQuery: url.Values{
@@ -562,56 +495,6 @@ func geocodeGeocodio(ctx context.Context, addr string) (lng, lat float64, attrib
 	return 0, 0, "", false, nil
 }
 
-func geocodeNominatim(ctx context.Context, addr string) (lng, lat float64, attrib string, ok bool, err error) {
-	resp, err := fetchNominatim(ctx, &url.URL{
-		Path: "search",
-		RawQuery: url.Values{
-			"format": {"geocodejson"},
-			"q":      {addr},
-		}.Encode(),
-	})
-	if err != nil {
-		return 0, 0, "", false, err
-	}
-	defer resp.Body.Close()
-
-	return geocodeJSON(resp.Body)
-}
-
-func geocodeJSON(r io.Reader) (lng, lat float64, attrib string, ok bool, err error) {
-	var obj struct {
-		Type      string
-		Geocoding struct {
-			Attribution string
-		}
-		Features []struct {
-			Type     string
-			Geometry struct {
-				Type        string
-				Coordinates []float64
-			}
-		}
-	}
-	if err := json.NewDecoder(r).Decode(&obj); err != nil {
-		return 0, 0, "", false, fmt.Errorf("decode geocodejson: %w", err)
-	}
-	if obj.Type != "FeatureCollection" {
-		return 0, 0, "", false, fmt.Errorf("decode geocodejson: wrong type %q", obj.Type)
-	}
-	for _, f := range obj.Features {
-		if f.Type == "Feature" {
-			if f.Geometry.Type != "Point" {
-				return 0, 0, "", false, fmt.Errorf("decode geocodejson: wrong feature geometry type %q", f.Geometry.Type)
-			}
-			if len(f.Geometry.Coordinates) != 2 {
-				return 0, 0, "", false, fmt.Errorf("decode geocodejson: wrong feature geometry coordinates length %d", len(f.Geometry.Coordinates))
-			}
-			return f.Geometry.Coordinates[0], f.Geometry.Coordinates[1], obj.Geocoding.Attribution, true, nil
-		}
-	}
-	return 0, 0, "", false, nil
-}
-
 func fetchPage(ctx context.Context, u string) (*goquery.Document, time.Time, error) {
 	slog.Info("fetch page", "url", u)
 
@@ -638,21 +521,6 @@ func fetchPage(ctx context.Context, u string) (*goquery.Document, time.Time, err
 	return doc, date, nil
 }
 
-func fetchNominatim(ctx context.Context, r *url.URL) (*http.Response, error) {
-	slog.Info("fetch nominatim", "url", r.String())
-
-	u, err := url.Parse(*Nominatim)
-	if err != nil {
-		return nil, err
-	}
-	q := u.Query()
-	u = u.ResolveReference(r)
-	maps.Copy(q, r.Query()) // keep orig query params (e.g., for apikey)
-	u.RawQuery = q.Encode()
-
-	return fetch(ctx, u.String(), "nominatim", r.String(), nominatimLimit(), false)
-}
-
 func fetchGeocodio(ctx context.Context, r *url.URL) (*http.Response, error) {
 	slog.Info("fetch geocodio", "url", r.String())
 
@@ -666,21 +534,6 @@ func fetchGeocodio(ctx context.Context, r *url.URL) (*http.Response, error) {
 	u.RawQuery = q.Encode()
 
 	return fetch(ctx, u.String(), "geocodio", r.String(), geocodioLimit(), false)
-}
-
-func fetchPelias(ctx context.Context, r *url.URL) (*http.Response, error) {
-	slog.Info("fetch pelias", "url", r.String())
-
-	u, err := url.Parse(*Pelias)
-	if err != nil {
-		return nil, err
-	}
-	q := u.Query()
-	u = u.ResolveReference(r)
-	maps.Copy(q, r.Query()) // keep orig query params
-	u.RawQuery = q.Encode()
-
-	return fetch(ctx, u.String(), "pelias", r.String(), peliasLimit(), false)
 }
 
 func fetch(ctx context.Context, u string, cacheType, cacheKey string, limiter *rate.Limiter, proxy bool) (*http.Response, error) {
