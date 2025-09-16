@@ -44,6 +44,7 @@ var (
 	Scrape       = flag.String("scrape", "", "parse data from pages, writing the protobuf to the specified file")
 	NoFetch      = flag.Bool("no-fetch", false, "don't fetch pages not in cache")
 	CacheDir     = flag.String("cache-dir", "", "cache pages in the specified directory")
+	Pelias       = flag.String("pelias", "", "use pelias at the specified base url for geocoding (use the value 'geocode.earth' and set GEOCODEEARTH_APIKEY for geocode.earth)")
 	Geocodio     = flag.Bool("geocodio", false, "use geocodio for geocoding (set GEOCODIO_APIKEY)")
 	Nominatim    = flag.String("nominatim", "https://nominatim.geocoding.ai", "nominatim base url")
 	NominatimQPS = flag.Float64("nominatim-qps", 1, "maximum nominatim queries per second")
@@ -53,6 +54,8 @@ var (
 	Zyte         = flag.Bool("zyte", false, "use zyte (set ZYTE_APIKEY)")
 	ZyteLimit    = flag.Int("zyte-limit", 150, "zyte request limit")
 )
+
+// TODO: refactor geocoder options into --geocoder flag
 
 var ScraperSecret = os.Getenv("OTTCA_SCRAPER_SECRET")
 
@@ -81,6 +84,10 @@ var nominatimLimit = sync.OnceValue(func() *rate.Limiter {
 
 var geocodioLimit = sync.OnceValue(func() *rate.Limiter {
 	return rate.NewLimiter(rate.Every(time.Minute/1000), 1)
+})
+
+var peliasLimit = sync.OnceValue(func() *rate.Limiter {
+	return rate.NewLimiter(rate.Every(time.Second/5), 1)
 })
 
 var pageLimit = sync.OnceValue(func() *rate.Limiter {
@@ -128,12 +135,42 @@ func init() {
 			return resp, err
 		})
 	}
+	if apikey := os.Getenv("GEOCODEEARTH_APIKEY"); apikey != "" {
+		sha := sha1.Sum([]byte(apikey))
+		param := "api_key"
+		next := http.DefaultTransport
+		http.DefaultTransport = roundTripperFunc(func(r *http.Request) (*http.Response, error) {
+			if r.URL.Hostname() == "api.geocode.earth" {
+				r2 := *r
+				r = &r2
+				u2 := *r.URL
+				r.URL = &u2
+				q2 := r.URL.Query()
+				q2[param] = []string{apikey}
+				r.URL.RawQuery = q2.Encode()
+			}
+			resp, err := next.RoundTrip(r)
+			if resp != nil && resp.Request != nil && resp.Request.URL != nil {
+				q := resp.Request.URL.Query()
+				if _, ok := q[param]; ok {
+					q[param] = []string{"redacted-" + hex.EncodeToString(sha[:4])}
+					resp.Request.URL.RawQuery = q.Encode()
+				}
+			}
+			return resp, err
+		})
+	}
+	// TODO: refactor secret header/param redaction
 	http.DefaultClient.Transport = http.DefaultTransport
 	http.DefaultClient.Jar, _ = cookiejar.New(nil)
 }
 
 func main() {
 	flag.Parse()
+
+	if *Pelias == "geocode.earth" {
+		*Pelias = "https://api.geocode.earth/"
+	}
 
 	if err := run(context.Background()); err != nil {
 		fmt.Fprintf(os.Stderr, "error: %v\n", err)
@@ -159,7 +196,9 @@ func run(ctx context.Context) error {
 	if *Scrape == "" {
 		slog.Info("will not parse data")
 	}
-	if *Geocodio {
+	if *Pelias != "" {
+		slog.Info("using pelias for geocoding", "url", *Pelias)
+	} else if *Geocodio {
 		slog.Info("using geocodio for geocoding")
 	} else {
 		slog.Info("using nominatim for geocoding", "url", *Nominatim)
@@ -440,10 +479,42 @@ func run(ctx context.Context) error {
 }
 
 func geocode(ctx context.Context, addr string) (lng, lat float64, attrib string, ok bool, err error) {
+	if *Pelias != "" {
+		return geocodePelias(ctx, addr)
+	}
 	if *Geocodio {
 		return geocodeGeocodio(ctx, addr)
 	}
 	return geocodeNominatim(ctx, addr)
+}
+
+func geocodePelias(ctx context.Context, addr string) (lng, lat float64, attrib string, ok bool, err error) {
+	resp, err := fetchPelias(ctx, &url.URL{
+		Path: "v1/search",
+		RawQuery: url.Values{
+			"text":             {strings.ReplaceAll(addr, "\n", ", ")},
+			"boundary.country": {"CA"},
+			"layers":           {"address"},
+			"focus.point.lat":  {"45.416256"},
+			"focus.point.lon":  {"-75.674236"},
+		}.Encode(),
+	})
+	if err != nil {
+		return 0, 0, "", false, err
+	}
+	defer resp.Body.Close()
+
+	// TODO: handle 429s
+
+	if resp.StatusCode != http.StatusOK {
+		return 0, 0, "", false, fmt.Errorf("response status %d", resp.StatusCode)
+	}
+
+	lng, lat, attrib, ok, err = geocodeJSON(resp.Body)
+	if resp.Request.URL.Hostname() == "api.geocode.earth" {
+		attrib = "© Geocode Earth, OpenStreetMap, and others. https://geocode.earth/guidelines"
+	}
+	return
 }
 
 func geocodeGeocodio(ctx context.Context, addr string) (lng, lat float64, attrib string, ok bool, err error) {
@@ -504,6 +575,10 @@ func geocodeNominatim(ctx context.Context, addr string) (lng, lat float64, attri
 	}
 	defer resp.Body.Close()
 
+	return geocodeJSON(resp.Body)
+}
+
+func geocodeJSON(r io.Reader) (lng, lat float64, attrib string, ok bool, err error) {
 	var obj struct {
 		Type      string
 		Geocoding struct {
@@ -517,7 +592,7 @@ func geocodeNominatim(ctx context.Context, addr string) (lng, lat float64, attri
 			}
 		}
 	}
-	if err := json.NewDecoder(resp.Body).Decode(&obj); err != nil {
+	if err := json.NewDecoder(r).Decode(&obj); err != nil {
 		return 0, 0, "", false, fmt.Errorf("decode geocodejson: %w", err)
 	}
 	if obj.Type != "FeatureCollection" {
@@ -591,6 +666,21 @@ func fetchGeocodio(ctx context.Context, r *url.URL) (*http.Response, error) {
 	u.RawQuery = q.Encode()
 
 	return fetch(ctx, u.String(), "geocodio", r.String(), geocodioLimit(), false)
+}
+
+func fetchPelias(ctx context.Context, r *url.URL) (*http.Response, error) {
+	slog.Info("fetch pelias", "url", r.String())
+
+	u, err := url.Parse(*Pelias)
+	if err != nil {
+		return nil, err
+	}
+	q := u.Query()
+	u = u.ResolveReference(r)
+	maps.Copy(q, r.Query()) // keep orig query params
+	u.RawQuery = q.Encode()
+
+	return fetch(ctx, u.String(), "pelias", r.String(), peliasLimit(), false)
 }
 
 func fetch(ctx context.Context, u string, cacheType, cacheKey string, limiter *rate.Limiter, proxy bool) (*http.Response, error) {
