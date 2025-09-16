@@ -83,46 +83,11 @@ var pageLimit = sync.OnceValue(func() *rate.Limiter {
 
 func init() {
 	if ScraperSecret != "" {
-		sha := sha1.Sum([]byte(ScraperSecret))
-		header := "X-Scraper-Secret"
-		next := http.DefaultTransport
-		http.DefaultTransport = roundTripperFunc(func(r *http.Request) (*http.Response, error) {
-			if strings.HasSuffix("."+strings.ToLower(r.URL.Hostname()), ".ottawa.ca") {
-				r2 := *r
-				r = &r2
-				r.Header = maps.Clone(r.Header)
-				r.Header[header] = []string{ScraperSecret}
-			}
-			resp, err := next.RoundTrip(r)
-			if resp != nil && resp.Request != nil && resp.Request.Header != nil {
-				if _, ok := resp.Request.Header[header]; ok {
-					resp.Request.Header[header] = []string{"redacted-" + hex.EncodeToString(sha[:4])}
-				}
-			}
-			return resp, err
-		})
+		http.DefaultTransport = redactedHeaderRoundTripper(http.DefaultTransport, ".ottawa.ca", "X-Scraper-Secret", "", ScraperSecret)
 	}
 	if apikey := os.Getenv("GEOCODIO_APIKEY"); apikey != "" {
-		sha := sha1.Sum([]byte(apikey))
-		header := "Authorization"
-		next := http.DefaultTransport
-		http.DefaultTransport = roundTripperFunc(func(r *http.Request) (*http.Response, error) {
-			if r.URL.Hostname() == "api.geocod.io" {
-				r2 := *r
-				r = &r2
-				r.Header = maps.Clone(r.Header)
-				r.Header[header] = []string{"Bearer " + apikey}
-			}
-			resp, err := next.RoundTrip(r)
-			if resp != nil && resp.Request != nil && resp.Request.Header != nil {
-				if _, ok := resp.Request.Header[header]; ok {
-					resp.Request.Header[header] = []string{"Bearer redacted-" + hex.EncodeToString(sha[:4])}
-				}
-			}
-			return resp, err
-		})
+		http.DefaultTransport = redactedHeaderRoundTripper(http.DefaultTransport, "api.geocod.io", "Authorization", "Bearer ", apikey)
 	}
-	// TODO: refactor secret header/param redaction
 	http.DefaultClient.Transport = http.DefaultTransport
 	http.DefaultClient.Jar, _ = cookiejar.New(nil)
 }
@@ -1540,3 +1505,26 @@ func (fn roundTripperFunc) RoundTrip(r *http.Request) (*http.Response, error) {
 }
 
 var _ http.RoundTripper = roundTripperFunc(nil)
+
+func redactedHeaderRoundTripper(next http.RoundTripper, domain, header, prefix, value string) http.RoundTripper {
+	sha := sha1.Sum([]byte(value))
+	return roundTripperFunc(func(r *http.Request) (*http.Response, error) {
+		if h, d := strings.Trim(strings.ToLower(r.URL.Hostname()), "."), strings.ToLower(domain); !(d == "" || h == d || (d[0] == '.' && h == d[1:]) || (d[0] == '.' && strings.HasSuffix(h, d))) {
+			return next.RoundTrip(r)
+		}
+
+		r2 := *r
+		r = &r2
+		r.Header = maps.Clone(r.Header)
+		r.Header[header] = []string{prefix + value}
+
+		resp, err := next.RoundTrip(r)
+
+		if resp != nil && resp.Request != nil && resp.Request.Header != nil {
+			if _, ok := resp.Request.Header[header]; ok {
+				resp.Request.Header[header] = []string{prefix + "redacted-" + hex.EncodeToString(sha[:4])}
+			}
+		}
+		return resp, err
+	})
+}
