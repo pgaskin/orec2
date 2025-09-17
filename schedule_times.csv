@@ -954,8 +954,8 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 54,7,11,Weight and cardio room,9 am - 5 pm,sa,540,480
 54,1,11,Weight and cardio room,9 am - 5 pm,su,540,480
 55,5,3,Public skating,Noon - 12:50 pm,th,720,50
-55,1,3,Public skating,4 - 4:50 pm,su,960,50
-55,1,27,Family skating,3 - 3:50 pm,su,900,50
+55,1,3,Public skating,4:15 - 5:05 pm,su,975,50
+55,1,27,Family skating,3:15 - 4:05 pm,su,915,50
 55,3,106,Adult 18+ skating,11 - 11:50 am,tu,660,50
 55,5,106,Adult 18+ skating,11 - 11:50 am,th,660,50
 56,3,107,Hockey 35+,Noon - 12:50 pm,tu,720,50
@@ -1245,11 +1245,8 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 76,3,49,Pickleball,3 - 4 pm,tu,900,60
 76,3,49,Pickleball,5:45 - 6:45 pm,tu,1065,60
 76,4,49,Pickleball,9 - 10 am,we,540,60
-76,4,49,Pickleball,10:05 - 11:05 am,we,605,60
-76,4,49,Pickleball,11:10 am - 12:10 pm,we,670,60
-76,4,49,Pickleball,12:15 - 1:15 pm,we,735,60
-76,4,49,Pickleball,1:20 - 2:20 pm,we,800,60
-76,4,49,Pickleball,2:25 - 3:25 pm,we,865,60
+76,4,49,Pickleball,1 - 2 pm,we,780,60
+76,4,49,Pickleball,2:05 - 3:05 pm,we,845,60
 76,5,49,Pickleball,11:45 am - 12:45 pm,th,705,60
 76,5,49,Pickleball,12:50 - 1:50 pm,th,770,60
 76,5,49,Pickleball,1:55 - 2:55 pm,th,835,60
@@ -1710,7 +1707,6 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 99,4,169,Cardio and strength - older adult,1 - 1:55 pm,we,780,55
 99,4,15,Core conditioning,10:30 - 11:25 am,we,630,55
 99,5,15,Core conditioning,4:30 - 5:25 pm,th,990,55
-99,4,45,Drums Alive®,4:30 - 5:25 pm,we,990,55
 99,4,19,HIIT,5:30 - 6:25 pm,we,1050,55
 99,2,17,Indoor cycling,6:30 - 7:25 pm,mo,1110,55
 99,3,17,Indoor cycling,6:30 - 7:25 pm,tu,1110,55
@@ -2186,42 +2182,29 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 126,1,11,Weight and cardio room,8 am - 8 pm,su,480,720
 127,2,169,Cardio and strength - older adult,9:15 - 10:15 am,mo,555,60
 127,4,169,Cardio and strength - older adult,9:15 - 10:15 am,we,555,60
-127,5,169,Cardio and strength - older adult,9:30 - 10:30 am,th,570,60
+127,5,169,Cardio and strength - older adult,9:15 - 10:30 am,th,555,75
 127,2,217,Cardio and strength - older adult lite,9:30 - 10:30 am,mo,570,60
 127,4,217,Cardio and strength - older adult lite,9:30 - 10:30 am,we,570,60
-127,2,218,Strength TMC -older adult,10:20 - 11:20 am,mo,620,60
-127,4,218,Strength TMC -older adult,10:20 - 11:20 am,we,620,60
+127,5,217,Cardio and strength - older adult lite,9:30 - 10:30 am,th,570,60
+127,2,218,Strength TMC - older adult,10:20 - 11:20 am,mo,620,60
 127,3,190,Strength and Balance - older adult,9:30 - 10:30 am,tu,570,60
+127,3,219,Stretch and strength - older adult,11 am - noon,tu,660,60
+127,5,219,Stretch and strength - older adult,11 am - noon,th,660,60
+127,4,220,Strength circuit - older adult,10:20 - 11:20 am,we,620,60
 127,2,18,Yoga,10:35 - 11:35 am,mo,635,60
 127,3,18,Yoga,10:20 - 11:20 am,tu,620,60
 127,5,18,Yoga,10:20 -11:20 am,th,620,60
 127,3,16,Zumba,9:15 - 10:15 am,tu,555,60
-127,5,16,Zumba,9:15 - 10:15 am,th,555,60
-128,2,169,Cardio and strength - older adult,9:15 - 10:15 am,mo,555,60
-128,4,169,Cardio and strength - older adult,9:15 - 10:15 am,we,555,60
-128,5,169,Cardio and strength - older adult,9:15 - 10:30 am,th,555,75
-128,2,217,Cardio and strength - older adult lite,9:30 - 10:30 am,mo,570,60
-128,4,217,Cardio and strength - older adult lite,9:30 - 10:30 am,we,570,60
-128,5,217,Cardio and strength - older adult lite,9:30 - 10:30 am,th,570,60
-128,2,219,Strength TMC - older adult,10:20 - 11:20 am,mo,620,60
-128,3,190,Strength and Balance - older adult,9:30 - 10:30 am,tu,570,60
-128,3,220,Stretch and strength - older adult,11 am - noon,tu,660,60
-128,5,220,Stretch and strength - older adult,11 am - noon,th,660,60
-128,4,221,Strength circuit - older adult,10:20 - 11:20 am,we,620,60
-128,2,18,Yoga,10:35 - 11:35 am,mo,635,60
-128,3,18,Yoga,10:20 - 11:20 am,tu,620,60
-128,5,18,Yoga,10:20 -11:20 am,th,620,60
-128,3,16,Zumba,9:15 - 10:15 am,tu,555,60
-129,2,222,"Squash Courts 2, 3, 4, and 5",6:30 am - 8:30 pm,mo,390,840
-129,3,222,"Squash Courts 2, 3, 4, and 5",6:30 am - 8:30 pm,tu,390,840
-129,4,222,"Squash Courts 2, 3, 4, and 5",6:30 am - 8:30 pm,we,390,840
-129,5,222,"Squash Courts 2, 3, 4, and 5",6:30 am - 8:30 pm,th,390,840
-129,6,222,"Squash Courts 2, 3, 4, and 5",6:30 am - 8:30 pm,fr,390,840
-129,7,222,"Squash Courts 2, 3, 4, and 5",8:30 am - 7:30 pm,sa,510,660
-129,1,222,"Squash Courts 2, 3, 4, and 5",8:30 am - 7:30 pm,su,510,660
-130,6,66,Kindergym,10 - 11:30 am,fr,600,90
-131,6,3,Public skating,7:15 - 8:05 pm,fr,1155,50
-131,7,3,Public skating,11:15 am - 12:05 pm,sa,675,50
-131,7,3,Public skating,12:15 - 1:05 pm,sa,735,50
-131,1,3,Public skating,11:15 am - 12:05 pm,su,675,50
-131,1,3,Public skating,12:15 - 1:05 pm,su,735,50
+128,2,221,"Squash Courts 2, 3, 4, and 5",6:30 am - 8:30 pm,mo,390,840
+128,3,221,"Squash Courts 2, 3, 4, and 5",6:30 am - 8:30 pm,tu,390,840
+128,4,221,"Squash Courts 2, 3, 4, and 5",6:30 am - 8:30 pm,we,390,840
+128,5,221,"Squash Courts 2, 3, 4, and 5",6:30 am - 8:30 pm,th,390,840
+128,6,221,"Squash Courts 2, 3, 4, and 5",6:30 am - 8:30 pm,fr,390,840
+128,7,221,"Squash Courts 2, 3, 4, and 5",8:30 am - 7:30 pm,sa,510,660
+128,1,221,"Squash Courts 2, 3, 4, and 5",8:30 am - 7:30 pm,su,510,660
+129,6,66,Kindergym,10 - 11:30 am,fr,600,90
+130,6,3,Public skating,7:15 - 8:05 pm,fr,1155,50
+130,7,3,Public skating,11:15 am - 12:05 pm,sa,675,50
+130,7,3,Public skating,12:15 - 1:05 pm,sa,735,50
+130,1,3,Public skating,11:15 am - 12:05 pm,su,675,50
+130,1,3,Public skating,12:15 - 1:05 pm,su,735,50
