@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/deborah-anne-kirwan-pool HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=Dp54mt8+T+WCRN0d0Bo3DTupyGgAAAAAQUIPAAAAAADUUqEjQop1z+itzOGLIWy0; nlbi_243507=rLrTK+fucAmZPzGlaXmSIAAAAAAE4L+S8htFDKZVwM5goOnc; incap_ses_1847_243507=A2RpA0RdtS+kK5k8G92hGTupyGgAAAAAZO0jGp6nHSAUwAVrRbRb3A==
+Cookie: visid_incap_243507=Y0rrM/PlQYawTepEpgEMIcL6yWgAAAAAQUIPAAAAAADu6wmTrRK+6pYTdt2WJkJa; nlbi_243507=8/0nOnPZmkV6cTU0aXmSIAAAAADYrALZ3rXPel1WYmLnKNM0; incap_ses_225_243507=B6VfBw0KaQ0y8nbtuVwfA8L6yWgAAAAAi0pgSScuq3EExhYZMXoFVw==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,16 +8,17 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 481
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Tue, 16 Sep 2025 00:04:12 GMT
-Etag: "1757980570-gzip"
+Date: Wed, 17 Sep 2025 00:04:19 GMT
+Etag: "1758067458-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Mon, 15 Sep 2025 23:56:10 GMT
+Last-Modified: Wed, 17 Sep 2025 00:04:18 GMT
+Set-Cookie: visid_incap_243507=Y0rrM/PlQYawTepEpgEMIcL6yWgAAAAAQUIPAAAAAADu6wmTrRK+6pYTdt2WJkJa; expires=Wed, 16 Sep 2026 07:45:49 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
@@ -27,10 +28,10 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 54-280369432-280369444 SNNy RT(1757980987939 64592) q(0 3 3 -1) r(4 4) U24
-X-Varnish: 50005707 44132877
+X-Iinfo: 13-7732344-7732349 SNNy RT(1758067394885 63961) q(0 0 0 -1) r(10 10) U24
+X-Varnish: 45574197
 
-ad7b
+ad7a
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -183,7 +184,7 @@ ad7b
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2447b0ebe04d36393cc79bc0ee860b1021049dd3b3b983d215c59ba725c76828">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ce4ce0fca1742ec9371a4d68672d0051cd5184e788a92a5c97939cfe0d44239d">
   
     
       
@@ -197,7 +198,7 @@ ad7b
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-65883763d550bfb5412a5f363fd774a6283d0f765fc8a81221da6fe33ae51245">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-19dfb937f633ec47ca1725773815bdbc9e46774c0092b03c921da0b1743d5721">
   
     
       
@@ -414,7 +415,7 @@ ad7b
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e258d724a8e2ad8c38db6ba834a4101304904c32d9087b6ab1bc375b4fe4d094">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b9858da04c0770bf94c3fea376658196911509baf53700d7562436a8eecef085">
   
     
       
@@ -428,7 +429,7 @@ ad7b
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d4078f556a26adc2e2c6a6e27a932449fd0eb000a50b73c2c21645330edd5782">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-190c8f0c2a0e41268782bb0ae4383af3f453025cc7064ceb2c61fded86792339">
   
     
       
@@ -653,7 +654,7 @@ ad7b
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-6c1f50a38a6d3e5e80ad2dc3ab14a64a55e87e52f85383dcac8de3f0ee61264a">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-16c8e31382fb5f1dc35a4d0c2e0b84635cb7c85205778d023e3a313a9ffe95a4">
   
     
       <div class="view-header">
@@ -1058,7 +1059,7 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=33&cb=1740109565" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=33&cb=152321260" async></script></body>
 </html>
 
 

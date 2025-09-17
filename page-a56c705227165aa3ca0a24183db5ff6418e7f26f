@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/overbrook-community-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=Dp54mt8+T+WCRN0d0Bo3DTupyGgAAAAAQUIPAAAAAADUUqEjQop1z+itzOGLIWy0; nlbi_243507=rLrTK+fucAmZPzGlaXmSIAAAAAAE4L+S8htFDKZVwM5goOnc; incap_ses_1847_243507=A2RpA0RdtS+kK5k8G92hGTupyGgAAAAAZO0jGp6nHSAUwAVrRbRb3A==
+Cookie: visid_incap_243507=Y0rrM/PlQYawTepEpgEMIcL6yWgAAAAAQUIPAAAAAADu6wmTrRK+6pYTdt2WJkJa; nlbi_243507=8/0nOnPZmkV6cTU0aXmSIAAAAADYrALZ3rXPel1WYmLnKNM0; incap_ses_225_243507=B6VfBw0KaQ0y8nbtuVwfA8L6yWgAAAAAi0pgSScuq3EExhYZMXoFVw==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,27 +8,28 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 630
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Tue, 16 Sep 2025 00:06:14 GMT
-Etag: "1757980542-gzip"
+Date: Wed, 17 Sep 2025 00:06:23 GMT
+Etag: "1758067582-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Mon, 15 Sep 2025 23:55:42 GMT
+Last-Modified: Wed, 17 Sep 2025 00:06:22 GMT
+Set-Cookie: visid_incap_243507=Y0rrM/PlQYawTepEpgEMIcL6yWgAAAAAQUIPAAAAAADu6wmTrRK+6pYTdt2WJkJa; expires=Wed, 16 Sep 2026 07:45:49 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
 X-Cdn: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 54-280369432-280369444 SNNy RT(1757980987939 186586) q(0 1 1 -1) r(2 2) U24
-X-Varnish: 49493034 50069858
+X-Iinfo: 13-7732344-7732349 SNNy RT(1758067394885 187431) q(0 0 0 -1) r(8 8) U24
+X-Varnish: 49754892
 
 bb87
 
@@ -183,7 +184,7 @@ bb87
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-148c0a63156c3b077ff14b3ccc877f8ed5bdfae806c1ca26f7cb11fc6f151ff5">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-da4c7982fef756bab2a3c25fb3f3ae0e03afa21181fbc951038733efef8a4e56">
   
     
       
@@ -197,7 +198,7 @@ bb87
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4b4b6cb236bc4db8b52cfea94d071fe1411d779708b3beae3c1359c1d4281d9e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-985522ffd6d9ce74ee9e0737b1c20b6d954ece057b2c4ffef0a03f484e26c45a">
   
     
       
@@ -445,7 +446,7 @@ bb87
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0f5e6b2d61236e35d98d17cc837ee282d99d26fe0458dc76360d468f1f58387e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1fe88430527e04bb26d5905bd6238adacd22b50909a8f8aa04156998cdce7336">
   
     
       
@@ -459,7 +460,7 @@ bb87
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b34dc3507ae80e3cb20a12e5e37e57a2fdb092c13331c6462d122d40de1ea0e1">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a94760d6fd047fdb3dc73a1c942a8a6c04e3f3eb8749792a580832137606ece3">
   
     
       
@@ -704,7 +705,7 @@ bb87
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-13aa294c3d83b2825bc34e12e5777cf3118218e78c78d5133448bd039e91891e">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-840dec49f535d0afdf650d611ebcc8ea08ee9b648aab05ebada351da5cdbb29c">
   
     
       <div class="view-header">

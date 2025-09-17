@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/richelieu-vanier-community-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=Dp54mt8+T+WCRN0d0Bo3DTupyGgAAAAAQUIPAAAAAADUUqEjQop1z+itzOGLIWy0; nlbi_243507=rLrTK+fucAmZPzGlaXmSIAAAAAAE4L+S8htFDKZVwM5goOnc; incap_ses_1847_243507=A2RpA0RdtS+kK5k8G92hGTupyGgAAAAAZO0jGp6nHSAUwAVrRbRb3A==
+Cookie: visid_incap_243507=Y0rrM/PlQYawTepEpgEMIcL6yWgAAAAAQUIPAAAAAADu6wmTrRK+6pYTdt2WJkJa; nlbi_243507=8/0nOnPZmkV6cTU0aXmSIAAAAADYrALZ3rXPel1WYmLnKNM0; incap_ses_225_243507=B6VfBw0KaQ0y8nbtuVwfA8L6yWgAAAAAi0pgSScuq3EExhYZMXoFVw==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,16 +8,17 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 539
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Tue, 16 Sep 2025 00:06:31 GMT
-Etag: "1757980650-gzip"
+Date: Wed, 17 Sep 2025 00:06:40 GMT
+Etag: "1758067599-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Mon, 15 Sep 2025 23:57:30 GMT
+Last-Modified: Wed, 17 Sep 2025 00:06:39 GMT
+Set-Cookie: visid_incap_243507=Y0rrM/PlQYawTepEpgEMIcL6yWgAAAAAQUIPAAAAAADu6wmTrRK+6pYTdt2WJkJa; expires=Wed, 16 Sep 2026 07:45:49 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
@@ -27,8 +28,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 54-280369432-280369444 SNNy RT(1757980987939 203790) q(0 1 1 -1) r(1 1) U24
-X-Varnish: 49943513 49378073
+X-Iinfo: 13-7732344-7732349 SNNy RT(1758067394885 204546) q(0 0 0 -1) r(13 13) U24
+X-Varnish: 49860021
 
 b0dd
 
@@ -183,7 +184,7 @@ b0dd
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7d3169e1c77f374f45938f980300a755aacaf2b5332ce0a27fbf223b4e94b7f3">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-cc986cd399ce2ecb016619ca9f7d21cda79352c25a7422834252afb606e1b5be">
   
     
       
@@ -197,7 +198,7 @@ b0dd
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-387fff627e41336e64ad850f62ab2760ca637290945bccda10aada7a12189aee">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-eda343dcc374ad5abe4569d1f229bf34f6fc5ae374a96324d03c136a65a2ae2a">
   
     
       
@@ -443,7 +444,7 @@ b0dd
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-05d386175c8ca4545689f176821cd73ae8f33294784bd9111245c4ef9a4f64c4">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1d2a9c87e607b537eef322467666f93e49628889eecc0791bb38ff6a2aac16e0">
   
     
       
@@ -457,7 +458,7 @@ b0dd
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-10f78bad8763024a55fca9ec4b13089946d473282bc836cd8df57a1f7a5e8bd0">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-65a3d02d1a613a4ab0f98fe07281f9c26f6ee1086f5d54f419a65c7532094676">
   
     
       
@@ -592,7 +593,7 @@ b0dd
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-7bd7ba5e3444cb65accaa971a720cd0c5ba0a4de58988b022b232a447506d442">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-9a886ae56c7b06327f8c77c7723a9012a2500ce63e890a231b17c31c0f0399d5">
   
     
       <div class="view-header">

@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/osgoode-community-centre-and-stuart-holmes-arena HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=Dp54mt8+T+WCRN0d0Bo3DTupyGgAAAAAQUIPAAAAAADUUqEjQop1z+itzOGLIWy0; nlbi_243507=rLrTK+fucAmZPzGlaXmSIAAAAAAE4L+S8htFDKZVwM5goOnc; incap_ses_1847_243507=A2RpA0RdtS+kK5k8G92hGTupyGgAAAAAZO0jGp6nHSAUwAVrRbRb3A==
+Cookie: visid_incap_243507=Y0rrM/PlQYawTepEpgEMIcL6yWgAAAAAQUIPAAAAAADu6wmTrRK+6pYTdt2WJkJa; nlbi_243507=8/0nOnPZmkV6cTU0aXmSIAAAAADYrALZ3rXPel1WYmLnKNM0; incap_ses_225_243507=B6VfBw0KaQ0y8nbtuVwfA8L6yWgAAAAAi0pgSScuq3EExhYZMXoFVw==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,27 +8,28 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 255
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Tue, 16 Sep 2025 00:06:11 GMT
-Etag: "1757981170-gzip"
+Date: Wed, 17 Sep 2025 00:06:18 GMT
+Etag: "1758067322-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 16 Sep 2025 00:06:10 GMT
+Last-Modified: Wed, 17 Sep 2025 00:02:02 GMT
+Set-Cookie: visid_incap_243507=Y0rrM/PlQYawTepEpgEMIcL6yWgAAAAAQUIPAAAAAADu6wmTrRK+6pYTdt2WJkJa; expires=Wed, 16 Sep 2026 07:45:49 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
 X-Cdn: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 54-280369432-280369444 SNNy RT(1757980987939 182572) q(0 0 0 -1) r(11 11) U24
-X-Varnish: 49940775
+X-Iinfo: 13-7732344-7732349 SNNy RT(1758067394885 183437) q(0 0 0 -1) r(1 1) U24
+X-Varnish: 49435756 38220178
 
 90ad
 
@@ -183,7 +184,7 @@ X-Varnish: 49940775
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-883b20708b769169bbceb3912f30127c1b465a19ef628baf3247bb21fb51559b">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b0ca9090cbd8182dec22548a780f014f7aa9e9db12f10b6d85c5ae82a09ff5b2">
   
     
       
@@ -197,7 +198,7 @@ X-Varnish: 49940775
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3f9ff6d0f4a02a20631ee088252040f24beaec95221af8e5f4cae98bee02e47e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bc39e103a6d9402da9f708709c4e67f3f09d5e94cecbe98f89dc5779d8a40442">
   
     
       
@@ -424,7 +425,7 @@ X-Varnish: 49940775
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-8df8e8e114a857ecd41ecbc82c58639a1d8884947cc59f94d6f4827b2e3e19e6">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-e16622ffe49948b2a7e0f4aca4b55156c4abb2020b86e8ebaccbcaf4f0633ffc">
   
     
       <div class="view-header">
