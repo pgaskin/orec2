@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/howard-darwin-centennial-arena HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=Y0rrM/PlQYawTepEpgEMIcL6yWgAAAAAQUIPAAAAAADu6wmTrRK+6pYTdt2WJkJa; nlbi_243507=8/0nOnPZmkV6cTU0aXmSIAAAAADYrALZ3rXPel1WYmLnKNM0; incap_ses_225_243507=B6VfBw0KaQ0y8nbtuVwfA8L6yWgAAAAAi0pgSScuq3EExhYZMXoFVw==
+Cookie: visid_incap_243507=KIhmQit/TvW0dm2RKdx1ZEJMy2gAAAAAQUIPAAAAAABXUu6V4BBbfP3CUqzGR8mN; nlbi_243507=VpP5KFENtlwQo2QzaXmSIAAAAABO3eMBd+A8/Au0RoonYCbl; incap_ses_4558_243507=wa3dPek9+CGhheiqEUVBP0NMy2gAAAAAaSruiH1C09TkFoQsUQ49jA==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,30 +8,30 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 216
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Wed, 17 Sep 2025 00:05:04 GMT
-Etag: "1758067286-gzip"
+Date: Thu, 18 Sep 2025 00:05:10 GMT
+Etag: "1758153908-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Wed, 17 Sep 2025 00:01:26 GMT
-Set-Cookie: visid_incap_243507=Y0rrM/PlQYawTepEpgEMIcL6yWgAAAAAQUIPAAAAAADu6wmTrRK+6pYTdt2WJkJa; expires=Wed, 16 Sep 2026 07:45:49 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Thu, 18 Sep 2025 00:05:08 GMT
+Set-Cookie: visid_incap_243507=KIhmQit/TvW0dm2RKdx1ZEJMy2gAAAAAQUIPAAAAAABXUu6V4BBbfP3CUqzGR8mN; expires=Thu, 17 Sep 2026 06:36:13 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
 X-Cdn: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 13-7732344-7732349 SNNy RT(1758067394885 109969) q(0 0 0 -1) r(1 1) U24
-X-Varnish: 50836048 45802516
+X-Iinfo: 61-14674753-14674760 SNNy RT(1758153795734 112539) q(0 1 1 -1) r(18 18) U24
+X-Varnish: 51532748
 
-b070
+b06d
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -184,7 +184,7 @@ b070
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-68afd6c0f311e9ab5394f73cd78f8c897b6449ddab75d2ce40a7fa36c99645ec">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ec45506e6da8f0b4a939ddea2f8a1e78bf80862af59282e8ede8c4d597f6f650">
   
     
       
@@ -198,7 +198,7 @@ b070
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5a8c7b5727a06c9b3d25583d161bc0f875cbfdf51c52c2ed12b36d4e0ce2013f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ad940b3cc1d7d709015eeee33d0fda189e0ed39da0fa15257f00dd22ebd63693">
   
     
       
@@ -393,7 +393,7 @@ b070
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0f885c02d504890d6d90185103221c7961e7f0a58f5f018830742a38bdf03d59">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8e68ffcb387beb00b9bfaacdd8e14da5cd220e07891c43560ad2bec304079bc4">
   
     
       
@@ -407,7 +407,7 @@ b070
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-adbe5addb8696d00d7a8228c953b96dc76c49e0260f750a4629139b16b538eab">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-82579d7e6aed22a65d41a8f45b4f5b1b045463c862e46e3242fbbb29d0f4d51d">
   
     
       
@@ -562,7 +562,7 @@ b070
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-fc8a90cba5e2013997ee76fe3dc4e584883ed277162279c751d981508e63dfc4">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-62303dbadf06cb09627f980c283fd60b12d37969105bcbe5e785a2c8ce0bb92c">
   
     
       
@@ -576,7 +576,7 @@ b070
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6a9ceafa96ae6f4365ff074223e84d4b59e5346af7991a97a6ebe4f54d02092c">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0f4ca3ff20d9a0167fcf1cff0ccc5c7c209f815b7cc624c463636c03757a615f">
   
     
       
@@ -774,7 +774,7 @@ b070
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-823b33d05195528aae6de163a2a1bd24d3fcbbe8583239b307cc957f82ba9969">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-746ea97ff87bc81f85700e46467b6f3c3e68443be55e881113e9cf1da528707c">
   
     
       <div class="view-header">
@@ -1125,14 +1125,14 @@ b070
           </button>
         </div>
         <div class="modal-body">
-          Would you like to participate in a 3-5 minute web experience study to help us improve ottawa.ca?
+          Would you like to participate in a 2-3 minute web experience survey to help us improve our website?
 
 If YES, a new window will open in the background so you can come back to it when you are finished on the website.
 
 Thank you for considering to help out.
         </div>
         <div class="modal-footer">
-          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/chalkmark/7755fe78caceac89d95d2c3134ddde27">Yes</a>
+          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://forms.ottawa.ca/en/form/fcs/service-ottawa/client-satisfaction-survey">Yes</a>
           <button type="button" class="btn btn-outline-primary" data-dismiss="modal">No</button>
         </div>
       </div>
@@ -1146,7 +1146,7 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=56&cb=523142834" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=56&cb=568590460" async></script></body>
 </html>
 
 

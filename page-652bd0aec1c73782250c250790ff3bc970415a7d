@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/sandy-hill-arena HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=Y0rrM/PlQYawTepEpgEMIcL6yWgAAAAAQUIPAAAAAADu6wmTrRK+6pYTdt2WJkJa; nlbi_243507=8/0nOnPZmkV6cTU0aXmSIAAAAADYrALZ3rXPel1WYmLnKNM0; incap_ses_225_243507=B6VfBw0KaQ0y8nbtuVwfA8L6yWgAAAAAi0pgSScuq3EExhYZMXoFVw==
+Cookie: visid_incap_243507=KIhmQit/TvW0dm2RKdx1ZEJMy2gAAAAAQUIPAAAAAABXUu6V4BBbfP3CUqzGR8mN; nlbi_243507=VpP5KFENtlwQo2QzaXmSIAAAAABO3eMBd+A8/Au0RoonYCbl; incap_ses_4558_243507=wa3dPek9+CGhheiqEUVBP0NMy2gAAAAAaSruiH1C09TkFoQsUQ49jA==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,17 +8,17 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 128
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Wed, 17 Sep 2025 00:06:53 GMT
-Etag: "1758067483-gzip"
+Date: Thu, 18 Sep 2025 00:06:56 GMT
+Etag: "1758154015-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Wed, 17 Sep 2025 00:04:43 GMT
-Set-Cookie: visid_incap_243507=Y0rrM/PlQYawTepEpgEMIcL6yWgAAAAAQUIPAAAAAADu6wmTrRK+6pYTdt2WJkJa; expires=Wed, 16 Sep 2026 07:45:49 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Thu, 18 Sep 2025 00:06:55 GMT
+Set-Cookie: visid_incap_243507=KIhmQit/TvW0dm2RKdx1ZEJMy2gAAAAAQUIPAAAAAABXUu6V4BBbfP3CUqzGR8mN; expires=Thu, 17 Sep 2026 06:36:13 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
@@ -28,10 +28,10 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 13-7732344-7732349 SNNy RT(1758067394885 218574) q(0 1 1 -1) r(2 2) U24
-X-Varnish: 38220441 49754850
+X-Iinfo: 61-14674753-14674760 SNNy RT(1758153795734 219954) q(0 0 0 -1) r(9 9) U24
+X-Varnish: 51408006
 
-afaf
+afac
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -184,7 +184,7 @@ afaf
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-483bdff65009d1d5acb84c70c247491c579b71c91384daff47d12c176e5d67ce">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-79842763dd0b9dafbcb84f7a72b8421af3abe25dc7236f4df9b956ea554db1b2">
   
     
       
@@ -198,7 +198,7 @@ afaf
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-049fe324a776e1bba921c7b1fed973a7dce56bce8f571a19260ecb80d6541ad4">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2aac0c232bc0dff09942ee630036d7fd4e9ab6ca54913b1c5b7792207709578a">
   
     
       
@@ -369,7 +369,7 @@ afaf
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-80f16d8c69ce7fae3725a7907b32db86b45ea5dcf0f33da6a521cee5b320bd30">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a0ce2ea74b0dce88be85f4a058c6ce687a98165ec0bd4eec7bc365335d29aee7">
   
     
       
@@ -383,7 +383,7 @@ afaf
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-be34847751e4f1c7ce22c134c153c8c30a16dc995386baff3cb00dbc03d53fd7">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-627982592776f5a02606de75bf3ca8fe0b1a11915bae04b242a95a520535186d">
   
     
       
@@ -573,7 +573,7 @@ afaf
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5ce8e5be3ca12a43d3131e8eeb64c5b5d686906c6d7904dd28a4f7019b73cc68">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8ce348350d77821b038e2b2e81c9d7be12e237a362c4e795e4a84eac944b1a66">
   
     
       
@@ -587,7 +587,7 @@ afaf
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-371833836ed0c81c821989d706c12b1366dfe4801a216063d032573ce277f284">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a011828d903472287eef6f810f4f036f2e0cb4665d592dff01b2ab69b5b7bbe3">
   
     
       
@@ -786,7 +786,7 @@ afaf
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-2cdc34c982a43b728c32e7f8450394608aea81bcb81956646c177a2884a6cecc">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-ccedcb6e31db860d2fe8394b3cad9c34ec6713e2041acee38a788f72212c5942">
   
     
       <div class="view-header">
@@ -1143,14 +1143,14 @@ afaf
           </button>
         </div>
         <div class="modal-body">
-          Would you like to participate in a 3-5 minute web experience study to help us improve ottawa.ca?
+          Would you like to participate in a 2-3 minute web experience survey to help us improve our website?
 
 If YES, a new window will open in the background so you can come back to it when you are finished on the website.
 
 Thank you for considering to help out.
         </div>
         <div class="modal-footer">
-          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/chalkmark/7755fe78caceac89d95d2c3134ddde27">Yes</a>
+          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://forms.ottawa.ca/en/form/fcs/service-ottawa/client-satisfaction-survey">Yes</a>
           <button type="button" class="btn btn-outline-primary" data-dismiss="modal">No</button>
         </div>
       </div>

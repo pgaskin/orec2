@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/heron-seniors-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=Y0rrM/PlQYawTepEpgEMIcL6yWgAAAAAQUIPAAAAAADu6wmTrRK+6pYTdt2WJkJa; nlbi_243507=8/0nOnPZmkV6cTU0aXmSIAAAAADYrALZ3rXPel1WYmLnKNM0; incap_ses_225_243507=B6VfBw0KaQ0y8nbtuVwfA8L6yWgAAAAAi0pgSScuq3EExhYZMXoFVw==
+Cookie: visid_incap_243507=KIhmQit/TvW0dm2RKdx1ZEJMy2gAAAAAQUIPAAAAAABXUu6V4BBbfP3CUqzGR8mN; nlbi_243507=VpP5KFENtlwQo2QzaXmSIAAAAABO3eMBd+A8/Au0RoonYCbl; incap_ses_4558_243507=wa3dPek9+CGhheiqEUVBP0NMy2gAAAAAaSruiH1C09TkFoQsUQ49jA==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,17 +8,17 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 458
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Wed, 17 Sep 2025 00:05:00 GMT
-Etag: "1758067041-gzip"
+Date: Thu, 18 Sep 2025 00:05:05 GMT
+Etag: "1758153904-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 16 Sep 2025 23:57:21 GMT
-Set-Cookie: visid_incap_243507=Y0rrM/PlQYawTepEpgEMIcL6yWgAAAAAQUIPAAAAAADu6wmTrRK+6pYTdt2WJkJa; expires=Wed, 16 Sep 2026 07:45:49 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Thu, 18 Sep 2025 00:05:04 GMT
+Set-Cookie: visid_incap_243507=KIhmQit/TvW0dm2RKdx1ZEJMy2gAAAAAQUIPAAAAAABXUu6V4BBbfP3CUqzGR8mN; expires=Thu, 17 Sep 2026 06:36:13 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
@@ -28,10 +28,10 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 13-7732344-7732349 SNNy RT(1758067394885 105985) q(0 0 0 -1) r(1 1) U24
-X-Varnish: 50836042 48947940
+X-Iinfo: 61-14674753-14674760 SNNy RT(1758153795734 108531) q(0 1 1 -1) r(15 15) U24
+X-Varnish: 51815339
 
-c26a
+c269
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -184,7 +184,7 @@ c26a
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5dcce7a734e3937b26238b62c88ab814aaa880fbdb6e1953952d1c0eeb663226">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e98abe431f60f2f8aa282253b51bb9267ef00e2ad5e42640376072152eafa0d2">
   
     
       
@@ -198,7 +198,7 @@ c26a
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6d079f68dc1a34deb43c24de03c7b80dc922562a234f24f0458504d64f7634b0">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ad99ea13386a9630449f33949869df47c00ae5a01a8ba7becbd9e12de0b0d1e1">
   
     
       
@@ -402,7 +402,7 @@ c26a
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-80442d2487e6ff97b83d76adb4483b516fce9104aaa7222a9f0687fcb4959294">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-823e26d294948100fd6f70b15641f6208168e6a24cd7e00c79fab6082e879d9a">
   
     
       
@@ -416,7 +416,7 @@ c26a
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ee8e8e7a9c80d61f1f16cce18fad148729eec3ea192bc91a7b3ebf9f016e27e6">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-963edc216ad5eb83641f9ae0794e5abb9d8b2f6ecfa27368c3a51eb76bf1eb31">
   
     
       
@@ -658,7 +658,7 @@ c26a
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e5eaa204c8dd6e673ea5e036e8fa8e84b398947d1311b2a2520cf2e9e144bd42">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9e6dc656e75e511d86c6046bab5f59041db2952ed2475b481d0a112944e64e62">
   
     
       
@@ -672,7 +672,7 @@ c26a
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e20bbbfe682bc1f2b25d96839e806d957e665fb15bcd513f3f732dbcbfdfdab0">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f54aab072576355793e3ad4733e96dccd60f2d1b24de8c0a8189850d78103f7f">
   
     
       
@@ -819,7 +819,7 @@ c26a
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-cba1f2834850d88f62f49b45309d37a6aed34885bc9b5ba3720ef38cb668b93b">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-b989fa0892501571d16246e5f31a70d30c794318a371c906e77d2949c5eb4887">
   
     
       <div class="view-header">
@@ -1222,14 +1222,14 @@ c26a
           </button>
         </div>
         <div class="modal-body">
-          Would you like to participate in a 3-5 minute web experience study to help us improve ottawa.ca?
+          Would you like to participate in a 2-3 minute web experience survey to help us improve our website?
 
 If YES, a new window will open in the background so you can come back to it when you are finished on the website.
 
 Thank you for considering to help out.
         </div>
         <div class="modal-footer">
-          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/chalkmark/7755fe78caceac89d95d2c3134ddde27">Yes</a>
+          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://forms.ottawa.ca/en/form/fcs/service-ottawa/client-satisfaction-survey">Yes</a>
           <button type="button" class="btn btn-outline-primary" data-dismiss="modal">No</button>
         </div>
       </div>
@@ -1243,7 +1243,7 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=54&cb=77280750" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=54&cb=1139744951" async></script></body>
 </html>
 
 

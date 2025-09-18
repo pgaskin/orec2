@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/kanata-leisure-centre-and-wave-pool HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=Y0rrM/PlQYawTepEpgEMIcL6yWgAAAAAQUIPAAAAAADu6wmTrRK+6pYTdt2WJkJa; nlbi_243507=8/0nOnPZmkV6cTU0aXmSIAAAAADYrALZ3rXPel1WYmLnKNM0; incap_ses_225_243507=B6VfBw0KaQ0y8nbtuVwfA8L6yWgAAAAAi0pgSScuq3EExhYZMXoFVw==
+Cookie: visid_incap_243507=KIhmQit/TvW0dm2RKdx1ZEJMy2gAAAAAQUIPAAAAAABXUu6V4BBbfP3CUqzGR8mN; nlbi_243507=VpP5KFENtlwQo2QzaXmSIAAAAABO3eMBd+A8/Au0RoonYCbl; incap_ses_4558_243507=wa3dPek9+CGhheiqEUVBP0NMy2gAAAAAaSruiH1C09TkFoQsUQ49jA==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,30 +8,30 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 429
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Wed, 17 Sep 2025 00:05:22 GMT
-Etag: "1758067092-gzip"
+Date: Thu, 18 Sep 2025 00:05:27 GMT
+Etag: "1758153926-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 16 Sep 2025 23:58:12 GMT
-Set-Cookie: visid_incap_243507=Y0rrM/PlQYawTepEpgEMIcL6yWgAAAAAQUIPAAAAAADu6wmTrRK+6pYTdt2WJkJa; expires=Wed, 16 Sep 2026 07:45:49 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Thu, 18 Sep 2025 00:05:26 GMT
+Set-Cookie: visid_incap_243507=KIhmQit/TvW0dm2RKdx1ZEJMy2gAAAAAQUIPAAAAAABXUu6V4BBbfP3CUqzGR8mN; expires=Thu, 17 Sep 2026 06:36:13 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
 X-Cdn: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 13-7732344-7732349 SNNy RT(1758067394885 127960) q(0 0 0 -1) r(1 1) U24
-X-Varnish: 42097507 49205536
+X-Iinfo: 61-14674753-14674760 SNNy RT(1758153795734 130615) q(0 1 1 -1) r(11 11) U24
+X-Varnish: 52598343
 
-de7a
+de77
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -184,7 +184,7 @@ de7a
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c097aa2fd9e36626424c23c8f24ee1b7289077c9d7969f5cbb2350dbb950d0b8">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-606378d21aad4e193800a3d4979ef81c75d03c3990edd46a9c622eac5ebdb793">
   
     
       
@@ -198,7 +198,7 @@ de7a
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a230a72bf29be1eb4434817827bece8a2a3ad87784ffba0b007a6f1f013428e7">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-57eafc31e0391275545d6c73496f9a4f6d0a6a839f299ab73db8daf6127fc097">
   
     
       
@@ -398,7 +398,7 @@ de7a
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d9bf428f7cd1373007d9b922f4c2821e9b78ef4cb38dcd38aceb744f43b6fb07">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8ea1f9435e18cfa032ddc260c7a42685f3a2d6d2a98015fca80b6b82ab4505f8">
   
     
       
@@ -412,7 +412,7 @@ de7a
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-76b38f5354253b70eca7944591cee48dac8e439f8a73b4911062c75b72640134">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-092610ea5d2014c816be2a628d63545ac73cdb7a145c9c99ab920156eb26100e">
   
     
       
@@ -609,7 +609,7 @@ de7a
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1ea1782ef912451b46cfd0a4e349b3232934a17fd048e5b213a0d116b612d5d2">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4cecf03fb60c03212af18579fadf9ae3a3327be7c4dcafb9658c7814035b6fcd">
   
     
       
@@ -623,7 +623,7 @@ de7a
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2d8bae29567751f7c4244bde2b1a1f9ac8616e2b4ebf59ba7b86f44f95ce653e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ec7008004f1a1469bd4a76479501bb04293f2838c99e30b5ca49d9690ee0af4b">
   
     
       
@@ -756,7 +756,7 @@ de7a
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c54471acd86a8b8d7d235a6ac6977e28460dd670e0d46913511e36809c3f1504">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6036d12754e7344ba9122cc77482611d62320b27d6ae9803c7b9d7e22ed83779">
   
     
       
@@ -770,7 +770,7 @@ de7a
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c2af5fc8f0ea4a7cca08aff7e0aed9e1ed8051d691b3f2361b8bdc078dd2ae27">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-604c98cd20cfd6ab30ea82334a022abef8d61dd89e53c37769f4f56d64c8ef4f">
   
     
       
@@ -989,7 +989,7 @@ de7a
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-e460ac011b14e9f887a8ab54de1e35994861099776f85bda44e0ef2a5b5b4f0f">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-bda6c6b32c50c92594b3fb98278564b7e98fe11b62624017488d341e9df9fab3">
   
     
       <div class="view-header">
@@ -1414,14 +1414,14 @@ de7a
           </button>
         </div>
         <div class="modal-body">
-          Would you like to participate in a 3-5 minute web experience study to help us improve ottawa.ca?
+          Would you like to participate in a 2-3 minute web experience survey to help us improve our website?
 
 If YES, a new window will open in the background so you can come back to it when you are finished on the website.
 
 Thank you for considering to help out.
         </div>
         <div class="modal-footer">
-          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://ottawacityux.optimalworkshop.com/chalkmark/7755fe78caceac89d95d2c3134ddde27">Yes</a>
+          <a id="popupSurveyAccept" role="button" class="btn btn-primary" target="_blank" href="https://forms.ottawa.ca/en/form/fcs/service-ottawa/client-satisfaction-survey">Yes</a>
           <button type="button" class="btn btn-outline-primary" data-dismiss="modal">No</button>
         </div>
       </div>
