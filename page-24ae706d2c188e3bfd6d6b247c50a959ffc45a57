@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/ron-kolbus-lakeside-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=KIhmQit/TvW0dm2RKdx1ZEJMy2gAAAAAQUIPAAAAAABXUu6V4BBbfP3CUqzGR8mN; nlbi_243507=VpP5KFENtlwQo2QzaXmSIAAAAABO3eMBd+A8/Au0RoonYCbl; incap_ses_4558_243507=wa3dPek9+CGhheiqEUVBP0NMy2gAAAAAaSruiH1C09TkFoQsUQ49jA==
+Cookie: visid_incap_243507=VVY0tKNyQEKhNkJWztWcuLydzGgAAAAAQUIPAAAAAABJsjIhezOWYstU/wISxM0b; nlbi_243507=srtMc+Vg4TXHhI/WaXmSIAAAAACeHp6yGIM+HXqLeEHEU8my; incap_ses_1840_243507=QX0mFo4lBj4OjJwZvv6IGbydzGgAAAAAaSJ6LJRzbQRLvxY8OWNsXw==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,28 +8,28 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 512
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Thu, 18 Sep 2025 00:06:51 GMT
-Etag: "1758153498-gzip"
+Date: Fri, 19 Sep 2025 00:06:43 GMT
+Etag: "1758240402-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Wed, 17 Sep 2025 23:58:18 GMT
-Set-Cookie: visid_incap_243507=KIhmQit/TvW0dm2RKdx1ZEJMy2gAAAAAQUIPAAAAAABXUu6V4BBbfP3CUqzGR8mN; expires=Thu, 17 Sep 2026 06:36:13 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Fri, 19 Sep 2025 00:06:42 GMT
+Set-Cookie: visid_incap_243507=VVY0tKNyQEKhNkJWztWcuLydzGgAAAAAQUIPAAAAAABJsjIhezOWYstU/wISxM0b; expires=Fri, 18 Sep 2026 07:21:27 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
 X-Cdn: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 61-14674753-14674760 SNNy RT(1758153795734 215930) q(0 0 0 -1) r(1 1) U24
-X-Varnish: 51815409 52298136
+X-Iinfo: 57-26910825-26931459 SNNy RT(1758240188318 213670) q(0 0 0 -1) r(18 18) U24
+X-Varnish: 50359809
 
 d452
 
@@ -184,7 +184,7 @@ d452
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0187af73b37184576d6673c9994ea984a5b7ad4d2eda84649f9efd94c017ae3e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5317475a77b6f76de7c5437ef6f03aacead71b109601bdefe31e91428cdd258c">
   
     
       
@@ -198,7 +198,7 @@ d452
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2a4300f6a5ee01145eae5712496e1f6c54ff7699f7b1e710a27d4f5314b80f57">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b265eb081052a0848407ed5b9386976f6e57673040121611d7e15d10f606c0ab">
   
     
       
@@ -444,7 +444,7 @@ d452
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1e8748910ee26e349696d9c5d865eb849610972789147fbca3a1b23b1a4384e4">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5617afa095fd5664359cfd39567bb94ca7e77e13f1bc2974da742cc1e0c120f8">
   
     
       
@@ -458,7 +458,7 @@ d452
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c3d80fa6ad5a4db0630134d9d4c13e42181ad8efb7c03abe1ed1a30fba2ad3be">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bfd4f23ecd5a16268ce143939802781cdd7ad0558cb436e4d372e1f8ff942517">
   
     
       
@@ -674,7 +674,7 @@ d452
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-354347f004b21e441bbe814229ebf694669f6fb76ff18de5440ddc567d20f6f8">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-6487faf1b2d1797228970b90fcb712d8b9fad4a29eec217715524a1ff81c9c76">
   
     
       <div class="view-header">

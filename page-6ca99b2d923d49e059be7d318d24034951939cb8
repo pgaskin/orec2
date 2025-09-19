@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/south-fallingbrook-community-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=KIhmQit/TvW0dm2RKdx1ZEJMy2gAAAAAQUIPAAAAAABXUu6V4BBbfP3CUqzGR8mN; nlbi_243507=VpP5KFENtlwQo2QzaXmSIAAAAABO3eMBd+A8/Au0RoonYCbl; incap_ses_4558_243507=wa3dPek9+CGhheiqEUVBP0NMy2gAAAAAaSruiH1C09TkFoQsUQ49jA==
+Cookie: visid_incap_243507=VVY0tKNyQEKhNkJWztWcuLydzGgAAAAAQUIPAAAAAABJsjIhezOWYstU/wISxM0b; nlbi_243507=srtMc+Vg4TXHhI/WaXmSIAAAAACeHp6yGIM+HXqLeEHEU8my; incap_ses_1840_243507=QX0mFo4lBj4OjJwZvv6IGbydzGgAAAAAaSJ6LJRzbQRLvxY8OWNsXw==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,28 +8,28 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 665
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Thu, 18 Sep 2025 00:07:03 GMT
-Etag: "1758153357-gzip"
+Date: Fri, 19 Sep 2025 00:06:55 GMT
+Etag: "1758240414-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Wed, 17 Sep 2025 23:55:57 GMT
-Set-Cookie: visid_incap_243507=KIhmQit/TvW0dm2RKdx1ZEJMy2gAAAAAQUIPAAAAAABXUu6V4BBbfP3CUqzGR8mN; expires=Thu, 17 Sep 2026 06:36:13 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Fri, 19 Sep 2025 00:06:54 GMT
+Set-Cookie: visid_incap_243507=VVY0tKNyQEKhNkJWztWcuLydzGgAAAAAQUIPAAAAAABJsjIhezOWYstU/wISxM0b; expires=Fri, 18 Sep 2026 07:21:27 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
 X-Cdn: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 61-14674753-14674760 SNNy RT(1758153795734 227933) q(0 1 1 -1) r(1 1) U24
-X-Varnish: 49636965 52597992
+X-Iinfo: 57-26910825-26962299 PNNy RT(1758240188318 225667) q(0 0 0 -1) r(13 13) U24
+X-Varnish: 53352902
 
 b697
 
@@ -184,7 +184,7 @@ b697
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f9e996be4ab391f49bf05c911cbd889f58d79077baa0c4f48fb3b6e58b6a1e3a">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f837f5d1edad17a2004b66cd2a60db08e8e0f416412dfdd815e32521886f8e6b">
   
     
       
@@ -198,7 +198,7 @@ b697
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e940ea88eb08885d86454db2b9170d2e48dcea9a063b949f7b18ee8521a9cfa5">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c2af1494ae9bd7cde5c553549fc2179386fd050e759c393f142514cae20e08fb">
   
     
       
@@ -398,7 +398,7 @@ b697
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-272e11b785e8ac10ca886afd70b56ea4b3aefad54cb91933c701917e40d9d01c">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7bb4db2f68dec3aadfe02059db28a78331865d40c87b32f528d57263b0bd916c">
   
     
       
@@ -412,7 +412,7 @@ b697
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-525993a03bed090ca73f0f5c953ba4590a75fb5f91bb7c206188af6312792ee5">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f39bb05c97ca3f4ef194ca3103cb6331d728e4fa1f6915c8ad879dc407e3c5a9">
   
     
       
@@ -727,7 +727,7 @@ b697
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-ec66a30b3e667fb21e56e02829b9fc9931fa31b61370e698316f30f8d1de1347">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-a04e50f0518ab10fde88fc5d276eb306c65bc09f20c5b02d43c24757f0c7d370">
   
     
       <div class="view-header">
