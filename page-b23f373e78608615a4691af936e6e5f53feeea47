@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/nepean-museum HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=VVY0tKNyQEKhNkJWztWcuLydzGgAAAAAQUIPAAAAAABJsjIhezOWYstU/wISxM0b; nlbi_243507=srtMc+Vg4TXHhI/WaXmSIAAAAACeHp6yGIM+HXqLeEHEU8my; incap_ses_1840_243507=QX0mFo4lBj4OjJwZvv6IGbydzGgAAAAAaSJ6LJRzbQRLvxY8OWNsXw==
+Cookie: visid_incap_243507=i82GLaMGSLWNrsMKXTkTnj7vzWgAAAAAQUIPAAAAAAB+DlhH85Dnvwx9VxmsK+ll; nlbi_243507=a+APVAehDTymI87gaXmSIAAAAAAmfZke0qqh3wJP80zfrb4j; incap_ses_170_243507=Ax98bZ2ieQAA6ZOMmfZbAj7vzWgAAAAAkc0Uq30f75hSmbsbwMIz/g==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,17 +8,17 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 569
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Fri, 19 Sep 2025 00:06:02 GMT
-Etag: "1758240361-gzip"
+Date: Sat, 20 Sep 2025 00:06:06 GMT
+Etag: "1758326197-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Fri, 19 Sep 2025 00:06:01 GMT
-Set-Cookie: visid_incap_243507=VVY0tKNyQEKhNkJWztWcuLydzGgAAAAAQUIPAAAAAABJsjIhezOWYstU/wISxM0b; expires=Fri, 18 Sep 2026 07:21:27 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Fri, 19 Sep 2025 23:56:37 GMT
+Set-Cookie: visid_incap_243507=i82GLaMGSLWNrsMKXTkTnj7vzWgAAAAAQUIPAAAAAAB+DlhH85Dnvwx9VxmsK+ll; expires=Sat, 19 Sep 2026 07:44:13 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
@@ -28,8 +28,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: UNCACHEABLE (poor cacheability)
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 57-26910825-26931459 SNNy RT(1758240188318 173503) q(0 0 0 -1) r(5 5) U24
-X-Varnish: 53545400
+X-Iinfo: 52-43728387-43728397 SNNy RT(1758326590812 175928) q(0 0 0 -1) r(1 1) U24
+X-Varnish: 54178608 52089066
 
 12b5b
 
@@ -184,7 +184,7 @@ X-Varnish: 53545400
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f536f2b08e73062b82884c86cc42e1e295f8c2abf2e7a6df237b2eb7e66a5b4c">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a86c4c8cc8728d5c5c9913a2953d26ee4c3ff3454cf7554ff6f5879246381db3">
   
     
       
@@ -198,7 +198,7 @@ X-Varnish: 53545400
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-88558c5f528df318f1a186b7ad866dbfb619007f8ec80bc01c0c4019ed45ed08">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a5fd62d9d4a98d8a6ca52380217dddde52058dcf2e63ed419e7d3caef99a2281">
   
     
       
@@ -400,7 +400,7 @@ Subscribe to our monthly "<a href="https://ottawa.ca/esubscriptions">At your mus
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6a3c033edd86d3191790c77da1b5165978399e237559181a9f83ecbc157692a3">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5942ff148dbaf1e53dbba08504f1d682d3c6a12ef469bc61028fada2f7831c01">
   
     
       
@@ -414,7 +414,7 @@ Subscribe to our monthly "<a href="https://ottawa.ca/esubscriptions">At your mus
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c104227532a6ac556aa875f79eca5e4fa42713d02dfa2c6903aa541ec85bb61d">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-17f296ad8118e1bec421c013b95c78bcab5665b15fdc563f619fdc7320bba4f0">
   
     
       
@@ -514,7 +514,7 @@ Subscribe to our monthly "<a href="https://ottawa.ca/esubscriptions">At your mus
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e6851a775156bcbcbc25c2d145cb52560f4dd4a31e7b7a0ad316daf52a26f3d1">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e70473b734f267d659084c8e58208ac7616f7fae2d45a8871f2553c05b017154">
   
     
       
@@ -528,7 +528,7 @@ Subscribe to our monthly "<a href="https://ottawa.ca/esubscriptions">At your mus
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e2945c0d6920dc22de8f1c8d1f02ef6b07536a7efed45b3e9a998a463727ad1e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-dee781de93f5a6b1c17e52e12fe4a81557a5f50e9485c42d1607733901f36c95">
   
     
       
@@ -684,7 +684,7 @@ October 12 - Slime</strong></span><br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f574175389271a735d31f3544b8b3f8540ae6159d2a30af1710f02db38505bad">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-27a2ab50b9d41d473e726b15887eab885db52042ead774c8a7d4d7b730779f76">
   
     
       
@@ -698,7 +698,7 @@ October 12 - Slime</strong></span><br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5b3c1aae244b674b49391dff8b550bfd965e3d320e7974cdb053e9cb9cd29a8d">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-909c0207e8c64b360cc031aa1af190cf9dc6ed55d6ae86d4a07985bea6900a19">
   
     
       
@@ -883,7 +883,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-040cfffb04e298dfb9e2233ec31944a584653a812e2398de459bf83ebd5d6744">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-688446e1eba674b2080f6810d9fda111df9ed98f7079381d93bf5a01933eeb4f">
   
     
       
@@ -897,7 +897,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2434eb862b4bb73609db3891f4ec196cd51738656366324f30cd5509c154de39">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6e02ab19ea359c355bbeaa96138d215ce220ded5f9a6ac792e166568778fe098">
   
     
       
@@ -998,7 +998,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-285d530e516d23d61e64588a418e424e52e688c00a50881de10e894e4bdef044">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0909bbd679a747428b58ce492853e05de05ccaace8880804984affe3db194a2d">
   
     
       
@@ -1012,7 +1012,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-15ff5ba44fee0fec15d17173b4452d06b229f781fa0403887acdc9d6fcb703e9">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-fa4a710b4e57845f4e618ae6ea960d95fcf766798c8b520946dc83da799ad0d0">
   
     
       
@@ -1115,7 +1115,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c1ccf5f7a3561b7078d292172fa8d2bc8a5edca3db0e578b59a345e9a153e505">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f38abf02f7210c2e32e8d7081d69405ff29cce593cd61c358ef2256f16171303">
   
     
       
@@ -1129,7 +1129,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-210bd5f0d8bb68b76a5684a2e6494b655d5cc2e32961dd3e2b739bfc6abebce9">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-20520e5693a9491bc17b53ab3d6a469933f77649c18853fa0b59a7eccf6b9458">
   
     
       
@@ -1229,7 +1229,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-774df6a3e6096436dd2774f41386f761c20f1bab4ebc704717de882964947089">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2ea0e62f64c46e71cf73df297f9c10371f9909bbfc5b281210ad5a77893a51a9">
   
     
       
@@ -1243,7 +1243,7 @@ October 11 – Neighbourhood collage</p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5d33a160417831ca101e332eddc5c4f024e01dba6113159284b4637b3e71d8c5">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-42be4c34f574745663269af05c0f77548f7374a6976b10aa7862da98b5fe8973">
   
     
       

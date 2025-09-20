@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/billings-estate-national-historic-site HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=VVY0tKNyQEKhNkJWztWcuLydzGgAAAAAQUIPAAAAAABJsjIhezOWYstU/wISxM0b; nlbi_243507=srtMc+Vg4TXHhI/WaXmSIAAAAACeHp6yGIM+HXqLeEHEU8my; incap_ses_1840_243507=QX0mFo4lBj4OjJwZvv6IGbydzGgAAAAAaSJ6LJRzbQRLvxY8OWNsXw==
+Cookie: visid_incap_243507=i82GLaMGSLWNrsMKXTkTnj7vzWgAAAAAQUIPAAAAAAB+DlhH85Dnvwx9VxmsK+ll; nlbi_243507=a+APVAehDTymI87gaXmSIAAAAAAmfZke0qqh3wJP80zfrb4j; incap_ses_170_243507=Ax98bZ2ieQAA6ZOMmfZbAj7vzWgAAAAAkc0Uq30f75hSmbsbwMIz/g==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,17 +8,17 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 453
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Fri, 19 Sep 2025 00:03:38 GMT
-Etag: "1758239764-gzip"
+Date: Sat, 20 Sep 2025 00:03:41 GMT
+Etag: "1758326620-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Thu, 18 Sep 2025 23:56:04 GMT
-Set-Cookie: visid_incap_243507=VVY0tKNyQEKhNkJWztWcuLydzGgAAAAAQUIPAAAAAABJsjIhezOWYstU/wISxM0b; expires=Fri, 18 Sep 2026 07:21:27 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Sat, 20 Sep 2025 00:03:40 GMT
+Set-Cookie: visid_incap_243507=i82GLaMGSLWNrsMKXTkTnj7vzWgAAAAAQUIPAAAAAAB+DlhH85Dnvwx9VxmsK+ll; expires=Sat, 19 Sep 2026 07:44:13 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
@@ -28,8 +28,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: UNCACHEABLE (poor cacheability)
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 57-26910825-26910836 SNNN RT(1758240188318 30210) q(0 1 1 -1) r(1 1) U24
-X-Varnish: 53027273 51395863
+X-Iinfo: 52-43728387-43728397 SNNy RT(1758326590812 29972) q(0 0 0 -1) r(5 5) U24
+X-Varnish: 54626892
 
 18086
 
@@ -184,7 +184,7 @@ X-Varnish: 53027273 51395863
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-202f56413646e9e1d4b7ad12ae1a092470167893bb0063ea727ecdc56e5a1e89">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-46ef0ac73cda8e3cc6dd4744a7a0afceaeae5116fc49b6d9f6107aff0648b4d4">
   
     
       
@@ -198,7 +198,7 @@ X-Varnish: 53027273 51395863
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-08a26e1fe54fb7e9d0c8729c09369920f5fcedf26835612f95ef923d2e194045">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2e9d55f381e254fdf1c4b419985a92d4b26c7d69c002e45634b396adf5ce5867">
   
     
       
@@ -406,7 +406,7 @@ Email:&nbsp;<a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1a55af2a74b7a94d10d984e846888cb5edf7f62babe6f873025a06f0118a6da1">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-20e8301167b21831d867dcb97324016817ff1a22859876d91f8d13a4fa7e1880">
   
     
       
@@ -420,7 +420,7 @@ Email:&nbsp;<a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f70ea50f1a56f1219bb2dc434bb2923de10dd5a8218bafd17ba73acc39ad0a85">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2cf8c5f110f183a4956c0e0e9646006780fc4b9271a18bab00aa7155ed773a41">
   
     
       
@@ -521,7 +521,7 @@ Email:&nbsp;<a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a></p>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2698b31f33ef24fcb81fe582f06cf0d8f0de000d3ae066837d7b6573add4218d">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9bab99b208bd5b54734558b712178c34bc918ef55bc192af8e7a76886e1ada06">
   
     
       
@@ -535,7 +535,7 @@ Email:&nbsp;<a href="mailto:museums@ottawa.ca">museums@ottawa.ca</a></p>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c657888fee757163bcf7780f4a2a865b14d0523e0192e8bdcb2c7bd3c9b61b47">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b7e315741c522d7b11d8e5371dbae4f92f337a163c95257ee3ce1c6b5738395a">
   
     
       
@@ -648,7 +648,7 @@ Cost: $75 </span>+ tax (per person)<span>. <a href="https://anc.ca.apm.activecom
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a418b65d0ee74ffd372c172595852f99532043ce7980bc5a452f9f14a9882b2d">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1f7439fc53e73b8e6a4c106987cac951bd098eaca1e799f01816d1f451488fdb">
   
     
       
@@ -662,7 +662,7 @@ Cost: $75 </span>+ tax (per person)<span>. <a href="https://anc.ca.apm.activecom
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-67fa4195f61cbb64c0f5137181a5cfc39ba95ea1972b380bdb104378ee69707d">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ce1430b80996f86ed90299e03fa69f0f641ad9d845f7640f2ae4c47e511d0d9c">
   
     
       
@@ -821,7 +821,7 @@ Recommend for families with children ages 10 and under.<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3d248be5904a1d02977c237bfe377e30a6289fa17a1eeaa14f3dcefda6633e81">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ecf4392d3159edfd3a34edee87f638a01ed5796228fd5e7f342e739f9c748fe3">
   
     
       
@@ -835,7 +835,7 @@ Recommend for families with children ages 10 and under.<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ae1ab34e4d0e851e6b9e0c0adebe06d8a3acebc09161bc12e0aa26f18bdcf949">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-f207b0f5d1c4b8127586edc2cf1b5e0eb26b9996cc71a7975362374c46ba14bd">
   
     
       
@@ -938,7 +938,7 @@ Recommend for families with children ages 10 and under.<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-487ccdd8fd8f13496929f9f0791d416ae7a17956a1f0b6d2c46aa91004a362af">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-322dc648c00acac4798ac914cc587eb103c7306908fb17fdfe8226a7cd8bde86">
   
     
       
@@ -952,7 +952,7 @@ Recommend for families with children ages 10 and under.<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a7f9a5dd88ea5cbb48acd3d2f2f35ed901b080a6908141339b85d923f4479411">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bee9d3cf9e6ab6d24c85cc51b566d3550b54d2ffc3163b67bd7682c370740538">
   
     
       
@@ -1057,7 +1057,7 @@ Recommend for families with children ages 10 and under.<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4770eda0034f4dde4159a2b257cb066ed38fb14d8e2a25162b3d4e6eab4df61e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7721b9939f831310d84641534bf2fcc84713a4045f0b50333f9a63593df4adc8">
   
     
       
@@ -1071,7 +1071,7 @@ Recommend for families with children ages 10 and under.<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c1b67bcda8eabf496ef1c09815361cb319fba0088e075ff3f14f0151574a5039">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-8a55df799f9e8fe3dbf207799be3a730fe85ba7e3e30715b68f26d9dbefa016c">
   
     
       
@@ -1179,7 +1179,7 @@ Recommend for families with children ages 10 and under.<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0b28d1ed0c547c8380c794d33512a6c6caf41b7605f6e66391d6648268def0ef">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7ef15ff3ff6f015a8318cce69d5f4c3c9cd4b3da3cf73e8ae8e86e7c6cd37ac4">
   
     
       
@@ -1193,7 +1193,7 @@ Recommend for families with children ages 10 and under.<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-56ea769591ec4c0abee1d7e82f3dd28426e42ce325b12bb19a587c78b3d3a1c5">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1a06042536f0b0b9f094e4dd57eae615de625fb73a312719c8c0acd02983f8b8">
   
     
       
@@ -1294,7 +1294,7 @@ Recommend for families with children ages 10 and under.<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-416e017722636c11cb0af3ae785c43f759295807de08f54226822a8b31093b50">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e728e030192ae6b9110af184f9027c3de1cbf69da81d08c2b1fa605af6f5554a">
   
     
       
@@ -1308,7 +1308,7 @@ Recommend for families with children ages 10 and under.<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c0238cf8e714621f7171755665866979120ad2f7d7cb274c3076e2dc94ea2b8a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2e9b5324190f7c13fba31f1275abcf0f928e493579d60fb7d005f61942146345">
   
     
       
@@ -1411,7 +1411,7 @@ Recommend for families with children ages 10 and under.<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ca05ab3455a46ff43eb504f530b8e45a7e722dc36cb83d2fc290beef63ec1a0d">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-cc52a2bc0fd919152bab365b06a2a9c7a9918d940a6f2136daaf5de9f45af50b">
   
     
       
@@ -1425,7 +1425,7 @@ Recommend for families with children ages 10 and under.<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e8718013e7e838fe6eb037a6e761766f38bd3461e1b2170681c70ac2f53206c9">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4bf38115a4ed4dcb8a088fb0db025670e3edbeaed3e040a4e6e0c3eb5797b963">
   
     
       
@@ -2111,7 +2111,7 @@ Thank you for considering to help out.
 <script src="/themes/custom/ottca_theme/dist/js/slider-gallery.min.js?t1pj7h" async></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=6&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9UEFuxCAM_BAsl_4HGeJSbx2MwGySff2SqqqWHHqxPGPPeOQgok0rlA8X_lp7b5ZBsanBXZnyt1tqL8C3X2g-GffGtGB1lBVTBSXJJokkRq-QXBrlim9wh30mV8PwPNxZjKhG8PqFK7pwMGxMI8E7G4UZShtiScNjmp25PEXJbaJH3_fbRkvC2avUkdw2iQRsQ1e9Klus4xzWmSRFWkuVB1rIwIdSvMh-3uITnNrDFCm9-NbrAw_3DsZkwxrI4xpwcROykQmz_r_Sm8pKT6wv1JyyYA"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=16&cb=256501982" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=16&cb=262422096" async></script></body>
 </html>
 
 
