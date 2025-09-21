@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/lansdowne-park HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=i82GLaMGSLWNrsMKXTkTnj7vzWgAAAAAQUIPAAAAAAB+DlhH85Dnvwx9VxmsK+ll; nlbi_243507=a+APVAehDTymI87gaXmSIAAAAAAmfZke0qqh3wJP80zfrb4j; incap_ses_170_243507=Ax98bZ2ieQAA6ZOMmfZbAj7vzWgAAAAAkc0Uq30f75hSmbsbwMIz/g==
+Cookie: visid_incap_243507=79ExLbGVS1a57h9427J0a81Az2gAAAAAQUIPAAAAAACTTJOORblGjeg0G+QGTYdv; nlbi_243507=mqFOffuFUz9QpttPaXmSIAAAAAAapAk/HloZpHo/JTWb5U5L; incap_ses_173_243507=+ZIPJnw7P0vGb1RsMZ9mAs1Az2gAAAAAME9OaSfGn0iPCjBauDQMOQ==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,17 +8,17 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 178
+Age: 543
 Cache-Control: max-age=2764800, public
 Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Sat, 20 Sep 2025 00:05:34 GMT
-Etag: "1758326554-gzip"
+Date: Sun, 21 Sep 2025 00:05:47 GMT
+Etag: "1758412601-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Sat, 20 Sep 2025 00:02:34 GMT
-Set-Cookie: visid_incap_243507=i82GLaMGSLWNrsMKXTkTnj7vzWgAAAAAQUIPAAAAAAB+DlhH85Dnvwx9VxmsK+ll; expires=Sat, 19 Sep 2026 07:44:13 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Sat, 20 Sep 2025 23:56:41 GMT
+Set-Cookie: visid_incap_243507=79ExLbGVS1a57h9427J0a81Az2gAAAAAQUIPAAAAAACTTJOORblGjeg0G+QGTYdv; expires=Sun, 20 Sep 2026 06:35:47 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
@@ -28,8 +28,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 52-43728387-43728397 SNNy RT(1758326590812 143870) q(0 1 1 -1) r(3 3) U24
-X-Varnish: 54485214 54564676
+X-Iinfo: 50-41785024-41786583 SNNy RT(1758413005460 141792) q(0 0 0 -1) r(1 1) U24
+X-Varnish: 55512333 53527084
 
 25e38
 
@@ -184,7 +184,7 @@ X-Varnish: 54485214 54564676
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-43e87125c84c3413d09464c5fe1e7f649326db5b71e2d88da0e7b554d850b614">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-13882839826c8064887dcf2e9c4dcdead7ac1c58f25ff3a32a8230822fceb893">
   
     
       
@@ -198,7 +198,7 @@ X-Varnish: 54485214 54564676
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c84c93d0aec4f66156bd99ae1dead60f3237d29023e23350cb1866cccf99f9b5">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1909c6259f453f1986ae378a9bcae8e90213d111d2e86096c20ddf6ef6bbce80">
   
     
       
@@ -432,7 +432,7 @@ X-Varnish: 54485214 54564676
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3f5979959adcbad18171b85baeefb5daeddd2fc67e2558f558514033ccf3537a">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-cf00d881fe8bc58b02e971fbf83a65bba0a24e18b13e128107d78a73113f9224">
   
     
       
@@ -446,7 +446,7 @@ X-Varnish: 54485214 54564676
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-807f6e54d336e8c9a710bdc2b337ffd26a621243efa1424f3668375f8becad68">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-08a14a8cebaf1e251916576a88c4b9657e995f0b73d96cfe6ea36ee3973edb6f">
   
     
       
@@ -554,7 +554,7 @@ X-Varnish: 54485214 54564676
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-bc3ae629aab11206f2b9c31e92a15c80ff471429f01493b8941eb66fbe2dcfa6">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-dac3c6ba3b59bbfbb8f3664a2a06435cad0be3b6c634ac97a8428f23ec71d541">
   
     
       <div class="view-header">
@@ -645,7 +645,7 @@ X-Varnish: 54485214 54564676
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c6cc0541f5bae6c646d368f58f2fc28043597221a72e1453c487be224fbf30a8">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8390bf5881e49a544441a79bcad419b64f5fcb2e3589abff99819db0252912b8">
   
     
       
@@ -659,7 +659,7 @@ X-Varnish: 54485214 54564676
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-33ae213d1783c84232c4fd48f39bf9e920e07cfa1eddccc025aa5c2e3f1f8cff">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-dea6cb36e87631e4c69a768ada922ecd4ea98b3b9122520ec3a5e7cbf09ccbf1">
   
     
       
@@ -831,7 +831,7 @@ X-Varnish: 54485214 54564676
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2cbd8f99c6bcbfb750c74cb48907dda028ad3d153df8b87fd0f0e4001170aa62">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f5da5ec2fd4243e594a4adbaf795776a9c3547987a4eb63b7a1ed7a0a8a9b971">
   
     
       
@@ -845,7 +845,7 @@ X-Varnish: 54485214 54564676
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-11ecb6580b699797f552f9268426b6e33af8adcab5bac84cfd0b015d5a6f42e6">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0157375450684fdfff8a6b0754804a9058fbe37f4638ed9dc1e387f0296f7a21">
   
     
       
@@ -989,7 +989,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b74672d84077997523c5b97d620402402ee97bbb592fb4ac7ec39baeafaefcf7">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-409d7e5c1ca5b6c13d43993df6993bb205e983e842d3d4178cb74b6b9eede899">
   
     
       
@@ -1003,7 +1003,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-136b7b74ca40fbf3f3062159149c80170210a4c1b100008e6d69d7dd949029b0">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-348de9c8022160628512a4c6c454e114a6e7f5879fe72c172d1c2e2c77c5671c">
   
     
       
@@ -1710,7 +1710,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1aee2b4aea75269f902bd0e7d4240e50fe7fd41d7c68f7c06aa891fdd1cf5a80">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-93a7e81781ac9a6629d9368fa8291fe9f26c803f34338ef54af8dd556f5616a1">
   
     
       
@@ -1724,7 +1724,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d0c4d4343c2e07b1f7517768bfc15726ffa9db40f0d0c033b0377439222cc9c1">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-53939e74d004b4c54d6125cc1a5454510156e13b37718b48f67bd26311b14283">
   
     
       
@@ -1824,7 +1824,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6ddb59b4f1b162d48ca3f55cf753cadd597ebef3d2dd81ee19e371752ed7fef0">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ef454242394c303a731fa3bec1d2d409defb21e78443a84144d97d440cf6d348">
   
     
       
@@ -1838,7 +1838,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d082ee2fd718953d97a5b895a0fa30269f92efde6b122238920af0eb5930e60b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a9097e447770122eaa9110fd4192c77317425acbfd497b2e6b92eb8a1f388705">
   
     
       
@@ -1939,7 +1939,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9ae7465286e8a6383544512cf911085b4451507a02474d049cee3319ff705ccd">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-43a17d16486074d123b74270ab714944665523302890555a577c458bf9b6fcf9">
   
     
       
@@ -1953,7 +1953,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-29f55a58eca842793303463efba823d887760280740edca8c552f5fd2d118218">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b856a04fe9cb25e8f9a35d4573cafda95507cac6493e351f0c41440883f25756">
   
     
       
@@ -2214,7 +2214,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ac6bbf77cf5280123bcbbff7070cfaaa7d00e27b08bfbb1360de0df40670f985">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-48f344055aa9eb9f26f584fc3a8d97857554f1dfae8c0da207b5e3765edc58bb">
   
     
       
@@ -2228,7 +2228,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ca02a005fdc302fb6e27fe66030bc68cac25fd00de30cc3c2dc42c33f0844f1f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5e259f0ea230b14e46833b43706c1b377159da8256b35a12f33c0e911bc66906">
   
     
       
@@ -2336,7 +2336,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7612f641c69fb75c01ba5fe21d257e7645f581d14cf888197155f5246381988b">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-72df86ae66f5560ec80fd741bedb521da234c5436aa51b8a84f36557af717e3a">
   
     
       
@@ -2350,7 +2350,7 @@ Ottawa,&nbsp;ON&nbsp;K1S 5J3<br>
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-30ba2104a7e28aa69160c5b357f0a0bd284007eb333f0865abb36846e3a64f7b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-352411c6bc87119410ecaf5384978de4ff7d42ff10bfc187a7f4510008676525">
   
     
       

@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/pinheys-point-historic-site-0 HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=i82GLaMGSLWNrsMKXTkTnj7vzWgAAAAAQUIPAAAAAAB+DlhH85Dnvwx9VxmsK+ll; nlbi_243507=a+APVAehDTymI87gaXmSIAAAAAAmfZke0qqh3wJP80zfrb4j; incap_ses_170_243507=Ax98bZ2ieQAA6ZOMmfZbAj7vzWgAAAAAkc0Uq30f75hSmbsbwMIz/g==
+Cookie: visid_incap_243507=79ExLbGVS1a57h9427J0a81Az2gAAAAAQUIPAAAAAACTTJOORblGjeg0G+QGTYdv; nlbi_243507=mqFOffuFUz9QpttPaXmSIAAAAAAapAk/HloZpHo/JTWb5U5L; incap_ses_173_243507=+ZIPJnw7P0vGb1RsMZ9mAs1Az2gAAAAAME9OaSfGn0iPCjBauDQMOQ==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,17 +8,17 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 179
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Sat, 20 Sep 2025 00:06:26 GMT
-Etag: "1758326605-gzip"
+Date: Sun, 21 Sep 2025 00:06:42 GMT
+Etag: "1758413199-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Sat, 20 Sep 2025 00:03:25 GMT
-Set-Cookie: visid_incap_243507=i82GLaMGSLWNrsMKXTkTnj7vzWgAAAAAQUIPAAAAAAB+DlhH85Dnvwx9VxmsK+ll; expires=Sat, 19 Sep 2026 07:44:13 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Sun, 21 Sep 2025 00:06:39 GMT
+Set-Cookie: visid_incap_243507=79ExLbGVS1a57h9427J0a81Az2gAAAAAQUIPAAAAAACTTJOORblGjeg0G+QGTYdv; expires=Sun, 20 Sep 2026 06:35:47 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
@@ -28,8 +28,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: UNCACHEABLE (poor cacheability)
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 52-43728387-43728397 SNNy RT(1758326590812 195887) q(0 0 0 -1) r(1 1) U24
-X-Varnish: 54627044 54178487
+X-Iinfo: 50-41785024-41786583 SNNy RT(1758413005460 194443) q(0 0 0 -1) r(23 23) U24
+X-Varnish: 55707908
 
 16925
 
@@ -184,7 +184,7 @@ X-Varnish: 54627044 54178487
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ffef1a86b4223c307fdd4c8f7e0a22c7cc31c0a93a6950505e115ff3e2af1178">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c6eb1bc953321dea4fef88ac41bd637e03bbb736d07ac9c2d9d6336e6b35167a">
   
     
       
@@ -198,7 +198,7 @@ X-Varnish: 54627044 54178487
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-8e657435ae730036f975ed67cbbda8af71030cb58b418ca724ba3bbf61b969cb">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-fa9de5f946f37bb90e6ac6c52024a5096be6a94bc63ddadec3ec63e3a8b94d7d">
   
     
       
@@ -395,7 +395,7 @@ Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscription
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6e8dd5f60f1f63c9d32d7c8cafd70aa2bd56dc2d575b6302e34744e599a1764d">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-be58ad200fc02aa46dfa816bab78e88448b38872bd21293a47faca7f277cd36c">
   
     
       
@@ -409,7 +409,7 @@ Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscription
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7584a48e2c96f110cb4ea0cf984568c96728f6951569895be2822e4dc0bb53fd">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-810695d87fdc9019d0d8f7cc1b5452732e2ee7d9aac448538d583cda8bc07f2f">
   
     
       
@@ -555,7 +555,7 @@ Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscription
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a848337e1bd75306dc06f557d9435e37d4e5587a077283472ab5606f2ac421fd">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f5c9f82930116dcdac2a0d5f9ce0f4f7a7ccaf2bad3bacd90872ee0004099b42">
   
     
       
@@ -569,7 +569,7 @@ Subscribe to our monthly "<a href="https://forms.ottawa.ca/en/form/esubscription
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5931a67c2d401eefa800040e3c731994984c1899e54879dbbb3803c32ac6199b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d1cd74871c06666587769e4b941db7e6c99c184e16507de921b7b081d6e2059a">
   
     
       
@@ -746,7 +746,7 @@ Cost: $62.50 + tax (per person) .&nbsp;<a href="https://anc.ca.apm.activecommuni
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-92afbbfb37c8d4b74dfe4bc971ecf8a7093717f9d0c346a2c2eec98d9da79139">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-33f3936593540ae5ab4a2e12c856a67d2cb9e13f527a2bfe945344ee6ab0dd3a">
   
     
       
@@ -760,7 +760,7 @@ Cost: $62.50 + tax (per person) .&nbsp;<a href="https://anc.ca.apm.activecommuni
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-874bec0e5cf6199aab31b62441814965f53ea782123a9b41ad67786d7f3d2db0">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-492c603b630f65fdd41bd593ec9a293d3c6718d682afa7e0f6c5cad8565a7061">
   
     
       
@@ -887,7 +887,7 @@ Cost: $62.50 + tax (per person) .&nbsp;<a href="https://anc.ca.apm.activecommuni
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5be523052568dea6b2e593c9af92c3e1fd3233df06c4fa5313e050fccf4c6c4f">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c745443d090ed2388d8cf2a90d7836035b5d9cc8b28c2d75f8eed26ddcca01a6">
   
     
       
@@ -901,7 +901,7 @@ Cost: $62.50 + tax (per person) .&nbsp;<a href="https://anc.ca.apm.activecommuni
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e75b4daaffaaddb4705102af19217f9fee8b5936b140bc3b9efea339a6840c16">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-481bf9ad7a882b943c8db50eadf4a8cb206c0ae1eb642dd8de785011c500c37c">
   
     
       
@@ -1001,7 +1001,7 @@ Cost: $62.50 + tax (per person) .&nbsp;<a href="https://anc.ca.apm.activecommuni
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9d6330604fd88d63a04ff3b51e677e4101bd3ef7198ba02c57e546d06599d766">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-9b40c6c9ad4581853a7862fbde4d153d6ce19f5f15e767ed94b9361cb073bf2f">
   
     
       
@@ -1015,7 +1015,7 @@ Cost: $62.50 + tax (per person) .&nbsp;<a href="https://anc.ca.apm.activecommuni
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3674f35c658eaf33900e990f436a7485c8dda0b536dbf43337a5e6b7f4459989">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-98e923c58ed297866a3cf055a8105fc0bf1079a4844b7bc7e3735753bcf883d5">
   
     
       
@@ -1118,7 +1118,7 @@ Cost: $62.50 + tax (per person) .&nbsp;<a href="https://anc.ca.apm.activecommuni
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7c3fe954b9e71fed7c4717c327e5174ca72052435e3f062557a0f41e07319fec">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-8f2ede5b366658e78787dba5e9c6ea9c34cfca20556352dc9771784644dc57a4">
   
     
       
@@ -1132,7 +1132,7 @@ Cost: $62.50 + tax (per person) .&nbsp;<a href="https://anc.ca.apm.activecommuni
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-27b804ee900870538e9d19413ef0f22b538d94f4eb9767006cc9cbe9df9acc0e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b36ad00d8be3eed3e99d25f46997f282e754dbf2b142ce08d50e113386e16d25">
   
     
       
@@ -1233,7 +1233,7 @@ Cost: $62.50 + tax (per person) .&nbsp;<a href="https://anc.ca.apm.activecommuni
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-125f15a60d27987950ab69f6ee14a72d53566635e20452b62b17ca4314b6fc3a">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3ce923584c39e0bd8aebba6876bdca4d47668d06e5ff1a6f5553e6a915803638">
   
     
       
@@ -1247,7 +1247,7 @@ Cost: $62.50 + tax (per person) .&nbsp;<a href="https://anc.ca.apm.activecommuni
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bdba94d8ee14c3b5834fd0276a32ff4786542d8b1459ed8dde8dc2ad06809c1a">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ee5b3e2ee82a6b4cb76fe40203f094ad89c997021a1f96bcd0e13a5e1199cd58">
   
     
       
