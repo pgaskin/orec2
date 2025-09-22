@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/tom-brown-arena HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=79ExLbGVS1a57h9427J0a81Az2gAAAAAQUIPAAAAAACTTJOORblGjeg0G+QGTYdv; nlbi_243507=mqFOffuFUz9QpttPaXmSIAAAAAAapAk/HloZpHo/JTWb5U5L; incap_ses_173_243507=+ZIPJnw7P0vGb1RsMZ9mAs1Az2gAAAAAME9OaSfGn0iPCjBauDQMOQ==
+Cookie: visid_incap_243507=c87qw9IIQhuHs0GnqM9mYkqS0GgAAAAAQUIPAAAAAAAb67uikum3OI+9kAq78nTG; nlbi_243507=P54NGDDdfgrI5J/AaXmSIAAAAACoX691tn1s47gKp690iN5o; incap_ses_1545_243507=q1kxAAxRUXhYKgU8wPFwFUqS0GgAAAAAwoeeLig7+pvFRWw8skFwdw==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,28 +8,28 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 400
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Sun, 21 Sep 2025 00:07:25 GMT
-Etag: "1758413244-gzip"
+Date: Mon, 22 Sep 2025 00:07:19 GMT
+Etag: "1758499238-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Sun, 21 Sep 2025 00:07:24 GMT
-Set-Cookie: visid_incap_243507=79ExLbGVS1a57h9427J0a81Az2gAAAAAQUIPAAAAAACTTJOORblGjeg0G+QGTYdv; expires=Sun, 20 Sep 2026 06:35:47 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Mon, 22 Sep 2025 00:00:38 GMT
+Set-Cookie: visid_incap_243507=c87qw9IIQhuHs0GnqM9mYkqS0GgAAAAAQUIPAAAAAAAb67uikum3OI+9kAq78nTG; expires=Mon, 21 Sep 2026 07:15:54 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
 X-Cdn: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 50-41785024-41830229 SNNy RT(1758413005460 238853) q(0 1 1 -1) r(13 13) U24
-X-Varnish: 55171017
+X-Iinfo: 14-37323116-37323121 SNNy RT(1758499403450 236492) q(0 0 0 -1) r(0 0) U24
+X-Varnish: 56724165 51697451
 
 b42b
 
@@ -184,7 +184,7 @@ b42b
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-dad83f4a586fad47cdf84feda01d7bbe2ae42e19dccb89e899470f60c0649237">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-19c46aa8a190be358a3d65e710f8896e203b16ac68f9fe2286789363498dfb59">
   
     
       
@@ -198,7 +198,7 @@ b42b
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-be70a9ea1864c691355ea22fb4cf6e32d4fdd1831d79386d5b9a80432075c57f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4509636909194c3b5b514040c4f659c397313920ae478253f86a72f0a61769ad">
   
     
       
@@ -377,7 +377,7 @@ b42b
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-923dbeae550f992db10c2c9b2b8f442b3c3e3974e7e914fc92f12e703967e5ea">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e7a64fe7a007d4f93af91231f59f53d635cdf0ff3959edf27fd3ce48bfd86364">
   
     
       
@@ -391,7 +391,7 @@ b42b
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bc3a0a5473874c74d9d6c400c55ab00b9d2f8b471c9a6b77bf287bf522b30b9f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6f56eafcbc65dc8dcd02353e7fcdc7fdf65e4229a07eeb355573e9bc44bd3389">
   
     
       
@@ -550,7 +550,7 @@ b42b
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ded9248ce803ef2f39bfd913491a243128289ed8c259594119835437a37249dc">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d8343956739f8d3e6d9b0b3b8a3680c942cba00f01e191c6abfd8c3d0732c64c">
   
     
       
@@ -564,7 +564,7 @@ b42b
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e4d8df28008a53bcf77700efd73584206db9b0ac90969bbc22a87fea4a660e61">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-edcc7a4b213dd39d406a6f511d469990f7742d01654b1a5df5beb30f313835dd">
   
     
       
@@ -717,7 +717,7 @@ b42b
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-db86d0ad1c22f41fa670bcc4a13009b20ed744a04d4c8b9fe3742cc6467f343d">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-7e39d4c03b7c4dbbd5b9d7ce8362648e6aa0c243e2950e51d0b8ab40a85706fd">
   
     
       <div class="view-header">

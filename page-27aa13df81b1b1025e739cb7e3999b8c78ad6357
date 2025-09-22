@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/terry-fox-athletic-facility HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=79ExLbGVS1a57h9427J0a81Az2gAAAAAQUIPAAAAAACTTJOORblGjeg0G+QGTYdv; nlbi_243507=mqFOffuFUz9QpttPaXmSIAAAAAAapAk/HloZpHo/JTWb5U5L; incap_ses_173_243507=+ZIPJnw7P0vGb1RsMZ9mAs1Az2gAAAAAME9OaSfGn0iPCjBauDQMOQ==
+Cookie: visid_incap_243507=c87qw9IIQhuHs0GnqM9mYkqS0GgAAAAAQUIPAAAAAAAb67uikum3OI+9kAq78nTG; nlbi_243507=P54NGDDdfgrI5J/AaXmSIAAAAACoX691tn1s47gKp690iN5o; incap_ses_1545_243507=q1kxAAxRUXhYKgU8wPFwFUqS0GgAAAAAwoeeLig7+pvFRWw8skFwdw==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,17 +8,17 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 26
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Sun, 21 Sep 2025 00:07:22 GMT
-Etag: "1758413213-gzip"
+Date: Mon, 22 Sep 2025 00:07:18 GMT
+Etag: "1758499638-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Sun, 21 Sep 2025 00:06:53 GMT
-Set-Cookie: visid_incap_243507=79ExLbGVS1a57h9427J0a81Az2gAAAAAQUIPAAAAAACTTJOORblGjeg0G+QGTYdv; expires=Sun, 20 Sep 2026 06:35:47 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Mon, 22 Sep 2025 00:07:18 GMT
+Set-Cookie: visid_incap_243507=c87qw9IIQhuHs0GnqM9mYkqS0GgAAAAAQUIPAAAAAAAb67uikum3OI+9kAq78nTG; expires=Mon, 21 Sep 2026 07:15:54 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
@@ -28,8 +28,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 50-41785024-41830229 NNNY CT(66 76 0) RT(1758413005460 236856) q(0 1 1 -1) r(1 1) U24
-X-Varnish: 54319231 55399283
+X-Iinfo: 14-37323116-37323121 SNNy RT(1758499403450 234649) q(0 0 0 -1) r(7 7) U24
+X-Varnish: 56661267
 
 a4e5
 
@@ -184,7 +184,7 @@ a4e5
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ef0f50aba27fd2d46abc64e31f81334ada8e7f5d653bea2da88de90b9598fe2b">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a2b8e05d61ff4720f3681e5ecf82f54022ae5a90986caa715e99c388c73fcbca">
   
     
       
@@ -198,7 +198,7 @@ a4e5
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5e659265d247244012d775564d614d4226320ac1af2234665eefcb96345c58bc">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1e3c4d0bb0eb4cd3d9b7734ed23134cdf12972b6a4c82d0cef14aaee98a4b160">
   
     
       
@@ -528,7 +528,7 @@ a4e5
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-c40abfc8134267a3db7607ded7fdda7455e56ae507cc9c88d9119deb5122c5c0">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-738aee3c034a3366ace21ea617a2c9906d0845bf09451f7bda3a530c50a64098">
   
     
       <div class="view-header">
