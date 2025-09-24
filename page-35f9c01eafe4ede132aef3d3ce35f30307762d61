@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/tony-graham-recreation-complex-kanata HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=9MXYAmy/TKS9/Z2nlXflX7jj0WgAAAAAQUIPAAAAAADGhihsbbmit6lVJVAtoN40; nlbi_243507=jTSWLb4mqiN4hZMQaXmSIAAAAACzQqHgYVXAcOo9V3+aUkDX; incap_ses_1357_243507=BS15LYYh+BTj4DlGqgjVErjj0WgAAAAApS7EuNJ8IaG5tL9AhxbPLQ==
+Cookie: visid_incap_243507=yLPbHSCeQdC7zAnn5gFKU0I102gAAAAAQUIPAAAAAADc5guViRJc45xR0oM1VpDS; nlbi_243507=OXuuYdDh32iK6sj1aXmSIAAAAACQBvE7R7u+w94UZJ0Wx7/Z; incap_ses_1842_243507=YZr4Y/MTYTV4EzkfxxmQGUI102gAAAAAJ4PNiqoqtcMaNjOB7Z3utw==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,17 +8,17 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 163
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Tue, 23 Sep 2025 00:07:06 GMT
-Etag: "1758586025-gzip"
+Date: Wed, 24 Sep 2025 00:07:16 GMT
+Etag: "1758672271-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 23 Sep 2025 00:07:05 GMT
-Set-Cookie: visid_incap_243507=9MXYAmy/TKS9/Z2nlXflX7jj0WgAAAAAQUIPAAAAAADGhihsbbmit6lVJVAtoN40; expires=Tue, 22 Sep 2026 06:50:21 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Wed, 24 Sep 2025 00:04:31 GMT
+Set-Cookie: visid_incap_243507=yLPbHSCeQdC7zAnn5gFKU0I102gAAAAAQUIPAAAAAADc5guViRJc45xR0oM1VpDS; expires=Wed, 23 Sep 2026 07:29:40 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
@@ -28,8 +28,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 12-70628545-70628552 SNNN RT(1758585784572 240996) q(0 1 1 -1) r(14 14) U24
-X-Varnish: 57463186
+X-Iinfo: 51-63866010-63866027 SNNN RT(1758672194320 242569) q(0 0 0 -1) r(1 1) U24
+X-Varnish: 51902532 58482255
 
 c7b1
 
@@ -184,7 +184,7 @@ c7b1
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-12e3402a8701c6785edbe9f49ef451e3596540aa6f9f2af2549f42e833395490">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a43d59cfdca2e9e17a598791daac2cadbd77721be254fa38adbffc8d339ca990">
   
     
       
@@ -198,7 +198,7 @@ c7b1
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1f2b244a79168a9efea0abec91c2ab93c6f3724b4a7f769266c9ce39e349ed30">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-2cfd949ce8d1f468baa3ae426586b39fa7450de0df34d8844efc68cb7683a4ad">
   
     
       
@@ -478,7 +478,7 @@ c7b1
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-828c486f1bbf68c837e684a987a409b9ef873bfbd6e7f5a3029789c93fa4d95f">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a8e91e7755a4607f08931ebdc8b361cb310a0203d7c4be9ae48617bc8eba6b77">
   
     
       
@@ -492,7 +492,7 @@ c7b1
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-139354f7f516afa4ac214d3c1eb3752678e82dd0e48f664bdea2b367aae3c79b">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-09e63aa0ab9b891f087f9ca4f2bc5745782b2783a92a19e73966bce13963585d">
   
     
       
@@ -628,7 +628,7 @@ c7b1
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d0a6e02f16381be7edd8f70beeab6e27e2983505b0880ef90b60563e1ed29b09">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-3293bb34548a9fdc750f108c388a9b989a7b9da8c3ed38f30b2aadb0f642d7cd">
   
     
       
@@ -642,7 +642,7 @@ c7b1
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-42e11a61d0ff07684a39f7a8f9c23fcf4f4df67a08d922376a028a0fd059f4b4">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-8f91aef3ae2a98c8106e59bfe872e1f7a1def259e36eca8017dd9c7946896d20">
   
     
       
@@ -780,7 +780,7 @@ c7b1
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-3c2de1a9cfafaf63c346a57c390a681b04a65e4444ef8720a6fbbdafa974776d">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-de545564f5eb0ec9c96ea67cc71466990ce5596917016b96fb6ab174279b414d">
   
     
       <div class="view-header">

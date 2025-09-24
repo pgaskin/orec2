@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/richcraft-recreation-complex-kanata HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=9MXYAmy/TKS9/Z2nlXflX7jj0WgAAAAAQUIPAAAAAADGhihsbbmit6lVJVAtoN40; nlbi_243507=jTSWLb4mqiN4hZMQaXmSIAAAAACzQqHgYVXAcOo9V3+aUkDX; incap_ses_1357_243507=BS15LYYh+BTj4DlGqgjVErjj0WgAAAAApS7EuNJ8IaG5tL9AhxbPLQ==
+Cookie: visid_incap_243507=yLPbHSCeQdC7zAnn5gFKU0I102gAAAAAQUIPAAAAAADc5guViRJc45xR0oM1VpDS; nlbi_243507=OXuuYdDh32iK6sj1aXmSIAAAAACQBvE7R7u+w94UZJ0Wx7/Z; incap_ses_1842_243507=YZr4Y/MTYTV4EzkfxxmQGUI102gAAAAAJ4PNiqoqtcMaNjOB7Z3utw==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,17 +8,17 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 294
+Age: 631
 Cache-Control: max-age=2764800, public
 Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Tue, 23 Sep 2025 00:06:27 GMT
-Etag: "1758585691-gzip"
+Date: Wed, 24 Sep 2025 00:06:38 GMT
+Etag: "1758671766-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 23 Sep 2025 00:01:31 GMT
-Set-Cookie: visid_incap_243507=9MXYAmy/TKS9/Z2nlXflX7jj0WgAAAAAQUIPAAAAAADGhihsbbmit6lVJVAtoN40; expires=Tue, 22 Sep 2026 06:50:21 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Tue, 23 Sep 2025 23:56:06 GMT
+Set-Cookie: visid_incap_243507=yLPbHSCeQdC7zAnn5gFKU0I102gAAAAAQUIPAAAAAADc5guViRJc45xR0oM1VpDS; expires=Wed, 23 Sep 2026 07:29:40 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
@@ -28,10 +28,10 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 12-70628545-70628552 SNNN RT(1758585784572 202949) q(0 0 0 -1) r(2 2) U24
-X-Varnish: 57483365 56587051
+X-Iinfo: 51-63866010-63866027 SNNN RT(1758672194320 204537) q(0 0 0 -1) r(1 1) U24
+X-Varnish: 58482431 55595987
 
-13925
+13eb9
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -42,7 +42,7 @@ X-Varnish: 57483365 56587051
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/richcraft-recreation-complex-kanata" />
 <meta name="dcterms.title" content="Richcraft Recreation Complex-Kanata" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-09-22" />
+<meta name="dcterms.date" content="2025-09-23" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -184,7 +184,7 @@ X-Varnish: 57483365 56587051
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7cbb60328f3dfc55557ba0f3a22b49608fdc20a441f5ba2e95488518521968c1">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b027223abdf1c99835e304dbe0e72fed89ec8d9cdb08c7581030f8a820e98154">
   
     
       
@@ -198,7 +198,7 @@ X-Varnish: 57483365 56587051
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-601fac3687114f8dba7f2df9b52157dfc3e423690b3260609e10cad8ee32a8e1">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6262b1720489c6e75068fbf6fff5464e1d6bf5deb7ad994de1788d4f804659be">
   
     
       
@@ -267,7 +267,31 @@ X-Varnish: 57483365 56587051
               
                                                                                     <div  class="col-md-4 col-sm-12 col-12 layout__region layout__region--main">
                         
-                                                    <div class="mb-3">
+                                                    
+
+
+  
+            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Schedule change</h2>
+</div>
+      
+
+
+
+
+  
+            <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><ul>
+<li><strong>Monday, September 29</strong>
+<ul>
+<li>Badminton, 11 am to 1 pm, cancelled</li>
+<li>Basketball, 11 am to 1 <span>pm, c</span><span>ancelled</span></li>
+<li>Open gym - all ages, 1:30 to 3:30 pm, cancelled</li>
+</ul>
+</li>
+</ul>
+</div>
+      
+
+<div class="mb-3">
 
 
 
@@ -449,7 +473,7 @@ X-Varnish: 57483365 56587051
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ebd3713026d065ba51889e4e86d101ef96ac0e998823b8d36f2d7c4518f15e4b">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c64dd0a8971bfb25d646b9cd6158c3b2db1bce84ff3502143afd3b8fc36e70c4">
   
     
       
@@ -463,7 +487,7 @@ X-Varnish: 57483365 56587051
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0a67d8ea2f23033784a314f367d4526a9c161a5f8e01a62a5ddbb07b61c17cb3">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e2a4fa774289dbb1d3279268db25500a68020f9fd4f42a506649a022430ed54f">
   
     
       
@@ -819,7 +843,7 @@ X-Varnish: 57483365 56587051
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-a4733b41b5a2e488d0a40b768339a2d6fe0ea5dab6bd31b14377da06fd804ed9">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-d0f963181fec8b53d76b9b50f0a37a92cad0a6516e747fbdac8b1331c4d204aa">
   
     
       
@@ -833,7 +857,7 @@ X-Varnish: 57483365 56587051
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-3388abf9dd08f895cd5e4529207590959c6d06eed2428e094b4c159d6155c229">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5690c43b1b6012d986da52d4afdb0145c546fcc2d562e0bfaa53dda0601212e1">
   
     
       
@@ -968,7 +992,7 @@ X-Varnish: 57483365 56587051
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-500ab1669d261c1898d37f22ba28ea6cfeca7cf8354f7c45bb897ddec9fc4b1a">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-395682ccaaefef8f06ce443d28c8f3f63dc4274c9ad6825f1c88330b13bf15e9">
   
     
       
@@ -982,7 +1006,7 @@ X-Varnish: 57483365 56587051
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6e68bedb4f0569df9a2e6b9d4980f247111f3c02614dadc6ec7e5b96c77f01c2">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d3b845186be9fb8346e1a3697343a3b1ec6cc10d545f2ff5b343cde65e5c8e12">
   
     
       
@@ -1226,7 +1250,7 @@ X-Varnish: 57483365 56587051
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b19a3ce91bb8021218a2354d219f4f475bf1e52124233640e15209c39ec701a9">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6335898c78811ce3318f772b03605760089824e4d784c0a808119740cb4d4676">
   
     
       
@@ -1240,7 +1264,7 @@ X-Varnish: 57483365 56587051
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1ec996c432f4d63a8bcbd4a2332fd09237c6538cb3810e72a09ba50fb2ccec2f">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-bd6615a935931a070bc6ecca0251fd2ff041492e295fa4b55766a7b6c8dd5b83">
   
     
       
@@ -1270,6 +1294,19 @@ X-Varnish: 57483365 56587051
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The schedules listed in the charts below are subject to change.&nbsp;Holiday hours and programs may vary. Changes will be reflected through the booking process.</p>
 <p><a href="https://ottawa.ca/en/recreation-and-culture/sports-and-fitness/drop-sport-and-fitness">Play free, additional details, descriptions, fees and cancellation information.</a></p>
 <p><a class="btn btn-primary" href="https://reservation.frontdesksuite.ca/rcfs/richcraftkanata">Reserve a spot at Richcraft Recreation Complex-Kanata</a></p>
+</div>
+      
+      </div>
+  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
+          
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule change</h3>
+<ul>
+<li><strong>Monday, September 29</strong>
+<ul>
+<li>Badminton 11 am to 1 pm, cancelled</li>
+</ul>
+</li>
+</ul>
 </div>
       
       </div>
@@ -1521,7 +1558,7 @@ X-Varnish: 57483365 56587051
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-36e5da01758fbff7077be8e96a7ad857f247a4a594a1440d6376a5f0472c9008">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-38944ffa98514c98cf503a37abbb1334654ee6c5976a0bd69ffd5d7655da4040">
   
     
       
@@ -1535,7 +1572,7 @@ X-Varnish: 57483365 56587051
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-e43c6021c28420f7499128d4fde68a3764e5087defa4228131c2e2d9f5c48dad">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-d33669746bca972955b944cf7a2ae9ceb024f016f092864cd300f415477823b8">
   
     
       
@@ -1565,6 +1602,20 @@ X-Varnish: 57483365 56587051
             <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><p>The schedules listed in the charts below are subject to change.&nbsp;Holiday hours and programs may vary. Changes will be reflected through the booking process.</p>
 <p><a href="https://ottawa.ca/en/recreation-and-culture/sports-and-fitness/drop-sport-and-fitness">Additional details, descriptions, fees and cancellation information.</a></p>
 <p><a class="btn btn-primary" href="https://reservation.frontdesksuite.ca/rcfs/richcraftkanata">Reserve a spot at Richcraft Recreation Complex-Kanata</a></p>
+</div>
+      
+      </div>
+  <div class="paragraph paragraph--type--text-block paragraph--view-mode--default">
+          
+            <div class="clearfix text-formatted field field--name-field-body field--type-text-long field--label-hidden field__item"><h3>Schedule change</h3>
+<ul>
+<li><strong>Monday, September 29</strong>
+<ul>
+<li>Basketball, 11 am to 1&nbsp;pm, cancelled</li>
+<li>Open gym - all ages, 1:30 to 3:30 pm, cancelled</li>
+</ul>
+</li>
+</ul>
 </div>
       
       </div>
@@ -1939,7 +1990,7 @@ X-Varnish: 57483365 56587051
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-33bb01725e87e01636ae110c7b00692fe9011399645061cf84ce7db5e501f004">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-61b3ae342b63e6d83edfe2005be21cb8d584e6bcc2b008cf0563e4c79f06e601">
   
     
       <div class="view-header">

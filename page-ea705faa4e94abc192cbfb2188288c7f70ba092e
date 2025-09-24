@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/johnny-leroux-stittsville-community-arena HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=9MXYAmy/TKS9/Z2nlXflX7jj0WgAAAAAQUIPAAAAAADGhihsbbmit6lVJVAtoN40; nlbi_243507=jTSWLb4mqiN4hZMQaXmSIAAAAACzQqHgYVXAcOo9V3+aUkDX; incap_ses_1357_243507=BS15LYYh+BTj4DlGqgjVErjj0WgAAAAApS7EuNJ8IaG5tL9AhxbPLQ==
+Cookie: visid_incap_243507=yLPbHSCeQdC7zAnn5gFKU0I102gAAAAAQUIPAAAAAADc5guViRJc45xR0oM1VpDS; nlbi_243507=OXuuYdDh32iK6sj1aXmSIAAAAACQBvE7R7u+w94UZJ0Wx7/Z; incap_ses_1842_243507=YZr4Y/MTYTV4EzkfxxmQGUI102gAAAAAJ4PNiqoqtcMaNjOB7Z3utw==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,17 +8,17 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 302
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Tue, 23 Sep 2025 00:05:11 GMT
-Etag: "1758585604-gzip"
+Date: Wed, 24 Sep 2025 00:05:24 GMT
+Etag: "1758672324-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 23 Sep 2025 00:00:04 GMT
-Set-Cookie: visid_incap_243507=9MXYAmy/TKS9/Z2nlXflX7jj0WgAAAAAQUIPAAAAAADGhihsbbmit6lVJVAtoN40; expires=Tue, 22 Sep 2026 06:50:21 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Wed, 24 Sep 2025 00:05:24 GMT
+Set-Cookie: visid_incap_243507=yLPbHSCeQdC7zAnn5gFKU0I102gAAAAAQUIPAAAAAADc5guViRJc45xR0oM1VpDS; expires=Wed, 23 Sep 2026 07:29:40 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
@@ -28,8 +28,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 12-70628545-70628552 SNNN RT(1758585784572 127269) q(0 1 1 -1) r(1 1) U24
-X-Varnish: 57740699 57740395
+X-Iinfo: 51-63866010-63866027 SNNN RT(1758672194320 129818) q(0 0 0 -1) r(9 9) U24
+X-Varnish: 56644648
 
 8c45
 
@@ -184,7 +184,7 @@ X-Varnish: 57740699 57740395
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-b3549c0c53d85d63ec2c8c0dcea993e3d14a8349f521f59d9b0956fc61be3ebe">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-7698d9f08ae6d5a657a5420844ccebf482a6859f2c230f34d7e1bd0bf9114fc6">
   
     
       
@@ -198,7 +198,7 @@ X-Varnish: 57740699 57740395
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1a89ac82c15e637916cb26080834ec429bcaffefe9f1c001c0448928348ba474">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6ebe507a5a9d8b798b2feb43a8cfcefcb33064080385cf2ade9335dd4a345bf8">
   
     
       
@@ -425,7 +425,7 @@ X-Varnish: 57740699 57740395
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-ccc44832c3cada5c5b203a6ac9ac27bc7d1b0a204a8d685290a529fe86035b3f">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-9ca460333a0613e92aa3822c3cb2a82cb4f26317448427c0afe1904c72eee0bc">
   
     
       <div class="view-header">
