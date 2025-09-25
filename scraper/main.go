@@ -124,6 +124,7 @@ func main() {
 				r2.Header = r.Header.Clone()
 				r2.Header.Del("User-Agent")
 				r2.Header.Del("Cookie")
+				r2.Header.Del("X-Scraper-Secret")
 				r = &r2
 				return next.RoundTrip(r)
 			}
