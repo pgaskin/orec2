@@ -13,6 +13,9 @@ on:
       keep_facility_list:
         required: false
         type: boolean
+      keep_geocoding:
+        required: false
+        type: boolean
 
 permissions:
   contents: write
@@ -46,10 +49,12 @@ jobs:
           go-version-file: go.mod
       - run: git config --global user.name github-actions && git config --global user.email github-actions@github.com
       - run: git worktree add cache cache
-      - run: grep -m1 'GET ' cache/page-* | grep -v 'place-listing[^/]' | cut -d':' -f1 | xargs rm
-        if: ${{ github.event_name != 'push' }} # we only want to clear the cached data if it's a scheduled or forced update... otherwise, just download anything new if needed
-      - run: rm -fv cache/page-*
-        if: ${{ github.event_name != 'push' && !(github.event.inputs != null && (github.event.inputs.keep_facility_list == true || github.event.inputs.keep_facility_list == 'true')) }} # we only want to clear the cached data if it's a scheduled or forced update... otherwise, just download anything new if needed
+      - run: rm -fv cache/facility-*
+        if: ${{ github.event_name != 'push' }}
+      - run: rm -fv cache/listing-*
+        if: ${{ github.event_name != 'push' && !(github.event.inputs != null && (github.event.inputs.keep_facility_list == true || github.event.inputs.keep_facility_list == 'true')) }}
+      - run: rm -fv cache/geocode-*
+        if: ${{ github.event_name != 'push' && github.event_name != 'schedule' && !(github.event.inputs != null && (github.event.inputs.keep_geocoding == true || github.event.inputs.keep_geocoding == 'true')) }}
       - run: go run ./scraper -cache-dir ./cache -geocodio ${{ github.event.inputs != null && (github.event.inputs.zyte == true || github.event.inputs.zyte == 'true') && '-zyte' || '' }}
         env:
           ZYTE_APIKEY: ${{ secrets.zyte_apikey }}

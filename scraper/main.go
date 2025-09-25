@@ -1,12 +1,8 @@
 package main
 
 import (
-	"bufio"
-	"bytes"
 	"cmp"
 	"context"
-	"crypto/sha1"
-	"encoding/hex"
 	"encoding/json"
 	"errors"
 	"flag"
@@ -29,6 +25,7 @@ import (
 	"unicode"
 
 	"github.com/PuerkitoBio/goquery"
+	"github.com/pgaskin/orec2/internal/httpcache"
 	"github.com/pgaskin/orec2/internal/zyte"
 	"github.com/pgaskin/orec2/schema"
 	"golang.org/x/text/cases"
@@ -75,17 +72,40 @@ func defaultUserAgent() string {
 	return ua.String()
 }
 
-var geocodioLimit = sync.OnceValue(func() *rate.Limiter {
-	return rate.NewLimiter(rate.Every(time.Minute/1000), 1)
-})
+func main() {
+	flag.Parse()
 
-var pageLimit = sync.OnceValue(func() *rate.Limiter {
-	return rate.NewLimiter(rate.Limit(*PageQPS), 1)
-})
+	if b, _ := strconv.ParseBool(os.Getenv("OREC2_DEBUG_HTTP")); b {
+		next := http.DefaultTransport
+		http.DefaultTransport = roundTripperFunc(func(r *http.Request) (*http.Response, error) {
+			fmt.Println()
+			fmt.Println()
+			fmt.Println()
+			buf, err := httputil.DumpRequestOut(r, true)
+			if err != nil {
+				return nil, err
+			}
+			os.Stdout.Write(buf)
+			fmt.Println()
+			resp, err := next.RoundTrip(r)
+			if err != nil {
+				return nil, err
+			}
+			buf, err = httputil.DumpResponse(resp, true)
+			if err != nil {
+				return nil, err
+			}
+			os.Stdout.Write(buf)
+			fmt.Println()
+			fmt.Println()
+			fmt.Println()
+			return resp, nil
+		})
+	}
 
-var zyteClient = sync.OnceValue(func() *http.Client {
-	return &http.Client{
-		Transport: &zyte.Transport{
+	// use zyte for some requests
+	if *Zyte {
+		next := &zyte.Transport{
 			APIKey: ZyteAPIKey,
 			Limit:  zyte.FixedLimit(*ZyteLimit),
 			Retry: func(ctx context.Context, tries, code int) bool {
@@ -96,23 +116,56 @@ var zyteClient = sync.OnceValue(func() *http.Client {
 				return true
 			},
 			FollowRedirect: true,
-		},
+			Next:           http.DefaultTransport,
+		}
+		http.DefaultTransport = roundTripperFunc(func(r *http.Request) (*http.Response, error) {
+			if matchDomain(".ottawa.ca", r.URL) {
+				r2 := *r
+				r2.Header = r.Header.Clone()
+				r2.Header.Del("User-Agent")
+				r2.Header.Del("Cookie")
+				r = &r2
+				return next.RoundTrip(r)
+			}
+			return next.Next.RoundTrip(r)
+		})
 	}
-})
 
-func init() {
+	// apply rate limits if not cached
+	http.DefaultTransport = rateLimitRoundTripper(http.DefaultTransport, ".ottawa.ca", rate.NewLimiter(rate.Limit(*PageQPS), 1))
+	http.DefaultTransport = rateLimitRoundTripper(http.DefaultTransport, "api.geocod.io", rate.NewLimiter(rate.Every(time.Minute/1000), 1))
+
+	// cache responses
+	redactor := new(httpcache.Redactor)
+	cache := &httpcache.Transport{
+		Path:             *CacheDir,
+		Fallback:         *NoFetch, // for backwards compat with old caches
+		RequestRedactor:  redactor,
+		ResponseRedactor: redactor,
+	}
+	if !*NoFetch {
+		cache.Next = http.DefaultTransport
+	}
+	http.DefaultTransport = cache
+
+	// add secrets
 	if ScraperSecret != "" {
-		http.DefaultTransport = redactedHeaderRoundTripper(http.DefaultTransport, ".ottawa.ca", "X-Scraper-Secret", "", ScraperSecret)
+		http.DefaultTransport = headerRoundTripper(http.DefaultTransport, ".ottawa.ca", "X-Scraper-Secret", ScraperSecret)
+		redactor.RedactRequestHeader("X-Scraper-Secret", 4)
 	}
 	if GeocodioAPIKey != "" {
-		http.DefaultTransport = redactedHeaderRoundTripper(http.DefaultTransport, "api.geocod.io", "Authorization", "Bearer ", GeocodioAPIKey)
+		http.DefaultTransport = headerRoundTripper(http.DefaultTransport, "api.geocod.io", "Authorization", "Bearer "+GeocodioAPIKey)
+		redactor.RedactRequestHeader("Authorization", 4)
 	}
+
+	// add user agent
+	if ua := defaultUserAgent(); ua != "" {
+		http.DefaultTransport = headerRoundTripper(http.DefaultTransport, "", "User-Agent", ua)
+	}
+
+	// set up the default http client
 	http.DefaultClient.Transport = http.DefaultTransport
 	http.DefaultClient.Jar, _ = cookiejar.New(nil)
-}
-
-func main() {
-	flag.Parse()
 
 	if err := run(context.Background()); err != nil {
 		fmt.Fprintf(os.Stderr, "error: %v\n", err)
@@ -157,7 +210,7 @@ func run(ctx context.Context) error {
 		facilities int
 	)
 	for cur != "" {
-		doc, _, err := fetchPage(ctx, cur)
+		doc, _, err := fetchPage(ctx, "listing", cur)
 		if err != nil {
 			return err
 		}
@@ -196,7 +249,7 @@ func run(ctx context.Context) error {
 				}
 			}
 
-			doc, date, err := fetchPage(ctx, u.String())
+			doc, date, err := fetchPage(ctx, "facility", u.String())
 			if err != nil {
 				slog.Warn("failed to fetch place", "name", name, "error", err)
 				facility.XErrors = append(facility.XErrors, fmt.Sprintf("failed to fetch data: %v", err))
@@ -441,13 +494,18 @@ func run(ctx context.Context) error {
 //   - Pelias is better than Geocodio at choosing a point near the entrance instead of somewhere on the property.
 //   - For incorrect street names, Geocodio is better at resolving them based on the postal code, but Pelias just ignores the street and chooses somewhere seemingly random.
 func geocode(ctx context.Context, addr string) (lng, lat float64, attrib string, ok bool, err error) {
-	resp, err := fetchGeocodio(ctx, &url.URL{
-		Path: "v1.9/geocode",
+	u := &url.URL{
+		Scheme: "https",
+		Host:   "api.geocod.io",
+		Path:   "/v1.9/geocode",
 		RawQuery: url.Values{
 			"q":       {addr},
 			"country": {"CA"},
 		}.Encode(),
-	})
+	}
+	slog.Info("fetch geocodio", "url", u.String())
+
+	resp, err := fetch(ctx, "geocode", u.String())
 	if err != nil {
 		return 0, 0, "", false, err
 	}
@@ -485,10 +543,10 @@ func geocode(ctx context.Context, addr string) (lng, lat float64, attrib string,
 	return 0, 0, "", false, nil
 }
 
-func fetchPage(ctx context.Context, u string) (*goquery.Document, time.Time, error) {
-	slog.Info("fetch page", "url", u)
+func fetchPage(ctx context.Context, category, u string) (*goquery.Document, time.Time, error) {
+	slog.Info("fetch page", "url", u, "category", category)
 
-	resp, err := fetch(ctx, u, "page", u, pageLimit(), true)
+	resp, err := fetch(ctx, category, u)
 	if err != nil {
 		return nil, time.Time{}, err
 	}
@@ -511,88 +569,14 @@ func fetchPage(ctx context.Context, u string) (*goquery.Document, time.Time, err
 	return doc, date, nil
 }
 
-func fetchGeocodio(ctx context.Context, r *url.URL) (*http.Response, error) {
-	slog.Info("fetch geocodio", "url", r.String())
-
-	u, err := url.Parse("https://api.geocod.io/")
+func fetch(ctx context.Context, category, u string) (*http.Response, error) {
+	req, err := http.NewRequestWithContext(httpcache.CategoryContext(ctx, category), http.MethodGet, u, nil)
 	if err != nil {
 		return nil, err
 	}
-	q := u.Query()
-	u = u.ResolveReference(r)
-	maps.Copy(q, r.Query()) // keep orig query params
-	u.RawQuery = q.Encode()
-
-	return fetch(ctx, u.String(), "geocodio", r.String(), geocodioLimit(), false)
-}
-
-func fetch(ctx context.Context, u string, cacheType, cacheKey string, limiter *rate.Limiter, proxy bool) (*http.Response, error) {
-	var cacheName string
-	if *CacheDir != "" {
-		s := sha1.Sum([]byte(cacheKey))
-		cacheName = filepath.Join(*CacheDir, cacheType+"-"+hex.EncodeToString(s[:]))
-	}
-
-	var resp *http.Response
-	if cacheName != "" {
-		if buf, err := os.ReadFile(cacheName); err == nil {
-			r := bufio.NewReader(bytes.NewReader(buf))
-
-			req, err := http.ReadRequest(r)
-			if err != nil {
-				return nil, fmt.Errorf("read cached response: %w", err)
-			}
-			req.URL.Scheme = "https"
-			req.URL.Host = req.Host
-
-			resp, err = http.ReadResponse(r, req)
-			if err != nil {
-				return nil, fmt.Errorf("read cached response: %w", err)
-			}
-		} else if !errors.Is(err, os.ErrNotExist) {
-			return nil, fmt.Errorf("read cached response: %w", err)
-		} else if *NoFetch {
-			return nil, fmt.Errorf("get %q: fetch disabled, response not in cache", u)
-		}
-	}
-	if resp == nil {
-		req, err := http.NewRequestWithContext(ctx, http.MethodGet, u, nil)
-		if err != nil {
-			return nil, err
-		}
-
-		if limiter != nil {
-			if err := limiter.Wait(ctx); err != nil {
-				return nil, err
-			}
-		}
-
-		if proxy && *Zyte {
-			resp, err = zyteClient().Do(req)
-		} else {
-			req.Header.Set("User-Agent", *UserAgent)
-			resp, err = http.DefaultClient.Do(req)
-		}
-		if err != nil {
-			return nil, err
-		}
-
-		if cacheName != "" {
-			defer resp.Body.Close()
-
-			reqbuf, err := httputil.DumpRequest(resp.Request, true)
-			if err != nil {
-				return nil, err
-			}
-
-			respbuf, err := httputil.DumpResponse(resp, true)
-			if err != nil {
-				return nil, err
-			}
-			if err := os.WriteFile(cacheName, slices.Concat(reqbuf, respbuf), 0666); err != nil {
-				return nil, fmt.Errorf("write cached response: %w", err)
-			}
-		}
+	resp, err := http.DefaultClient.Do(req)
+	if err != nil {
+		return nil, err
 	}
 	if resp.StatusCode != http.StatusOK {
 		return nil, fmt.Errorf("response status %d", resp.StatusCode)
@@ -1359,25 +1343,44 @@ func (fn roundTripperFunc) RoundTrip(r *http.Request) (*http.Response, error) {
 
 var _ http.RoundTripper = roundTripperFunc(nil)
 
-func redactedHeaderRoundTripper(next http.RoundTripper, domain, header, prefix, value string) http.RoundTripper {
-	sha := sha1.Sum([]byte(value))
+func headerRoundTripper(next http.RoundTripper, domain, name, value string) http.RoundTripper {
 	return roundTripperFunc(func(r *http.Request) (*http.Response, error) {
-		if h, d := strings.Trim(strings.ToLower(r.URL.Hostname()), "."), strings.ToLower(domain); !(d == "" || h == d || (d[0] == '.' && h == d[1:]) || (d[0] == '.' && strings.HasSuffix(h, d))) {
-			return next.RoundTrip(r)
+		if matchDomain(domain, r.URL) {
+			r2 := *r
+			r2.Header = r.Header.Clone()
+			if value == "" {
+				r2.Header.Del(name)
+			} else {
+				r2.Header.Set(name, value)
+			}
+			r = &r2
 		}
+		return cmp.Or(next, http.DefaultTransport).RoundTrip(r)
+	})
+}
 
-		r2 := *r
-		r = &r2
-		r.Header = maps.Clone(r.Header)
-		r.Header[header] = []string{prefix + value}
-
-		resp, err := next.RoundTrip(r)
-
-		if resp != nil && resp.Request != nil && resp.Request.Header != nil {
-			if _, ok := resp.Request.Header[header]; ok {
-				resp.Request.Header[header] = []string{prefix + "redacted-" + hex.EncodeToString(sha[:4])}
+func rateLimitRoundTripper(next http.RoundTripper, domain string, limiter *rate.Limiter) http.RoundTripper {
+	return roundTripperFunc(func(r *http.Request) (*http.Response, error) {
+		if matchDomain(domain, r.URL) {
+			if err := limiter.Wait(r.Context()); err != nil {
+				return nil, err
 			}
 		}
-		return resp, err
+		return cmp.Or(next, http.DefaultTransport).RoundTrip(r)
 	})
+}
+
+func matchDomain(domain string, u *url.URL) bool {
+	if domain == "" {
+		return true // match all
+	}
+	h := strings.Trim(strings.ToLower(u.Hostname()), ".")
+	d := strings.ToLower(domain)
+	if h == d {
+		return true // exact match
+	}
+	if d[0] == '.' {
+		return h == d[1:] || strings.HasSuffix(h, d)
+	}
+	return false
 }
