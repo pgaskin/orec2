@@ -1,0 +1,27 @@
+GET /v1.9/geocode?country=CA&q=70+Aird+Place%0AOttawa+ON+K2L+4C9%0ACanada HTTP/1.1
+Host: api.geocod.io
+Authorization: redacted-65ffda17
+User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+
+HTTP/2.0 200 OK
+Access-Control-Allow-Headers: Content-Type, User-Agent
+Access-Control-Allow-Methods: GET, POST, PATCH, DELETE
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Request-Handler
+Cache-Control: no-cache, private
+Content-Security-Policy: default-src 'none';
+Content-Type: application/json
+Date: Thu, 25 Sep 2025 15:54:34 GMT
+Request-Handler: api309
+Server: Unicorns with magic wands (https://www.geocod.io)
+X-Billable-Fields-Count: 0
+X-Billable-Lookups-Count: 1
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Period: 60
+X-Ratelimit-Remaining: 975
+X-Request-Id: 40EC870A:6C50_05A11518:01BB_68D565B7_3336C:AC6E
+X-Xss-Protection: 1; mode=block
+
+{"input":{"address_components":{"number":"70","street":"Aird","suffix":"Pl","formatted_street":"Aird Pl","city":"Ottawa","state":"ON","zip":"K2L 4C9","country":"CA"},"formatted_address":"70 Aird Pl, Ottawa, ON K2L 4C9"},"results":[{"address_components":{"number":"70","street":"Aird","suffix":"Pl","formatted_street":"Aird Pl","city":"Kanata","state":"ON","zip":"K2L","country":"CA"},"address_lines":["70 Aird Pl","","Kanata, ON K2L"],"formatted_address":"70 Aird Pl, Kanata, ON K2L","location":{"lat":45.311599,"lng":-75.899106},"accuracy":0.9,"accuracy_type":"rooftop","source":"City of Ottawa (Open Government Licence \u2013 City of Ottawa Contains information licensed under the Open Government Licence \u2013 City of Ottawa)"},{"address_components":{"number":"70","street":"Aird","suffix":"Pl","formatted_street":"Aird Pl","city":"Kanata","state":"ON","zip":"K2L","country":"CA"},"address_lines":["70 Aird Pl","","Kanata, ON K2L"],"formatted_address":"70 Aird Pl, Kanata, ON K2L","location":{"lat":45.310787,"lng":-75.899523},"accuracy":0.9,"accuracy_type":"range_interpolation","source":"CanVec+ by Natural Resources Canada"},{"address_components":{"number":"70","street":"Aird","suffix":"Pl","formatted_street":"Aird Pl","city":"Kanata","state":"ON","zip":"K2L","country":"CA"},"address_lines":["70 Aird Pl","","Kanata, ON K2L"],"formatted_address":"70 Aird Pl, Kanata, ON K2L","location":{"lat":45.31062,"lng":-75.899108},"accuracy":0.9,"accuracy_type":"range_interpolation","source":"CanVec+ by Natural Resources Canada"},{"address_components":{"number":"69","street":"Aridus","suffix":"Cres","formatted_street":"Aridus Cres","city":"Stittsville","state":"ON","zip":"K2S","country":"CA"},"address_lines":["69 Aridus Cres","","Stittsville, ON K2S"],"formatted_address":"69 Aridus Cres, Stittsville, ON K2S","location":{"lat":45.249513,"lng":-75.896401},"accuracy":0.45,"accuracy_type":"nearest_rooftop_match","source":"City of Ottawa (Open Government Licence \u2013 City of Ottawa Contains information licensed under the Open Government Licence \u2013 City of Ottawa)"},{"address_components":{"number":"71","street":"Aridus","suffix":"Cres","formatted_street":"Aridus Cres","city":"Stittsville","state":"ON","zip":"K2S","country":"CA"},"address_lines":["71 Aridus Cres","","Stittsville, ON K2S"],"formatted_address":"71 Aridus Cres, Stittsville, ON K2S","location":{"lat":45.249656,"lng":-75.896302},"accuracy":0.45,"accuracy_type":"nearest_rooftop_match","source":"City of Ottawa (Open Government Licence \u2013 City of Ottawa Contains information licensed under the Open Government Licence \u2013 City of Ottawa)"},{"address_components":{"number":"72","street":"Aridus","suffix":"Cres","formatted_street":"Aridus Cres","city":"Stittsville","state":"ON","zip":"K2S","country":"CA"},"address_lines":["72 Aridus Cres","","Stittsville, ON K2S"],"formatted_address":"72 Aridus Cres, Stittsville, ON K2S","location":{"lat":45.249895,"lng":-75.897017},"accuracy":0.45,"accuracy_type":"nearest_rooftop_match","source":"City of Ottawa (Open Government Licence \u2013 City of Ottawa Contains information licensed under the Open Government Licence \u2013 City of Ottawa)"}]}

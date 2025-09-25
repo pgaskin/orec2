@@ -1,0 +1,27 @@
+GET /v1.9/geocode?country=CA&q=68+Knoxdale+Road%0AOttawa+ON+K2J+7J4%0ACanada HTTP/1.1
+Host: api.geocod.io
+Authorization: redacted-65ffda17
+User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+
+HTTP/2.0 200 OK
+Access-Control-Allow-Headers: Content-Type, User-Agent
+Access-Control-Allow-Methods: GET, POST, PATCH, DELETE
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Request-Handler
+Cache-Control: no-cache, private
+Content-Security-Policy: default-src 'none';
+Content-Type: application/json
+Date: Thu, 25 Sep 2025 15:54:59 GMT
+Request-Handler: api291
+Server: Unicorns with magic wands (https://www.geocod.io)
+X-Billable-Fields-Count: 0
+X-Billable-Lookups-Count: 1
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Period: 60
+X-Ratelimit-Remaining: 974
+X-Request-Id: 40EC870A:6C50_05A11518:01BB_68D565D3_33A56:AC6E
+X-Xss-Protection: 1; mode=block
+
+{"input":{"address_components":{"number":"68","street":"Knoxdale","suffix":"Rd","formatted_street":"Knoxdale Rd","city":"Ottawa","state":"ON","zip":"K2J 7J4","country":"CA"},"formatted_address":"68 Knoxdale Rd, Ottawa, ON K2J 7J4"},"results":[{"address_components":{"number":"68","street":"Knoxdale","suffix":"Rd","formatted_street":"Knoxdale Rd","city":"Nepean","state":"ON","zip":"K2G","country":"CA"},"address_lines":["68 Knoxdale Rd","","Nepean, ON K2G"],"formatted_address":"68 Knoxdale Rd, Nepean, ON K2G","location":{"lat":45.330151,"lng":-75.761098},"accuracy":0.9,"accuracy_type":"rooftop","source":"City of Ottawa (Open Government Licence \u2013 City of Ottawa Contains information licensed under the Open Government Licence \u2013 City of Ottawa)"}]}

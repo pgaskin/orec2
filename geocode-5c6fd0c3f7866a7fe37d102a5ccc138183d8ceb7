@@ -1,0 +1,27 @@
+GET /v1.9/geocode?country=CA&q=1002+Beaverbrook+Lane%0AOttawa+ON+K2K+1L1%0ACanada HTTP/1.1
+Host: api.geocod.io
+Authorization: redacted-65ffda17
+User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+
+HTTP/2.0 200 OK
+Access-Control-Allow-Headers: Content-Type, User-Agent
+Access-Control-Allow-Methods: GET, POST, PATCH, DELETE
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Request-Handler
+Cache-Control: no-cache, private
+Content-Security-Policy: default-src 'none';
+Content-Type: application/json
+Date: Thu, 25 Sep 2025 15:52:35 GMT
+Request-Handler: api302
+Server: Unicorns with magic wands (https://www.geocod.io)
+X-Billable-Fields-Count: 0
+X-Billable-Lookups-Count: 1
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Period: 60
+X-Ratelimit-Remaining: 991
+X-Request-Id: 40EC870A:6C50_05A11518:01BB_68D56542_311FB:AC6E
+X-Xss-Protection: 1; mode=block
+
+{"input":{"address_components":{"number":"1002","street":"Beaverbrook","suffix":"Ln","formatted_street":"Beaverbrook Ln","city":"Ottawa","state":"ON","zip":"K2K 1L1","country":"CA"},"formatted_address":"1002 Beaverbrook Ln, Ottawa, ON K2K 1L1"},"results":[{"address_components":{"number":"1002","street":"Beaverbrook","suffix":"Rd","formatted_street":"Beaverbrook Rd","city":"Kanata","state":"ON","zip":"K2K","country":"CA"},"address_lines":["1002 Beaverbrook Rd","","Kanata, ON K2K"],"formatted_address":"1002 Beaverbrook Rd, Kanata, ON K2K","location":{"lat":45.328837,"lng":-75.90062},"accuracy":0.85,"accuracy_type":"rooftop","source":"City of Ottawa (Open Government Licence \u2013 City of Ottawa Contains information licensed under the Open Government Licence \u2013 City of Ottawa)"},{"address_components":{"street":"Beaverbrook","suffix":"Ln","formatted_street":"Beaverbrook Ln","city":"Kanata","state":"ON","zip":"K2K","country":"CA"},"address_lines":["Beaverbrook Ln","","Kanata, ON K2K"],"formatted_address":"Beaverbrook Ln, Kanata, ON K2K","location":{"lat":45.328807,"lng":-75.903007},"accuracy":0.7,"accuracy_type":"street_center","source":"CanVec+ by Natural Resources Canada"},{"address_components":{"street":"Beaverbrook","suffix":"Rd","formatted_street":"Beaverbrook Rd","city":"Kanata","state":"ON","zip":"K2K","country":"CA"},"address_lines":["Beaverbrook Rd","","Kanata, ON K2K"],"formatted_address":"Beaverbrook Rd, Kanata, ON K2K","location":{"lat":45.327323,"lng":-75.905009},"accuracy":0.65,"accuracy_type":"point","source":"CanVec+ by Natural Resources Canada"}]}

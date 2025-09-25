@@ -1,0 +1,27 @@
+GET /v1.9/geocode?country=CA&q=2785+8th+Line%0AOttawa+ON+K0A+2P0%0ACanada HTTP/1.1
+Host: api.geocod.io
+Authorization: redacted-65ffda17
+User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+
+HTTP/2.0 200 OK
+Access-Control-Allow-Headers: Content-Type, User-Agent
+Access-Control-Allow-Methods: GET, POST, PATCH, DELETE
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Request-Handler
+Cache-Control: no-cache, private
+Content-Security-Policy: default-src 'none';
+Content-Type: application/json
+Date: Thu, 25 Sep 2025 15:55:08 GMT
+Request-Handler: api309
+Server: Unicorns with magic wands (https://www.geocod.io)
+X-Billable-Fields-Count: 0
+X-Billable-Lookups-Count: 1
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Period: 60
+X-Ratelimit-Remaining: 975
+X-Request-Id: 40EC870A:6C50_05A11518:01BB_68D565DB_33CF7:AC6E
+X-Xss-Protection: 1; mode=block
+
+{"input":{"address_components":{"number":"2785","street":"8th Line","formatted_street":"8th Line","city":"Ottawa","state":"ON","zip":"K0A 2P0","country":"CA"},"formatted_address":"2785 8th Line, Ottawa, ON K0A 2P0"},"results":[{"address_components":{"number":"2785","street":"8th Line","suffix":"Rd","formatted_street":"8th Line Rd","city":"Greely","state":"ON","zip":"K4P","country":"CA"},"address_lines":["2785 8th Line Rd","","Greely, ON K4P"],"formatted_address":"2785 8th Line Rd, Greely, ON K4P","location":{"lat":45.22632,"lng":-75.467843},"accuracy":0.8,"accuracy_type":"range_interpolation","source":"CanVec+ by Natural Resources Canada"},{"address_components":{"number":"2785","street":"8th Line","suffix":"Rd","formatted_street":"8th Line Rd","city":"Greely","state":"ON","zip":"K4P","country":"CA"},"address_lines":["2785 8th Line Rd","","Greely, ON K4P"],"formatted_address":"2785 8th Line Rd, Greely, ON K4P","location":{"lat":45.225423,"lng":-75.467411},"accuracy":0.8,"accuracy_type":"range_interpolation","source":"CanVec+ by Natural Resources Canada"},{"address_components":{"number":"2785","street":"8 Line","suffix":"Rd","formatted_street":"8 Line Rd","city":"Greely","state":"ON","zip":"K4P","country":"CA"},"address_lines":["2785 8 Line Rd","","Greely, ON K4P"],"formatted_address":"2785 8 Line Rd, Greely, ON K4P","location":{"lat":45.229806,"lng":-75.468815},"accuracy":0.7,"accuracy_type":"rooftop","source":"City of Ottawa (Open Government Licence \u2013 City of Ottawa Contains information licensed under the Open Government Licence \u2013 City of Ottawa)"}]}

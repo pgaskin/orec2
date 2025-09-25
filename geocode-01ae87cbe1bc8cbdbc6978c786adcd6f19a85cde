@@ -1,0 +1,27 @@
+GET /v1.9/geocode?country=CA&q=30+Wessex+Road%0AOttawa+ON+K2J+2E7%0ACanada HTTP/1.1
+Host: api.geocod.io
+Authorization: redacted-65ffda17
+User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+
+HTTP/2.0 200 OK
+Access-Control-Allow-Headers: Content-Type, User-Agent
+Access-Control-Allow-Methods: GET, POST, PATCH, DELETE
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Request-Handler
+Cache-Control: no-cache, private
+Content-Security-Policy: default-src 'none';
+Content-Type: application/json
+Date: Thu, 25 Sep 2025 15:53:10 GMT
+Request-Handler: api294
+Server: Unicorns with magic wands (https://www.geocod.io)
+X-Billable-Fields-Count: 0
+X-Billable-Lookups-Count: 1
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Period: 60
+X-Ratelimit-Remaining: 975
+X-Request-Id: 40EC870A:6C50_05A11518:01BB_68D56562_31B5C:AC6E
+X-Xss-Protection: 1; mode=block
+
+{"input":{"address_components":{"number":"30","street":"Wessex","suffix":"Rd","formatted_street":"Wessex Rd","city":"Ottawa","state":"ON","zip":"K2J 2E7","country":"CA"},"formatted_address":"30 Wessex Rd, Ottawa, ON K2J 2E7"},"results":[{"address_components":{"number":"30","street":"Wessex","suffix":"Rd","formatted_street":"Wessex Rd","city":"Nepean","state":"ON","zip":"K2J","country":"CA"},"address_lines":["30 Wessex Rd","","Nepean, ON K2J"],"formatted_address":"30 Wessex Rd, Nepean, ON K2J","location":{"lat":45.273062,"lng":-75.7518},"accuracy":0.9,"accuracy_type":"rooftop","source":"City of Ottawa (Open Government Licence \u2013 City of Ottawa Contains information licensed under the Open Government Licence \u2013 City of Ottawa)"},{"address_components":{"number":"30","street":"Wessex","suffix":"Rd","formatted_street":"Wessex Rd","city":"Nepean","state":"ON","zip":"K2J","country":"CA"},"address_lines":["30 Wessex Rd","","Nepean, ON K2J"],"formatted_address":"30 Wessex Rd, Nepean, ON K2J","location":{"lat":45.272607,"lng":-75.752886},"accuracy":0.9,"accuracy_type":"point","source":"CanVec+ by Natural Resources Canada"}]}

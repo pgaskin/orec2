@@ -1,0 +1,27 @@
+GET /v1.9/geocode?country=CA&q=960+Silver+Street%0AOttawa+ON+K1Z+6H5%0ACanada HTTP/1.1
+Host: api.geocod.io
+Authorization: redacted-65ffda17
+User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+
+HTTP/2.0 200 OK
+Access-Control-Allow-Headers: Content-Type, User-Agent
+Access-Control-Allow-Methods: GET, POST, PATCH, DELETE
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Request-Handler
+Cache-Control: no-cache, private
+Content-Security-Policy: default-src 'none';
+Content-Type: application/json
+Date: Thu, 25 Sep 2025 15:52:23 GMT
+Request-Handler: api310
+Server: Unicorns with magic wands (https://www.geocod.io)
+X-Billable-Fields-Count: 0
+X-Billable-Lookups-Count: 1
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Period: 60
+X-Ratelimit-Remaining: 998
+X-Request-Id: 40EC870A:6C50_05A11518:01BB_68D56533_30EF4:AC6E
+X-Xss-Protection: 1; mode=block
+
+{"input":{"address_components":{"number":"960","street":"Silver","suffix":"St","formatted_street":"Silver St","city":"Ottawa","state":"ON","zip":"K1Z 6H5","country":"CA"},"formatted_address":"960 Silver St, Ottawa, ON K1Z 6H5"},"results":[{"address_components":{"number":"960","street":"Silver","suffix":"St","formatted_street":"Silver St","city":"Ottawa","state":"ON","zip":"K1Z","country":"CA"},"address_lines":["960 Silver St","","Ottawa, ON K1Z"],"formatted_address":"960 Silver St, Ottawa, ON K1Z","location":{"lat":45.379752,"lng":-75.732241},"accuracy":1,"accuracy_type":"rooftop","source":"City of Ottawa (Open Government Licence \u2013 City of Ottawa Contains information licensed under the Open Government Licence \u2013 City of Ottawa)"}]}

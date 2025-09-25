@@ -1,0 +1,27 @@
+GET /v1.9/geocode?country=CA&q=1115+Dunning+Road%0AOttawa+ON+K4C+1P6%0ACanada HTTP/1.1
+Host: api.geocod.io
+Authorization: redacted-65ffda17
+User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+
+HTTP/2.0 200 OK
+Access-Control-Allow-Headers: Content-Type, User-Agent
+Access-Control-Allow-Methods: GET, POST, PATCH, DELETE
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Request-Handler
+Cache-Control: no-cache, private
+Content-Security-Policy: default-src 'none';
+Content-Type: application/json
+Date: Thu, 25 Sep 2025 15:55:50 GMT
+Request-Handler: api309
+Server: Unicorns with magic wands (https://www.geocod.io)
+X-Billable-Fields-Count: 0
+X-Billable-Lookups-Count: 1
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Period: 60
+X-Ratelimit-Remaining: 975
+X-Request-Id: 40EC870A:6C50_05A11518:01BB_68D56604_34939:AC6E
+X-Xss-Protection: 1; mode=block
+
+{"input":{"address_components":{"number":"1115","street":"Dunning","suffix":"Rd","formatted_street":"Dunning Rd","city":"Ottawa","state":"ON","zip":"K4C 1P6","country":"CA"},"formatted_address":"1115 Dunning Rd, Ottawa, ON K4C 1P6"},"results":[{"address_components":{"number":"1115","street":"Dunning","suffix":"Rd","formatted_street":"Dunning Rd","city":"Cumberland","state":"ON","zip":"K4C","country":"CA"},"address_lines":["1115 Dunning Rd","","Cumberland, ON K4C"],"formatted_address":"1115 Dunning Rd, Cumberland, ON K4C","location":{"lat":45.514541,"lng":-75.40297},"accuracy":0.9,"accuracy_type":"rooftop","source":"City of Ottawa (Open Government Licence \u2013 City of Ottawa Contains information licensed under the Open Government Licence \u2013 City of Ottawa)"},{"address_components":{"number":"1115","street":"Dunning","suffix":"Rd","formatted_street":"Dunning Rd","city":"Cumberland","state":"ON","zip":"K4C","country":"CA"},"address_lines":["1115 Dunning Rd","","Cumberland, ON K4C"],"formatted_address":"1115 Dunning Rd, Cumberland, ON K4C","location":{"lat":45.514682,"lng":-75.404133},"accuracy":0.9,"accuracy_type":"rooftop","source":"Countrywide (Adapted from Statistics Canada, National Address Register, 2024-05-11. This does not constitute an endorsement by Statistics Canada of this product.)"},{"address_components":{"number":"1115","street":"Dunning","suffix":"Rd","formatted_street":"Dunning Rd","city":"Cumberland","state":"ON","zip":"K4C","country":"CA"},"address_lines":["1115 Dunning Rd","","Cumberland, ON K4C"],"formatted_address":"1115 Dunning Rd, Cumberland, ON K4C","location":{"lat":45.51494,"lng":-75.404583},"accuracy":0.9,"accuracy_type":"range_interpolation","source":"CanVec+ by Natural Resources Canada"},{"address_components":{"number":"1115","street":"Dunning","suffix":"Rd","formatted_street":"Dunning Rd","city":"Cumberland","state":"ON","zip":"K4C","country":"CA"},"address_lines":["1115 Dunning Rd","","Cumberland, ON K4C"],"formatted_address":"1115 Dunning Rd, Cumberland, ON K4C","location":{"lat":45.515333,"lng":-75.404434},"accuracy":0.9,"accuracy_type":"range_interpolation","source":"CanVec+ by Natural Resources Canada"}]}

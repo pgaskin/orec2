@@ -1,0 +1,27 @@
+GET /v1.9/geocode?country=CA&q=200+Glen+Park+Drive%0AOttawa+ON+K1B+5A3%0ACanada HTTP/1.1
+Host: api.geocod.io
+Authorization: redacted-65ffda17
+User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
+
+HTTP/2.0 200 OK
+Access-Control-Allow-Headers: Content-Type, User-Agent
+Access-Control-Allow-Methods: GET, POST, PATCH, DELETE
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Request-Handler
+Cache-Control: no-cache, private
+Content-Security-Policy: default-src 'none';
+Content-Type: application/json
+Date: Thu, 25 Sep 2025 15:54:53 GMT
+Request-Handler: api296
+Server: Unicorns with magic wands (https://www.geocod.io)
+X-Billable-Fields-Count: 0
+X-Billable-Lookups-Count: 1
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Period: 60
+X-Ratelimit-Remaining: 975
+X-Request-Id: 40EC870A:6C50_05A11518:01BB_68D565CB_3386F:AC6E
+X-Xss-Protection: 1; mode=block
+
+{"input":{"address_components":{"number":"200","street":"Glen Park","suffix":"Dr","formatted_street":"Glen Park Dr","city":"Ottawa","state":"ON","zip":"K1B 5A3","country":"CA"},"formatted_address":"200 Glen Park Dr, Ottawa, ON K1B 5A3"},"results":[{"address_components":{"number":"200","street":"Glen Park","suffix":"Dr","formatted_street":"Glen Park Dr","city":"Gloucester","state":"ON","zip":"K1B","country":"CA"},"address_lines":["200 Glen Park Dr","","Gloucester, ON K1B"],"formatted_address":"200 Glen Park Dr, Gloucester, ON K1B","location":{"lat":45.430336,"lng":-75.563126},"accuracy":1,"accuracy_type":"rooftop","source":"City of Ottawa (Open Government Licence \u2013 City of Ottawa Contains information licensed under the Open Government Licence \u2013 City of Ottawa)"},{"address_components":{"number":"200","street":"Glynn","suffix":"Ave","formatted_street":"Glynn Ave","city":"Ottawa","state":"ON","zip":"K1K","country":"CA"},"address_lines":["200 Glynn Ave","","Ottawa, ON K1K"],"formatted_address":"200 Glynn Ave, Ottawa, ON K1K","location":{"lat":45.425915,"lng":-75.658633},"accuracy":0.5,"accuracy_type":"rooftop","source":"City of Ottawa (Open Government Licence \u2013 City of Ottawa Contains information licensed under the Open Government Licence \u2013 City of Ottawa)"}]}
