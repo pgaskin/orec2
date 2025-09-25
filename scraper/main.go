@@ -40,18 +40,21 @@ import (
 )
 
 var (
-	Scrape       = flag.String("scrape", "", "parse data from pages, writing the protobuf to the specified file")
-	NoFetch      = flag.Bool("no-fetch", false, "don't fetch pages not in cache")
-	CacheDir     = flag.String("cache-dir", "", "cache pages in the specified directory")
-	Geocodio     = flag.Bool("geocodio", false, "use geocodio for geocoding (set GEOCODIO_APIKEY)")
-	PageQPS      = flag.Float64("page-qps", 0.5, "maximum page fetches per second")
-	PlaceListing = flag.String("place-listing", "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing", "place listing url to start scraping from")
-	UserAgent    = flag.String("user-agent", defaultUserAgent(), "user agent for requests")
-	Zyte         = flag.Bool("zyte", false, "use zyte (set ZYTE_APIKEY)")
-	ZyteLimit    = flag.Int("zyte-limit", 150, "zyte request limit")
-)
+	Scrape   = flag.String("scrape", "", "parse data from pages, writing the protobuf to the specified file")
+	NoFetch  = flag.Bool("no-fetch", false, "don't fetch pages not in cache")
+	CacheDir = flag.String("cache-dir", "", "cache pages in the specified directory")
 
-var ScraperSecret = os.Getenv("OTTCA_SCRAPER_SECRET")
+	PageQPS       = flag.Float64("page-qps", 0.5, "maximum page fetches per second")
+	UserAgent     = flag.String("user-agent", defaultUserAgent(), "user agent for requests")
+	ScraperSecret = os.Getenv("OTTCA_SCRAPER_SECRET")
+
+	Geocodio       = flag.Bool("geocodio", false, "use geocodio for geocoding (set GEOCODIO_APIKEY)")
+	GeocodioAPIKey = os.Getenv("GEOCODIO_APIKEY")
+
+	Zyte       = flag.Bool("zyte", false, "use zyte (set ZYTE_APIKEY)")
+	ZyteLimit  = flag.Int("zyte-limit", 150, "zyte request limit")
+	ZyteAPIKey = os.Getenv("ZYTE_APIKEY")
+)
 
 func defaultUserAgent() string {
 	var ua strings.Builder
@@ -83,7 +86,7 @@ var pageLimit = sync.OnceValue(func() *rate.Limiter {
 var zyteClient = sync.OnceValue(func() *http.Client {
 	return &http.Client{
 		Transport: &zyte.Transport{
-			APIKey: os.Getenv("ZYTE_APIKEY"),
+			APIKey: ZyteAPIKey,
 			Limit:  zyte.FixedLimit(*ZyteLimit),
 			Retry: func(ctx context.Context, tries, code int) bool {
 				if tries >= 3 {
@@ -101,8 +104,8 @@ func init() {
 	if ScraperSecret != "" {
 		http.DefaultTransport = redactedHeaderRoundTripper(http.DefaultTransport, ".ottawa.ca", "X-Scraper-Secret", "", ScraperSecret)
 	}
-	if apikey := os.Getenv("GEOCODIO_APIKEY"); apikey != "" {
-		http.DefaultTransport = redactedHeaderRoundTripper(http.DefaultTransport, "api.geocod.io", "Authorization", "Bearer ", apikey)
+	if GeocodioAPIKey != "" {
+		http.DefaultTransport = redactedHeaderRoundTripper(http.DefaultTransport, "api.geocod.io", "Authorization", "Bearer ", GeocodioAPIKey)
 	}
 	http.DefaultClient.Transport = http.DefaultTransport
 	http.DefaultClient.Jar, _ = cookiejar.New(nil)
@@ -147,9 +150,11 @@ func run(ctx context.Context) error {
 		slog.Info("using scraper secret")
 	}
 	var (
-		data      schema.Data_builder
-		geoAttrib = map[string]struct{}{}
-		cur       = *PlaceListing
+		data       schema.Data_builder
+		geoAttrib  = map[string]struct{}{}
+		listing    = "https://ottawa.ca/en/recreation-and-parks/facilities/place-listing"
+		cur        = listing
+		facilities int
 	)
 	for cur != "" {
 		doc, _, err := fetchPage(ctx, cur)
@@ -174,6 +179,7 @@ func run(ctx context.Context) error {
 			facility.Source = schema.Source_builder{
 				Url: u.String(),
 			}.Build()
+			facilities++
 
 			if !*Geocodio {
 				// skip geocoding
@@ -399,9 +405,12 @@ func run(ctx context.Context) error {
 		}
 		cur = nextURL.String()
 	}
+	if facilities < 100 {
+		return fmt.Errorf("less than 100 facilities returned, something might be wrong")
+	}
 	if *Scrape != "" {
 		data.Attribution = append(data.Attribution, "Compiled data © Patrick Gaskin. https://github.com/pgaskin/orec2")
-		data.Attribution = append(data.Attribution, "Facility information and schedules © City of Ottawa. "+*PlaceListing)
+		data.Attribution = append(data.Attribution, "Facility information and schedules © City of Ottawa. "+listing)
 		for _, attrib := range slices.Sorted(maps.Keys(geoAttrib)) {
 			data.Attribution = append(data.Attribution, "Address data "+strings.TrimPrefix(attrib, "Data "))
 		}
@@ -1102,7 +1111,7 @@ func parseClockRange(s string) (r schema.ClockRange, ok bool) {
 	return schema.ClockRange{Start: t1, End: t2}, true
 }
 
-var cutDateRangeRe = sync.OnceValue[*regexp.Regexp](func() *regexp.Regexp {
+var cutDateRangeRe = sync.OnceValue(func() *regexp.Regexp {
 	var b strings.Builder
 	b.WriteString(`(?i)`)                 // case-insensitive
 	b.WriteString(`^`)                    // anchor
