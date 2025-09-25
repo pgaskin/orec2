@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/pat-clark-community-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=yLPbHSCeQdC7zAnn5gFKU0I102gAAAAAQUIPAAAAAADc5guViRJc45xR0oM1VpDS; nlbi_243507=OXuuYdDh32iK6sj1aXmSIAAAAACQBvE7R7u+w94UZJ0Wx7/Z; incap_ses_1842_243507=YZr4Y/MTYTV4EzkfxxmQGUI102gAAAAAJ4PNiqoqtcMaNjOB7Z3utw==
+Cookie: visid_incap_243507=Z5ZieIQoRXGa8II6ZsPGxsSG1GgAAAAAQUIPAAAAAAB+oDawoWb1g9u7zCHBBJpb; nlbi_243507=uoTWUoHdhgECLRvEaXmSIAAAAAAFAA45GIMsQh2FOuScPUGj; incap_ses_1249_243507=6NNqepfdxGFOrosVRldVEcSG1GgAAAAA6ilmEmdOEMblGBoA3troEw==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,17 +8,17 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 562
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Wed, 24 Sep 2025 00:06:26 GMT
-Etag: "1758671823-gzip"
+Date: Thu, 25 Sep 2025 00:06:27 GMT
+Etag: "1758758787-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Tue, 23 Sep 2025 23:57:03 GMT
-Set-Cookie: visid_incap_243507=yLPbHSCeQdC7zAnn5gFKU0I102gAAAAAQUIPAAAAAADc5guViRJc45xR0oM1VpDS; expires=Wed, 23 Sep 2026 07:29:40 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Thu, 25 Sep 2025 00:06:27 GMT
+Set-Cookie: visid_incap_243507=Z5ZieIQoRXGa8II6ZsPGxsSG1GgAAAAAQUIPAAAAAAB+oDawoWb1g9u7zCHBBJpb; expires=Thu, 24 Sep 2026 06:55:10 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
@@ -28,8 +28,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 51-63866010-63866027 SNNN RT(1758672194320 192489) q(0 0 0 -1) r(0 0) U24
-X-Varnish: 51902489 59031582
+X-Iinfo: 13-71181855-71181857 SNNy RT(1758758596295 190690) q(0 0 0 -1) r(9 9) U24
+X-Varnish: 53507010
 
 a0ee
 
@@ -184,7 +184,7 @@ a0ee
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1f48dc50f7af8f2fe09bb20431df7633a7df90c69b4b34445e1537d61e18c3cc">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-364c5bf26e5413346b857e30f2abc6ec280d71a43dcde301082fe1e9fd2b7d3b">
   
     
       
@@ -198,7 +198,7 @@ a0ee
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-802ab01b46e6ad65355f4ebc6047add527ea4285e854f4af9232b4c5e769c392">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-68edc8277f29a9233a3dc707415897323c60aa65a33564c0bddd1a811496457d">
   
     
       
@@ -444,7 +444,7 @@ a0ee
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-9a0c8b120d32eb766866ba7611ffa2cac48c1381b8c7f1403222b50adadf728f">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-9ab63643629a53bf261de7f7e4115b8261b72ae4cdeb8c6a644e2a5c1bb5664b">
   
     
       <div class="view-header">

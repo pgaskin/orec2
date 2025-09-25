@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/sandy-hill-arena HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=yLPbHSCeQdC7zAnn5gFKU0I102gAAAAAQUIPAAAAAADc5guViRJc45xR0oM1VpDS; nlbi_243507=OXuuYdDh32iK6sj1aXmSIAAAAACQBvE7R7u+w94UZJ0Wx7/Z; incap_ses_1842_243507=YZr4Y/MTYTV4EzkfxxmQGUI102gAAAAAJ4PNiqoqtcMaNjOB7Z3utw==
+Cookie: visid_incap_243507=Z5ZieIQoRXGa8II6ZsPGxsSG1GgAAAAAQUIPAAAAAAB+oDawoWb1g9u7zCHBBJpb; nlbi_243507=uoTWUoHdhgECLRvEaXmSIAAAAAAFAA45GIMsQh2FOuScPUGj; incap_ses_1249_243507=6NNqepfdxGFOrosVRldVEcSG1GgAAAAA6ilmEmdOEMblGBoA3troEw==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,17 +8,17 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 546
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Wed, 24 Sep 2025 00:06:55 GMT
-Etag: "1758672414-gzip"
+Date: Thu, 25 Sep 2025 00:06:55 GMT
+Etag: "1758758267-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Wed, 24 Sep 2025 00:06:54 GMT
-Set-Cookie: visid_incap_243507=yLPbHSCeQdC7zAnn5gFKU0I102gAAAAAQUIPAAAAAADc5guViRJc45xR0oM1VpDS; expires=Wed, 23 Sep 2026 07:29:40 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Wed, 24 Sep 2025 23:57:47 GMT
+Set-Cookie: visid_incap_243507=Z5ZieIQoRXGa8II6ZsPGxsSG1GgAAAAAQUIPAAAAAAB+oDawoWb1g9u7zCHBBJpb; expires=Thu, 24 Sep 2026 06:55:10 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
@@ -28,8 +28,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 51-63866010-63866027 SNNN RT(1758672194320 220575) q(0 1 1 -1) r(11 11) U24
-X-Varnish: 58632351
+X-Iinfo: 13-71181855-71181857 SNNy RT(1758758596295 218693) q(0 0 0 -1) r(1 1) U24
+X-Varnish: 60004116 60074403
 
 afac
 
@@ -184,7 +184,7 @@ afac
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5f6d46753999df0564f34f70fcfb61da3035d898f864b9b8b72d68de5eeedb3e">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-1cb6e8e6c0217b99db37b65887ff3888d7e39f1b9f1c2db5fe5cb58667310c0d">
   
     
       
@@ -198,7 +198,7 @@ afac
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-4181c11590cad2d90a59cfab013047712acadcb2511fe787d0379f8613884337">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-8a3d687cc788014dfa8bd632297d76f489017d5700d404d5c317518301349320">
   
     
       
@@ -369,7 +369,7 @@ afac
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c012ebf9f629c8277f2655197c7cf1891be0582dd4f2a03d86fd2adbf493d564">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-e0d7ddf1c1ce2f8b4a2839b050839bb877e3feb689d740947951c848bcc5cad2">
   
     
       
@@ -383,7 +383,7 @@ afac
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-dd66d11739ba1a5f0039bd0cd9bfe5a2543ab842e723dc7340c438cc4b005d35">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-fee882dcca3de2ff8bed6efae9fb7ac279b8fd459016a35b77909a1216ec2b82">
   
     
       
@@ -573,7 +573,7 @@ afac
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-cea17f02f799493796d1ac964ec33ee6884bc53cf951335aef1bc6ca3fb7559a">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-74d3649247390d2d49b3c8b087a47ffcab945c8160e0515c488b604ac3720636">
   
     
       
@@ -587,7 +587,7 @@ afac
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0c30673668eb36ea083a55172d05063865cfcfbe04d42196d718f12aab66acc5">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-008784f32b427e02884c37788e44788253252f3b8ab09a3a62bc54aa1167a94e">
   
     
       
@@ -786,7 +786,7 @@ afac
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-428686d6593defdfa2d251adc8f5ef177162195e6aba66b4219c72a0a58074a1">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-2e7a489f7555608dce336d05e6f1206e7aa14b90e91336b4ad56e4d647e4a233">
   
     
       <div class="view-header">

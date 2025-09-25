@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/south-fallingbrook-community-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=yLPbHSCeQdC7zAnn5gFKU0I102gAAAAAQUIPAAAAAADc5guViRJc45xR0oM1VpDS; nlbi_243507=OXuuYdDh32iK6sj1aXmSIAAAAACQBvE7R7u+w94UZJ0Wx7/Z; incap_ses_1842_243507=YZr4Y/MTYTV4EzkfxxmQGUI102gAAAAAJ4PNiqoqtcMaNjOB7Z3utw==
+Cookie: visid_incap_243507=Z5ZieIQoRXGa8II6ZsPGxsSG1GgAAAAAQUIPAAAAAAB+oDawoWb1g9u7zCHBBJpb; nlbi_243507=uoTWUoHdhgECLRvEaXmSIAAAAAAFAA45GIMsQh2FOuScPUGj; incap_ses_1249_243507=6NNqepfdxGFOrosVRldVEcSG1GgAAAAA6ilmEmdOEMblGBoA3troEw==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,17 +8,17 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 535
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Wed, 24 Sep 2025 00:07:03 GMT
-Etag: "1758672423-gzip"
+Date: Thu, 25 Sep 2025 00:07:03 GMT
+Etag: "1758758285-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Wed, 24 Sep 2025 00:07:03 GMT
-Set-Cookie: visid_incap_243507=yLPbHSCeQdC7zAnn5gFKU0I102gAAAAAQUIPAAAAAADc5guViRJc45xR0oM1VpDS; expires=Wed, 23 Sep 2026 07:29:40 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Wed, 24 Sep 2025 23:58:05 GMT
+Set-Cookie: visid_incap_243507=Z5ZieIQoRXGa8II6ZsPGxsSG1GgAAAAAQUIPAAAAAAB+oDawoWb1g9u7zCHBBJpb; expires=Thu, 24 Sep 2026 06:55:10 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
@@ -28,8 +28,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 51-63866010-63866027 SNNN RT(1758672194320 228684) q(0 1 1 -1) r(9 9) U24
-X-Varnish: 51902517
+X-Iinfo: 13-71181855-71181857 SNNy RT(1758758596295 226680) q(0 0 0 -1) r(1 1) U24
+X-Varnish: 59718939 42822172
 
 b697
 
@@ -184,7 +184,7 @@ b697
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5a0b89515b823f5da43c30eca6b112220f074e858482b7ab7b16582c947c9a07">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-2e6108113d3142b8003d83b790f04f1362aeb986a27f499788396526114d464c">
   
     
       
@@ -198,7 +198,7 @@ b697
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-39612f8d6be4298a4a71f8d39177f83eb0f99ec46f961b782ba50e476d87920e">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-24af3041f959be2dbe0dc9f7fff2ac68055aa8cbeae1651708fdf526fb2d2b2e">
   
     
       
@@ -398,7 +398,7 @@ b697
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c101844566b409fc96ab884d756fb7763f9c15514c742a79ae4bcb15d84ee2bd">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-4d45a8ca6bf7dce01907302b9c29a73285671139612c05372aa9a648a31ba22a">
   
     
       
@@ -412,7 +412,7 @@ b697
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-768e4227e71c83a8d767b49d42a7f5cf9e9ca5063a597acfb88f03c81d6765ad">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-768fce4e488f179dffd726c66a051e7884128cf7dcef7d616fbfed5b4313c885">
   
     
       
@@ -727,7 +727,7 @@ b697
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-f8d17ee1055b19e26f9f567b9c116ccfe0d19a9bba4093904add5dde71433e2a">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-8ceb2673769df02b7650195b2831a43a9c7b94c689a78a7d52e232f831a43b92">
   
     
       <div class="view-header">
