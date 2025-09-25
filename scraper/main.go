@@ -11,14 +11,12 @@ import (
 	"errors"
 	"flag"
 	"fmt"
-	"io"
 	"io/fs"
 	"log/slog"
 	"maps"
 	"net/http"
 	"net/http/cookiejar"
 	"net/http/httputil"
-	"net/textproto"
 	"net/url"
 	"os"
 	"path/filepath"
@@ -31,6 +29,7 @@ import (
 	"unicode"
 
 	"github.com/PuerkitoBio/goquery"
+	"github.com/pgaskin/orec2/internal/zyte"
 	"github.com/pgaskin/orec2/schema"
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
@@ -79,6 +78,23 @@ var geocodioLimit = sync.OnceValue(func() *rate.Limiter {
 
 var pageLimit = sync.OnceValue(func() *rate.Limiter {
 	return rate.NewLimiter(rate.Limit(*PageQPS), 1)
+})
+
+var zyteClient = sync.OnceValue(func() *http.Client {
+	return &http.Client{
+		Transport: &zyte.Transport{
+			APIKey: os.Getenv("ZYTE_APIKEY"),
+			Limit:  zyte.FixedLimit(*ZyteLimit),
+			Retry: func(ctx context.Context, tries, code int) bool {
+				if tries >= 3 {
+					return false
+				}
+				slog.Warn("zyte temporary error, retrying in a second")
+				return true
+			},
+			FollowRedirect: true,
+		},
+	}
 })
 
 func init() {
@@ -543,7 +559,7 @@ func fetch(ctx context.Context, u string, cacheType, cacheKey string, limiter *r
 		}
 
 		if proxy && *Zyte {
-			resp, err = zyte(req, true)
+			resp, err = zyteClient().Do(req)
 		} else {
 			req.Header.Set("User-Agent", *UserAgent)
 			resp, err = http.DefaultClient.Do(req)
@@ -573,178 +589,6 @@ func fetch(ctx context.Context, u string, cacheType, cacheKey string, limiter *r
 		return nil, fmt.Errorf("response status %d", resp.StatusCode)
 	}
 	return resp, nil
-}
-
-// zyte does a request through zyte.
-func zyte(req *http.Request, followRedirect bool) (*http.Response, error) {
-	ctx := req.Context()
-
-	zreqObj := map[string]any{
-		"httpResponseBody":    true,
-		"httpResponseHeaders": true,
-		"url":                 req.URL.String(),
-		"followRedirect":      followRedirect,
-	}
-	if req.Method != http.MethodGet {
-		zreqObj["httpRequestMethod"] = req.Method
-	}
-	if req.Body != nil {
-		defer req.Body.Close()
-		buf, err := io.ReadAll(req.Body)
-		if err != nil {
-			return nil, fmt.Errorf("prepare body: %w", err)
-		}
-		req.GetBody = func() (io.ReadCloser, error) {
-			return io.NopCloser(bytes.NewReader(buf)), nil
-		}
-		req.Body, _ = req.GetBody()
-		zreqObj["httpRequestBody"] = buf // base64
-	}
-	if cookies := req.Cookies(); len(cookies) != 0 {
-		return nil, fmt.Errorf("cookies not supported")
-	}
-	if len(req.Header) != 0 {
-		var obj []any
-		for _, k := range slices.Sorted(maps.Keys(req.Header)) {
-			if v := req.Header[k]; len(v) != 0 {
-				obj = append(obj, map[string]any{
-					"name":  k,
-					"value": strings.Join(v, ","),
-				})
-			}
-		}
-		zreqObj["customHttpRequestHeaders"] = obj
-	}
-	zreqBuf, err := json.Marshal(zreqObj)
-	if err != nil {
-		return nil, fmt.Errorf("prepare request: %w", err)
-	}
-
-	var zrespObj struct {
-		URL                 string  `json:"url"`
-		StatusCode          int     `json:"statusCode"`
-		HTTPResponseBody    *[]byte `json:"httpResponseBody"` // base64
-		HTTPResponseHeaders *[]struct {
-			Name  string `json:"name"`
-			Value string `json:"value"`
-		} `json:"httpResponseHeaders"`
-	}
-	retryBanLimit := 3
-	for {
-		if *ZyteLimit == 0 {
-			return nil, fmt.Errorf("zyte request limit reached")
-		}
-
-		zreq, err := http.NewRequestWithContext(ctx, http.MethodPost, "https://api.zyte.com/v1/extract", bytes.NewReader(zreqBuf))
-		if err != nil {
-			return nil, fmt.Errorf("prepare request: %w", err)
-		}
-		if apikey := os.Getenv("ZYTE_APIKEY"); apikey != "" {
-			zreq.SetBasicAuth(apikey, "")
-		} else {
-			return nil, fmt.Errorf("no api key")
-		}
-
-		zresp, err := http.DefaultClient.Do(zreq)
-		if err != nil {
-			return nil, err
-		}
-		if zresp.StatusCode == http.StatusTooManyRequests {
-			s := zresp.Header.Get("Retry-After")
-			slog.Warn("zyte rate limit", "retry-after", s)
-			if retryAfter, err := http.ParseTime(s); err == nil {
-				select {
-				case <-ctx.Done():
-					return nil, ctx.Err()
-				case <-time.After(time.Until(retryAfter)):
-					continue
-				}
-			}
-			if retryAfter, err := strconv.Atoi(s); err == nil {
-				select {
-				case <-ctx.Done():
-					return nil, ctx.Err()
-				case <-time.After(time.Second * time.Duration(retryAfter)):
-					continue
-				}
-			}
-			return nil, fmt.Errorf("failed to parse rate-limit retry-after %q", s)
-		}
-		if (zresp.StatusCode == 500 || zresp.StatusCode == 520) && retryBanLimit > 0 {
-			slog.Warn("zyte temporary error, retrying in a second")
-			time.Sleep(time.Second)
-			retryBanLimit--
-			continue
-		}
-		if *ZyteLimit > 0 {
-			*ZyteLimit--
-		}
-		if zresp.StatusCode == http.StatusOK {
-			if err := json.NewDecoder(zresp.Body).Decode(&zrespObj); err != nil {
-				return nil, fmt.Errorf("parse response: %w", err)
-			}
-			if zrespObj.StatusCode == 0 || zrespObj.URL == "" || zrespObj.HTTPResponseBody == nil || zrespObj.HTTPResponseHeaders == nil {
-				return nil, fmt.Errorf("parse response: missing fields")
-			}
-			break
-		}
-		var zerr struct {
-			Type   string `json:"type"`
-			Title  string `json:"title"`
-			Status int    `json:"status"`
-			Detail string `json:"detail"`
-		}
-		if zrespBuf, err := io.ReadAll(zresp.Body); err != nil {
-			return nil, fmt.Errorf("read error %d response: %w", zresp.StatusCode, err)
-		} else if err := json.Unmarshal(zrespBuf, &zerr); err != nil {
-			if len(zrespBuf) > 1024 {
-				zrespBuf = zrespBuf[:1024]
-			}
-			return nil, fmt.Errorf("parse error %d response %q: %w", zresp.StatusCode, string(zrespBuf), err)
-		}
-		return nil, fmt.Errorf("zyte error %d: %s: %s", zerr.Status, zerr.Title, zerr.Detail)
-	}
-
-	freq := req.Clone(ctx)
-	if ru, err := url.Parse(zrespObj.URL); err != nil {
-		return nil, fmt.Errorf("parse response url: %w", err)
-	} else {
-		freq.URL = ru
-		freq.Host = ru.Host
-	}
-	freq.Header["xxx-use-proxy"] = []string{"zyte"}
-
-	fresp := &http.Response{
-		Status:     http.StatusText(zrespObj.StatusCode),
-		StatusCode: zrespObj.StatusCode,
-		Proto:      req.Proto,
-		ProtoMajor: req.ProtoMajor,
-		ProtoMinor: req.ProtoMinor,
-		Request:    freq,
-		Header:     http.Header{},
-		Close:      true,
-	}
-	for _, h := range *zrespObj.HTTPResponseHeaders {
-		fresp.Header[h.Name] = append(fresp.Header[h.Name], h.Value)
-	}
-	if buf := *zrespObj.HTTPResponseBody; len(buf) != 0 {
-		for k := range fresp.Header {
-			if textproto.CanonicalMIMEHeaderKey(k) == "Content-Encoding" {
-				fresp.ContentLength = -1
-				fresp.Uncompressed = true
-				delete(fresp.Header, k)
-			}
-		}
-		if fresp.Uncompressed {
-			for k := range fresp.Header {
-				if textproto.CanonicalMIMEHeaderKey(k) == "Content-Length" {
-					delete(fresp.Header, k)
-				}
-			}
-		}
-		fresp.Body = io.NopCloser(bytes.NewReader(buf))
-	}
-	return fresp, nil
 }
 
 // resolve resolves the href from an element against the document.
