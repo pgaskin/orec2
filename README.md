@@ -53,3 +53,13 @@ git \
 - Overlapping schedules (e.g., holiday schedules) are not merged. These schedules are not consistently formatted as they are manually named and created, so although I attempt to parse time ranges, I don't use them to merge schedules. This helps keep the scraper reliable and reduces the likelihood of accidentally missing important information.
 - Any potential parsing problems are included in an array of error messages for each facility.
 - A protobuf schema is used for maintainability, but it may be changed in backwards-incompatible ways if needed.
+
+### Data changes
+
+- **2025-09-16:** Switched to geocodio for geocoding. Facility longitude/latitude values are slightly different and generally more complete/accurate.
+- **2025-09-04:** Significantly improved `ScheduleGroup._title` and `Activity._name` normalization.
+- **2025-09-04:** Added new `Schedule._from` and `Schedule._to` parsed fields for the schedule date range.
+- **2025-09-01:** Made the `TimeRange._start` and `TimeRange._end` parsing automatically correct unambiguous typos.
+- **2025-09-01:** Run CSV export during daily updates.
+- **2025-09-01:** Switched to opaque protobuf API and protobuf 2023. Some fields now use explicit field presence.
+- **2025-04-18:** Initial release.
