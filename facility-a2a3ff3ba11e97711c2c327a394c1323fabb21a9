@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/jim-durrell-recreation-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=cJe1AIC4RfeJd0D8EdvaLDNl1WgAAAAAQUIPAAAAAABzziAQRkX7jjIazYcPQ/r9; nlbi_243507=F40ZBPlTwHLY4/0eaXmSIAAAAADaxxUZCS9Is1fLssnGVI8y; incap_ses_1847_243507=BVlyRKQjWxVCVH6FHd2hGTNl1WgAAAAAVfx1Iwzg1lExdaMwL8izaw==
+Cookie: visid_incap_243507=lCIKei7AQC2MG2m8qjZGvT3Y1WgAAAAAQUIPAAAAAACAqccEjCb5t/Gprg6f/Pl4; nlbi_243507=pE+ICFWdDkj8f3++aXmSIAAAAADLgVjqH/5KAg5N9IGTGSZv; incap_ses_482_243507=G9p9fFLHphtXKpYJ4miwBj3Y1WgAAAAAcudtHuMz2awedNKTGGGN+Q==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,28 +8,28 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 807
+Age: 0
 Cache-Control: max-age=2764800, public
-Cache-Tags: HIT
+Cache-Tags: MISS
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Thu, 25 Sep 2025 15:54:25 GMT
-Etag: "1758814856-gzip"
+Date: Fri, 26 Sep 2025 00:05:14 GMT
+Etag: "1758845113-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Thu, 25 Sep 2025 15:40:56 GMT
-Set-Cookie: visid_incap_243507=cJe1AIC4RfeJd0D8EdvaLDNl1WgAAAAAQUIPAAAAAABzziAQRkX7jjIazYcPQ/r9; expires=Fri, 25 Sep 2026 07:47:35 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Fri, 26 Sep 2025 00:05:13 GMT
+Set-Cookie: visid_incap_243507=lCIKei7AQC2MG2m8qjZGvT3Y1WgAAAAAQUIPAAAAAACAqccEjCb5t/Gprg6f/Pl4; expires=Fri, 25 Sep 2026 07:50:35 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
-Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
+Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
 X-Cdn: Imperva
 X-Content-Type-Options: nosniff
 X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 27-9591846-9591848 SNNy RT(1758815539482 126335) q(0 0 0 -1) r(0 0) U24
-X-Varnish: 58584583 59722574
+X-Iinfo: 6-18218184-18218185 SNNy RT(1758844990539 122761) q(0 1 1 -1) r(11 11) U24
+X-Varnish: 61737293
 
 cb1a
 
@@ -184,7 +184,7 @@ cb1a
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ea82389c01f27d42d779613a5f83e7efe3727cc5783bf6e04161b8275d684f61">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-fa0e67a58fadbb93f1e6ba540817e67779d8441787da39a38a4758da24f3a443">
   
     
       
@@ -198,7 +198,7 @@ cb1a
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-0a75b98dbbf5c21a6bd6af24ca93c323159234fc479b0753f7d37eb2a72033e8">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-90edf85df7c0de0a3c1a0b6fe41e5b5370c4bd19b96df0c76a10dce31c5835ec">
   
     
       
@@ -464,7 +464,7 @@ cb1a
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-6f4f1edd92f3dae2ccb12879b6288f0db03c9adaaabc0c288a5773c9231bdca8">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-fb501e410a5e1f6b57476b1ddcd72972fbc1d01db3b8007e91225d55c25928b5">
   
     
       
@@ -478,7 +478,7 @@ cb1a
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c4c1397808f9ae45436ef17e776a8de27a1d11108a3058ad00608c053f32f5de">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c5ccc47b02d83dd50d00b8c37c43813e1e5e4d571177a8c58a91216fa139b421">
   
     
       
@@ -664,7 +664,7 @@ cb1a
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-cd65f73ce59eccc26f6643445420f987cfbde456e9c886d1b1b7b415d1cc3f97">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-eca551323f281316efb1e721830b77a12f84424b2ecc9c3e64364441e8d0e10f">
   
     
       
@@ -678,7 +678,7 @@ cb1a
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-679c77510dc37ab4ee1f9eca7e712cca46681d3e7af7f43d23a8e0f1c38a9d51">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-5a50e2e32055447af6cac6ac9e56e7fb4f62d8301dcdc4652dac57bb25656d11">
   
     
       
@@ -925,7 +925,7 @@ cb1a
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-30d791208eed3adcf08db47721b718ca49f530f3fafb9e9588242f83f772aeb2">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-e06a614671b1259270bfeb2312f8360067c71baaf5f4b3b363e6193e16512beb">
   
     
       <div class="view-header">
