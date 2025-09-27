@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/rj-kennedy-community-centre-and-arena HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=lCIKei7AQC2MG2m8qjZGvT3Y1WgAAAAAQUIPAAAAAACAqccEjCb5t/Gprg6f/Pl4; nlbi_243507=pE+ICFWdDkj8f3++aXmSIAAAAADLgVjqH/5KAg5N9IGTGSZv; incap_ses_482_243507=G9p9fFLHphtXKpYJ4miwBj3Y1WgAAAAAcudtHuMz2awedNKTGGGN+Q==
+Cookie: visid_incap_243507=QbP7Jc69QFOGO4QOd3AAe8kp12gAAAAAQUIPAAAAAACaIt2XD9so8yv4xOH5aLdV; nlbi_243507=DG0YPRS75GlaF5zHaXmSIAAAAAAQcf6RAoss1Jd+QTHMKS1Y; incap_ses_173_243507=bTUhBy0oGkeMrfCMMZ9mAskp12gAAAAAkVTGOgiBf/Mrx6OsQxyalQ==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,17 +8,17 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 692
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Fri, 26 Sep 2025 00:06:33 GMT
-Etag: "1758845191-gzip"
+Date: Sat, 27 Sep 2025 00:06:37 GMT
+Etag: "1758930903-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Fri, 26 Sep 2025 00:06:31 GMT
-Set-Cookie: visid_incap_243507=lCIKei7AQC2MG2m8qjZGvT3Y1WgAAAAAQUIPAAAAAACAqccEjCb5t/Gprg6f/Pl4; expires=Fri, 25 Sep 2026 07:50:35 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Fri, 26 Sep 2025 23:55:03 GMT
+Set-Cookie: visid_incap_243507=QbP7Jc69QFOGO4QOd3AAe8kp12gAAAAAQUIPAAAAAACaIt2XD9so8yv4xOH5aLdV; expires=Sat, 26 Sep 2026 06:33:29 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-hsbv7 (Varnish/7.6)
@@ -28,8 +28,8 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 6-18218184-18218185 SNNy RT(1758844990539 200602) q(0 0 0 -1) r(19 19) U24
-X-Varnish: 61898937
+X-Iinfo: 57-153785260-153785264 SNNy RT(1758931401598 195950) q(0 0 0 -1) r(1 1) U24
+X-Varnish: 60291095 60545414
 
 9df7
 
@@ -184,7 +184,7 @@ X-Varnish: 61898937
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-dac065efc227af8dc848c0769144f7cd26df7df0fb0c1fde48321466bf4b6794">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-007d0edebbb10a37c72f66749bfc90532bfdb3e8fff3927542d1a9976cdfd44d">
   
     
       
@@ -198,7 +198,7 @@ X-Varnish: 61898937
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b57bc2282161af268b33ca068ee562e9c22a819531bd753d75a6519a46c4c6dc">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-b725e975bfb9cca407387de4ce9a8f4cb7a5eea6b19aa6153a181fdd38d55176">
   
     
       
@@ -374,7 +374,7 @@ X-Varnish: 61898937
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f22b73c5782122934215905beeb8a677ce42dc1ca707ee186ec8419c507f93ad">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-ab3efbee174e37c6629975a2c37ad0c9958ea095c62e73ec31ecf1787d3ff25e">
   
     
       
@@ -388,7 +388,7 @@ X-Varnish: 61898937
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-ceb62f1c2b3a47b323b912f9e43fd0e986a5dc0218a3081f25567539eebdc2f1">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-739c08998aef758fe21f6c8ef6731858ff082a582d30453802c3eb020356ca7d">
   
     
       
@@ -592,7 +592,7 @@ X-Varnish: 61898937
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-5eadbe02a2dfa5e639fafd9bba7abe71da05733e0b882d6ab9ddc897186e1642">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-264c71d13fbdeb1c128d5c406a5a57d1a59ff6664be12e6f24adafe61fef5a6d">
   
     
       <div class="view-header">

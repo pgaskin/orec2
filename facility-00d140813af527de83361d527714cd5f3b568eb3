@@ -1,6 +1,6 @@
 GET /en/recreation-and-parks/facilities/place-listing/hunt-club-riverside-park-community-centre HTTP/1.1
 Host: ottawa.ca
-Cookie: visid_incap_243507=lCIKei7AQC2MG2m8qjZGvT3Y1WgAAAAAQUIPAAAAAACAqccEjCb5t/Gprg6f/Pl4; nlbi_243507=pE+ICFWdDkj8f3++aXmSIAAAAADLgVjqH/5KAg5N9IGTGSZv; incap_ses_482_243507=G9p9fFLHphtXKpYJ4miwBj3Y1WgAAAAAcudtHuMz2awedNKTGGGN+Q==
+Cookie: visid_incap_243507=QbP7Jc69QFOGO4QOd3AAe8kp12gAAAAAQUIPAAAAAACaIt2XD9so8yv4xOH5aLdV; nlbi_243507=DG0YPRS75GlaF5zHaXmSIAAAAAAQcf6RAoss1Jd+QTHMKS1Y; incap_ses_173_243507=bTUhBy0oGkeMrfCMMZ9mAskp12gAAAAAkVTGOgiBf/Mrx6OsQxyalQ==
 User-Agent: ottawa-rec-scraper-bot/0.1 (github.com/pgaskin/orec2)
 X-Scraper-Secret: redacted-143b6237
 
@@ -8,17 +8,17 @@ HTTP/1.1 200 OK
 Transfer-Encoding: chunked
 Accept-Ranges: bytes
 Access-Control-Allow-Origin: *
-Age: 0
+Age: 595
 Cache-Control: max-age=2764800, public
-Cache-Tags: MISS
+Cache-Tags: HIT
 Connection: keep-alive
 Content-Language: en
 Content-Type: text/html; charset=UTF-8
-Date: Fri, 26 Sep 2025 00:05:06 GMT
-Etag: "1758845105-gzip"
+Date: Sat, 27 Sep 2025 00:05:13 GMT
+Etag: "1758930917-gzip"
 Expires: Sun, 19 Nov 1978 05:00:00 GMT
-Last-Modified: Fri, 26 Sep 2025 00:05:05 GMT
-Set-Cookie: visid_incap_243507=lCIKei7AQC2MG2m8qjZGvT3Y1WgAAAAAQUIPAAAAAACAqccEjCb5t/Gprg6f/Pl4; expires=Fri, 25 Sep 2026 07:50:35 GMT; HttpOnly; path=/; Domain=.ottawa.ca
+Last-Modified: Fri, 26 Sep 2025 23:55:17 GMT
+Set-Cookie: visid_incap_243507=QbP7Jc69QFOGO4QOd3AAe8kp12gAAAAAQUIPAAAAAACaIt2XD9so8yv4xOH5aLdV; expires=Sat, 26 Sep 2026 06:33:29 GMT; HttpOnly; path=/; Domain=.ottawa.ca
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Vary: Cookie,Accept-Encoding
 Via: 1.1 coo-prod-ottca-httpcache-kube-httpcache-5649cb78b8-gm87m (Varnish/7.6)
@@ -28,10 +28,10 @@ X-Drupal-Cache: MISS
 X-Drupal-Dynamic-Cache: MISS
 X-Frame-Options: ALLOW-FROM https://myservice.ottawa.ca
 X-Generator: Drupal 10 (https://www.drupal.org)
-X-Iinfo: 6-18218184-18218185 SNNy RT(1758844990539 114761) q(0 1 1 -1) r(11 11) U24
-X-Varnish: 61737275
+X-Iinfo: 57-153785260-153785264 SNNy RT(1758931401598 111982) q(0 0 0 -1) r(1 1) U24
+X-Varnish: 62889736 62729723
 
-101b8
+10238
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="h-100">
@@ -42,7 +42,7 @@ X-Varnish: 61737275
 <link rel="canonical" href="https://ottawa.ca/en/recreation-and-parks/facilities/place-listing/hunt-club-riverside-park-community-centre" />
 <meta name="dcterms.title" content="Hunt Club-Riverside Park Community Centre" />
 <meta name="dcterms.creator" content="Recreation, Cultural and Facility Services" />
-<meta name="dcterms.date" content="2025-09-24" />
+<meta name="dcterms.date" content="2025-09-26" />
 <meta name="dcterms.language" content="en" />
 <meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
 <meta name="MobileOptimized" content="width" />
@@ -184,7 +184,7 @@ X-Varnish: 61737275
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-f205757d9ee2ad2b835ea6cb2db937e15a449ca6a6208289fb58909e09b5899b">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-427a6cb78ef801c3165e44ece2d40d349d646c7abef7f0d4ac95c44812936502">
   
     
       
@@ -198,7 +198,7 @@ X-Varnish: 61737275
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c637b8e4a4a319c858f5a3301c4dfe829c6c24707158c3e424d4eda171167080">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-7c7573105f868d823dcdf0e2d99b092b187ff3ec5b1ee729cbbf24cf11b6a859">
   
     
       
@@ -271,7 +271,7 @@ X-Varnish: 61737275
 
 
   
-            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Schedule change</h2>
+            <div class="field field--name-field-special-hours field--type-string field--label-hidden field__item"><h2  class="h3">Special hours</h2>
 </div>
       
 
@@ -280,6 +280,14 @@ X-Varnish: 61737275
 
   
             <div class="clearfix text-formatted field field--name-field-hours-details field--type-text-long field--label-hidden field__item"><ul>
+<li><strong>Friday, September 26</strong>
+<ul>
+<li>Facility closing at 7 pm</li>
+</ul>
+</li>
+</ul>
+<h3>Schedule change</h3>
+<ul>
 <li><strong>Monday, September 29</strong>
 <ul>
 <li>All pickleball, cancelled</li>
@@ -467,7 +475,7 @@ X-Varnish: 61737275
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-694c8d31b6cb9e20fc480cf6d83681607c538adf81f02eb95d83e441add01b1a">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-69d289e5e2bf7f229ca89e1064ef37558d8d4fc5eca7f7726b3585ac29055f58">
   
     
       
@@ -481,7 +489,7 @@ X-Varnish: 61737275
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-159482ee336f633d52b06089d5f89321ecf3d5ef6b5a071ccda057d128e1292d">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-6e2a775389bd39f37c0d1ccb794c9871312ca88ba2bd6f2f4e43cbf9569c0bf9">
   
     
       
@@ -614,7 +622,7 @@ X-Varnish: 61737275
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-78b1243e5b0469ceaa110f646bbea0f714bf259a90bd0a572fbe8c99463225af">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-21a1590ae76d878ba516bd15bdd0b51af30e82ed28fe83862724aa633cc06825">
   
     
       
@@ -628,7 +636,7 @@ X-Varnish: 61737275
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1cac04ac0a9cb765e948f0b1f49dc0dba6a98de82ed4debce63ff27f9551d689">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-1dd8ddc96f7a6cbe0b778a7671eb8fe2695ef0a1232b53415d11b6941a480f17">
   
     
       
@@ -816,7 +824,7 @@ X-Varnish: 61737275
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-5e4079852ca598a652dc286e11f4d5db1b4ed980df5a027c1ab362fd755f9ac8">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-0b1e54d42b126be3df2fb353b36f33f790df02b6950c5d489f786e9ba4eef088">
   
     
       
@@ -830,7 +838,7 @@ X-Varnish: 61737275
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-895dec44d3e4ede78f1179385d007693b0ea7cd5db845d88b026063a3e991de4">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-c4bea51607335b641b5519c072aa09b81973a0e10f397b1546c2a8264ecd9fa9">
   
     
       
@@ -1031,7 +1039,7 @@ X-Varnish: 61737275
 
 
 
-  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-bcbd63d5b5a0ae062788c1a897efae547594322a29b0bcb2e7dbf3e7ddcac96d">
+  <div><div class="view view-alert view-id-alert view-display-id-alert_related_block js-view-dom-id-c255f037ea12a5bd6021af2b951e12b3c6d591771c181ec953d1a410c70df76f">
   
     
       
@@ -1045,7 +1053,7 @@ X-Varnish: 61737275
 
 
 
-  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-050b179c2f699581cba1375318432bd2f1fb4eb22af604715987107058ea2684">
+  <div><div class="view view-status view-id-status view-display-id-status_related_block js-view-dom-id-a695b9a2d5d331d9c4868599b384dcb24fa3cb5fc22c04f9eff597b7f76909d1">
   
     
       
@@ -1313,7 +1321,7 @@ X-Varnish: 61737275
 
 
 
-  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-9beba5675e0e4663ab2b7723f95eca9802476c3d5f94db8e118ded43a592707a">
+  <div><div class="view view-page-toc view-id-page_toc view-display-id-service_toc_block js-view-dom-id-ce305f6a0bbaee5a6d9c6fea82c2d01e50330292f0a88936497dd3d23dc9b4ca">
   
     
       <div class="view-header">
@@ -1710,7 +1718,7 @@ Thank you for considering to help out.
 <script src="https://siteimproveanalytics.com/js/siteanalyze_876116.js"></script>
 <script src="/sites/default/files/js/js_LGOBAu_Vx6h6WY2s156wrPbjz9it26eNE7C_B1TZSSA.js?scope=footer&amp;delta=5&amp;language=en&amp;theme=ottca_theme&amp;include=eJx9jk1uAyEMhS8Ew6b3QYaxqBODEZjMTE5fIlVVyKIb673PP89BRLs2qF8u_El765ZBsavBU5nK3e1tVODt15okkhi9QnJplk-_wQ3OFWbD8LzcqxhRjeD1GzO6cDEcTDPqnUZhhtrnsqR5Y-m9HvAUpfQFTz3O7aA94XqrNipqu0QCtmGofm722GYcthWSIuXa5IEWCvClFLupUkf1fbQHXu7dzM6BLZDHHHB3i7ORCYv-PzK6SqYnth_KLp51"></script>
 
-  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=57&cb=937242892" async></script></body>
+  <script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=57&cb=1692511616" async></script></body>
 </html>
 
 
