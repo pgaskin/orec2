@@ -773,8 +773,10 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 36,1,47,Badminton 16 +,4:30 - 5:30 pm,su,990,60
 36,1,81,Badminton family - parent with child,2:20 - 3:20 pm,su,860,60
 36,1,81,Badminton family - parent with child,3:25 - 4:25 pm,su,925,60
+36,2,82,Pickleball 16+,1:20 - 2:20 pm,mo,800,60
 36,2,82,Pickleball 16+,5:30 - 6:30 pm,mo,1050,60
 36,2,82,Pickleball 16+,6:40 - 7:40 pm,mo,1120,60
+36,4,82,Pickleball 16+,1:20 - 2:20 pm,we,800,60
 36,7,82,Pickleball 16+,2 - 3 pm,sa,840,60
 36,2,83,Pickleball 50+,9:50 - 10:50 am,mo,590,60
 36,2,83,Pickleball 50+,11 am - noon,mo,660,60
@@ -795,8 +797,10 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 36,1,84,Pickleball family - parent with child,12:50 - 1:50 pm,su,770,60
 36,2,65,Pickleball - intermediate,8:40 - 9:40 am,mo,520,60
 36,2,65,Pickleball - intermediate,7:50 - 8:50 pm,mo,1190,60
+36,3,65,Pickleball - intermediate,1:20 - 2:20 pm,tu,800,60
 36,4,65,Pickleball - intermediate,8:40 - 9:40 am,we,520,60
 36,5,65,Pickleball - intermediate,8:40 - 9:40 am,th,520,60
+36,6,65,Pickleball - intermediate,1:20 - 2:20 pm,fr,800,60
 37,2,85,Basketball 12+,4 - 5 pm,mo,960,60
 37,3,85,Basketball 12+,4 - 5 pm,tu,960,60
 37,3,85,Basketball 12+,5:10 - 6:10 pm,tu,1030,60
@@ -1021,9 +1025,10 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 60,3,116,Hot tub and sauna,5 - 9 pm,tu,1020,240
 60,4,116,Hot tub and sauna,8 am - 1 pm,we,480,300
 60,4,116,Hot tub and sauna,5 - 9 pm,we,1020,240
-60,5,116,Hot tub and sauna,8 am - 1 pm,th,480,300
+60,5,116,Hot tub and sauna,8 am - 10 am,th,480,120
+60,5,116,Hot tub and sauna,11 am - 1 pm,th,660,120
 60,5,116,Hot tub and sauna,5 - 9 pm,th,1020,240
-60,6,116,Hot tub and sauna,8:30 am - 1 pm,fr,510,270
+60,6,116,Hot tub and sauna,8 am - 1 pm,fr,480,300
 60,6,116,Hot tub and sauna,5 - 9 pm,fr,1020,240
 60,7,116,Hot tub and sauna,8:30 am - 5 pm,sa,510,510
 60,1,116,Hot tub and sauna,8:30 am - 5 pm,su,510,510
@@ -1035,14 +1040,15 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 60,4,8,Lane swim,8 - 10 am,we,480,120
 60,4,8,Lane swim,11 am - 1 pm,we,660,120
 60,4,8,Lane swim,8 - 9 pm,we,1200,60
-60,5,8,Lane swim,8 am - 1 pm,th,480,300
+60,5,8,Lane swim,8 am - 10 am,th,480,120
+60,5,8,Lane swim,11 am - 1 pm,th,660,120
 60,5,8,Lane swim,8 - 9 pm,th,1200,60
 60,6,8,Lane swim,8 - 10 am,fr,480,120
 60,6,8,Lane swim,11 am - 1 pm,fr,660,120
 60,6,8,Lane swim,8 - 9 pm,fr,1200,60
 60,2,35,Preschool swim,10 am - 1 pm,mo,600,180
 60,4,35,Preschool swim,11 am - 1 pm,we,660,120
-60,5,35,Preschool swim,10 am - 1 pm,th,600,180
+60,5,35,Preschool swim,11 am - 1 pm,th,660,120
 60,6,35,Preschool swim,11 am - 1 pm,fr,660,120
 60,4,25,Public swim,5 - 6 pm,we,1020,60
 60,6,25,Public swim,5 - 6 pm,fr,1020,60
@@ -1220,33 +1226,33 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 77,2,141,Dance,9:15 - 10:15 am,mo,555,60
 77,5,141,Dance,10:30 - 11:30 am,th,630,60
 77,2,20,Strength,10:30 - 11:30 am,mo,630,60
-77,3,20,Strength,6:00 - 7:00 pm,tu,1080,60
+77,3,20,Strength,6 - 7 pm,tu,1080,60
 77,5,20,Strength,11:45 am - 12:45 pm,th,705,60
 77,6,20,Strength,9:30 - 10:30 pm,fr,1290,60
-77,2,142,Yin Yoga,11:45 am - 12:45 pm,mo,705,60
+77,2,142,Yin yoga,11:45 am - 12:45 pm,mo,705,60
 77,2,143,20-20-20,6 - 7 pm,mo,1080,60
 77,2,19,HIIT,7:05 - 8:05 pm,mo,1145,60
 77,7,19,HIIT,8 - 9 am,sa,480,60
 77,3,144,Yoga Tune Up®,9:15 - 10:15 am,tu,555,60
 77,3,144,Yoga Tune Up®,,tu,,
 77,3,18,Yoga,10:30 - 11:30 am,tu,630,60
-77,5,18,Yoga,9:15 - 10:15 pm,th,1275,60
-77,3,15,Core Conditioning,7:05 - 8:05 pm,tu,1145,60
-77,1,15,Core Conditioning,9:00 - 10:00 am,su,540,60
-77,3,16,Zumba ®,11:45 am - 12:45 pm,tu,705,60
-77,4,16,Zumba ®,9:15 - 10:15 am,we,555,60
-77,5,16,Zumba ®,7:15-8:15 pm,th,1155,60
-77,7,16,Zumba ®,10:30 - 11:30 am,sa,630,60
-77,1,16,Zumba ®,10:15 - 11:15 am,su,615,60
-77,4,145,Cardio & Strength,10:30 - 11:30 am,we,630,60
-77,5,145,Cardio & Strength,6 - 7 pm,th,1080,60
-77,4,146,Balance & Stability Heartwise (Older Adult),Noon - 1 pm,we,720,60
-77,6,146,Balance & Stability Heartwise (Older Adult),11:35 am -12:35 pm,fr,695,60
-77,4,147,Stretch & Strength,1:05 - 2:05 pm,we,785,60
-77,6,147,Stretch & Strength,10:30 - 11:30 am,fr,630,60
-77,6,148,Strength Circuit,5 - 6 pm,fr,1020,60
-77,7,17,Indoor Cycling,9:15 - 10:15 am,sa,555,60
-77,4,149,TRX,5:30 - 6:30 pm,we,1050,60
+77,5,18,Yoga,9:15 - 10:15 am,th,555,60
+77,3,15,Core conditioning,7:05 - 8:05 pm,tu,1145,60
+77,1,15,Core conditioning,9 - 10 am,su,540,60
+77,3,16,Zumba®,11:45 am - 12:45 pm,tu,705,60
+77,4,16,Zumba®,9:15 - 10:15 am,we,555,60
+77,5,16,Zumba®,7:15 - 8:15 pm,th,1155,60
+77,7,16,Zumba®,10:30 - 11:30 am,sa,630,60
+77,1,16,Zumba®,10:15 - 11:15 am,su,615,60
+77,4,13,Cardio and strength,10:30 - 11:30 am,we,630,60
+77,5,13,Cardio and strength,6 - 7 pm,th,1080,60
+77,4,145,Balance and stability - Heartwise (older adult),Noon - 1 pm,we,720,60
+77,6,145,Balance and stability - Heartwise (older adult),11:35 am -12:35 pm,fr,695,60
+77,4,98,Stretch and strength,1:05 - 2:05 pm,we,785,60
+77,6,98,Stretch and strength,10:30 - 11:30 am,fr,630,60
+77,6,146,Strength circuit,5 - 6 pm,fr,1020,60
+77,7,17,Indoor cycling,9:15 - 10:15 am,sa,555,60
+77,4,147,TRX,5:30 - 6:30 pm,we,1050,60
 78,2,49,Pickleball,11:45 am - 12:45 pm,mo,705,60
 78,2,49,Pickleball,12:50 - 1:50 pm,mo,770,60
 78,2,49,Pickleball,1:55 - 2:55 pm,mo,835,60
@@ -1275,12 +1281,12 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 79,5,67,Kindergym,9 - 11 am,th,540,120
 79,6,67,Kindergym,9 - 11 am,fr,540,120
 79,1,67,Kindergym,3:45 - 5:15 pm,su,945,90
-79,2,150,Volleyball Adult,8:35 - 9:35 pm,mo,1235,60
-79,1,150,Volleyball Adult,6:50 - 7:50 pm,su,1130,60
-79,1,151,Volleyball Family,5:45 - 6:45 pm,su,1065,60
+79,2,148,Volleyball Adult,8:35 - 9:35 pm,mo,1235,60
+79,1,148,Volleyball Adult,6:50 - 7:50 pm,su,1130,60
+79,1,149,Volleyball Family,5:45 - 6:45 pm,su,1065,60
 79,4,135,Basketball,7:30 - 8:30 am,we,450,60
 79,5,135,Basketball,8:30 - 9:30 pm,th,1230,60
-79,7,153,Open Gym - Child (6-12) with Guardian,4:45 -6:15 pm,sa,1005,90
+79,7,151,Open Gym - Child (6-12) with Guardian,4:45 -6:15 pm,sa,1005,90
 80,3,1,Figure skating,10:15 am - 12:15 pm,tu,615,120
 80,5,3,Public skating,10 - 10:50 am,th,600,50
 80,1,3,Public skating,5 - 5:50 pm,su,1020,50
@@ -1288,36 +1294,36 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 80,1,27,Family skating,4 - 4:50 pm,su,960,50
 81,6,58,Mah Jong,1 - 3 pm,fr,780,120
 81,3,131,Walking club,10 - 11 am,tu,600,60
-81,2,154,Bid Euchre,1 - 3pm,mo,780,120
-81,2,155,Sixty Six,1 - 3pm,mo,780,120
-81,2,156,Shuffleboard,1 - 3 pm,mo,780,120
-81,4,156,Shuffleboard,1 - 3 pm,we,780,120
+81,2,152,Bid Euchre,1 - 3pm,mo,780,120
+81,2,153,Sixty Six,1 - 3pm,mo,780,120
+81,2,154,Shuffleboard,1 - 3 pm,mo,780,120
+81,4,154,Shuffleboard,1 - 3 pm,we,780,120
 81,3,96,Euchre,12:30 - 3:30 pm,tu,750,180
-81,4,157,Contract Bridge,1 - 3 pm,we,780,120
+81,4,155,Contract Bridge,1 - 3 pm,we,780,120
 81,5,128,Cribbage,1 - 3 pm,th,780,120
-81,5,158,500,12:30 - 3 pm,th,750,150
+81,5,156,500,12:30 - 3 pm,th,750,150
 81,5,120,Duplicate Bridge,Noon - 4 pm,th,720,240
 81,6,120,Duplicate Bridge,Noon - 4 pm,fr,720,240
-81,6,159,Creative crafts,9 - 11 am,fr,540,120
+81,6,157,Creative crafts,9 - 11 am,fr,540,120
 81,6,122,Fun Bridge,1 - 3:30 pm,fr,780,150
-81,4,160,Social board games,4:30 to 8:30 pm,we,990,240
-81,2,161,Short mat bowling,1 - 3 pm,mo,780,120
-81,4,161,Short mat bowling,1 - 3 pm,we,780,120
-81,4,161,Short mat bowling,6:30 - 8:30 pm,we,1110,120
-82,2,162,Lane swim - 25m pool,7 - 8 am,mo,420,60
-82,4,162,Lane swim - 25m pool,7 - 8 am,we,420,60
-82,6,162,Lane swim - 25m pool,7 - 8 am,fr,420,60
-82,2,163,Lane swim - 50m long course,8:30 am - 1 pm,mo,510,270
-82,3,163,Lane swim - 50m long course,8:30 am - 1 pm,tu,510,270
-82,4,163,Lane swim - 50m long course,8:30 am - 1 pm,we,510,270
-82,5,163,Lane swim - 50m long course,8:30 am - 1 pm,th,510,270
-82,6,163,Lane swim - 50m long course,8:30 am - 1 pm,fr,510,270
-82,2,164,Lane swim - 50m short course,7:30 - 9:30 pm,mo,1170,120
-82,3,164,Lane swim - 50m short course,7:30 - 9:30 pm,tu,1170,120
-82,4,164,Lane swim - 50m short course,7:30 - 9:30 pm,we,1170,120
-82,5,164,Lane swim - 50m short course,7:30 - 9:30 pm,th,1170,120
-82,7,164,Lane swim - 50m short course,11 am - 3 pm,sa,660,240
-82,1,164,Lane swim - 50m short course,11 am - 3 pm,su,660,240
+81,4,158,Social board games,4:30 to 8:30 pm,we,990,240
+81,2,159,Short mat bowling,1 - 3 pm,mo,780,120
+81,4,159,Short mat bowling,1 - 3 pm,we,780,120
+81,4,159,Short mat bowling,6:30 - 8:30 pm,we,1110,120
+82,2,160,Lane swim - 25m pool,7 - 8 am,mo,420,60
+82,4,160,Lane swim - 25m pool,7 - 8 am,we,420,60
+82,6,160,Lane swim - 25m pool,7 - 8 am,fr,420,60
+82,2,161,Lane swim - 50m long course,8:30 am - 1 pm,mo,510,270
+82,3,161,Lane swim - 50m long course,8:30 am - 1 pm,tu,510,270
+82,4,161,Lane swim - 50m long course,8:30 am - 1 pm,we,510,270
+82,5,161,Lane swim - 50m long course,8:30 am - 1 pm,th,510,270
+82,6,161,Lane swim - 50m long course,8:30 am - 1 pm,fr,510,270
+82,2,162,Lane swim - 50m short course,7:30 - 9:30 pm,mo,1170,120
+82,3,162,Lane swim - 50m short course,7:30 - 9:30 pm,tu,1170,120
+82,4,162,Lane swim - 50m short course,7:30 - 9:30 pm,we,1170,120
+82,5,162,Lane swim - 50m short course,7:30 - 9:30 pm,th,1170,120
+82,7,162,Lane swim - 50m short course,11 am - 3 pm,sa,660,240
+82,1,162,Lane swim - 50m short course,11 am - 3 pm,su,660,240
 82,2,77,Public swim - 25m pool,11 am - 1 pm,mo,660,120
 82,3,77,Public swim - 25m pool,11 am - 1 pm,tu,660,120
 82,4,77,Public swim - 25m pool,11 am - 1 pm,we,660,120
@@ -1325,31 +1331,31 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 82,6,77,Public swim - 25m pool,11 am - 1 pm,fr,660,120
 82,7,77,Public swim - 25m pool,1 - 3 pm,sa,780,120
 82,1,77,Public swim - 25m pool,1 - 3 pm,su,780,120
-82,7,165,Preschool swim - 25m pool,9:45 - 10:45 am,sa,585,60
-82,2,166,Aqua general,8:30 - 9:30 am,mo,510,60
-82,3,166,Aqua general,8:30 - 9:30 am,tu,510,60
-82,4,166,Aqua general,8:30 - 9:30 am,we,510,60
-82,5,166,Aqua general,8:30 - 9:30 am,th,510,60
-82,6,166,Aqua general,8:30 - 9:30 am,fr,510,60
-82,2,167,Aqua lite - 25m pool shallow,9:30 - 10:30 am,mo,570,60
-82,3,167,Aqua lite - 25m pool shallow,9:30 - 10:30 am,tu,570,60
-82,4,167,Aqua lite - 25m pool shallow,9:30 - 10:30 am,we,570,60
-82,5,167,Aqua lite - 25m pool shallow,9:30 - 10:30 am,th,570,60
-82,6,167,Aqua lite - 25m pool shallow,9:30 - 10:30 am,fr,570,60
-82,2,168,Whirlpool,7 - 8 am,mo,420,60
-82,2,168,Whirlpool,8:30 am - 1 pm,mo,510,270
-82,2,168,Whirlpool,7:30 - 9:30 pm,mo,1170,120
-82,3,168,Whirlpool,8:30 am - 1 pm,tu,510,270
-82,3,168,Whirlpool,7:30 - 9:30 pm,tu,1170,120
-82,4,168,Whirlpool,7 - 8 am,we,420,60
-82,4,168,Whirlpool,8:30 am - 1 pm,we,510,270
-82,4,168,Whirlpool,7:30 - 9:30 pm,we,1170,120
-82,5,168,Whirlpool,8:30 am - 1 pm,th,510,270
-82,5,168,Whirlpool,7:30 - 9:30 pm,th,1170,120
-82,6,168,Whirlpool,7 - 8 am,fr,420,60
-82,6,168,Whirlpool,8:30 am - 1 pm,fr,510,270
-82,7,168,Whirlpool,11 am - 3 pm,sa,660,240
-82,1,168,Whirlpool,11 am - 3 pm,su,660,240
+82,7,163,Preschool swim - 25m pool,9:45 - 10:45 am,sa,585,60
+82,2,164,Aqua general,8:30 - 9:30 am,mo,510,60
+82,3,164,Aqua general,8:30 - 9:30 am,tu,510,60
+82,4,164,Aqua general,8:30 - 9:30 am,we,510,60
+82,5,164,Aqua general,8:30 - 9:30 am,th,510,60
+82,6,164,Aqua general,8:30 - 9:30 am,fr,510,60
+82,2,165,Aqua lite - 25m pool shallow,9:30 - 10:30 am,mo,570,60
+82,3,165,Aqua lite - 25m pool shallow,9:30 - 10:30 am,tu,570,60
+82,4,165,Aqua lite - 25m pool shallow,9:30 - 10:30 am,we,570,60
+82,5,165,Aqua lite - 25m pool shallow,9:30 - 10:30 am,th,570,60
+82,6,165,Aqua lite - 25m pool shallow,9:30 - 10:30 am,fr,570,60
+82,2,166,Whirlpool,7 - 8 am,mo,420,60
+82,2,166,Whirlpool,8:30 am - 1 pm,mo,510,270
+82,2,166,Whirlpool,7:30 - 9:30 pm,mo,1170,120
+82,3,166,Whirlpool,8:30 am - 1 pm,tu,510,270
+82,3,166,Whirlpool,7:30 - 9:30 pm,tu,1170,120
+82,4,166,Whirlpool,7 - 8 am,we,420,60
+82,4,166,Whirlpool,8:30 am - 1 pm,we,510,270
+82,4,166,Whirlpool,7:30 - 9:30 pm,we,1170,120
+82,5,166,Whirlpool,8:30 am - 1 pm,th,510,270
+82,5,166,Whirlpool,7:30 - 9:30 pm,th,1170,120
+82,6,166,Whirlpool,7 - 8 am,fr,420,60
+82,6,166,Whirlpool,8:30 am - 1 pm,fr,510,270
+82,7,166,Whirlpool,11 am - 3 pm,sa,660,240
+82,1,166,Whirlpool,11 am - 3 pm,su,660,240
 83,2,11,Weight and cardio room,7 am - 10 pm,mo,420,900
 83,3,11,Weight and cardio room,7 am - 10 pm,tu,420,900
 83,4,11,Weight and cardio room,7 am - 10 pm,we,420,900
@@ -1364,12 +1370,12 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 84,5,20,Strength,9 - 10 am,th,540,60
 84,6,20,Strength,8 - 9 am,fr,480,60
 84,7,20,Strength,8 - 9 am,sa,480,60
-84,2,169,Cardio,9 - 10 am,mo,540,60
-84,2,170,Cardio and strength - older adult,9 - 10 am,mo,540,60
-84,3,170,Cardio and strength - older adult,9 - 10 am,tu,540,60
-84,4,170,Cardio and strength - older adult,9 - 10 am,we,540,60
-84,5,170,Cardio and strength - older adult,9 - 10 am,th,540,60
-84,6,170,Cardio and strength - older adult,9 - 10 am,fr,540,60
+84,2,167,Cardio,9 - 10 am,mo,540,60
+84,2,168,Cardio and strength - older adult,9 - 10 am,mo,540,60
+84,3,168,Cardio and strength - older adult,9 - 10 am,tu,540,60
+84,4,168,Cardio and strength - older adult,9 - 10 am,we,540,60
+84,5,168,Cardio and strength - older adult,9 - 10 am,th,540,60
+84,6,168,Cardio and strength - older adult,9 - 10 am,fr,540,60
 84,2,18,Yoga,10 - 11 am,mo,600,60
 84,2,18,Yoga,Noon - 1 pm,mo,720,60
 84,3,18,Yoga,7 - 8 pm,tu,1140,60
@@ -1379,8 +1385,8 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 84,6,18,Yoga,9 - 10 am,fr,540,60
 84,7,18,Yoga,10 - 11 am,sa,600,60
 84,1,18,Yoga,9 - 10 am,su,540,60
-84,3,171,Yoga - older adult,10 - 11 am,tu,600,60
-84,3,172,TMC - older adult,Noon - 1 pm,tu,720,60
+84,3,169,Yoga - older adult,10 - 11 am,tu,600,60
+84,3,170,TMC - older adult,Noon - 1 pm,tu,720,60
 84,2,16,Zumba,6 - 7 pm,mo,1080,60
 84,3,16,Zumba,10 - 11 am,tu,600,60
 84,5,16,Zumba,10 - 11 am,th,600,60
@@ -1427,32 +1433,32 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 85,1,66,Badminton,8 - 9 am,su,480,60
 85,1,66,Badminton,9 - 10 am,su,540,60
 85,1,66,Badminton,10 - 11 am,su,600,60
-85,2,173,"Squash - courts 1, 2, 3, 4",7:30 am - 9:30 pm,mo,450,840
-85,3,173,"Squash - courts 1, 2, 3, 4",7:30 am - 9:30 pm,tu,450,840
-85,4,173,"Squash - courts 1, 2, 3, 4",7:30 am - 9:30 pm,we,450,840
-85,5,173,"Squash - courts 1, 2, 3, 4",7:30 am - 9:30 pm,th,450,840
-85,6,173,"Squash - courts 1, 2, 3, 4",7:30 am - 9:30 pm,fr,450,840
-85,7,173,"Squash - courts 1, 2, 3, 4",8:30 am - 9:30 pm,sa,510,780
-85,1,173,"Squash - courts 1, 2, 3, 4",8:30 am - 9:30 pm,su,510,780
+85,2,171,"Squash - courts 1, 2, 3, 4",7:30 am - 9:30 pm,mo,450,840
+85,3,171,"Squash - courts 1, 2, 3, 4",7:30 am - 9:30 pm,tu,450,840
+85,4,171,"Squash - courts 1, 2, 3, 4",7:30 am - 9:30 pm,we,450,840
+85,5,171,"Squash - courts 1, 2, 3, 4",7:30 am - 9:30 pm,th,450,840
+85,6,171,"Squash - courts 1, 2, 3, 4",7:30 am - 9:30 pm,fr,450,840
+85,7,171,"Squash - courts 1, 2, 3, 4",8:30 am - 9:30 pm,sa,510,780
+85,1,171,"Squash - courts 1, 2, 3, 4",8:30 am - 9:30 pm,su,510,780
 85,1,29,Table tennis,11:30 am - 12:30 pm,su,690,60
 85,1,29,Table tennis,12:30 - 1:30 pm,su,750,60
 86,3,135,Basketball,3:30 - 4:30 pm,tu,930,60
-86,4,135,Basketball,7 - 8 pm,we,1140,60
+86,4,135,Basketball,7 - 8 am,we,420,60
 86,4,135,Basketball,3:30 - 4:30 pm,we,930,60
 86,5,135,Basketball,3:30 - 4:30 pm,th,930,60
 86,6,135,Basketball,7 - 8 am,fr,420,60
 87,3,3,Public Skating,1:30 - 3 pm,tu,810,90
-87,3,174,18+ Pick-up Hockey,Noon - 1:30 pm,tu,720,90
-87,5,174,18+ Pick-up Hockey,7 - 8:30 am,th,420,90
-88,3,175,Curling 50+,9 - 11 am,tu,540,120
-88,5,175,Curling 50+,9 - 11 am,th,540,120
-88,3,176,Curling - all ages,11 am - 1 pm,tu,660,120
-88,5,176,Curling - all ages,11 am - 1 pm,th,660,120
-88,7,176,Curling - all ages,1 - 3 pm,sa,780,120
+87,3,172,18+ Pick-up Hockey,Noon - 1:30 pm,tu,720,90
+87,5,172,18+ Pick-up Hockey,7 - 8:30 am,th,420,90
+88,3,173,Curling 50+,9 - 11 am,tu,540,120
+88,5,173,Curling 50+,9 - 11 am,th,540,120
+88,3,174,Curling - all ages,11 am - 1 pm,tu,660,120
+88,5,174,Curling - all ages,11 am - 1 pm,th,660,120
+88,7,174,Curling - all ages,1 - 3 pm,sa,780,120
 89,3,3,Public skating,3 - 3:50 pm,tu,900,50
 89,1,3,Public skating,2 - 2:50 pm,su,840,50
 89,1,27,Family skating,1 - 1:50 pm,su,780,50
-90,3,177,Stick and puck (youth and adult),4 - 4:50 pm,tu,960,50
+90,3,175,Stick and puck (youth and adult),4 - 4:50 pm,tu,960,50
 91,2,49,Pickleball,9 - 10 am,mo,540,60
 91,2,49,Pickleball,10 - 11 am,mo,600,60
 91,2,49,Pickleball,11 am - noon,mo,660,60
@@ -1483,7 +1489,7 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 91,4,99,Badminton - adult,9 - 10 pm,we,1260,60
 91,7,48,Badminton - family,5:30 - 6:30 pm,sa,1050,60
 91,7,48,Badminton - family,6:30 - 7:30 pm,sa,1110,60
-91,7,178,Basketball - older youth,8 - 9:45 pm,sa,1200,105
+91,7,176,Basketball - older youth,8 - 9:45 pm,sa,1200,105
 92,3,25,Public Swim *Reservations not required.,11:30 am - 12:45 pm,tu,690,75
 92,5,25,Public Swim *Reservations not required.,11:30 am - 12:45 pm,th,690,75
 92,6,25,Public Swim *Reservations not required.,12:30 - 1:30 pm,fr,750,60
@@ -1515,34 +1521,34 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 92,6,8,Lane Swim,8 - 9 pm,fr,1200,60
 92,7,8,Lane Swim,11:30 am - 12:30 pm,sa,690,60
 92,1,8,Lane Swim,11:30 am - 12:30 pm,su,690,60
-92,2,179,Aqua General - Shallow,8:30 - 9:30 am,mo,510,60
-92,2,179,Aqua General - Shallow,9:30 - 10:30 am,mo,570,60
-92,3,179,Aqua General - Shallow,8:30 - 9:30 am,tu,510,60
-92,3,179,Aqua General - Shallow,9:30 - 10:30 am,tu,570,60
-92,3,179,Aqua General - Shallow,12:45 - 1:45pm,tu,765,60
-92,3,179,Aqua General - Shallow,8 - 9 pm,tu,1200,60
-92,4,179,Aqua General - Shallow,8:30 - 9:30 am,we,510,60
-92,4,179,Aqua General - Shallow,9:30 - 10:30 am,we,570,60
-92,5,179,Aqua General - Shallow,8:30 - 9:30 am,th,510,60
-92,5,179,Aqua General - Shallow,12:45 - 1:45pm,th,765,60
-92,5,179,Aqua General - Shallow,8 - 9 pm,th,1200,60
-92,6,179,Aqua General - Shallow,8:30 - 9:30 am,fr,510,60
-92,6,179,Aqua General - Shallow,9:30 - 10:30 am,fr,570,60
-92,7,179,Aqua General - Shallow,7:30 - 8:30 am,sa,450,60
-92,2,180,Aqua General - Deep,8:30 - 9:30 am,mo,510,60
-92,2,180,Aqua General - Deep,9:30 - 10:30 am,mo,570,60
-92,3,180,Aqua General - Deep,8:30 - 9:30 am,tu,510,60
-92,3,180,Aqua General - Deep,9:30 - 10:30 am,tu,570,60
-92,3,180,Aqua General - Deep,12:45 - 1:45pm,tu,765,60
-92,3,180,Aqua General - Deep,8 - 9 pm,tu,1200,60
-92,4,180,Aqua General - Deep,8:30 - 9:30 am,we,510,60
-92,4,180,Aqua General - Deep,9:30 - 10:30 am,we,570,60
-92,5,180,Aqua General - Deep,8:30 - 9:30 am,th,510,60
-92,5,180,Aqua General - Deep,12:45 - 1:45pm,th,765,60
-92,5,180,Aqua General - Deep,8 - 9 pm,th,1200,60
-92,6,180,Aqua General - Deep,8:30 - 9:30 am,fr,510,60
-92,6,180,Aqua General - Deep,9:30 - 10:30 am,fr,570,60
-92,7,180,Aqua General - Deep,7:30 - 8:30 am,sa,450,60
+92,2,177,Aqua General - Shallow,8:30 - 9:30 am,mo,510,60
+92,2,177,Aqua General - Shallow,9:30 - 10:30 am,mo,570,60
+92,3,177,Aqua General - Shallow,8:30 - 9:30 am,tu,510,60
+92,3,177,Aqua General - Shallow,9:30 - 10:30 am,tu,570,60
+92,3,177,Aqua General - Shallow,12:45 - 1:45pm,tu,765,60
+92,3,177,Aqua General - Shallow,8 - 9 pm,tu,1200,60
+92,4,177,Aqua General - Shallow,8:30 - 9:30 am,we,510,60
+92,4,177,Aqua General - Shallow,9:30 - 10:30 am,we,570,60
+92,5,177,Aqua General - Shallow,8:30 - 9:30 am,th,510,60
+92,5,177,Aqua General - Shallow,12:45 - 1:45pm,th,765,60
+92,5,177,Aqua General - Shallow,8 - 9 pm,th,1200,60
+92,6,177,Aqua General - Shallow,8:30 - 9:30 am,fr,510,60
+92,6,177,Aqua General - Shallow,9:30 - 10:30 am,fr,570,60
+92,7,177,Aqua General - Shallow,7:30 - 8:30 am,sa,450,60
+92,2,178,Aqua General - Deep,8:30 - 9:30 am,mo,510,60
+92,2,178,Aqua General - Deep,9:30 - 10:30 am,mo,570,60
+92,3,178,Aqua General - Deep,8:30 - 9:30 am,tu,510,60
+92,3,178,Aqua General - Deep,9:30 - 10:30 am,tu,570,60
+92,3,178,Aqua General - Deep,12:45 - 1:45pm,tu,765,60
+92,3,178,Aqua General - Deep,8 - 9 pm,tu,1200,60
+92,4,178,Aqua General - Deep,8:30 - 9:30 am,we,510,60
+92,4,178,Aqua General - Deep,9:30 - 10:30 am,we,570,60
+92,5,178,Aqua General - Deep,8:30 - 9:30 am,th,510,60
+92,5,178,Aqua General - Deep,12:45 - 1:45pm,th,765,60
+92,5,178,Aqua General - Deep,8 - 9 pm,th,1200,60
+92,6,178,Aqua General - Deep,8:30 - 9:30 am,fr,510,60
+92,6,178,Aqua General - Deep,9:30 - 10:30 am,fr,570,60
+92,7,178,Aqua General - Deep,7:30 - 8:30 am,sa,450,60
 93,2,11,Weight and cardio room *Reservations not required.,7:30 am - 9 pm,mo,450,810
 93,3,11,Weight and cardio room *Reservations not required.,6:30 am - 9 pm,tu,390,870
 93,4,11,Weight and cardio room *Reservations not required.,7:30 am - 9 pm,we,450,810
@@ -1562,10 +1568,10 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 94,4,14,Cardio and Strength 50+,9:30 - 10:30 am,we,570,60
 94,3,61,Strength 50+,9:15 - 10:15 am,tu,555,60
 94,5,61,Strength 50+,9:15 - 10:15 am,th,555,60
-94,6,181,Strength Circuit 50+,9:30 - 10:30 am,fr,570,60
-94,2,182,Core Conditioning 50+,9:30 - 10:30 am,mo,570,60
-94,3,182,Core Conditioning 50+,10:30 - 11:30 am,tu,630,60
-94,5,182,Core Conditioning 50+,10:30 - 11:30 am,th,630,60
+94,6,179,Strength Circuit 50+,9:30 - 10:30 am,fr,570,60
+94,2,180,Core Conditioning 50+,9:30 - 10:30 am,mo,570,60
+94,3,180,Core Conditioning 50+,10:30 - 11:30 am,tu,630,60
+94,5,180,Core Conditioning 50+,10:30 - 11:30 am,th,630,60
 94,4,43,TMC,6 - 7 pm,we,1080,60
 94,7,43,TMC,8:30 - 9:30 am,sa,510,60
 94,2,16,Zumba,7:15 - 8:15 pm,mo,1155,60
@@ -1576,9 +1582,9 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 95,4,3,Public skate,4 - 4:50 pm,we,960,50
 95,1,3,Public skate,2 - 2:50 pm,su,840,50
 95,1,3,Public skate,3 - 3:50pm,su,900,50
-95,2,183,Public skate 50+,11 - 11:50 am,mo,660,50
-96,2,174,Pick-up Hockey 18+,Noon - 12:50 pm,mo,720,50
-96,2,184,Pick-up Hockey 50+,10 - 10:50 am,mo,600,50
+95,2,181,Public skate 50+,11 - 11:50 am,mo,660,50
+96,2,172,Pick-up Hockey 18+,Noon - 12:50 pm,mo,720,50
+96,2,182,Pick-up Hockey 50+,10 - 10:50 am,mo,600,50
 97,2,8,Lane swim,7 - 9 am,mo,420,120
 97,2,8,Lane swim,11:30 am - 1 pm,mo,690,90
 97,2,8,Lane swim,3 - 5 pm,mo,900,120
@@ -1602,46 +1608,46 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 97,7,8,Lane swim,6 - 7 pm,sa,1080,60
 97,1,8,Lane swim,Noon - 1:30 pm,su,720,90
 97,1,8,Lane swim,4 - 5:30 pm,su,960,90
-97,2,185,Lane swim - reduced capacity,9 - 11:30 am,mo,540,150
-97,2,185,Lane swim - reduced capacity,1 - 3 pm,mo,780,120
-97,2,185,Lane swim - reduced capacity,7:30 - 8:30 pm,mo,1170,60
-97,3,185,Lane swim - reduced capacity,9 - 10:30 am,tu,540,90
-97,3,185,Lane swim - reduced capacity,1 - 2 pm,tu,780,60
-97,4,185,Lane swim - reduced capacity,9 - 11:30 am,we,540,150
-97,4,185,Lane swim - reduced capacity,1 - 3 pm,we,780,120
-97,5,185,Lane swim - reduced capacity,9 - 10:30 am,th,540,90
-97,5,185,Lane swim - reduced capacity,1 - 3 pm,th,780,120
-97,6,185,Lane swim - reduced capacity,9 - 11:30 am,fr,540,150
+97,2,183,Lane swim - reduced capacity,9 - 11:30 am,mo,540,150
+97,2,183,Lane swim - reduced capacity,1 - 3 pm,mo,780,120
+97,2,183,Lane swim - reduced capacity,7:30 - 8:30 pm,mo,1170,60
+97,3,183,Lane swim - reduced capacity,9 - 10:30 am,tu,540,90
+97,3,183,Lane swim - reduced capacity,1 - 2 pm,tu,780,60
+97,4,183,Lane swim - reduced capacity,9 - 11:30 am,we,540,150
+97,4,183,Lane swim - reduced capacity,1 - 3 pm,we,780,120
+97,5,183,Lane swim - reduced capacity,9 - 10:30 am,th,540,90
+97,5,183,Lane swim - reduced capacity,1 - 3 pm,th,780,120
+97,6,183,Lane swim - reduced capacity,9 - 11:30 am,fr,540,150
 97,3,25,Public swim,6 - 7:30 pm,tu,1080,90
 97,5,25,Public swim,1 - 2 pm,th,780,60
 97,6,25,Public swim,1 - 2 pm,fr,780,60
 97,6,25,Public swim,7 - 8 pm,fr,1140,60
 97,7,25,Public swim,1:30 - 4 pm,sa,810,150
 97,1,25,Public swim,1:30 - 4 pm,su,810,150
-97,2,186,Public swim - leisure pool only,10:30 am - 1 pm,mo,630,150
-97,2,186,Public swim - leisure pool only,4- 5 pm,mo,960,60
-97,3,186,Public swim - leisure pool only,10:30 am - 1 pm,tu,630,150
-97,3,186,Public swim - leisure pool only,4 - 5 pm,tu,960,60
-97,4,186,Public swim - leisure pool only,10:30 am - 1 pm,we,630,150
-97,4,186,Public swim - leisure pool only,4 - 5 pm,we,960,60
-97,5,186,Public swim - leisure pool only,10:30 am - 1 pm,th,630,150
-97,5,186,Public swim - leisure pool only,4 -5 pm,th,960,60
-97,6,186,Public swim - leisure pool only,10:30 am - 1 pm,fr,630,150
-97,6,186,Public swim - leisure pool only,4 - 7 pm,fr,960,180
-97,2,187,Aqua - general,9 - 10 am,mo,540,60
-97,2,187,Aqua - general,10 - 11 am,mo,600,60
-97,2,187,Aqua - general,5 - 6 pm,mo,1020,60
-97,3,187,Aqua - general,9 - 10 am,tu,540,60
-97,3,187,Aqua - general,7:30 - 8:30 pm,tu,1170,60
-97,4,187,Aqua - general,9 - 10 am,we,540,60
-97,4,187,Aqua - general,10 - 11 am,we,600,60
-97,4,187,Aqua - general,5 - 6 pm,we,1020,60
-97,5,187,Aqua - general,9 - 10 am,th,540,60
-97,5,187,Aqua - general,7:30 - 8:30 pm,th,1170,60
-97,6,187,Aqua - general,9 - 10 am,fr,540,60
-97,6,187,Aqua - general,10 -11 am,fr,600,60
-97,7,187,Aqua - general,9 - 10 am,sa,540,60
-97,1,187,Aqua - general,10 - 11 am,su,600,60
+97,2,184,Public swim - leisure pool only,10:30 am - 1 pm,mo,630,150
+97,2,184,Public swim - leisure pool only,4- 5 pm,mo,960,60
+97,3,184,Public swim - leisure pool only,10:30 am - 1 pm,tu,630,150
+97,3,184,Public swim - leisure pool only,4 - 5 pm,tu,960,60
+97,4,184,Public swim - leisure pool only,10:30 am - 1 pm,we,630,150
+97,4,184,Public swim - leisure pool only,4 - 5 pm,we,960,60
+97,5,184,Public swim - leisure pool only,10:30 am - 1 pm,th,630,150
+97,5,184,Public swim - leisure pool only,4 -5 pm,th,960,60
+97,6,184,Public swim - leisure pool only,10:30 am - 1 pm,fr,630,150
+97,6,184,Public swim - leisure pool only,4 - 7 pm,fr,960,180
+97,2,185,Aqua - general,9 - 10 am,mo,540,60
+97,2,185,Aqua - general,10 - 11 am,mo,600,60
+97,2,185,Aqua - general,5 - 6 pm,mo,1020,60
+97,3,185,Aqua - general,9 - 10 am,tu,540,60
+97,3,185,Aqua - general,7:30 - 8:30 pm,tu,1170,60
+97,4,185,Aqua - general,9 - 10 am,we,540,60
+97,4,185,Aqua - general,10 - 11 am,we,600,60
+97,4,185,Aqua - general,5 - 6 pm,we,1020,60
+97,5,185,Aqua - general,9 - 10 am,th,540,60
+97,5,185,Aqua - general,7:30 - 8:30 pm,th,1170,60
+97,6,185,Aqua - general,9 - 10 am,fr,540,60
+97,6,185,Aqua - general,10 -11 am,fr,600,60
+97,7,185,Aqua - general,9 - 10 am,sa,540,60
+97,1,185,Aqua - general,10 - 11 am,su,600,60
 98,2,11,Weight and cardio room,6:45 am - 9:30 pm,mo,405,885
 98,3,11,Weight and cardio room,6:45 am - 9:30 pm,tu,405,885
 98,4,11,Weight and cardio room,6:45 am - 9:30 pm,we,405,885
@@ -1649,16 +1655,16 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 98,6,11,Weight and cardio room,6:45 am - 9:30 pm,fr,405,885
 98,7,11,Weight and cardio room,8:30 am - 7 pm,sa,510,630
 98,1,11,Weight and cardio room,8:30 am - 5:30 pm,su,510,540
-99,6,188,*Cardio and strength,Noon - 1 pm,fr,720,60
-99,3,189,*Core conditioning,Noon - 1 pm,tu,720,60
-99,2,190,*HIIT,5:30 - 6:30 pm,mo,1050,60
-99,4,191,*Strength,Noon - 1 pm,we,720,60
-99,4,191,*Strength,5:30 - 6:30 pm,we,1050,60
-99,5,191,*Strength,Noon - 1 pm,th,720,60
-99,5,191,*Strength,5:30 - 6:30 pm,th,1050,60
-99,1,191,*Strength,8:45 - 9:45 am,su,525,60
-99,3,192,*Zumba ® Toning,5:30 - 6:30 pm,tu,1050,60
-99,2,193,*Yoga,Noon - 1 pm,mo,720,60
+99,6,186,*Cardio and strength,Noon - 1 pm,fr,720,60
+99,3,187,*Core conditioning,Noon - 1 pm,tu,720,60
+99,2,188,*HIIT,5:30 - 6:30 pm,mo,1050,60
+99,4,189,*Strength,Noon - 1 pm,we,720,60
+99,4,189,*Strength,5:30 - 6:30 pm,we,1050,60
+99,5,189,*Strength,Noon - 1 pm,th,720,60
+99,5,189,*Strength,5:30 - 6:30 pm,th,1050,60
+99,1,189,*Strength,8:45 - 9:45 am,su,525,60
+99,3,190,*Zumba ® Toning,5:30 - 6:30 pm,tu,1050,60
+99,2,191,*Yoga,Noon - 1 pm,mo,720,60
 100,7,3,Public skating,3 - 4:50 pm,sa,900,110
 101,2,11,Weight and cardio room,6 am - 9 pm,mo,360,900
 101,3,11,Weight and cardio room,6 am - 9 pm,tu,360,900
@@ -1667,13 +1673,13 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 101,6,11,Weight and cardio room,6 am - 9 pm,fr,360,900
 101,7,11,Weight and cardio room,8 am - 8 pm,sa,480,720
 101,1,11,Weight and cardio room,8 am - 8 pm,su,480,720
-102,2,194,20 - 20 - 20,4:30 - 5:25 pm,mo,990,55
-102,3,194,20 - 20 - 20,9:30 - 10:25 am,tu,570,55
+102,2,192,20 - 20 - 20,4:30 - 5:25 pm,mo,990,55
+102,3,192,20 - 20 - 20,9:30 - 10:25 am,tu,570,55
 102,3,44,Bootcamp,5:30 - 6:25 pm,tu,1050,55
 102,5,44,Bootcamp,6:30 - 7:25 pm,th,1110,55
 102,1,13,Cardio and strength,10:15 - 11:10 am,su,615,55
-102,2,170,Cardio and strength - older adult,1 - 1:55 pm,mo,780,55
-102,4,170,Cardio and strength - older adult,1 - 1:55 pm,we,780,55
+102,2,168,Cardio and strength - older adult,1 - 1:55 pm,mo,780,55
+102,4,168,Cardio and strength - older adult,1 - 1:55 pm,we,780,55
 102,4,15,Core conditioning,10:30 - 11:25 am,we,630,55
 102,5,15,Core conditioning,4:30 - 5:25 pm,th,990,55
 102,4,19,HIIT,5:30 - 6:25 pm,we,1050,55
@@ -1685,15 +1691,15 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 102,7,17,Indoor cycling,9:15 - 10:10 am,sa,555,55
 102,2,12,Pilates,5:30 - 6:25 pm,mo,1050,55
 102,4,12,Pilates,9:30 - 10:25 am,we,570,55
-102,7,195,Sport conditioning,9 - 9:55 am,sa,540,55
+102,7,193,Sport conditioning,9 - 9:55 am,sa,540,55
 102,5,20,Strength,5:30 - 6:25 pm,th,1050,55
-102,2,196,Strength and balance - older adult,2 - 2:55 pm,mo,840,55
-102,4,196,Strength and balance - older adult,2 - 2:55 pm,we,840,55
-102,6,196,Strength and balance - older adult,2 - 2:55 pm,fr,840,55
+102,2,194,Strength and balance - older adult,2 - 2:55 pm,mo,840,55
+102,4,194,Strength and balance - older adult,2 - 2:55 pm,we,840,55
+102,6,194,Strength and balance - older adult,2 - 2:55 pm,fr,840,55
 102,3,43,TMC,8:30 - 9:25 am,tu,510,55
 102,6,43,TMC,9:15 - 10:10 am,fr,555,55
-102,3,149,TRX,4:30 - 5:25 pm,tu,990,55
-102,5,197,Yoga - QiGong,11 - 11:55 am,th,660,55
+102,3,147,TRX,4:30 - 5:25 pm,tu,990,55
+102,5,195,Yoga - QiGong,11 - 11:55 am,th,660,55
 102,2,18,Yoga,10 - 10:55 am,mo,600,55
 102,3,18,Yoga,Noon - 12:55 pm,tu,720,55
 102,3,18,Yoga,6:30 - 7:25 pm,tu,1110,55
@@ -1701,26 +1707,26 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 102,6,18,Yoga,10:15 - 11:10 am,fr,615,55
 102,6,18,Yoga,6 - 6:55 pm,fr,1080,55
 102,7,18,Yoga,10:15 - 11:10 am,sa,615,55
-102,3,171,Yoga - older adult,10:30 - 11:25 am,tu,630,55
-102,5,171,Yoga - older adult,Noon - 12:55 pm,th,720,55
+102,3,169,Yoga - older adult,10:30 - 11:25 am,tu,630,55
+102,5,169,Yoga - older adult,Noon - 12:55 pm,th,720,55
 102,2,16,Zumba®,6:30 - 7:25 pm,mo,1110,55
 102,6,63,Zumba® Gold,1 - 1:55 pm,fr,780,55
 103,3,3,Public Skating,7 - 8 pm,tu,1140,60
 103,6,3,Public Skating,10 am - noon,fr,600,120
 103,7,3,Public Skating,Noon - 1 pm,sa,720,60
 103,1,3,Public Skating,5 - 7 pm,su,1020,120
-103,2,174,Pick-up hockey 18+,Noon - 1:30 pm,mo,720,90
-103,3,174,Pick-up hockey 18+,Noon - 1:30 pm,tu,720,90
-103,4,174,Pick-up hockey 18+,Noon - 1:30 pm,we,720,90
-103,5,174,Pick-up hockey 18+,Noon - 1:30 pm,th,720,90
-103,6,174,Pick-up hockey 18+,Noon - 1:30 pm,fr,720,90
-104,2,185,Reduced lane swim *Reservations not required.,6:15 - 8:30 am,mo,375,135
-104,2,185,Reduced lane swim *Reservations not required.,10:30 - 11:30 am,mo,630,60
-104,3,185,Reduced lane swim *Reservations not required.,6:15 - 7:30 am,tu,375,75
-104,4,185,Reduced lane swim *Reservations not required.,7:30 - 8:30 am,we,450,60
-104,5,185,Reduced lane swim *Reservations not required.,6:15 - 7:30 am,th,375,75
-104,6,185,Reduced lane swim *Reservations not required.,7:30 - 8:30 am,fr,450,60
-104,6,185,Reduced lane swim *Reservations not required.,10:30 - 11:30 am,fr,630,60
+103,2,172,Pick-up hockey 18+,Noon - 1:30 pm,mo,720,90
+103,3,172,Pick-up hockey 18+,Noon - 1:30 pm,tu,720,90
+103,4,172,Pick-up hockey 18+,Noon - 1:30 pm,we,720,90
+103,5,172,Pick-up hockey 18+,Noon - 1:30 pm,th,720,90
+103,6,172,Pick-up hockey 18+,Noon - 1:30 pm,fr,720,90
+104,2,183,Reduced lane swim *Reservations not required.,6:15 - 8:30 am,mo,375,135
+104,2,183,Reduced lane swim *Reservations not required.,10:30 - 11:30 am,mo,630,60
+104,3,183,Reduced lane swim *Reservations not required.,6:15 - 7:30 am,tu,375,75
+104,4,183,Reduced lane swim *Reservations not required.,7:30 - 8:30 am,we,450,60
+104,5,183,Reduced lane swim *Reservations not required.,6:15 - 7:30 am,th,375,75
+104,6,183,Reduced lane swim *Reservations not required.,7:30 - 8:30 am,fr,450,60
+104,6,183,Reduced lane swim *Reservations not required.,10:30 - 11:30 am,fr,630,60
 104,2,8,Lane swim *Reservations not required.,8:30 - 10:30 am,mo,510,120
 104,2,8,Lane swim *Reservations not required.,11:30 am - 1 pm,mo,690,90
 104,2,8,Lane swim *Reservations not required.,2 - 4 pm,mo,840,120
@@ -1739,29 +1745,29 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 104,7,8,Lane swim *Reservations not required.,8:30 - 9:30 am,sa,510,60
 104,7,8,Lane swim *Reservations not required.,12:30 - 1:30 pm,sa,750,60
 104,1,8,Lane swim *Reservations not required.,8:30 - 10:30 am,su,510,120
-104,2,186,Public swim - leisure pool only *Reservations not required.,10:30 - 11:30 am,mo,630,60
-104,3,186,Public swim - leisure pool only *Reservations not required.,10:30 am - 1 pm,tu,630,150
-104,6,186,Public swim - leisure pool only *Reservations not required.,11:30 am - 1 pm,fr,690,90
-104,6,186,Public swim - leisure pool only *Reservations not required.,3 - 4:30 pm,fr,900,90
-104,7,186,Public swim - leisure pool only *Reservations not required.,8:30 - 9:30 am,sa,510,60
-104,7,186,Public swim - leisure pool only *Reservations not required.,12:30 - 1:30 pm,sa,750,60
-104,1,186,Public swim - leisure pool only *Reservations not required.,8:30 - 10:30 am,su,510,120
+104,2,184,Public swim - leisure pool only *Reservations not required.,10:30 - 11:30 am,mo,630,60
+104,3,184,Public swim - leisure pool only *Reservations not required.,10:30 am - 1 pm,tu,630,150
+104,6,184,Public swim - leisure pool only *Reservations not required.,11:30 am - 1 pm,fr,690,90
+104,6,184,Public swim - leisure pool only *Reservations not required.,3 - 4:30 pm,fr,900,90
+104,7,184,Public swim - leisure pool only *Reservations not required.,8:30 - 9:30 am,sa,510,60
+104,7,184,Public swim - leisure pool only *Reservations not required.,12:30 - 1:30 pm,sa,750,60
+104,1,184,Public swim - leisure pool only *Reservations not required.,8:30 - 10:30 am,su,510,120
 104,2,25,Public swim *Reservations not required.,7:30 - 9 pm,mo,1170,90
 104,7,25,Public swim *Reservations not required.,1:30 - 4 pm,sa,810,150
 104,1,25,Public swim *Reservations not required.,1:30 - 4 pm,su,810,150
-104,4,198,Preschool swim - leisure pool only *Reservations not required.,8:30 - 10:30 am,we,510,120
-104,6,198,Preschool swim - leisure pool only *Reservations not required.,8:30 - 10:30 am,fr,510,120
-104,3,199,Aquafit - deep,8:30 - 9:30 am,tu,510,60
-104,3,199,Aquafit - deep,9:30 - 10:30 am,tu,570,60
-104,4,199,Aquafit - deep,1 - 2 pm,we,780,60
-104,5,199,Aquafit - deep,8:30 - 9:30 am,th,510,60
-104,5,199,Aquafit - deep,9:30 - 10:30 am,th,570,60
-104,3,200,Aquafit - shallow,8:30 - 9:30 am,tu,510,60
-104,3,200,Aquafit - shallow,9:30 - 10:30 am,tu,570,60
-104,4,200,Aquafit - shallow,1 - 2 pm,we,780,60
-104,5,200,Aquafit - shallow,8:30 - 9:30 am,th,510,60
-104,5,200,Aquafit - shallow,9:30 - 10:30 am,th,570,60
-104,5,201,Aquafit - Zumba®,1 - 2 pm,th,780,60
+104,4,196,Preschool swim - leisure pool only *Reservations not required.,8:30 - 10:30 am,we,510,120
+104,6,196,Preschool swim - leisure pool only *Reservations not required.,8:30 - 10:30 am,fr,510,120
+104,3,197,Aquafit - deep,8:30 - 9:30 am,tu,510,60
+104,3,197,Aquafit - deep,9:30 - 10:30 am,tu,570,60
+104,4,197,Aquafit - deep,1 - 2 pm,we,780,60
+104,5,197,Aquafit - deep,8:30 - 9:30 am,th,510,60
+104,5,197,Aquafit - deep,9:30 - 10:30 am,th,570,60
+104,3,198,Aquafit - shallow,8:30 - 9:30 am,tu,510,60
+104,3,198,Aquafit - shallow,9:30 - 10:30 am,tu,570,60
+104,4,198,Aquafit - shallow,1 - 2 pm,we,780,60
+104,5,198,Aquafit - shallow,8:30 - 9:30 am,th,510,60
+104,5,198,Aquafit - shallow,9:30 - 10:30 am,th,570,60
+104,5,199,Aquafit - Zumba®,1 - 2 pm,th,780,60
 104,2,79,Sauna *Reservations not required.,6:15 am - 1 pm,mo,375,405
 104,2,79,Sauna *Reservations not required.,2 - 9 pm,mo,840,420
 104,3,79,Sauna *Reservations not required.,6:15 am - 4 pm,tu,375,585
@@ -1785,11 +1791,11 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 106,4,44,Bootcamp,7:30 - 8:30 am,we,450,60
 106,2,13,Cardio and strength,6:15 - 7:15 pm,mo,1095,60
 106,5,13,Cardio and strength,6:45 - 7:45 pm,th,1125,60
-106,4,202,Cardio 50+,9:30 - 10:30 am,we,570,60
+106,4,200,Cardio 50+,9:30 - 10:30 am,we,570,60
 106,5,19,HIIT,5:30 - 6:30 pm,th,1050,60
 106,1,17,Indoor cycling,9 - 10 am,su,540,60
 106,6,12,Pilates,Noon - 1 pm,fr,720,60
-106,1,149,TRX,10:15 - 11:15 am,su,615,60
+106,1,147,TRX,10:15 - 11:15 am,su,615,60
 106,4,18,Yoga,7:15 - 8:15 pm,we,1155,60
 106,5,18,Yoga,9:30 - 10:30 am,th,570,60
 106,5,18,Yoga,10:45 - 11:45 am,th,645,60
@@ -1803,37 +1809,37 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 106,2,63,Zumba Gold,9:30 - 10:30 am,mo,570,60
 106,6,63,Zumba Gold,9:30 - 10:30 am,fr,570,60
 106,3,64,Zumba Toning,6:15 - 7:15 pm,tu,1095,60
-107,2,203,Badminton doubles - adult,11 am - noon,mo,660,60
-107,2,203,Badminton doubles - adult,Noon - 1 pm,mo,720,60
-107,4,203,Badminton doubles - adult,11 am - noon,we,660,60
-107,4,203,Badminton doubles - adult,Noon - 1 pm,we,720,60
-107,6,203,Badminton doubles - adult,11 am - noon,fr,660,60
-107,6,203,Badminton doubles - adult,Noon - 1 pm,fr,720,60
-107,3,204,Badminton doubles - all ages,7:30 - 8:30 pm,tu,1170,60
-107,3,204,Badminton doubles - all ages,8:30 - 9:30 pm,tu,1230,60
-107,5,204,Badminton doubles - all ages,7 - 8 pm,th,1140,60
-107,5,204,Badminton doubles - all ages,8 - 9 pm,th,1200,60
-107,5,204,Badminton doubles - all ages,9 - 10 pm,th,1260,60
-107,1,204,Badminton doubles - all ages,11:45 am - 12:45 pm,su,705,60
-107,1,204,Badminton doubles - all ages,12:45 - 1:45 pm,su,765,60
+107,2,201,Badminton doubles - adult,11 am - noon,mo,660,60
+107,2,201,Badminton doubles - adult,Noon - 1 pm,mo,720,60
+107,4,201,Badminton doubles - adult,11 am - noon,we,660,60
+107,4,201,Badminton doubles - adult,Noon - 1 pm,we,720,60
+107,6,201,Badminton doubles - adult,11 am - noon,fr,660,60
+107,6,201,Badminton doubles - adult,Noon - 1 pm,fr,720,60
+107,3,202,Badminton doubles - all ages,7:30 - 8:30 pm,tu,1170,60
+107,3,202,Badminton doubles - all ages,8:30 - 9:30 pm,tu,1230,60
+107,5,202,Badminton doubles - all ages,7 - 8 pm,th,1140,60
+107,5,202,Badminton doubles - all ages,8 - 9 pm,th,1200,60
+107,5,202,Badminton doubles - all ages,9 - 10 pm,th,1260,60
+107,1,202,Badminton doubles - all ages,11:45 am - 12:45 pm,su,705,60
+107,1,202,Badminton doubles - all ages,12:45 - 1:45 pm,su,765,60
 107,7,48,Badminton - family,8:30 - 9:30 am,sa,510,60
 107,7,48,Badminton - family,9:30 - 10:30 am,sa,570,60
-107,3,205,Pickleball - rotations,1:30 - 2:30 pm,tu,810,60
-107,3,205,Pickleball - rotations,2:30 - 3:30 pm,tu,870,60
-107,3,205,Pickleball - rotations,6 - 7 pm,tu,1080,60
-107,4,205,Pickleball - rotations,1:30 - 2:30 pm,we,810,60
-107,4,205,Pickleball - rotations,2:30 - 3:30 pm,we,870,60
-107,5,205,Pickleball - rotations,1:30 - 2:30 pm,th,810,60
-107,5,205,Pickleball - rotations,2:30 - 3:30 pm,th,870,60
-107,6,205,Pickleball - rotations,7:30 - 8:30 am,fr,450,60
-107,6,205,Pickleball - rotations,8:30 - 9:30 am,fr,510,60
-107,6,205,Pickleball - rotations,9:30 - 10:30 am,fr,570,60
-107,6,205,Pickleball - rotations,1:30 - 2:30 pm,fr,810,60
-107,6,205,Pickleball - rotations,2:30 - 3:30 pm,fr,870,60
-107,4,206,Table Tennis - adult,3:45 - 4:45 pm,we,945,60
-107,4,206,Table Tennis - adult,4:45 - 5:45 pm,we,1005,60
-107,6,207,Table Tennis doubles - adult,7 - 8 pm,fr,1140,60
-107,6,207,Table Tennis doubles - adult,8 - 9 pm,fr,1200,60
+107,3,203,Pickleball - rotations,1:30 - 2:30 pm,tu,810,60
+107,3,203,Pickleball - rotations,2:30 - 3:30 pm,tu,870,60
+107,3,203,Pickleball - rotations,6 - 7 pm,tu,1080,60
+107,4,203,Pickleball - rotations,1:30 - 2:30 pm,we,810,60
+107,4,203,Pickleball - rotations,2:30 - 3:30 pm,we,870,60
+107,5,203,Pickleball - rotations,1:30 - 2:30 pm,th,810,60
+107,5,203,Pickleball - rotations,2:30 - 3:30 pm,th,870,60
+107,6,203,Pickleball - rotations,7:30 - 8:30 am,fr,450,60
+107,6,203,Pickleball - rotations,8:30 - 9:30 am,fr,510,60
+107,6,203,Pickleball - rotations,9:30 - 10:30 am,fr,570,60
+107,6,203,Pickleball - rotations,1:30 - 2:30 pm,fr,810,60
+107,6,203,Pickleball - rotations,2:30 - 3:30 pm,fr,870,60
+107,4,204,Table Tennis - adult,3:45 - 4:45 pm,we,945,60
+107,4,204,Table Tennis - adult,4:45 - 5:45 pm,we,1005,60
+107,6,205,Table Tennis doubles - adult,7 - 8 pm,fr,1140,60
+107,6,205,Table Tennis doubles - adult,8 - 9 pm,fr,1200,60
 108,1,67,Kindergym,8:30 - 9:30 am,su,510,60
 108,1,67,Kindergym,9:30 - 10:30 am,su,570,60
 108,1,67,Kindergym,10:30 - 11:30 am,su,630,60
@@ -1847,9 +1853,9 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 108,5,30,Open Gym,5:45 - 6:45 pm,th,1065,60
 108,1,30,Open Gym,2 - 3 pm,su,840,60
 108,1,30,Open Gym,3 - 4 pm,su,900,60
-108,3,208,Open Gym - youth,3:45 - 4:45 pm,tu,945,60
-108,5,208,Open Gym - youth,3:45 - 4:45 pm,th,945,60
-108,6,208,Open Gym - youth,3:45 - 4:45 pm,fr,945,60
+108,3,206,Open Gym - youth,3:45 - 4:45 pm,tu,945,60
+108,5,206,Open Gym - youth,3:45 - 4:45 pm,th,945,60
+108,6,206,Open Gym - youth,3:45 - 4:45 pm,fr,945,60
 108,3,71,Open Gym - family,4:45 - 5:45 pm,tu,1005,60
 108,5,71,Open Gym - family,4:45 - 5:45 pm,th,1005,60
 108,6,71,Open Gym - family,4:45 - 5:45 pm,fr,1005,60
@@ -1861,9 +1867,9 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 108,5,33,Basketball - adult,Noon - 1 pm,th,720,60
 108,6,33,Basketball - adult,11 am - noon,fr,660,60
 108,6,33,Basketball - adult,Noon - 1 pm,fr,720,60
-108,1,209,Rockwall,8:30 - 9:30 am,su,510,60
-108,1,209,Rockwall,9:30 - 10:30 am,su,570,60
-108,1,209,Rockwall,10:30 - 11:30 am,su,630,60
+108,1,207,Rockwall,8:30 - 9:30 am,su,510,60
+108,1,207,Rockwall,9:30 - 10:30 am,su,570,60
+108,1,207,Rockwall,10:30 - 11:30 am,su,630,60
 108,2,54,Volleyball - adult,8 - 9 pm,mo,1200,60
 108,2,54,Volleyball - adult,9 - 10 pm,mo,1260,60
 108,3,54,Volleyball - adult,11 am - noon,tu,660,60
@@ -1872,52 +1878,52 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 108,5,54,Volleyball - adult,Noon - 1 pm,th,720,60
 108,7,54,Volleyball - adult,6 - 7 pm,sa,1080,60
 108,7,54,Volleyball - adult,7 - 8 pm,sa,1140,60
-108,2,210,Volleyball - youth,8:45 - 9 :45 pm,mo,1245,60
-109,2,211,Pickleball 18+ - recreational play,1 - 2 pm,mo,780,60
-109,2,211,Pickleball 18+ - recreational play,2 - 3 pm,mo,840,60
-109,2,211,Pickleball 18+ - recreational play,3 - 4 pm,mo,900,60
-109,2,211,Pickleball 18+ - recreational play,4 - 5 pm,mo,960,60
-109,4,211,Pickleball 18+ - recreational play,9:30 - 10:30 am,we,570,60
-109,4,211,Pickleball 18+ - recreational play,10:30 - 11:30 am,we,630,60
-109,4,211,Pickleball 18+ - recreational play,11:30 am - 12:30 pm,we,690,60
-109,4,211,Pickleball 18+ - recreational play,12:30 - 1:30 pm,we,750,60
-109,4,211,Pickleball 18+ - recreational play,1:30 - 2:30 pm,we,810,60
-109,4,211,Pickleball 18+ - recreational play,2:30 - 3:30 pm,we,870,60
-109,4,211,Pickleball 18+ - recreational play,3:30 - 4:30 pm,we,930,60
-109,4,211,Pickleball 18+ - recreational play,4:30 - 5:30 pm,we,990,60
-109,6,211,Pickleball 18+ - recreational play,5:30 - 6:30 pm,fr,1050,60
-109,6,211,Pickleball 18+ - recreational play,6:30 - 7:30 pm,fr,1110,60
-109,6,211,Pickleball 18+ - recreational play,7:30 - 8:30 pm,fr,1170,60
-109,6,211,Pickleball 18+ - recreational play,8:30 - 9:30 pm,fr,1230,60
-110,2,211,Pickleball 18+ - recreational play,1 - 2 pm,mo,780,60
-110,2,211,Pickleball 18+ - recreational play,2 - 3 pm,mo,840,60
-110,2,211,Pickleball 18+ - recreational play,3 - 4 pm,mo,900,60
-110,2,211,Pickleball 18+ - recreational play,4 - 5 pm,mo,960,60
-110,3,211,Pickleball 18+ - recreational play,9:30 - 10:30 am,tu,570,60
-110,3,211,Pickleball 18+ - recreational play,10:30 - 11:30 am,tu,630,60
-110,3,211,Pickleball 18+ - recreational play,11:30 am - 12:30 pm,tu,690,60
-110,3,211,Pickleball 18+ - recreational play,12:30 - 1:30 pm,tu,750,60
-110,3,211,Pickleball 18+ - recreational play,1:30 - 2:30 pm,tu,810,60
-110,3,211,Pickleball 18+ - recreational play,2:30 - 3:30 pm,tu,870,60
-110,3,211,Pickleball 18+ - recreational play,3:30 - 4:30 pm,tu,930,60
-110,4,211,Pickleball 18+ - recreational play,9:30 - 10:30 am,we,570,60
-110,4,211,Pickleball 18+ - recreational play,10:30 - 11:30 am,we,630,60
-110,4,211,Pickleball 18+ - recreational play,11:30 am - 12:30 pm,we,690,60
-110,4,211,Pickleball 18+ - recreational play,12:30 - 1:30 pm,we,750,60
-110,4,211,Pickleball 18+ - recreational play,1:30 - 2:30 pm,we,810,60
-110,4,211,Pickleball 18+ - recreational play,2:30 - 3:30 pm,we,870,60
-110,4,211,Pickleball 18+ - recreational play,3:30 - 4:30 pm,we,930,60
-110,4,211,Pickleball 18+ - recreational play,4:30 - 5:30 pm,we,990,60
-110,6,211,Pickleball 18+ - recreational play,5:30 - 6:30 pm,fr,1050,60
-110,6,211,Pickleball 18+ - recreational play,6:30 - 7:30 pm,fr,1110,60
-110,6,211,Pickleball 18+ - recreational play,7:30 - 8:30 pm,fr,1170,60
-110,6,211,Pickleball 18+ - recreational play,8:30 - 9:30 pm,fr,1230,60
+108,2,208,Volleyball - youth,8:45 - 9 :45 pm,mo,1245,60
+109,2,209,Pickleball 18+ - recreational play,1 - 2 pm,mo,780,60
+109,2,209,Pickleball 18+ - recreational play,2 - 3 pm,mo,840,60
+109,2,209,Pickleball 18+ - recreational play,3 - 4 pm,mo,900,60
+109,2,209,Pickleball 18+ - recreational play,4 - 5 pm,mo,960,60
+109,4,209,Pickleball 18+ - recreational play,9:30 - 10:30 am,we,570,60
+109,4,209,Pickleball 18+ - recreational play,10:30 - 11:30 am,we,630,60
+109,4,209,Pickleball 18+ - recreational play,11:30 am - 12:30 pm,we,690,60
+109,4,209,Pickleball 18+ - recreational play,12:30 - 1:30 pm,we,750,60
+109,4,209,Pickleball 18+ - recreational play,1:30 - 2:30 pm,we,810,60
+109,4,209,Pickleball 18+ - recreational play,2:30 - 3:30 pm,we,870,60
+109,4,209,Pickleball 18+ - recreational play,3:30 - 4:30 pm,we,930,60
+109,4,209,Pickleball 18+ - recreational play,4:30 - 5:30 pm,we,990,60
+109,6,209,Pickleball 18+ - recreational play,5:30 - 6:30 pm,fr,1050,60
+109,6,209,Pickleball 18+ - recreational play,6:30 - 7:30 pm,fr,1110,60
+109,6,209,Pickleball 18+ - recreational play,7:30 - 8:30 pm,fr,1170,60
+109,6,209,Pickleball 18+ - recreational play,8:30 - 9:30 pm,fr,1230,60
+110,2,209,Pickleball 18+ - recreational play,1 - 2 pm,mo,780,60
+110,2,209,Pickleball 18+ - recreational play,2 - 3 pm,mo,840,60
+110,2,209,Pickleball 18+ - recreational play,3 - 4 pm,mo,900,60
+110,2,209,Pickleball 18+ - recreational play,4 - 5 pm,mo,960,60
+110,3,209,Pickleball 18+ - recreational play,9:30 - 10:30 am,tu,570,60
+110,3,209,Pickleball 18+ - recreational play,10:30 - 11:30 am,tu,630,60
+110,3,209,Pickleball 18+ - recreational play,11:30 am - 12:30 pm,tu,690,60
+110,3,209,Pickleball 18+ - recreational play,12:30 - 1:30 pm,tu,750,60
+110,3,209,Pickleball 18+ - recreational play,1:30 - 2:30 pm,tu,810,60
+110,3,209,Pickleball 18+ - recreational play,2:30 - 3:30 pm,tu,870,60
+110,3,209,Pickleball 18+ - recreational play,3:30 - 4:30 pm,tu,930,60
+110,4,209,Pickleball 18+ - recreational play,9:30 - 10:30 am,we,570,60
+110,4,209,Pickleball 18+ - recreational play,10:30 - 11:30 am,we,630,60
+110,4,209,Pickleball 18+ - recreational play,11:30 am - 12:30 pm,we,690,60
+110,4,209,Pickleball 18+ - recreational play,12:30 - 1:30 pm,we,750,60
+110,4,209,Pickleball 18+ - recreational play,1:30 - 2:30 pm,we,810,60
+110,4,209,Pickleball 18+ - recreational play,2:30 - 3:30 pm,we,870,60
+110,4,209,Pickleball 18+ - recreational play,3:30 - 4:30 pm,we,930,60
+110,4,209,Pickleball 18+ - recreational play,4:30 - 5:30 pm,we,990,60
+110,6,209,Pickleball 18+ - recreational play,5:30 - 6:30 pm,fr,1050,60
+110,6,209,Pickleball 18+ - recreational play,6:30 - 7:30 pm,fr,1110,60
+110,6,209,Pickleball 18+ - recreational play,7:30 - 8:30 pm,fr,1170,60
+110,6,209,Pickleball 18+ - recreational play,8:30 - 9:30 pm,fr,1230,60
 111,2,3,Public skating,3 - 3:50 pm,mo,900,50
 111,5,3,Public skating,4 - 4:50 pm,th,960,50
 111,7,3,Public skating,2 - 2:50 pm,sa,840,50
 111,7,27,Family skating,1 - 1:50 pm,sa,780,50
 112,2,89,Child hockey (6 to 12 years),4 - 4:50 pm,mo,960,50
-112,5,212,Stick and puck (preschool and child),3 - 3:50 pm,th,900,50
+112,5,210,Stick and puck (preschool and child),3 - 3:50 pm,th,900,50
 113,6,31,Basketball - child,7 - 8 pm,fr,1140,60
 113,6,32,Basketball - youth,8 - 9 pm,fr,1200,60
 113,3,33,Basketball - adult,6 - 7:30 pm,tu,1080,90
@@ -1937,26 +1943,26 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 114,5,100,Pickleball - adult,12:30 - 1:30 pm,th,750,60
 115,2,29,Table Tennis,6 - 8 pm,mo,1080,120
 115,1,48,Badminton - Family,2:30 - 4:30 pm,su,870,120
-115,5,213,Badminton - Feather Advanced,6 - 8 pm,th,1080,120
-115,5,213,Badminton - Feather Advanced,8 - 10 pm,th,1200,120
-115,1,213,Badminton - Feather Advanced,4:30 - 6:30 pm,su,990,120
+115,5,211,Badminton - Feather Advanced,6 - 8 pm,th,1080,120
+115,5,211,Badminton - Feather Advanced,8 - 10 pm,th,1200,120
+115,1,211,Badminton - Feather Advanced,4:30 - 6:30 pm,su,990,120
 115,4,66,Badminton,6 - 8 pm,we,1080,120
 115,5,66,Badminton,3 - 4 pm,th,900,60
 115,5,66,Badminton,4 - 5 pm,th,960,60
 115,5,66,Badminton,5 - 6 pm,th,1020,60
-115,4,214,Badminton -Plastics Advanced,8 - 10 pm,we,1200,120
+115,4,212,Badminton -Plastics Advanced,8 - 10 pm,we,1200,120
 115,3,100,Pickleball - Adult,9:30 - 11:30 am,tu,570,120
 115,4,100,Pickleball - Adult,9:30 - 11:30 am,we,570,120
 115,5,100,Pickleball - Adult,9:30 - 11:30 am,th,570,120
 116,2,135,Basketball,8 - 10 pm,mo,1200,120
 116,1,135,Basketball,Noon - 2 pm,su,720,120
-116,2,215,Youth - Free Play,4 - 5:30 pm,mo,960,90
-116,4,215,Youth - Free Play,4 - 5:30 pm,we,960,90
-116,6,215,Youth - Free Play,4 - 5:30 pm,fr,960,90
-116,2,216,Volleyball,5:45 - 7:45 pm,mo,1065,120
-116,3,216,Volleyball,6:15 - 8:15 pm,tu,1095,120
-116,7,216,Volleyball,2 - 4 pm,sa,840,120
-116,7,216,Volleyball,4 - 6 pm,sa,960,120
+116,2,213,Youth - Free Play,4 - 5:30 pm,mo,960,90
+116,4,213,Youth - Free Play,4 - 5:30 pm,we,960,90
+116,6,213,Youth - Free Play,4 - 5:30 pm,fr,960,90
+116,2,214,Volleyball,5:45 - 7:45 pm,mo,1065,120
+116,3,214,Volleyball,6:15 - 8:15 pm,tu,1095,120
+116,7,214,Volleyball,2 - 4 pm,sa,840,120
+116,7,214,Volleyball,4 - 6 pm,sa,960,120
 117,3,3,Public skating,5 - 5:50 pm,tu,1020,50
 117,7,3,Public skating,9 - 9:50 pm,sa,1260,50
 117,1,3,Public skating,4 - 4:50 pm,su,960,50
@@ -1978,12 +1984,12 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 119,7,8,Lane swim,7:30 - 8:30 pm,sa,1170,60
 119,1,8,Lane swim,Noon - 1 pm,su,720,60
 119,1,8,Lane swim,7 - 8 pm,su,1140,60
-119,3,217,Lane swim (shared pool),8:30 - 11 am,tu,510,150
+119,3,215,Lane swim (shared pool),8:30 - 11 am,tu,510,150
 119,7,25,Public swim,1 - 3 pm,sa,780,120
 119,7,25,Public swim,6:30 - 7:30 pm,sa,1110,60
 119,1,25,Public swim,1 - 3 pm,su,780,120
 119,6,105,Women's only swim,8:30 - 9:30 pm,fr,1230,60
-119,3,218,Preschool swim (shared pool),10 - 11 am,tu,600,60
+119,3,216,Preschool swim (shared pool),10 - 11 am,tu,600,60
 119,2,4,Aqua general deep,8 - 9 am,mo,480,60
 119,2,4,Aqua general deep,9 - 10 am,mo,540,60
 119,2,4,Aqua general deep,10 - 11 am,mo,600,60
@@ -2004,8 +2010,8 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 119,6,5,Aqua general shallow,8 - 9 am,fr,480,60
 119,6,5,Aqua general shallow,9 - 10 am,fr,540,60
 119,6,5,Aqua general shallow,10 - 11 am,fr,600,60
-120,4,196,Strength and balance - older adult,11:30 am - 12:30 pm,we,690,60
-120,6,196,Strength and balance - older adult,11:30 am - 12:30 pm,fr,690,60
+120,4,194,Strength and balance - older adult,11:30 am - 12:30 pm,we,690,60
+120,6,194,Strength and balance - older adult,11:30 am - 12:30 pm,fr,690,60
 121,6,99,Badminton - adult,8:15 - 9:15 pm,fr,1215,60
 121,4,67,Kindergym,10 - 11 am,we,600,60
 121,4,67,Kindergym,11 am - noon,we,660,60
@@ -2037,23 +2043,23 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 123,6,117,Wave swim,7:05 - 9 pm,fr,1145,115
 123,7,117,Wave swim,1 - 5 pm,sa,780,240
 123,1,117,Wave swim,1 - 5 pm,su,780,240
-123,2,219,Aquafit general - shallow,9:30 - 10:30 am,mo,570,60
-123,3,219,Aquafit general - shallow,8 - 9 am,tu,480,60
-123,3,219,Aquafit general - shallow,9 - 10 am,tu,540,60
-123,4,219,Aquafit general - shallow,9:30 - 10:30 am,we,570,60
-123,5,219,Aquafit general - shallow,8 - 9 am,th,480,60
-123,5,219,Aquafit general - shallow,9 - 10 am,th,540,60
-123,6,219,Aquafit general - shallow,9:30 - 10:30 am,fr,570,60
-123,2,220,Aquafit general - deep,8:30 - 9:30 am,mo,510,60
-123,4,220,Aquafit general - deep,8:30 - 9:30 am,we,510,60
-123,6,220,Aquafit general - deep,8:30 - 9:30 am,fr,510,60
+123,2,217,Aquafit general - shallow,9:30 - 10:30 am,mo,570,60
+123,3,217,Aquafit general - shallow,8 - 9 am,tu,480,60
+123,3,217,Aquafit general - shallow,9 - 10 am,tu,540,60
+123,4,217,Aquafit general - shallow,9:30 - 10:30 am,we,570,60
+123,5,217,Aquafit general - shallow,8 - 9 am,th,480,60
+123,5,217,Aquafit general - shallow,9 - 10 am,th,540,60
+123,6,217,Aquafit general - shallow,9:30 - 10:30 am,fr,570,60
+123,2,218,Aquafit general - deep,8:30 - 9:30 am,mo,510,60
+123,4,218,Aquafit general - deep,8:30 - 9:30 am,we,510,60
+123,6,218,Aquafit general - deep,8:30 - 9:30 am,fr,510,60
 123,2,25,Public swim,9:30 am - 1 pm,mo,570,210
 123,3,25,Public swim,10 am - 1 pm,tu,600,180
 123,4,25,Public swim,9:30 am - 1 pm,we,570,210
 123,5,25,Public swim,10 am - 1 pm,th,600,180
 123,6,25,Public swim,9:30 am - 1 pm,fr,570,210
-123,7,221,Public swim - warm pool only,Noon - 1 pm,sa,720,60
-123,1,221,Public swim - warm pool only,Noon - 1 pm,su,720,60
+123,7,219,Public swim - warm pool only,Noon - 1 pm,sa,720,60
+123,1,219,Public swim - warm pool only,Noon - 1 pm,su,720,60
 123,2,8,Lane swim,7:30 - 8:30 am,mo,450,60
 123,2,8,Lane swim,11 am - 1 pm,mo,660,120
 123,3,8,Lane swim,Noon - 1 pm,tu,720,60
@@ -2074,16 +2080,16 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 124,6,11,Weight and cardio room,7 am - 10 pm,fr,420,900
 124,7,11,Weight and cardio room,8 am - 8 pm,sa,480,720
 124,1,11,Weight and cardio room,8 am - 8 pm,su,480,720
-125,2,202,Cardio 50+,9 - 9:55 am,mo,540,55
-125,3,202,Cardio 50+,9 - 9:55 am,tu,540,55
-125,5,202,Cardio 50+,9 - 9:55 am,th,540,55
-125,7,202,Cardio 50+,8:30 - 9:25 am,sa,510,55
-125,1,202,Cardio 50+,9 - 9:55 am,su,540,55
+125,2,200,Cardio 50+,9 - 9:55 am,mo,540,55
+125,3,200,Cardio 50+,9 - 9:55 am,tu,540,55
+125,5,200,Cardio 50+,9 - 9:55 am,th,540,55
+125,7,200,Cardio 50+,8:30 - 9:25 am,sa,510,55
+125,1,200,Cardio 50+,9 - 9:55 am,su,540,55
 125,4,14,Cardio and strength 50+,8:30 - 9:30 am,we,510,60
-125,3,222,Stretch and strength 50+,10 - 10:30 am,tu,600,30
-125,5,222,Stretch and strength 50+,10 - 10:30 am,th,600,30
-125,7,222,Stretch and strength 50+,9:30 - 10 am,sa,570,30
-125,1,222,Stretch and strength 50+,10 - 10:30 am,su,600,30
+125,3,220,Stretch and strength 50+,10 - 10:30 am,tu,600,30
+125,5,220,Stretch and strength 50+,10 - 10:30 am,th,600,30
+125,7,220,Stretch and strength 50+,9:30 - 10 am,sa,570,30
+125,1,220,Stretch and strength 50+,10 - 10:30 am,su,600,30
 125,2,18,Yoga,7:30 pm - 8:30 pm,mo,1170,60
 125,3,18,Yoga,6 - 7 pm,tu,1080,60
 125,4,18,Yoga,10 - 10:55 am,we,600,55
@@ -2100,9 +2106,9 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 126,3,99,Badminton - adult,1 - 2 pm,tu,780,60
 126,4,99,Badminton - adult,7 - 9 pm,we,1140,120
 126,1,99,Badminton - adult,5 - 7 pm,su,1020,120
-126,4,223,Badminton - parent with child,6 - 7 pm,we,1080,60
-126,1,223,Badminton - parent with child,4 - 5 pm,su,960,60
-126,1,206,Table tennis - adult,3 - 5 pm,su,900,120
+126,4,221,Badminton - parent with child,6 - 7 pm,we,1080,60
+126,1,221,Badminton - parent with child,4 - 5 pm,su,960,60
+126,1,204,Table tennis - adult,3 - 5 pm,su,900,120
 127,2,33,Basketball - adult,7:30 - 9:30 pm,mo,1170,120
 127,6,33,Basketball - adult,7:30 - 9:30 pm,fr,1170,120
 127,7,33,Basketball - adult,4 - 6 pm,sa,960,120
@@ -2137,11 +2143,11 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 128,4,34,Adult skating,Noon - 12:50 pm,we,720,50
 128,5,34,Adult skating,Noon - 12:50 pm,th,720,50
 128,6,34,Adult skating,Noon - 12:50 pm,fr,720,50
-128,3,174,18+ Pick-up hockey,2:30 - 3:50 pm,tu,870,80
-128,5,174,18+ Pick-up hockey,2:30 - 3:50 pm,th,870,80
+128,3,172,18+ Pick-up hockey,2:30 - 3:50 pm,tu,870,80
+128,5,172,18+ Pick-up hockey,2:30 - 3:50 pm,th,870,80
 129,4,1,Figure skating,8 - 8:50 pm,we,1200,50
 129,5,136,Hockey 18+,11 - 11:50 am,th,660,50
-129,1,224,Speed skating,11 - 11:50 am,su,660,50
+129,1,222,Speed skating,11 - 11:50 am,su,660,50
 130,5,3,Public skating,10 - 10:50 am,th,600,50
 130,7,3,Public skating,3 - 3:50 pm,sa,900,50
 130,1,3,Public skating,Noon - 12:50 pm,su,720,50
@@ -2153,17 +2159,17 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 131,6,3,Public skating,7:15 - 8:05 pm,fr,1155,50
 131,1,3,Public skating,12:15 -1:05 pm,su,735,50
 131,1,3,Public skating,1:15 - 2:05 pm,su,795,50
-132,3,174,18+ Pick-up hockey,12:15 - 1:05 pm,tu,735,50
-132,4,174,18+ Pick-up hockey,Noon - 12:50 pm,we,720,50
-132,5,174,18+ Pick-up hockey,Noon - 12:50 pm,th,720,50
+132,3,172,18+ Pick-up hockey,12:15 - 1:05 pm,tu,735,50
+132,4,172,18+ Pick-up hockey,Noon - 12:50 pm,we,720,50
+132,5,172,18+ Pick-up hockey,Noon - 12:50 pm,th,720,50
 133,3,3,Public skating,11:30 am - 12:20 pm,tu,690,50
 133,6,3,Public skating,11:30 am - 12:20 pm,fr,690,50
 133,6,3,Public skating,4 - 5:50 pm,fr,960,110
 133,1,3,Public skating,2 - 3:50 pm,su,840,110
 134,6,91,Stick and puck - youth and adult,12:30 - 1:20 pm,fr,750,50
 134,3,55,Pick-up hockey 35+,9:30 - 10:20 am,tu,570,50
-134,3,184,Pick-up hockey 50+,10:30 - 11:20 am,tu,630,50
-134,6,184,Pick-up hockey 50+,9:30 - 11:20 am,fr,570,110
+134,3,182,Pick-up hockey 50+,10:30 - 11:20 am,tu,630,50
+134,6,182,Pick-up hockey 50+,9:30 - 11:20 am,fr,570,110
 135,2,8,Lane swim,9:30 -10:45 am,mo,570,75
 135,2,8,Lane swim,11:45 am - 1 pm,mo,705,75
 135,2,8,Lane swim,8 - 9 pm,mo,1200,60
@@ -2180,27 +2186,27 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 135,6,8,Lane swim,7:30 - 9 pm,fr,1170,90
 135,7,8,Lane swim,Noon - 1 pm,sa,720,60
 135,1,8,Lane swim,Noon - 1 pm,su,720,60
-135,2,225,Half lane swim,7:30 - 9:30 am,mo,450,120
-135,2,225,Half lane swim,10:45 - 11:45 am,mo,645,60
-135,3,225,Half lane swim,9:30 - 11:30 am,tu,570,120
-135,4,225,Half lane swim,7:30 - 9:30 am,we,450,120
-135,4,225,Half lane swim,10:45 - 11:45 am,we,645,60
-135,4,225,Half lane swim,7:30 - 9 pm,we,1170,90
-135,5,225,Half lane swim,9:30 - 11:30 am,th,570,120
-135,6,225,Half lane swim,7:30 - 9:30 am,fr,450,120
-135,6,225,Half lane swim,10:45 - 11:45 am,fr,645,60
-135,2,226,Hot tub and steam room,7:30 am - 2 pm,mo,450,390
-135,2,226,Hot tub and steam room,8 - 9 pm,mo,1200,60
-135,3,226,Hot tub and steam room,7:30 am - 2 pm,tu,450,390
-135,3,226,Hot tub and steam room,8 - 9 pm,tu,1200,60
-135,4,226,Hot tub and steam room,7:30 am - 2 pm,we,450,390
-135,4,226,Hot tub and steam room,6 - 9 pm,we,1080,180
-135,5,226,Hot tub and steam room,7:30 am - 2 pm,th,450,390
-135,5,226,Hot tub and steam room,8 - 9 pm,th,1200,60
-135,6,226,Hot tub and steam room,7:30 am - 2 pm,fr,450,390
-135,6,226,Hot tub and steam room,6 - 9 pm,fr,1080,180
-135,7,226,Hot tub and steam room,Noon - 4 pm,sa,720,240
-135,1,226,Hot tub and steam room,Noon - 4 pm,su,720,240
+135,2,223,Half lane swim,7:30 - 9:30 am,mo,450,120
+135,2,223,Half lane swim,10:45 - 11:45 am,mo,645,60
+135,3,223,Half lane swim,9:30 - 11:30 am,tu,570,120
+135,4,223,Half lane swim,7:30 - 9:30 am,we,450,120
+135,4,223,Half lane swim,10:45 - 11:45 am,we,645,60
+135,4,223,Half lane swim,7:30 - 9 pm,we,1170,90
+135,5,223,Half lane swim,9:30 - 11:30 am,th,570,120
+135,6,223,Half lane swim,7:30 - 9:30 am,fr,450,120
+135,6,223,Half lane swim,10:45 - 11:45 am,fr,645,60
+135,2,224,Hot tub and steam room,7:30 am - 2 pm,mo,450,390
+135,2,224,Hot tub and steam room,8 - 9 pm,mo,1200,60
+135,3,224,Hot tub and steam room,7:30 am - 2 pm,tu,450,390
+135,3,224,Hot tub and steam room,8 - 9 pm,tu,1200,60
+135,4,224,Hot tub and steam room,7:30 am - 2 pm,we,450,390
+135,4,224,Hot tub and steam room,6 - 9 pm,we,1080,180
+135,5,224,Hot tub and steam room,7:30 am - 2 pm,th,450,390
+135,5,224,Hot tub and steam room,8 - 9 pm,th,1200,60
+135,6,224,Hot tub and steam room,7:30 am - 2 pm,fr,450,390
+135,6,224,Hot tub and steam room,6 - 9 pm,fr,1080,180
+135,7,224,Hot tub and steam room,Noon - 4 pm,sa,720,240
+135,1,224,Hot tub and steam room,Noon - 4 pm,su,720,240
 135,4,25,Public swim,6 - 7:30 pm,we,1080,90
 135,6,25,Public swim,6 - 7:30 pm,fr,1080,90
 135,7,25,Public swim,1 - 4 pm,sa,780,180
@@ -2210,27 +2216,27 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 135,6,35,Preschool swim,8:30 - 10 am,fr,510,90
 135,7,35,Preschool swim,Noon - 1 pm,sa,720,60
 135,1,35,Preschool swim,Noon - 1 pm,su,720,60
-135,2,219,Aquafit general - shallow,7:30 - 8:30 am,mo,450,60
-135,2,219,Aquafit general - shallow,8:30 - 9:30 am,mo,510,60
-135,3,219,Aquafit general - shallow,1 - 2 pm,tu,780,60
-135,4,219,Aquafit general - shallow,7:30 - 8:30 am,we,450,60
-135,4,219,Aquafit general - shallow,8:30 - 9:30 am,we,510,60
-135,5,219,Aquafit general - shallow,1 - 2 pm,th,780,60
-135,6,219,Aquafit general - shallow,7:30 - 8:30 am,fr,450,60
-135,6,219,Aquafit general - shallow,8:30 - 9:30 am,fr,510,60
-135,2,220,Aquafit general - deep,9:30 - 10:30 am,mo,570,60
-135,3,220,Aquafit general - deep,8:30 - 9:30 am,tu,510,60
-135,4,220,Aquafit general - deep,9:30 - 10:30 am,we,570,60
-135,5,220,Aquafit general - deep,8:30 - 9:30 am,th,510,60
-135,6,220,Aquafit general - deep,9:30 - 10:30 am,fr,570,60
-135,2,227,Aquafit lite,10:45 - 11:45 am,mo,645,60
-135,2,227,Aquafit lite,1 - 2 pm,mo,780,60
-135,3,227,Aquafit lite,9:30 - 10:30 am,tu,570,60
-135,4,227,Aquafit lite,10:45 - 11:45 am,we,645,60
-135,4,227,Aquafit lite,1 - 2 pm,we,780,60
-135,5,227,Aquafit lite,9:30 - 10:30 am,th,570,60
-135,6,227,Aquafit lite,10:45 - 11:45 am,fr,645,60
-135,6,227,Aquafit lite,1 - 2 pm,fr,780,60
+135,2,217,Aquafit general - shallow,7:30 - 8:30 am,mo,450,60
+135,2,217,Aquafit general - shallow,8:30 - 9:30 am,mo,510,60
+135,3,217,Aquafit general - shallow,1 - 2 pm,tu,780,60
+135,4,217,Aquafit general - shallow,7:30 - 8:30 am,we,450,60
+135,4,217,Aquafit general - shallow,8:30 - 9:30 am,we,510,60
+135,5,217,Aquafit general - shallow,1 - 2 pm,th,780,60
+135,6,217,Aquafit general - shallow,7:30 - 8:30 am,fr,450,60
+135,6,217,Aquafit general - shallow,8:30 - 9:30 am,fr,510,60
+135,2,218,Aquafit general - deep,9:30 - 10:30 am,mo,570,60
+135,3,218,Aquafit general - deep,8:30 - 9:30 am,tu,510,60
+135,4,218,Aquafit general - deep,9:30 - 10:30 am,we,570,60
+135,5,218,Aquafit general - deep,8:30 - 9:30 am,th,510,60
+135,6,218,Aquafit general - deep,9:30 - 10:30 am,fr,570,60
+135,2,225,Aquafit lite,10:45 - 11:45 am,mo,645,60
+135,2,225,Aquafit lite,1 - 2 pm,mo,780,60
+135,3,225,Aquafit lite,9:30 - 10:30 am,tu,570,60
+135,4,225,Aquafit lite,10:45 - 11:45 am,we,645,60
+135,4,225,Aquafit lite,1 - 2 pm,we,780,60
+135,5,225,Aquafit lite,9:30 - 10:30 am,th,570,60
+135,6,225,Aquafit lite,10:45 - 11:45 am,fr,645,60
+135,6,225,Aquafit lite,1 - 2 pm,fr,780,60
 136,2,11,Weight and cardio room,6:30 am - 9 pm,mo,390,870
 136,3,11,Weight and cardio room,6:30 am - 9 pm,tu,390,870
 136,4,11,Weight and cardio room,6:30 am - 9 pm,we,390,870
@@ -2238,28 +2244,28 @@ schedule_id,day_id,activity_id,raw_activity,raw_time,weekday,start,duration
 136,6,11,Weight and cardio room,6:30 am - 9 pm,fr,390,870
 136,7,11,Weight and cardio room,8 am - 8 pm,sa,480,720
 136,1,11,Weight and cardio room,8 am - 8 pm,su,480,720
-137,2,170,Cardio and strength - older adult,9:15 - 10:15 am,mo,555,60
-137,4,170,Cardio and strength - older adult,9:15 - 10:15 am,we,555,60
-137,5,170,Cardio and strength - older adult,9:15 - 10:30 am,th,555,75
-137,2,228,Cardio and strength - older adult lite,9:30 - 10:30 am,mo,570,60
-137,4,228,Cardio and strength - older adult lite,9:30 - 10:30 am,we,570,60
-137,5,228,Cardio and strength - older adult lite,9:30 - 10:30 am,th,570,60
-137,2,229,Strength TMC - older adult,10:20 - 11:20 am,mo,620,60
-137,3,196,Strength and Balance - older adult,9:30 - 10:30 am,tu,570,60
-137,3,230,Stretch and strength - older adult,11 am - noon,tu,660,60
-137,5,230,Stretch and strength - older adult,11 am - noon,th,660,60
-137,4,231,Strength circuit - older adult,10:20 - 11:20 am,we,620,60
+137,2,168,Cardio and strength - older adult,9:15 - 10:15 am,mo,555,60
+137,4,168,Cardio and strength - older adult,9:15 - 10:15 am,we,555,60
+137,5,168,Cardio and strength - older adult,9:15 - 10:30 am,th,555,75
+137,2,226,Cardio and strength - older adult lite,9:30 - 10:30 am,mo,570,60
+137,4,226,Cardio and strength - older adult lite,9:30 - 10:30 am,we,570,60
+137,5,226,Cardio and strength - older adult lite,9:30 - 10:30 am,th,570,60
+137,2,227,Strength TMC - older adult,10:20 - 11:20 am,mo,620,60
+137,3,194,Strength and Balance - older adult,9:30 - 10:30 am,tu,570,60
+137,3,228,Stretch and strength - older adult,11 am - noon,tu,660,60
+137,5,228,Stretch and strength - older adult,11 am - noon,th,660,60
+137,4,229,Strength circuit - older adult,10:20 - 11:20 am,we,620,60
 137,2,18,Yoga,10:35 - 11:35 am,mo,635,60
 137,3,18,Yoga,10:20 - 11:20 am,tu,620,60
 137,5,18,Yoga,10:20 -11:20 am,th,620,60
 137,3,16,Zumba,9:15 - 10:15 am,tu,555,60
-138,2,232,"Squash Courts 2, 3, 4, and 5",6:30 am - 8:30 pm,mo,390,840
-138,3,232,"Squash Courts 2, 3, 4, and 5",6:30 am - 8:30 pm,tu,390,840
-138,4,232,"Squash Courts 2, 3, 4, and 5",6:30 am - 8:30 pm,we,390,840
-138,5,232,"Squash Courts 2, 3, 4, and 5",6:30 am - 8:30 pm,th,390,840
-138,6,232,"Squash Courts 2, 3, 4, and 5",6:30 am - 8:30 pm,fr,390,840
-138,7,232,"Squash Courts 2, 3, 4, and 5",8:30 am - 7:30 pm,sa,510,660
-138,1,232,"Squash Courts 2, 3, 4, and 5",8:30 am - 7:30 pm,su,510,660
+138,2,230,"Squash Courts 2, 3, 4, and 5",6:30 am - 8:30 pm,mo,390,840
+138,3,230,"Squash Courts 2, 3, 4, and 5",6:30 am - 8:30 pm,tu,390,840
+138,4,230,"Squash Courts 2, 3, 4, and 5",6:30 am - 8:30 pm,we,390,840
+138,5,230,"Squash Courts 2, 3, 4, and 5",6:30 am - 8:30 pm,th,390,840
+138,6,230,"Squash Courts 2, 3, 4, and 5",6:30 am - 8:30 pm,fr,390,840
+138,7,230,"Squash Courts 2, 3, 4, and 5",8:30 am - 7:30 pm,sa,510,660
+138,1,230,"Squash Courts 2, 3, 4, and 5",8:30 am - 7:30 pm,su,510,660
 139,6,67,Kindergym,10 - 11:30 am,fr,600,90
 140,6,3,Public skating,7:15 - 8:05 pm,fr,1155,50
 140,7,3,Public skating,11:15 am - 12:05 pm,sa,675,50
