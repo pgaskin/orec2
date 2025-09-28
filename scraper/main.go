@@ -953,7 +953,9 @@ func cleanActivityName(activity string) string {
 	if reduced {
 		activity += " - reduced capacity"
 	}
-	return normalizeText(activity, false, false)
+	activity = normalizeText(activity, false, false)
+	activity = strings.Trim(activity, "*- ")
+	return activity
 }
 
 // parseClockRange parses a time range for an activity.
