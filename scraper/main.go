@@ -1243,7 +1243,7 @@ func parseDateRange(s string) (r schema.DateRange, ok bool) {
 				year, ok = int(v), true
 			}
 			if !ok {
-				return schema.MakeDate(year, month, day, wkday), false // invalid day
+				return schema.MakeDate(year, month, day, wkday), false // invalid year
 			}
 		}
 

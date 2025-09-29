@@ -2,6 +2,7 @@ package main
 
 import (
 	"cmp"
+	"net/url"
 	"strings"
 	"testing"
 
@@ -212,6 +213,11 @@ func TestParseDateRange(t *testing.T) {
 		{"test{ - }January 1 and 1", 0, 0},
 		{"test{ - }January 1 and 2", 1_01_0, 1_02_0},
 		{"test{ - }January 1 and 3", 0, 0},
+		{"test{ - }Tuesday", 0, 0},
+		{"test{ - }Tuesday - Thursday", 0, 0},
+		{"test{ - }until February 29, 2001", 0, 0},
+		{"test{ - }until February 28, 20aa", 0, 0},
+		{"test{ - }until January 1 February", 0, 0},
 		// TODO: more
 	} {
 		tcP, sep, _ := strings.Cut(tc.S, "{")
@@ -748,4 +754,49 @@ func TestCleanActivityName(t *testing.T) {
 			}
 		}
 	})
+}
+
+func TestMatchDomain(t *testing.T) {
+	for _, tc := range [][]string{
+		{".example.com",
+			"example.com",
+			"test.example.com",
+			"EXAMPLE.com",
+			"Test.Example.Com",
+			"example.com.",
+			"test.example.com.",
+			"-",
+			"-test.com",
+			"-example.com.test",
+			"-test.example.com.test"},
+		{"example.com",
+			"example.com",
+			"EXAMPLE.com",
+			"example.com.",
+			"-",
+			"-test.example.com",
+			"-Test.Example.Com",
+			"-test.example.com.",
+			"-test.com",
+			"-example.com.test",
+			"-test.example.com.test"},
+		{"",
+			"example.com",
+			"EXAMPLE.com",
+			"example.com.",
+			"",
+			"test.example.com",
+			"Test.Example.Com",
+			"test.example.com.",
+			"test.com",
+			"example.com.test",
+			"test.example.com.test"},
+	} {
+		for _, s := range tc {
+			s, not := strings.CutPrefix(s, "-")
+			if matchDomain(tc[0], &url.URL{Host: s}) != !not {
+				t.Errorf("match(%q, %q) != %t", tc[0], s, !not)
+			}
+		}
+	}
 }
