@@ -9,7 +9,6 @@ package schema
 import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
-	_ "google.golang.org/protobuf/types/gofeaturespb"
 	timestamppb "google.golang.org/protobuf/types/known/timestamppb"
 	reflect "reflect"
 	unsafe "unsafe"
@@ -1076,7 +1075,7 @@ var File_schema_proto protoreflect.FileDescriptor
 
 const file_schema_proto_rawDesc = "" +
 	"\n" +
-	"\fschema.proto\x12\x05orec2\x1a!google/protobuf/go_features.proto\x1a\x1fgoogle/protobuf/timestamp.proto\"Y\n" +
+	"\fschema.proto\x12\x05orec2\x1a\x1fgoogle/protobuf/timestamp.proto\"Y\n" +
 	"\x04Data\x12/\n" +
 	"\n" +
 	"facilities\x18\x01 \x03(\v2\x0f.orec2.FacilityR\n" +
@@ -1134,8 +1133,7 @@ const file_schema_proto_rawDesc = "" +
 	"\bTHURSDAY\x10\x04\x12\n" +
 	"\n" +
 	"\x06FRIDAY\x10\x05\x12\f\n" +
-	"\bSATURDAY\x10\x06\x1a\x04:\x02\x10\x02B\n" +
-	"\x92\x03\a\xd2>\x02\x10\x03\b\x02b\beditionsp\xe8\a"
+	"\bSATURDAY\x10\x06\x1a\x04:\x02\x10\x02B\x05\x92\x03\x02\b\x02b\beditionsp\xe8\a"
 
 var file_schema_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_schema_proto_msgTypes = make([]protoimpl.MessageInfo, 9)

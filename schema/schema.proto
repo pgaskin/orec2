@@ -2,11 +2,9 @@ edition = "2023";
 
 package orec2;
 
-import "google/protobuf/go_features.proto";
 import "google/protobuf/timestamp.proto";
 
 option features.field_presence = IMPLICIT;
-option features.(pb.go).api_level = API_OPAQUE;
 
 // underscored fields are ones which contain data parsed or otherwise enriched
 // by the scraper rather than coming directly from the source page, and are set
