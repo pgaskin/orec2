@@ -151,12 +151,14 @@ func main() {
 
 	// add secrets
 	if ScraperSecret != "" {
-		http.DefaultTransport = headerRoundTripper(http.DefaultTransport, ".ottawa.ca", "X-Scraper-Secret", ScraperSecret)
-		redactor.RedactRequestHeader("X-Scraper-Secret", 4)
+		header := "X-Scraper-Secret"
+		http.DefaultTransport = headerRoundTripper(http.DefaultTransport, ".ottawa.ca", header, ScraperSecret)
+		redactor.RedactRequestHeader(header, 4)
 	}
 	if GeocodioAPIKey != "" {
-		http.DefaultTransport = headerRoundTripper(http.DefaultTransport, "api.geocod.io", "Authorization", "Bearer "+GeocodioAPIKey)
-		redactor.RedactRequestHeader("Authorization", 4)
+		header := "Authorization"
+		http.DefaultTransport = headerRoundTripper(http.DefaultTransport, "api.geocod.io", header, "Bearer "+GeocodioAPIKey)
+		redactor.RedactRequestHeader(header, 4)
 	}
 
 	// add user agent
@@ -662,8 +664,7 @@ func scrapePlaceListings(doc *goquery.Document, s *goquery.Selection, fn func(u 
 		return fmt.Errorf("no rows found")
 	}
 
-	err = nil
-	rows.EachWithBreak(func(i int, row *goquery.Selection) bool {
+	for i, row := range rows.EachIter() {
 		if x := func() error {
 			rowTitle, err := findOne(row, `td[headers="view-title-table-column"]`, "title column")
 			if err != nil {
@@ -693,11 +694,10 @@ func scrapePlaceListings(doc *goquery.Document, s *goquery.Selection, fn func(u 
 			}
 			return nil
 		}(); x != nil {
-			err = fmt.Errorf("row %d: %w", i+1, x)
+			return fmt.Errorf("row %d: %w", i+1, x)
 		}
-		return err == nil
-	})
-	return err
+	}
+	return nil
 }
 
 // scrapeCollapseSections iterates over collapse section widgets contained
@@ -707,9 +707,7 @@ func scrapeCollapseSections(s *goquery.Selection, fn func(title string, content 
 	if buttons.Length() == 0 && s.Find(`div.collapse-region`).Length() != 0 {
 		return fmt.Errorf("no collapse sections found, but collapse-region found")
 	}
-
-	var err error
-	buttons.EachWithBreak(func(i int, btn *goquery.Selection) bool {
+	for i, btn := range buttons.EachIter() {
 		title := strings.TrimSpace(btn.Text())
 		if x := func() error {
 			tgt, _ := btn.Attr("data-target")
@@ -724,11 +722,10 @@ func scrapeCollapseSections(s *goquery.Selection, fn func(title string, content 
 			}
 			return nil
 		}(); x != nil {
-			err = fmt.Errorf("section %d (%q): %w", i+1, title, x)
+			return fmt.Errorf("section %d (%q): %w", i+1, title, x)
 		}
-		return err == nil
-	})
-	return err
+	}
+	return nil
 }
 
 // scrapeNodeField gets a node field, ensuring it is the expected type.
