@@ -5,8 +5,6 @@ package orec2;
 import "google/protobuf/go_features.proto";
 import "google/protobuf/timestamp.proto";
 
-option features.json_format = ALLOW;
-option features.utf8_validation = VERIFY;
 option features.field_presence = IMPLICIT;
 option features.(pb.go).api_level = API_OPAQUE;
 
@@ -25,7 +23,7 @@ message Data {
 message Facility {
     string name = 1;
     string description = 2 [json_name="desc"];
-    Source source = 3 [features.field_presence=LEGACY_REQUIRED];
+    Source source = 3;
     string address = 4;
     LngLat _lnglat = 5 [json_name="_lnglat", features.field_presence=EXPLICIT];
     string notifications_html = 6; // raw html
@@ -54,7 +52,7 @@ message ScheduleGroup {
 message Schedule {
     message ActivityDay {
         repeated TimeRange times = 1;
-    };
+    }
     message Activity {
         string label = 1;
         string _name = 2 [json_name="_name"]; // for filtering, cleaned up and normalized, lowercase

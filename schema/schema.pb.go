@@ -155,7 +155,7 @@ type Facility struct {
 	state                        protoimpl.MessageState `protogen:"opaque.v1"`
 	xxx_hidden_Name              string                 `protobuf:"bytes,1,opt,name=name"`
 	xxx_hidden_Description       string                 `protobuf:"bytes,2,opt,name=description,json=desc"`
-	xxx_hidden_Source            *Source                `protobuf:"bytes,3,req,name=source"`
+	xxx_hidden_Source            *Source                `protobuf:"bytes,3,opt,name=source"`
 	xxx_hidden_Address           string                 `protobuf:"bytes,4,opt,name=address"`
 	xxx_hidden_XLnglat           *LngLat                `protobuf:"bytes,5,opt,name=_lnglat"`
 	xxx_hidden_NotificationsHtml string                 `protobuf:"bytes,6,opt,name=notifications_html,json=notificationsHtml"`
@@ -1081,11 +1081,11 @@ const file_schema_proto_rawDesc = "" +
 	"\n" +
 	"facilities\x18\x01 \x03(\v2\x0f.orec2.FacilityR\n" +
 	"facilities\x12 \n" +
-	"\vattribution\x18\x02 \x03(\tR\vattribution\"\xe7\x02\n" +
+	"\vattribution\x18\x02 \x03(\tR\vattribution\"\xe0\x02\n" +
 	"\bFacility\x12\x12\n" +
 	"\x04name\x18\x01 \x01(\tR\x04name\x12\x19\n" +
-	"\vdescription\x18\x02 \x01(\tR\x04desc\x12,\n" +
-	"\x06source\x18\x03 \x01(\v2\r.orec2.SourceB\x05\xaa\x01\x02\b\x03R\x06source\x12\x18\n" +
+	"\vdescription\x18\x02 \x01(\tR\x04desc\x12%\n" +
+	"\x06source\x18\x03 \x01(\v2\r.orec2.SourceR\x06source\x12\x18\n" +
 	"\aaddress\x18\x04 \x01(\tR\aaddress\x12.\n" +
 	"\a_lnglat\x18\x05 \x01(\v2\r.orec2.LngLatB\x05\xaa\x01\x02\b\x01R\a_lnglat\x12-\n" +
 	"\x12notifications_html\x18\x06 \x01(\tR\x11notificationsHtml\x12,\n" +
@@ -1134,7 +1134,8 @@ const file_schema_proto_rawDesc = "" +
 	"\bTHURSDAY\x10\x04\x12\n" +
 	"\n" +
 	"\x06FRIDAY\x10\x05\x12\f\n" +
-	"\bSATURDAY\x10\x06\x1a\x04:\x02\x10\x02B\x0e\x92\x03\v\xd2>\x02\x10\x03\b\x02 \x020\x01b\beditionsp\xe8\a"
+	"\bSATURDAY\x10\x06\x1a\x04:\x02\x10\x02B\n" +
+	"\x92\x03\a\xd2>\x02\x10\x03\b\x02b\beditionsp\xe8\a"
 
 var file_schema_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_schema_proto_msgTypes = make([]protoimpl.MessageInfo, 9)
