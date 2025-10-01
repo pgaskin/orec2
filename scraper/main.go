@@ -902,9 +902,9 @@ func cutAgeMin(activity string) (string, int, bool) {
 func cutReservationRequirement(activity string) (string, bool, bool) {
 	if i := strings.LastIndex(activity, "*"); i != -1 {
 		switch normalizeText(strings.Trim(activity[i:], "*. ()"), false, true) {
-		case "reservations not required", "reservation not required":
+		case "reservations not required", "reservation not required", "reservation is not required", "reservations are not required":
 			return strings.TrimSpace(activity[:i]), false, true
-		case "reservations required", "reservation required", "requires reservations", "requires reservation":
+		case "reservations required", "reservation required", "requires reservations", "requires reservation", "reservation is required", "reservations are required":
 			return strings.TrimSpace(activity[:i]), true, true
 		}
 	}
