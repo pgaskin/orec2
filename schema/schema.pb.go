@@ -502,6 +502,7 @@ type ScheduleGroup struct {
 	xxx_hidden_XTitle              string                 `protobuf:"bytes,2,opt,name=_title"`
 	xxx_hidden_ScheduleChangesHtml string                 `protobuf:"bytes,3,opt,name=schedule_changes_html,json=scheduleChangesHtml"`
 	xxx_hidden_Schedules           *[]*Schedule           `protobuf:"bytes,4,rep,name=schedules"`
+	xxx_hidden_ReservationLinks    *[]*ReservationLink    `protobuf:"bytes,5,rep,name=reservation_links,json=reservationLinks"`
 	unknownFields                  protoimpl.UnknownFields
 	sizeCache                      protoimpl.SizeCache
 }
@@ -561,6 +562,15 @@ func (x *ScheduleGroup) GetSchedules() []*Schedule {
 	return nil
 }
 
+func (x *ScheduleGroup) GetReservationLinks() []*ReservationLink {
+	if x != nil {
+		if x.xxx_hidden_ReservationLinks != nil {
+			return *x.xxx_hidden_ReservationLinks
+		}
+	}
+	return nil
+}
+
 func (x *ScheduleGroup) SetLabel(v string) {
 	x.xxx_hidden_Label = v
 }
@@ -577,6 +587,10 @@ func (x *ScheduleGroup) SetSchedules(v []*Schedule) {
 	x.xxx_hidden_Schedules = &v
 }
 
+func (x *ScheduleGroup) SetReservationLinks(v []*ReservationLink) {
+	x.xxx_hidden_ReservationLinks = &v
+}
+
 type ScheduleGroup_builder struct {
 	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
 
@@ -584,6 +598,7 @@ type ScheduleGroup_builder struct {
 	XTitle              string
 	ScheduleChangesHtml string
 	Schedules           []*Schedule
+	ReservationLinks    []*ReservationLink
 }
 
 func (b0 ScheduleGroup_builder) Build() *ScheduleGroup {
@@ -594,6 +609,7 @@ func (b0 ScheduleGroup_builder) Build() *ScheduleGroup {
 	x.xxx_hidden_XTitle = b.XTitle
 	x.xxx_hidden_ScheduleChangesHtml = b.ScheduleChangesHtml
 	x.xxx_hidden_Schedules = &b.Schedules
+	x.xxx_hidden_ReservationLinks = &b.ReservationLinks
 	return m0
 }
 
@@ -925,6 +941,77 @@ func (b0 TimeRange_builder) Build() *TimeRange {
 	return m0
 }
 
+type ReservationLink struct {
+	state            protoimpl.MessageState `protogen:"opaque.v1"`
+	xxx_hidden_Label string                 `protobuf:"bytes,1,opt,name=label"`
+	xxx_hidden_Url   string                 `protobuf:"bytes,2,opt,name=url"`
+	unknownFields    protoimpl.UnknownFields
+	sizeCache        protoimpl.SizeCache
+}
+
+func (x *ReservationLink) Reset() {
+	*x = ReservationLink{}
+	mi := &file_schema_proto_msgTypes[7]
+	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+	ms.StoreMessageInfo(mi)
+}
+
+func (x *ReservationLink) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*ReservationLink) ProtoMessage() {}
+
+func (x *ReservationLink) ProtoReflect() protoreflect.Message {
+	mi := &file_schema_proto_msgTypes[7]
+	if x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+func (x *ReservationLink) GetLabel() string {
+	if x != nil {
+		return x.xxx_hidden_Label
+	}
+	return ""
+}
+
+func (x *ReservationLink) GetUrl() string {
+	if x != nil {
+		return x.xxx_hidden_Url
+	}
+	return ""
+}
+
+func (x *ReservationLink) SetLabel(v string) {
+	x.xxx_hidden_Label = v
+}
+
+func (x *ReservationLink) SetUrl(v string) {
+	x.xxx_hidden_Url = v
+}
+
+type ReservationLink_builder struct {
+	_ [0]func() // Prevents comparability and use of unkeyed literals for the builder.
+
+	Label string
+	Url   string
+}
+
+func (b0 ReservationLink_builder) Build() *ReservationLink {
+	m0 := &ReservationLink{}
+	b, x := &b0, m0
+	_, _ = b, x
+	x.xxx_hidden_Label = b.Label
+	x.xxx_hidden_Url = b.Url
+	return m0
+}
+
 type Schedule_ActivityDay struct {
 	state            protoimpl.MessageState `protogen:"opaque.v1"`
 	xxx_hidden_Times *[]*TimeRange          `protobuf:"bytes,1,rep,name=times"`
@@ -934,7 +1021,7 @@ type Schedule_ActivityDay struct {
 
 func (x *Schedule_ActivityDay) Reset() {
 	*x = Schedule_ActivityDay{}
-	mi := &file_schema_proto_msgTypes[7]
+	mi := &file_schema_proto_msgTypes[8]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -946,7 +1033,7 @@ func (x *Schedule_ActivityDay) String() string {
 func (*Schedule_ActivityDay) ProtoMessage() {}
 
 func (x *Schedule_ActivityDay) ProtoReflect() protoreflect.Message {
-	mi := &file_schema_proto_msgTypes[7]
+	mi := &file_schema_proto_msgTypes[8]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -985,17 +1072,20 @@ func (b0 Schedule_ActivityDay_builder) Build() *Schedule_ActivityDay {
 }
 
 type Schedule_Activity struct {
-	state            protoimpl.MessageState   `protogen:"opaque.v1"`
-	xxx_hidden_Label string                   `protobuf:"bytes,1,opt,name=label"`
-	xxx_hidden_XName string                   `protobuf:"bytes,2,opt,name=_name"`
-	xxx_hidden_Days  *[]*Schedule_ActivityDay `protobuf:"bytes,3,rep,name=days"`
-	unknownFields    protoimpl.UnknownFields
-	sizeCache        protoimpl.SizeCache
+	state                  protoimpl.MessageState   `protogen:"opaque.v1"`
+	xxx_hidden_Label       string                   `protobuf:"bytes,1,opt,name=label"`
+	xxx_hidden_XName       string                   `protobuf:"bytes,2,opt,name=_name"`
+	xxx_hidden_XResv       bool                     `protobuf:"varint,4,opt,name=_resv"`
+	xxx_hidden_Days        *[]*Schedule_ActivityDay `protobuf:"bytes,3,rep,name=days"`
+	XXX_raceDetectHookData protoimpl.RaceDetectHookData
+	XXX_presence           [1]uint32
+	unknownFields          protoimpl.UnknownFields
+	sizeCache              protoimpl.SizeCache
 }
 
 func (x *Schedule_Activity) Reset() {
 	*x = Schedule_Activity{}
-	mi := &file_schema_proto_msgTypes[8]
+	mi := &file_schema_proto_msgTypes[9]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -1007,7 +1097,7 @@ func (x *Schedule_Activity) String() string {
 func (*Schedule_Activity) ProtoMessage() {}
 
 func (x *Schedule_Activity) ProtoReflect() protoreflect.Message {
-	mi := &file_schema_proto_msgTypes[8]
+	mi := &file_schema_proto_msgTypes[9]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -1032,6 +1122,13 @@ func (x *Schedule_Activity) GetXName() string {
 	return ""
 }
 
+func (x *Schedule_Activity) GetXResv() bool {
+	if x != nil {
+		return x.xxx_hidden_XResv
+	}
+	return false
+}
+
 func (x *Schedule_Activity) GetDays() []*Schedule_ActivityDay {
 	if x != nil {
 		if x.xxx_hidden_Days != nil {
@@ -1049,8 +1146,25 @@ func (x *Schedule_Activity) SetXName(v string) {
 	x.xxx_hidden_XName = v
 }
 
+func (x *Schedule_Activity) SetXResv(v bool) {
+	x.xxx_hidden_XResv = v
+	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 2, 4)
+}
+
 func (x *Schedule_Activity) SetDays(v []*Schedule_ActivityDay) {
 	x.xxx_hidden_Days = &v
+}
+
+func (x *Schedule_Activity) HasXResv() bool {
+	if x == nil {
+		return false
+	}
+	return protoimpl.X.Present(&(x.XXX_presence[0]), 2)
+}
+
+func (x *Schedule_Activity) ClearXResv() {
+	protoimpl.X.ClearPresent(&(x.XXX_presence[0]), 2)
+	x.xxx_hidden_XResv = false
 }
 
 type Schedule_Activity_builder struct {
@@ -1058,6 +1172,7 @@ type Schedule_Activity_builder struct {
 
 	Label string
 	XName string
+	XResv *bool
 	Days  []*Schedule_ActivityDay
 }
 
@@ -1067,6 +1182,10 @@ func (b0 Schedule_Activity_builder) Build() *Schedule_Activity {
 	_, _ = b, x
 	x.xxx_hidden_Label = b.Label
 	x.xxx_hidden_XName = b.XName
+	if b.XResv != nil {
+		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 2, 4)
+		x.xxx_hidden_XResv = *b.XResv
+	}
 	x.xxx_hidden_Days = &b.Days
 	return m0
 }
@@ -1096,12 +1215,13 @@ const file_schema_proto_rawDesc = "" +
 	"\x05_date\x18\x02 \x01(\v2\x1a.google.protobuf.TimestampB\x05\xaa\x01\x02\b\x01R\x05_date\",\n" +
 	"\x06LngLat\x12\x10\n" +
 	"\x03lng\x18\x01 \x01(\x02R\x03lng\x12\x10\n" +
-	"\x03lat\x18\x02 \x01(\x02R\x03lat\"\xa0\x01\n" +
+	"\x03lat\x18\x02 \x01(\x02R\x03lat\"\xe5\x01\n" +
 	"\rScheduleGroup\x12\x14\n" +
 	"\x05label\x18\x01 \x01(\tR\x05label\x12\x16\n" +
 	"\x06_title\x18\x02 \x01(\tR\x06_title\x122\n" +
 	"\x15schedule_changes_html\x18\x03 \x01(\tR\x13scheduleChangesHtml\x12-\n" +
-	"\tschedules\x18\x04 \x03(\v2\x0f.orec2.ScheduleR\tschedules\"\xf4\x02\n" +
+	"\tschedules\x18\x04 \x03(\v2\x0f.orec2.ScheduleR\tschedules\x12C\n" +
+	"\x11reservation_links\x18\x05 \x03(\v2\x16.orec2.ReservationLinkR\x10reservationLinks\"\x92\x03\n" +
 	"\bSchedule\x12\x18\n" +
 	"\acaption\x18\x01 \x01(\tR\acaption\x12\x14\n" +
 	"\x05_name\x18\x02 \x01(\tR\x05_name\x12\x14\n" +
@@ -1113,16 +1233,20 @@ const file_schema_proto_rawDesc = "" +
 	"activities\x18\x04 \x03(\v2\x18.orec2.Schedule.ActivityR\n" +
 	"activities\x1a5\n" +
 	"\vActivityDay\x12&\n" +
-	"\x05times\x18\x01 \x03(\v2\x10.orec2.TimeRangeR\x05times\x1ag\n" +
+	"\x05times\x18\x01 \x03(\v2\x10.orec2.TimeRangeR\x05times\x1a\x84\x01\n" +
 	"\bActivity\x12\x14\n" +
 	"\x05label\x18\x01 \x01(\tR\x05label\x12\x14\n" +
-	"\x05_name\x18\x02 \x01(\tR\x05_name\x12/\n" +
+	"\x05_name\x18\x02 \x01(\tR\x05_name\x12\x1b\n" +
+	"\x05_resv\x18\x04 \x01(\bB\x05\xaa\x01\x02\b\x01R\x05_resv\x12/\n" +
 	"\x04days\x18\x03 \x03(\v2\x1b.orec2.Schedule.ActivityDayR\x04days\"\x8a\x01\n" +
 	"\tTimeRange\x12\x14\n" +
 	"\x05label\x18\x01 \x01(\tR\x05label\x12\x1d\n" +
 	"\x06_start\x18\x02 \x01(\x05B\x05\xaa\x01\x02\b\x01R\x06_start\x12\x19\n" +
 	"\x04_end\x18\x03 \x01(\x05B\x05\xaa\x01\x02\b\x01R\x04_end\x12-\n" +
-	"\x06_wkday\x18\x04 \x01(\x0e2\x0e.orec2.WeekdayB\x05\xaa\x01\x02\b\x01R\x06_wkday*k\n" +
+	"\x06_wkday\x18\x04 \x01(\x0e2\x0e.orec2.WeekdayB\x05\xaa\x01\x02\b\x01R\x06_wkday\"9\n" +
+	"\x0fReservationLink\x12\x14\n" +
+	"\x05label\x18\x01 \x01(\tR\x05label\x12\x10\n" +
+	"\x03url\x18\x02 \x01(\tR\x03url*k\n" +
 	"\aWeekday\x12\n" +
 	"\n" +
 	"\x06SUNDAY\x10\x00\x12\n" +
@@ -1136,7 +1260,7 @@ const file_schema_proto_rawDesc = "" +
 	"\bSATURDAY\x10\x06\x1a\x04:\x02\x10\x02B\x05\x92\x03\x02\b\x02b\beditionsp\xe8\a"
 
 var file_schema_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
-var file_schema_proto_msgTypes = make([]protoimpl.MessageInfo, 9)
+var file_schema_proto_msgTypes = make([]protoimpl.MessageInfo, 10)
 var file_schema_proto_goTypes = []any{
 	(Weekday)(0),                  // 0: orec2.Weekday
 	(*Data)(nil),                  // 1: orec2.Data
@@ -1146,26 +1270,28 @@ var file_schema_proto_goTypes = []any{
 	(*ScheduleGroup)(nil),         // 5: orec2.ScheduleGroup
 	(*Schedule)(nil),              // 6: orec2.Schedule
 	(*TimeRange)(nil),             // 7: orec2.TimeRange
-	(*Schedule_ActivityDay)(nil),  // 8: orec2.Schedule.ActivityDay
-	(*Schedule_Activity)(nil),     // 9: orec2.Schedule.Activity
-	(*timestamppb.Timestamp)(nil), // 10: google.protobuf.Timestamp
+	(*ReservationLink)(nil),       // 8: orec2.ReservationLink
+	(*Schedule_ActivityDay)(nil),  // 9: orec2.Schedule.ActivityDay
+	(*Schedule_Activity)(nil),     // 10: orec2.Schedule.Activity
+	(*timestamppb.Timestamp)(nil), // 11: google.protobuf.Timestamp
 }
 var file_schema_proto_depIdxs = []int32{
 	2,  // 0: orec2.Data.facilities:type_name -> orec2.Facility
 	3,  // 1: orec2.Facility.source:type_name -> orec2.Source
 	4,  // 2: orec2.Facility._lnglat:type_name -> orec2.LngLat
 	5,  // 3: orec2.Facility.schedule_groups:type_name -> orec2.ScheduleGroup
-	10, // 4: orec2.Source._date:type_name -> google.protobuf.Timestamp
+	11, // 4: orec2.Source._date:type_name -> google.protobuf.Timestamp
 	6,  // 5: orec2.ScheduleGroup.schedules:type_name -> orec2.Schedule
-	9,  // 6: orec2.Schedule.activities:type_name -> orec2.Schedule.Activity
-	0,  // 7: orec2.TimeRange._wkday:type_name -> orec2.Weekday
-	7,  // 8: orec2.Schedule.ActivityDay.times:type_name -> orec2.TimeRange
-	8,  // 9: orec2.Schedule.Activity.days:type_name -> orec2.Schedule.ActivityDay
-	10, // [10:10] is the sub-list for method output_type
-	10, // [10:10] is the sub-list for method input_type
-	10, // [10:10] is the sub-list for extension type_name
-	10, // [10:10] is the sub-list for extension extendee
-	0,  // [0:10] is the sub-list for field type_name
+	8,  // 6: orec2.ScheduleGroup.reservation_links:type_name -> orec2.ReservationLink
+	10, // 7: orec2.Schedule.activities:type_name -> orec2.Schedule.Activity
+	0,  // 8: orec2.TimeRange._wkday:type_name -> orec2.Weekday
+	7,  // 9: orec2.Schedule.ActivityDay.times:type_name -> orec2.TimeRange
+	9,  // 10: orec2.Schedule.Activity.days:type_name -> orec2.Schedule.ActivityDay
+	11, // [11:11] is the sub-list for method output_type
+	11, // [11:11] is the sub-list for method input_type
+	11, // [11:11] is the sub-list for extension type_name
+	11, // [11:11] is the sub-list for extension extendee
+	0,  // [0:11] is the sub-list for field type_name
 }
 
 func init() { file_schema_proto_init() }
@@ -1179,7 +1305,7 @@ func file_schema_proto_init() {
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: unsafe.Slice(unsafe.StringData(file_schema_proto_rawDesc), len(file_schema_proto_rawDesc)),
 			NumEnums:      1,
-			NumMessages:   9,
+			NumMessages:   10,
 			NumExtensions: 0,
 			NumServices:   0,
 		},

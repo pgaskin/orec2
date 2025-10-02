@@ -328,6 +328,32 @@ func run(ctx context.Context) error {
 						facility.XErrors = append(facility.XErrors, fmt.Sprintf("parse schedule changes for schedule group %q: multiple selector matches found", label))
 					}
 
+					for _, btn := range content.Find(".btn").EachIter() {
+						tmp := btn.Clone()
+						tmp.Find(".fas").Remove()             // font-awesome icons
+						tmp.Find(".visually-hidden").Remove() // accessibility text
+						label := normalizeText(tmp.Text(), false, false)
+
+						switch {
+						case strings.Contains(strings.ToLower(label), "reserve a spot"):
+						case strings.Contains(strings.ToLower(btn.AttrOr("href", "")), "reservation.frontdesksuite.ca"):
+						default:
+							continue
+						}
+
+						var burl string
+						if u, err := resolve(doc, btn); err != nil {
+							facility.XErrors = append(facility.XErrors, fmt.Sprintf("parse reservation button for schedule group %q: failed to parse href: %v", group.Label, err))
+						} else {
+							burl = u.String()
+						}
+
+						var link schema.ReservationLink_builder
+						link.Label = label
+						link.Url = burl
+						group.ReservationLinks = append(group.ReservationLinks, link.Build())
+					}
+
 				schedule:
 					for _, table := range content.Find("table").EachIter() {
 						var schedule schema.Schedule_builder
@@ -380,6 +406,9 @@ func run(ctx context.Context) error {
 									if i == 0 {
 										activity.Label = normalizeText(cell.Text(), false, false)
 										activity.XName = cleanActivityName(cell.Text())
+										if _, resv, ok := cutReservationRequirement(activity.Label); ok {
+											activity.XResv = ptrTo(resv)
+										}
 									} else {
 										hdr := schedule.Days[i-1]
 										wkday := time.Weekday(-1)

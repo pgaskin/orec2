@@ -45,6 +45,7 @@ message ScheduleGroup {
     string _title = 2 [json_name="_title"]; // for display and filtering, parsed out from the label and normalized, title case
     string schedule_changes_html = 3; // raw html
     repeated Schedule schedules = 4;
+    repeated ReservationLink reservation_links = 5;
 }
 
 message Schedule {
@@ -54,6 +55,7 @@ message Schedule {
     message Activity {
         string label = 1;
         string _name = 2 [json_name="_name"]; // for filtering, cleaned up and normalized, lowercase
+        bool _resv = 4 [json_name="_resv", features.field_presence=EXPLICIT]; // unset if no explicit reservation requirement stated, false or true otherwise
         repeated ActivityDay days = 3; // corresponds to days
     }
     string caption = 1;
@@ -70,6 +72,11 @@ message TimeRange {
     int32 _start = 2 [json_name="_start", features.field_presence=EXPLICIT];  // minutes from 00:00, not set if parse error
     int32 _end = 3 [json_name="_end", features.field_presence=EXPLICIT]; // minutes from 00:00, not set if parse error
     Weekday _wkday = 4 [json_name="_wkday", features.field_presence=EXPLICIT];// sunday = 0, not set if parse error
+}
+
+message ReservationLink {
+    string label = 1;
+    string url = 2;
 }
 
 enum Weekday {

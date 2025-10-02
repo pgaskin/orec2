@@ -50,12 +50,14 @@ git \
   - Parsed schedule date range.
   - Normalized schedule activity name.
   - Activity time range and weekday as an integer.
+  - Explicit reservation requirement in activity names as a boolean (typically, this is used as an exception to the default based on whether the schedule group has reservation links).
 - Overlapping schedules (e.g., holiday schedules) are not merged. These schedules are not consistently formatted as they are manually named and created, so although I attempt to parse time ranges, I don't use them to merge schedules. This helps keep the scraper reliable and reduces the likelihood of accidentally missing important information.
 - Any potential parsing problems are included in an array of error messages for each facility.
 - A protobuf schema is used for maintainability, but it may be changed in backwards-incompatible ways if needed.
 
 ### Data changes
 
+- **2025-10-02:** Added support for scraping reservation links into `ScheduleGroup.reservation_links`, and parsing reservation requirement text in activity names into `Activity._resv`.
 - **2025-09-16:** Switched to geocodio for geocoding. Facility longitude/latitude values are slightly different and generally more complete/accurate.
 - **2025-09-04:** Significantly improved `ScheduleGroup._title` and `Activity._name` normalization.
 - **2025-09-04:** Added new `Schedule._from` and `Schedule._to` parsed fields for the schedule date range.
