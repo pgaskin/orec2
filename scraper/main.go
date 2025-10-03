@@ -1,6 +1,7 @@
 package main
 
 import (
+	"bytes"
 	"cmp"
 	"context"
 	"encoding/json"
@@ -25,19 +26,28 @@ import (
 	"unicode"
 
 	"github.com/PuerkitoBio/goquery"
-	"github.com/pgaskin/orec2/internal/httpcache"
-	"github.com/pgaskin/orec2/internal/zyte"
-	"github.com/pgaskin/orec2/schema"
+	"github.com/pgaskin/ottrec/internal/httpcache"
+	"github.com/pgaskin/ottrec/internal/zyte"
+	"github.com/pgaskin/ottrec/schema"
+	textpbfmt "github.com/protocolbuffers/txtpbfmt/parser"
 	"golang.org/x/text/cases"
 	"golang.org/x/text/language"
 	"golang.org/x/text/unicode/norm"
 	"golang.org/x/time/rate"
+	"google.golang.org/protobuf/encoding/protojson"
+	"google.golang.org/protobuf/encoding/prototext"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/known/timestamppb"
 )
 
 var (
-	Scrape   = flag.String("scrape", "", "parse data from pages, writing the protobuf to the specified file")
+	Scrape       = flag.Bool("scrape", false, "parse data from pages")
+	ExportProto  = flag.String("export.proto", "", "write proto to this file")
+	ExportPB     = flag.String("export.pb", "", "write binpb to this file")
+	ExportTextPB = flag.String("export.textpb", "", "write textpb to this file")
+	ExportJSON   = flag.String("export.json", "", "write json to this file")
+	ExportPretty = flag.Bool("export.pretty", false, "prettify output (-json -textpb)")
+
 	NoFetch  = flag.Bool("no-fetch", false, "don't fetch pages not in cache")
 	CacheDir = flag.String("cache-dir", "", "cache pages in the specified directory")
 
@@ -75,7 +85,7 @@ func defaultUserAgent() string {
 func main() {
 	flag.Parse()
 
-	if b, _ := strconv.ParseBool(os.Getenv("OREC2_DEBUG_HTTP")); b {
+	if b, _ := strconv.ParseBool(os.Getenv("OTTREC_DEBUG_HTTP")); b {
 		next := http.DefaultTransport
 		http.DefaultTransport = roundTripperFunc(func(r *http.Request) (*http.Response, error) {
 			fmt.Println()
@@ -191,7 +201,7 @@ func run(ctx context.Context) error {
 	} else {
 		slog.Info("will fetch data", "ua", *UserAgent)
 	}
-	if *Scrape == "" {
+	if !*Scrape {
 		slog.Info("will not parse data")
 	}
 	if *Geocodio {
@@ -264,7 +274,7 @@ func run(ctx context.Context) error {
 			if !date.IsZero() {
 				facility.Source.SetXDate(timestamppb.New(date))
 			}
-			if *Scrape == "" {
+			if !*Scrape {
 				return nil
 			}
 			if err := func() error {
@@ -493,19 +503,87 @@ func run(ctx context.Context) error {
 	if facilities < 100 {
 		return fmt.Errorf("less than 100 facilities returned, something might be wrong")
 	}
-	if *Scrape != "" {
-		data.Attribution = append(data.Attribution, "Compiled data © Patrick Gaskin. https://github.com/pgaskin/orec2")
+	if *Scrape {
+		data.Attribution = append(data.Attribution, "Compiled data © Patrick Gaskin. https://github.com/pgaskin/ottrec")
 		data.Attribution = append(data.Attribution, "Facility information and schedules © City of Ottawa. "+listing)
 		for _, attrib := range slices.Sorted(maps.Keys(geoAttrib)) {
 			data.Attribution = append(data.Attribution, "Address data "+strings.TrimPrefix(attrib, "Data "))
 		}
-		slog.Info("saving protobuf data to file", "name", *Scrape)
+		if err := export(data.Build()); err != nil {
+			return fmt.Errorf("export: %w", err)
+		}
+	}
+	return nil
+}
+
+func export(pb *schema.Data) error {
+	if name := *ExportProto; name != "" {
+		slog.Info("exporting proto", "name", name)
+		if err := os.WriteFile(name, []byte(schema.Proto()), 0644); err != nil {
+			return fmt.Errorf("proto: write: %w", err)
+		}
+	}
+	if name := *ExportPB; name != "" {
+		slog.Info("exporting binpb", "name", name)
 		if buf, err := (proto.MarshalOptions{
 			Deterministic: true,
-		}).Marshal(data.Build()); err != nil {
-			return fmt.Errorf("save data: %w", err)
-		} else if err := os.WriteFile(*Scrape, buf, 0644); err != nil {
-			return fmt.Errorf("save data: %w", err)
+		}).Marshal(pb); err != nil {
+			return fmt.Errorf("binpb: marshal: %w", err)
+		} else if err := os.WriteFile(name, buf, 0644); err != nil {
+			return fmt.Errorf("binpb: write: %w", err)
+		}
+	}
+	if name, pretty := *ExportTextPB, *ExportPretty; name != "" {
+		slog.Info("exporting textpb", "name", name, "pretty", pretty)
+		opt := prototext.MarshalOptions{
+			Multiline:    false,
+			AllowPartial: false,
+			EmitASCII:    !pretty,
+		}
+		buf, err := opt.Marshal(pb)
+		if err != nil {
+			return fmt.Errorf("textpb: marshal: %w", err)
+		}
+		if pretty {
+			buf, err = textpbfmt.FormatWithConfig(buf, textpbfmt.Config{
+				ExpandAllChildren:        true,
+				SkipAllColons:            true,
+				AllowTripleQuotedStrings: true,
+				WrapStringsAtColumn:      120,
+				WrapHTMLStrings:          true,
+				WrapStringsAfterNewlines: true,
+			})
+			if err != nil {
+				return fmt.Errorf("textpb: format: %w", err)
+			}
+		}
+		if err := os.WriteFile(name, buf, 0644); err != nil {
+			return fmt.Errorf("textpb: write: %w", err)
+		}
+	}
+	if name, pretty := *ExportJSON, *ExportPretty; name != "" {
+		slog.Info("exporting json", "name", name, "pretty", pretty)
+		opt := protojson.MarshalOptions{
+			EmitUnpopulated:   true,
+			EmitDefaultValues: true,
+			Multiline:         false,
+			AllowPartial:      false,
+			UseEnumNumbers:    true,
+			UseProtoNames:     false,
+		}
+		buf, err := opt.Marshal(pb)
+		if err != nil {
+			return fmt.Errorf("json: marshal: %w", err)
+		}
+		if *ExportPretty {
+			var buf1 bytes.Buffer
+			if err := json.Indent(&buf1, buf, "", "  "); err != nil {
+				return fmt.Errorf("json: format: %w", err)
+			}
+			buf = buf1.Bytes()
+		}
+		if err := os.WriteFile(name, buf, 0644); err != nil {
+			return fmt.Errorf("json: write: %w", err)
 		}
 	}
 	return nil

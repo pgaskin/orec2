@@ -1,4 +1,4 @@
-module github.com/pgaskin/orec2
+module github.com/pgaskin/ottrec
 
 go 1.25.0
 

@@ -12,7 +12,7 @@ import (
 	"time"
 
 	"github.com/mitchellh/go-wordwrap"
-	"github.com/pgaskin/orec2/schema"
+	"github.com/pgaskin/ottrec/schema"
 	"google.golang.org/protobuf/proto"
 )
 

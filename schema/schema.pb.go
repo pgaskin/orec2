@@ -795,7 +795,7 @@ type TimeRange struct {
 	xxx_hidden_Label       string                 `protobuf:"bytes,1,opt,name=label"`
 	xxx_hidden_XStart      int32                  `protobuf:"varint,2,opt,name=_start"`
 	xxx_hidden_XEnd        int32                  `protobuf:"varint,3,opt,name=_end"`
-	xxx_hidden_XWkday      Weekday                `protobuf:"varint,4,opt,name=_wkday,enum=orec2.Weekday"`
+	xxx_hidden_XWkday      Weekday                `protobuf:"varint,4,opt,name=_wkday,enum=ottrec.v1.Weekday"`
 	XXX_raceDetectHookData protoimpl.RaceDetectHookData
 	XXX_presence           [1]uint32
 	unknownFields          protoimpl.UnknownFields
@@ -1194,56 +1194,56 @@ var File_schema_proto protoreflect.FileDescriptor
 
 const file_schema_proto_rawDesc = "" +
 	"\n" +
-	"\fschema.proto\x12\x05orec2\x1a\x1fgoogle/protobuf/timestamp.proto\"Y\n" +
-	"\x04Data\x12/\n" +
+	"\fschema.proto\x12\tottrec.v1\x1a\x1fgoogle/protobuf/timestamp.proto\"]\n" +
+	"\x04Data\x123\n" +
 	"\n" +
-	"facilities\x18\x01 \x03(\v2\x0f.orec2.FacilityR\n" +
+	"facilities\x18\x01 \x03(\v2\x13.ottrec.v1.FacilityR\n" +
 	"facilities\x12 \n" +
-	"\vattribution\x18\x02 \x03(\tR\vattribution\"\xe0\x02\n" +
+	"\vattribution\x18\x02 \x03(\tR\vattribution\"\xec\x02\n" +
 	"\bFacility\x12\x12\n" +
 	"\x04name\x18\x01 \x01(\tR\x04name\x12\x19\n" +
-	"\vdescription\x18\x02 \x01(\tR\x04desc\x12%\n" +
-	"\x06source\x18\x03 \x01(\v2\r.orec2.SourceR\x06source\x12\x18\n" +
-	"\aaddress\x18\x04 \x01(\tR\aaddress\x12.\n" +
-	"\a_lnglat\x18\x05 \x01(\v2\r.orec2.LngLatB\x05\xaa\x01\x02\b\x01R\a_lnglat\x12-\n" +
+	"\vdescription\x18\x02 \x01(\tR\x04desc\x12)\n" +
+	"\x06source\x18\x03 \x01(\v2\x11.ottrec.v1.SourceR\x06source\x12\x18\n" +
+	"\aaddress\x18\x04 \x01(\tR\aaddress\x122\n" +
+	"\a_lnglat\x18\x05 \x01(\v2\x11.ottrec.v1.LngLatB\x05\xaa\x01\x02\b\x01R\a_lnglat\x12-\n" +
 	"\x12notifications_html\x18\x06 \x01(\tR\x11notificationsHtml\x12,\n" +
-	"\x12special_hours_html\x18\a \x01(\tR\x10specialHoursHtml\x12=\n" +
-	"\x0fschedule_groups\x18\b \x03(\v2\x14.orec2.ScheduleGroupR\x0escheduleGroups\x12\x18\n" +
+	"\x12special_hours_html\x18\a \x01(\tR\x10specialHoursHtml\x12A\n" +
+	"\x0fschedule_groups\x18\b \x03(\v2\x18.ottrec.v1.ScheduleGroupR\x0escheduleGroups\x12\x18\n" +
 	"\a_errors\x18\t \x03(\tR\a_errors\"S\n" +
 	"\x06Source\x12\x10\n" +
 	"\x03url\x18\x01 \x01(\tR\x03url\x127\n" +
 	"\x05_date\x18\x02 \x01(\v2\x1a.google.protobuf.TimestampB\x05\xaa\x01\x02\b\x01R\x05_date\",\n" +
 	"\x06LngLat\x12\x10\n" +
 	"\x03lng\x18\x01 \x01(\x02R\x03lng\x12\x10\n" +
-	"\x03lat\x18\x02 \x01(\x02R\x03lat\"\xe5\x01\n" +
+	"\x03lat\x18\x02 \x01(\x02R\x03lat\"\xed\x01\n" +
 	"\rScheduleGroup\x12\x14\n" +
 	"\x05label\x18\x01 \x01(\tR\x05label\x12\x16\n" +
 	"\x06_title\x18\x02 \x01(\tR\x06_title\x122\n" +
-	"\x15schedule_changes_html\x18\x03 \x01(\tR\x13scheduleChangesHtml\x12-\n" +
-	"\tschedules\x18\x04 \x03(\v2\x0f.orec2.ScheduleR\tschedules\x12C\n" +
-	"\x11reservation_links\x18\x05 \x03(\v2\x16.orec2.ReservationLinkR\x10reservationLinks\"\x92\x03\n" +
+	"\x15schedule_changes_html\x18\x03 \x01(\tR\x13scheduleChangesHtml\x121\n" +
+	"\tschedules\x18\x04 \x03(\v2\x13.ottrec.v1.ScheduleR\tschedules\x12G\n" +
+	"\x11reservation_links\x18\x05 \x03(\v2\x1a.ottrec.v1.ReservationLinkR\x10reservationLinks\"\x9e\x03\n" +
 	"\bSchedule\x12\x18\n" +
 	"\acaption\x18\x01 \x01(\tR\acaption\x12\x14\n" +
 	"\x05_name\x18\x02 \x01(\tR\x05_name\x12\x14\n" +
 	"\x05_date\x18\x05 \x01(\tR\x05_date\x12\x1b\n" +
 	"\x05_from\x18\x06 \x01(\x05B\x05\xaa\x01\x02\b\x01R\x05_from\x12\x17\n" +
 	"\x03_to\x18\a \x01(\x05B\x05\xaa\x01\x02\b\x01R\x03_to\x12\x12\n" +
-	"\x04days\x18\x03 \x03(\tR\x04days\x128\n" +
+	"\x04days\x18\x03 \x03(\tR\x04days\x12<\n" +
 	"\n" +
-	"activities\x18\x04 \x03(\v2\x18.orec2.Schedule.ActivityR\n" +
-	"activities\x1a5\n" +
-	"\vActivityDay\x12&\n" +
-	"\x05times\x18\x01 \x03(\v2\x10.orec2.TimeRangeR\x05times\x1a\x84\x01\n" +
+	"activities\x18\x04 \x03(\v2\x1c.ottrec.v1.Schedule.ActivityR\n" +
+	"activities\x1a9\n" +
+	"\vActivityDay\x12*\n" +
+	"\x05times\x18\x01 \x03(\v2\x14.ottrec.v1.TimeRangeR\x05times\x1a\x88\x01\n" +
 	"\bActivity\x12\x14\n" +
 	"\x05label\x18\x01 \x01(\tR\x05label\x12\x14\n" +
 	"\x05_name\x18\x02 \x01(\tR\x05_name\x12\x1b\n" +
-	"\x05_resv\x18\x04 \x01(\bB\x05\xaa\x01\x02\b\x01R\x05_resv\x12/\n" +
-	"\x04days\x18\x03 \x03(\v2\x1b.orec2.Schedule.ActivityDayR\x04days\"\x8a\x01\n" +
+	"\x05_resv\x18\x04 \x01(\bB\x05\xaa\x01\x02\b\x01R\x05_resv\x123\n" +
+	"\x04days\x18\x03 \x03(\v2\x1f.ottrec.v1.Schedule.ActivityDayR\x04days\"\x8e\x01\n" +
 	"\tTimeRange\x12\x14\n" +
 	"\x05label\x18\x01 \x01(\tR\x05label\x12\x1d\n" +
 	"\x06_start\x18\x02 \x01(\x05B\x05\xaa\x01\x02\b\x01R\x06_start\x12\x19\n" +
-	"\x04_end\x18\x03 \x01(\x05B\x05\xaa\x01\x02\b\x01R\x04_end\x12-\n" +
-	"\x06_wkday\x18\x04 \x01(\x0e2\x0e.orec2.WeekdayB\x05\xaa\x01\x02\b\x01R\x06_wkday\"9\n" +
+	"\x04_end\x18\x03 \x01(\x05B\x05\xaa\x01\x02\b\x01R\x04_end\x121\n" +
+	"\x06_wkday\x18\x04 \x01(\x0e2\x12.ottrec.v1.WeekdayB\x05\xaa\x01\x02\b\x01R\x06_wkday\"9\n" +
 	"\x0fReservationLink\x12\x14\n" +
 	"\x05label\x18\x01 \x01(\tR\x05label\x12\x10\n" +
 	"\x03url\x18\x02 \x01(\tR\x03url*k\n" +
@@ -1262,31 +1262,31 @@ const file_schema_proto_rawDesc = "" +
 var file_schema_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
 var file_schema_proto_msgTypes = make([]protoimpl.MessageInfo, 10)
 var file_schema_proto_goTypes = []any{
-	(Weekday)(0),                  // 0: orec2.Weekday
-	(*Data)(nil),                  // 1: orec2.Data
-	(*Facility)(nil),              // 2: orec2.Facility
-	(*Source)(nil),                // 3: orec2.Source
-	(*LngLat)(nil),                // 4: orec2.LngLat
-	(*ScheduleGroup)(nil),         // 5: orec2.ScheduleGroup
-	(*Schedule)(nil),              // 6: orec2.Schedule
-	(*TimeRange)(nil),             // 7: orec2.TimeRange
-	(*ReservationLink)(nil),       // 8: orec2.ReservationLink
-	(*Schedule_ActivityDay)(nil),  // 9: orec2.Schedule.ActivityDay
-	(*Schedule_Activity)(nil),     // 10: orec2.Schedule.Activity
+	(Weekday)(0),                  // 0: ottrec.v1.Weekday
+	(*Data)(nil),                  // 1: ottrec.v1.Data
+	(*Facility)(nil),              // 2: ottrec.v1.Facility
+	(*Source)(nil),                // 3: ottrec.v1.Source
+	(*LngLat)(nil),                // 4: ottrec.v1.LngLat
+	(*ScheduleGroup)(nil),         // 5: ottrec.v1.ScheduleGroup
+	(*Schedule)(nil),              // 6: ottrec.v1.Schedule
+	(*TimeRange)(nil),             // 7: ottrec.v1.TimeRange
+	(*ReservationLink)(nil),       // 8: ottrec.v1.ReservationLink
+	(*Schedule_ActivityDay)(nil),  // 9: ottrec.v1.Schedule.ActivityDay
+	(*Schedule_Activity)(nil),     // 10: ottrec.v1.Schedule.Activity
 	(*timestamppb.Timestamp)(nil), // 11: google.protobuf.Timestamp
 }
 var file_schema_proto_depIdxs = []int32{
-	2,  // 0: orec2.Data.facilities:type_name -> orec2.Facility
-	3,  // 1: orec2.Facility.source:type_name -> orec2.Source
-	4,  // 2: orec2.Facility._lnglat:type_name -> orec2.LngLat
-	5,  // 3: orec2.Facility.schedule_groups:type_name -> orec2.ScheduleGroup
-	11, // 4: orec2.Source._date:type_name -> google.protobuf.Timestamp
-	6,  // 5: orec2.ScheduleGroup.schedules:type_name -> orec2.Schedule
-	8,  // 6: orec2.ScheduleGroup.reservation_links:type_name -> orec2.ReservationLink
-	10, // 7: orec2.Schedule.activities:type_name -> orec2.Schedule.Activity
-	0,  // 8: orec2.TimeRange._wkday:type_name -> orec2.Weekday
-	7,  // 9: orec2.Schedule.ActivityDay.times:type_name -> orec2.TimeRange
-	9,  // 10: orec2.Schedule.Activity.days:type_name -> orec2.Schedule.ActivityDay
+	2,  // 0: ottrec.v1.Data.facilities:type_name -> ottrec.v1.Facility
+	3,  // 1: ottrec.v1.Facility.source:type_name -> ottrec.v1.Source
+	4,  // 2: ottrec.v1.Facility._lnglat:type_name -> ottrec.v1.LngLat
+	5,  // 3: ottrec.v1.Facility.schedule_groups:type_name -> ottrec.v1.ScheduleGroup
+	11, // 4: ottrec.v1.Source._date:type_name -> google.protobuf.Timestamp
+	6,  // 5: ottrec.v1.ScheduleGroup.schedules:type_name -> ottrec.v1.Schedule
+	8,  // 6: ottrec.v1.ScheduleGroup.reservation_links:type_name -> ottrec.v1.ReservationLink
+	10, // 7: ottrec.v1.Schedule.activities:type_name -> ottrec.v1.Schedule.Activity
+	0,  // 8: ottrec.v1.TimeRange._wkday:type_name -> ottrec.v1.Weekday
+	7,  // 9: ottrec.v1.Schedule.ActivityDay.times:type_name -> ottrec.v1.TimeRange
+	9,  // 10: ottrec.v1.Schedule.Activity.days:type_name -> ottrec.v1.Schedule.ActivityDay
 	11, // [11:11] is the sub-list for method output_type
 	11, // [11:11] is the sub-list for method input_type
 	11, // [11:11] is the sub-list for extension type_name

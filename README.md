@@ -10,22 +10,15 @@ The data is updated daily. If you use the data, you must display the attribution
 
 | Format | Description | Download | Schema |
 | --- | --- | --- | --- |
-| CSV | Easiest to use with existing software. Format may change over time. Lossy. | [data-csv.zip](https://github.com/pgaskin/orec2/archive/refs/heads/data-csv.zip) | [schema.ddl](https://github.com/pgaskin/orec2/raw/refs/heads/data-csv/schema.ddl) |
-| JSON | Easiest to use for ad-hoc queries. Format may change over time. | [data.json](https://github.com/pgaskin/orec2/raw/refs/heads/data/data.json) | - |
-| Protobuf | Best for integration with custom software. Most stable format. | [data.pb](https://github.com/pgaskin/orec2/raw/refs/heads/data/data.pb) | [data.proto](https://github.com/pgaskin/orec2/raw/refs/heads/data/data.proto) |
-| TextPB | Best for manual inspection. Textual version of the protobuf. | [data.textpb](https://github.com/pgaskin/orec2/raw/refs/heads/data/data.textpb) | [data.proto](https://github.com/pgaskin/orec2/raw/refs/heads/data/data.proto) |
+| JSON | Easiest to use for ad-hoc queries. Format may change over time. | [data.json](https://github.com/pgaskin/ottrec-data/raw/refs/heads/v1/data.json) | - |
+| Protobuf | Best for integration with custom software. Most stable format. | [data.pb](https://github.com/pgaskin/ottrec-data/raw/refs/heads/v1/data.pb) | [data.proto](https://github.com/pgaskin/ottrec-data/raw/refs/heads/v1/data.proto) |
+| TextPB | Best for manual inspection. Textual version of the protobuf. | [data.textpb](https://github.com/pgaskin/ottrec-data/raw/refs/heads/v1/data.textpb) | [data.proto](https://github.com/pgaskin/ottrec-data/raw/refs/heads/v1/data.proto) |
 
-Historical data is available on the other git branches.
-
-| Branch | Description |
-| --- | --- |
-| [cache](https://github.com/pgaskin/orec2/tree/cache) | Raw HTTP responses. Intended for troubleshooting and developing the scraper. |
-| [data](https://github.com/pgaskin/orec2/tree/data) | Processed data. This is usually what you want to use. |
-| [data-csv](https://github.com/pgaskin/orec2/tree/data-csv) | Processed data exported as CSV files. |
-
-To view a diff of the schedule data over time, you can use the following command.
+To view a diff of the schedule data over time, you can use the following command:
 
 ```bash
+git remote add data https://github.com/pgaskin/ottrec-data
+git fetch data
 git \
   -c "diff.wsErrorHighlight=none" \
   -c "diff.context=3" \
@@ -33,8 +26,8 @@ git \
   -c "diff.indentHeuristic=true" \
   -c "diff.orec_pb.cachetextconv=false" \
   -c "diff.orec_pb.xfuncname=^\s*[+&]\s*(.+)" \
-  -c "diff.orec_pb.textconv=go run github.com/pgaskin/orec2/textconv" \
-  log --textconv -pw --patience data -- data.pb
+  -c "diff.orec_pb.textconv=go run github.com/pgaskin/ottrec/textconv" \
+  log --textconv -pw --patience data/v1 -- data.pb
 ```
 
 ### Features and limitations
@@ -57,6 +50,7 @@ git \
 
 ### Data changes
 
+- **2025-10-02:** Renamed from `orec2` to `ottrec`. Split data and cache into separate repository. Removed CSV export (will replace this with something better later).
 - **2025-10-02:** Added support for scraping reservation links into `ScheduleGroup.reservation_links`, and parsing reservation requirement text in activity names into `Activity._resv`.
 - **2025-09-16:** Switched to geocodio for geocoding. Facility longitude/latitude values are slightly different and generally more complete/accurate.
 - **2025-09-04:** Significantly improved `ScheduleGroup._title` and `Activity._name` normalization.

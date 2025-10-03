@@ -38,53 +38,55 @@ jobs:
     needs: [test]
     name: Update cached pages
     runs-on: ubuntu-latest
-    if: ${{ github.repository_owner == 'pgaskin' }}
+    if: ${{ github.repository == 'pgaskin/ottrec' }}
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
+          repository: pgaskin/ottrec-data
+          ref: cache
+          path: cache
           filter: blob:none
           fetch-depth: 0
+          token: ${{ github.repository != 'pgaskin/ottrec' && github.token || secrets.OTTREC_DATA_GITHUB_TOKEN }}
+          persist-credentials: true
       - uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
-      - run: git config --global user.name github-actions && git config --global user.email github-actions@github.com
-      - run: git worktree add cache cache
       - run: rm -fv cache/facility-*
         if: ${{ github.event_name != 'push' }}
       - run: rm -fv cache/listing-*
         if: ${{ github.event_name != 'push' && !(github.event.inputs != null && (github.event.inputs.keep_facility_list == true || github.event.inputs.keep_facility_list == 'true')) }}
       - run: rm -fv cache/geocode-*
         if: ${{ github.event_name != 'push' && github.event_name != 'schedule' && !(github.event.inputs != null && (github.event.inputs.keep_geocoding == true || github.event.inputs.keep_geocoding == 'true')) }}
-      - run: go run ./scraper -cache-dir ./cache -geocodio ${{ github.event.inputs != null && (github.event.inputs.zyte == true || github.event.inputs.zyte == 'true') && '-zyte' || '' }}
+      - run: go run ./scraper -cache-dir cache -geocodio ${{ github.event.inputs != null && (github.event.inputs.zyte == true || github.event.inputs.zyte == 'true') && '-zyte' || '' }}
         env:
           ZYTE_APIKEY: ${{ secrets.zyte_apikey }}
           GEOCODIO_APIKEY: ${{ secrets.geocodio_apikey }}
           OTTCA_SCRAPER_SECRET: ${{ secrets.ottca_scraper_secret }}
       - run: |
-          git -C cache add . && { git -C cache diff --cached --quiet || git -C cache commit -m "update cache (${{ github.event_name == 'push' && 'partial' || 'full' }} reason: ${{github.event_name}} scraper: $(git rev-parse HEAD))" ; } && git -C cache push
+          git -C cache add . && { git -C cache diff --cached --quiet || git -C cache -c user.name=github-actions -c user.email=github-actions@github.com commit -m "update cache (${{ github.event_name == 'push' && 'partial' || 'full' }} reason: ${{github.event_name}} scraper: ${{github.repository}}@$(git rev-parse HEAD))" ; } && git -C cache push
   scrape:
     needs: [test, cache]
     name: Scrape cached pages
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
+          repository: pgaskin/ottrec-data
+          ref: cache
+          path: cache
           filter: blob:none
           fetch-depth: 0
+          token: ${{ github.repository != 'pgaskin/ottrec' && github.token || secrets.OTTREC_DATA_GITHUB_TOKEN }}
+          persist-credentials: true
       - uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
-      - run: git config --global user.name github-actions && git config --global user.email github-actions@github.com
-      - run: git fetch --refmap='' https://github.com/pgaskin/orec2 cache:refs/upstream/cache
-        if: ${{ github.repository_owner != 'pgaskin' }}
-      - run: git worktree add cache ${{ github.repository_owner == 'pgaskin' && 'cache' || 'refs/upstream/cache' }}
-      - run: git worktree add data data
-      - run: git worktree add data-csv data-csv
-      - run: rm -fv data/* csv/*
-      - run: cp schema/schema.proto data/data.proto
-      - run: go run ./scraper -cache-dir ./cache -geocodio -no-fetch -scrape ./data.pb
-      - run: go run ./exporter -json ./data/data.json -pb ./data/data.pb -textpb ./data/data.textpb -csv ./data-csv -pretty ./data.pb
+      - run: git -C cache worktree add ../data v1
+      - run: rm -fv data/*
+      - run: go run ./scraper -cache-dir cache -geocodio -no-fetch -scrape -export.proto data/data.proto -export.pb data/data.pb -export.textpb data/data.textpb -export.json data/data.json -export.pretty
       - run: |
-          git -C data add . && { git -C data diff --cached --quiet || git -C data commit -m "update data (reason: ${{github.event_name}} scraper: $(git rev-parse HEAD) cache: ${{ github.repository_owner == 'pgaskin' && '' || 'pgaskin/orec2@' }}$(git -C cache rev-parse HEAD))" ; } && git -C data push
-      - run: |
-          git -C data-csv add . && { git -C data-csv diff --cached --quiet || git -C data-csv commit -m "update data (reason: ${{github.event_name}} scraper: $(git rev-parse HEAD) cache: ${{ github.repository_owner == 'pgaskin' && '' || 'pgaskin/orec2@' }}$(git -C cache rev-parse HEAD))" ; } && git -C data-csv push
+          git -C data add . && { git -C data diff --cached --quiet || git -C data -c user.name=github-actions -c user.email=github-actions@github.com commit -m "update data (reason: ${{github.event_name}} scraper: ${{github.repository}}@$(git rev-parse HEAD) cache: $(git -C cache rev-parse HEAD))" ; } && git -C data push
+        if: ${{ github.repository == 'pgaskin/ottrec' }}

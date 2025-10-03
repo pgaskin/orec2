@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/pgaskin/orec2/schema"
+	"github.com/pgaskin/ottrec/schema"
 )
 
 func TestNormalizeText(t *testing.T) {
