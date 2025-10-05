@@ -399,9 +399,11 @@ func run(ctx context.Context) error {
 							break
 						}
 						if req, ok := parseReservationRequirement(el.Text()); ok {
-							if req && len(group.ReservationLinks) == 0 {
-								slog.Warn("unexpected top-level reservation required text without reservation links")
-								facility.XErrors = append(facility.XErrors, "unexpected top-level reservation required text without reservation links")
+							if req {
+								if len(group.ReservationLinks) == 0 {
+									slog.Warn("unexpected top-level reservation required text without reservation links")
+									facility.XErrors = append(facility.XErrors, "unexpected top-level reservation required text without reservation links")
+								}
 								continue
 							}
 							if group.XNoresv {
