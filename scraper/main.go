@@ -390,6 +390,27 @@ func run(ctx context.Context) error {
 						group.ReservationLinks = append(group.ReservationLinks, link.Build())
 					}
 
+					for _, el := range content.Find("p,table").EachIter() {
+						if el.Is("table") {
+							// got the first schedule table, don't continue
+							// looking for reservations not required text (if
+							// it's there, we can't really trust it since it's
+							// between two schedules, so it's ambiguous)
+							break
+						}
+						if req, ok := parseReservationRequirement(el.Text()); ok {
+							if req {
+								slog.Warn("unexpected top-level reservation required text")
+								facility.XErrors = append(facility.XErrors, "unexpected top-level reservation required text")
+								continue
+							}
+							if group.XNoresv {
+								slog.Warn("multiple top-level reservation not required text")
+							}
+							group.XNoresv = true
+						}
+					}
+
 				schedule:
 					for _, table := range content.Find("table").EachIter() {
 						var schedule schema.Schedule_builder
@@ -1034,14 +1055,22 @@ func cutAgeMin(activity string) (string, int, bool) {
 // (prefixed by an asterisk) from activity.
 func cutReservationRequirement(activity string) (string, bool, bool) {
 	if i := strings.LastIndex(activity, "*"); i != -1 {
-		switch normalizeText(strings.Trim(activity[i:], "*. ()"), false, true) {
-		case "reservations not required", "reservation not required", "reservation is not required", "reservations are not required":
-			return strings.TrimSpace(activity[:i]), false, true
-		case "reservations required", "reservation required", "requires reservations", "requires reservation", "reservation is required", "reservations are required":
-			return strings.TrimSpace(activity[:i]), true, true
+		if req, ok := parseReservationRequirement(activity[i:]); ok {
+			return strings.TrimSpace(activity[:i]), req, true
 		}
 	}
 	return activity, false, false
+}
+
+// parseReservationRequirement parses a single reservation requirement string.
+func parseReservationRequirement(s string) (bool, bool) {
+	switch strings.Trim(normalizeText(s, false, true), "*. ()") {
+	case "reservations not required", "reservation not required", "reservation is not required", "reservations are not required":
+		return false, true
+	case "reservations required", "reservation required", "requires reservations", "requires reservation", "reservation is required", "reservations are required":
+		return true, true
+	}
+	return false, false
 }
 
 // reducedCapacityRe matches "reduced" or "reduced capacity" at the beginning or

@@ -50,6 +50,7 @@ git \
 
 ### Data changes
 
+- **2025-10-05:** Also parse top-level "reservation not required" text into `ScheduleGroup._noresv`.
 - **2025-10-02:** Renamed from `orec2` to `ottrec`. Split data and cache into separate repository. Removed CSV export (will replace this with something better later).
 - **2025-10-02:** Added support for scraping reservation links into `ScheduleGroup.reservation_links`, and parsing reservation requirement text in activity names into `Activity._resv`.
 - **2025-09-16:** Switched to geocodio for geocoding. Facility longitude/latitude values are slightly different and generally more complete/accurate.
