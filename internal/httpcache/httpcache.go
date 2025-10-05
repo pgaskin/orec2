@@ -87,7 +87,6 @@ func (t *Transport) RoundTrip(req *http.Request) (*http.Response, error) {
 			}
 		}
 		if err == nil {
-			fmt.Println(cacheName)
 			r := bufio.NewReader(bytes.NewReader(buf))
 
 			req, err := http.ReadRequest(r)
@@ -148,6 +147,28 @@ func (t *Transport) RoundTrip(req *http.Request) (*http.Response, error) {
 	return resp, nil
 }
 
+// Purge purges the specified categories from the cache.
+func Purge(path string, categories ...string) error {
+	ds, err := os.ReadDir(path)
+	if err != nil {
+		return err
+	}
+	for _, d := range ds {
+		if d.IsDir() {
+			continue
+		}
+		if !slices.ContainsFunc(categories, func(category string) bool {
+			return strings.HasPrefix(d.Name(), category+"-")
+		}) {
+			continue
+		}
+		if err := os.Remove(filepath.Join(path, d.Name())); err != nil {
+			return err
+		}
+	}
+	return nil
+}
+
 // RequestRedactor returns a redacted copy of a request. If fields are modified,
 // they must be copied.
 type RequestRedactor interface {
@@ -184,7 +205,6 @@ func (r *Redactor) RedactRequestHeader(name string, hashed int) {
 func (r *Redactor) RedactRequestURLParam(name string, hashed int) {
 	r.req = append(r.req, func(req *http.Request) {
 		var q strings.Builder
-		fmt.Println(req.URL.RawQuery)
 		for x := range strings.SplitSeq(req.URL.RawQuery, "&") {
 			if q.Len() != 0 {
 				q.WriteByte('&')

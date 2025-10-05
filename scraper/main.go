@@ -48,19 +48,19 @@ var (
 	ExportJSON   = flag.String("export.json", "", "write json to this file")
 	ExportPretty = flag.Bool("export.pretty", false, "prettify output (-json -textpb)")
 
-	NoFetch  = flag.Bool("no-fetch", false, "don't fetch pages not in cache")
-	CacheDir = flag.String("cache-dir", "", "cache pages in the specified directory")
+	Cache              = flag.String("cache", "", "cache pages in the specified directory")
+	CachePurgeListing  = flag.Bool("cache.purge.listing", false, "remove cached facility listing")
+	CachePurgeFacility = flag.Bool("cache.purge.facility", false, "remove cached facility pages")
+	CachePurgeGeocode  = flag.Bool("cache.purge.geocode", false, "remove cached geocoding data")
 
-	PageQPS       = flag.Float64("page-qps", 0.5, "maximum page fetches per second")
-	UserAgent     = flag.String("user-agent", defaultUserAgent(), "user agent for requests")
-	ScraperSecret = os.Getenv("OTTCA_SCRAPER_SECRET")
+	Fetch     = flag.Bool("fetch", false, "fetch uncached pages")
+	FetchZyte = flag.Int("fetch.zyte", 0, "use zyte, allowing the specified number of paid requests (set ZYTE_APIKEY)")
 
-	Geocodio       = flag.Bool("geocodio", false, "use geocodio for geocoding (set GEOCODIO_APIKEY)")
+	Geocodio = flag.Bool("geocodio", false, "use geocodio for geocoding (set GEOCODIO_APIKEY)")
+
+	ScraperSecret  = os.Getenv("OTTCA_SCRAPER_SECRET")
 	GeocodioAPIKey = os.Getenv("GEOCODIO_APIKEY")
-
-	Zyte       = flag.Bool("zyte", false, "use zyte (set ZYTE_APIKEY)")
-	ZyteLimit  = flag.Int("zyte-limit", 150, "zyte request limit")
-	ZyteAPIKey = os.Getenv("ZYTE_APIKEY")
+	ZyteAPIKey     = os.Getenv("ZYTE_APIKEY")
 )
 
 func defaultUserAgent() string {
@@ -114,10 +114,10 @@ func main() {
 	}
 
 	// use zyte for some requests
-	if *Zyte {
+	if *FetchZyte > 0 {
 		next := &zyte.Transport{
 			APIKey: ZyteAPIKey,
-			Limit:  zyte.FixedLimit(*ZyteLimit),
+			Limit:  zyte.FixedLimit(*FetchZyte),
 			Retry: func(ctx context.Context, tries, code int) bool {
 				if tries >= 3 {
 					return false
@@ -143,18 +143,18 @@ func main() {
 	}
 
 	// apply rate limits if not cached
-	http.DefaultTransport = rateLimitRoundTripper(http.DefaultTransport, ".ottawa.ca", rate.NewLimiter(rate.Limit(*PageQPS), 1))
+	http.DefaultTransport = rateLimitRoundTripper(http.DefaultTransport, ".ottawa.ca", rate.NewLimiter(rate.Every(time.Second*2), 1))
 	http.DefaultTransport = rateLimitRoundTripper(http.DefaultTransport, "api.geocod.io", rate.NewLimiter(rate.Every(time.Minute/1000), 1))
 
 	// cache responses
 	redactor := new(httpcache.Redactor)
 	cache := &httpcache.Transport{
-		Path:             *CacheDir,
-		Fallback:         *NoFetch, // for backwards compat with old caches
+		Path:             *Cache,
+		Fallback:         !*Fetch, // for backwards compat with old caches
 		RequestRedactor:  redactor,
 		ResponseRedactor: redactor,
 	}
-	if !*NoFetch {
+	if *Fetch {
 		cache.Next = http.DefaultTransport
 	}
 	http.DefaultTransport = cache
@@ -186,34 +186,60 @@ func main() {
 	}
 }
 
+const (
+	CacheCategoryListing  = "listing"
+	CacheCategoryFacility = "facility"
+	CacheCategoryGeocode  = "geocode"
+)
+
 func run(ctx context.Context) error {
-	if *CacheDir != "" {
-		slog.Info("using cache dir", "path", CacheDir)
-		if err := os.Mkdir(*CacheDir, 0777); err != nil && !errors.Is(err, fs.ErrExist) {
+	if *Cache != "" {
+		slog.Info("using cache dir", "path", *Cache)
+		if err := os.Mkdir(*Cache, 0777); err != nil && !errors.Is(err, fs.ErrExist) {
 			return fmt.Errorf("create cache dir: %w", err)
 		}
-		if err := os.WriteFile(filepath.Join(*CacheDir, ".gitattributes"), []byte("* -text\n"), 0666); err != nil { // no line ending conversions
+		if err := os.WriteFile(filepath.Join(*Cache, ".gitattributes"), []byte("* -text\n"), 0666); err != nil { // no line ending conversions
 			return fmt.Errorf("write cache dir gitattributes: %w", err)
 		}
+		var purge []string
+		if *CachePurgeListing {
+			slog.Info("purging cached facility listing")
+			purge = append(purge, CacheCategoryListing)
+		}
+		if *CachePurgeFacility {
+			slog.Info("purging cached facility pages")
+			purge = append(purge, CacheCategoryFacility)
+		}
+		if *CachePurgeGeocode {
+			slog.Info("purging cached geocoding data")
+			purge = append(purge, CacheCategoryGeocode)
+		}
+		if err := httpcache.Purge(*Cache, purge...); err != nil {
+			return fmt.Errorf("purge cache: %w", err)
+		}
 	}
-	if *NoFetch {
-		slog.Info("only using cached data")
+	if *Fetch {
+		slog.Info("will fetch data", "ua", defaultUserAgent())
 	} else {
-		slog.Info("will fetch data", "ua", *UserAgent)
+		if *Cache == "" {
+			slog.Warn("no cache dir specified")
+		}
+		slog.Info("only using cached data")
 	}
-	if !*Scrape {
+	if *Scrape {
+		slog.Info("will parse data")
+	} else {
 		slog.Info("will not parse data")
 	}
-	if *Geocodio {
-		slog.Info("using geocodio for geocoding")
+	if !*Geocodio {
+		slog.Info("will geocode addresses with geocodio")
 	} else {
-		slog.Warn("not geocoding addresses")
+		slog.Warn("will not geocode addresses")
 	}
-	if *Zyte {
-		slog.Info("using zyte", "limit", *ZyteLimit)
-	}
-	if !*Zyte && ScraperSecret != "" {
-		slog.Info("using scraper secret")
+	if *FetchZyte > 0 {
+		slog.Info("will fetch data using zyte", "limit", *FetchZyte)
+	} else if ScraperSecret != "" {
+		slog.Info("will fetch data using scraper secret")
 	}
 	var (
 		data       schema.Data_builder
@@ -223,7 +249,7 @@ func run(ctx context.Context) error {
 		facilities int
 	)
 	for cur != "" {
-		doc, _, err := fetchPage(ctx, "listing", cur)
+		doc, _, err := fetchPage(ctx, CacheCategoryListing, cur)
 		if err != nil {
 			return err
 		}
@@ -262,7 +288,7 @@ func run(ctx context.Context) error {
 				}
 			}
 
-			doc, date, err := fetchPage(ctx, "facility", u.String())
+			doc, date, err := fetchPage(ctx, CacheCategoryFacility, u.String())
 			if err != nil {
 				slog.Warn("failed to fetch place", "name", name, "error", err)
 				facility.XErrors = append(facility.XErrors, fmt.Sprintf("failed to fetch data: %v", err))
@@ -615,7 +641,7 @@ func geocode(ctx context.Context, addr string) (lng, lat float64, attrib string,
 	}
 	slog.Info("fetch geocodio", "url", u.String())
 
-	resp, err := fetch(ctx, "geocode", u.String())
+	resp, err := fetch(ctx, CacheCategoryGeocode, u.String())
 	if err != nil {
 		return 0, 0, "", false, err
 	}

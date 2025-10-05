@@ -8,13 +8,12 @@ on:
   workflow_dispatch:
     inputs:
       zyte:
-        required: false
         type: boolean
-      keep_facility_list:
-        required: false
+      purge_listing:
         type: boolean
-      keep_geocoding:
-        required: false
+      purge_facility:
+        type: boolean
+      purge_geocode:
         type: boolean
 
 permissions:
@@ -70,19 +69,20 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
-      - run: rm -fv cache/facility-*
-        if: ${{ github.event_name != 'push' }}
-      - run: rm -fv cache/listing-*
-        if: ${{ github.event_name != 'push' && !(github.event.inputs != null && (github.event.inputs.keep_facility_list == true || github.event.inputs.keep_facility_list == 'true')) }}
-      - run: rm -fv cache/geocode-*
-        if: ${{ github.event_name != 'push' && github.event_name != 'schedule' && !(github.event.inputs != null && (github.event.inputs.keep_geocoding == true || github.event.inputs.keep_geocoding == 'true')) }}
-      - run: go run ./scraper -cache-dir cache -geocodio ${{ github.event.inputs != null && (github.event.inputs.zyte == true || github.event.inputs.zyte == 'true') && '-zyte' || '' }}
+      - run: go run ./scraper -cache cache -geocodio -fetch
+          ${{ (inputs.zyte) && '-zyte 150' || '' }}
+          ${{ (inputs.purge_listing || github.event_name == 'schedule') && '-cache.purge.listing' || '' }}
+          ${{ (inputs.purge_facility || github.event_name == 'schedule') && '-cache.purge.facility' || '' }}
+          ${{ (inputs.purge_geocode) && '-cache.purge.geocode' || '' }}
         env:
           ZYTE_APIKEY: ${{ secrets.zyte_apikey }}
           GEOCODIO_APIKEY: ${{ secrets.geocodio_apikey }}
           OTTCA_SCRAPER_SECRET: ${{ secrets.ottca_scraper_secret }}
-      - run: |
-          git -C cache add . && { git -C cache diff --cached --quiet || git -C cache commit -m "${{ github.event_name == 'push' && 'partial' || 'full' }} update (${{github.event_name}} ${{github.repository}}@$(git rev-parse HEAD))" ; } && git -C cache push
+      - run:
+          git -C cache add . && {
+            git -C cache diff --cached --quiet ||
+            git -C cache commit -m "${{ github.event_name == 'push' && 'partial' || 'full' }} update (${{github.event_name}} ${{github.repository}}@$(git rev-parse HEAD))" ; } &&
+          git -C cache push
   scrape:
     needs: [test, cache]
     name: Scrape cached pages
@@ -122,7 +122,14 @@ jobs:
           go-version-file: go.mod
       - run: git -C cache worktree add ../data v1
       - run: rm -fv data/*
-      - run: go run ./scraper -cache-dir cache -geocodio -no-fetch -scrape -export.proto data/data.proto -export.pb data/data.pb -export.textpb data/data.textpb -export.json data/data.json -export.pretty
+      - run: go run ./scraper -cache cache -geocodio -scrape -export.pretty
+          -export.proto data/data.proto
+          -export.pb data/data.pb
+          -export.textpb data/data.textpb
+          -export.json data/data.json
       - run: |
-          git -C data add . && { git -C data diff --cached --quiet || git -C data commit -m "update (${{github.event_name}} ${{github.repository}}@$(git rev-parse HEAD), $(git -C cache rev-parse HEAD))" ; } && git -C data push
+          git -C data add . && {
+            git -C data diff --cached --quiet ||
+            git -C data commit -m "update (${{github.event_name}} ${{github.repository}}@$(git rev-parse HEAD), $(git -C cache rev-parse HEAD))" ; } &&
+          git -C data push
         if: ${{ github.repository == 'pgaskin/ottrec' }}
