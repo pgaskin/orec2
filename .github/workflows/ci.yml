@@ -11,13 +11,12 @@ on:
         type: boolean
       purge_listing:
         type: boolean
+        default: true
       purge_facility:
         type: boolean
+        default: true
       purge_geocode:
         type: boolean
-
-permissions:
-  contents: write
 
 concurrency:
   group: cache
@@ -33,20 +32,26 @@ jobs:
         with:
           go-version-file: go.mod
       - run: go test -v ./...
+
   cache:
     needs: [test]
     name: Update cached pages
     runs-on: ubuntu-latest
     if: ${{ github.repository == 'pgaskin/ottrec' }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/create-github-app-token@v2
+      - name: Checkout scraper
+        uses: actions/checkout@v4
+
+      - name: Authorize app
+        uses: actions/create-github-app-token@v2
         id: app-token
         with:
           app-id: ${{ vars.OTTREC_SCRAPER_APP_ID }}
           private-key: ${{ secrets.OTTREC_SCRAPER_PRIVATE_KEY }}
           repositories: ottrec-data
-      - uses: actions/github-script@v8
+
+      - name: Configure app
+        uses: actions/github-script@v8
         with:
           github-token: ${{steps.app-token.outputs.token}}
           script: |
@@ -57,7 +62,9 @@ jobs:
             core.exportVariable('GIT_AUTHOR_EMAIL', email)
             core.exportVariable('GIT_COMMITTER_NAME', username)
             core.exportVariable('GIT_COMMITTER_EMAIL', email)
-      - uses: actions/checkout@v4
+
+      - name: Checkout cache
+        uses: actions/checkout@v4
         with:
           repository: pgaskin/ottrec-data
           ref: cache
@@ -66,9 +73,12 @@ jobs:
           fetch-depth: 0
           token: ${{ steps.app-token.outputs.token || github.token }}
           persist-credentials: true
-      - uses: actions/setup-go@v5
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
+
       - run: go run ./scraper -cache cache -geocodio -fetch
           ${{ (inputs.zyte) && '-zyte 150' || '' }}
           ${{ (inputs.purge_listing || github.event_name == 'schedule') && '-cache.purge.listing' || '' }}
@@ -78,25 +88,33 @@ jobs:
           ZYTE_APIKEY: ${{ secrets.zyte_apikey }}
           GEOCODIO_APIKEY: ${{ secrets.geocodio_apikey }}
           OTTCA_SCRAPER_SECRET: ${{ secrets.ottca_scraper_secret }}
-      - run:
+
+      - name: Push cache
+        run:
           git -C cache add . && {
             git -C cache diff --cached --quiet ||
-            git -C cache commit -m "${{ github.event_name == 'push' && 'partial' || 'full' }} update (${{github.event_name}} ${{github.repository}}@$(git rev-parse HEAD))" ; } &&
+            git -C cache commit -m "${{(github.event_name=='schedule'&&'full')||(github.event_name=='workflow_dispatch'&&'manual')||'partial'}} update (${{github.event_name}} ${{github.repository}}@${{github.sha}})" ; } &&
           git -C cache push
+
   scrape:
     needs: [test, cache]
     name: Scrape cached pages
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/create-github-app-token@v2
+      - name: Checkout scraper
+        uses: actions/checkout@v4
+
+      - name: Authorize app
+        uses: actions/create-github-app-token@v2
         id: app-token
         with:
           app-id: ${{ vars.OTTREC_SCRAPER_APP_ID }}
           private-key: ${{ secrets.OTTREC_SCRAPER_PRIVATE_KEY }}
           repositories: ottrec-data
         if: ${{ github.repository == 'pgaskin/ottrec' }}
-      - uses: actions/github-script@v8
+
+      - name: Configure app
+        uses: actions/github-script@v8
         with:
           github-token: ${{steps.app-token.outputs.token}}
           script: |
@@ -108,7 +126,9 @@ jobs:
             core.exportVariable('GIT_COMMITTER_NAME', username)
             core.exportVariable('GIT_COMMITTER_EMAIL', email)
         if: ${{ github.repository == 'pgaskin/ottrec' }}
-      - uses: actions/checkout@v4
+
+      - name: Checkout cache
+        uses: actions/checkout@v4
         with:
           repository: pgaskin/ottrec-data
           ref: cache
@@ -117,9 +137,12 @@ jobs:
           fetch-depth: 0
           token: ${{ steps.app-token.outputs.token || github.token }}
           persist-credentials: true
-      - uses: actions/setup-go@v5
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
+
       - run: git -C cache worktree add ../data v1
       - run: rm -fv data/*
       - run: go run ./scraper -cache cache -geocodio -scrape -export.pretty
@@ -127,9 +150,11 @@ jobs:
           -export.pb data/data.pb
           -export.textpb data/data.textpb
           -export.json data/data.json
-      - run: |
+
+      - name: Push data
+        run: |
           git -C data add . && {
             git -C data diff --cached --quiet ||
-            git -C data commit -m "update (${{github.event_name}} ${{github.repository}}@$(git rev-parse HEAD), $(git -C cache rev-parse HEAD))" ; } &&
+            git -C data commit -m "update (${{github.event_name}} ${{github.repository}}@${{github.sha}}, $(git -C cache rev-parse HEAD))" ; } &&
           git -C data push
         if: ${{ github.repository == 'pgaskin/ottrec' }}
