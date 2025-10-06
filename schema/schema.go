@@ -173,7 +173,7 @@ func MakeDate(year int, month time.Month, day int, wkday time.Weekday) Date {
 	if day = min(day, 99); day > 0 {
 		x += Date(day * 1_0)
 	}
-	if wkday = min(wkday+1, 9); day > 0 {
+	if wkday = min(wkday+1, 9); wkday > 0 {
 		x += Date(wkday * 1)
 	}
 	return x
