@@ -1336,96 +1336,17 @@ func parseDateRange(s string) (r schema.DateRange, ok bool) {
 	}
 
 	parsePart := func(s string) (schema.Date, bool) {
-		var (
-			ok    bool
-			rest               = s
-			year  int          = 0
-			month time.Month   = 0
-			day   int          = 0
-			wkday time.Weekday = -1
-		)
-
-		// parse a weekday or month
-		rest = strings.TrimSpace(rest)
-		s, rest, _ = stringsCutFirst(rest, ",", " ")
-		s = strings.TrimSpace(s)
-		ok = false
-		for i := range 7 {
-			v := time.Weekday(i)
-			x := v.String()
-			if strings.EqualFold(s, x) || strings.EqualFold(s, x[:3]) {
-				wkday, ok = v, true
-				break
-			}
-		}
+		d, ok := parseLooseDate(s)
 		if !ok {
-			for i := range 12 {
-				v := time.Month(i + 1)
-				x := v.String()
-				if strings.EqualFold(s, x) || strings.EqualFold(s, x[:3]) {
-					month, ok = v, true
-					break
-				}
-			}
+			return d, false
 		}
-		if !ok {
-			return schema.MakeDate(year, month, day, wkday), false // no weekday/month found
+		if _, hasDay := d.Day(); !hasDay {
+			return d, false
 		}
-
-		// if wasn't a month, parse the month next
-		if month == 0 {
-			rest = strings.TrimSpace(rest)
-			s, rest, _ = stringsCutFirst(rest, ",", " ")
-			s = strings.TrimSpace(s)
-			ok = false
-			for i := range 12 {
-				v := time.Month(i + 1)
-				x := v.String()
-				if strings.EqualFold(s, x) || strings.EqualFold(s, x[:3]) {
-					month, ok = v, true
-					break
-				}
-			}
-			if !ok {
-				return schema.MakeDate(year, month, day, wkday), false // no month found after weekday
-			}
+		if _, hasMonth := d.Month(); !hasMonth {
+			return d, false
 		}
-
-		// parse the day
-		rest = strings.TrimSpace(rest)
-		s, rest, _ = stringsCutFirst(rest, ",", " ")
-		s = strings.TrimSpace(s)
-		ok = false
-		if v, err := strconv.ParseInt(s, 10, 0); err == nil && v >= 1 && v <= 32 {
-			day, ok = int(v), true
-		}
-		if !ok {
-			return schema.MakeDate(year, month, day, wkday), false // invalid day
-		}
-
-		// if there's anything left, parse the year
-		if rest != "" {
-			rest = strings.TrimSpace(rest)
-			s, rest, _ = stringsCutFirst(rest, ",", " ")
-			s = strings.TrimSpace(s)
-			ok = false
-			if v, err := strconv.ParseInt(s, 10, 0); err == nil && v > 2000 && v < 4000 {
-				year, ok = int(v), true
-			}
-			if !ok {
-				return schema.MakeDate(year, month, day, wkday), false // invalid year
-			}
-		}
-
-		// check for trailing junk
-		if rest != "" {
-			return schema.MakeDate(year, month, day, wkday), false // trailing junk
-		}
-
-		// make the date and check it
-		d := schema.MakeDate(year, month, day, wkday)
-		ok = d.IsValid()
-		return d, ok
+		return d, true
 	}
 
 	left, ok := parsePart(leftStr)
