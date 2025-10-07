@@ -1,12 +1,19 @@
 package main
 
 import (
+	"bytes"
 	"cmp"
+	_ "embed"
+	"encoding/json"
+	"fmt"
 	"net/url"
 	"strings"
 	"testing"
 
+	"github.com/PuerkitoBio/goquery"
+	"github.com/expr-lang/expr"
 	"github.com/pgaskin/ottrec/schema"
+	"google.golang.org/protobuf/encoding/protojson"
 )
 
 func TestNormalizeText(t *testing.T) {
@@ -873,6 +880,69 @@ func TestMatchDomain(t *testing.T) {
 			s, not := strings.CutPrefix(s, "-")
 			if matchDomain(tc[0], &url.URL{Host: s}) != !not {
 				t.Errorf("match(%q, %q) != %t", tc[0], s, !not)
+			}
+		}
+	}
+}
+
+//go:embed schedule_test.html
+var scheduleTestHTML []byte
+
+func TestScrapeSchedule(t *testing.T) {
+	doc, err := goquery.NewDocumentFromReader(bytes.NewReader(scheduleTestHTML))
+	if err != nil {
+		panic(fmt.Errorf("parse test html: %w", err))
+	}
+	for i, tc := range doc.Find("x-test").EachIter() {
+		facilityName := tc.AttrOr("data-facility-name", "")
+		if facilityName == "" {
+			panic("test case must include facility name")
+		}
+
+		table := tc.Find("table")
+		if table.Length() != 1 {
+			panic("test case must contain exactly one table")
+		}
+
+		caption := table.Find("caption").Text()
+
+		msg, _ := scrapeSchedule(table, facilityName)
+
+		buf, err := protojson.MarshalOptions{
+			UseProtoNames: true,
+			AllowPartial:  true,
+		}.Marshal(msg)
+		if err != nil {
+			panic(fmt.Errorf("marshal protojson: %w", err))
+		}
+
+		var obj map[string]any
+		if err := json.Unmarshal(buf, &obj); err != nil {
+			panic(fmt.Errorf("unmarshal protojson: %w", err))
+		}
+
+		asserts := doc.Find("x-assert")
+
+		t.Logf("test %d: schedule %q: %d asserts", i, caption, asserts.Length())
+
+		for _, assert := range asserts.EachIter() {
+			src := assert.Text()
+			title := assert.AttrOr("title", "")
+			prog, err := expr.Compile(src)
+			if err != nil {
+				panic(fmt.Errorf("compile assert %q: %w", src, err))
+			}
+			if res, err := expr.Run(prog, map[string]any{
+				"schedule": obj,
+				"clocktime": func(hh, mm int) int {
+					return int(schema.MakeClockTime(hh, mm))
+				},
+			}); err != nil {
+				t.Log(string(buf))
+				t.Errorf("test %d: schedule %q: assert %q: failed to evaluate: %v", i, caption, cmp.Or(title, src), err)
+			} else if res != true {
+				t.Log(string(buf))
+				t.Errorf("test %d: schedule %q: assert %q: failed: result: %v", i, caption, cmp.Or(title, src), res)
 			}
 		}
 	}

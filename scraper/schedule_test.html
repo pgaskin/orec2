@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Schedule test cases</title>
+</head>
+<body>
+<style>
+	x-test {
+		display: block;
+		margin: 1rem;
+
+		&::before {
+			display: block;
+			content: attr(data-facility-name);
+			text-align: center;
+		}
+
+		&:not(:last-of-type)::after {
+			display: block;
+			content: "\2022\2022\2022";
+			text-align: center;
+			font-size: 24px;
+			line-height: 1;
+		}
+	}
+	x-assert {
+		display: block;
+		font-family: monospace;
+		border: 1px solid #ccc;
+		padding: .5rem;
+		margin: 1rem;
+
+		&::before {
+			display: block;
+			content: attr(title);
+			font-weight: bold;
+		}
+	}
+	table {
+		border-collapse: collapse;
+		margin: 1rem;
+		font-size: 87.5%;
+
+		caption { background: #ccc }
+		th { background: #eee }
+		caption, th, td { border: 1px solid #ccc; padding: .25rem }
+	}
+</style>
+<x-test data-facility-name="Plant Recreation Centre">
+	<table dir="ltr">
+		<caption>Plant Recreation Centre – Swim and Aquafit – September 2 to November 2</caption>
+		<thead>
+			<tr>
+				<th>
+				&nbsp;
+				</th>
+				<th>
+				Monday&nbsp;
+				</th>
+				<th>
+				Tuesday&nbsp;
+				</th>
+				<th>
+				Wednesday&nbsp;
+				</th>
+				<th>
+				Thursday&nbsp;
+				</th>
+				<th>
+				Friday&nbsp;
+				</th>
+				<th>
+				Saturday&nbsp;
+				</th>
+				<th>
+				Sunday&nbsp;
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>
+				Lane swim&nbsp;
+				</th>
+				<td>
+				7 - 9 am,&nbsp;
+				11:30 am - 1 pm,
+				3 - 5 pm,
+				8:30 -&nbsp;9:30 pm&nbsp;
+				</td>
+				<td>
+				7 - 9 am,&nbsp;
+				10:30 am - 1 pm,&nbsp;
+				2 - 5 pm,
+				8:30 - 9:30 pm&nbsp;
+				</td>
+				<td>
+				7 - 9 am,&nbsp;
+				11:30 am - 1 pm,&nbsp;
+				3 - 5&nbsp;pm,
+				8:30 - 9:30 pm&nbsp;
+				</td>
+				<td>
+				10:30 am - 1 pm,&nbsp;
+				3 - 5 pm,&nbsp;
+				8:30 - 9:30 pm&nbsp;
+
+				&nbsp;
+				</td>
+				<td>
+				7 - 9 am,&nbsp;
+				11:30 am - 1 pm,&nbsp;
+				2 - 6 pm,&nbsp;
+				8 - 9:30 pm&nbsp;
+				</td>
+				<td>
+				Noon -&nbsp;1:30 pm,&nbsp;
+				6 – 7 pm&nbsp;
+				</td>
+				<td>
+				Noon - 1:30 pm,&nbsp;
+				4 - 5:30 pm&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<th>
+				Lane swim – reduced capacity &nbsp;
+				</th>
+				<td>
+				9 - 11:30 am,&nbsp;
+				1 - 3 pm,&nbsp;
+				7:30 - 8:30 pm&nbsp;
+				</td>
+				<td>
+				9 - 10:30 am,
+				1 - 2 pm&nbsp;
+
+				&nbsp;
+				</td>
+				<td>
+				9 - 11:30 am,&nbsp;
+				1 - 3 pm&nbsp;
+				</td>
+				<td>
+				9 - 10:30 am,&nbsp;
+				1 - 3 pm&nbsp;
+				</td>
+				<td>
+				9 - 11:30 am&nbsp;
+				</td>
+				<td>
+				n/a&nbsp;
+				</td>
+				<td>
+				n/a&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<th>
+				Public swim &nbsp;
+				</th>
+				<td>
+				n/a&nbsp;
+				</td>
+				<td>
+				6 - 7:30 pm&nbsp;
+				</td>
+				<td>
+				n/a
+				</td>
+				<td>
+				1 - 2 pm&nbsp;
+
+				&nbsp;
+				</td>
+				<td>
+				1 - 2 pm,
+				7 - 8 pm&nbsp;
+				</td>
+				<td>
+				1:30 - 4 pm&nbsp;
+				</td>
+				<td>
+				1:30 – 4 pm&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<th>
+				Public swim – leisure pool only &nbsp;
+				</th>
+				<td>
+				10:30 am - 1 pm,
+				4- 5 pm&nbsp;
+				</td>
+				<td>
+				10:30 am - 1 pm,&nbsp;
+				4 - 5 pm&nbsp;
+				</td>
+				<td>
+				10:30 am - 1 pm,&nbsp;
+				4 - 5 pm&nbsp;
+				</td>
+				<td>
+				10:30 am - 1 pm,
+				4 -5 pm&nbsp;
+				</td>
+				<td>
+				10:30 am - 1 pm,
+				4 - 7 pm&nbsp;
+				</td>
+				<td>
+				n/a&nbsp;
+				</td>
+				<td>
+				n/a&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<th>
+				Aqua - general&nbsp;
+				</th>
+				<td>
+				9 - 10 am,
+				10 - 11 am,&nbsp;
+				5 - 6 pm&nbsp;
+				</td>
+				<td>
+				9 - 10 am,&nbsp;
+				7:30 - 8:30 pm&nbsp;
+				</td>
+				<td>
+				9 - 10 am,&nbsp;
+				10 - 11 am,&nbsp;
+				5 - 6 pm&nbsp;
+				</td>
+				<td>
+				9 - 10 am,&nbsp;
+				7:30 - 8:30 pm&nbsp;
+				</td>
+				<td>
+				9 - 10 am,&nbsp;
+				10 -11 am&nbsp;
+				</td>
+				<td>
+				9 - 10 am&nbsp;
+				</td>
+				<td>
+				10 – 11 am&nbsp;
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<x-assert>schedule.caption == "Plant Recreation Centre - Swim and Aquafit - September 2 to November 2"</x-assert>
+	<x-assert>schedule.days == ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]</x-assert>
+</x-test>
+<!-- TODO: more test cases -->
