@@ -343,197 +343,9 @@ func run(ctx context.Context) error {
 					if !strings.Contains(label, "drop-in") && !strings.Contains(label, "schedule") && content.Find(`a[href*="reservation.frontdesksuite"],p:contains("schedules listed in the charts below"),th:contains("Monday")`).Length() == 0 {
 						return nil // probably not a schedule group
 					}
-
-					var group schema.ScheduleGroup_builder
-					group.Label = label
-					group.XTitle = extractScheduleGroupTitle(label)
-
-					if scheduleChangeH := content.Find("h1,h2,h3,h4,h5,h6").FilterFunction(func(i int, s *goquery.Selection) bool {
-						return strings.HasPrefix(strings.TrimSpace(strings.ToLower(s.Text())), "schedule change")
-					}); scheduleChangeH.Length() == 1 {
-						if sel := scheduleChangeH.Next(); sel.Is("ul") {
-							if raw, err := sel.Html(); err == nil {
-								group.ScheduleChangesHtml = "<ul>" + raw + "</ul>"
-							} else {
-								facility.XErrors = append(facility.XErrors, fmt.Sprintf("parse schedule changes for schedule group %q: %v", label, err))
-							}
-						} else {
-							facility.XErrors = append(facility.XErrors, fmt.Sprintf("parse schedule changes for schedule group %q: header is not followed by a list", label))
-						}
-					} else if scheduleChangeH.Length() != 0 {
-						facility.XErrors = append(facility.XErrors, fmt.Sprintf("parse schedule changes for schedule group %q: multiple selector matches found", label))
-					}
-
-					for _, btn := range content.Find(".btn").EachIter() {
-						tmp := btn.Clone()
-						tmp.Find(".fas").Remove()             // font-awesome icons
-						tmp.Find(".visually-hidden").Remove() // accessibility text
-						label := normalizeText(tmp.Text(), false, false)
-
-						switch {
-						case strings.Contains(strings.ToLower(label), "reserve a spot"):
-						case strings.Contains(strings.ToLower(btn.AttrOr("href", "")), "reservation.frontdesksuite.ca"):
-						default:
-							continue
-						}
-
-						var burl string
-						if u, err := resolve(doc, btn); err != nil {
-							facility.XErrors = append(facility.XErrors, fmt.Sprintf("parse reservation button for schedule group %q: failed to parse href: %v", group.Label, err))
-						} else {
-							burl = u.String()
-						}
-
-						var link schema.ReservationLink_builder
-						link.Label = label
-						link.Url = burl
-						group.ReservationLinks = append(group.ReservationLinks, link.Build())
-					}
-
-					for _, el := range content.Find("p,table").EachIter() {
-						if el.Is("table") {
-							// got the first schedule table, don't continue
-							// looking for reservations not required text (if
-							// it's there, we can't really trust it since it's
-							// between two schedules, so it's ambiguous)
-							break
-						}
-						if req, ok := parseReservationRequirement(el.Text()); ok {
-							if req {
-								if len(group.ReservationLinks) == 0 {
-									slog.Warn("unexpected top-level reservation required text without reservation links")
-									facility.XErrors = append(facility.XErrors, "unexpected top-level reservation required text without reservation links")
-								}
-								continue
-							}
-							if group.XNoresv {
-								slog.Warn("multiple top-level reservation not required text")
-							}
-							group.XNoresv = true
-						}
-					}
-
-				schedule:
-					for _, table := range content.Find("table").EachIter() {
-						var schedule schema.Schedule_builder
-						schedule.Caption = normalizeText(table.Find("caption").First().Text(), false, false)
-
-						// date range suffix
-						name, date, ok := cutDateRange(schedule.Caption)
-						if ok {
-							schedule.XDate = date
-							if r, ok := parseDateRange(date); ok {
-								schedule.XFrom = ptrTo(int32(r.From))
-								schedule.XTo = ptrTo(int32(r.To))
-							} else {
-								facility.XErrors = append(facility.XErrors, fmt.Sprintf("schedule %q: failed to parse date range %q", schedule.Caption, date))
-							}
-						}
-						// " schedule" suffix
-						name = strings.TrimSpace(strings.TrimSuffix(strings.ToLower(name), " schedule"))
-						// facility name prefix
-						if x, ok := strings.CutPrefix(name, strings.ToLower(facility.Name)); ok {
-							name = x
-						} else if x, y, ok := strings.Cut(name, "-"); ok && strings.HasPrefix(strings.ToLower(facility.Name), x) {
-							name = strings.TrimSpace(y) // e.g., "Jack Purcell Community Centre" with "Jack Purcell - swim and aquafit - January 6 to April 6"
-							// note: we shouldn't try to parse the date range
-							// (Month DD[, YYYY] to [Month ]DD[, YYYY] OR
-							// until|starting Month DD[, YYYY]) since it's
-							// manually written and the year isn't automatically
-							// added when the year changes, so it's hard to know
-							// if we parsed it correctly
-						}
-						name = strings.TrimLeft(name, " -")
-						schedule.XName = strings.TrimLeft(name, " -")
-
-						// TODO: refactor
-						for _, row := range table.Find("tr").EachIter() {
-							cells := row.Find("th,td")
-							if schedule.Days == nil {
-								for i, cell := range cells.EachIter() {
-									if i != 0 {
-										schedule.Days = append(schedule.Days, strings.Join(strings.Fields(cell.Text()), " "))
-									}
-								}
-								schedule.XDaydates = make([]int32, len(schedule.Days))
-								for i, x := range schedule.Days {
-									if v, ok := parseLooseDate(x); ok {
-										schedule.XDaydates[i] = int32(v)
-									}
-								}
-							} else {
-								var activity schema.Schedule_Activity_builder
-								if cells.Length() != len(schedule.Days)+1 {
-									facility.XErrors = append(facility.XErrors, fmt.Sprintf("failed to parse schedule %q (group %q): row size mismatch", schedule.Caption, group.Label))
-									continue schedule
-								}
-								for i, cell := range cells.EachIter() {
-									if i == 0 {
-										activity.Label = normalizeText(cell.Text(), false, false)
-										activity.XName = cleanActivityName(cell.Text())
-										if _, resv, ok := cutReservationRequirement(activity.Label); ok {
-											activity.XResv = ptrTo(resv)
-										}
-									} else {
-										hdr := schedule.Days[i-1]
-										wkday := time.Weekday(-1)
-										for wd := range 7 {
-											if strings.Contains(strings.ToLower(hdr), strings.ToLower(time.Weekday(wd).String())[:3]) {
-												if wkday == -1 {
-													wkday = time.Weekday(wd)
-												} else {
-													slog.Warn("multiple weekday matches for header, ignoring", "schedule", schedule.Caption, "header", hdr)
-													wkday = -1 // multiple matches
-													break
-												}
-											}
-										}
-										if wkday == -1 {
-											facility.XErrors = append(facility.XErrors, fmt.Sprintf("warning: failed to parse weekday from header %q", hdr))
-										}
-										times := []*schema.TimeRange{}
-										for t := range strings.FieldsFuncSeq(cell.Text(), func(r rune) bool {
-											return r == ','
-										}) {
-											if strings.Map(func(r rune) rune {
-												if unicode.IsSpace(r) {
-													return -1
-												}
-												return r
-											}, normalizeText(t, false, true)) == "n/a" {
-												continue
-											}
-											var trange schema.TimeRange_builder
-											trange.Label = strings.TrimSpace(normalizeText(t, false, false))
-											if wkday != -1 {
-												trange.XWkday = ptrTo(schema.Weekday(wkday))
-											}
-											if r, ok := parseClockRange(t); ok {
-												trange.XStart = ptrTo(int32(r.Start))
-												trange.XEnd = ptrTo(int32(r.End))
-											} else {
-												slog.Warn("failed to parse time range", "range", t)
-												facility.XErrors = append(facility.XErrors, fmt.Sprintf("warning: failed to parse time range %q", t))
-											}
-											times = append(times, trange.Build())
-										}
-										activity.Days = append(activity.Days, schema.Schedule_ActivityDay_builder{
-											Times: times,
-										}.Build())
-									}
-								}
-								schedule.Activities = append(schedule.Activities, activity.Build())
-							}
-						}
-						if len(schedule.Days) == 0 || len(schedule.Activities) == 0 {
-							facility.XErrors = append(facility.XErrors, fmt.Sprintf("failed to parse schedule %q (group %q): invalid table layout", schedule.Caption, group.Label))
-							continue schedule
-						}
-
-						group.Schedules = append(group.Schedules, schedule.Build())
-					}
-
-					facility.ScheduleGroups = append(facility.ScheduleGroups, group.Build())
+					group, xerrs := scrapeScheduleGroup(doc, facility.Name, label, content)
+					facility.XErrors = append(facility.XErrors, xerrs...)
+					facility.ScheduleGroups = append(facility.ScheduleGroups, group)
 					return nil
 				}); err != nil {
 					return err
@@ -749,8 +561,8 @@ func fetch(ctx context.Context, category, u string) (*http.Response, error) {
 	return resp, nil
 }
 
-// resolve resolves the href from an element against the document.
-func resolve(d *goquery.Document, n *goquery.Selection) (*url.URL, error) {
+// resolve resolves a href from against the document.
+func resolve(d *goquery.Document, href string) (*url.URL, error) {
 	var err error
 	u := d.Url
 	if base, _ := d.Find("base").Attr("href"); base != "" {
@@ -758,12 +570,10 @@ func resolve(d *goquery.Document, n *goquery.Selection) (*url.URL, error) {
 			return nil, fmt.Errorf("parse base href %q: %w", base, err)
 		}
 	}
-	if href, ok := n.Attr("href"); ok {
+	if href != "" {
 		if u, err = u.Parse(href); err != nil {
 			return nil, fmt.Errorf("parse href %q: %w", href, err)
 		}
-	} else {
-		return nil, fmt.Errorf("no href specified")
 	}
 	return u, nil
 }
@@ -805,7 +615,12 @@ func scrapePagerNext(doc *goquery.Document, s *goquery.Selection) (*url.URL, err
 	} else if n > 1 {
 		return nil, fmt.Errorf("multiple next links found (wtf)")
 	}
-	return resolve(doc, next)
+
+	href := next.AttrOr("href", "")
+	if href == "" {
+		return nil, fmt.Errorf("href is empty")
+	}
+	return resolve(doc, href)
 }
 
 // scrapePlaceListings iterates over the place listings table, returning the URL
@@ -843,7 +658,12 @@ func scrapePlaceListings(doc *goquery.Document, s *goquery.Selection, fn func(u 
 				return err
 			}
 
-			u, err := resolve(doc, rowURL)
+			href := rowURL.AttrOr("href", "")
+			if href == "" {
+				return fmt.Errorf("href is empty")
+			}
+
+			u, err := resolve(doc, href)
 			if err != nil {
 				return err
 			}
@@ -946,6 +766,213 @@ func scrapeNodeField(s *goquery.Selection, name, typ string, array, optional boo
 		}
 	}
 	return items, nil
+}
+
+// scrapeScheduleGroup scrapes a schedule group collapse section, returning nil
+// on failure, and returning a slice of warnings/errors from parsing the
+// schedule.
+func scrapeScheduleGroup(doc *goquery.Document, facilityName, label string, content *goquery.Selection) (msg *schema.ScheduleGroup, xerrs []string) {
+	var group schema.ScheduleGroup_builder
+	group.Label = label
+	group.XTitle = extractScheduleGroupTitle(label)
+
+	if scheduleChangeH := content.Find("h1,h2,h3,h4,h5,h6").FilterFunction(func(i int, s *goquery.Selection) bool {
+		return strings.HasPrefix(strings.TrimSpace(strings.ToLower(s.Text())), "schedule change")
+	}); scheduleChangeH.Length() == 1 {
+		if sel := scheduleChangeH.Next(); sel.Is("ul") {
+			if raw, err := sel.Html(); err == nil {
+				group.ScheduleChangesHtml = "<ul>" + raw + "</ul>"
+			} else {
+				xerrs = append(xerrs, fmt.Sprintf("parse schedule changes for schedule group %q: %v", label, err))
+			}
+		} else {
+			xerrs = append(xerrs, fmt.Sprintf("parse schedule changes for schedule group %q: header is not followed by a list", label))
+		}
+	} else if scheduleChangeH.Length() != 0 {
+		xerrs = append(xerrs, fmt.Sprintf("parse schedule changes for schedule group %q: multiple selector matches found", label))
+	}
+
+	for _, btn := range content.Find(".btn").EachIter() {
+		tmp := btn.Clone()
+		tmp.Find(".fas").Remove()             // font-awesome icons
+		tmp.Find(".visually-hidden").Remove() // accessibility text
+		label := normalizeText(tmp.Text(), false, false)
+
+		switch {
+		case strings.Contains(strings.ToLower(label), "reserve a spot"):
+		case strings.Contains(strings.ToLower(btn.AttrOr("href", "")), "reservation.frontdesksuite.ca"):
+		default:
+			continue
+		}
+
+		var burl string
+		if href := btn.AttrOr("href", ""); href == "" {
+			xerrs = append(xerrs, fmt.Sprintf("parse reservation button for schedule group %q: href is empty", group.Label))
+		} else if u, err := resolve(doc, href); err != nil {
+			xerrs = append(xerrs, fmt.Sprintf("parse reservation button for schedule group %q: failed to parse href: %v", group.Label, err))
+		} else {
+			burl = u.String()
+		}
+
+		var link schema.ReservationLink_builder
+		link.Label = label
+		link.Url = burl
+		group.ReservationLinks = append(group.ReservationLinks, link.Build())
+	}
+
+	for _, el := range content.Find("p,table").EachIter() {
+		if el.Is("table") {
+			// got the first schedule table, don't continue
+			// looking for reservations not required text (if
+			// it's there, we can't really trust it since it's
+			// between two schedules, so it's ambiguous)
+			break
+		}
+		if req, ok := parseReservationRequirement(el.Text()); ok {
+			if req {
+				if len(group.ReservationLinks) == 0 {
+					slog.Warn("unexpected top-level reservation required text without reservation links")
+					xerrs = append(xerrs, "unexpected top-level reservation required text without reservation links")
+				}
+				continue
+			}
+			if group.XNoresv {
+				slog.Warn("multiple top-level reservation not required text")
+			}
+			group.XNoresv = true
+		}
+	}
+
+	for _, table := range content.Find("table").EachIter() {
+		schedule, xerrs := scrapeSchedule(table, facilityName)
+		if schedule != nil {
+			group.Schedules = append(group.Schedules, schedule)
+		}
+		for _, xerr := range xerrs {
+			xerrs = append(xerrs, fmt.Sprintf("group %q: %s", group.Label, xerr))
+		}
+	}
+	return group.Build(), xerrs
+}
+
+// scrapeSchedule scrapes a schedule table, returning nil on failure, and
+// returning a slice of warnings/errors from parsing the schedule.
+func scrapeSchedule(table *goquery.Selection, facilityName string) (msg *schema.Schedule, xerrs []string) {
+	var schedule schema.Schedule_builder
+	schedule.Caption = normalizeText(table.Find("caption").First().Text(), false, false)
+
+	// date range suffix
+	name, date, ok := cutDateRange(schedule.Caption)
+	if ok {
+		schedule.XDate = date
+		if r, ok := parseDateRange(date); ok {
+			schedule.XFrom = ptrTo(int32(r.From))
+			schedule.XTo = ptrTo(int32(r.To))
+		} else {
+			xerrs = append(xerrs, fmt.Sprintf("schedule %q: failed to parse date range %q", schedule.Caption, date))
+		}
+	}
+	// " schedule" suffix
+	name = strings.TrimSpace(strings.TrimSuffix(strings.ToLower(name), " schedule"))
+	// facility name prefix
+	if x, ok := strings.CutPrefix(name, strings.ToLower(facilityName)); ok {
+		name = x
+	} else if x, y, ok := strings.Cut(name, "-"); ok && strings.HasPrefix(strings.ToLower(facilityName), x) {
+		name = strings.TrimSpace(y) // e.g., "Jack Purcell Community Centre" with "Jack Purcell - swim and aquafit - January 6 to April 6"
+		// note: we shouldn't try to parse the date range
+		// (Month DD[, YYYY] to [Month ]DD[, YYYY] OR
+		// until|starting Month DD[, YYYY]) since it's
+		// manually written and the year isn't automatically
+		// added when the year changes, so it's hard to know
+		// if we parsed it correctly
+	}
+	name = strings.TrimLeft(name, " -")
+	schedule.XName = strings.TrimLeft(name, " -")
+
+	// TODO: refactor
+	for _, row := range table.Find("tr").EachIter() {
+		cells := row.Find("th,td")
+		if schedule.Days == nil {
+			for i, cell := range cells.EachIter() {
+				if i != 0 {
+					schedule.Days = append(schedule.Days, strings.Join(strings.Fields(cell.Text()), " "))
+				}
+			}
+			schedule.XDaydates = make([]int32, len(schedule.Days))
+			for i, x := range schedule.Days {
+				if v, ok := parseLooseDate(x); ok {
+					schedule.XDaydates[i] = int32(v)
+				}
+			}
+		} else {
+			var activity schema.Schedule_Activity_builder
+			if cells.Length() != len(schedule.Days)+1 {
+				xerrs = append(xerrs, fmt.Sprintf("failed to parse schedule %q: row size mismatch", schedule.Caption))
+				return nil, xerrs
+			}
+			for i, cell := range cells.EachIter() {
+				if i == 0 {
+					activity.Label = normalizeText(cell.Text(), false, false)
+					activity.XName = cleanActivityName(cell.Text())
+					if _, resv, ok := cutReservationRequirement(activity.Label); ok {
+						activity.XResv = ptrTo(resv)
+					}
+				} else {
+					hdr := schedule.Days[i-1]
+					wkday := time.Weekday(-1)
+					for wd := range 7 {
+						if strings.Contains(strings.ToLower(hdr), strings.ToLower(time.Weekday(wd).String())[:3]) {
+							if wkday == -1 {
+								wkday = time.Weekday(wd)
+							} else {
+								slog.Warn("multiple weekday matches for header, ignoring", "schedule", schedule.Caption, "header", hdr)
+								wkday = -1 // multiple matches
+								break
+							}
+						}
+					}
+					if wkday == -1 {
+						xerrs = append(xerrs, fmt.Sprintf("warning: failed to parse weekday from header %q", hdr))
+					}
+					times := []*schema.TimeRange{}
+					for t := range strings.FieldsFuncSeq(cell.Text(), func(r rune) bool {
+						return r == ','
+					}) {
+						if strings.Map(func(r rune) rune {
+							if unicode.IsSpace(r) {
+								return -1
+							}
+							return r
+						}, normalizeText(t, false, true)) == "n/a" {
+							continue
+						}
+						var trange schema.TimeRange_builder
+						trange.Label = strings.TrimSpace(normalizeText(t, false, false))
+						if wkday != -1 {
+							trange.XWkday = ptrTo(schema.Weekday(wkday))
+						}
+						if r, ok := parseClockRange(t); ok {
+							trange.XStart = ptrTo(int32(r.Start))
+							trange.XEnd = ptrTo(int32(r.End))
+						} else {
+							slog.Warn("failed to parse time range", "range", t)
+							xerrs = append(xerrs, fmt.Sprintf("warning: failed to parse time range %q", t))
+						}
+						times = append(times, trange.Build())
+					}
+					activity.Days = append(activity.Days, schema.Schedule_ActivityDay_builder{
+						Times: times,
+					}.Build())
+				}
+			}
+			schedule.Activities = append(schedule.Activities, activity.Build())
+		}
+	}
+	if len(schedule.Days) == 0 || len(schedule.Activities) == 0 {
+		xerrs = append(xerrs, fmt.Sprintf("failed to parse schedule %q: invalid table layout", schedule.Caption))
+		return nil, xerrs
+	}
+	return schedule.Build(), xerrs
 }
 
 // normalizeText performs various transformations on s:
