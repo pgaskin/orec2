@@ -92,12 +92,16 @@ func TestParseClockRange(t *testing.T) {
 
 		// special implies am/pm
 		{"midnight - noon", "00:00 - 12:00"},
-		{"noon-1:00", ""},
-		{"1:00 - noon", "13:00 - 12:00"},
+		{"noon-1:00", ""}, // ambiguous
+		{"1:00 - noon", "01:00 - 12:00"},
 		{"1:00 am - noon", "01:00 - 12:00"},
+		{"7:30-noon", "07:30 - 12:00"},
+		{"noon-7:30", ""}, // ambiguous
+		{"noon-7:30 pm", "12:00 - 19:30"},
+		{"11:45 - 1pm", "11:45 - 13:00"},
 
 		// next-day logic
-		{"12:59-4:00am", "00:59 - 04:00"},
+		{"12:59-4:00am", "12:59 - 04:00"},
 		{"12:59-4:00pm", "12:59 - 16:00"},
 		{"3:30am-2:30pm", "03:30 - 14:30"},
 
@@ -114,7 +118,7 @@ func TestParseClockRange(t *testing.T) {
 		{"5-3", "05:00 - 03:00"},
 		{"5-3am", "05:00 - 03:00"},
 		{"5am-3", ""},
-		{"5-3pm", "17:00 - 15:00"},
+		{"5-3pm", "05:00 - 15:00"},
 		{"5pm-3", ""},
 		{"5am-3pm", "05:00 - 15:00"},
 		{"5pm-3am", "17:00 - 03:00"},
@@ -124,8 +128,8 @@ func TestParseClockRange(t *testing.T) {
 		{"5pm-23:03", ""},
 		{"noon-6:00", ""},
 		{"noon-06:00", ""},
-		{"6:00-noon", "18:00 - 12:00"},
-		{"06:00-noon", "18:00 - 12:00"},
+		{"6:00-noon", "06:00 - 12:00"},
+		{"06:00-noon", "06:00 - 12:00"},
 		{"23:00-noon", ""},
 
 		// misc special
@@ -921,7 +925,7 @@ func TestScrapeSchedule(t *testing.T) {
 			panic(fmt.Errorf("unmarshal protojson: %w", err))
 		}
 
-		asserts := doc.Find("x-assert")
+		asserts := tc.Find("x-assert")
 
 		t.Logf("test %d: schedule %q: %d asserts", i, caption, asserts.Length())
 

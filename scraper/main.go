@@ -954,6 +954,9 @@ func scrapeSchedule(table *goquery.Selection, facilityName string) (msg *schema.
 						if r, ok := parseClockRange(t); ok {
 							trange.XStart = ptrTo(int32(r.Start))
 							trange.XEnd = ptrTo(int32(r.End))
+							if r.Start > 24*60 || r.End > 24*60 {
+								slog.Warn("note: time range goes into the next day", "raw", t, "parsed", r)
+							}
 						} else {
 							slog.Warn("failed to parse time range", "range", t)
 							xerrs = append(xerrs, fmt.Sprintf("warning: failed to parse time range %q", t))
@@ -1265,7 +1268,7 @@ func parseClockRange(s string) (r schema.ClockRange, ok bool) {
 	}
 	t1, m1, ok := parsePart(s1, 0)
 	if !ok {
-		return r, false // invalid rhs
+		return r, false // invalid lhs
 	}
 	t2, m2, ok := parsePart(s2, 0)
 	if !ok {
@@ -1274,13 +1277,17 @@ func parseClockRange(s string) (r schema.ClockRange, ok bool) {
 	if m1 != 0 && m2 == 0 {
 		return r, false // ambiguous lhs 12h and rhs 24h
 	}
+	if m1 == 0 && t1 >= 13*60 && m2 != 0 {
+		return r, false // ambiguous lhs 24h and rhs 12h
+	}
 	if m1 == 0 && m2 != 0 {
-		t1, m1, ok = parsePart(s1, m2) // reparse lhs with 12h rhs am/pm
-		if !ok {
-			return r, false // lhs hour is now invalid
-		}
-		if m1 != m2 {
-			panic("wtf") // should be impossible (m1 == 0 thus it didn't include am/pm, and we reparsed it with m2)
+		// only if lhs is before rhs AND the difference is greater than 12h
+		if t1 < t2 && t2-t1 >= 12*60 {
+			t1, m1, ok = parsePart(s1, m2) // reparse lhs with 12h rhs am/pm
+			if !ok {
+				return r, false // lhs hour is now invalid
+			}
+			_ = m1
 		}
 	}
 	if t1 == t2 {

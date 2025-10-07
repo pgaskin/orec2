@@ -50,6 +50,7 @@ git \
 
 ### Data changes
 
+- **2025-10-07:** Changed time parsing logic to correctly handle time ranges with LHS 12h non-AM/PM AM time and RHS PM time (assume AM on the left instead of taking the PM from the right if it's less than 12h between). This fixes some issues with times like `11:45 - 1pm` being parsed as `23:45 - 13:00 tomorrow`. Note that this is quite rare, as they usually include the AM in the LHS time in this case, and they've only recently started making this typo. I've also added a warning to the scraper when a time spans into the next day, as this shouldn't usually happen as there aren't overnight activities.
 - **2025-10-06:** Also parse schedule day header dates into `Schedule._daydates`.
 - **2025-10-05:** Also parse top-level "reservation not required" text into `ScheduleGroup._noresv`.
 - **2025-10-02:** Renamed from `orec2` to `ottrec`. Split data and cache into separate repository. Removed CSV export (will replace this with something better later).

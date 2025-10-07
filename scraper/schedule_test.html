@@ -254,4 +254,83 @@
 	<x-assert>schedule.caption == "Plant Recreation Centre - Swim and Aquafit - September 2 to November 2"</x-assert>
 	<x-assert>schedule.days == ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]</x-assert>
 </x-test>
+<x-test data-facility-name="Francois Dupuis Recreation Centre">
+	<table>
+		<caption>François Dupuis Recreation Centre - swimming&nbsp;-&nbsp;October 11&nbsp;to 13</caption>
+		<thead>
+			<tr>
+				<td>
+				&nbsp;
+				</td>
+				<th>Saturday, October 11</th>
+				<th>Sunday, October 12</th>
+				<th>Monday, October 13</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>Lane swim</th>
+				<td>9 am - 1 pm,&nbsp;
+				3 - 4 pm</td>
+				<td>10:30 am - 1 pm,&nbsp;
+				3 - 4 pm</td>
+				<td>
+				7:30 - noon
+				</td>
+			</tr>
+			<tr>
+				<th>Lane swim -
+				shared pool</th>
+				<td>n/a</td>
+				<td>9:30 - 10:30 am</td>
+				<td>n/a</td>
+			</tr>
+			<tr>
+				<th>Preschool swim -
+				therapeutic pool</th>
+				<td>8 - 9 am</td>
+				<td>8 - 9 am</td>
+				<td>9:30 -&nbsp;10:30 am</td>
+			</tr>
+			<tr>
+				<th>
+				Public swim -
+				therapeutic pool
+				</th>
+				<td>9 am - 3 pm</td>
+				<td>9 am - 3 pm</td>
+				<td>
+				10:30 am - noon
+				</td>
+			</tr>
+			<tr>
+				<th>Public swim -
+				25m pool</th>
+				<td>1 - 3 pm</td>
+				<td>1 - 3 pm</td>
+				<td>n/a</td>
+			</tr>
+			<tr>
+				<th>Aqua general deep</th>
+				<td>n/a</td>
+				<td>9:30 - 10:25 am</td>
+				<td>n/a</td>
+			</tr>
+			<tr>
+				<th>Aqua general shallow</th>
+				<td>n/a</td>
+				<td>9:30 - 10:25 am</td>
+				<td>n/a</td>
+			</tr>
+			<tr>
+				<th>Sauna</th>
+				<td>9 am - 4 pm</td>
+				<td>9 am - 4 pm</td>
+				<td>7:30 am - noon</td>
+			</tr>
+		</tbody>
+	</table>
+	<x-assert>find(schedule.activities, .label == "Lane swim").days[2].times[0]._start == clocktime(7, 30)</x-assert>
+	<x-assert>find(schedule.activities, .label == "Lane swim").days[2].times[0]._end == clocktime(12, 00)</x-assert>
+</x-test>
 <!-- TODO: more test cases -->
