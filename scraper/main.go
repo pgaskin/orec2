@@ -455,6 +455,12 @@ func run(ctx context.Context) error {
 										schedule.Days = append(schedule.Days, strings.Join(strings.Fields(cell.Text()), " "))
 									}
 								}
+								schedule.XDaydates = make([]int32, len(schedule.Days))
+								for i, x := range schedule.Days {
+									if v, ok := parseLooseDate(x); ok {
+										schedule.XDaydates[i] = int32(v)
+									}
+								}
 							} else {
 								var activity schema.Schedule_Activity_builder
 								if cells.Length() != len(schedule.Days)+1 {
@@ -1476,6 +1482,107 @@ func parseDateRange(s string) (r schema.DateRange, ok bool) {
 		r.To = left
 	}
 	return r, true
+}
+
+// parseLooseDate attempts to loosely parse an incomplete date string. The date
+// string must contain only any of the month, day, year, and/or weekday. It
+// returns false if there is any unparsed text or ambiguity.
+func parseLooseDate(s string) (schema.Date, bool) {
+	var (
+		yyyy int
+		mm   time.Month
+		dd   int
+		w    time.Weekday = -1
+	)
+	for seg := range strings.FieldsFuncSeq(normalizeText(s, false, true), func(r rune) bool {
+		return r == '.' || r == ',' || r == '-' || unicode.IsSpace(r)
+	}) {
+		var (
+			segMonth time.Month
+			segWkday time.Weekday = -1
+		)
+		switch seg {
+		case "sun", "sunday":
+			segWkday = time.Sunday
+		case "mon", "monday":
+			segWkday = time.Monday
+		case "tue", "tuesday":
+			segWkday = time.Tuesday
+		case "wed", "wednesday":
+			segWkday = time.Wednesday
+		case "thu", "thursday":
+			segWkday = time.Thursday
+		case "fri", "friday":
+			segWkday = time.Friday
+		case "sat", "saturday":
+			segWkday = time.Saturday
+		case "jan", "january":
+			segMonth = time.January
+		case "feb", "february":
+			segMonth = time.February
+		case "mar", "march":
+			segMonth = time.March
+		case "apr", "april":
+			segMonth = time.April
+		case "may":
+			segMonth = time.May
+		case "jun", "june":
+			segMonth = time.June
+		case "jul", "july":
+			segMonth = time.July
+		case "aug", "august":
+			segMonth = time.August
+		case "sep", "september":
+			segMonth = time.September
+		case "oct", "october":
+			segMonth = time.October
+		case "nov", "november":
+			segMonth = time.November
+		case "dec", "december":
+			segMonth = time.December
+		}
+		if segMonth != 0 {
+			if mm != 0 {
+				return 0, false // duplicate month
+			}
+			mm = segMonth
+			continue
+		}
+		if segWkday != -1 {
+			if w != -1 {
+				return 0, false // duplicate weekday
+			}
+			w = segWkday
+			continue
+		}
+		if len(seg) == 4 && seg[0] == '2' {
+			if n, err := strconv.ParseInt(seg, 10, 0); err == nil {
+				if n < 2000 || n >= 3000 {
+					return 0, false // year out of range
+				}
+				if yyyy != 0 {
+					return 0, false // duplicate year
+				}
+				yyyy = int(n)
+				continue
+			}
+		}
+		if len(seg) == 2 || len(seg) == 1 {
+			if n, err := strconv.ParseInt(seg, 10, 0); err == nil {
+				if n < 1 || n > 31 {
+					return 0, false // day out of range
+				}
+				if dd != 0 {
+					return 0, false // duplicate day
+				}
+				dd = int(n)
+				continue
+			}
+		}
+		return 0, false // unparsed segment
+	}
+	d := schema.MakeDate(yyyy, mm, dd, w)
+	return d, d.IsValid() // checks that it's nonzero, that the weekday/day is valid for the month/year if specified
 }
 
 // stringsCutFirst is like [strings.Cut], but selects the earliest of multiple

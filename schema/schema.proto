@@ -65,6 +65,7 @@ message Schedule {
     int32 _from = 6 [json_name="_from", features.field_presence=EXPLICIT]; // inclusive from date (YYYYMMDDW), not set if none, parse error, or ambiguous
     int32 _to = 7 [json_name="_to", features.field_presence=EXPLICIT]; // inclusive to date (YYYYMMDDW), not set if none, parse error, or ambiguous
     repeated string days = 3; // free-form, but usually the day of the week
+    repeated int32 _daydates = 8 [json_name="_daydates"]; // best-effort parsed version of days (YYYYMMDDW), zero if cannot be parsed unambiguously (note: this is stricter than the TimeRange._wkday field)
     repeated Activity activities = 4;
 }
 

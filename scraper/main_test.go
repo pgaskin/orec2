@@ -281,6 +281,79 @@ func TestParseDateRange(t *testing.T) {
 	}
 }
 
+func TestParseLooseDate(t *testing.T) {
+	for _, tc := range []struct {
+		S string
+		D schema.Date
+	}{
+		{"Monday, October 1", 10_01_2},
+		{"Monday, October 6, 2025", 2025_10_06_2},
+		{"October 6, 2025", 2025_10_06_0},
+		{"October 6 2025", 2025_10_06_0},
+		{"6 October 2025", 2025_10_06_0},
+		{"6 October 2025 Monday", 2025_10_06_2},
+		{"Mon 6 October 2025", 2025_10_06_2},
+		{"Mon 6 Oct 2025", 2025_10_06_2},
+		{"Mon 06 Oct 2025", 2025_10_06_2},
+		{"mON 06 OCT\u00a02025", 2025_10_06_2},
+		{"29 October 2025", 2025_10_29_0},
+		{"29 October", 10_29_0},
+		{"29 Oct", 10_29_0},
+		{"Monday, October, 2025", 2025_10_00_2},
+		{"October, 2025", 2025_10_00_0},
+		{"Monday 2025", 2025_00_00_2},
+
+		{"sun", 1},
+		{"mon", 2},
+		{"tue", 3},
+		{"wed", 4},
+		{"thu", 5},
+		{"fri", 6},
+		{"sat", 7},
+
+		{"jan", 1_00_0},
+		{"feb", 2_00_0},
+		{"mar", 3_00_0},
+		{"apr", 4_00_0},
+		{"may", 5_00_0},
+		{"jun", 6_00_0},
+		{"jul", 7_00_0},
+		{"aug", 8_00_0},
+		{"sep", 9_00_0},
+		{"oct", 10_00_0},
+		{"nov", 11_00_0},
+		{"dec", 12_00_0},
+
+		{"Monday Mon, October 6, 2025", 0},  // duplicate weekday
+		{"Monday, October Oct 6, 2025", 0},  // duplicate monthv
+		{"Monday, October 06 6, 2025", 0},   // duplicate day
+		{"Monday, October 6, 2025 2025", 0}, // duplicate year
+		{"Monday, October 1, 2025", 0},      // wrong weekday
+		{"Mon 6 Oc 2025", 0},                // month too short
+		{"Mo 6 Oct 2025", 0},                // weekday too short
+		{"Mon 006 Oct 2025", 0},             // day too long
+		{"Mon 0006 Oct 2025", 0},            // day too long
+
+		// TODO: more
+	} {
+		d, ok := parseLooseDate(tc.S)
+		if !ok {
+			if tc.D != 0 {
+				t.Errorf("parse %q: unexpected error", tc.S)
+			}
+			continue
+		}
+		if tc.D == 0 {
+			t.Errorf("parse %q: expected error", tc.S)
+			continue
+		}
+		if tc.D != d {
+			t.Errorf("parse %q: expected %#v, got %#v", tc.S, tc.D, d)
+			continue
+		}
+	}
+}
+
 func TestCleanActivityName(t *testing.T) {
 	for _, tc := range [][]string{
 		// age min

@@ -635,6 +635,7 @@ type Schedule struct {
 	xxx_hidden_XFrom       int32                  `protobuf:"varint,6,opt,name=_from"`
 	xxx_hidden_XTo         int32                  `protobuf:"varint,7,opt,name=_to"`
 	xxx_hidden_Days        []string               `protobuf:"bytes,3,rep,name=days"`
+	xxx_hidden_XDaydates   []int32                `protobuf:"varint,8,rep,packed,name=_daydates"`
 	xxx_hidden_Activities  *[]*Schedule_Activity  `protobuf:"bytes,4,rep,name=activities"`
 	XXX_raceDetectHookData protoimpl.RaceDetectHookData
 	XXX_presence           [1]uint32
@@ -709,6 +710,13 @@ func (x *Schedule) GetDays() []string {
 	return nil
 }
 
+func (x *Schedule) GetXDaydates() []int32 {
+	if x != nil {
+		return x.xxx_hidden_XDaydates
+	}
+	return nil
+}
+
 func (x *Schedule) GetActivities() []*Schedule_Activity {
 	if x != nil {
 		if x.xxx_hidden_Activities != nil {
@@ -732,16 +740,20 @@ func (x *Schedule) SetXDate(v string) {
 
 func (x *Schedule) SetXFrom(v int32) {
 	x.xxx_hidden_XFrom = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 3, 7)
+	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 3, 8)
 }
 
 func (x *Schedule) SetXTo(v int32) {
 	x.xxx_hidden_XTo = v
-	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 4, 7)
+	protoimpl.X.SetPresent(&(x.XXX_presence[0]), 4, 8)
 }
 
 func (x *Schedule) SetDays(v []string) {
 	x.xxx_hidden_Days = v
+}
+
+func (x *Schedule) SetXDaydates(v []int32) {
+	x.xxx_hidden_XDaydates = v
 }
 
 func (x *Schedule) SetActivities(v []*Schedule_Activity) {
@@ -781,6 +793,7 @@ type Schedule_builder struct {
 	XFrom      *int32
 	XTo        *int32
 	Days       []string
+	XDaydates  []int32
 	Activities []*Schedule_Activity
 }
 
@@ -792,14 +805,15 @@ func (b0 Schedule_builder) Build() *Schedule {
 	x.xxx_hidden_XName = b.XName
 	x.xxx_hidden_XDate = b.XDate
 	if b.XFrom != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 3, 7)
+		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 3, 8)
 		x.xxx_hidden_XFrom = *b.XFrom
 	}
 	if b.XTo != nil {
-		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 4, 7)
+		protoimpl.X.SetPresentNonAtomic(&(x.XXX_presence[0]), 4, 8)
 		x.xxx_hidden_XTo = *b.XTo
 	}
 	x.xxx_hidden_Days = b.Days
+	x.xxx_hidden_XDaydates = b.XDaydates
 	x.xxx_hidden_Activities = &b.Activities
 	return m0
 }
@@ -1236,14 +1250,15 @@ const file_schema_proto_rawDesc = "" +
 	"\x15schedule_changes_html\x18\x03 \x01(\tR\x13scheduleChangesHtml\x121\n" +
 	"\tschedules\x18\x04 \x03(\v2\x13.ottrec.v1.ScheduleR\tschedules\x12G\n" +
 	"\x11reservation_links\x18\x05 \x03(\v2\x1a.ottrec.v1.ReservationLinkR\x10reservationLinks\x12\x18\n" +
-	"\a_noresv\x18\x06 \x01(\bR\a_noresv\"\x9e\x03\n" +
+	"\a_noresv\x18\x06 \x01(\bR\a_noresv\"\xbc\x03\n" +
 	"\bSchedule\x12\x18\n" +
 	"\acaption\x18\x01 \x01(\tR\acaption\x12\x14\n" +
 	"\x05_name\x18\x02 \x01(\tR\x05_name\x12\x14\n" +
 	"\x05_date\x18\x05 \x01(\tR\x05_date\x12\x1b\n" +
 	"\x05_from\x18\x06 \x01(\x05B\x05\xaa\x01\x02\b\x01R\x05_from\x12\x17\n" +
 	"\x03_to\x18\a \x01(\x05B\x05\xaa\x01\x02\b\x01R\x03_to\x12\x12\n" +
-	"\x04days\x18\x03 \x03(\tR\x04days\x12<\n" +
+	"\x04days\x18\x03 \x03(\tR\x04days\x12\x1c\n" +
+	"\t_daydates\x18\b \x03(\x05R\t_daydates\x12<\n" +
 	"\n" +
 	"activities\x18\x04 \x03(\v2\x1c.ottrec.v1.Schedule.ActivityR\n" +
 	"activities\x1a9\n" +
