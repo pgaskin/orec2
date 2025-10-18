@@ -136,6 +136,26 @@ func TestParseClockRange(t *testing.T) {
 		{"noon-12:55pm", "12:00 - 12:55"},
 		{"midnight-12:55am", "00:00 - 00:55"},
 
+		// misc important somewhat ambiguous cases (the meaning of these must not be changed)
+		{"midnight-noon", "00:00 - 12:00"},
+		{"noon-midnight", "12:00 - 00:00"},
+		{"00:30-noon", "00:30 - 12:00"},
+		{"1-noon", "01:00 - 12:00"},
+		{"8-noon", "08:00 - 12:00"},
+		{"noon-8pm", "12:00 - 20:00"},
+		{"noon-1am", "12:00 - 01:00"},
+		{"noon-8am", "12:00 - 08:00"},
+		{"3am-5pm", "03:00 - 17:00"},
+		{"3-5pm", "15:00 - 17:00"},
+		{"6-5pm", "06:00 - 17:00"},
+		{"6pm-5pm", "18:00 - 17:00"},
+		{"12-5pm", "12:00 - 17:00"},
+		{"13-5pm", ""},
+		{"12-5am", "12:00 - 05:00"},
+		{"4-5am", "04:00 - 05:00"},
+		{"5-5am", ""},
+		{"5-5pm", ""},
+
 		// typo correction for extraneous separators
 		{"01:00-02:00", "01:00 - 02:00"},
 		{"01:00--02:00", "01:00 - 02:00"},
