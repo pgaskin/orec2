@@ -1161,6 +1161,8 @@ func parseClockRange(s string) (r schema.ClockRange, ok bool) {
 
 	s = strings.ReplaceAll(normalizeText(s, false, true), " ", "")
 
+	// TODO: rewrite this all now that I've decided how the edge cases should behave
+
 	parseSeparator := func(s string) (s1, s2 string, ok bool) {
 		return stringsCutFirst(s, "-", "to")
 	}
@@ -1279,6 +1281,9 @@ func parseClockRange(s string) (r schema.ClockRange, ok bool) {
 	}
 	if m1 == 0 && t1 >= 13*60 && m2 != 0 {
 		return r, false // ambiguous lhs 24h and rhs 12h
+	}
+	if m1 == 0 && m2 == 'a' && t2 < 60 && t1 >= 12*60 && t1 < 13*60 {
+		t1 -= 12 * 60 // RHS is 12:XX AM and LHS is 12:XX
 	}
 	if m1 == 0 && m2 != 0 {
 		// only if lhs is before rhs AND the difference is greater than 12h
